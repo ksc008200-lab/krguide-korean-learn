@@ -154,6 +154,7 @@
         <input class="search-input" type="search" name="s" placeholder="Search articles…" autocomplete="off">
       </div>
     </form>
+    <div id="google_translate_element"></div>
   </div>
 </header>
 <div class="topbar">
@@ -341,5 +342,14 @@
   }
   renderPosts(urlCat);
 </script>
-</body>
+<script>
+function googleTranslateElementInit(){
+  new google.translate.TranslateElement({
+    pageLanguage:'en',
+    layout:google.translate.TranslateElement.InlineLayout.SIMPLE,
+    autoDisplay:false
+  },'google_translate_element');
+}
+</script>
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script></body>
 </html>

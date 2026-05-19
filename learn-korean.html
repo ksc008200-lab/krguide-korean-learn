@@ -24,7 +24,16 @@
     .search-icon{color:#86868b;flex-shrink:0}
     .search-input{border:none;background:transparent;outline:none;font-size:.84rem;color:#1d1d1f;width:160px;font-family:inherit}
     .search-input::placeholder{color:#b0b0b8}
-    @media(max-width:768px){.search-input{width:100px}.nav{display:none}}</style>
+    @media(max-width:768px){.search-input{width:100px}.nav{display:none}}
+    /* Google Translate */
+    #google_translate_element{margin-left:12px}
+    #google_translate_element .goog-te-gadget-simple{border:1px solid #e0e0e5!important;border-radius:20px!important;padding:5px 12px!important;background:#f5f5f7!important;font-size:.82rem!important;cursor:pointer;display:flex;align-items:center;gap:5px}
+    #google_translate_element .goog-te-gadget-simple:hover{background:#fff!important;border-color:#0071e3!important}
+    #google_translate_element .goog-te-menu-value span{color:#1d1d1f!important;font-family:-apple-system,BlinkMacSystemFont,system-ui,sans-serif!important}
+    #google_translate_element .goog-te-gadget-icon{display:none!important}
+    .goog-te-banner-frame{display:none!important}
+    body{top:0!important}
+    .skiptranslate{display:none!important}</style>
 <style>
   :root {
     --red: #C0392B;
@@ -1060,7 +1069,16 @@
     .search-icon{color:#86868b;flex-shrink:0}
     .search-input{border:none;background:transparent;outline:none;font-size:.84rem;color:#1d1d1f;width:160px;font-family:inherit}
     .search-input::placeholder{color:#b0b0b8}
-    @media(max-width:768px){.search-input{width:100px}.nav{display:none}}</style>
+    @media(max-width:768px){.search-input{width:100px}.nav{display:none}}
+    /* Google Translate */
+    #google_translate_element{margin-left:12px}
+    #google_translate_element .goog-te-gadget-simple{border:1px solid #e0e0e5!important;border-radius:20px!important;padding:5px 12px!important;background:#f5f5f7!important;font-size:.82rem!important;cursor:pointer;display:flex;align-items:center;gap:5px}
+    #google_translate_element .goog-te-gadget-simple:hover{background:#fff!important;border-color:#0071e3!important}
+    #google_translate_element .goog-te-menu-value span{color:#1d1d1f!important;font-family:-apple-system,BlinkMacSystemFont,system-ui,sans-serif!important}
+    #google_translate_element .goog-te-gadget-icon{display:none!important}
+    .goog-te-banner-frame{display:none!important}
+    body{top:0!important}
+    .skiptranslate{display:none!important}</style>
 </head>
 <body>
 
@@ -11788,7 +11806,25 @@ document.getElementById('pdf-modal').addEventListener('click', function(e) {
     .search-icon{color:#86868b;flex-shrink:0}
     .search-input{border:none;background:transparent;outline:none;font-size:.84rem;color:#1d1d1f;width:160px;font-family:inherit}
     .search-input::placeholder{color:#b0b0b8}
-    @media(max-width:768px){.search-input{width:100px}.nav{display:none}}</style>
+    @media(max-width:768px){.search-input{width:100px}.nav{display:none}}
+    /* Google Translate */
+    #google_translate_element{margin-left:12px}
+    #google_translate_element .goog-te-gadget-simple{border:1px solid #e0e0e5!important;border-radius:20px!important;padding:5px 12px!important;background:#f5f5f7!important;font-size:.82rem!important;cursor:pointer;display:flex;align-items:center;gap:5px}
+    #google_translate_element .goog-te-gadget-simple:hover{background:#fff!important;border-color:#0071e3!important}
+    #google_translate_element .goog-te-menu-value span{color:#1d1d1f!important;font-family:-apple-system,BlinkMacSystemFont,system-ui,sans-serif!important}
+    #google_translate_element .goog-te-gadget-icon{display:none!important}
+    .goog-te-banner-frame{display:none!important}
+    body{top:0!important}
+    .skiptranslate{display:none!important}</style>
 
-</body>
+<script>
+function googleTranslateElementInit(){
+  new google.translate.TranslateElement({
+    pageLanguage:'en',
+    layout:google.translate.TranslateElement.InlineLayout.SIMPLE,
+    autoDisplay:false
+  },'google_translate_element');
+}
+</script>
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script></body>
 </html>
