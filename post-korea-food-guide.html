@@ -1,0 +1,225 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Korean Food Guide — 30 Must-Try Dishes & How to Order | KR Guide</title>
+  <meta name="description" content="Complete Korean food guide for travelers — must-try dishes, street food, Korean BBQ tips, vegetarian options, how to order, and useful food phrases.">
+  <link rel="canonical" href="https://krguide.com/post-korea-food-guide.html">
+  <style>
+    :root{--bg:#fff;--bg2:#f5f5f7;--txt:#1d1d1f;--muted:#86868b;--accent:#0071e3;--line:#e8e8eb;--orange:#e67e22}
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:-apple-system,BlinkMacSystemFont,system-ui,sans-serif;background:var(--bg);color:var(--txt);-webkit-font-smoothing:antialiased}
+    .header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.88);backdrop-filter:blur(20px);border-bottom:.5px solid rgba(0,0,0,.08)}
+    .header-in{max-width:1100px;margin:0 auto;padding:13px 24px;display:flex;justify-content:space-between;align-items:center}
+    .brand{font-weight:800;font-size:1.1rem;letter-spacing:-.03em;color:var(--txt);text-decoration:none}
+    .brand span{color:var(--accent)}
+    .nav a{color:var(--muted);text-decoration:none;font-size:.84rem;font-weight:500;margin-left:20px}
+    .hero{background:linear-gradient(160deg,#7a2000 0%,#c0390a 45%,#e86f30 100%);color:#fff;padding:60px 24px 48px;text-align:center}
+    .breadcrumb{font-size:.75rem;opacity:.7;margin-bottom:14px}
+    .breadcrumb a{color:#fff;text-decoration:none}
+    .hero h1{font-size:2.4rem;font-weight:900;letter-spacing:-.04em;margin-bottom:12px;line-height:1.15}
+    .hero p{font-size:.95rem;opacity:.82;max-width:560px;margin:0 auto;line-height:1.6}
+    .content{max-width:900px;margin:0 auto;padding:48px 24px 80px}
+    h2{font-size:1.5rem;font-weight:800;letter-spacing:-.03em;margin:40px 0 14px;padding-bottom:10px;border-bottom:2px solid var(--line)}
+    p{font-size:.9rem;color:#444;line-height:1.75;margin-bottom:12px}
+    .dish-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px;margin:16px 0}
+    .dish-card{border:1px solid var(--line);border-radius:14px;padding:16px 18px}
+    .dish-top{display:flex;align-items:center;gap:12px;margin-bottom:8px}
+    .dish-emoji{font-size:2rem}
+    .dish-name{font-weight:800;font-size:.95rem}
+    .dish-kr{font-size:.8rem;color:var(--orange);font-weight:700}
+    .dish-card p{font-size:.82rem;color:#555;line-height:1.6;margin:0}
+    .spice-badge{display:inline-block;font-size:.68rem;font-weight:700;padding:2px 8px;border-radius:10px;margin-top:6px}
+    .spice-0{background:#e8f5e9;color:#2e7d32}
+    .spice-1{background:#fff3e0;color:#e65100}
+    .spice-2{background:#fde8e8;color:#c62828}
+    .spice-3{background:#7a0000;color:#fff}
+    .tip-box{background:#fff3e0;border-left:3px solid var(--orange);border-radius:0 10px 10px 0;padding:12px 16px;margin:14px 0;font-size:.84rem;color:#7a3800;line-height:1.6}
+    .info-box{background:var(--bg2);border-radius:12px;padding:18px 20px;margin:16px 0}
+    .info-box h4{font-size:.82rem;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;margin-bottom:10px}
+    .info-box ul{padding-left:18px;font-size:.85rem;color:#444;line-height:1.9}
+    .street-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin:16px 0}
+    .street-card{background:var(--bg2);border-radius:12px;padding:14px;text-align:center}
+    .street-card .emoji{font-size:2rem;margin-bottom:6px}
+    .street-card h4{font-size:.88rem;font-weight:700;margin-bottom:4px}
+    .street-card p{font-size:.76rem;color:var(--muted);line-height:1.4;margin:0}
+    .phrase-row{display:flex;gap:12px;align-items:baseline;padding:8px 0;border-bottom:1px solid var(--line);font-size:.85rem}
+    .phrase-kr{font-weight:700;color:var(--orange);min-width:160px}
+    .phrase-rom{color:var(--muted);font-style:italic;min-width:160px}
+    .bbq-step{display:flex;gap:14px;align-items:flex-start;margin-bottom:16px}
+    .bbq-num{background:var(--orange);color:#fff;width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:.9rem;flex-shrink:0;margin-top:2px}
+    .bbq-step p{font-size:.86rem;color:#444;line-height:1.6;margin:0}
+    .bbq-step h4{font-size:.9rem;font-weight:700;margin-bottom:4px}
+    .cta-banner{background:linear-gradient(135deg,#7a2000,#c0390a);color:#fff;border-radius:18px;padding:32px;text-align:center;margin-top:48px}
+    .cta-banner h3{font-size:1.3rem;font-weight:800;margin-bottom:8px}
+    .cta-banner p{opacity:.8;margin-bottom:20px;font-size:.88rem}
+    .btn{display:inline-block;padding:10px 22px;border-radius:10px;font-weight:700;font-size:.86rem;text-decoration:none;margin:4px}
+    .btn-white{background:#fff;color:#7a2000}
+    .btn-outline{border:2px solid rgba(255,255,255,.5);color:#fff}
+    footer{text-align:center;padding:24px 20px;border-top:1px solid var(--line);font-size:.8rem;color:var(--muted)}
+    footer a{color:inherit;text-decoration:none;margin:0 10px}
+    @media(max-width:600px){.hero h1{font-size:1.8rem}.dish-grid{grid-template-columns:1fr}.content{padding:32px 16px 60px}}
+  </style>
+</head>
+<body>
+<header class="header">
+  <div class="header-in">
+    <a href="index.html" class="brand"><span>KR</span> Guide</a>
+    <nav class="nav">
+      <a href="travel.html">Travel</a>
+      <a href="learn-korean.html">Learn Korean</a>
+      <a href="index.html">Home</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="breadcrumb"><a href="index.html">Home</a> › <a href="travel.html">Travel</a> › Korean Food</div>
+  <h1>🍜 Korean Food Guide</h1>
+  <p>From sizzling BBQ to comforting soups, spicy stews to sweet street snacks — your complete guide to eating in Korea.</p>
+</div>
+
+<div class="content">
+
+  <h2>🍖 Must-Try Korean Dishes</h2>
+  <p>These are the dishes every visitor to Korea should try at least once.</p>
+
+  <div class="dish-grid">
+    <div class="dish-card">
+      <div class="dish-top"><span class="dish-emoji">🥩</span><div><div class="dish-name">Samgyeopsal</div><div class="dish-kr">삼겹살</div></div></div>
+      <p>Grilled pork belly cooked at your table on a charcoal or gas grill. Wrap in lettuce with garlic, green onion and ssamjang paste.</p>
+      <span class="spice-badge spice-0">● Not spicy</span>
+    </div>
+    <div class="dish-card">
+      <div class="dish-top"><span class="dish-emoji">🍲</span><div><div class="dish-name">Bibimbap</div><div class="dish-kr">비빔밥</div></div></div>
+      <p>Rice topped with assorted vegetables, a fried egg, and gochujang (red chili paste). Mix everything together before eating.</p>
+      <span class="spice-badge spice-1">● Mildly spicy (adjustable)</span>
+    </div>
+    <div class="dish-card">
+      <div class="dish-top"><span class="dish-emoji">🥘</span><div><div class="dish-name">Kimchi Jjigae</div><div class="dish-kr">김치찌개</div></div></div>
+      <p>Fermented kimchi simmered into a rich, deeply flavored stew with pork or tofu. Korea's ultimate comfort food.</p>
+      <span class="spice-badge spice-2">● Spicy</span>
+    </div>
+    <div class="dish-card">
+      <div class="dish-top"><span class="dish-emoji">🍜</span><div><div class="dish-name">Ramyeon</div><div class="dish-kr">라면</div></div></div>
+      <p>Korean instant noodles — miles beyond the global version. Best eaten at a pojangmacha (street tent) at 2am.</p>
+      <span class="spice-badge spice-1">● Mildly spicy</span>
+    </div>
+    <div class="dish-card">
+      <div class="dish-top"><span class="dish-emoji">🐙</span><div><div class="dish-name">Nakji Bokkeum</div><div class="dish-kr">낙지볶음</div></div></div>
+      <p>Stir-fried spicy octopus — a dish that will clear your sinuses and delight your palate at the same time.</p>
+      <span class="spice-badge spice-3">● Very spicy 🔥</span>
+    </div>
+    <div class="dish-card">
+      <div class="dish-top"><span class="dish-emoji">🥗</span><div><div class="dish-name">Japchae</div><div class="dish-kr">잡채</div></div></div>
+      <p>Glass noodles stir-fried with vegetables, beef and sesame oil. A festive dish that's popular at celebrations.</p>
+      <span class="spice-badge spice-0">● Not spicy</span>
+    </div>
+    <div class="dish-card">
+      <div class="dish-top"><span class="dish-emoji">🍗</span><div><div class="dish-name">Chimaek</div><div class="dish-kr">치맥</div></div></div>
+      <p>Korean fried chicken + beer (maekju) — a national institution. Crispy, saucy and made for sharing while watching sports.</p>
+      <span class="spice-badge spice-0">● Not spicy (original) / spicy versions available</span>
+    </div>
+    <div class="dish-card">
+      <div class="dish-top"><span class="dish-emoji">🥣</span><div><div class="dish-name">Sundubu Jjigae</div><div class="dish-kr">순두부찌개</div></div></div>
+      <p>Soft silken tofu stew with egg, seafood or meat, served bubbling hot in a stone pot.</p>
+      <span class="spice-badge spice-2">● Spicy</span>
+    </div>
+    <div class="dish-card">
+      <div class="dish-top"><span class="dish-emoji">🍱</span><div><div class="dish-name">Dosirak</div><div class="dish-kr">도시락</div></div></div>
+      <p>Korean lunch box — rice, protein and side dishes. Available at convenience stores for ₩3,000–5,000. A budget traveler's best friend.</p>
+      <span class="spice-badge spice-0">● Varies</span>
+    </div>
+  </div>
+
+  <h2>🔥 Korean BBQ Guide</h2>
+  <p>Korean BBQ (고기구이, go-gi gu-i) is an experience, not just a meal. Here's how it works:</p>
+
+  <div class="bbq-step">
+    <div class="bbq-num">1</div>
+    <div><h4>Sit down — banchan arrives automatically</h4><p>Small side dishes (반찬, ban-chan) are placed on the table for free — kimchi, pickled vegetables, bean sprouts, fish cake. Refills are always free, just ask.</p></div>
+  </div>
+  <div class="bbq-step">
+    <div class="bbq-num">2</div>
+    <div><h4>Order your meat</h4><p>Popular choices: 삼겹살 (pork belly), 목살 (pork neck), 소갈비 (beef ribs), 불고기 (marinated beef). Most restaurants require a minimum of 2 servings per type.</p></div>
+  </div>
+  <div class="bbq-step">
+    <div class="bbq-num">3</div>
+    <div><h4>The server grills (or you grill)</h4><p>At most mid-range restaurants, the server grills and cuts the meat for you. At cheaper spots, you're on your own — it's easy.</p></div>
+  </div>
+  <div class="bbq-step">
+    <div class="bbq-num">4</div>
+    <div><h4>Make a ssam wrap</h4><p>Take a lettuce or perilla leaf, add rice, a piece of meat, garlic, sliced chili and a dab of ssamjang paste. Fold and eat in one bite.</p></div>
+  </div>
+  <div class="bbq-step">
+    <div class="bbq-num">5</div>
+    <div><h4>End with naengmyeon or doenjang jjigae</h4><p>Koreans often finish BBQ with cold buckwheat noodles (냉면) or a soybean paste stew (된장찌개). Order separately.</p></div>
+  </div>
+
+  <div class="tip-box">
+    <strong>💡 BBQ Tips:</strong> Your clothes will smell like smoke — that's normal and unavoidable. Many BBQ restaurants have coat hooks outside for that reason. Most have ventilation hoods above the grill but it still lingers. Plan accordingly.
+  </div>
+
+  <h2>🏪 Street Food</h2>
+  <div class="street-grid">
+    <div class="street-card"><div class="emoji">🍢</div><h4>Tteokbokki (떡볶이)</h4><p>Chewy rice cakes in sweet spicy red sauce. Korea's most beloved street food.</p></div>
+    <div class="street-card"><div class="emoji">🥞</div><h4>Hotteok (호떡)</h4><p>Sweet pancake filled with brown sugar, cinnamon and nuts. Perfect winter food.</p></div>
+    <div class="street-card"><div class="emoji">🍡</div><h4>Odeng (어묵)</h4><p>Fish cake skewers in hot broth — warming, savory and cheap (₩500 each).</p></div>
+    <div class="street-card"><div class="emoji">🌽</div><h4>Roasted Corn (구운 옥수수)</h4><p>Charcoal-roasted corn with butter — common at beaches and market stalls.</p></div>
+    <div class="street-card"><div class="emoji">🍦</div><h4>Bingsu (빙수)</h4><p>Shaved ice with sweetened red bean, condensed milk and toppings. Korea's iconic summer dessert.</p></div>
+    <div class="street-card"><div class="emoji">🐔</div><h4>Dakgangjeong (닭강정)</h4><p>Sweet crispy fried chicken bites — addictively good, especially from Myeongdong vendors.</p></div>
+  </div>
+
+  <h2>🥬 Vegetarian & Dietary Tips</h2>
+  <div class="info-box">
+    <h4>Eating with Dietary Restrictions</h4>
+    <ul>
+      <li><strong>Vegetarian:</strong> Traditional Korean Buddhist temple food (사찰음식) is fully vegan. Look for 사찰 식당 (temple food restaurants). Bibimbap and japchae can often be made without meat — ask.</li>
+      <li><strong>Vegan:</strong> Harder than vegetarian — many broths contain anchovy or beef stock. Say "고기 없이 해주세요" (go-gi eop-si hae-ju-se-yo) — no meat please.</li>
+      <li><strong>Gluten-free:</strong> Rice is the staple so many dishes are naturally GF. Soy sauce (간장) contains gluten — ask for gluten-free soy (글루텐프리 간장).</li>
+      <li><strong>Halal:</strong> Growing availability in Itaewon (Seoul) and Dongdaemun. Search "Halal restaurant Korea" on Naver Maps.</li>
+    </ul>
+  </div>
+
+  <h2>💰 Budget Guide — How Much Does Food Cost?</h2>
+  <div class="info-box">
+    <h4>Average Meal Prices (2026)</h4>
+    <ul>
+      <li><strong>Convenience store meal</strong> (dosirak + drink): ₩4,000–6,000 (~$3–4)</li>
+      <li><strong>Street food snack</strong> (tteokbokki, odeng): ₩2,000–4,000 (~$1.50–3)</li>
+      <li><strong>Local restaurant lunch set</strong>: ₩8,000–12,000 (~$6–9)</li>
+      <li><strong>Korean BBQ per person</strong>: ₩15,000–25,000 (~$11–18)</li>
+      <li><strong>Upscale restaurant</strong>: ₩30,000–60,000+ per person</li>
+      <li><strong>Chimaek (chicken + beer) for 2</strong>: ₩30,000–40,000 (~$22–30)</li>
+    </ul>
+  </div>
+
+  <h2>🗣️ Food Korean — Order Like a Local</h2>
+  <div class="phrase-row"><span class="phrase-kr">이거 주세요.</span><span class="phrase-rom">i-geo ju-se-yo.</span><span>I'll have this. (pointing)</span></div>
+  <div class="phrase-row"><span class="phrase-kr">맵지 않게 해주세요.</span><span class="phrase-rom">maep-ji an-ke hae-ju-se-yo.</span><span>Please make it not spicy.</span></div>
+  <div class="phrase-row"><span class="phrase-kr">반찬 더 주세요.</span><span class="phrase-rom">ban-chan deo ju-se-yo.</span><span>More side dishes, please.</span></div>
+  <div class="phrase-row"><span class="phrase-kr">맛있어요!</span><span class="phrase-rom">ma-si-sseo-yo!</span><span>It's delicious!</span></div>
+  <div class="phrase-row"><span class="phrase-kr">추천해 주세요.</span><span class="phrase-rom">chu-cheon-hae ju-se-yo.</span><span>Please recommend something.</span></div>
+  <div class="phrase-row"><span class="phrase-kr">고기 없이 해주세요.</span><span class="phrase-rom">go-gi eop-si hae-ju-se-yo.</span><span>No meat, please.</span></div>
+  <div class="phrase-row"><span class="phrase-kr">포장해 주세요.</span><span class="phrase-rom">po-jang-hae ju-se-yo.</span><span>To go, please.</span></div>
+  <div class="phrase-row"><span class="phrase-kr">계산해 주세요.</span><span class="phrase-rom">gye-san-hae ju-se-yo.</span><span>Check, please.</span></div>
+
+  <div class="cta-banner">
+    <h3>Learn more Korean for your trip</h3>
+    <p>Our 41-chapter Korean course covers food vocabulary, restaurant conversations, shopping and much more.</p>
+    <a href="learn-korean.html" class="btn btn-white">Try Free — Ch.1~5</a>
+    <a href="travel-conversations.html" class="btn btn-outline">Travel Conversations →</a>
+  </div>
+</div>
+
+<footer>
+  <a href="index.html">Home</a>
+  <a href="travel.html">Travel</a>
+  <a href="post-seoul-travel-guide.html">Seoul Guide</a>
+  <a href="travel-conversations.html">Travel Korean</a>
+  <a href="contact.html">Contact</a>
+  <div style="margin-top:8px;font-size:.75rem;">© 2026 KR Guide. All rights reserved.</div>
+</footer>
+</body>
+</html>

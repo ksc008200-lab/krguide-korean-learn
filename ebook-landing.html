@@ -1,0 +1,444 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Korean Language Learning Guide (E-Book) — KR Guide</title>
+  <meta name="description" content="Learn Korean from scratch — 41 chapters covering Hangul, phrases, grammar, daily life, culture and more. $9.90 — PDF download + online reading.">
+  <meta name="keywords" content="learn Korean, Korean e-book, Korean language guide, Hangul, Korean phrases, Korean grammar, KR Guide">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Korean Language Learning Guide — 41 Chapters — $9.90 by KR Guide">
+  <meta property="og:description" content="Master Korean from zero — 41 chapters: Hangul, grammar, daily life, culture, K-pop and more. PDF + online for $9.90.">
+  <meta property="og:type" content="product">
+  <meta property="og:url" content="https://krguide.com/ebook-landing.html">
+  <link rel="canonical" href="https://krguide.com/ebook-landing.html">
+  <style>
+    :root {
+      --accent: #0071e3;
+      --accent-light: #e8f2fd;
+      --dark: #1d1d1f;
+      --muted: #86868b;
+      --light: #f5f5f7;
+      --white: #fff;
+      --border: #d2d2d7;
+      --success: #34c759;
+      --radius: 14px;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; color: var(--dark); background: var(--white); line-height: 1.7; -webkit-font-smoothing: antialiased; }
+
+    /* NAV */
+    .header { position: sticky; top: 0; z-index: 50; background: rgba(255,255,255,.88); backdrop-filter: blur(20px); border-bottom: .5px solid rgba(0,0,0,.08); }
+    .header-in { max-width: 1100px; margin: 0 auto; padding: 13px 28px; display: flex; justify-content: space-between; align-items: center; }
+    .brand { font-weight: 800; font-size: 1.1rem; letter-spacing: -.03em; color: var(--dark); text-decoration: none; }
+    .brand span { color: var(--accent); }
+    .nav { display: flex; gap: 16px; align-items: center; }
+    .nav a { color: var(--muted); text-decoration: none; font-size: .84rem; font-weight: 500; transition: color .15s; }
+    .nav a:hover { color: var(--dark); }
+    .btn { display: inline-flex; align-items: center; gap: 8px; padding: 10px 22px; border-radius: 980px; font-size: .88rem; font-weight: 600; text-decoration: none; cursor: pointer; border: none; transition: all .2s; }
+    .btn-primary { background: var(--accent); color: #fff; }
+    .btn-primary:hover { background: #0058b0; transform: translateY(-1px); box-shadow: 0 4px 16px rgba(0,113,227,.3); }
+    .btn-secondary { background: var(--dark); color: #fff; }
+    .btn-secondary:hover { background: #333; transform: translateY(-1px); box-shadow: 0 4px 16px rgba(0,0,0,.2); }
+    .btn-outline { background: transparent; color: var(--accent); border: 1.5px solid var(--accent); }
+    .btn-outline:hover { background: var(--accent-light); }
+    .btn-lg { padding: 15px 34px; font-size: 1rem; border-radius: 14px; }
+
+    /* HERO */
+    .hero { background: linear-gradient(135deg, #0a1628 0%, #1a2a4a 50%, #0f1e38 100%); color: #fff; padding: 80px 24px 100px; text-align: center; position: relative; overflow: hidden; }
+    .hero::before { content: '한'; position: absolute; top: -40px; right: -40px; font-size: 280px; font-family: 'Malgun Gothic','Apple SD Gothic Neo',sans-serif; font-weight: 900; color: rgba(255,255,255,.03); line-height: 1; pointer-events: none; }
+    .hero-badge { display: inline-flex; align-items: center; gap: 6px; background: rgba(0,113,227,.25); border: 1px solid rgba(0,113,227,.4); color: #60a5fa; font-size: .78rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; padding: 6px 16px; border-radius: 980px; margin-bottom: 28px; }
+    .hero h1 { font-size: clamp(2.2rem, 5vw, 3.8rem); font-weight: 800; letter-spacing: -.03em; line-height: 1.15; margin-bottom: 16px; }
+    .hero h1 span { color: #60a5fa; }
+    .hero-korean { font-family: 'Malgun Gothic','Apple SD Gothic Neo',sans-serif; font-size: clamp(1.1rem, 2vw, 1.4rem); color: rgba(255,255,255,.55); margin-bottom: 24px; }
+    .hero-desc { max-width: 560px; margin: 0 auto 40px; font-size: 1.05rem; color: rgba(255,255,255,.75); line-height: 1.75; }
+    .hero-btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+    .hero-stats { display: flex; justify-content: center; gap: 48px; margin-top: 60px; flex-wrap: wrap; border-top: 1px solid rgba(255,255,255,.1); padding-top: 48px; }
+    .hero-stat { text-align: center; }
+    .hero-stat-num { font-size: 2rem; font-weight: 800; color: #60a5fa; display: block; line-height: 1; }
+    .hero-stat-label { font-size: .78rem; color: rgba(255,255,255,.45); letter-spacing: .08em; text-transform: uppercase; margin-top: 4px; display: block; }
+
+    /* FORMAT CARDS */
+    .formats { padding: 72px 24px; background: var(--light); }
+    .section-label { text-align: center; font-size: .72rem; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; color: var(--accent); margin-bottom: 12px; }
+    .section-title { text-align: center; font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 800; letter-spacing: -.03em; color: var(--dark); margin-bottom: 12px; }
+    .section-sub { text-align: center; font-size: 1rem; color: var(--muted); max-width: 540px; margin: 0 auto 52px; line-height: 1.75; }
+    .format-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; max-width: 840px; margin: 0 auto; }
+    .format-card { background: var(--white); border-radius: 20px; padding: 36px 32px; border: 1.5px solid var(--border); transition: box-shadow .2s, transform .2s; position: relative; overflow: hidden; }
+    .format-card:hover { box-shadow: 0 12px 40px rgba(0,0,0,.1); transform: translateY(-3px); }
+    .format-card.featured { border-color: var(--accent); }
+    .format-badge { position: absolute; top: 20px; right: 20px; background: var(--accent); color: #fff; font-size: .68rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; padding: 4px 12px; border-radius: 980px; }
+    .format-icon { font-size: 2.8rem; margin-bottom: 20px; }
+    .format-title { font-size: 1.3rem; font-weight: 800; color: var(--dark); margin-bottom: 10px; }
+    .format-desc { font-size: .9rem; color: var(--muted); line-height: 1.7; margin-bottom: 24px; }
+    .format-features { list-style: none; margin-bottom: 28px; display: flex; flex-direction: column; gap: 8px; }
+    .format-features li { font-size: .88rem; color: var(--dark); display: flex; align-items: flex-start; gap: 8px; }
+    .format-features li::before { content: '✓'; color: var(--success); font-weight: 700; flex-shrink: 0; margin-top: 1px; }
+
+    /* CHAPTERS */
+    .chapters { padding: 80px 24px; background: var(--white); }
+    .chapters-inner { max-width: 900px; margin: 0 auto; }
+    .chapter-list { display: flex; flex-direction: column; gap: 16px; margin-top: 48px; }
+    .chapter-item { display: flex; gap: 20px; align-items: flex-start; padding: 24px 28px; border-radius: var(--radius); border: 1px solid var(--border); transition: box-shadow .2s, border-color .2s; }
+    .chapter-item:hover { box-shadow: 0 4px 20px rgba(0,0,0,.07); border-color: #c0c0c5; }
+    .chapter-num { flex-shrink: 0; width: 48px; height: 48px; background: var(--accent-light); color: var(--accent); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; font-weight: 800; }
+    .chapter-info h3 { font-size: 1.05rem; font-weight: 700; color: var(--dark); margin-bottom: 4px; }
+    .chapter-info p { font-size: .88rem; color: var(--muted); margin: 0; line-height: 1.5; }
+    .chapter-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+    .tag { font-size: .72rem; font-weight: 600; background: var(--light); color: var(--muted); padding: 3px 10px; border-radius: 980px; }
+
+    /* PREVIEW TABLE */
+    .preview { padding: 80px 24px; background: var(--light); }
+    .preview-inner { max-width: 860px; margin: 0 auto; }
+    .phrase-preview { width: 100%; border-collapse: collapse; margin-top: 32px; font-size: .9rem; }
+    .phrase-preview th { background: var(--dark); color: #fff; padding: 12px 16px; text-align: left; font-weight: 600; font-size: .82rem; }
+    .phrase-preview th:first-child { border-radius: 10px 0 0 0; }
+    .phrase-preview th:last-child { border-radius: 0 10px 0 0; }
+    .phrase-preview td { padding: 12px 16px; border-bottom: 1px solid var(--border); }
+    .phrase-preview tr:last-child td { border-bottom: none; }
+    .phrase-preview tr:nth-child(even) td { background: #f9f9fb; }
+    .kr { font-family: 'Malgun Gothic','Apple SD Gothic Neo',sans-serif; color: var(--accent); font-weight: 600; font-size: 1.05rem; }
+    .rom { color: var(--muted); font-style: italic; }
+
+    /* WHY */
+    .why { padding: 80px 24px; background: var(--white); }
+    .why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; max-width: 900px; margin: 52px auto 0; }
+    .why-item { padding: 28px 24px; border-radius: var(--radius); background: var(--light); text-align: center; }
+    .why-icon { font-size: 2rem; margin-bottom: 14px; }
+    .why-title { font-size: 1rem; font-weight: 700; color: var(--dark); margin-bottom: 8px; }
+    .why-desc { font-size: .86rem; color: var(--muted); line-height: 1.65; }
+
+    /* CTA BOTTOM */
+    .cta-bottom { background: linear-gradient(135deg, #0071e3, #0058b0); color: #fff; padding: 80px 24px; text-align: center; }
+    .cta-bottom h2 { font-size: clamp(1.8rem, 3.5vw, 2.6rem); font-weight: 800; letter-spacing: -.03em; margin-bottom: 16px; }
+    .cta-bottom p { font-size: 1.05rem; color: rgba(255,255,255,.8); max-width: 500px; margin: 0 auto 36px; line-height: 1.75; }
+    .cta-bottom .hero-btns { margin-top: 0; }
+
+    /* FOOTER */
+    footer { text-align: center; padding: 28px 20px; border-top: 1px solid var(--border); font-size: .8rem; color: var(--muted); }
+    footer a { color: inherit; text-decoration: none; margin: 0 10px; }
+    footer a:hover { text-decoration: underline; }
+
+    @media (max-width: 700px) {
+      .format-grid { grid-template-columns: 1fr; }
+      .why-grid { grid-template-columns: 1fr; max-width: 420px; }
+      .hero-stats { gap: 28px; }
+      .header-in { padding: 11px 16px; }
+      .hero { padding: 60px 20px 72px; }
+      .chapter-item { padding: 18px 20px; }
+    }
+    @media (max-width: 480px) {
+      .hero-btns { flex-direction: column; align-items: center; }
+      .hero-btns .btn-lg { width: 100%; justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="header">
+  <div class="header-in">
+    <a href="index.html" class="brand"><span>KR</span> Guide</a>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="learn-korean.html" class="btn btn-primary" style="padding:8px 18px;font-size:.82rem;">Read E-Book</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-badge">&#128218; Official KR Guide E-Book</div>
+  <h1>Korean Language<br><span>Learning Guide</span></h1>
+  <div class="hero-korean">한국어 학습 가이드 — 외국인을 위한 완전 가이드</div>
+  <p class="hero-desc">
+    Everything a foreigner needs to start speaking Korean — from your very first Hangul character to real conversations at restaurants, markets, and hospitals. Read free online or download as PDF.
+  </p>
+  <div class="hero-btns">
+    <a href="https://jessamine13.gumroad.com/l/gnefla" target="_blank" class="btn btn-primary btn-lg">&#128722; Buy Now — $9.90</a>
+    <a href="learn-korean.html" class="btn btn-outline btn-lg" style="color:#fff;border-color:rgba(255,255,255,.5);">&#128214; Preview Online</a>
+  </div>
+  <div class="hero-stats">
+    <div class="hero-stat">
+      <span class="hero-stat-num">41</span>
+      <span class="hero-stat-label">Chapters</span>
+    </div>
+    <div class="hero-stat">
+      <span class="hero-stat-num">500+</span>
+      <span class="hero-stat-label">Vocabulary</span>
+    </div>
+    <div class="hero-stat">
+      <span class="hero-stat-num">40</span>
+      <span class="hero-stat-label">Hangul Characters</span>
+    </div>
+    <div class="hero-stat">
+      <span class="hero-stat-num">6</span>
+      <span class="hero-stat-label">Learning Levels</span>
+    </div>
+    <div class="hero-stat">
+      <span class="hero-stat-num">$9.90</span>
+      <span class="hero-stat-label">One-time Price</span>
+    </div>
+  </div>
+</section>
+
+<!-- FORMAT CARDS -->
+<section class="formats" id="formats">
+  <p class="section-label">Two Ways to Read</p>
+  <h2 class="section-title">Pick Your Format</h2>
+  <p class="section-sub">Read it in your browser or save it for offline — both formats are fully free, no sign-up required.</p>
+  <div class="format-grid">
+
+    <div class="format-card featured">
+      <div class="format-badge">Best Value</div>
+      <div class="format-icon">&#128722;</div>
+      <div class="format-title">Buy E-Book — $9.90</div>
+      <p class="format-desc">One-time purchase. Get instant access to the full 41-chapter PDF + read online anytime.</p>
+      <ul class="format-features">
+        <li>Full 41-chapter PDF download</li>
+        <li>Read online anytime (HTML version)</li>
+        <li>Lifetime access — yours forever</li>
+        <li>All future updates included</li>
+        <li>Instant delivery via email</li>
+      </ul>
+      <a href="https://jessamine13.gumroad.com/l/gnefla" target="_blank" class="btn btn-primary" style="width:100%;justify-content:center;font-size:1rem;padding:14px;">
+        &#128722; Buy Now — $9.90
+      </a>
+    </div>
+
+    <div class="format-card">
+      <div class="format-icon">&#128214;</div>
+      <div class="format-title">Free Preview (HTML)</div>
+      <p class="format-desc">Browse the full e-book online before purchasing. No sign-up required.</p>
+      <ul class="format-features">
+        <li>Full content visible online</li>
+        <li>Clickable table of contents</li>
+        <li>Mobile-friendly layout</li>
+        <li>No account needed</li>
+        <li>Preview before you buy</li>
+      </ul>
+      <a href="learn-korean.html" class="btn btn-outline" style="width:100%;justify-content:center;">
+        &#128214; Read Preview
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- CHAPTER LIST -->
+<section class="chapters" id="contents">
+  <div class="chapters-inner">
+    <p class="section-label">What's Inside</p>
+    <h2 class="section-title">Full Table of Contents</h2>
+    <p class="section-sub">41 comprehensive chapters across 6 levels — from your very first letter to advanced culture and language depth.</p>
+
+    <div class="chapter-list">
+      <div class="chapter-item">
+        <div class="chapter-num" style="background:#e8f2fd;color:#0071e3;font-size:.8rem;width:auto;padding:0 12px;border-radius:8px;height:48px;">기초</div>
+        <div class="chapter-info">
+          <h3>Basics · 기초 — Chapters 1–6</h3>
+          <p>Hangul birth, consonants (기역~히읗), vowels, 받침 (final consonants), numbers, and essential vocabulary 200.</p>
+          <div class="chapter-tags">
+            <span class="tag">한글</span><span class="tag">자음·모음</span><span class="tag">받침</span><span class="tag">숫자</span><span class="tag">기초 단어 200</span>
+          </div>
+        </div>
+      </div>
+      <div class="chapter-item">
+        <div class="chapter-num" style="background:#e8f2fd;color:#0071e3;font-size:.8rem;width:auto;padding:0 12px;border-radius:8px;height:48px;">문법</div>
+        <div class="chapter-info">
+          <h3>Grammar · 문법 — Chapters 7–14</h3>
+          <p>Sentence structure (SOV), verb conjugation, real conversations, speech levels (존댓말/반말), tenses, grammar patterns, particles, and question words.</p>
+          <div class="chapter-tags">
+            <span class="tag">SOV 구조</span><span class="tag">동사 활용</span><span class="tag">존댓말</span><span class="tag">시제</span><span class="tag">조사</span>
+          </div>
+        </div>
+      </div>
+      <div class="chapter-item">
+        <div class="chapter-num" style="background:#e8f2fd;color:#0071e3;font-size:.8rem;width:auto;padding:0 12px;border-radius:8px;height:48px;">일상</div>
+        <div class="chapter-info">
+          <h3>Daily Life · 일상 — Chapters 15–27</h3>
+          <p>Food & restaurants, shopping, transportation, family, weather, holidays, adjectives, health, K-pop, hobbies, work, love & dating, travel.</p>
+          <div class="chapter-tags">
+            <span class="tag">식당</span><span class="tag">쇼핑</span><span class="tag">교통</span><span class="tag">K-pop</span><span class="tag">여행</span>
+          </div>
+        </div>
+      </div>
+      <div class="chapter-item">
+        <div class="chapter-num" style="background:#e8f2fd;color:#0071e3;font-size:.8rem;width:auto;padding:0 12px;border-radius:8px;height:48px;">문화</div>
+        <div class="chapter-info">
+          <h3>Culture · 문화 — Chapters 28–30</h3>
+          <p>Slang & internet language (ㅋㅋ, 대박, 헐), spelling rules, and how to use the Korean dictionary.</p>
+          <div class="chapter-tags">
+            <span class="tag">인터넷 슬랭</span><span class="tag">맞춤법</span><span class="tag">사전 활용</span>
+          </div>
+        </div>
+      </div>
+      <div class="chapter-item">
+        <div class="chapter-num" style="background:#e8f2fd;color:#0071e3;font-size:.8rem;width:auto;padding:0 12px;border-radius:8px;height:48px;">심화</div>
+        <div class="chapter-info">
+          <h3>Language Depths · 언어의 깊이 — Chapters 31–35</h3>
+          <p>우리 culture, subject-less speech (주어 생략), Hanja (한자), Korean dialects, and language nuance.</p>
+          <div class="chapter-tags">
+            <span class="tag">우리 문화</span><span class="tag">주어 생략</span><span class="tag">한자</span><span class="tag">방언</span>
+          </div>
+        </div>
+      </div>
+      <div class="chapter-item">
+        <div class="chapter-num" style="background:#e8f2fd;color:#0071e3;font-size:.8rem;width:auto;padding:0 12px;border-radius:8px;height:48px;">참고</div>
+        <div class="chapter-info">
+          <h3>Reference — Chapters 36–41</h3>
+          <p>Korean history, BTS & K-culture, 500 essential nouns, 200 essential verbs, 200 essential adverbs, and Jeju dialect.</p>
+          <div class="chapter-tags">
+            <span class="tag">한국 역사</span><span class="tag">BTS·K문화</span><span class="tag">명사 500</span><span class="tag">동사 200</span><span class="tag">제주 방언</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PHRASE PREVIEW -->
+<section class="preview">
+  <div class="preview-inner">
+    <p class="section-label">Free Preview</p>
+    <h2 class="section-title" style="text-align:center;">Sample Phrases from Chapter 2</h2>
+    <p class="section-sub" style="text-align:center; margin:0 auto 0;">Get a taste of what's inside.</p>
+    <table class="phrase-preview">
+      <thead>
+        <tr>
+          <th>Korean (한글)</th>
+          <th>Romanization</th>
+          <th>English</th>
+          <th>When to use</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="kr">안녕하세요</td>
+          <td class="rom">an-nyeong-ha-se-yo</td>
+          <td>Hello / Good day</td>
+          <td>Universal polite greeting</td>
+        </tr>
+        <tr>
+          <td class="kr">감사합니다</td>
+          <td class="rom">gam-sa-ham-ni-da</td>
+          <td>Thank you (formal)</td>
+          <td>Shops, restaurants, services</td>
+        </tr>
+        <tr>
+          <td class="kr">이거 주세요</td>
+          <td class="rom">i-geo ju-se-yo</td>
+          <td>This one, please</td>
+          <td>Ordering food, shopping</td>
+        </tr>
+        <tr>
+          <td class="kr">얼마예요?</td>
+          <td class="rom">eol-ma-ye-yo?</td>
+          <td>How much is it?</td>
+          <td>Any shopping situation</td>
+        </tr>
+        <tr>
+          <td class="kr">화장실이 어디예요?</td>
+          <td class="rom">hwa-jang-sil-i eo-di-ye-yo?</td>
+          <td>Where is the bathroom?</td>
+          <td>The phrase you'll use most</td>
+        </tr>
+        <tr>
+          <td class="kr">영어 할 줄 아세요?</td>
+          <td class="rom">yeong-eo hal jul a-se-yo?</td>
+          <td>Do you speak English?</td>
+          <td>When you're stuck</td>
+        </tr>
+        <tr>
+          <td class="kr">맵지 않게 해 주세요</td>
+          <td class="rom">maep-ji an-ke hae ju-se-yo</td>
+          <td>Please make it not spicy</td>
+          <td>Essential for Korean restaurants</td>
+        </tr>
+      </tbody>
+    </table>
+    <div style="text-align:center;margin-top:32px;">
+      <a href="learn-korean.html" class="btn btn-primary btn-lg">See All 100 Phrases &#8594;</a>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="why">
+  <p class="section-label">Why This Guide</p>
+  <h2 class="section-title">Made for Real Foreigners in Korea</h2>
+  <p class="section-sub">Not a textbook. Not an app. A practical guide written by people who actually live here.</p>
+  <div class="why-grid">
+    <div class="why-item">
+      <div class="why-icon">&#127370;</div>
+      <div class="why-title">Zero to Reading in 2 Days</div>
+      <p class="why-desc">Hangul is one of the most logical writing systems ever invented. Our visual breakdowns get you reading Korean menus and signs in a weekend.</p>
+    </div>
+    <div class="why-item">
+      <div class="why-icon">&#128205;</div>
+      <div class="why-title">Situation-First Approach</div>
+      <p class="why-desc">Every phrase is organized by where you'll actually use it — at 7-Eleven, on Line 2, at the 삼겹살 place you can't stop going back to.</p>
+    </div>
+    <div class="why-item">
+      <div class="why-icon">&#128504;</div>
+      <div class="why-title">Always Free, Always Updated</div>
+      <p class="why-desc">The HTML version is always the latest edition. Bookmarks stay relevant, links stay working, and new content keeps being added.</p>
+    </div>
+    <div class="why-item">
+      <div class="why-icon">&#128241;</div>
+      <div class="why-title">Works on Any Device</div>
+      <p class="why-desc">Read on your phone between subway stops. Save as PDF for your tablet. Print it out if you're old-school. It all works.</p>
+    </div>
+    <div class="why-item">
+      <div class="why-icon">&#127358;</div>
+      <div class="why-title">Real Cultural Context</div>
+      <p class="why-desc">We explain not just what to say but why — the honorifics system, why you shouldn't pour your own drink, what 대박 actually means to a local.</p>
+    </div>
+    <div class="why-item">
+      <div class="why-icon">&#128218;</div>
+      <div class="why-title">No App Download Needed</div>
+      <p class="why-desc">Just bookmark the page. No account, no subscription, no push notifications. Read it when you want, how you want.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BOTTOM -->
+<section class="cta-bottom">
+  <h2>Start Learning Korean Today</h2>
+  <p>One-time purchase of $9.90 — PDF delivered instantly to your email + read online anytime.</p>
+  <div class="hero-btns">
+    <a href="https://jessamine13.gumroad.com/l/gnefla" target="_blank" class="btn btn-lg" style="background:#fff;color:#0071e3;font-weight:700;">&#128722; Buy Now — $9.90</a>
+    <a href="learn-korean.html" class="btn btn-lg" style="background:rgba(255,255,255,.15);color:#fff;border:1.5px solid rgba(255,255,255,.4);">&#128214; Preview Free</a>
+  </div>
+</section>
+
+<footer>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="privacy.html">Privacy Policy</a>
+  <a href="terms.html">Terms of Use</a>
+  <a href="contact.html">Contact</a>
+  <div style="margin-top:8px;font-size:.75rem;">&copy; 2026 KR Guide. All rights reserved.</div>
+</footer>
+
+<script>
+// Auto-trigger PDF download if coming from landing page "Download PDF" button
+window.addEventListener('DOMContentLoaded', function() {
+  if (sessionStorage.getItem('autoDownloadPDF') === '1') {
+    sessionStorage.removeItem('autoDownloadPDF');
+    // Small delay so the page loads first
+    setTimeout(function() {
+      if (typeof downloadPDF === 'function') downloadPDF();
+      else window.print();
+    }, 800);
+  }
+});
+
+function openEbookAndDownload(e) {
+  sessionStorage.setItem('autoDownloadPDF', '1');
+}
+</script>
+</body>
+</html>

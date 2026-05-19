@@ -1,0 +1,267 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Korea Transportation Guide — Subway, KTX, Bus & Taxi | KR Guide</title>
+  <meta name="description" content="Complete Korea transportation guide — T-money card, Seoul subway, KTX bullet train, intercity bus, taxi apps, and getting from Incheon Airport to Seoul.">
+  <link rel="canonical" href="https://krguide.com/post-korea-transport.html">
+  <style>
+    :root{--bg:#fff;--bg2:#f5f5f7;--txt:#1d1d1f;--muted:#86868b;--accent:#0071e3;--line:#e8e8eb;--navy:#0a2342}
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:-apple-system,BlinkMacSystemFont,system-ui,sans-serif;background:var(--bg);color:var(--txt);-webkit-font-smoothing:antialiased}
+    .header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.88);backdrop-filter:blur(20px);border-bottom:.5px solid rgba(0,0,0,.08)}
+    .header-in{max-width:1100px;margin:0 auto;padding:13px 24px;display:flex;justify-content:space-between;align-items:center}
+    .brand{font-weight:800;font-size:1.1rem;letter-spacing:-.03em;color:var(--txt);text-decoration:none}
+    .brand span{color:var(--accent)}
+    .nav a{color:var(--muted);text-decoration:none;font-size:.84rem;font-weight:500;margin-left:20px}
+    .hero{background:linear-gradient(160deg,#0a2342 0%,#1a4a8a 55%,#2d6ecf 100%);color:#fff;padding:60px 24px 48px;text-align:center}
+    .breadcrumb{font-size:.75rem;opacity:.7;margin-bottom:14px}
+    .breadcrumb a{color:#fff;text-decoration:none}
+    .hero h1{font-size:2.4rem;font-weight:900;letter-spacing:-.04em;margin-bottom:12px;line-height:1.15}
+    .hero p{font-size:.95rem;opacity:.82;max-width:560px;margin:0 auto;line-height:1.6}
+    .content{max-width:900px;margin:0 auto;padding:48px 24px 80px}
+    h2{font-size:1.5rem;font-weight:800;letter-spacing:-.03em;margin:40px 0 14px;padding-bottom:10px;border-bottom:2px solid var(--line)}
+    h3{font-size:1.05rem;font-weight:700;margin:20px 0 8px;color:var(--navy)}
+    p{font-size:.9rem;color:#444;line-height:1.75;margin-bottom:12px}
+    .transport-card{border:1px solid var(--line);border-radius:14px;padding:20px 22px;margin-bottom:14px}
+    .transport-head{display:flex;align-items:center;gap:14px;margin-bottom:10px}
+    .transport-icon{font-size:2rem}
+    .transport-name{font-weight:800;font-size:1.1rem}
+    .transport-tag{font-size:.72rem;font-weight:700;padding:2px 8px;border-radius:10px;margin-left:8px}
+    .tag-best{background:#e8f5e9;color:#2e7d32}
+    .tag-cheap{background:#e3f2fd;color:#1565c0}
+    .tag-fast{background:#fff3e0;color:#e65100}
+    .transport-card p{font-size:.86rem;margin-bottom:8px}
+    .transport-card ul{padding-left:18px;font-size:.85rem;color:#444;line-height:1.9}
+    .price-row{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--line);font-size:.85rem}
+    .price-row:last-child{border-bottom:none}
+    .price-label{color:#444}
+    .price-val{font-weight:700;color:var(--navy)}
+    .tip-box{background:#e8f0ff;border-left:3px solid var(--accent);border-radius:0 10px 10px 0;padding:12px 16px;margin:14px 0;font-size:.84rem;color:#003080;line-height:1.6}
+    .info-box{background:var(--bg2);border-radius:12px;padding:18px 20px;margin:16px 0}
+    .info-box h4{font-size:.82rem;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;margin-bottom:10px}
+    .info-box ul{padding-left:18px;font-size:.85rem;color:#444;line-height:1.9}
+    .route-card{background:#f0f5ff;border-radius:12px;padding:16px 18px;margin-bottom:10px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+    .route-from-to{font-weight:700;font-size:.92rem;color:var(--navy)}
+    .route-details{text-align:right}
+    .route-time{font-weight:800;font-size:1rem;color:var(--accent)}
+    .route-price{font-size:.78rem;color:var(--muted)}
+    .line-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;margin:16px 0}
+    .line-card{border-radius:10px;padding:12px 14px;color:#fff;font-size:.82rem}
+    .line-card strong{display:block;font-size:.95rem;margin-bottom:3px}
+    .phrase-row{display:flex;gap:12px;align-items:baseline;padding:8px 0;border-bottom:1px solid var(--line);font-size:.85rem}
+    .phrase-kr{font-weight:700;color:var(--accent);min-width:160px}
+    .phrase-rom{color:var(--muted);font-style:italic;min-width:160px}
+    .tmoney-box{background:linear-gradient(135deg,#1565c0,#1976d2);color:#fff;border-radius:16px;padding:24px;margin:20px 0;display:grid;grid-template-columns:1fr 1fr;gap:20px}
+    .tmoney-box h3{color:#fff;margin:0 0 8px;font-size:1.1rem}
+    .tmoney-box p{font-size:.84rem;opacity:.88;line-height:1.6;margin:0}
+    .tmoney-box ul{padding-left:18px;font-size:.84rem;opacity:.88;line-height:1.9}
+    .cta-banner{background:linear-gradient(135deg,#0a2342,#1a4a8a);color:#fff;border-radius:18px;padding:32px;text-align:center;margin-top:48px}
+    .cta-banner h3{font-size:1.3rem;font-weight:800;margin-bottom:8px}
+    .cta-banner p{opacity:.8;margin-bottom:20px;font-size:.88rem}
+    .btn{display:inline-block;padding:10px 22px;border-radius:10px;font-weight:700;font-size:.86rem;text-decoration:none;margin:4px}
+    .btn-white{background:#fff;color:#0a2342}
+    .btn-outline{border:2px solid rgba(255,255,255,.5);color:#fff}
+    footer{text-align:center;padding:24px 20px;border-top:1px solid var(--line);font-size:.8rem;color:var(--muted)}
+    footer a{color:inherit;text-decoration:none;margin:0 10px}
+    @media(max-width:600px){.hero h1{font-size:1.8rem}.tmoney-box{grid-template-columns:1fr}.content{padding:32px 16px 60px}}
+  </style>
+</head>
+<body>
+<header class="header">
+  <div class="header-in">
+    <a href="index.html" class="brand"><span>KR</span> Guide</a>
+    <nav class="nav">
+      <a href="travel.html">Travel</a>
+      <a href="learn-korean.html">Learn Korean</a>
+      <a href="index.html">Home</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="breadcrumb"><a href="index.html">Home</a> › <a href="travel.html">Travel</a> › Transportation</div>
+  <h1>🚇 Korea Transportation Guide</h1>
+  <p>Korea has world-class public transport — once you understand the system, getting around is easy, cheap and fast.</p>
+</div>
+
+<div class="content">
+
+  <h2>💳 T-money Card — Start Here</h2>
+  <p>The T-money card (티머니 카드) is a rechargeable transit card that works nationwide on all subways, city buses, and most taxis. It's the single most important thing to get on arrival.</p>
+
+  <div class="tmoney-box">
+    <div>
+      <h3>Where to buy</h3>
+      <ul>
+        <li>Any convenience store: GS25, CU, 7-Eleven, Emart24</li>
+        <li>Incheon Airport arrival hall (after customs)</li>
+        <li>Subway station vending machines</li>
+        <li>Cost: ₩3,000–5,000 (card deposit included)</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Benefits</h3>
+      <ul>
+        <li>Cheaper than single-journey tickets</li>
+        <li>Transfer discounts between subway and bus</li>
+        <li>Works in all major Korean cities</li>
+        <li>Top up at any convenience store or subway machine</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="tip-box">
+    <strong>💡 Tip:</strong> Load at least ₩30,000–50,000 when you arrive. Minimum balance for a subway ride is around ₩1,400. If your card runs out mid-journey, tap at an add-fare machine (잔액보충기) before exiting.
+  </div>
+
+  <h2>🛬 From Incheon Airport to Seoul</h2>
+
+  <div class="transport-card">
+    <div class="transport-head">
+      <span class="transport-icon">🚂</span>
+      <div>
+        <div class="transport-name">AREX — Airport Railroad Express <span class="transport-tag tag-best">Best Value</span></div>
+      </div>
+    </div>
+    <p>The most popular option. Two services run from Incheon Airport Terminal 1 & 2:</p>
+    <ul>
+      <li><strong>Direct (직통)</strong>: Incheon → Seoul Station in <strong>43 minutes</strong>. ₩11,000. No stops.</li>
+      <li><strong>All-stop (일반)</strong>: Incheon → Seoul Station in <strong>66 minutes</strong>. ₩4,850 (T-money). Stops at Gimpo, Hongdae, etc.</li>
+    </ul>
+    <div style="margin-top:10px;">
+      <div class="price-row"><span class="price-label">Direct (no stops)</span><span class="price-val">₩11,000 (~$8)</span></div>
+      <div class="price-row"><span class="price-label">All-stop (T-money)</span><span class="price-val">₩4,850 (~$3.50)</span></div>
+    </div>
+  </div>
+
+  <div class="transport-card">
+    <div class="transport-head">
+      <span class="transport-icon">🚌</span>
+      <div><div class="transport-name">Airport Limousine Bus <span class="transport-tag tag-cheap">Comfortable</span></div></div>
+    </div>
+    <p>Premium buses that go directly to major hotels and neighborhoods in Seoul. Good if your hotel is on the route.</p>
+    <ul>
+      <li>Takes 60–90 minutes depending on traffic</li>
+      <li>Cost: ₩17,000–20,000 depending on route</li>
+      <li>Routes shown on boards at arrival hall — look for your destination</li>
+    </ul>
+  </div>
+
+  <div class="transport-card">
+    <div class="transport-head">
+      <span class="transport-icon">🚕</span>
+      <div><div class="transport-name">Taxi / KakaoTaxi</div></div>
+    </div>
+    <p>Convenient but expensive from the airport — heavy traffic on the highway and a toll road fee on top.</p>
+    <ul>
+      <li>Regular taxi: ₩60,000–90,000 to central Seoul</li>
+      <li>Kakao Black (premium): ₩80,000–120,000</li>
+      <li>Use only metered taxis from official taxi stands — avoid touts</li>
+    </ul>
+  </div>
+
+  <h2>🚇 Seoul Subway</h2>
+  <p>Seoul's subway is one of the world's best — 9 major lines, 300+ stations, signage in Korean/English/Chinese/Japanese, and trains every 2–5 minutes.</p>
+
+  <div class="line-grid">
+    <div class="line-card" style="background:#e60012;"><strong>Line 1 (1호선)</strong>Seoul Station, Dongdaemun, Incheon</div>
+    <div class="line-card" style="background:#00a650;"><strong>Line 2 (2호선)</strong>Gangnam, Hongdae, Sinchon, City Hall</div>
+    <div class="line-card" style="background:#ef7c1c;"><strong>Line 3 (3호선)</strong>Gyeongbokgung, Express Bus Terminal</div>
+    <div class="line-card" style="background:#00a5de;"><strong>Line 4 (4호선)</strong>Myeongdong, Dongdaemun History Park</div>
+    <div class="line-card" style="background:#996cac;"><strong>Line 5 (5호선)</strong>Gimpo Airport, Yeouido, Gwanghwamun</div>
+    <div class="line-card" style="background:#cd7c2f;"><strong>Line 6 (6호선)</strong>Itaewon, Mapo, DMC</div>
+    <div class="line-card" style="background:#747f00;"><strong>Line 7 (7호선)</strong>Gangnam, Nowon, Dobongsan</div>
+    <div class="line-card" style="background:#e6186c;"><strong>Line 9 (9호선)</strong>Gimpo Airport → Gangnam (express)</div>
+  </div>
+
+  <div class="info-box">
+    <h4>Subway Tips</h4>
+    <ul>
+      <li>Download <strong>Naver Maps</strong> or <strong>KakaoMap</strong> for real-time subway routes — more accurate than Google Maps in Korea</li>
+      <li>Stand on the <strong>right side</strong> of escalators — left side is for walking</li>
+      <li>Priority seating (노약자석) is for elderly, pregnant women, and disabled — don't sit there even if it's empty</li>
+      <li>Eating on the subway is uncommon and frowned upon — finish your coffee before boarding</li>
+      <li>Subway runs approximately 5:30am–midnight. Last trains vary by line.</li>
+    </ul>
+  </div>
+
+  <h2>🚅 KTX Bullet Train — City to City</h2>
+  <p>The Korea Train Express (KTX) connects major cities at speeds up to 305 km/h. The most comfortable and reliable way to travel between Seoul, Busan, Daegu, Daejeon and Gwangju.</p>
+
+  <div class="route-card">
+    <div class="route-from-to">Seoul → Busan</div>
+    <div class="route-details"><div class="route-time">2h 20min</div><div class="route-price">₩59,800 economy / ₩83,700 first class</div></div>
+  </div>
+  <div class="route-card">
+    <div class="route-from-to">Seoul → Daegu</div>
+    <div class="route-details"><div class="route-time">1h 40min</div><div class="route-price">₩43,500 economy</div></div>
+  </div>
+  <div class="route-card">
+    <div class="route-from-to">Seoul → Daejeon</div>
+    <div class="route-details"><div class="route-time">50min</div><div class="route-price">₩23,700 economy</div></div>
+  </div>
+  <div class="route-card">
+    <div class="route-from-to">Seoul → Gwangju</div>
+    <div class="route-details"><div class="route-time">1h 30min</div><div class="route-price">₩46,800 economy</div></div>
+  </div>
+
+  <div class="tip-box">
+    <strong>💡 KTX Booking:</strong> Book on <strong>Korail</strong> (letskorail.com) or the <strong>Korail Talk</strong> app. Foreign credit cards work. Book at least 3–7 days ahead for popular weekend trains — they sell out. Window seats fill up first.
+  </div>
+
+  <h2>🚕 Taxis</h2>
+  <div class="transport-card">
+    <div class="transport-head"><span class="transport-icon">📱</span><div><div class="transport-name">Kakao Taxi (카카오택시)</div></div></div>
+    <p>Korea's dominant taxi app. English available, shows fare estimate before booking, accepts foreign cards. Download before you arrive. Kakao T app — the same as KakaoTalk but transport-focused.</p>
+  </div>
+
+  <div class="info-box">
+    <h4>Taxi Types & Fares (Seoul)</h4>
+    <ul>
+      <li><strong>Regular (일반)</strong>: Base fare ₩4,800. Orange or silver cars. Available everywhere.</li>
+      <li><strong>Large (모범)</strong>: Premium black vehicles, higher fare (~1.5x), professional drivers. Good for airport runs.</li>
+      <li><strong>Kakao Black</strong>: Premium, English-speaking driver available, flat-rate option. Best for big groups or late nights.</li>
+      <li><strong>Night surcharge</strong>: Fares increase by 20% between midnight and 4am.</li>
+    </ul>
+  </div>
+
+  <h2>🚌 Intercity Bus</h2>
+  <p>Express buses (고속버스) are the cheapest way to travel between cities. Slightly slower than KTX but serve many cities the train doesn't reach.</p>
+  <div class="info-box">
+    <h4>Key Bus Terminals in Seoul</h4>
+    <ul>
+      <li><strong>Seoul Express Bus Terminal</strong> (강남) — buses to Busan, Daegu, Gwangju, Jeonju</li>
+      <li><strong>Dong Seoul Bus Terminal</strong> (건대입구) — buses to east coast cities, Gangneung, Sokcho</li>
+      <li>Book online at <strong>kobus.co.kr</strong> or at the terminal</li>
+      <li>Prices roughly 40–50% cheaper than KTX for same routes</li>
+    </ul>
+  </div>
+
+  <h2>🗣️ Transport Korean Phrases</h2>
+  <div class="phrase-row"><span class="phrase-kr">...역이 어디예요?</span><span class="phrase-rom">...yeok-i eo-di-ye-yo?</span><span>Where is ... Station?</span></div>
+  <div class="phrase-row"><span class="phrase-kr">이 버스 ...에 가요?</span><span class="phrase-rom">i beo-seu ...e ga-yo?</span><span>Does this bus go to ...?</span></div>
+  <div class="phrase-row"><span class="phrase-kr">어디서 내려야 해요?</span><span class="phrase-rom">eo-di-seo nae-ryeo-ya hae-yo?</span><span>Where should I get off?</span></div>
+  <div class="phrase-row"><span class="phrase-kr">티머니 충전해 주세요.</span><span class="phrase-rom">ti-meo-ni chung-jeon-hae ju-se-yo.</span><span>Please top up my T-money card.</span></div>
+  <div class="phrase-row"><span class="phrase-kr">부산까지 한 장 주세요.</span><span class="phrase-rom">bu-san-kka-ji han jang ju-se-yo.</span><span>One ticket to Busan, please.</span></div>
+  <div class="phrase-row"><span class="phrase-kr">카드 돼요?</span><span class="phrase-rom">ka-deu dwae-yo?</span><span>Can I pay by card?</span></div>
+
+  <div class="cta-banner">
+    <h3>Getting around is just the start</h3>
+    <p>Learn Korean to have deeper conversations and experiences everywhere you go.</p>
+    <a href="learn-korean.html" class="btn btn-white">Try Free — Ch.1~5</a>
+    <a href="travel-conversations.html" class="btn btn-outline">Travel Conversations →</a>
+  </div>
+</div>
+
+<footer>
+  <a href="index.html">Home</a>
+  <a href="travel.html">Travel</a>
+  <a href="post-seoul-travel-guide.html">Seoul Guide</a>
+  <a href="travel-conversations.html">Travel Korean</a>
+  <a href="contact.html">Contact</a>
+  <div style="margin-top:8px;font-size:.75rem;">© 2026 KR Guide. All rights reserved.</div>
+</footer>
+</body>
+</html>

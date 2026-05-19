@@ -1,0 +1,205 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Housing in Korea for Foreigners — Jeonse, Wolse & How to Rent | KR Guide</title>
+  <meta name="description" content="Complete guide to renting in Korea — jeonse vs wolse explained, goshiwon, officetels, how to find housing, contract tips and average rent by area.">
+  <link rel="canonical" href="https://krguide.com/post-korea-housing.html">
+  <style>
+    :root{--bg:#fff;--bg2:#f5f5f7;--txt:#1d1d1f;--muted:#86868b;--accent:#0071e3;--line:#e8e8eb;--navy:#0a2342;--brown:#7a4a00}
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:-apple-system,BlinkMacSystemFont,system-ui,sans-serif;background:var(--bg);color:var(--txt);-webkit-font-smoothing:antialiased}
+    .header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.88);backdrop-filter:blur(20px);border-bottom:.5px solid rgba(0,0,0,.08)}
+    .header-in{max-width:1100px;margin:0 auto;padding:13px 24px;display:flex;justify-content:space-between;align-items:center}
+    .brand{font-weight:800;font-size:1.1rem;letter-spacing:-.03em;color:var(--txt);text-decoration:none}
+    .brand span{color:var(--accent)}
+    .nav a{color:var(--muted);text-decoration:none;font-size:.84rem;font-weight:500;margin-left:20px}
+    .hero{background:linear-gradient(160deg,#4a2800 0%,#8a5000 50%,#c8860a 100%);color:#fff;padding:60px 24px 48px;text-align:center}
+    .breadcrumb{font-size:.75rem;opacity:.7;margin-bottom:14px}
+    .breadcrumb a{color:#fff;text-decoration:none}
+    .hero h1{font-size:2.4rem;font-weight:900;letter-spacing:-.04em;margin-bottom:12px;line-height:1.15}
+    .hero p{font-size:.95rem;opacity:.82;max-width:560px;margin:0 auto;line-height:1.6}
+    .content{max-width:880px;margin:0 auto;padding:48px 24px 80px}
+    h2{font-size:1.5rem;font-weight:800;letter-spacing:-.03em;margin:40px 0 14px;padding-bottom:10px;border-bottom:2px solid var(--line)}
+    h3{font-size:1rem;font-weight:700;margin:18px 0 8px;color:var(--navy)}
+    p{font-size:.9rem;color:#444;line-height:1.75;margin-bottom:12px}
+    .housing-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px;margin:16px 0}
+    .housing-card{border:1px solid var(--line);border-radius:14px;padding:20px}
+    .housing-card .icon{font-size:2rem;margin-bottom:10px}
+    .housing-card h4{font-weight:800;font-size:.95rem;margin-bottom:4px}
+    .housing-card .kr{font-size:.78rem;color:var(--brown);font-weight:700;margin-bottom:8px}
+    .housing-card p{font-size:.82rem;color:#555;line-height:1.6;margin-bottom:8px}
+    .housing-card .price{font-size:.8rem;font-weight:700;color:var(--navy);background:var(--bg2);padding:4px 10px;border-radius:8px;display:inline-block}
+    .jeonse-box{background:linear-gradient(135deg,#0a2342,#1a4a8a);color:#fff;border-radius:16px;padding:24px;margin:16px 0}
+    .jeonse-box h3{color:#fff;font-size:1.1rem;margin-bottom:10px}
+    .jeonse-box p{font-size:.86rem;opacity:.88;line-height:1.65;margin-bottom:10px}
+    .jeonse-box .highlight{background:rgba(255,255,255,.15);border-radius:10px;padding:12px 16px;font-size:.84rem;opacity:.9}
+    .step-item{display:flex;gap:14px;margin-bottom:20px;align-items:flex-start}
+    .step-num{background:var(--brown);color:#fff;width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:.9rem;flex-shrink:0;margin-top:2px}
+    .step-item h4{font-size:.92rem;font-weight:700;margin-bottom:4px}
+    .step-item p{font-size:.84rem;color:#555;line-height:1.6;margin:0}
+    .info-box{background:var(--bg2);border-radius:12px;padding:18px 20px;margin:16px 0}
+    .info-box h4{font-size:.8rem;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;margin-bottom:10px}
+    .info-box ul{padding-left:18px;font-size:.85rem;color:#444;line-height:1.9}
+    .tip-box{background:#fffbe8;border-left:3px solid #c8860a;border-radius:0 10px 10px 0;padding:12px 16px;margin:14px 0;font-size:.84rem;color:#7a5000;line-height:1.6}
+    .warn-box{background:#fff0e8;border-left:3px solid #e67e22;border-radius:0 10px 10px 0;padding:12px 16px;margin:14px 0;font-size:.84rem;color:#7a3a00;line-height:1.6}
+    .rent-table{width:100%;border-collapse:collapse;margin:16px 0}
+    .rent-table th{text-align:left;font-size:.72rem;font-weight:700;color:var(--muted);text-transform:uppercase;padding:8px 12px;border-bottom:2px solid var(--line);background:var(--bg2)}
+    .rent-table td{padding:10px 12px;border-bottom:1px solid var(--line);font-size:.84rem}
+    .rent-table tr:hover td{background:#fafafa}
+    .phrase-row{display:flex;gap:12px;align-items:baseline;padding:9px 0;border-bottom:1px solid var(--line);font-size:.85rem}
+    .phrase-kr{font-weight:700;color:var(--brown);min-width:160px}
+    .phrase-rom{color:var(--muted);font-style:italic;min-width:160px;font-size:.78rem}
+    .cta-banner{background:linear-gradient(135deg,#4a2800,#8a5000);color:#fff;border-radius:18px;padding:32px;text-align:center;margin-top:48px}
+    .cta-banner h3{font-size:1.3rem;font-weight:800;margin-bottom:8px}
+    .cta-banner p{opacity:.8;margin-bottom:20px;font-size:.88rem}
+    .btn{display:inline-block;padding:10px 22px;border-radius:10px;font-weight:700;font-size:.86rem;text-decoration:none;margin:4px}
+    .btn-white{background:#fff;color:#4a2800}
+    .btn-outline{border:2px solid rgba(255,255,255,.5);color:#fff}
+    footer{text-align:center;padding:24px 20px;border-top:1px solid var(--line);font-size:.8rem;color:var(--muted)}
+    footer a{color:inherit;text-decoration:none;margin:0 10px}
+    @media(max-width:600px){.hero h1{font-size:1.8rem}.content{padding:32px 16px 60px}}
+  </style>
+</head>
+<body>
+<header class="header">
+  <div class="header-in">
+    <a href="index.html" class="brand"><span>KR</span> Guide</a>
+    <nav class="nav">
+      <a href="living.html">Living in Korea</a>
+      <a href="travel.html">Travel</a>
+      <a href="index.html">Home</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="breadcrumb"><a href="index.html">Home</a> › <a href="living.html">Living in Korea</a> › Housing</div>
+  <h1>🏠 Housing in Korea for Foreigners</h1>
+  <p>Korea's rental system is unlike anywhere else in the world. Here's everything you need to know to find a home — from goshiwon to full apartment.</p>
+</div>
+
+<div class="content">
+
+  <h2>🏘️ Types of Housing</h2>
+  <div class="housing-grid">
+    <div class="housing-card">
+      <div class="icon">🛏️</div>
+      <h4>Goshiwon (고시원)</h4>
+      <div class="kr">고시원</div>
+      <p>Very small private rooms (4–8㎡) in a shared building. Usually includes utilities, basic furniture, sometimes breakfast. Popular with students and new arrivals.</p>
+      <span class="price">₩300,000–550,000/mo</span>
+    </div>
+    <div class="housing-card">
+      <div class="icon">🏠</div>
+      <h4>One-room / Studio (원룸)</h4>
+      <div class="kr">원룸</div>
+      <p>Single room with private bathroom and small kitchen. The most common housing type for single foreigners. Found everywhere in university areas.</p>
+      <span class="price">₩400,000–900,000/mo + deposit</span>
+    </div>
+    <div class="housing-card">
+      <div class="icon">🏢</div>
+      <h4>Officetel (오피스텔)</h4>
+      <div class="kr">오피스텔</div>
+      <p>Studio or 1-bedroom units in mixed commercial/residential buildings. Better quality than typical one-rooms, often newer buildings with amenities.</p>
+      <span class="price">₩700,000–1,500,000/mo</span>
+    </div>
+    <div class="housing-card">
+      <div class="icon">🏡</div>
+      <h4>Apartment (아파트)</h4>
+      <div class="kr">아파트</div>
+      <p>Standard Korean apartment complexes — from studios to large family units. Best quality and amenities. Requires larger deposit (전세 or higher 보증금).</p>
+      <span class="price">₩800,000–2,500,000+/mo</span>
+    </div>
+    <div class="housing-card">
+      <div class="icon">🏘️</div>
+      <h4>Share House (쉐어하우스)</h4>
+      <div class="kr">쉐어하우스</div>
+      <p>Shared house or apartment with other tenants. Private bedroom, shared kitchen and living room. Great for meeting people and keeping costs down.</p>
+      <span class="price">₩400,000–700,000/mo</span>
+    </div>
+    <div class="housing-card">
+      <div class="icon">🏯</div>
+      <h4>Hanok (한옥)</h4>
+      <div class="kr">한옥</div>
+      <p>Traditional Korean wooden houses — rare but increasingly available in Bukchon, Jeonju and some renovated areas. Charming but can be cold in winter.</p>
+      <span class="price">₩600,000–2,000,000/mo</span>
+    </div>
+  </div>
+
+  <h2>💡 Korea's Unique Rental System Explained</h2>
+
+  <div class="jeonse-box">
+    <h3>🏦 Jeonse (전세) — The Korean Lump Sum System</h3>
+    <p>Jeonse is unique to Korea — instead of paying monthly rent, you give the landlord a large lump sum deposit (typically 50–80% of the property value). You live rent-free for 1–2 years, then get the full deposit back.</p>
+    <div class="highlight">
+      <strong>Example:</strong> Apartment worth ₩300M → Jeonse deposit = ₩180M–240M → You pay ₩0/month → After 2 years, you get ₩180M–240M back in full.<br><br>
+      <strong>Why?</strong> Landlords invest the deposit and earn interest. If you have the capital, jeonse can be cheaper than renting long-term. But it requires significant upfront cash.
+    </div>
+  </div>
+
+  <div class="info-box">
+    <h4>월세 (Wolse) — Monthly Rent</h4>
+    <ul>
+      <li>Standard monthly rent model — pay a deposit (보증금) + monthly payment</li>
+      <li>Deposit is much smaller than jeonse (typically ₩1M–30M depending on property)</li>
+      <li>Most practical for short/medium stays and foreigners without large capital</li>
+      <li>Example: ₩5,000,000 deposit + ₩700,000/month for a Seoul one-room</li>
+    </ul>
+  </div>
+
+  <h2>🔍 How to Find Housing</h2>
+  <div class="step-item"><div class="step-num">1</div><div><h4>Use the major real estate apps</h4><p><strong>Zigbang (직방)</strong> and <strong>Dabang (다방)</strong> are the best apps for finding rentals. Filter by price, area, housing type. Both have maps. Naver Real Estate (네이버 부동산) is also good for apartments.</p></div></div>
+  <div class="step-item"><div class="step-num">2</div><div><h4>Visit a real estate agent (부동산)</h4><p>Look for 부동산 signs — real estate agencies are on almost every block. Bring your ARC and passport. Agent fee is typically 0.3–0.9% of annual rent, paid once. Some agents near universities speak English.</p></div></div>
+  <div class="step-item"><div class="step-num">3</div><div><h4>View the property in person</h4><p>Always visit before signing. Check: water pressure, heating system (온돌floor heating), mold in corners, noise from neighbors, distance to nearest subway/bus stop.</p></div></div>
+  <div class="step-item"><div class="step-num">4</div><div><h4>Have the contract reviewed</h4><p>Contracts are in Korean. Have a Korean-speaking friend, colleague or paid translator review before signing. Key terms: 계약 기간 (contract period), 보증금 (deposit), 월세 (monthly rent), 관리비 (maintenance fee).</p></div></div>
+  <div class="step-item"><div class="step-num">5</div><div><h4>Register your address</h4><p>After moving in, register your address at the local community center (주민센터) within 14 days. Required for mail, banking, and many official services. Bring your ARC and rental contract.</p></div></div>
+
+  <div class="warn-box">
+    <strong>⚠️ Watch out for:</strong> Illegal sublets (전대차) — make sure your landlord actually owns the property. For jeonse, check the property registration (등기부등본) at any legal office or online at iros.go.kr to confirm there's no outstanding mortgage that could risk your deposit.
+  </div>
+
+  <h2>💰 Average Rent in Seoul by Area (2026)</h2>
+  <table class="rent-table">
+    <thead><tr><th>Area</th><th>Character</th><th>One-room (월세)</th><th>Jeonse (one-room)</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Gangnam / Seocho</strong></td><td>Upscale, business</td><td>₩900K–1.5M/mo</td><td>₩200M–350M</td></tr>
+      <tr><td><strong>Mapo / Hongdae</strong></td><td>Young, trendy</td><td>₩600K–1M/mo</td><td>₩150M–250M</td></tr>
+      <tr><td><strong>Sinchon / Edae</strong></td><td>University area</td><td>₩500K–800K/mo</td><td>₩120M–200M</td></tr>
+      <tr><td><strong>Itaewon / Yongsan</strong></td><td>Expat-friendly</td><td>₩700K–1.2M/mo</td><td>₩160M–280M</td></tr>
+      <tr><td><strong>Nowon / Dobongsan</strong></td><td>Affordable, outer</td><td>₩400K–650K/mo</td><td>₩100M–160M</td></tr>
+      <tr><td><strong>Incheon</strong></td><td>Airport city</td><td>₩350K–600K/mo</td><td>₩80M–140M</td></tr>
+    </tbody>
+  </table>
+
+  <div class="tip-box">
+    <strong>💡 관리비 (Management fee):</strong> Most apartments charge a monthly management fee (관리비) on top of rent — typically ₩50,000–150,000/month. It covers building maintenance, garbage, sometimes heating/water. Always ask: 관리비 포함이에요? (Is management fee included?)
+  </div>
+
+  <h2>🗣️ Housing Korean Phrases</h2>
+  <div class="phrase-row"><span class="phrase-kr">방 구하고 있어요.</span><span class="phrase-rom">bang gu-ha-go i-sseo-yo.</span><span>I'm looking for a room.</span></div>
+  <div class="phrase-row"><span class="phrase-kr">월세로 보여주세요.</span><span class="phrase-rom">wol-se-ro bo-yeo-ju-se-yo.</span><span>Please show me monthly rent options.</span></div>
+  <div class="phrase-row"><span class="phrase-kr">보증금이 얼마예요?</span><span class="phrase-rom">bo-jeung-geum-i eol-ma-ye-yo?</span><span>How much is the deposit?</span></div>
+  <div class="phrase-row"><span class="phrase-kr">관리비 포함이에요?</span><span class="phrase-rom">gwal-li-bi po-ham-i-e-yo?</span><span>Is the management fee included?</span></div>
+  <div class="phrase-row"><span class="phrase-kr">언제부터 입주 가능해요?</span><span class="phrase-rom">eon-je-bu-teo ip-ju ga-neung-hae-yo?</span><span>When is it available to move in?</span></div>
+  <div class="phrase-row"><span class="phrase-kr">계약서 영어로 있어요?</span><span class="phrase-rom">gye-yak-seo yeong-eo-ro i-sseo-yo?</span><span>Is the contract available in English?</span></div>
+
+  <div class="cta-banner">
+    <h3>Settling into life in Korea?</h3>
+    <p>Learn Korean for daily life — housing, shopping, banking, workplace and more. 41 chapters.</p>
+    <a href="learn-korean.html" class="btn btn-white">Try Free — Ch.1~5</a>
+    <a href="living.html" class="btn btn-outline">← Back to Living Guide</a>
+  </div>
+</div>
+
+<footer>
+  <a href="index.html">Home</a>
+  <a href="living.html">Living in Korea</a>
+  <a href="post-korea-banking.html">Banking</a>
+  <a href="post-korea-healthcare.html">Healthcare</a>
+  <a href="contact.html">Contact</a>
+  <div style="margin-top:8px;font-size:.75rem;">© 2026 KR Guide. All rights reserved.</div>
+</footer>
+</body>
+</html>

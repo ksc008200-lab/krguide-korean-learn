@@ -1,0 +1,821 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Korean Travel Conversations — Essential Phrases for Every Situation | KR Guide</title>
+  <meta name="description" content="Real Korean conversations for travelers — airport, hotel, restaurant, taxi, shopping, directions, and emergencies. With pronunciation guides.">
+  <link rel="canonical" href="https://krguide.com/travel-conversations.html">
+  <style>
+    :root{--bg:#fff;--bg2:#f5f5f7;--txt:#1d1d1f;--muted:#86868b;--accent:#0071e3;--line:#e8e8eb;--green:#1a7a3c;--red:#c0392b}
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:-apple-system,BlinkMacSystemFont,system-ui,sans-serif;background:var(--bg);color:var(--txt);-webkit-font-smoothing:antialiased}
+    .header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.88);backdrop-filter:blur(20px);border-bottom:.5px solid rgba(0,0,0,.08)}
+    .header-in{max-width:1100px;margin:0 auto;padding:13px 24px;display:flex;justify-content:space-between;align-items:center}
+    .brand{font-weight:800;font-size:1.1rem;letter-spacing:-.03em;color:var(--txt);text-decoration:none}
+    .brand span{color:var(--accent)}
+    .nav a{color:var(--muted);text-decoration:none;font-size:.84rem;font-weight:500;margin-left:20px}
+    .nav a:hover{color:var(--txt)}
+
+    /* Hero */
+    .hero{background:linear-gradient(135deg,#0a2342,#1a5a9a);color:#fff;padding:52px 24px 44px;text-align:center}
+    .hero-badge{display:inline-block;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.25);border-radius:20px;padding:4px 14px;font-size:.72rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;margin-bottom:16px}
+    .hero h1{font-size:2.2rem;font-weight:900;letter-spacing:-.04em;margin-bottom:10px;line-height:1.15}
+    .hero p{font-size:.95rem;opacity:.82;max-width:540px;margin:0 auto 24px;line-height:1.6}
+    .hero-tips{display:flex;justify-content:center;gap:24px;flex-wrap:wrap}
+    .hero-tip{font-size:.8rem;opacity:.75}
+
+    /* Nav tabs */
+    .tab-nav{background:#fff;border-bottom:1px solid var(--line);overflow-x:auto;scrollbar-width:none;position:sticky;top:52px;z-index:40}
+    .tab-nav::-webkit-scrollbar{display:none}
+    .tab-nav-in{max-width:1100px;margin:0 auto;padding:0 24px;display:flex;gap:0;white-space:nowrap}
+    .tab-link{display:inline-block;padding:12px 18px;font-size:.82rem;font-weight:600;color:var(--muted);text-decoration:none;border-bottom:2px solid transparent;transition:all .15s}
+    .tab-link:hover{color:var(--txt)}
+    .tab-link.active{color:var(--accent);border-bottom-color:var(--accent)}
+
+    /* Content */
+    .content{max-width:900px;margin:0 auto;padding:40px 24px 80px}
+    .section-anchor{padding-top:20px}
+    .section-head{display:flex;align-items:center;gap:12px;margin-bottom:24px;padding-bottom:12px;border-bottom:2px solid var(--line)}
+    .section-icon{font-size:2rem}
+    .section-head h2{font-size:1.5rem;font-weight:800;letter-spacing:-.03em}
+    .section-head p{font-size:.84rem;color:var(--muted);margin-top:3px}
+
+    /* Conversation blocks */
+    .convo{margin-bottom:32px}
+    .convo-title{font-size:.82rem;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:12px;padding:6px 12px;background:var(--bg2);border-radius:8px;display:inline-block}
+    .bubble-wrap{display:flex;flex-direction:column;gap:10px}
+    .bubble{display:flex;gap:12px;align-items:flex-start}
+    .bubble.you{flex-direction:row-reverse}
+    .speaker{font-size:.7rem;font-weight:700;color:var(--muted);white-space:nowrap;padding-top:4px;min-width:36px;text-align:center}
+    .msg{max-width:80%}
+    .bubble.you .msg{text-align:right}
+    .kr{font-size:1.05rem;font-weight:700;color:#0a2342;margin-bottom:2px}
+    .bubble.you .kr{color:var(--green)}
+    .rom{font-size:.75rem;color:var(--muted);margin-bottom:1px;font-style:italic}
+    .en{font-size:.82rem;color:#555}
+    .tip-box{background:#fffbea;border-left:3px solid #f0c040;border-radius:0 10px 10px 0;padding:12px 16px;margin:16px 0;font-size:.83rem;color:#7a6000;line-height:1.6}
+    .tip-box strong{color:#5a4500}
+    .vocab-box{background:var(--bg2);border-radius:12px;padding:16px 20px;margin:16px 0}
+    .vocab-box h4{font-size:.8rem;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;margin-bottom:10px}
+    .vocab-row{display:flex;gap:8px;margin-bottom:6px;font-size:.84rem;align-items:baseline}
+    .vocab-kr{font-weight:700;color:var(--accent);min-width:120px}
+    .vocab-rom{color:var(--muted);font-style:italic;min-width:120px;font-size:.78rem}
+    .vocab-en{color:var(--txt)}
+
+    /* Phrase table */
+    .phrase-table{width:100%;border-collapse:collapse;margin:12px 0}
+    .phrase-table th{text-align:left;font-size:.72rem;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;padding:8px 12px;border-bottom:2px solid var(--line);background:var(--bg2)}
+    .phrase-table td{padding:10px 12px;border-bottom:1px solid var(--line);font-size:.84rem;vertical-align:top}
+    .phrase-table td:first-child{font-weight:700;color:#0a2342;font-size:.95rem}
+    .phrase-table td:nth-child(2){color:var(--muted);font-style:italic;font-size:.78rem}
+    .phrase-table tr:hover td{background:#fafafa}
+
+    /* Emergency */
+    .emergency-card{background:#fff0f0;border:1px solid #ffcccc;border-radius:14px;padding:20px;margin-bottom:12px}
+    .emergency-card h4{color:var(--red);font-size:.9rem;font-weight:700;margin-bottom:8px}
+    .emergency-kr{font-size:1.3rem;font-weight:900;color:var(--red);margin-bottom:4px}
+    .emergency-info{font-size:.82rem;color:#7a3030;margin-top:8px}
+
+    /* Numbers section */
+    .number-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:10px;margin:12px 0}
+    .number-card{background:var(--bg2);border-radius:10px;padding:12px;text-align:center}
+    .number-card .num{font-size:1.6rem;font-weight:900;color:var(--accent)}
+    .number-card .kr{font-size:1rem;font-weight:700;margin:2px 0}
+    .number-card .rom{font-size:.72rem;color:var(--muted)}
+
+    footer{text-align:center;padding:24px 20px;border-top:1px solid var(--line);font-size:.8rem;color:var(--muted)}
+    footer a{color:inherit;text-decoration:none;margin:0 10px}
+    @media(max-width:600px){.hero h1{font-size:1.7rem}.tab-link{padding:10px 12px;font-size:.76rem}.bubble{flex-direction:column!important}.bubble.you{align-items:flex-end}.msg{max-width:95%}}
+  </style>
+</head>
+<body>
+
+<header class="header">
+  <div class="header-in">
+    <a href="index.html" class="brand"><span>KR</span> Guide</a>
+    <nav class="nav">
+      <a href="travel.html">Travel</a>
+      <a href="learn-korean.html">Learn Korean</a>
+      <a href="index.html">Home</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="hero-badge">🗣️ Korean for Travelers</div>
+  <h1>Real Conversations for Every Situation</h1>
+  <p>From airport to restaurant to emergency — natural Korean dialogues with pronunciation and cultural tips.</p>
+  <div class="hero-tips">
+    <span class="hero-tip">✈️ Airport & Immigration</span>
+    <span class="hero-tip">🏨 Hotel</span>
+    <span class="hero-tip">🍜 Restaurant</span>
+    <span class="hero-tip">🚇 Transport</span>
+    <span class="hero-tip">🛍️ Shopping</span>
+    <span class="hero-tip">🗺️ Directions</span>
+    <span class="hero-tip">🚨 Emergency</span>
+  </div>
+</div>
+
+<nav class="tab-nav">
+  <div class="tab-nav-in">
+    <a href="#airport" class="tab-link active">✈️ Airport</a>
+    <a href="#hotel" class="tab-link">🏨 Hotel</a>
+    <a href="#restaurant" class="tab-link">🍜 Restaurant</a>
+    <a href="#transport" class="tab-link">🚇 Transport</a>
+    <a href="#shopping" class="tab-link">🛍️ Shopping</a>
+    <a href="#directions" class="tab-link">🗺️ Directions</a>
+    <a href="#numbers" class="tab-link">🔢 Numbers</a>
+    <a href="#emergency" class="tab-link">🚨 Emergency</a>
+  </div>
+</nav>
+
+<div class="content">
+
+<!-- ══ AIRPORT ══ -->
+<section id="airport" class="section-anchor">
+  <div class="section-head">
+    <div class="section-icon">✈️</div>
+    <div>
+      <h2>Airport & Immigration</h2>
+      <p>Arriving at Incheon International Airport (ICN) — the most common entry point to Korea</p>
+    </div>
+  </div>
+
+  <div class="convo">
+    <div class="convo-title">🛂 At Immigration (입국심사)</div>
+    <div class="bubble-wrap">
+      <div class="bubble">
+        <span class="speaker">Officer</span>
+        <div class="msg">
+          <div class="kr">방문 목적이 무엇인가요?</div>
+          <div class="rom">Bang-mun mok-jeok-i mu-eo-sin-ga-yo?</div>
+          <div class="en">What is the purpose of your visit?</div>
+        </div>
+      </div>
+      <div class="bubble you">
+        <span class="speaker">You</span>
+        <div class="msg">
+          <div class="kr">관광입니다.</div>
+          <div class="rom">Gwan-gwang-im-ni-da.</div>
+          <div class="en">I'm here for tourism.</div>
+        </div>
+      </div>
+      <div class="bubble">
+        <span class="speaker">Officer</span>
+        <div class="msg">
+          <div class="kr">얼마나 머무실 예정인가요?</div>
+          <div class="rom">Eol-ma-na meo-mu-sil ye-jeong-in-ga-yo?</div>
+          <div class="en">How long are you planning to stay?</div>
+        </div>
+      </div>
+      <div class="bubble you">
+        <span class="speaker">You</span>
+        <div class="msg">
+          <div class="kr">2주 동안 머물 예정입니다.</div>
+          <div class="rom">I-ju dong-an meo-mul ye-jeong-im-ni-da.</div>
+          <div class="en">I'm planning to stay for two weeks.</div>
+        </div>
+      </div>
+      <div class="bubble">
+        <span class="speaker">Officer</span>
+        <div class="msg">
+          <div class="kr">숙소 주소가 어떻게 되나요?</div>
+          <div class="rom">Suk-so ju-so-ga eo-tteo-ke doe-na-yo?</div>
+          <div class="en">What is your accommodation address?</div>
+        </div>
+      </div>
+      <div class="bubble you">
+        <span class="speaker">You</span>
+        <div class="msg">
+          <div class="kr">서울 명동 호텔에 묵을 예정입니다.</div>
+          <div class="rom">Seo-ul Myeong-dong ho-tel-e mu-gul ye-jeong-im-ni-da.</div>
+          <div class="en">I'll be staying at a hotel in Myeongdong, Seoul.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tip-box">
+    <strong>💡 Tip:</strong> Immigration officers at Incheon usually speak some English, but knowing these phrases shows respect and speeds things up. Have your return ticket and hotel booking ready to show.
+  </div>
+
+  <div class="convo">
+    <div class="convo-title">🧳 At Customs (세관)</div>
+    <div class="bubble-wrap">
+      <div class="bubble">
+        <span class="speaker">Officer</span>
+        <div class="msg">
+          <div class="kr">신고할 물건이 있으신가요?</div>
+          <div class="rom">Sin-go-hal mul-geon-i i-sseu-sin-ga-yo?</div>
+          <div class="en">Do you have anything to declare?</div>
+        </div>
+      </div>
+      <div class="bubble you">
+        <span class="speaker">You</span>
+        <div class="msg">
+          <div class="kr">없습니다.</div>
+          <div class="rom">Eop-seum-ni-da.</div>
+          <div class="en">Nothing to declare.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="vocab-box">
+    <h4>Airport Vocabulary</h4>
+    <div class="vocab-row"><span class="vocab-kr">공항</span><span class="vocab-rom">gong-hang</span><span class="vocab-en">airport</span></div>
+    <div class="vocab-row"><span class="vocab-kr">입국심사</span><span class="vocab-rom">ip-guk-sim-sa</span><span class="vocab-en">immigration</span></div>
+    <div class="vocab-row"><span class="vocab-kr">세관</span><span class="vocab-rom">se-gwan</span><span class="vocab-en">customs</span></div>
+    <div class="vocab-row"><span class="vocab-kr">수하물</span><span class="vocab-rom">su-ha-mul</span><span class="vocab-en">baggage / luggage</span></div>
+    <div class="vocab-row"><span class="vocab-kr">탑승구</span><span class="vocab-rom">tap-seung-gu</span><span class="vocab-en">gate</span></div>
+    <div class="vocab-row"><span class="vocab-kr">환전소</span><span class="vocab-rom">hwan-jeon-so</span><span class="vocab-en">currency exchange</span></div>
+    <div class="vocab-row"><span class="vocab-kr">관광</span><span class="vocab-rom">gwan-gwang</span><span class="vocab-en">tourism / sightseeing</span></div>
+  </div>
+</section>
+
+<!-- ══ HOTEL ══ -->
+<section id="hotel" class="section-anchor" style="margin-top:48px">
+  <div class="section-head">
+    <div class="section-icon">🏨</div>
+    <div>
+      <h2>Hotel Check-in & Requests</h2>
+      <p>Everything you need from arrival to checkout</p>
+    </div>
+  </div>
+
+  <div class="convo">
+    <div class="convo-title">🔑 Check-in (체크인)</div>
+    <div class="bubble-wrap">
+      <div class="bubble you">
+        <span class="speaker">You</span>
+        <div class="msg">
+          <div class="kr">체크인 하고 싶은데요.</div>
+          <div class="rom">Che-keu-in ha-go si-peun-de-yo.</div>
+          <div class="en">I'd like to check in.</div>
+        </div>
+      </div>
+      <div class="bubble">
+        <span class="speaker">Staff</span>
+        <div class="msg">
+          <div class="kr">예약 성함이 어떻게 되세요?</div>
+          <div class="rom">Ye-yak seong-ham-i eo-tteo-ke doe-se-yo?</div>
+          <div class="en">What name is the reservation under?</div>
+        </div>
+      </div>
+      <div class="bubble you">
+        <span class="speaker">You</span>
+        <div class="msg">
+          <div class="kr">제 이름으로 예약했어요. [이름]입니다.</div>
+          <div class="rom">Je i-reum-eu-ro ye-yak-haess-eo-yo. [name]-im-ni-da.</div>
+          <div class="en">I made a reservation under my name. It's [name].</div>
+        </div>
+      </div>
+      <div class="bubble">
+        <span class="speaker">Staff</span>
+        <div class="msg">
+          <div class="kr">여권 보여주시겠어요?</div>
+          <div class="rom">Yeo-gwon bo-yeo-ju-si-gess-eo-yo?</div>
+          <div class="en">Could you show me your passport?</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="convo">
+    <div class="convo-title">🛎️ Requesting Items (프론트 요청)</div>
+    <div class="bubble-wrap">
+      <div class="bubble you">
+        <span class="speaker">You</span>
+        <div class="msg">
+          <div class="kr">수건 좀 더 가져다 주시겠어요?</div>
+          <div class="rom">Su-geon jom deo ga-jyeo-da ju-si-gess-eo-yo?</div>
+          <div class="en">Could you bring more towels?</div>
+        </div>
+      </div>
+      <div class="bubble you">
+        <span class="speaker">You</span>
+        <div class="msg">
+          <div class="kr">와이파이 비밀번호가 뭐예요?</div>
+          <div class="rom">Wa-i-pa-i bi-mil-beon-ho-ga mwo-ye-yo?</div>
+          <div class="en">What's the Wi-Fi password?</div>
+        </div>
+      </div>
+      <div class="bubble you">
+        <span class="speaker">You</span>
+        <div class="msg">
+          <div class="kr">에어컨 작동이 안 돼요.</div>
+          <div class="rom">E-eo-kon jak-dong-i an dwae-yo.</div>
+          <div class="en">The air conditioning isn't working.</div>
+        </div>
+      </div>
+      <div class="bubble you">
+        <span class="speaker">You</span>
+        <div class="msg">
+          <div class="kr">체크아웃은 몇 시까지예요?</div>
+          <div class="rom">Che-keu-a-ut-eun myeot si-kka-ji-ye-yo?</div>
+          <div class="en">What time is checkout?</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tip-box">
+    <strong>💡 Korean Hotel Tip:</strong> Most Korean hotels have a key card that controls the room's electricity — insert it into the slot by the door when you enter. Also, room slippers are provided and it's normal to wear them inside.
+  </div>
+</section>
+
+<!-- ══ RESTAURANT ══ -->
+<section id="restaurant" class="section-anchor" style="margin-top:48px">
+  <div class="section-head">
+    <div class="section-icon">🍜</div>
+    <div>
+      <h2>Restaurant & Ordering Food</h2>
+      <p>Korea's food culture is unique — use these to navigate it like a local</p>
+    </div>
+  </div>
+
+  <div class="convo">
+    <div class="convo-title">🪑 Getting a Table (자리 잡기)</div>
+    <div class="bubble-wrap">
+      <div class="bubble you">
+        <span class="speaker">You</span>
+        <div class="msg">
+          <div class="kr">두 명이에요.</div>
+          <div class="rom">Du myeong-i-e-yo.</div>
+          <div class="en">There are two of us.</div>
+        </div>
+      </div>
+      <div class="bubble you">
+        <span class="speaker">You</span>
+        <div class="msg">
+          <div class="kr">자리 있어요?</div>
+          <div class="rom">Ja-ri i-sseo-yo?</div>
+          <div class="en">Do you have a table available?</div>
+        </div>
+      </div>
+      <div class="bubble">
+        <span class="speaker">Staff</span>
+        <div class="msg">
+          <div class="kr">이쪽으로 오세요.</div>
+          <div class="rom">I-jjo-geu-ro o-se-yo.</div>
+          <div class="en">Please come this way.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="convo">
+    <div class="convo-title">📋 Ordering (주문하기)</div>
+    <div class="bubble-wrap">
+      <div class="bubble you">
+        <span class="speaker">You</span>
+        <div class="msg">
+          <div class="kr">저기요!</div>
+          <div class="rom">Jeo-gi-yo!</div>
+          <div class="en">Excuse me! (calling a server)</div>
+        </div>
+      </div>
+      <div class="bubble you">
+        <span class="speaker">You</span>
+        <div class="msg">
+          <div class="kr">이거 주세요.</div>
+          <div class="rom">I-geo ju-se-yo.</div>
+          <div class="en">I'll have this one, please. (pointing at menu)</div>
+        </div>
+      </div>
+      <div class="bubble you">
+        <span class="speaker">You</span>
+        <div class="msg">
+          <div class="kr">삼겹살 2인분 주세요.</div>
+          <div class="rom">Sam-gyeop-sal i-in-bun ju-se-yo.</div>
+          <div class="en">Two servings of samgyeopsal, please.</div>
+        </div>
+      </div>
+      <div class="bubble you">
+        <span class="speaker">You</span>
+        <div class="msg">
+          <div class="kr">맵지 않게 해주세요.</div>
+          <div class="rom">Maep-ji an-ke hae-ju-se-yo.</div>
+          <div class="en">Please make it not spicy.</div>
+        </div>
+      </div>
+      <div class="bubble you">
+        <span class="speaker">You</span>
+        <div class="msg">
+          <div class="kr">물 한 잔 주세요.</div>
+          <div class="rom">Mul han jan ju-se-yo.</div>
+          <div class="en">One glass of water, please.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="convo">
+    <div class="convo-title">💳 Paying the Bill (계산하기)</div>
+    <div class="bubble-wrap">
+      <div class="bubble you">
+        <span class="speaker">You</span>
+        <div class="msg">
+          <div class="kr">계산해 주세요.</div>
+          <div class="rom">Gye-san-hae ju-se-yo.</div>
+          <div class="en">Check, please. / I'd like to pay.</div>
+        </div>
+      </div>
+      <div class="bubble you">
+        <span class="speaker">You</span>
+        <div class="msg">
+          <div class="kr">카드 돼요?</div>
+          <div class="rom">Ka-deu dwae-yo?</div>
+          <div class="en">Can I pay by card?</div>
+        </div>
+      </div>
+      <div class="bubble you">
+        <span class="speaker">You</span>
+        <div class="msg">
+          <div class="kr">따로따로 계산해 주세요.</div>
+          <div class="rom">Tta-ro-tta-ro gye-san-hae ju-se-yo.</div>
+          <div class="en">Please bill us separately.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tip-box">
+    <strong>💡 Restaurant Culture:</strong> In Korea, you call the server by saying <strong>저기요!</strong> (jeo-gi-yo) — it means "Excuse me" and is never rude. Tipping is NOT expected and can be awkward. Water is usually self-service (무료 — free). Many restaurants have a call button on the table.
+  </div>
+
+  <table class="phrase-table">
+    <thead><tr><th>Korean</th><th>Pronunciation</th><th>Meaning</th></tr></thead>
+    <tbody>
+      <tr><td>맛있어요!</td><td>ma-si-sseo-yo</td><td>It's delicious!</td></tr>
+      <tr><td>맛없어요.</td><td>ma-deop-sseo-yo</td><td>It doesn't taste good.</td></tr>
+      <tr><td>너무 매워요.</td><td>neo-mu mae-wo-yo</td><td>It's too spicy.</td></tr>
+      <tr><td>알레르기 있어요.</td><td>al-le-reu-gi i-sseo-yo</td><td>I have an allergy.</td></tr>
+      <tr><td>채식주의자예요.</td><td>chae-sik-ju-ui-ja-ye-yo</td><td>I'm a vegetarian.</td></tr>
+      <tr><td>영수증 주세요.</td><td>yeong-su-jeung ju-se-yo</td><td>Please give me a receipt.</td></tr>
+      <tr><td>포장해 주세요.</td><td>po-jang-hae ju-se-yo</td><td>Please pack it to go.</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- ══ TRANSPORT ══ -->
+<section id="transport" class="section-anchor" style="margin-top:48px">
+  <div class="section-head">
+    <div class="section-icon">🚇</div>
+    <div>
+      <h2>Transportation</h2>
+      <p>Subway, bus, taxi and KTX — getting around Korea</p>
+    </div>
+  </div>
+
+  <div class="convo">
+    <div class="convo-title">🚇 Subway (지하철)</div>
+    <div class="bubble-wrap">
+      <div class="bubble you">
+        <span class="speaker">You</span>
+        <div class="msg">
+          <div class="kr">명동역 어떻게 가요?</div>
+          <div class="rom">Myeong-dong-yeok eo-tteo-ke ga-yo?</div>
+          <div class="en">How do I get to Myeongdong Station?</div>
+        </div>
+      </div>
+      <div class="bubble you">
+        <span class="speaker">You</span>
+        <div class="msg">
+          <div class="kr">이 열차가 홍대입구역 가나요?</div>
+          <div class="rom">I yeol-cha-ga Hong-dae-ip-gu-yeok ga-na-yo?</div>
+          <div class="en">Does this train go to Hongik University Station?</div>
+        </div>
+      </div>
+      <div class="bubble you">
+        <span class="speaker">You</span>
+        <div class="msg">
+          <div class="kr">어디서 갈아타야 해요?</div>
+          <div class="rom">Eo-di-seo ga-ra-ta-ya hae-yo?</div>
+          <div class="en">Where do I transfer?</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="convo">
+    <div class="convo-title">🚕 Taxi (택시)</div>
+    <div class="bubble-wrap">
+      <div class="bubble you">
+        <span class="speaker">You</span>
+        <div class="msg">
+          <div class="kr">경복궁으로 가주세요.</div>
+          <div class="rom">Gyeong-bok-gung-eu-ro ga-ju-se-yo.</div>
+          <div class="en">Please take me to Gyeongbokgung Palace.</div>
+        </div>
+      </div>
+      <div class="bubble you">
+        <span class="speaker">You</span>
+        <div class="msg">
+          <div class="kr">여기서 세워 주세요.</div>
+          <div class="rom">Yeo-gi-seo se-wo ju-se-yo.</div>
+          <div class="en">Please stop here.</div>
+        </div>
+      </div>
+      <div class="bubble you">
+        <span class="speaker">You</span>
+        <div class="msg">
+          <div class="kr">얼마예요?</div>
+          <div class="rom">Eol-ma-ye-yo?</div>
+          <div class="en">How much is it?</div>
+        </div>
+      </div>
+      <div class="bubble you">
+        <span class="speaker">You</span>
+        <div class="msg">
+          <div class="kr">카드로 낼게요.</div>
+          <div class="rom">Ka-deu-ro nael-ge-yo.</div>
+          <div class="en">I'll pay by card.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tip-box">
+    <strong>💡 Transport Tips:</strong><br>
+    • Buy a <strong>T-money card</strong> (티머니) at any convenience store — works on subway, bus and taxi nationwide. Tap to pay, much cheaper than buying tickets.<br>
+    • <strong>Kakao Taxi</strong> app is the best taxi app — shows price estimate, accepts foreign cards, has English mode.<br>
+    • Subway announcements are in Korean, English, Chinese and Japanese.
+  </div>
+
+  <table class="phrase-table">
+    <thead><tr><th>Korean</th><th>Pronunciation</th><th>Meaning</th></tr></thead>
+    <tbody>
+      <tr><td>...역</td><td>...yeok</td><td>...Station</td></tr>
+      <tr><td>다음 역</td><td>da-eum yeok</td><td>next station</td></tr>
+      <tr><td>종점</td><td>jong-jeom</td><td>last stop / terminus</td></tr>
+      <tr><td>출구</td><td>chul-gu</td><td>exit</td></tr>
+      <tr><td>입구</td><td>ip-gu</td><td>entrance</td></tr>
+      <tr><td>환승</td><td>hwan-seung</td><td>transfer</td></tr>
+      <tr><td>버스 정류장</td><td>beo-seu jeong-nyu-jang</td><td>bus stop</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- ══ SHOPPING ══ -->
+<section id="shopping" class="section-anchor" style="margin-top:48px">
+  <div class="section-head">
+    <div class="section-icon">🛍️</div>
+    <div>
+      <h2>Shopping</h2>
+      <p>Myeongdong, Dongdaemun, Olive Young — shop like a local</p>
+    </div>
+  </div>
+
+  <div class="convo">
+    <div class="convo-title">💰 Asking Prices & Buying (가격 흥정)</div>
+    <div class="bubble-wrap">
+      <div class="bubble you">
+        <span class="speaker">You</span>
+        <div class="msg">
+          <div class="kr">이거 얼마예요?</div>
+          <div class="rom">I-geo eol-ma-ye-yo?</div>
+          <div class="en">How much is this?</div>
+        </div>
+      </div>
+      <div class="bubble you">
+        <span class="speaker">You</span>
+        <div class="msg">
+          <div class="kr">좀 깎아 주세요.</div>
+          <div class="rom">Jom kka-kka ju-se-yo.</div>
+          <div class="en">Can you give me a discount?</div>
+        </div>
+      </div>
+      <div class="bubble you">
+        <span class="speaker">You</span>
+        <div class="msg">
+          <div class="kr">이거 살게요.</div>
+          <div class="rom">I-geo sal-ge-yo.</div>
+          <div class="en">I'll take this.</div>
+        </div>
+      </div>
+      <div class="bubble you">
+        <span class="speaker">You</span>
+        <div class="msg">
+          <div class="kr">다른 색 있어요?</div>
+          <div class="rom">Da-reun saek i-sseo-yo?</div>
+          <div class="en">Do you have this in another color?</div>
+        </div>
+      </div>
+      <div class="bubble you">
+        <span class="speaker">You</span>
+        <div class="msg">
+          <div class="kr">입어봐도 돼요?</div>
+          <div class="rom">I-beo-bwa-do dwae-yo?</div>
+          <div class="en">Can I try this on?</div>
+        </div>
+      </div>
+      <div class="bubble you">
+        <span class="speaker">You</span>
+        <div class="msg">
+          <div class="kr">영수증 주세요. 면세 되나요?</div>
+          <div class="rom">Yeong-su-jeung ju-se-yo. Myeon-se doe-na-yo?</div>
+          <div class="en">Receipt please. Is this tax-free?</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tip-box">
+    <strong>💡 Shopping Tips:</strong><br>
+    • <strong>Tax Refund (환급)</strong>: Foreigners can get VAT (10%) refunded at the airport on purchases over ₩30,000. Look for "Tax Free" signs.<br>
+    • Bargaining is OK at <strong>Dongdaemun</strong> and traditional markets, but NOT at Olive Young, department stores, or convenience stores.<br>
+    • <strong>Olive Young</strong> (K-beauty) has an English app with member discounts — download before you go.
+  </div>
+</section>
+
+<!-- ══ DIRECTIONS ══ -->
+<section id="directions" class="section-anchor" style="margin-top:48px">
+  <div class="section-head">
+    <div class="section-icon">🗺️</div>
+    <div>
+      <h2>Asking for Directions</h2>
+      <p>Get back on track when you're lost</p>
+    </div>
+  </div>
+
+  <div class="convo">
+    <div class="convo-title">📍 Finding Places (길 찾기)</div>
+    <div class="bubble-wrap">
+      <div class="bubble you">
+        <span class="speaker">You</span>
+        <div class="msg">
+          <div class="kr">죄송한데요, 길 좀 여쭤봐도 될까요?</div>
+          <div class="rom">Joe-song-han-de-yo, gil jom yeo-jwo-bwa-do doel-kka-yo?</div>
+          <div class="en">Excuse me, may I ask for directions?</div>
+        </div>
+      </div>
+      <div class="bubble you">
+        <span class="speaker">You</span>
+        <div class="msg">
+          <div class="kr">경복궁이 어디예요?</div>
+          <div class="rom">Gyeong-bok-gung-i eo-di-ye-yo?</div>
+          <div class="en">Where is Gyeongbokgung Palace?</div>
+        </div>
+      </div>
+      <div class="bubble you">
+        <span class="speaker">You</span>
+        <div class="msg">
+          <div class="kr">지하철역이 어디예요?</div>
+          <div class="rom">Ji-ha-cheol-yeok-i eo-di-ye-yo?</div>
+          <div class="en">Where is the subway station?</div>
+        </div>
+      </div>
+      <div class="bubble you">
+        <span class="speaker">You</span>
+        <div class="msg">
+          <div class="kr">걸어서 얼마나 걸려요?</div>
+          <div class="rom">Geo-reo-seo eol-ma-na geol-lyeo-yo?</div>
+          <div class="en">How long does it take on foot?</div>
+        </div>
+      </div>
+      <div class="bubble you">
+        <span class="speaker">You</span>
+        <div class="msg">
+          <div class="kr">길을 잃었어요.</div>
+          <div class="rom">Gi-reul i-reo-sseo-yo.</div>
+          <div class="en">I'm lost.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <table class="phrase-table">
+    <thead><tr><th>Korean</th><th>Pronunciation</th><th>Direction</th></tr></thead>
+    <tbody>
+      <tr><td>오른쪽</td><td>o-reun-jjok</td><td>right</td></tr>
+      <tr><td>왼쪽</td><td>oen-jjok</td><td>left</td></tr>
+      <tr><td>직진</td><td>jik-jin</td><td>straight ahead</td></tr>
+      <tr><td>여기</td><td>yeo-gi</td><td>here</td></tr>
+      <tr><td>저기</td><td>jeo-gi</td><td>over there</td></tr>
+      <tr><td>근처</td><td>geun-cheo</td><td>nearby</td></tr>
+      <tr><td>멀어요</td><td>meo-reo-yo</td><td>it's far</td></tr>
+      <tr><td>가까워요</td><td>ga-kka-wo-yo</td><td>it's close</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- ══ NUMBERS ══ -->
+<section id="numbers" class="section-anchor" style="margin-top:48px">
+  <div class="section-head">
+    <div class="section-icon">🔢</div>
+    <div>
+      <h2>Numbers & Prices</h2>
+      <p>Korea uses two number systems — Sino-Korean for prices, floors and phone numbers</p>
+    </div>
+  </div>
+
+  <div class="number-grid">
+    <div class="number-card"><div class="num">1</div><div class="kr">일</div><div class="rom">il</div></div>
+    <div class="number-card"><div class="num">2</div><div class="kr">이</div><div class="rom">i</div></div>
+    <div class="number-card"><div class="num">3</div><div class="kr">삼</div><div class="rom">sam</div></div>
+    <div class="number-card"><div class="num">4</div><div class="kr">사</div><div class="rom">sa</div></div>
+    <div class="number-card"><div class="num">5</div><div class="kr">오</div><div class="rom">o</div></div>
+    <div class="number-card"><div class="num">6</div><div class="kr">육</div><div class="rom">yuk</div></div>
+    <div class="number-card"><div class="num">7</div><div class="kr">칠</div><div class="rom">chil</div></div>
+    <div class="number-card"><div class="num">8</div><div class="kr">팔</div><div class="rom">pal</div></div>
+    <div class="number-card"><div class="num">9</div><div class="kr">구</div><div class="rom">gu</div></div>
+    <div class="number-card"><div class="num">10</div><div class="kr">십</div><div class="rom">sip</div></div>
+    <div class="number-card"><div class="num">100</div><div class="kr">백</div><div class="rom">baek</div></div>
+    <div class="number-card"><div class="num">1,000</div><div class="kr">천</div><div class="rom">cheon</div></div>
+    <div class="number-card"><div class="num">10,000</div><div class="kr">만</div><div class="rom">man</div></div>
+    <div class="number-card"><div class="num">100,000</div><div class="kr">십만</div><div class="rom">sim-man</div></div>
+  </div>
+
+  <div class="tip-box">
+    <strong>💡 Price Examples:</strong><br>
+    ₩5,000 → 오천 원 (o-cheon won)<br>
+    ₩15,000 → 만오천 원 (man-o-cheon won)<br>
+    ₩50,000 → 오만 원 (o-man won)<br><br>
+    When shopping, you can simply say the price in English — most vendors understand. Or just show the number on your phone calculator.
+  </div>
+</section>
+
+<!-- ══ EMERGENCY ══ -->
+<section id="emergency" class="section-anchor" style="margin-top:48px">
+  <div class="section-head">
+    <div class="section-icon">🚨</div>
+    <div>
+      <h2>Emergency Phrases</h2>
+      <p>Korea is very safe, but know these just in case</p>
+    </div>
+  </div>
+
+  <div class="emergency-card">
+    <h4>🚑 Medical Emergency</h4>
+    <div class="emergency-kr">살려주세요!</div>
+    <div style="font-size:.82rem;color:#888;margin-bottom:6px;">sal-lyeo-ju-se-yo — Help me! / Save me!</div>
+    <div class="emergency-kr">구급차를 불러주세요!</div>
+    <div style="font-size:.82rem;color:#888;margin-bottom:6px;">gu-geup-cha-reul bul-leo-ju-se-yo — Call an ambulance!</div>
+    <div class="emergency-info">Emergency number: <strong>119</strong> (fire & ambulance) | Police: <strong>112</strong></div>
+  </div>
+
+  <div class="emergency-card">
+    <h4>👮 Police / Lost Items</h4>
+    <div class="emergency-kr">도둑이야!</div>
+    <div style="font-size:.82rem;color:#888;margin-bottom:6px;">do-du-gi-ya — Thief!</div>
+    <div class="emergency-kr">지갑을 잃어버렸어요.</div>
+    <div style="font-size:.82rem;color:#888;margin-bottom:6px;">ji-ga-beul i-reo-beo-ryeo-sseo-yo — I lost my wallet.</div>
+    <div class="emergency-kr">경찰을 불러주세요.</div>
+    <div style="font-size:.82rem;color:#888;margin-bottom:6px;">gyeong-cha-reul bul-leo-ju-se-yo — Please call the police.</div>
+    <div class="emergency-info">Lost & Found: <strong>☎ 182</strong> (Korean Lost Property Center)</div>
+  </div>
+
+  <div class="emergency-card">
+    <h4>🏥 Hospital / Pharmacy</h4>
+    <div class="emergency-kr">병원이 어디예요?</div>
+    <div style="font-size:.82rem;color:#888;margin-bottom:6px;">byeong-won-i eo-di-ye-yo — Where is the hospital?</div>
+    <div class="emergency-kr">약국이 어디예요?</div>
+    <div style="font-size:.82rem;color:#888;margin-bottom:6px;">yak-gug-i eo-di-ye-yo — Where is the pharmacy?</div>
+    <div class="emergency-kr">여기가 아파요.</div>
+    <div style="font-size:.82rem;color:#888;margin-bottom:6px;">yeo-gi-ga a-pa-yo — It hurts here. (pointing)</div>
+    <div class="emergency-info">Most large hospitals have English-speaking staff. Search "foreigner-friendly hospital Korea" for a list.</div>
+  </div>
+
+  <div class="tip-box">
+    <strong>💡 Safety in Korea:</strong> Korea ranks among the world's safest countries. The streets are well-lit, CCTV is everywhere, and people are generally very helpful to lost tourists. If you need help, ask at any convenience store (GS25, CU, 7-Eleven) — staff can often help or call for you.
+  </div>
+</section>
+
+<!-- CTA -->
+<div style="margin-top:56px;background:linear-gradient(135deg,#0a2342,#1a5a9a);border-radius:18px;padding:36px;text-align:center;color:#fff;">
+  <h3 style="font-size:1.4rem;font-weight:800;margin-bottom:10px;">Want to go deeper?</h3>
+  <p style="opacity:.8;margin-bottom:24px;">Learn full Korean from scratch — 41 chapters covering grammar, culture, K-pop and more.</p>
+  <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+    <a href="learn-korean.html" style="background:#fff;color:#0a2342;padding:11px 22px;border-radius:10px;font-weight:700;font-size:.88rem;text-decoration:none;">Try Free — Ch.1~5</a>
+    <a href="ebook-landing.html" style="background:#c0392b;color:#fff;padding:11px 22px;border-radius:10px;font-weight:700;font-size:.88rem;text-decoration:none;">Full Course $9.90</a>
+  </div>
+</div>
+
+</div><!-- /content -->
+
+<footer>
+  <a href="index.html">Home</a>
+  <a href="travel.html">Travel</a>
+  <a href="travel-conversations.html">Conversations</a>
+  <a href="learn-korean.html">Learn Korean</a>
+  <a href="privacy.html">Privacy</a>
+  <a href="contact.html">Contact</a>
+  <div style="margin-top:8px;font-size:.75rem;">© 2026 KR Guide. All rights reserved.</div>
+</footer>
+
+<script>
+  // Highlight active tab on scroll
+  const sections = document.querySelectorAll('.section-anchor');
+  const tabs = document.querySelectorAll('.tab-link');
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(s => { if (window.scrollY >= s.offsetTop - 120) current = s.id; });
+    tabs.forEach(t => {
+      t.classList.toggle('active', t.getAttribute('href') === '#' + current);
+    });
+  });
+</script>
+</body>
+</html>
