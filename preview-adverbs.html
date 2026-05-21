@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="UTF-8">
+<title>맛보기 · 200 Essential Korean Adverbs</title>
+<style>
+  @page { size: A4; margin: 16mm 12mm; } * { box-sizing: border-box; }
+  body { font-family: 'Noto Sans KR','Malgun Gothic',sans-serif; color:#1a1a2e; margin:0; line-height:1.45; }
+  .page-break { page-break-before: always; }
+  .cover { text-align:center; padding:60px 20px 30px; border-bottom:4px solid #C0392B; margin-bottom:22px; }
+  .cover .label { font-size:12px; font-weight:700; letter-spacing:3px; color:#C0392B; text-transform:uppercase; margin-bottom:14px; }
+  .cover h1 { font-size:30px; margin:0 0 8px; color:#1a1a2e; font-weight:800; }
+  .cover .kr { font-size:22px; color:#1A4A8A; font-weight:700; margin:0 0 18px; }
+  .cover .desc { font-size:13px; color:#555; max-width:600px; margin:0 auto; line-height:1.7; }
+  .cover .features { margin-top:24px; display:flex; justify-content:center; gap:14px; flex-wrap:wrap; }
+  .cover .feat { background:#1a1a2e; color:#fff; padding:6px 14px; border-radius:18px; font-size:11px; font-weight:600; }
+  h2.cat-h { background:linear-gradient(135deg,#1a1a2e,#16213e); color:#fff; padding:14px 22px; margin:0 0 14px; font-size:18px; border-left:6px solid #C0392B; }
+  .scenario-box { background:#fff8f0; border-left:4px solid #f97316; padding:14px 18px; margin-bottom:14px; border-radius:6px; }
+  .scenario-box .sb-title { font-weight:800; color:#9a3412; font-size:13px; margin-bottom:8px; }
+  .scenario-box .dl-line { font-size:12px; margin:3px 0; }
+  .scenario-box .dl-speaker { color:#C0392B; font-weight:700; margin-right:6px; }
+  .compare-box { background:#f0f5ff; border-left:4px solid #1A4A8A; padding:14px 18px; margin-bottom:16px; border-radius:6px; }
+  .compare-box .cb-title { font-weight:800; color:#1e3a8a; font-size:13px; margin-bottom:8px; }
+  .compare-box .cb-pair { font-size:12px; margin:3px 0; display:flex; gap:12px; }
+  .compare-box .cb-ko { color:#1a1a2e; font-weight:700; min-width:200px; }
+  .compare-box .cb-en { color:#666; font-style:italic; }
+  table { width:100%; border-collapse:collapse; font-size:10.5px; table-layout:fixed; margin-bottom:14px; }
+  thead th { background:#1a1a2e; color:#fff; padding:7px 6px; font-size:10px; letter-spacing:0.4px; border-bottom:2px solid #C0392B; }
+  th.num-col{width:28px;} th.k-col{width:75px;} th.r-col{width:65px;} th.en-col{width:120px;} th.qr-col{width:34px;}
+  td { padding:6px 8px; border-bottom:1px solid #e5e5ea; vertical-align:top; word-break:keep-all; }
+  tr:nth-child(even) td { background:#fafafa; }
+  td.num { text-align:center; color:#888; font-weight:600; font-size:10px; }
+  td.k   { font-weight:600; color:#1a1a2e; font-size:13px; }
+  td.r   { color:#6b6b6b; font-style:italic; font-size:10.5px; }
+  td.en  { color:#1A4A8A; font-size:11px; }
+  td.ex .ex-ko { display:block; color:#C0392B; font-weight:600; font-size:10.5px; }
+  td.ex .ex-en { display:block; color:#666; font-style:italic; font-size:10px; margin-top:1px; }
+  td.ex em { font-style:normal; background:#fef3c7; color:#92400e; padding:0 3px; border-radius:3px; font-weight:700; }
+  td.qr { text-align:center; padding:3px; } td.qr img { width:30px; height:30px; }
+  tr.section td { background:linear-gradient(135deg,#1a1a2e,#16213e) !important; color:#fff; font-weight:800; font-size:11px; padding:7px 12px; text-transform:uppercase; }
+  tr.section td::before { content:"▸  "; color:#f97316; }
+  tr.quiz-row td { padding:0; }
+  .quiz { background:linear-gradient(135deg,#fffbeb,#fef3c7); border:2px solid #f59e0b; border-radius:10px; padding:14px 18px; margin:14px 0; }
+  .quiz .q-title { font-size:14px; font-weight:800; color:#92400e; margin-bottom:6px; }
+  .quiz .q-sub { font-size:11px; color:#78350f; margin-bottom:10px; font-style:italic; }
+  .quiz .q-item { font-size:11px; margin:6px 0; padding:6px 10px; background:#fff; border-radius:6px; }
+  .quiz .q-num { font-weight:800; color:#C0392B; margin-right:6px; }
+  .quiz .q-word { font-weight:800; color:#1a1a2e; font-size:13px; }
+  .quiz .q-opt { display:inline-block; margin-right:12px; color:#444; }
+  .answer-key { background:#f9fafb; padding:20px 24px; border-radius:8px; }
+  .ak-row { padding:6px 0; border-bottom:1px solid #e5e5ea; font-size:12px; }
+  .ak-row strong { color:#C0392B; }
+</style><style>
+#license-modal { position:fixed; top:0; left:0; right:0; bottom:0; background:rgba(0,0,0,0.7); display:none; align-items:center; justify-content:center; z-index:9999; }
+#license-modal .lm-box { background:#fff; padding:32px; border-radius:14px; max-width:420px; width:90%; box-shadow:0 20px 60px rgba(0,0,0,0.3); text-align:center; }
+#license-modal h3 { margin:0 0 12px; font-size:20px; color:#1a1a2e; }
+#license-modal p { color:#666; margin:0 0 16px; font-size:13px; }
+#license-modal input { width:100%; padding:12px; font-size:14px; border:2px solid #e5e5ea; border-radius:8px; text-align:center; font-family:'Courier New',monospace; }
+#license-modal input:focus { border-color:#C0392B; outline:none; }
+#license-modal .license-msg { font-size:12px; min-height:18px; margin:10px 0; }
+#license-modal .license-msg.err { color:#C0392B; }
+#license-modal .license-msg.ok  { color:#059669; }
+#license-modal .lm-btn { display:block; width:100%; padding:12px; border:none; border-radius:8px; font-size:14px; font-weight:700; cursor:pointer; margin-top:8px; }
+#license-modal .lm-btn.primary { background:#1a1a2e; color:#fff; }
+#license-modal .lm-btn.primary:hover { background:#C0392B; }
+#license-modal .lm-btn.ghost { background:transparent; color:#666; }
+#license-modal .lm-buy { display:block; margin-top:14px; padding:10px; background:#fef3c7; color:#92400e; border-radius:8px; text-decoration:none; font-size:13px; font-weight:700; }
+</style>
+<style>
+  .topbar { background:#1a1a2e; color:#fff; padding:12px 20px; display:flex; align-items:center; gap:14px; font-size:13px; }
+  .topbar a { color:#fff; text-decoration:none; font-weight:700; }
+  .topbar .brand { color:#C0392B; font-size:15px; font-weight:800; }
+  .topbar .spacer { flex:1; }
+  .preview-banner { background:#fef3c7; color:#92400e; padding:10px 20px; text-align:center; font-size:13px; font-weight:700; border-bottom:2px solid #f59e0b; }
+</style>
+</head><body>
+
+<div class="topbar">
+  <a href="learn-korean.html" class="brand">🇰🇷 KR Guide</a>
+  <a href="learn-korean.html">메인 가이드</a>
+  <a href="vocab-hub.html">📚 학습 자료</a>
+  <div class="spacer"></div>
+  
+<div id="google_translate_element"></div>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'ko', includedLanguages: 'en,ja,zh-CN,zh-TW,es,fr,de,vi,th,id,ar,ru,pt'}, 'google_translate_element');
+}
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</div>
+
+<div class="preview-banner">🔓 맛보기 · Free Preview (10%) — 전체 학습은 결제 후 가능합니다</div>
+
+
+<div class="cover">
+  <div class="label">Korean Essential Adverbs · Enhanced</div>
+  <h1>200 Essential Korean Adverbs</h1>
+  <div class="kr">필수 부사 200개 · 향상판</div>
+  <p class="desc">By category — adverb · romanization · English meaning · example sentence — plus scenario dialogues, comparison boxes, mini quizzes, and pronunciation QR codes.</p>
+  <div class="features">
+    <span class="feat">🎭 시나리오</span><span class="feat">🔍 비교</span><span class="feat">📝 퀴즈</span><span class="feat">🔊 QR</span>
+  </div>
+</div>
+</tbody></table>
+<div class="page-break"></div>
+<h2 class="cat-h">🌟 1. 시간 부사</h2>
+<div class="scenario-box"><div class="sb-title">🎭 시나리오 대화 · Scenario Dialogue</div><div class="dl-line"><span class="dl-speaker">민수:</span> <span class="dl-text">오늘 일찍 일어났어요?</span></div><div class="dl-line"><span class="dl-speaker">지영:</span> <span class="dl-text">아니요, 늦게 일어났어요. 어제 늦게 잤거든요.</span></div><div class="dl-line"><span class="dl-speaker">민수:</span> <span class="dl-text">이따가 점심 같이 먹을래요?</span></div><div class="dl-line"><span class="dl-speaker">지영:</span> <span class="dl-text">좋아요. 자주 가는 식당으로 가요.</span></div><div class="dl-line"><span class="dl-speaker">민수:</span> <span class="dl-text">내일도 만나요!</span></div></div><div class="compare-box"><div class="cb-title">🔍 비교 박스 · Comparison</div><div class="cb-pair"><span class="cb-ko">일찍 ↔ 늦게</span><span class="cb-en">early ↔ late</span></div><div class="cb-pair"><span class="cb-ko">아까 ↔ 이따가</span><span class="cb-en">a while ago ↔ a little later</span></div><div class="cb-pair"><span class="cb-ko">이미 / 벌써 ↔ 아직</span><span class="cb-en">already ↔ yet/still</span></div><div class="cb-pair"><span class="cb-ko">자주 ↔ 가끔</span><span class="cb-en">often ↔ sometimes</span></div><div class="cb-pair"><span class="cb-ko">어제 / 오늘 / 내일</span><span class="cb-en">yesterday / today / tomorrow</span></div></div>
+
+<table><thead><tr><th class="num-col">#</th><th class="k-col">부사</th><th class="r-col">발음</th><th class="en-col">English</th><th>예문 Example</th><th class="qr-col">🔊</th></tr></thead><tbody>
+<tr><th class="num-col">#</th><th class="k-col">부사</th><th class="r-col">발음</th><th class="en-col">English</th><th>예문 Example</th><th class="qr-col">🔊</th></tr><tr class="section"><td colspan="6">현재·과거·미래 PRESENT / PAST / FUTURE</td></tr><tr><td class="num">1</td><td class="k">지금</td><td class="r">ji-geum</td><td class="en">Now</td><td class="ex"><span class="ex-ko">지금 뭐 해요?</span><span class="ex-en">What are you doing <em>now</em>?</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGAQAAAABZVd8pAAABPElEQVR4nFVSsWrDMBB99mkJHCgf0KVQ6GRQcZaAgr32k7oXuuZvuiqoEAIGGbr2I2RkCAUZlbYpvWi543h37907VQW/b6kvCQCHoLtkwaIW8uCzzWX4r6ll/fp0HsdZ4Gpg9cJb85P94YC7NcX+WdQQcvAFV/Mq1w/fcSN5S4kZVEoWHG8HOhLGh7XUTDFq11mBg2fDprSDFVpMO4HUsPkUuCEWnxx7yeu1h87USV40K8KIQy9wWbe29ZQErirTB847p4WnaqLZ3KQeJ9GbXMfkTRb6kFPk6JjkHoHhU2ItvZ/bqdnt72FkL0dtE9mreaHj1rsr/44LnFug5B6leNIpONFbH6ptg9VC4m61zu98eyTeS//YZ2+c1KyARiE9nsSNFEB25v0sNYc8WCIEqW9SQIQ2o/T0koh/+gWlII4PAOAdjQAAAABJRU5ErkJggg==" alt="QR"/></td></tr><tr><td class="num">2</td><td class="k">오늘</td><td class="r">o-neul</td><td class="en">Today</td><td class="ex"><span class="ex-ko">오늘 날씨가 좋아요.</span><span class="ex-en">The weather is nice <em>today</em>.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGAQAAAABZVd8pAAABMElEQVR4nFWSQWrDMBBFfzyGUhCMr1DItmCQoRQcFOi2h+lReptuVbSdIENX3XcbsLEhmwkqaQoZz+rzGM18fWlTcK1z9S8ARIw5qcIZllVVRYvcWHVulqHp9p8wDBiWHwx/6sZc+OLWMmQtUsbVvHqqBQegs3tLUSmOixqWxtCnkpNlkZML5F1vmIykrGm2bA6s4oLas1lG4izB7K1BLw47eOtZXExtnoOZV9MHXo80nd+tlx6JNLPtY2r7+7vn7WDvgeLh2WaAxKR8CbuyWYXkmbKZV+G0tIel74y/Gt/R0ZGaleeQVKTFKj/nHWdYf5uCQ8eLTCaD6nNzyg+6c2+GsZ4fM2iJq1zmmSSSfTdxM4O8mL0XtfUunmwGWaOoG1vbN9WMp7nh/crftcw//QVwRZNVm2CcEwAAAABJRU5ErkJggg==" alt="QR"/></td></tr><tr><td class="num">3</td><td class="k">어제</td><td class="r">eo-je</td><td class="en">Yesterday</td><td class="ex"><span class="ex-ko">어제 뭐 먹었어요?</span><span class="ex-en">What did you eat <em>yesterday</em>?</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGAQAAAABZVd8pAAABM0lEQVR4nG2SMWvDMBCFL5aXwIEMnQoZA50CAncpCGzIWshf6x8yXNBQCiry2ilLV4OLDFkuXElbyAmqReLj3bvH6VYCv+dS/T0AgCCDWA+oWGKKnljijVWXxsHY90dQDOD0sHTjz+vGdpswOs1qM79O+wnM+42tqI/X+1H3FZljB1ZY50OIQULrta41krzjIjMKWw5Z60JyjNB57ZchxNYbUzCxNgFKkcVhdil32i91GZFy1LUJOBhOVunqxTb57W73eV/0bdkTBe3HwXEKXOQjF0JrTdJ+aGA3PMN21DP9QFtPpnlStTG3jORI+0W6Do+M+ksQIUw2kWYERE4w6r6Wz3g6muVF+2HMJpJRs6oBzpthv13PxR5chsO0zn2xVxE9zLPKV33VC52lOSjd6p89/QYBcZaAKb2QygAAAABJRU5ErkJggg==" alt="QR"/></td></tr><tr><td class="num">4</td><td class="k">내일</td><td class="r">nae-il</td><td class="en">Tomorrow</td><td class="ex"><span class="ex-ko">내일 만나요.</span><span class="ex-en">Let&#x27;s meet <em>tomorrow</em>.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGAQAAAABZVd8pAAABI0lEQVR4nF2SQWvDMAyFX6tcBhrudbAfEfBgDDJSyB83+KriQH/ALr0OHBwYAwWN0UHV6WLzoff0ZLwzXGvb/10AJNSSVcE3tg/K29sMS65PuCpjSHJjHfCxXA4z4LTAOp5D7xmKNrWq5rVLJ7/ni5sLMxPjYOpYrv2QrWTPLDCPFHlwTNU0aG6e1aYqPKrTducNE+dtOjm2xWfGO6LPbCKtL230fmYDq9XB7YHCmklL8H3SRmMaot8tc4qIwb8BKo0aivp8kNRyDFS8X25DA43kWPfwdGH6pIPPLBRMpIfz26/feJxoDscb2xlOR1pl8fkSSu6Nxc8tmtUspLt8XBtJIq8V1gCK4ucC6xo5fc13fomVa+/7lo7Tazv8y3ct909/AKsangwsfbMjAAAAAElFTkSuQmCC" alt="QR"/></td></tr><tr><td class="num">5</td><td class="k">이미</td><td class="r">i-mi</td><td class="en">Already</td><td class="ex"><span class="ex-ko">이미 알고 있었어요.</span><span class="ex-en">I <em>already</em> knew.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGAQAAAABZVd8pAAABMUlEQVR4nG1SQWoDMQzUxntZECgP6DHQU2BheykYvNBrIC/pO3rtD/qSgIp7NDjQB/QFAS8OlIKCStscZKguFoM8GknTKfzFZXVNAIChgpIHNFgWTp5Fk8ESFo/g2WArgOPTORx/s2v0ABPG3WgxyJIlSMPX8Zx+3jvbV7WmAKRi9SGlqHHyBhNCzX4U+7dwFZJYbV0OVRCCN3z99nIcboe3Rp+6ShlQDV/H4ODxZbOzu4phQuSaDF+XFzrPX+/ztplDNJGvVh/7Kp45Wn1xSpKjWH2QS4gTudzMoVCKb/j6y8LUn9z6vqkTQR654cMxTZ6dvaVqpkzZ3hIYYhoVk+nbkzj4eHXn58YHXF1iZ7UA0M3hYTOUxhvLYX8a6tz6AD2UYvStlh74U9d7U9f949Nv5n+cQ8gPg6MAAAAASUVORK5CYII=" alt="QR"/></td></tr><tr><td class="num">6</td><td class="k">벌써</td><td class="r">beol-sseo</td><td class="en">Already (sooner than expected)</td><td class="ex"><span class="ex-ko">벌써 왔어요?</span><span class="ex-en">You&#x27;re here <em>already</em>?</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGAQAAAABZVd8pAAABK0lEQVR4nG2SsUoEMRCG/3W2WQjkWnvBSliIZWQPbAUfw5fwIXwYW2Ekgs0cOfAhrA5yZMvIiCjcBEyT8PHnz5+ZGRS/6+vs7wCAUaE+whmWG0vkpmKYuNIcIhs2Antalx3QseDS3dwxKu/T4wG0O7GBt/KzX9t3VYss8NpsPudj0hSi9fs8/3A3q2yMroKab6kaHSSH5rBE4zfiyPvL6c3mg9TFZzi1WQprnXNdrB8H8Y6rdPlKTtSyt7oSVMXH2tXUcYvMyepSnltOzeaDxCTBU+7/oVpi7ydApVKp04Wijme2fjmGFCKT7aVqdtln20swpM7qxNbZN9rgldanbg44kTCZLCOA+HJ7MZUTOwPc7v4w1a1hVFZcjc9HNnePozxAh8XM5PDPnH4D1bCWFXMTIZoAAAAASUVORK5CYII=" alt="QR"/></td></tr><tr><td class="num">7</td><td class="k">아직</td><td class="r">a-jik</td><td class="en">Yet / Still</td><td class="ex"><span class="ex-ko">아직 안 왔어요.</span><span class="ex-en">They haven&#x27;t come <em>yet</em>.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGAQAAAABZVd8pAAABNElEQVR4nFWSwWrDMAyG1SgwBgLlDUbfIOBCGaQksOveY9c93B7Axb0UXFzodcfBrg4x9KKgUTqo4ovNh/j1S79XCvczV/8PAPCQUxABMiyJiETR+GDV3JSh2Qx7eLAa4PwFzRkMqwDo5cKtZZBERfNCrx7reLs3tq+qRiVWMXqHcYDD5A9WT5ilR0edYVGCsITJsoCdROrF6NXza3miML+drD9UZqLeeKnWx93POvxCa3eVgEVzZ+aACC6gJLZ9Rb0Sds7o1WWga3GXbPtOqRe+LbsynlsfHGMyehUhtKfSbewOoneKeUJbh/g8H793s1/ki8QJrL+Vwv4dSxztvPsV+LXs6HORW1JV9tZfpDxh9Ghzi5QZ0EWbGwAXR/56XupFodzaurEeP7ZTw8PC3/2Yf/oHUXSbfRv3TqMAAAAASUVORK5CYII=" alt="QR"/></td></tr><tr class="section"><td colspan="6">시점·순서 TIMING &amp; ORDER</td></tr><tr><td class="num">8</td><td class="k">일찍</td><td class="r">il-jjik</td><td class="en">Early</td><td class="ex"><span class="ex-ko">일찍 일어났어요.</span><span class="ex-en">I woke up <em>early</em>.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGAQAAAABZVd8pAAABI0lEQVR4nFWSwUoEMQyG/93OMdC5evLiVShUEGFk9gF8XB+gUo+RDvgKXoUOHdhLhoiusGlO4SP986f8B8Wl9uN/AyChliwCurKjF9qfFmgybB83jA+nNxgGLHdfWP66K6PbTx8sQxFlraJ8ZcM6MD6AB7MXqkpKXsWwXANnLdmyGieZXaTJsAaIl9wsK6rCNEunx3C+8GzvvT9HwvOp86xoLZQ2d3oueNE6mTuQgmQnxXdedFJyU7S3NfiI6O0fIEcVX6TzV6cpR++K1eOWG9zsDDviZif3/dp55laFOcDqpcDOF1h/B8X7CzZerb+EIkGJ7Q4v61jgNpMDMLXsODn7lqkpXGSz9zcHQ6R0XrocFBKqwc6tw5Ye2+hPnb9LmZz+AG8xlnnZvFmVAAAAAElFTkSuQmCC" alt="QR"/></td></tr><tr><td class="num">9</td><td class="k">늦게</td><td class="r">neut-ge</td><td class="en">Late</td><td class="ex"><span class="ex-ko">늦게 도착했어요.</span><span class="ex-en">I arrived <em>late</em>.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGAQAAAABZVd8pAAABJklEQVR4nG2Sv2oDMQzGdfEtAYGHToWMgU6Fg+vo4ECnQh+ub9OpoKJVoLxBxk6BKw5kUVHpH6gM9WLx49Mnydbg8HM+Vr8BABA08FwAA1MjKWQugQkuiFAosBXA8e1cD9/RH7vd8GGKDNRYqnV+A+3l676Ldd0bVshusT8EYee5RFaTa5ks5rJky8Yt6pwnQ6gl+jVkmUtKkYlyVkDv/Aq0SVvt6rZZkZrEXBPjZJr7/qpLLi36LdisEHHUsWZTtr6/qfCckwbdQGm9hUd4vo5viuBpaSnoVnAjsD7sXqjTicyFUvxLd86aNf4lELBOjhL8xmyXh+NrOj91eyAtCaUw2wiQNi/32/XSsfPp6rRvu24PRAosS5h3fB8JLz7UsJPDP3v6Cd/umh3rIBpqAAAAAElFTkSuQmCC" alt="QR"/></td></tr><tr><td class="num">10</td><td class="k">아까</td><td class="r">a-kka</td><td class="en">A little while ago</td><td class="ex"><span class="ex-ko">아까 전화했어요.</span><span class="ex-en">I called <em>a while ago</em>.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGAQAAAABZVd8pAAABJ0lEQVR4nFWSQWrDQAxFfyxvCgL5Cj1AYcCBbgLOtscoFHpNl+mmoDKGHKCbQFeFCQ50I6PSJlBZK/H4+l8jZuO41NJcGwAjaslm4MCKmZma6z9rlu48ddv9CwIDpqcjpr/uWi3AHwe5iwzFXL2u/NpTq3gHtjHX3dlZ3ALLNWn2kiMzURuo512ctcHE8hxZFTXlweKsI5EUHVa5hUSYI2vweHO8zZ9IQadUi3ndhXfAUslkRWLuPMCZdn3wa6el3577Q32POk8mv8duAlPLvVCJfoXKDBoosBZvC9MXdas7ezHVhOg3jsJSEPfbOF4f6KyneIMRqslZV7k2uruM0U+5zqQjxVllF1CvQdcAy7nn8Xta+WU1rinqTi2e7+dO9qv9LhX+6Q+dN6FW86VNwQAAAABJRU5ErkJggg==" alt="QR"/></td></tr><tr><td class="num">11</td><td class="k">이따가</td><td class="r">i-tta-ga</td><td class="en">A little later</td><td class="ex"><span class="ex-ko">이따가 봐요.</span><span class="ex-en">See you <em>later</em>.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAABOAQAAAACm0R2wAAABcElEQVR4nG2TQWpcMQyG/4kelAGD5wbddDvgomwKBgey6qpn6DEKhdIDFHqAHiPbgIu3Cm/gbQPZBLL14IEQ8EOlpS1WU62EEB+fJHuj+B3r2Z8MQEZTl0KHG6tzL17Ro8pQndbd/f5Qdvg+9p4BC60f7uuv9G+I6zk2ljwSMHep4OIs9zjJrQB5YxxUtXCOqt34OkhwII6jg39ofLhiWY1DC+o1V1gHmVssLIVGwnT6WMhtH9dr41A15diS9rEXuaNSyBRtb6IS4Aub2ZabN1uvR3wxZqU19SVqNFwF+d6FuuEWDrE0pWSmaC6mFmt1z3xD5jkZrrhcuXawudtjCQsWKpLNNdfLrXt7vr+5MARfNDFms3VI7p6DUDVcunyxxwFPLy33SWjrXk3HMG4n4PTZ4Z2/MtvJkErcZTZc38NS8wVh5P6cTWoHYN4DAL49Z8jInQDsrr/Cv/9mfKvbn+jT67t/HOZEvgRzi81//9AP8lCxdIeOJdkAAAAASUVORK5CYII=" alt="QR"/></td></tr><tr><td class="num">12</td><td class="k">나중에</td><td class="r">na-jung-e</td><td class="en">Later</td><td class="ex"><span class="ex-ko">나중에 연락할게요.</span><span class="ex-en">I&#x27;ll contact you <em>later</em>.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAABOAQAAAACm0R2wAAABeElEQVR4nG2TQYpUMRCG/zd5mweBNLgSXPa2IVK9ESJp6AN4BsEDeAMRPIAH8BizFSI1IELJa5iVq97MVoi8hkGoR4RBJSXWqvj5+fOlKhkaftd69acDULA0H6LC9+qsHFrU1KRTx3VztzvxBp967xVw69bHd/Wh/VvitaSFpPQJmFVqcOxN7lAO8tDsDUNrjSmm1tTwekj0cJQMA2U6XZOslgEallJhGdiFJCTs+oRx/XJ0mO7Xj4Zhaa0kyk17L7RQdSguWd7MHEtgMqe1qJJbrYZhELfSZjvxc8NbvQ+axKnJLbMkpuayyV1AWbVWb3eRp7fHm+OZoslNvlJVkOXlzJEbm11AESV7qtJ7B0b0h8vX+dXUz2x6fTlvV9l/f9Kr+Lym+xN+PipGfXZx3/x2RE82Ep9+wL8I12YOBaV6UpnN3YLS7VIODn0uxM+iCsC+B1zoZk+QPncEps3uPcLLD73XVbd75948Pf/DwLkFjmYXw3//0C+Mm7E/HaOY8wAAAABJRU5ErkJggg==" alt="QR"/></td></tr><tr><td class="num">13</td><td class="k">먼저</td><td class="r">meon-jeo</td><td class="en">First / In advance</td><td class="ex"><span class="ex-ko">먼저 드세요.</span><span class="ex-en">Please eat <em>first</em>.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGAQAAAABZVd8pAAABRElEQVR4nFVSwWYEQRB9PTXE0sySU9hLWPYUmtnL0DFDriHfk7/Yv9nT0quXFXr1kGt+IXT0MkKPjiTL1vSlyvO66tWrEhn/bywuCQADX7VRQzLMJ2eTTtldsXKcb1+Hvj8zXgHMjrJRf9kVW46HbcexksJ7lCLR6YoJ07nfuOZ9cw4alHNimDXREnk14bUpVKbVnOddkCrXTrO+WD2CSrf+ZryUWhuNtLyesRZVopbVK9BIQo99x+rpW5XWA+KM/XVBOQvjuVd4kctF7PDGeEEHSVYlrk8OC3z2HzdMn8gnOivc0Y7P5uugTF0zfSKLPH/YzhvuM+pxHPpdy/YrjKRxdcJTM/HZVlX0hmkp9qIBZiPxXVbpEO6PJDd8XumcVYa4906mgKjd9DbwrOTmrKZ3lYjguc9f5XAMqFTPZ7sk7E5/AKcij3DkYH+tAAAAAElFTkSuQmCC" alt="QR"/></td></tr><tr><td class="num">14</td><td class="k">미리</td><td class="r">mi-ri</td><td class="en">Ahead of time</td><td class="ex"><span class="ex-ko">미리 준비했어요.</span><span class="ex-en">I prepared <em>in advance</em>.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGAQAAAABZVd8pAAABOklEQVR4nG2SvWoDMQyAleiWAxcXOhU6FjoFDO5ouEAeIK/SR+mrdOoUUHEgFBR8D1Do0vXAwYFQ8KHSH4gO6sXiQ5Y+25oJ/K5x/hcAAEEBsQGMYqkSB6rCirHJwUAgxeYA/fOx63+iM/M3sXeaNZh3w2oA3J/ZjJb8vd/rviKZO7BStZ8BjhJ9UCxblBRcVWcbu8BxOexOTtdDqAa6oOo1+89df9dutR8UEZvAiHYhR9Gl0um+FZ01VFj7pVoi1mRVXnM4Xcjr1eLjWjEYy/jwBP3Ez/uaYtV+ULJnbzHpvtF7ySEU7cc1CeaCOo/RVkOOJn7BsQ+E+i9Fok026b8EAiYnhvU9bMX+/QWPj5M5YI9MqN8eAN42q9s2T+bguFkPbVlO3iqaADkrv/mhaekkl2uVN/tnTr8AORmZTOJxEeIAAAAASUVORK5CYII=" alt="QR"/></td></tr><tr><td class="num">15</td><td class="k">방금</td><td class="r">bang-geum</td><td class="en">Just now</td><td class="ex"><span class="ex-ko">방금 끝났어요.</span><span class="ex-en">It <em>just</em> finished.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGAQAAAABZVd8pAAABJElEQVR4nG2STWoDMQxGNdVsAgYXcoVCVwXDdOkyAz1Mr9MLFRTcTcGgOUAgJwi4KNCNgkp/IHKpNzYP+enD1mDws85XvwcAIBCwmCE4xko1k1q9sKvzdYJ1WXbgGMDh6TSv36cLu9uXNXkGrKXO2vkGWurXfu/7mkmYIZr6fCHWYmXKjlXJxjmpvyuEGrWIrzMRDTBn5xvP5+3b7ea1y2cFI0OwzpeSJJa564uBA0n1+SRDQeXY9WWzGrN4Xwuomaj4OppQuajPB9xKnSJy13dK1nLvqw0Fm6CvY1YLlMj7aqIyZUL39mDGgSOTZwRkyUJ1vjEqrIcdnp69L5QJK6HLMgJs9i+PN5vWMThuj4s8/JmDDK35/3gfC3zYMLuZHP6Z00+QJp8UcKe4tAAAAABJRU5ErkJggg==" alt="QR"/></td></tr><tr><td class="num">16</td><td class="k">금방</td><td class="r">geum-bang</td><td class="en">Soon / Just now</td><td class="ex"><span class="ex-ko">금방 올게요.</span><span class="ex-en">I&#x27;ll be back <em>soon</em>.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGAQAAAABZVd8pAAABJElEQVR4nFWSQUoEQQxFv51ZBtI3EMEDNJQgwkjPbbxmSbmM1IArV24EV0IN1TCbNBFUmHRW4ZHU//XJleOv1uG/AZDRajEDX9ggxuvDEZ4DW8cF493hGYEBH7efOP52F7Zcv8kUGaq5ejPXC9uddopX4C7owt3YWdwCK23W4rVEZinZTIn3cTd3Eys9sk57U55ts6sTSdU56rbZRZgjG3h9zTflC1PMqkxi3vbhHzBOhaxK1M1FnGmfooYZEpLEDNBpNqm28ddz1iRU43vam4FmCmxH7/eNvmmMOWvvrjphkx8SS0X0d+V4eZRFT9FfhtbJWcPcIHZeK2gJdwBlT6SZ4q5yE1DSoDsAtCTO5+PmDrIatynOnXb8dN9HOWz8/VW40x+/PJgs5FdfDgAAAABJRU5ErkJggg==" alt="QR"/></td></tr><tr><td class="num">17</td><td class="k">곧</td><td class="r">got</td><td class="en">Soon</td><td class="ex"><span class="ex-ko">곧 도착해요.</span><span class="ex-en">I&#x27;ll arrive <em>soon</em>.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGAQAAAABZVd8pAAABIklEQVR4nG2SMWpDMQyG9eq3FAQOdO3YAzxwl4KKA5kCvWynTgUFrwou9AA9QcDBD7IoqJR2kKFebD6kX78lTQa/53rz9wAABmWLBOhYVVFiNXFM0ASB2LEZ4BDWfAQYWMLysngGVQtmHfQm3srP/ejrmjXKEE29PwxUrCTycVFrpUV9riBp1NJ9XEtREDJ5PQOQRCF41kK1CmheT9sSl9qz1ysJCbmLz1WmFLTGwV+mKpH68DcJSszFx9UapRYd/ClnSTHUoW5XazTozbi/fMApbJ58D4pm5IW9nkAJiTj43hscIWz57P0xSF8MxdWdo677r0NY3SxvrpvPtxVfd+PMr/fvu4dbHhic7k7b/jzulRC05vzN55nxYlN2Ozn9s6ffRsmYDcvk+IUAAAAASUVORK5CYII=" alt="QR"/></td></tr><tr class="section"><td colspan="6">결과·빈도 RESULT &amp; FREQUENCY</td></tr><tr><td class="num">18</td><td class="k">드디어</td><td class="r">deu-di-eo</td><td class="en">Finally</td><td class="ex"><span class="ex-ko">드디어 졸업했어요!</span><span class="ex-en">I&#x27;ve <em>finally</em> graduated!</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAABOAQAAAACm0R2wAAABWElEQVR4nG2TQWpcMQyGNePZBDR4toVuCrMNGDRLF89heqBcJQcoaHAgG4FnmxNk6+AH3eihQmnBeo1X4sN8/i3LO4O/a93/qwCAgVMSE8CZNjUoONRkovv1tCRejtcbzBTgAb/XcYcNhdflurKj0HQkxeC9O77Kn+LiMphVGULFdPa+HNNyDG8r3Cd6WH996T2ew+nRGTLK6ITdeQexlowFZy8MyX1EVPIZgja1VCDPtGJQIiHz3jCYCxLOdwPVHKmRbjIUKiNroDnDjiF+QLzk+895r8RGofVandf6ICnKzeeNVOt/eQ0jJS4YZsPh9g4nWYGev7oXkhiCqRR3Wh3arcXYfB80BxpMvmdCXGppmJxBEihkgk0yayDVmsx0f9t9K+f1ssLTZialRIq+D4LCUhCCMwAs+cf93LubPkET7qFuZ51VxdTR/cchLq/peIo8v9Cnf+g3KcO6x3TUPIcAAAAASUVORK5CYII=" alt="QR"/></td></tr><tr><td class="num">19</td><td class="k">결국</td><td class="r">gyeol-guk</td><td class="en">Eventually / In the end</td><td class="ex"><span class="ex-ko">결국 포기했어요.</span><span class="ex-en"><em>In the end</em> I gave up.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGAQAAAABZVd8pAAABJ0lEQVR4nG1Su2oEMQzUrrZZMDgfcOVB2g1O6WMPUqW6X8sPHSg4pcD7AQf5goCDD7bRopAHRA5xYzOMRyNpOoXvs/U/DwAgqKA+gjNYFpJIomwwdkUcRDJYD7Cs13n5ev1iYZeWyWKQJfEsjV5HR/68721d1eJm8CrWnwNOmkK0GCbNcRL7l2ESL6k2vITiYI5Gb8DHabkdXxp/5JPP4NToDWHbyl3eHyfDkyDsqLL1x5ITSva2rgRU9rE2MyWUSJQsT2uQnMT6A3XCwWNu+y1a4h891oqlouH1Gx7cuBzOZHnOpxAJ7S5VyWWf7S6BIKVJHRu9wct6eX3G61OTA67IhHZWAOvu/LAfS5OD8Xx6G+uxyQG7CKWYfvv3YaVVb06G1/2T0w+Mv52hf4PjFAAAAABJRU5ErkJggg==" alt="QR"/></td></tr>
+</tbody></table>
+
+
+<div class="paywall-cta" style="margin:40px auto; max-width:720px; background:linear-gradient(135deg,#1a1a2e,#16213e); color:#fff; padding:32px 28px; border-radius:14px; text-align:center;">
+  <div style="font-size:32px; margin-bottom:10px;">🔒</div>
+  <h2 style="font-size:22px; margin:0 0 8px; color:#fff;">전체 콘텐츠는 결제 후 학습 가능합니다</h2>
+  <p style="margin:0 0 18px; opacity:0.85; font-size:14px;">위 미리보기는 약 10%입니다. 전체 <strong>200 adverbs</strong>, 모든 예문·시나리오·퀴즈·QR 코드까지 잠금 해제하려면:</p>
+  <a href="https://jssmn21.gumroad.com/l/gnefla" target="_blank" style="display:inline-block; background:#f97316; color:#fff; padding:14px 32px; border-radius:8px; text-decoration:none; font-weight:800; font-size:15px; margin:4px;">💳 Gumroad에서 구매 — $9.90</a>
+  <button onclick="showLicenseModal()" style="display:inline-block; background:transparent; color:#fff; padding:14px 32px; border:2px solid #fff; border-radius:8px; cursor:pointer; font-weight:800; font-size:15px; margin:4px;">🔓 이미 구매했어요</button>
+  <p style="margin-top:16px; font-size:12px; opacity:0.7;">키 1개로 <strong>모든 8개 자료</strong> 잠금 해제</p>
+  <p style="margin-top:20px;"><a href="vocab-hub.html" style="color:#f97316; text-decoration:none; font-weight:700;">← 다른 자료 둘러보기</a></p>
+</div>
+
+
+
+<div id="license-modal" style="display:none">
+  <div class="lm-box">
+    <h3>🔓 라이선스 키 입력</h3>
+    <p>Gumroad에서 구매 후 이메일로 받은 라이선스 키를 입력하세요.</p>
+    <input id="license-key-input" type="text" placeholder="XXXX-XXXX-XXXX-XXXX" maxlength="40" autocomplete="off">
+    <div class="license-msg" id="license-msg"></div>
+    <button class="lm-btn primary" onclick="unlockWithKey()">잠금 해제</button>
+    <button class="lm-btn ghost" onclick="closeLicenseModal()">취소</button>
+    <a href="https://jssmn21.gumroad.com/l/gnefla" target="_blank" class="lm-buy">💳 아직 구매 안 했어요 — Gumroad에서 구매</a>
+  </div>
+</div>
+
+
+<script>
+(function() {
+  const STORAGE_KEY = 'krguide_license_v1';
+  const GUMROAD_LINK = 'https://jssmn21.gumroad.com/l/gnefla';
+
+  function isUnlocked() {
+    try {
+      const d = JSON.parse(localStorage.getItem(STORAGE_KEY));
+      return d && d.valid === true;
+    } catch(e) { return false; }
+  }
+
+  function markUnlocked(key) {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify({valid:true,key:key,ts:Date.now()}));
+  }
+
+  window.unlockWithKey = function() {
+    const input = document.getElementById('license-key-input');
+    const msg = document.getElementById('license-msg');
+    const key = (input.value || '').trim().toUpperCase();
+    if (!key) { msg.textContent = '라이선스 키를 입력하세요.'; msg.className = 'license-msg err'; return; }
+    // For now: any non-empty key unlocks (server verification can be added later via worker)
+    // Real verification should call /api/verify endpoint
+    fetch('/api/verify', {
+      method:'POST', headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({license_key: key})
+    }).then(r => r.json()).then(data => {
+      if (data && data.success) {
+        markUnlocked(key);
+        msg.textContent = '✅ 잠금 해제 완료! 페이지를 새로고침합니다…';
+        msg.className = 'license-msg ok';
+        setTimeout(() => location.reload(), 800);
+      } else {
+        msg.textContent = data.error || '잘못된 키입니다.';
+        msg.className = 'license-msg err';
+      }
+    }).catch(() => {
+      // Offline / no server: dev fallback — accept any 16+ char key
+      if (key.length >= 12) {
+        markUnlocked(key);
+        msg.textContent = '✅ 잠금 해제 완료 (오프라인 모드)';
+        msg.className = 'license-msg ok';
+        setTimeout(() => location.reload(), 800);
+      } else {
+        msg.textContent = '서버 연결 실패. 키 형식을 확인하세요 (12자 이상).';
+        msg.className = 'license-msg err';
+      }
+    });
+  };
+
+  window.showLicenseModal = function() {
+    document.getElementById('license-modal').style.display = 'flex';
+    document.getElementById('license-key-input').focus();
+  };
+  window.closeLicenseModal = function() {
+    document.getElementById('license-modal').style.display = 'none';
+  };
+
+  // Apply lock on DOMContentLoaded
+  document.addEventListener('DOMContentLoaded', function() {
+    if (isUnlocked()) {
+      document.body.classList.add('unlocked');
+    } else {
+      document.body.classList.add('locked');
+    }
+  });
+})();
+</script>
+
+
+</body></html>

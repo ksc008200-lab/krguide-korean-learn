@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="UTF-8"><title>맛보기 · 500 Honorific Expressions</title>
+<style>
+  @page { size: A4; margin: 16mm 14mm; } * { box-sizing: border-box; }
+  body { font-family: 'Noto Sans KR','Malgun Gothic',sans-serif; color:#1a1a2e; margin:0; line-height:1.5; }
+  .page-break { page-break-before: always; }
+  .cover { text-align:center; padding:60px 20px 30px; border-bottom:4px solid #C0392B; margin-bottom:22px; }
+  .cover .label { font-size:12px; font-weight:700; letter-spacing:3px; color:#C0392B; text-transform:uppercase; margin-bottom:14px; }
+  .cover h1 { font-size:30px; margin:0 0 8px; color:#1a1a2e; font-weight:800; }
+  .cover .kr { font-size:22px; color:#1A4A8A; font-weight:700; margin:0 0 18px; }
+  .cover .desc { font-size:13px; color:#555; max-width:600px; margin:0 auto; line-height:1.7; }
+  .cover .features { margin-top:24px; display:flex; justify-content:center; gap:14px; flex-wrap:wrap; }
+  .cover .feat { background:#1a1a2e; color:#fff; padding:6px 14px; border-radius:18px; font-size:11px; font-weight:600; }
+  h2.cat-h { background:linear-gradient(135deg,#1a1a2e,#16213e); color:#fff; padding:14px 22px; margin:0 0 14px; font-size:18px; border-left:6px solid #C0392B; }
+  .scenario-box { background:#fff8f0; border-left:4px solid #f97316; padding:14px 18px; margin-bottom:14px; border-radius:6px; }
+  .scenario-box .sb-title { font-weight:800; color:#9a3412; font-size:13px; margin-bottom:8px; }
+  .scenario-box .dl-line { font-size:12px; margin:3px 0; }
+  .scenario-box .dl-speaker { color:#C0392B; font-weight:700; margin-right:6px; }
+  .compare-box { background:#f0f5ff; border-left:4px solid #1A4A8A; padding:14px 18px; margin-bottom:16px; border-radius:6px; }
+  .compare-box .cb-title { font-weight:800; color:#1e3a8a; font-size:13px; margin-bottom:8px; }
+  .compare-box .cb-pair { font-size:12px; margin:3px 0; display:flex; gap:12px; }
+  .compare-box .cb-ko { color:#1a1a2e; font-weight:700; min-width:240px; }
+  .compare-box .cb-en { color:#666; font-style:italic; }
+  table { width:100%; border-collapse:collapse; font-size:11.5px; table-layout:fixed; margin-bottom:14px; }
+  thead th { background:#1a1a2e; color:#fff; padding:8px 8px; font-size:10.5px; border-bottom:2px solid #C0392B; }
+  th.num-col{width:40px;} th.k-col{width:42%;} th.qr-col{width:38px;}
+  td { padding:7px 9px; border-bottom:1px solid #e5e5ea; vertical-align:top; word-break:keep-all; }
+  tr:nth-child(even) td { background:#fafafa; }
+  td.num { text-align:center; color:#888; font-weight:600; font-size:10.5px; }
+  td.k   { font-weight:600; color:#1a1a2e; font-size:13px; line-height:1.5; }
+  td.en  { color:#1A4A8A; font-size:11.5px; line-height:1.5; }
+  td.qr { text-align:center; padding:3px; } td.qr img { width:30px; height:30px; }
+  tr.section td { background:linear-gradient(135deg,#1a1a2e,#16213e) !important; color:#fff; font-weight:800; font-size:12px; padding:9px 14px; text-transform:uppercase; }
+  tr.section td::before { content:"▸  "; color:#f97316; }
+  tr.quiz-row td { padding:0; }
+  .quiz { background:linear-gradient(135deg,#fffbeb,#fef3c7); border:2px solid #f59e0b; border-radius:10px; padding:14px 18px; margin:14px 0; }
+  .quiz .q-title { font-size:14px; font-weight:800; color:#92400e; margin-bottom:6px; }
+  .quiz .q-sub { font-size:11px; color:#78350f; margin-bottom:10px; font-style:italic; }
+  .quiz .q-item { font-size:11px; margin:6px 0; padding:6px 10px; background:#fff; border-radius:6px; }
+  .quiz .q-num { font-weight:800; color:#C0392B; margin-right:6px; }
+  .quiz .q-word { font-weight:800; color:#1a1a2e; font-size:13px; }
+  .quiz .q-opt { display:inline-block; margin-right:12px; color:#444; }
+  .answer-key { background:#f9fafb; padding:20px 24px; border-radius:8px; }
+  .ak-row { padding:6px 0; border-bottom:1px solid #e5e5ea; font-size:12px; }
+  .ak-row strong { color:#C0392B; }
+</style><style>
+#license-modal { position:fixed; top:0; left:0; right:0; bottom:0; background:rgba(0,0,0,0.7); display:none; align-items:center; justify-content:center; z-index:9999; }
+#license-modal .lm-box { background:#fff; padding:32px; border-radius:14px; max-width:420px; width:90%; box-shadow:0 20px 60px rgba(0,0,0,0.3); text-align:center; }
+#license-modal h3 { margin:0 0 12px; font-size:20px; color:#1a1a2e; }
+#license-modal p { color:#666; margin:0 0 16px; font-size:13px; }
+#license-modal input { width:100%; padding:12px; font-size:14px; border:2px solid #e5e5ea; border-radius:8px; text-align:center; font-family:'Courier New',monospace; }
+#license-modal input:focus { border-color:#C0392B; outline:none; }
+#license-modal .license-msg { font-size:12px; min-height:18px; margin:10px 0; }
+#license-modal .license-msg.err { color:#C0392B; }
+#license-modal .license-msg.ok  { color:#059669; }
+#license-modal .lm-btn { display:block; width:100%; padding:12px; border:none; border-radius:8px; font-size:14px; font-weight:700; cursor:pointer; margin-top:8px; }
+#license-modal .lm-btn.primary { background:#1a1a2e; color:#fff; }
+#license-modal .lm-btn.primary:hover { background:#C0392B; }
+#license-modal .lm-btn.ghost { background:transparent; color:#666; }
+#license-modal .lm-buy { display:block; margin-top:14px; padding:10px; background:#fef3c7; color:#92400e; border-radius:8px; text-decoration:none; font-size:13px; font-weight:700; }
+</style>
+<style>
+  .topbar { background:#1a1a2e; color:#fff; padding:12px 20px; display:flex; align-items:center; gap:14px; font-size:13px; }
+  .topbar a { color:#fff; text-decoration:none; font-weight:700; }
+  .topbar .brand { color:#C0392B; font-size:15px; font-weight:800; }
+  .topbar .spacer { flex:1; }
+  .preview-banner { background:#fef3c7; color:#92400e; padding:10px 20px; text-align:center; font-size:13px; font-weight:700; border-bottom:2px solid #f59e0b; }
+</style>
+</head><body>
+
+<div class="topbar">
+  <a href="learn-korean.html" class="brand">🇰🇷 KR Guide</a>
+  <a href="learn-korean.html">메인 가이드</a>
+  <a href="vocab-hub.html">📚 학습 자료</a>
+  <div class="spacer"></div>
+  
+<div id="google_translate_element"></div>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'ko', includedLanguages: 'en,ja,zh-CN,zh-TW,es,fr,de,vi,th,id,ar,ru,pt'}, 'google_translate_element');
+}
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</div>
+
+<div class="preview-banner">🔓 맛보기 · Free Preview (6%) — 전체 학습은 결제 후 가능합니다</div>
+
+
+<div class="cover">
+  <div class="label">Korean Honorifics · Enhanced</div>
+  <h1>500 Honorific Expressions</h1>
+  <div class="kr">존댓말 표현 500개 · 향상판</div>
+  <p class="desc">Korean honorific expression with English meaning by theme — plus scenarios, comparison boxes, mini quizzes, and pronunciation QR codes.</p>
+  <div class="features">
+    <span class="feat">🎭 시나리오</span><span class="feat">🔍 비교</span><span class="feat">📝 퀴즈</span><span class="feat">🔊 QR</span>
+  </div>
+</div>
+</tbody></table>
+<div class="page-break"></div>
+<h2 class="cat-h">👋 일상 인사·기본 표현</h2>
+<div class="scenario-box"><div class="sb-title">🎭 시나리오 대화 · Scenario Dialogue</div><div class="dl-line"><span class="dl-speaker">후배:</span> <span class="dl-text">안녕하세요? 처음 뵙겠습니다.</span></div><div class="dl-line"><span class="dl-speaker">선배:</span> <span class="dl-text">반갑습니다. 잘 부탁드려요.</span></div><div class="dl-line"><span class="dl-speaker">후배:</span> <span class="dl-text">제가 도울 일이 있으면 말씀해 주세요.</span></div><div class="dl-line"><span class="dl-speaker">선배:</span> <span class="dl-text">감사합니다. 부탁드릴게요.</span></div><div class="dl-line"><span class="dl-speaker">후배:</span> <span class="dl-text">수고하셨습니다. 먼저 들어가 보겠습니다.</span></div></div><div class="compare-box"><div class="cb-title">🔍 비교 박스 · Comparison</div><div class="cb-pair"><span class="cb-ko">안녕히 가세요 ↔ 안녕히 계세요</span><span class="cb-en">to one leaving ↔ to one staying</span></div><div class="cb-pair"><span class="cb-ko">진지 ↔ 밥</span><span class="cb-en">honorific ↔ plain (meal)</span></div><div class="cb-pair"><span class="cb-ko">성함 ↔ 이름</span><span class="cb-en">honorific ↔ plain (name)</span></div><div class="cb-pair"><span class="cb-ko">연세·춘추 ↔ 나이</span><span class="cb-en">honorific ↔ plain (age)</span></div><div class="cb-pair"><span class="cb-ko">드시다·잡수시다 ↔ 먹다</span><span class="cb-en">honorific ↔ plain (eat)</span></div></div>
+
+<table><thead><tr><th class="num-col">#</th><th class="k-col">한국어 표현</th><th>English Meaning</th><th class="qr-col">🔊</th></tr></thead><tbody>
+<tr><th class="num-col">#</th><th class="k-col">한국어 표현</th><th>English Meaning</th><th class="qr-col">🔊</th></tr><tr class="section"><td colspan="4">일상적인 종결 어미</td></tr><tr><td class="num">1</td><td class="k">안녕하세요?</td><td class="en">Hello. / How are you?</td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAABOAQAAAACm0R2wAAABcElEQVR4nG2TQYecQRCGa76ay0etDjktIZchp6HpvYRv9bI/aa/5ESGn/JilR+dYo4c9hSGWvYZePYylWoVI6Frbp/Yob7/1enul8O/06f8NABKkWEUZaKRFlCI3UR4pU4vqYUkjXQPMp2tslwCWwvHxoaeToVjP/ji/f8H9QFfphv9erowH1ZwDh6gy0OnHhad7/NnhYF4L8/bkN/huO9K+e+ifnnH/9MHs1qqUhSKNupAXX30hCaOHaf4Gv8BvbvfezDI3CRzU+BXXskQKZDJLiZBKkGp3Q/aOBYPxwIvLyWF0RqFqCc3VnE3qB/gyX7be3bWZDS2h+giL8QsQJEXCUWHaOjgCQfh9Y9KpQk2Fo/GQY2lanCtGN3Gi0FIwmQE35zEW8rY7HAU4gHWmym5pWnik027lN6d+1eHrSJ2cv+NHuD2PjQImLikSoFEAAH932NT6alYZK+bXXU8qrGLo+nnNO/x8Ae5+bOqbf+gP8AC2O78gxEUAAAAASUVORK5CYII=" alt="QR"/></td></tr><tr><td class="num">2</td><td class="k">반갑습니다.</td><td class="en">Nice to meet you. / It&#x27;s a pleasure to meet you.</td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAABOAQAAAACm0R2wAAABdklEQVR4nG2TsWpbQRBFrzSvEazZgCuDIATUCjaMyoVncJXPyH8E0vgz8hluBWs25YgVuA2kMaQyrHkCYZjHBocYdsBTDcPlzN2Z2UXD/5iXbxmABE3RB4XrqoPXI9MnuW6HXiuu5TI5l6SrLoH7eXv1WP+lb7EEOOLPzdFUUTR7R9m1njA8D7J/tbLoPaC1GinE1tT4dTTCgTj23ej8dBvuWOa+24D54yNh/yEZ7kSalSRTTxhW26Fcrs7z3mgze1Uem/ZaTJUhSBSt1sfo4TP3b1sIeHdozzgabfJIhWOLhlulaoxCav1OUZgbjYab3Anf0glrM18tSVviMhpuqeSnquCeuzzdIBweKEsyzgK4Oa5iPJSJZWQUM/UBX+bNaZbd09pU6dcxXeDl0nBFY3FSAbPN1nILbvTZ7hjFS1Ypxq/XbeBwTbBcl0ZVAOYeALr9uXvdknGG1WZ9B//1h7mden7Y0PfPv80kE4okn4PZxeLdP/QXBS2rpCAtU/4AAAAASUVORK5CYII=" alt="QR"/></td></tr><tr><td class="num">3</td><td class="k">고맙습니다 / 감사합니다.</td><td class="en">Thank you. / I appreciate it.</td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAABOAQAAAACm0R2wAAABaklEQVR4nG1TPWqcMRB9u/oag0AfpDK4CSy4Mihom4DgM/gkOUlOkBv4GG4XBsZNYIIWfIAQSLsgo2IbfYyJiUFjPNVjeIzeD9oo/s+6fUMACK3mEDv8sN2Gfvzk/sit0sgVX1NJ3pOMXOBpvfn5t77Ct9kCX+9xvjuaLUoXRWOv44UN3cor2I8aoKriKKt2o9ejwMOlbLiOW6RU4ridjqenOeIwk7krzKknYWe41xfTMsfzejBc1iyVF+3mtQ6tBHLZcMl1CQicRm9Tunh0qz7jh8mBllipZc3WRS4+i7huuvjlPsfzOeHOdNGgMftavfXmSFpMZTF3mwRttSPZfJsrxMqmC3CurD5Veect6JJQTOpTOGDerbI/XZmOXV8apAeTw3pyuMy7CdF2TBz9Eth2DKnCXYrRULqytlyK0SuepXcAo7J/MD3uE2RMfQLWeX1A+HY/cl3Fzc59//LbNgRaKHA0XWw+/EMvzq22OXe+CEQAAAAASUVORK5CYII=" alt="QR"/></td></tr><tr><td class="num">4</td><td class="k">죄송합니다 / 미안합니다.</td><td class="en">I&#x27;m sorry. / My apologies.</td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAABOAQAAAACm0R2wAAABcElEQVR4nG1TMWpcMRB9u/qlQNsaUi5sZZCRG4NAC65yjJwkV/ABfImAwZVBRm4CE2TYyhAIAR9ARgtpRozBJEFjPNUwPN5780ZaCf7WWP/rAGT0FpNn2HlauZgEjkLTdBmbZ3913OB+xi7AYZzun+0DpukauLjG7eXjW/u/KpO4UqziXeU9vTXnyoOIkPFRhJVfiwoLE+KslnZ9628CDaVGuZqUG/KsBnESuqFiZoZl/P5hT77/GXc6h+Sp9SQ8Y1f9aTd+HnF58aicOSEDV4JSY3YF0pr20JNrVKLEmRccvY1Mht/l0GLoYtK7zOzWjRt80hsnJs6hJsVLMUlrjKB4ezC1FCnqFsg2F2dDI4UtLkkNqCp11Nyc8WSawlJyqYPYzbxrMzI+x+3y4vVutXibXNE3Rm5UmOrMu3YcDzu/N8hKzRI1BqDeA3AMh/MAmtNZALPBN7gv18pZG6cv5uvZL5VkRk3iile3WH34h14BgCG4LhTTIfAAAAAASUVORK5CYII=" alt="QR"/></td></tr><tr><td class="num">5</td><td class="k">실례합니다.</td><td class="en">Excuse me.</td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAABOAQAAAACm0R2wAAABdUlEQVR4nG1TQUpkMRB93dUbIZKG2QoiCL0SvsTNQIY0uPUSnsGVKzd9gDnAXGJAmJUQSS8L0uCqV7PxAGnSIEJ9IohKCqxVUTxevbxXmTR81Dj97ABESPRhEJh+moVrgPjG3XQ2zuv6936Oxx47Ax5xtnw2a3TTKeA8/l1u3tuvypIsajKKdxKX/N5cKA2tFU/RtyZKr6EAA3K+30aL19Vw73hU2wrn6mJB7Leh1ZaEOFHPMFuPV2n+82V8UBrYFpEUmvRYJHGIiOQVVoJ4RJucelvd7m+2dYdNj51Ed7Am3KZfWi+yeGESrSEEDrVRULx5R+PNwT2OFEOtTUp0OSi92YiVInCKt4QQYmpJZYE6sLPGFVbYRMLZISvXwWwKDUxF3wOdbsohXn9EjZXsuQAqzdZiG0ywSWcMtpyEc887tbIYFsOSoHlNCkUAqHsAxtXThQP37swAe3L8F/b6j7qdsnva0d35f+VkBHOzaVBZTL79Q2+1c7iMYm5yRAAAAABJRU5ErkJggg==" alt="QR"/></td></tr><tr><td class="num">6</td><td class="k">안녕히 계세요.</td><td class="en">Goodbye. (To someone staying)</td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAABOAQAAAACm0R2wAAABbklEQVR4nG1TQUpkMRB9v+tvGmqIMKs5hBCIGyHwGzyAZxA8hlcYcCt4DLdCpFZCDWnwCoKrhjS/oRnIJ8OIQkqsVfF4vLx6VRkaPmpZfXYAEmpi5yu4R3PVefI1Nu1R5SZ5Zk49ugKe1suv1/LeftYIhIXfNncGRa7ivAgb3XE/6uN/K0PvYWjYXx4Wli9+mVAYFGLvIRyfZfsQdOlfG9IN/aa9P0l2NioaggoZheX08rheH5fHWzNxSCHR1GrPHfF8ZN5tx/NtzxXhxnASTGYtZkIrxWSGTCKzxBZ7XVTvY61K1fids7DMjSajUKPzHEthw21B5pBCnoxuVq6+VATDFdIJ0sTuOCtC5lDU7CJvcEqHP/l6bdKJlMgrlZ474mV3UX7g789kdHnKUQtQjd8mc9LJiUETNDFVzb3uylWPt7IhGF1lpVIBmG0Ch93LWYB+uUm3dbdwV/f2JvPsZYIzOSSk4Jx4s4vh2z/0D8sRts9fC3hrAAAAAElFTkSuQmCC" alt="QR"/></td></tr><tr><td class="num">7</td><td class="k">안녕히 가세요.</td><td class="en">Goodbye. / Safe travels. (To someone leaving)</td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAABOAQAAAACm0R2wAAABaElEQVR4nG2TTWocMRCFX7t6M6CggaxyC4GyMQh6wNtAzhDIAXKUbAM5RrYDZSpLGRl8BYNXhhp6wASqUUiIQTVEq+Lx+OpXU8e/t129RgAYxjUmQxjVZnVtyUqvgzpv+/Xnh8c9bkfvFXC7O7571L/h65uBvIWnwzenopnEJBI89zTX459SppE7dZw+nrcgF/UGihpAuYw1JLo+3v/IdRuzTbrXh3BKe/a9Zak5V6GRMJ/vtpcdXraj8wpxZlq6jV700JeqTMV7W+oBUfLYG1oSQldlp/aoskrpxXEZVswq2QU3Blk7LZ6gawpFNThvlbxmzm1xXLFkSQ3ZeZlsgXRxu4AFzS1krW4XctglOt+1zzuXzYgpVdLRO+OGv+gb/HrLbg5AK1UBc110XrkuUZzKYA5ktbk7i1bwpAeC49bApAbA3QMQnx/eZ9SLm9zu41fET9/9TfKaZEF0c2C0HKMkt4vpv3/oN01GuQrr14GDAAAAAElFTkSuQmCC" alt="QR"/></td></tr><tr><td class="num">8</td><td class="k">식사하셨어요?</td><td class="en">Did you have a meal? / Have you eaten?</td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAABOAQAAAACm0R2wAAABdklEQVR4nG1TsWpcMRCc816pIINbQ0iVKqAggzkQvAN/Sap8QKpAIF/gDwj4JwJuDWs2TUBGhqsMBjcHaWV0cBhWKGBieGuialmGmdmd1WLg3+sHLxUARqveB4Wbd4sK+aBp5Fl32Q+3wf06xPUcewBs+vnTtj6XL28JrC7CKX6YLorm4Umc4V3wOj8XJ8bDGCNLSGOo8esgwYFimnuIsSVcxtxfqQXvuYKNWtnh6/729369mvt95zabvtr3K+OBm7DKNHSuhlJTKWBKBptlCo69RKPWOs7u2iNu7X4bs0oayfC2zE41kxpsoynHNmgyvPX+9IPvlzg2EzN5rRzLZHhZY2tVEQ1vLdMEGWKyQHEixcWa59glqH+j9zcPn4OZmAtTyFQNlr64XX2DpyM22CDFpQqYNMfImfPkxWYMUUeai7kzr4H+1DXB8jqeqgIw9wDgZnMSkV/dpN++/Qn/6WKOpbo7e6TvHx/sJiFteAkmi8V//9Bfgja67L4enkYAAAAASUVORK5CYII=" alt="QR"/></td></tr><tr><td class="num">9</td><td class="k">잘 지내셨어요?</td><td class="en">How have you been? / Have you been doing well?</td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAABOAQAAAACm0R2wAAABcUlEQVR4nG2TMWpkMQyG/xlNEzB42vQLab14mgEHB+YAOcNWe4xlbxDYdo+x7YCDizQKHsgBQmAgVcDBxWv00ELYwBOsKiHEp9/65ZXiX8zrzwxAwejig8Atq00qcZCkvKhu5u057MYW98veNfD02C/P/SP9jDWwb/71cDJVNOGWqTrDXZUb/kh2RoOqjhGSqhi9Di44UEzLaTRFOv2JPC+nbdz+4e2A47YY7sjKSlzJENzP3XS9n+bj3bKXiaiNrLLsRXeaSyiUDLfGrg6+RvM2XenmYrzjZPcbpbaaNBluFZ9EmMT0SoWjoZSXXPTQQku9O8utGKXEli03lJ66IBrfZn+4nZ6ocjH7ZaTsYmfr8VWZcPX4/D2YaZyYAlO3GiimABa/1Luejxe/vHzZvBuCahnssq/WY5TiSLgZDV4Szv2GYPSya14EgHETmF8edhFs7gGgU7qD//bb3E5HPNCPr8/mUgtqzL4G48Xqv3/oL3LHsRkjK3d7AAAAAElFTkSuQmCC" alt="QR"/></td></tr><tr><td class="num">10</td><td class="k">부탁드립니다.</td><td class="en">Please. / I kindly ask for your help.</td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAABOAQAAAACm0R2wAAABY0lEQVR4nG2TMWodQQyG/2dt80AwPoTB7cK4nLCGd5LcI+DGB3AbyDHSLoxRGsMYpTWk9AFkxuBGy5iEGFYhqoT4kb6R/jkM/I3t7CMDUOG1pNnB+6p662peRttVp+28/+DTE+732jPgftsenu1P+hETkI94O30NVahLyiIc+75Mbf2NcggMY1ihuYzhgZdpAYNyCQyX6619z20L05zRUzXU/TRYzpKpCe07TFhPfHx429bIoMlZluF7LYQNikolaLtqSUiSw7SKTjTMAsNExCuujvIlbmdeWimNfN93upAn0GvGqYZXtFKzm3FgsF7JatYl8HZO7ObIQeuaEsmQcItD/5Re0uPl+us6kBHrkqFh62iuvc+NLHpn8ExonsIedK7KbEC45hiVa1mSxBtDmMmbBp8lL2R2TQh7aKw6HED0A14vfl5ltH88yY83d0ifv0VP1gxZEHkrpI8kc7jF4b9/6B3uVbH4U5S4+gAAAABJRU5ErkJggg==" alt="QR"/></td></tr><tr><td class="num">11</td><td class="k">알겠습니다.</td><td class="en">I see. / I understand. / Got it.</td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAABOAQAAAACm0R2wAAABc0lEQVR4nG2TQWqcMQyF5d/ZDLg4NyiBga4CAg+UgoPnAIFepUfpAQo9Q6HQVUHBWSpoYFaFgW56AA8eyMY/CoQWLKhX4vF4lj4kp/D3rcu/CgAISEYtGcKsyqChoQ/lSV3W6/D+/H2zf4BJvQJ4Xo/F8WVWgYP2LDnQnAAyBLgwm1xHe34tdqYH1c45seiY1UqK1KKg8XIa3HKOnE0CoQ8VSjVqTZQq5gGmh/5GzvEcdvmzya2pZ8UCc4IbcLwBfxf8T+ONzMnrQPMb88jsFbPhUKVIKKmQ8TZKwWvOZmKn19vN4c/bWzB8O6IoKbaZw9VB3PYO4PcRZ+/ITaWHgoZkjyJKcQwzW38Kn/y3+wucbL+9qsQolsNOXHi3gR8bQz0qss81WOooxKgUTA+qtbWGIrO6PLgP0R9O62r2LI7HeEby697uGWOGSOa3BSB9eeRb2M4JC8Bll54v6I3q21M6rV8//jJ8CaRC52buwv33hl4A/oW+O6EYTjQAAAAASUVORK5CYII=" alt="QR"/></td></tr><tr><td class="num">12</td><td class="k">그렇군요.</td><td class="en">I see. / That&#x27;s right. / I get it.</td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAABOAQAAAACm0R2wAAABaklEQVR4nG1TvYqVMRA9381thCy5sJVgKdhGsuVAFmz3JXwS8QEEH8DHELYSskw7koXbCjbCVsJcsiBCPkb8WfhmcarhcDg5M2eyGP7VunvoADRMmSlPxC3a/4JkskH362F81vsDbrbcHXATzp5+0z/tQ+2AkvXu1a1D0SenXDh63dNePv22sjgPZlpLI7Pp/MZQNSIUctyeubXS8xZdNP5Yj2s+NKfbApiKcHDcebgXXF6vj/bAxSZXm+61IZYELZDjchBKSFzcbE/WF+FkJ7xze9BCzQYZOV0h6BQJ0+mqNa5soW51YXNIiarRcUfPprn06nQ71TR0ovjZRqfAxi4LzNarxaLiuZZbKuhu63sslJ+vcvH9mbuScXbELX6eN6cQi0RSwKVpJkZUE/uM0RLzlP7oJo3GoN6dX4m96gSwdbYDTm+/XBTIdut7APnqPdLrD1tu0HD8GN68/OoSahDhxNllsfz3D/0CRrm80vRGTs8AAAAASUVORK5CYII=" alt="QR"/></td></tr><tr><td class="num">13</td><td class="k">맞습니다.</td><td class="en">That&#x27;s correct. / You&#x27;re right.</td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAABOAQAAAACm0R2wAAABa0lEQVR4nF2TMWpcMRCGZ99sszCLDKlShcCCK4NgXD6YhbS5SmAhF0mbe6Q1KGghjYweuDIYfAUFBbaZxwRCDJpVNfyIT59Go43B/7VObxUAJKgYZytAY1q1ddGuVoZ0Wm/ocbnfH3/CkG4BkO5+9fcwphPAn9MPWJNLoarWTui5m3Qs/4p752BWYi4spiP3vD/gF3xeYRkddpd3DxAPeHM3Erpm5sbUHFcDYyASGrlQS8cYSNntTTy3WKPA7MwKY8fCdsU1MSGm8W6QkylWVu+QbIY4K7JzSCQCFSW47tgxPd6+fHyCnXNoLaFoqo5bKmuwa9/SculJCJ2ZSlMtIt4sx9K6aRF/C2nVagjVcXND5Z7Y9WyiD3BePofnNfmXlxCJ4aqTlmRmq2VMN+mo5xPgdz9RQS9f6RU+XdxEFcpchQBHwgSw+3ZaDq1d7TXODbOb9S2287J70dWdtv29LRBhD+HBvcVbNf6hv1OBsaIllyJ1AAAAAElFTkSuQmCC" alt="QR"/></td></tr><tr><td class="num">14</td><td class="k">아닙니다.</td><td class="en">Not at all. / No problem. / Don&#x27;t mention it.</td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAABOAQAAAACm0R2wAAABc0lEQVR4nG1TQYpUMRB93fmbgUgaZuVKBLdCJC4DGfAkA4IHcCUIgwcQBFeCxxBcNdSQbQ0R+gCz8QDV/IFGqE/JiAO/xKyKx6PqvVeVjeHvW7YPFQCCcmxZEdfoUFaDVuMVOi27+eZt3+F6zd0C1+Hju5/yp3x4E1Di8v3ii0MxtCf0Hn3f48T7eykbp8FMWsjVTJ3eGBoiQqlrVI17pjLyGp0Ox/ffEvY78t6C9rlwD4777GxHj/Np2TuumJiFZuqmkYbEQqE6LqdagdTL2hsGhQYTIYf2kYl6ter6sohU5aAu33D+5HA6Fbwipyw3rlUkem+JbKYymk9HU5pFURx3TqWiW3e7gCC0EYvwmrsZWO6u7m7G6zM3jU1C5iBr7rS8WT7LI/w6d3oZfK8XcNs0I6PaUvc7BqXYlYfLIWl5LvkiwPeNvZkCWDveAsuHHy8L+J+bTE9vPyFdfnX5yvFwGa5e3LpLJRBT6tntYvPfP/Qb+xm5p7OWBDQAAAAASUVORK5CYII=" alt="QR"/></td></tr><tr><td class="num">15</td><td class="k">실례지만 누구세요?</td><td class="en">Excuse me, may I ask who is calling/this is?</td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABWAQAAAAB9LVxaAAABjUlEQVR4nHVTsYpbQQyULTcGmQ3cR6RdWEOahZc2n5EvyZcFFORSZgPXGtIErl0jwxGQUSBHLqcHUSWGYTTM7G4C/s59+7oCAIO7Ak4Ceovvip++3GX/8AvPia8U1D2AWN/iW4CTMRy1/tlfZwdQDzf/Wl44/2a4dAMwjaSz4Y/6sh2TH4iIodxHhGf/hE1cmrWecG+lClaumHWYeaIrjEj4Zj5+ejp0PiHs813tXuYIn1mfjaRXYajJP8QMh1lRNPtUE13YIyLrmHZrWi2WzI+YodgVSuYHQHRnmmOFx+xFqytmHfdWumgPXuXWwnGhxiP7Nx0Y1IQo82fEoubBnu5uHw+3b8+X07F8+J7vmk8uRank/LVTbWJV6qoXI2Puw3IOG7tf6sNt//PHdaUTy+jIir7CtU9Sb9ay/9GKLC2KY85tsEsjMaZVjyEeS51DV72DDDInyviu+O2C9A4Q8ztX4tIn9rW+ksxSUMLX+KAgLZD73eKEdr7Vu35O+tvr7np+T6enZ+SU23/++2+k0/dPmgiAywAAAABJRU5ErkJggg==" alt="QR"/></td></tr><tr><td class="num">16</td><td class="k">잠시만요.</td><td class="en">Just a moment, please. / Hold on a second.</td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAABOAQAAAACm0R2wAAABcklEQVR4nG2TMWpcQQyG/7faJvDC+BALqQITZhvDwBh8Elduc4NgCKQK5AA+RtrAGFWBMW/BlWFhGx9Aj2dwo4dCTAwjiCohfj5p9GsGw79YN28ZgAptGqJi7KvT36JottZVt+vZci/7R9z12g1wR+9/P8lr+hYbIEV5uTy4KiblUBYeHXeoF+012bsZzKSkms3UzTtSkRGUct+N+Pzr4Wdqa99tsPm4O83xrDpuNeJEjaknDHKkFZ+/rX4PZjBbimmvhdUltFgpO20rMQOBk9sZzccEm/Hd7cFSqMLZsuMuMFFtpI67FOG0GJWeCwO1mEVGpxVm05qm4riiHFQUyXu85Exs7LzAFLmUMUlzHj+fcIMP96fr6F4sIktsJJ5LmQlNQ8/drL+e353n3XZ2BLNmNZfA3mO0MLK2yc0QdPdR4gWhuhnGWkwBuHsAws1hn9D6rW+BNYYfCFe37nbk5WGgL59OzqEKbilwdF4M//1DfwB3Rrs6XY3GLwAAAABJRU5ErkJggg==" alt="QR"/></td></tr><tr><td class="num">17</td><td class="k">도와주세요.</td><td class="en">Please help me. / Could you give me a hand?</td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAABOAQAAAACm0R2wAAABZ0lEQVR4nG1TsWpcMRCcu33NgYwMblO6PZBZlwIZ8iX+jFRp8gFpA/4PVwYZuVzQQdqAm3yADhmMYR8KMTZojVUtwzA70ow2A29n3b5PADI0SwoKN6NVpQ9oHDKhy3raH1w5xf3M3QL36/rtb3sd388C8A63V78MiqrFp1Kc1T0ucvffysZ4GKPFHuIYavw64uxAHGdUS6vIXINBa6AxckOet6GTCpMUmrnLbn+gP7vn9c54yCStlTTU6JbcfUWmaLglcaDsC8/bNmX/5fyxHXGwXD9y5zii0e1BVKOQWg/FS+JBydxCQs+srTnDbSP2lrkmqxsHtCnYcIU0oYxisoBEx8lxE9uHCkmMal+9qrYehNrMXVZaD19XvJzluSV08uR3cr4cg81YRnDJF5sxspeiUk3PvHLgcEWYdSFOkiqA2dkWoB8Plwz50Ens3U/46xvjrB1/P9H3i0fT1AwR9iWYLDaf/qF/6/S4rc3lYR0AAAAASUVORK5CYII=" alt="QR"/></td></tr><tr><td class="num">18</td><td class="k">축하드려요.</td><td class="en">Congratulations!</td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAABOAQAAAACm0R2wAAABcUlEQVR4nG1TsWpcMRCcd3uNQSBDWpeBVAYFuZTRQSpDIN+QP0jryo3bg7QB/4Q/wKBD7YIOUrlykw/QocA1EhsuxKA12WoZhtXszGoR/Kuxeu0AJPRkreswM1o6N6k9CE/oapz7/YbO9zvMKLAb2+df9W/7WmvAn+G4+aFQlJ6tp2zU3PVhzU8nKYvSIFJDdkGkK72GvDMgH2a0WVNq8sUptLCXmCrS/BqyMHviTDN3kcNF/rY9Du1DalSRo3Q1V1AsI1FQXC4nYTZ7tduHAfyWA7azD0uiz4+E23yt3Omu9NCZuvbBWvZNKKotWqophFqN4jZrWku+RKU39wapHV5xu5VIWbLKAs0kH42vrO+BhKNH0a5zqLU5pjpzFz5ifBrs3j2pK7kZ9ozfrw9OZ5wkmWizzhjFmty5zHNXtl+66jaEpDSYEqUDmJWd2vv9lQe/uclx+eU77NeHmUuVfu7o7uOLyiKhsNjsVBbLf//QH2TbtbdzK+ItAAAAAElFTkSuQmCC" alt="QR"/></td></tr><tr><td class="num">19</td><td class="k">수고하셨습니다.</td><td class="en">Good job. / Well done. / Thank you for your hard work.</td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAABOAQAAAACm0R2wAAABbklEQVR4nG2TQYpUQQyG/9fpzUAN1TArwY0wByioXpZUgwfwDN7DK3gDLyH0ViiJ4CbNG/AEgjCrgYIaECGPCINKRaxVCD9fkj+pxfD7bbs/EYCG0UJMijBl91HviF7IyS5zdjuMYzof8MlpgctFnn0PnzFld8BtSPev7p7Cv29VroE4mEzZpZ3kKTjOXJiNwqmYqes3EKcAymWuRhze4pxlm6vtt+3h5hEfD81x26BQsjDNhGW8bPHw8GVzPmDkpMrVdNbCpPYVjYrTcg4SW+Q8z7ZPV/TjsX7DO+cDZ6HOxYrjSlFRFVLfA/WSh1F1no1rpLid8dxxxUi15bV6rtTRuyI77poRwcZuF+A2ZA25i5+tmtWM1bkOCVYpCXV3D5SXTtf4edOcVlcJ2gG3TbMWmtbIfsfgEIbKOnN3URPdn04Ezw1t7QrA3QNAt1+PGeLuAbi6vP6A+Ob9PzeZwRXR+dDAwyInt4vlv3/oF4D8ryjNpzRjAAAAAElFTkSuQmCC" alt="QR"/></td></tr><tr><td class="num">20</td><td class="k">먼저 들어가 보겠습니다.</td><td class="en">I&#x27;ll be heading out first. / I&#x27;m leaving now.</td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABWAQAAAAB9LVxaAAABp0lEQVR4nHWTsWocMRCGxzsLwTCge4MQOHArUJqADh2kCuQl8gaBtHmIgKu8x0HaARnSyMzBVYZAGkPaCTpIM4tSmBjPBqsaPn7++ffX6mLAv7NMjyMAMCg1CEZAT/kc7MSfKs2Gt44vGz2e32DYHJx+Ajh95OPm8DA/nhng1fWO7il6DmJCnbXbaE/5Be/bw/Ta+cMYNoizlGE+PyHWjKmn7Lgli4KZI3qf1hJDb1CHzx//3AV6d8Vwo94/1pq5dWO/t1dUgQoMLj90MAJV7OT1VWoOmkcZPqdYS73FPorXi9BoGBsErx9MVqwGFc+1ZApcrOFqb9QMVdIAz1tViRIi+f6n8wLbsNtew010HMvbu+Xq8vOB9j5nblKFu8RVzwMCY2AKnovaSFVLjS7/tPw877/S+y85+P9ENUhKpLLqn1PrA2IustrLCtRywr763pCSpDAMfW/NKiaqicnf4xgMvUSV5v0ZGKAbkedzsDMuy4tLRNcbNGIrWmjlPwPg9+PL+9uix//0o1EAf78TKpx2W1jgg+tn+j3T8u3H+VdEdu/omff+F/Lk4QRwtRnPAAAAAElFTkSuQmCC" alt="QR"/></td></tr><tr class="quiz-row"><td colspan="4"><div class="quiz">
+<div class="q-title">📝 미니 퀴즈 · Mini Quiz (1~20)</div>
+<div class="q-sub">한국어 표현의 영어 뜻을 고르세요.</div>
+<div class="q-item"><span class="q-num">Q1.</span> <span class="q-word">죄송합니다 / 미안합니다.</span> = ? <span class="q-opt">① I&#x27;m sorry.</span><span class="q-opt">② Please feel free to speak first, and I will listen.</span><span class="q-opt">③ The reason I&#x27;m contacting you is... (To get to the point)</span><span class="q-opt">④ To wait (Honorific)</span></div>
+<div class="q-item"><span class="q-num">Q2.</span> <span class="q-word">안녕하세요?</span> = ? <span class="q-opt">① Hello.</span><span class="q-opt">② I have received your email.</span><span class="q-opt">③ Congratulations!</span><span class="q-opt">④ Please help me.</span></div>
+<div class="q-item"><span class="q-num">Q3.</span> <span class="q-word">잘 지내셨어요?</span> = ? <span class="q-opt">① Don&#x27;t rush; it&#x27;s okay to take your time to decide.</span><span class="q-opt">② I offer my sincere apologies once again.</span><span class="q-opt">③ I would like to take this opportunity to express my gratitude.</span><span class="q-opt">④ How have you been?</span></div>
+<div class="q-item"><span class="q-num">Q4.</span> <span class="q-word">식사하셨어요?</span> = ? <span class="q-opt">① I sincerely hope that your peaceful daily life continues.</span><span class="q-opt">② I would like to hear your expert opinion.</span><span class="q-opt">③ Did you have a meal?</span><span class="q-opt">④ Thank you for opening up your heart to someone like me.</span></div>
+<div class="q-item"><span class="q-num">Q5.</span> <span class="q-word">도와주세요.</span> = ? <span class="q-opt">① Where are you going?</span><span class="q-opt">② I&#x27;m glad to hear everything is alright.</span><span class="q-opt">③ Please help me.</span><span class="q-opt">④ I would like to hear your expert opinion.</span></div>
+</div></td></tr><tr class="section"><td colspan="4">높임 어휘</td></tr><tr><td class="num">21</td><td class="k">진지</td><td class="en">Meal (Honorific)</td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGAQAAAABZVd8pAAABKUlEQVR4nG1SS2pDMQzUi94mYHAPkGW3AcPrpiB4gRygx+h1epuuAioudKPid4OcIODgLBVU+oHIUG8shtHMgGYw+H3X1d8AAAwNLBIEhxVlJVYTh0moFIDYYSuA4+tlXn6mG7bd5CV5bMT6cdqfAD9v2MA7+f4fvK9Zkxmiqc8XomTLEzmsYbJCSf1u1Umj5uZ4Q1vg8e4yX9nxFLJMhOg9SsFYIFinR9pSabP3rSWHwE38biPMqCV2+cpkEql5Pa2gxJw7vZi1ZKUuCweZIhbPkzlapV6vaDWsDTvelDRw4k6vpjwRo7+lmYQSi78lMAgnC+L0xqh4Pb7h5aXrATcURpdlBIDNYX+/rl0P8PB0Wrdd14N32I717O4xnsf8DDbMrpPDPz39AkJWm2KbH6MJAAAAAElFTkSuQmCC" alt="QR"/></td></tr><tr><td class="num">22</td><td class="k">성함 / 존함</td><td class="en">Name (Honorific)</td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGAQAAAABZVd8pAAABPElEQVR4nG2SvWoDMQyAlfiWgIsDmQoZC11drkvB5QJ5gLxKHqWv0gcIqLiQxcUHWQMdMxkcfJBFRqU/EB3Ui82HLH22NGH4XXX6dwAAhAJsHGjBIiE5JA6CBZ1Jg0PBpgD9Zej6n9OVtUvfW8kalfdpnUB9XNkEV+F7f5R1mXPowDBJP22cZ986kQ9KXejnIcwFMzf3aZH2FyvY+QRQm66ivHt76u9n79IPYtuZCJqlSw7G21g6URe8UaSxBOlHSF5RNDKOTeRgXBH5miEd6vYVeuEH2CqKnpzI10DN++1xCCvpxzZnN85XH46mSWr+JOMUsUaL0i9a7VuHSvaS2etoouwlIESyrIP8Z0PD4fNNDS+jOcCiAirpAgDL3fpulkdzoHebNCujdxBqBzkLv+m5UXjh+UbETf6Z0y9goJnOCcKtIwAAAABJRU5ErkJggg==" alt="QR"/></td></tr><tr><td class="num">23</td><td class="k">연세 / 춘추</td><td class="en">Age (Honorific)</td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGAQAAAABZVd8pAAABM0lEQVR4nG1SS2rEMAxVxtkEXDQHmGUPEEg3Ay4Z6AHmGN32KL1KDzDg4kU3GpQb9AQDHhQIBQWXfqAy1BuLx9N7kv2aAj9n3fwWABBBoGAAbzDWSCFqIYORz+ohRINtAKZlHqfv6g8bdmnqLQasTKNWek080Nd9Z31LERoBi9r5PIZU0hAMllmRQ6+2l/KgqEkMr6EF9tt5XKPBynnpHrs3+LC9iMjgi9WTjNKzjNY3oXgfhex8Qjk5ZbQ8HaEQBjF6LVz79ekFpt7yJCknDVZPM6cBHVe+4nIOtZ6/Cdhe3HZv3n4VWLvp/mT2Be4lDSE6+5elRM/I9i8hAse+eDK+Lao7v7+6+bnKAYmj6KrdYNmdHm67XOVgPR0vnRyqHJAPkLPZd3NtIS5lezS85p+cfgLpjJ9jfncOHwAAAABJRU5ErkJggg==" alt="QR"/></td></tr><tr><td class="num">24</td><td class="k">생신</td><td class="en">Birthday (Honorific)</td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGAQAAAABZVd8pAAABLklEQVR4nG2SQUpEMQyG86Zv8yBQD+EBHtSNEOjAbAWP4SU8hFdx5UqIdOEmQ+cGnmCg0oHZ5BFRB8wDu2n4+PsnNP9g8HuWzaUAAIYOFgnQsaosxGrimGBDBGLHNgCHl1M+/FSXMwIkLHfzioX2Pj0eIez/2MBb+b5vfF+zJhmiqZ8PIxUriRxrGWKlWVczQ9eopTvdCOFwu4x5YadTTZIoBN9Dc40V0LyfCPa59uz71iSI3MW/LcolaI1eZ5FNInXv14WUmIvXaU5ai5L3662XFEP1Oi7WGq39pImF1oPXiQVDntn7VeCSiIPfpVnFGqvfJTBImQ3F/1/UsHy8hdOTY8sVn0/4vJtWOz/T6+56aqtsTMv9cerbVa6KELTm5hs/R3kAG7LL5PBPTr8A6Y6d+hCBLGYAAAAASUVORK5CYII=" alt="QR"/></td></tr><tr><td class="num">25</td><td class="k">말씀</td><td class="en">Words / Speech (Honorific or humble)</td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGAQAAAABZVd8pAAABKklEQVR4nG2STWoDMQyFNfFsAgYXss2mUOiqYJhuCi4O5DC9Ti9UUHGhGxXNDXKCAQcFulFw6Q9Ehnpj8/H89EBvaPB7zqu/BwAgCLSQwBvGipRQGxlGvqqHhIatAA6fpzz/vC7sblvmaNno6vuyX8B9XNiAO/q+7+3c1oQyhKY2nw+ptDIlq3MYOEW1fzWKBi1idSJFPeRk/EY/yHy7frP5oOQQGHyzfpKKRJbczWUOHoVsPopanHKwOuKpUUhi/SoGTYil88tRuajNB0xKU3Bsdexcq6nzG+EcYbO4qwery6oeI3b5qpQpobO7bI08B7a7BATG2DyZuaug1/7w6k7PXQ9YHKHrssBx+7K/WdeOwbJZdvLY9apQglrtPo4jPUEbsunk8E9PvwBXj5ru1sK27gAAAABJRU5ErkJggg==" alt="QR"/></td></tr><tr><td class="num">26</td><td class="k">댁</td><td class="en">House / Home (Honorific)</td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGAQAAAABZVd8pAAABOUlEQVR4nG1SsUoEMRCdvWyzMJBrBcFGuEoIxEbIkYVrBT/D77vK6iBHBJsc2Q8QxA84yJEFmwkjosUsmGbC4+W9N5PpGH5PW/1dACAABdYOUGCZErlAnASWkBOCCwLrAY5q9ieABWYxPhqJQaaInhZ6XRjTT72XvszFedBMMh8qFzlaJz1iU7Cd01rwyDjSFKvgQWKdELwTej2cPt83w+siH9vMGZBlFipGmVy91Ms2egw1yXwVglWUteB1PM3YdncvV8K3tS2Ne5iMeFt0TjmSzAcVbLRa5YUv21KcqyJf37pwM5/V+mHRb/EYTJB6qSi0Lig5e4ajhjFcZL8BUjWMSc5ZE0wfRzWLWa3aetrMuN8t//zr+rC7HYLgAeDh6TzUUfBUeRvu+nIRvP7Sx2fgzoud7P7Z028EYJUOdwldgwAAAABJRU5ErkJggg==" alt="QR"/></td></tr><tr><td class="num">27</td><td class="k">치아</td><td class="en">Teeth (Honorific/Medical)</td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGAQAAAABZVd8pAAABJUlEQVR4nG2SwUoEMQyGM3YuQiGCV49ehYF6rMzCPoyv4wsJkRy8RLIPIOzR00ClC16yRFaFzYC9tHz8/f80zeDwu44XfwcAIOjgWCEHpkZWyVwCk9wsQ6XALgD2X4d593M6s7sb3k2Rjam9LtsF0tuZDbSR034fc927zIBusb6MlZ1LDawpodbJ4l3JYGjcg248fFzBcZyPFDOMpdSUYob6jArZox8R9kn7HHOlQM7UZV0fcTLFqHN3F6w9+nFGq0S80rGYstXo15pJwaSrXE3e6tpPTHpqPUWdYvFME0U/mQqXSin+pTuDosa/BALWybPE/qHBbv+SDk+rPnNJQinUMgLA+/P29rKtWF6ul01/WM2VSj29MOg+R30EH+Ywk8M/c/oN6umd/Ui3PmQAAAAASUVORK5CYII=" alt="QR"/></td></tr><tr><td class="num">28</td><td class="k">말씀하시다</td><td class="en">To speak / To say (Honorific)</td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAABOAQAAAACm0R2wAAABdUlEQVR4nG1TwYZdQRA97/VshqbfBwzZZDt09COGpoe7CvmJfED+IORH5idCtqGjFjEUfbmrELIZsgo17uMJfVUYGbpIr0o5Tp06p3qn+Pe2/XMFoGKVHmKHH7utkyvSs/LQvdgOD3GevuPriN0Dy7bdP8hT+fz2wM2dnKfZdNE6a3DkDe+u3vJTcTQaVJVdzKrd6PVo8HApj9MipZfxc+JtnHaxvHeHjC+HankppdUxuZFht745hfn3t836IOq5p6LdYBmnuGyYbmazW3AMBErjblgzUVCRapz8cb6GHC/pg3GHOPue2XXj7+VrxOmcMNVRgz6+Pbn7E64Mg7jIUlMro14oF+3Skcxu64oGUjJZoEWl5pOwwXJoWhKacR3cJbjITuw9LFdRZvx5MepFy1p8FsCkqcpUfQlkM0YVT52b4Q29LL/irYPhZV9ZOgBzD4BLyzGBzT0AOOATwru7Eetku350H1/9NE5W1KKBosli998/9BcgArXlOYcZ3wAAAABJRU5ErkJggg==" alt="QR"/></td></tr><tr><td class="num">29</td><td class="k">주무시다</td><td class="en">To sleep (Honorific)</td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAABOAQAAAACm0R2wAAABdElEQVR4nG1TwaZcQRA9d+puho6ejwizGm50iKG5Q74khPxEyCbbkO0jn/G2j4oOT6i4w6xCmE0+oMcNs6mrIpFH15NeleM4darqdGf495bVQwWAMVsYB0Vo0UlLtKrZpEFXy2Y3HE6b42e0KHDCh/3P+rd8eD2wfz+8wI1DMalUpBKcbn/p5YcA3DkPZlaIs5k6vwGCAEq59RBLSsNtksV108AxcQW33aCErCSFWoX+fr2lzdfrcuc8VFK2eTRtueAQKzNTfsSlEhBLart1gu33w3zB0XElFptKtux0tU4xq5C23NU9LbvrNeElO+5AY8q1BqfLBjZO0+h0Z7FaqyI5bvmz32LF3QIVo4whVXEezgkJ22/nN4ObIsc4D0LVzzYjE0Sjyw49qbTWp/2lVegMxwve0vF27zNZaigqk/MQdX+ahwPB7UFCEVUALg/AOn15niCPMvlrc/cR8dUn56zG3Wt69+zsssPgkWMZ3C26//6h3xECsYd646NvAAAAAElFTkSuQmCC" alt="QR"/></td></tr>
+</tbody></table>
+
+
+<div class="paywall-cta" style="margin:40px auto; max-width:720px; background:linear-gradient(135deg,#1a1a2e,#16213e); color:#fff; padding:32px 28px; border-radius:14px; text-align:center;">
+  <div style="font-size:32px; margin-bottom:10px;">🔒</div>
+  <h2 style="font-size:22px; margin:0 0 8px; color:#fff;">전체 콘텐츠는 결제 후 학습 가능합니다</h2>
+  <p style="margin:0 0 18px; opacity:0.85; font-size:14px;">위 미리보기는 약 6%입니다. 전체 <strong>500 expressions</strong>, 모든 예문·시나리오·퀴즈·QR 코드까지 잠금 해제하려면:</p>
+  <a href="https://jssmn21.gumroad.com/l/gnefla" target="_blank" style="display:inline-block; background:#f97316; color:#fff; padding:14px 32px; border-radius:8px; text-decoration:none; font-weight:800; font-size:15px; margin:4px;">💳 Gumroad에서 구매 — $9.90</a>
+  <button onclick="showLicenseModal()" style="display:inline-block; background:transparent; color:#fff; padding:14px 32px; border:2px solid #fff; border-radius:8px; cursor:pointer; font-weight:800; font-size:15px; margin:4px;">🔓 이미 구매했어요</button>
+  <p style="margin-top:16px; font-size:12px; opacity:0.7;">키 1개로 <strong>모든 8개 자료</strong> 잠금 해제</p>
+  <p style="margin-top:20px;"><a href="vocab-hub.html" style="color:#f97316; text-decoration:none; font-weight:700;">← 다른 자료 둘러보기</a></p>
+</div>
+
+
+
+<div id="license-modal" style="display:none">
+  <div class="lm-box">
+    <h3>🔓 라이선스 키 입력</h3>
+    <p>Gumroad에서 구매 후 이메일로 받은 라이선스 키를 입력하세요.</p>
+    <input id="license-key-input" type="text" placeholder="XXXX-XXXX-XXXX-XXXX" maxlength="40" autocomplete="off">
+    <div class="license-msg" id="license-msg"></div>
+    <button class="lm-btn primary" onclick="unlockWithKey()">잠금 해제</button>
+    <button class="lm-btn ghost" onclick="closeLicenseModal()">취소</button>
+    <a href="https://jssmn21.gumroad.com/l/gnefla" target="_blank" class="lm-buy">💳 아직 구매 안 했어요 — Gumroad에서 구매</a>
+  </div>
+</div>
+
+
+<script>
+(function() {
+  const STORAGE_KEY = 'krguide_license_v1';
+  const GUMROAD_LINK = 'https://jssmn21.gumroad.com/l/gnefla';
+
+  function isUnlocked() {
+    try {
+      const d = JSON.parse(localStorage.getItem(STORAGE_KEY));
+      return d && d.valid === true;
+    } catch(e) { return false; }
+  }
+
+  function markUnlocked(key) {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify({valid:true,key:key,ts:Date.now()}));
+  }
+
+  window.unlockWithKey = function() {
+    const input = document.getElementById('license-key-input');
+    const msg = document.getElementById('license-msg');
+    const key = (input.value || '').trim().toUpperCase();
+    if (!key) { msg.textContent = '라이선스 키를 입력하세요.'; msg.className = 'license-msg err'; return; }
+    // For now: any non-empty key unlocks (server verification can be added later via worker)
+    // Real verification should call /api/verify endpoint
+    fetch('/api/verify', {
+      method:'POST', headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({license_key: key})
+    }).then(r => r.json()).then(data => {
+      if (data && data.success) {
+        markUnlocked(key);
+        msg.textContent = '✅ 잠금 해제 완료! 페이지를 새로고침합니다…';
+        msg.className = 'license-msg ok';
+        setTimeout(() => location.reload(), 800);
+      } else {
+        msg.textContent = data.error || '잘못된 키입니다.';
+        msg.className = 'license-msg err';
+      }
+    }).catch(() => {
+      // Offline / no server: dev fallback — accept any 16+ char key
+      if (key.length >= 12) {
+        markUnlocked(key);
+        msg.textContent = '✅ 잠금 해제 완료 (오프라인 모드)';
+        msg.className = 'license-msg ok';
+        setTimeout(() => location.reload(), 800);
+      } else {
+        msg.textContent = '서버 연결 실패. 키 형식을 확인하세요 (12자 이상).';
+        msg.className = 'license-msg err';
+      }
+    });
+  };
+
+  window.showLicenseModal = function() {
+    document.getElementById('license-modal').style.display = 'flex';
+    document.getElementById('license-key-input').focus();
+  };
+  window.closeLicenseModal = function() {
+    document.getElementById('license-modal').style.display = 'none';
+  };
+
+  // Apply lock on DOMContentLoaded
+  document.addEventListener('DOMContentLoaded', function() {
+    if (isUnlocked()) {
+      document.body.classList.add('unlocked');
+    } else {
+      document.body.classList.add('locked');
+    }
+  });
+})();
+</script>
+
+
+</body></html>

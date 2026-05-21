@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="UTF-8"><title>맛보기 · Essential Korean Nouns</title>
+<style>
+  @page { size: A4; margin: 16mm 12mm; } * { box-sizing: border-box; }
+  body { font-family: 'Noto Sans KR','Malgun Gothic',sans-serif; color:#1a1a2e; margin:0; line-height:1.45; }
+  .page-break { page-break-before: always; }
+  .cover { text-align:center; padding:60px 20px 30px; border-bottom:4px solid #C0392B; margin-bottom:22px; }
+  .cover .label { font-size:12px; font-weight:700; letter-spacing:3px; color:#C0392B; text-transform:uppercase; margin-bottom:14px; }
+  .cover h1 { font-size:30px; margin:0 0 8px; color:#1a1a2e; font-weight:800; }
+  .cover .kr { font-size:22px; color:#1A4A8A; font-weight:700; margin:0 0 18px; }
+  .cover .desc { font-size:13px; color:#555; max-width:600px; margin:0 auto; line-height:1.7; }
+  .cover .features { margin-top:24px; display:flex; justify-content:center; gap:14px; flex-wrap:wrap; }
+  .cover .feat { background:#1a1a2e; color:#fff; padding:6px 14px; border-radius:18px; font-size:11px; font-weight:600; }
+  h2.cat-h { background:linear-gradient(135deg,#1a1a2e,#16213e); color:#fff; padding:14px 22px; margin:0 0 14px; font-size:18px; border-left:6px solid #C0392B; }
+  .scenario-box { background:#fff8f0; border-left:4px solid #f97316; padding:14px 18px; margin-bottom:14px; border-radius:6px; }
+  .scenario-box .sb-title { font-weight:800; color:#9a3412; font-size:13px; margin-bottom:8px; }
+  .scenario-box .dl-line { font-size:12px; margin:3px 0; }
+  .scenario-box .dl-speaker { color:#C0392B; font-weight:700; margin-right:6px; }
+  .compare-box { background:#f0f5ff; border-left:4px solid #1A4A8A; padding:14px 18px; margin-bottom:16px; border-radius:6px; }
+  .compare-box .cb-title { font-weight:800; color:#1e3a8a; font-size:13px; margin-bottom:8px; }
+  .compare-box .cb-pair { font-size:12px; margin:3px 0; display:flex; gap:12px; }
+  .compare-box .cb-ko { color:#1a1a2e; font-weight:700; min-width:220px; }
+  .compare-box .cb-en { color:#666; font-style:italic; }
+  table { width:100%; border-collapse:collapse; font-size:10.5px; table-layout:fixed; margin-bottom:14px; }
+  thead th { background:#1a1a2e; color:#fff; padding:7px 6px; font-size:10px; border-bottom:2px solid #C0392B; }
+  th.num-col{width:30px;} th.k-col{width:80px;} th.r-col{width:70px;} th.en-col{width:120px;} th.qr-col{width:34px;}
+  td { padding:6px 8px; border-bottom:1px solid #e5e5ea; vertical-align:top; word-break:keep-all; }
+  tr:nth-child(even) td { background:#fafafa; }
+  td.num { text-align:center; color:#888; font-weight:600; font-size:10px; }
+  td.k   { font-weight:600; color:#1a1a2e; font-size:12.5px; }
+  td.r   { color:#6b6b6b; font-style:italic; font-size:10px; }
+  td.en  { color:#1A4A8A; font-size:11px; }
+  td.ex .ex-ko { display:block; color:#C0392B; font-weight:600; font-size:10.5px; }
+  td.ex .ex-en { display:block; color:#666; font-style:italic; font-size:10px; margin-top:1px; }
+  td.qr { text-align:center; padding:3px; } td.qr img { width:30px; height:30px; }
+  tr.section td { background:linear-gradient(135deg,#1a1a2e,#16213e) !important; color:#fff; font-weight:800; font-size:11px; padding:7px 12px; text-transform:uppercase; }
+  tr.section td::before { content:"▸  "; color:#f97316; }
+  tr.quiz-row td { padding:0; }
+  .quiz { background:linear-gradient(135deg,#fffbeb,#fef3c7); border:2px solid #f59e0b; border-radius:10px; padding:14px 18px; margin:14px 0; }
+  .quiz .q-title { font-size:14px; font-weight:800; color:#92400e; margin-bottom:6px; }
+  .quiz .q-sub { font-size:11px; color:#78350f; margin-bottom:10px; font-style:italic; }
+  .quiz .q-item { font-size:11px; margin:6px 0; padding:6px 10px; background:#fff; border-radius:6px; }
+  .quiz .q-num { font-weight:800; color:#C0392B; margin-right:6px; }
+  .quiz .q-word { font-weight:800; color:#1a1a2e; font-size:13px; }
+  .quiz .q-opt { display:inline-block; margin-right:12px; color:#444; }
+  .answer-key { background:#f9fafb; padding:20px 24px; border-radius:8px; }
+  .ak-row { padding:6px 0; border-bottom:1px solid #e5e5ea; font-size:12px; }
+  .ak-row strong { color:#C0392B; }
+</style><style>
+#license-modal { position:fixed; top:0; left:0; right:0; bottom:0; background:rgba(0,0,0,0.7); display:none; align-items:center; justify-content:center; z-index:9999; }
+#license-modal .lm-box { background:#fff; padding:32px; border-radius:14px; max-width:420px; width:90%; box-shadow:0 20px 60px rgba(0,0,0,0.3); text-align:center; }
+#license-modal h3 { margin:0 0 12px; font-size:20px; color:#1a1a2e; }
+#license-modal p { color:#666; margin:0 0 16px; font-size:13px; }
+#license-modal input { width:100%; padding:12px; font-size:14px; border:2px solid #e5e5ea; border-radius:8px; text-align:center; font-family:'Courier New',monospace; }
+#license-modal input:focus { border-color:#C0392B; outline:none; }
+#license-modal .license-msg { font-size:12px; min-height:18px; margin:10px 0; }
+#license-modal .license-msg.err { color:#C0392B; }
+#license-modal .license-msg.ok  { color:#059669; }
+#license-modal .lm-btn { display:block; width:100%; padding:12px; border:none; border-radius:8px; font-size:14px; font-weight:700; cursor:pointer; margin-top:8px; }
+#license-modal .lm-btn.primary { background:#1a1a2e; color:#fff; }
+#license-modal .lm-btn.primary:hover { background:#C0392B; }
+#license-modal .lm-btn.ghost { background:transparent; color:#666; }
+#license-modal .lm-buy { display:block; margin-top:14px; padding:10px; background:#fef3c7; color:#92400e; border-radius:8px; text-decoration:none; font-size:13px; font-weight:700; }
+</style>
+<style>
+  .topbar { background:#1a1a2e; color:#fff; padding:12px 20px; display:flex; align-items:center; gap:14px; font-size:13px; }
+  .topbar a { color:#fff; text-decoration:none; font-weight:700; }
+  .topbar .brand { color:#C0392B; font-size:15px; font-weight:800; }
+  .topbar .spacer { flex:1; }
+  .preview-banner { background:#fef3c7; color:#92400e; padding:10px 20px; text-align:center; font-size:13px; font-weight:700; border-bottom:2px solid #f59e0b; }
+</style>
+</head><body>
+
+<div class="topbar">
+  <a href="learn-korean.html" class="brand">🇰🇷 KR Guide</a>
+  <a href="learn-korean.html">메인 가이드</a>
+  <a href="vocab-hub.html">📚 학습 자료</a>
+  <div class="spacer"></div>
+  
+<div id="google_translate_element"></div>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'ko', includedLanguages: 'en,ja,zh-CN,zh-TW,es,fr,de,vi,th,id,ar,ru,pt'}, 'google_translate_element');
+}
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</div>
+
+<div class="preview-banner">🔓 맛보기 · Free Preview (8%) — 전체 학습은 결제 후 가능합니다</div>
+
+
+<div class="cover">
+  <div class="label">Essential Korean Nouns · Enhanced</div>
+  <h1>Essential Korean Nouns</h1>
+  <div class="kr">필수 명사 · 향상판</div>
+  <p class="desc">By theme — Korean noun · romanization · English meaning · example sentence — plus scenarios, comparison boxes, quizzes, and pronunciation QR codes.</p>
+  <div class="features">
+    <span class="feat">🎭 시나리오</span><span class="feat">🔍 비교</span><span class="feat">📝 퀴즈</span><span class="feat">🔊 QR</span>
+  </div>
+</div>
+</tbody></table>
+<div class="page-break"></div>
+<h2 class="cat-h">👨‍👩‍👧 사람·관계·직업</h2>
+<div class="scenario-box"><div class="sb-title">🎭 시나리오 대화 · Scenario Dialogue</div><div class="dl-line"><span class="dl-speaker">아이:</span> <span class="dl-text">엄마, 아빠는 어디 가셨어요?</span></div><div class="dl-line"><span class="dl-speaker">엄마:</span> <span class="dl-text">회사에 가셨어. 의사 선생님 만나러.</span></div><div class="dl-line"><span class="dl-speaker">아이:</span> <span class="dl-text">할머니께도 전화드릴까요?</span></div><div class="dl-line"><span class="dl-speaker">엄마:</span> <span class="dl-text">응. 친척들에게도 안부 전해드려.</span></div><div class="dl-line"><span class="dl-speaker">아이:</span> <span class="dl-text">네! 동생도 같이요?</span></div></div><div class="compare-box"><div class="cb-title">🔍 비교 박스 · Comparison</div><div class="cb-pair"><span class="cb-ko">아버지 / 어머니</span><span class="cb-en">father / mother</span></div><div class="cb-pair"><span class="cb-ko">아들 / 딸</span><span class="cb-en">son / daughter</span></div><div class="cb-pair"><span class="cb-ko">형·오빠 / 누나·언니 / 동생</span><span class="cb-en">older brother / older sister / younger sibling</span></div><div class="cb-pair"><span class="cb-ko">선배 ↔ 후배</span><span class="cb-en">senior ↔ junior</span></div><div class="cb-pair"><span class="cb-ko">어른 ↔ 아이</span><span class="cb-en">adult ↔ child</span></div></div>
+
+<table><thead><tr><th class="num-col">#</th><th class="k-col">한글</th><th class="r-col">발음</th><th class="en-col">English</th><th>예문</th><th class="qr-col">🔊</th></tr></thead><tbody>
+<tr><th class="num-col">#</th><th class="k-col">한글</th><th class="r-col">발음</th><th class="en-col">English</th><th>예문</th><th class="qr-col">🔊</th></tr><tr class="section"><td colspan="6">가족 FAMILY</td></tr><tr><td class="num">1</td><td class="k">가족</td><td class="r">ga-jok</td><td class="en">family</td><td class="ex"><span class="ex-ko">우리 가족은 다섯 명이에요.</span><span class="ex-en">My family has five people.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGAQAAAABZVd8pAAABJ0lEQVR4nG2SwWlDMQxA9aN/CQi8QI6Bngou7tHlBzJAV8koXaUDBFx8VfGHDNAJPjg4RwWVtIXIUF9sHtKTjDQo/J7r6u8BAAkaqItAhhVJEpMoG8ZUmSAmw1YA88Nlmn9edxY2efaWjVhPy34B/LyzIe34dj/buqqNJ3Aqtj9ynDWHaJhMXkv0YnOrz+IkNxuXsQrBFK2vQuAQETuWsytAanwjXak+le3O2/4CEaXGNlf9lFGK6+qqV3axWR+8zNfDO8ydz3kpWbr+EjAHh8X6WEVr7HzAvjasDbs4RKXkk/UxYQ4xoZ2laqLiip3lrW7xSmx8oxM4fX3g5a3zlYacsPsbnDfH/XZduz1wx9dl3XbdHszwONZzMuw85gPoMJmdHP7Z029v7ZY9AUxzwwAAAABJRU5ErkJggg==" alt="QR"/></td></tr><tr><td class="num">2</td><td class="k">부모</td><td class="r">bu-mo</td><td class="en">parents</td><td class="ex"><span class="ex-ko">부모님께 전화해요.</span><span class="ex-en">I call my parents.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGAQAAAABZVd8pAAABL0lEQVR4nFVSQWoDMQzUrvYSEDhfKOQacHGgFFw21/wuX+mpp4CCC6Xg4r0W+ggXBfbixaUkEFkXi2E0GkbuKlxr6W8NADAkM4oHUlgqUYovNd6xYVm/HeZpuiheDwAzPdtrd6tINaN41rOYp03pCn7dsY738f/d6b21igestSgssATEZBt/DrLh0WsekyVbXfQKK8LkMKHm5WKCMAWtF8cKpuCoeF19BPw5PS1KbzjjEnczyErxMs3f8wsbnWlKkEmc03vFR8JgS+NvdJSZGn815iBCRuUH0eVsudWrkNELeq1XDRgXWOfXv7/KiRcY9k3OCY0kVrP9udtsYbWgumVvymQePpCOzX1DCZa15wFgO4AcPtcNRv5Cx4tt/5VHhKT9/Q4XyGDspLO/NSrTPxVtljIjul/AAAAAAElFTkSuQmCC" alt="QR"/></td></tr><tr><td class="num">3</td><td class="k">아버지</td><td class="r">a-beo-ji</td><td class="en">father</td><td class="ex"><span class="ex-ko">아버지는 회사에 가세요.</span><span class="ex-en">My father goes to work.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAABOAQAAAACm0R2wAAABb0lEQVR4nG2TMWpcMRCG//WoWRBowVdwu6AglwLlBjlDjuHKJwjkALlEwG1AQYY0E97CqwKBNNsatKgwhnlMICRBE6JqGH4+Ps1IO8Xvs139qQBUDPUlCvzcXaQFhWTlqeu2w/l4agd8nrNXwErb3bn/Kv8e9lLzSFxnAhbhjta85V4cf2eg7oyDqrYUs6oYXw+OHpTy7ODTSKeHxNvssBMXcP4aD9Vwa5DMiRvNBBc+fiHaP2+fTLYHqpmKypyFyuihV8omO1poGaElc7dvd9seesE7Mx0dor5lzYY7og8iTGK4UjgvQ6mYSXZpZeTevc1SqbGmpRhuReilC5LZW6BtvazUuBqzqFx86my4PLqWhMVMHZw1pMjU56zDent8PuHleuY6enJl728c4tyNaBv8m/BgplNRu0/Ci/WVuI76mmB82VcWAWDeA0Dp8TaBZ64DtsPTe4S3H+Ys9XB0dP/qxz8OXFJo0exi998/9BN/i7Jkct6CswAAAABJRU5ErkJggg==" alt="QR"/></td></tr><tr><td class="num">4</td><td class="k">어머니</td><td class="r">eo-meo-ni</td><td class="en">mother</td><td class="ex"><span class="ex-ko">어머니가 요리해요.</span><span class="ex-en">My mother is cooking.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAABOAQAAAACm0R2wAAABdUlEQVR4nG1TsWpVQRA97+1thJW9kNZGeGD14MqmERZuWqv3Dan8Bit/wQ/IZwRSCSMr2EzYwGuFEEgrTLhCEOYygqjsBKcaDoezZ87Mbgx/at3+7QAQFovzpIg92rQmgxbjDh3W8X5/U0d87rlb4BjW9/fyu/1XHJXKkpl6BTRlQa7R6z4M/I0B2jgPZlYzFTN1fiN4igi59KimZKDcJodK0bSQwHsgQ+HANfTcoTzYGd48rp+cB26BpjCb+temRZJQKC6Hr+nZcT8e6JEclwpnE3niYRFLtVjxuiUlVQ7qd1G11MXC7BSk8LwUkei4WhvNlNvsdWOWLIrsuBKWmqtVtwtQJJ5jFu65Qwxpwqvr23dTj4a7Me1WPv3+wl3JIe6vnuPnSZ/DgOtdeBt3A5xCXr6siId06W6H0CRm5ebyTfryKHQW4PLl2NgUQD/xFljzzWkG97oDgJE+Ip1f9NwgP/bn4cPr2yceaKZUJ7eLzX//0C+ErLi+FmjPaQAAAABJRU5ErkJggg==" alt="QR"/></td></tr><tr><td class="num">5</td><td class="k">형 / 오빠</td><td class="r">hyeong / o-ppa</td><td class="en">older brother</td><td class="ex"><span class="ex-ko">형은 대학생이에요.</span><span class="ex-en">My older brother is a college student.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAABOAQAAAACm0R2wAAABfklEQVR4nG2Tv2ocMRDGvz1tsyDQPkDKA1cHMrrGIFDAlcGQZwjkPUwgbcAPkMdwG1CYNIExOnAVCLhxG9CxgWtmUcDEoDFRNQwfv/nzjYaGf2/dvEQAMpbmnBfYPluEnFSJjbvsuM5Pu+9hxrdeuwEejP/5VJ/Dl7cBLj6+O7s8qCyKcE2GrOIO+S0/B3vVQ2uNFh9bE9WvBQcLE2JfzZ4t4f4u8NpXG08/9o/l+HXOiptdiMkwmZ4wLFefbm7X06r3QMFla1KTXjtO087f+cN4cei17BIBjoLa2Wm3Tg1HfFZ74BKbM7HFngux7IJlI6qHusSYqZnUc5G9STXWavVs5PKSQ0mK2yzVUgVBc4MnoUbKC9SYOdlQudcOZP/Ec3NfPkz9bPaIed3y/vcb5XFAtGBxPXezTmICb8ej1x6XLJIcaY/BlUi4vLpJIbvEUlS/bIkXAaDuAZjC9T6A1T0AmLe3cO+/9FpTze6XuTl/VA5l5FQceeXF8N8/9BdZ5rFw2kzevAAAAABJRU5ErkJggg==" alt="QR"/></td></tr><tr><td class="num">6</td><td class="k">누나 / 언니</td><td class="r">nu-na / eon-ni</td><td class="en">older sister</td><td class="ex"><span class="ex-ko">누나가 결혼했어요.</span><span class="ex-en">My older sister got married.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAABOAQAAAACm0R2wAAABa0lEQVR4nG2TQWodMQyG/xnN5oHA7wCBbnoAlwl046C37SpXySG6LfQqhR5AwVsHP8gqUMgyWw8OPAoe3E0CVqhWQvx8+i3JU8db7PN7BkCRGakn8FjNTTNzaj0N1WU/lqXeXE7fR+0MoP3B/pa+R2JdPVrTkTBTcYfHfDnLqF22Jf3E/oTJeOg9EQJLbyPhfnv9G2LcjkfzisiFEnEYCYt8ebkpp7BfjLNSfSnS4Iz2zO7T5o7t65PRriFKdqEYLf3A4TdAz2r8UuaeBDL6RfS+K0tazcwO7hFufbjbjbMOCiWTuHFm0Fy6StbVcItPUCfJbAjaNftEbLoh+qqV1mB2Aa3eac6ohqvqCvWWxGiLhNrEsxiuIotEEjLaLlQzNyHLDSuhCygM1anjgU6/btXc5Hw/+W27+7zb6eSWeO3souEmboVdhum2AK94+XYd9/FKZuB8e3VhTx+5tWUXP/hFptqYzS6m//6hfx0RtjKZmaq+AAAAAElFTkSuQmCC" alt="QR"/></td></tr><tr><td class="num">7</td><td class="k">동생</td><td class="r">dong-saeng</td><td class="en">younger sibling</td><td class="ex"><span class="ex-ko">동생이 학교에 가요.</span><span class="ex-en">My younger sibling goes to school.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGAQAAAABZVd8pAAABM0lEQVR4nF2SwWYEQRCG/50eIhQ9DxAi5BqaXnIZZsk175FrHi4P0NE51uphryHCklOYNcMKNSpiQ2pSp/apqv//S68Up5qr3weAhKFkEZBhRUSERfmPVXMzNc1684w/VgP9Hk0PwyqALnc+WIYiyjos9tWHmrEF1lZXVVjJqxiWh9BmLdmylJk6F6m1fW0SL3m0LGknTJ3YWQ5wvnBndFc6XQAz4tbk6Oen/VX+QLAaviPRobU5zt97d/b1tns0faN6JdfGRbYgEdHbG0BiFP9z7Mp4BuXoXbE5WHmE65xhtVt1yX26ZnFnz8ocYPZVh5tjfed6v7F58XKPiQ/WX0IaghIbjcoLvRa4KVkvNEbHydlZJvFwka0ucLyOlI794h8wCw1h4a+eHm7H5p+/U5l/+g0mUZpiQ8MC5AAAAABJRU5ErkJggg==" alt="QR"/></td></tr><tr><td class="num">8</td><td class="k">할아버지</td><td class="r">hal-a-beo-ji</td><td class="en">grandfather</td><td class="ex"><span class="ex-ko">할아버지께서 신문을 읽으세요.</span><span class="ex-en">Grandfather reads the newspaper.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAABOAQAAAACm0R2wAAABfklEQVR4nG2TT4rVQBDGv7zOJtBQD94VBFcPesiACJEEZjvgGbyBN5iN4NYDeAnBrdCPFtyUdMDVgODSbYUEZlOhRXSgWuxV8ePjq7/dFPx9++ExAhAhAVoY3tKshbKqFjb0sB+XMD07Hi+wFPi+7+9+/gkf3+/wrYQpVhRZRXJJXPm2S8vA1w5NVUMpa1p5GItamiRw8KBkabu76LFe0e3ZaldNRFEQbTas1A/ryI6GigYVl732toYmh3nBy4APt1arIsIS3VDXm3LU0fe+7u35F9+WBbOdQ+tPT7g/nt1SZeONFoztMH+qfImHkkvqa9/zg7vuPp7vJ+uwzn57Ua7oUvWmXKSI4p/eprjtFFq5t1rh5PqiPFabn5926qf2Bq+rbQpRCuzE+h5wkgBy3RStliPGQQWo9tYjYrqmXN/OpaG7gG3fZ0tJ8cbn7uahuij2ykUB2I4PwBamU5C1mjrgT3LBj1fvrdbJ5/NCd8u3yjciSVHvyc6h+e8f+gW/F7cP2HqskQAAAABJRU5ErkJggg==" alt="QR"/></td></tr><tr><td class="num">9</td><td class="k">할머니</td><td class="r">hal-meo-ni</td><td class="en">grandmother</td><td class="ex"><span class="ex-ko">할머니께서 김치를 만드세요.</span><span class="ex-en">Grandmother makes kimchi.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAABOAQAAAACm0R2wAAABZklEQVR4nG1TQWokMQysGc8lYPA8YiGngQ6aS8DgQF6SHwTygJAHLOwD9hm5BrT4tKDFDXnAXvYBCh2YixsFQgJWWJ9EIapKKnlj+Hjr9rMCwFgspqkjjmjrNZn2bDKg23V/OMzX+/kXRhR4Duvvf4ov6OXD7el6dihaF8VSo+Pd8JW8F0fnwcwqcTbrzm+ETBGBslM7LzQ/kqxejSktrOBRDW2JWUhqGBl239bXgLPT+uQ8dDKeQrE+9qJ11aQc8he/U81IlUa13Xqcz072gu/OmVVYCtmy47WeUo8SuuOtJeZaLRQ3RWUuS1aNrldK4MLUiuOVqEraQX62QJWqVZcFJFYpkVS8h0BWCM1tHW2yRJME9R5ayAukJ8+bueSowJjmxvDnFfFufrz0N8kaqUsbebep07PyVQB7vyLWAfh7wInmI0HGre+AuOcfSDc/x96gONyE+4u/LiFGLZzq5LLY/PcPvQFeSrOxyluppgAAAABJRU5ErkJggg==" alt="QR"/></td></tr><tr><td class="num">10</td><td class="k">친척</td><td class="r">chin-cheok</td><td class="en">relative</td><td class="ex"><span class="ex-ko">친척 집에 놀러 가요.</span><span class="ex-en">I go to visit my relatives.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGAQAAAABZVd8pAAABGklEQVR4nG2SQWoDMQxFf+LZFASaG4QcoDDgLA3OTXuSgsBbgwvdFkpv4OAsNaiEFipDvbF5yF/6kg6Gn7Mffx8ABNKKKsixplo0qVXHKg2kksSxBdg7VgL+2BGgj8/cPXvoURnJ6x3kWh/3xec1q8GUTR0rpDJSnWopHDSHSMn70JhDhXm9GlvqbOL1VLfArWYf12MAa8g+zjAMZOxZj5nVeppq6R1cKXi9kilvUJ5qkRQRefIhNgbnoVNcEgl17kHjoAg5OL/H/UwXfr3Rm2Ph5cxfLM/dzeiGup5k5evUZ2EeTab+QQcSVZd3Yb2fDOvdz7JSAyvY/X3sQd6XsTsfC7DdwXh/mvagFFXbvF9BzSGR7/Phnz39BoRXkoY/rKTWAAAAAElFTkSuQmCC" alt="QR"/></td></tr><tr><td class="num">11</td><td class="k">남편</td><td class="r">nam-pyeon</td><td class="en">husband</td><td class="ex"><span class="ex-ko">남편과 영화를 봐요.</span><span class="ex-en">I watch a movie with my husband.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGAQAAAABZVd8pAAABHUlEQVR4nG2SQUpEMQyG88zbDBS68Aoe4EFdRjrg1iN5CC8kRLLNUMGt4AkGKh1wkyEyKJiC3bR8JH/+NFkcfs756vcBAAwDPBOkwJqxEZtrYJq6JSAObAV4xVM9AEysJHnYJob97fx4BDz8sYX3erlvY133oRWyW/SXMolLoeilaG602ZRrxbLJiHFSiyWoFPUaFC2EGJkMzA2SRz1LVbY26lRXyBMPjbkdTNBajnGjoGumEfWGbUbMEuPa6NbEJn9GJCVjm/pw6Z1mPdXs2AdO/gZ74o3nfi+fxxhn6S6p5RZnCQwimycNems2ePt4wdPTtAdSUBmDlxXg/P58f7PrE0vH6+N+3E17pUrQe/C3fq6y+/Klhp1c/tnTb7RPnXEoT87lAAAAAElFTkSuQmCC" alt="QR"/></td></tr><tr><td class="num">12</td><td class="k">아내</td><td class="r">a-nae</td><td class="en">wife</td><td class="ex"><span class="ex-ko">아내가 출근했어요.</span><span class="ex-en">My wife went to work.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGAQAAAABZVd8pAAABI0lEQVR4nG1SO2pEMQzUW71mwaALbJk28MApHd5CDpCr5Ci50IKDWoEe5AApUwW8eEstCvlAZIgbi2E0GlszOfyc6+63AIAKHZwKpICpVSnVXAImqaUEpQZsB7C9X9btu/rD8oG3JWKgprLaoDfVo3zdd3Gue5cVyC36S1TYOZeI5UpaFou9vTQj4x55gtkSrCXq+YKSC+Iwg50Ukg9/UIgX7WvUM8eUapfYy9YZTSnyHNWFSh/02mqlVo48pWTKNvjr0jkT6vCOTK2VUU+aO7aOgbfD1+m63+5PNc4A4lwqxl26S1LSuEuooLJ4kqA3kwG8veDlecgBd5SKwcsMkA6nh5t9G3JwOT1+7Psx8LC9Xm/ndg7+5vPMT+DTGjI5/ZPTT/ilmytM8sd+AAAAAElFTkSuQmCC" alt="QR"/></td></tr><tr><td class="num">13</td><td class="k">아들</td><td class="r">a-deul</td><td class="en">son</td><td class="ex"><span class="ex-ko">아들이 운동해요.</span><span class="ex-en">My son exercises.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGAQAAAABZVd8pAAABQElEQVR4nG2SwWYEQRCGa7bmMhS97CksueS6DBMidPSyD5DH2GseJa+SB1g6+jCWih7yALGEnIZePUTo0bFJ2BrSly4/Xf/XVX+R4feMs78CACxEyEoDCc0nm7RNmYXGFIhAW6HNALqPwXQ/1Vlrlq6rpVZiaPtND/hy1gq75tN9LX1zDmxA5ST5SGmXXaNFP8LDJd0NPJceh65f9O1nLd4Gg4nAaNGvcCNW26qFL+lhjPJAeToD5WofjfCFpBoiG3nCx8lh8kryId7wfrF6v5DMx/348ASd5OPokndJ8kEg5RqFXvoycghaR8FXYoWq7HF+K5kxJLK1lf04nIZnUe4yZ0teeblLsGC5zsTyHyoN9PaMw+MkBy4iW5QsANVyt7mqwiQHw+6+r+J6koPXcVWGoxXasfRbyIURmSz+yek3jKqTul7kNY0AAAAASUVORK5CYII=" alt="QR"/></td></tr><tr><td class="num">14</td><td class="k">딸</td><td class="r">ttal</td><td class="en">daughter</td><td class="ex"><span class="ex-ko">딸이 책을 읽어요.</span><span class="ex-en">My daughter reads a book.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGAQAAAABZVd8pAAABOklEQVR4nG2SsWrDQAyGZZ+XgOD8BqVQyBQwuEvgig1dC3mGQtdCX60PEFC4LgUFdQ0UOnYKOPggi8yV0A4y9JYTP79+fSeuyPB7pvKvAAACpewDoNFEWQNpZqMxZkYIZLQKYOdStweYaS3Gh8ZqIBqx01leQT1f7ls7N+chdOCzWj50IebYBssyokho1PYqqHqNo/VJ9IzQBZNXrfprWC7eZnwcJQtgNnnleXquHuW7b4wvRtchjTzn49apeDs3Syfsw2j5OKAGomh8xVi/g0vrngzfYeXSy2fi3vb6dhjCLK+C6XCVjq5eG2Y4L1eLj7utyQNhcm0gZ3efYYeup5PlIxBuMrLhK73euK+dS2ZX5VTvnxK+3s/2h+LJt2j2cqm2m+NitO8QZQwwDNZ3qoDOud4YX/HPP/0BDx+TIz82D8oAAAAASUVORK5CYII=" alt="QR"/></td></tr><tr class="section"><td colspan="6">사회 SOCIAL</td></tr><tr><td class="num">15</td><td class="k">사람</td><td class="r">sa-ram</td><td class="en">person</td><td class="ex"><span class="ex-ko">이 사람은 누구예요?</span><span class="ex-en">Who is this person?</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGAQAAAABZVd8pAAABJUlEQVR4nG2SMUsEMRCF3162OQiksBIsbQ8CaxnIgZUg+MsEf4ytMDKVEMlPsLEVcmTBZpYRUXACpkn4eHl5Q96k+Fnb7vcAgNChIcEbVoUkkWgxrPgmHokMm4G3dc2vwMAOjm+jZajCkmXwm+hYvvcr+65qLxlBxebzSKy8JMPawqGmKPZuiVmCcLe62qN45GT9FEtZknOWceZQ4dX6MQWOtWfjN2/u8QYn3Eeri8ROarC6vXPp5ezwfm7zoUsiYpuvuCiVZcjHUF6Cq8McIbeWUh/mRVPXuht02aunSNavpMxLImf/UpV9DdX+JQjUo/pi5wiyXuDZrQ9DD5hdIWeyzMCWn64v9+2P7QC/3X3s+3HsQUlozeSbTzPjU6dsOjn909MvRXOXBTQOOKYAAAAASUVORK5CYII=" alt="QR"/></td></tr><tr><td class="num">16</td><td class="k">인간</td><td class="r">in-gan</td><td class="en">human being</td><td class="ex"><span class="ex-ko">인간은 사회적 동물이에요.</span><span class="ex-en">Humans are social animals.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGAQAAAABZVd8pAAABLUlEQVR4nG2STWoDMQyFlXg2AYNygC4LXRUM003BMAM9QK7So3TbY/QAARVvBZoDBEIPEJjiwGwUVPoDkaHe2Hw8PT0LrQx+z2X99wAAggqGGaJjosSZ1PjK1pdtgmkc38ExgOPdeZh+Xld2f1Om5BmIFh608VvRyN/3g+9rVuMAaOrzReRipc+OaZlNclJfywkUtdRGV4tGGLL3kxy4zyF4ViSgQLR2BlKT1KHx64EjVfa1FbgEFWx1gzHm6vy65fV8eX6DKXmdVJWiTT5OpfQYxPsV5HnOrV/8OGB3CttHn7lHjZSo+W8k7jMFN3swIxQU8oyAOFlk17dDXQ7H93B+8fki94Ep+CwAcNg/3W7mZg/Cfnfa1LGZKccM8+zyrT+7hRbb7pxu9c+efgEdDZ0VZsUxsQAAAABJRU5ErkJggg==" alt="QR"/></td></tr><tr><td class="num">17</td><td class="k">친구</td><td class="r">chin-gu</td><td class="en">friend</td><td class="ex"><span class="ex-ko">친구를 만나러 가요.</span><span class="ex-en">I&#x27;m going to meet a friend.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGAQAAAABZVd8pAAABLElEQVR4nG2ST0oFMQzGM3Y2DyoV3Lp8BxgYN0IffeABvMo7ilfxAEIlCzeBzCHcPujQARFSIv4BU7Cbho/klzT9BoWf0y5+AwDIUEFDBG80liwxi5LRyBfxELPRLgCW9y0t39GfNt/gMlkNWJCSdLwhH+nrvrV9VYtPEFTsfB4IFedoNJxROU5iayknCYLV5I1bWqGNqWXbY0Kao3O2h1YMDF4Nb2ytvR14f5xMnrhIPleytTUDOuHQzadFKcRqeXB4/Tg9wWJ5GEQYJVqeSKU5OO54CbTEnrdbdbs+u6s7uwP26vOULY9hxjlmZ/9SlYAD27+EDKyTerL7CwKX7sVtj50PGB1l170N1vR8v9+VzgeuPZx39dj5gClCKWa+cR3xBDok48nhH59+Am+4n9dteAM2AAAAAElFTkSuQmCC" alt="QR"/></td></tr><tr><td class="num">18</td><td class="k">동료</td><td class="r">dong-nyo</td><td class="en">colleague</td><td class="ex"><span class="ex-ko">회사 동료와 점심을 먹어요.</span><span class="ex-en">I have lunch with a coworker.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGAQAAAABZVd8pAAABNElEQVR4nG2SPUsEMRCGZ2+2WQiksBIsBauDwFrmyMG1/g//jv/G6iAywjUjObAVDiurhUi2zDLiB9wETJPh4WXmnY9O4Pctq78AACIUEOvBKJZqrD5WYcXYZGPAR8VWAKePORx/ojNbX9HRadZjPky7CfDlzLq45e//VtcVKRzAStX+DDAJjV6xgiTJu9p4drbaSkXp+tm+w9KHJSpmltfhZnjW/kBSsAmM6HzsPLlUQlM3sDWxsPaXoBLWZLWOSxW2vjT+PFYfI2kdoauJqtf5yCcaLSal6xjnNdzB42VT1wnmgkq3WsjCcNzsVb/AJvHoI+pdiiSbbNK7hAiUnRjW87N1Pp2ecH5o8sUROaLqrQfAt/3uesgNG6aLaVs2zV0Re8hZ9dt/9nwP0gV1k90/d/oFuiSXfPGagK4AAAAASUVORK5CYII=" alt="QR"/></td></tr><tr><td class="num">19</td><td class="k">선배</td><td class="r">seon-bae</td><td class="en">senior / upperclassman</td><td class="ex"><span class="ex-ko">선배가 도와줬어요.</span><span class="ex-en">My senior helped me.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGAQAAAABZVd8pAAABPklEQVR4nG2SQUoDMRSG/2lmUwhEcCV0Weh2oC4jM9CtVxF6CA/gDTyDByikRJBCIAPdCp5gICUDQUh4UhX6Rswmj4/kf//7k4rws8rstwBgEEFKQzLms3HaZHIXNitXDfqu24MxoF+Nbf9dXdh6YfuGM/jsXZsnepXp3Hm/5X2JomyhKHN/UjlLdq0Zc6Ihr5vM7tbiM5VueEsNYyUBpW6LYSzdpMNq/jrxF0SrPCQxvcqNAg/Py3uelRVCShMd9xcQrchecX9eWHJKR+7vtJNl+4Ke+cM5FG+zZnr1eBqP2/fRdfxcDCHoiR6cViRCFJO+PpA0jWF6lS9I2/nj5jDJ2UivvGHvAQPvGpKO6dUq4/ixF+MT7ytNFM4IPhuAxW6znIcJU8P10MW7v/8KIfB5T7UviaqW5Vz980+/ANBVoCshypI0AAAAAElFTkSuQmCC" alt="QR"/></td></tr><tr><td class="num">20</td><td class="k">후배</td><td class="r">hu-bae</td><td class="en">junior / underclassman</td><td class="ex"><span class="ex-ko">후배에게 조언해요.</span><span class="ex-en">I give advice to my junior.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGAQAAAABZVd8pAAABPUlEQVR4nG2ST0pDMRDG5zVv8yAwPUCXgqtCoG6ESB70AB6jWw/hAbyKByikpCBCYAJuBU9QSEmhCBMi/oHOA7NJ+Pjymy+T6Rr8rjr7OwCAhwINLWihEftoPbd40WZ1biCN4w6EBpCuTy79nC7aahGSkRoQU3Q84XV+jN/7jazbWtEOsLHMpzGGFlZWaFlBI2t4cjcGRg5F+lpRrMFZweuonofN8AKfwhddQQLdJC94joaKkzxWCrUvUeYr0QXFhNJXnGkRbRG8/r2m+vAMycgaLTAFlvmAM4YVKpI8UjlnO+XV5ZvtD2p+K3uPQx3S3daL90Y46c3wuH6d9JmQkLz4D/BAwTQdRd0e+aw/dur0JHulfVHRK5kFQC2266shT+YAtveHoYzCp/Ieln0+inz9sfcbaJ0TM9n9M6dfAv2ZcU9NaFAAAAAASUVORK5CYII=" alt="QR"/></td></tr><tr class="quiz-row"><td colspan="6"><div class="quiz">
+<div class="q-title">📝 미니 퀴즈 · Mini Quiz (1~20)</div>
+<div class="q-sub">명사의 영어 뜻을 고르세요.</div>
+<div class="q-item"><span class="q-num">Q1.</span> <span class="q-word">어머니</span> = ? <span class="q-opt">① mother</span><span class="q-opt">② toe</span><span class="q-opt">③ history</span><span class="q-opt">④ rest</span></div>
+<div class="q-item"><span class="q-num">Q2.</span> <span class="q-word">가족</span> = ? <span class="q-opt">① family</span><span class="q-opt">② hand</span><span class="q-opt">③ colleague</span><span class="q-opt">④ friend</span></div>
+<div class="q-item"><span class="q-num">Q3.</span> <span class="q-word">할머니</span> = ? <span class="q-opt">① number</span><span class="q-opt">② sugar</span><span class="q-opt">③ underwear</span><span class="q-opt">④ grandmother</span></div>
+<div class="q-item"><span class="q-num">Q4.</span> <span class="q-word">할아버지</span> = ? <span class="q-opt">① exam / test</span><span class="q-opt">② grandfather</span><span class="q-opt">③ mother</span><span class="q-opt">④ yesterday</span></div>
+<div class="q-item"><span class="q-num">Q5.</span> <span class="q-word">친구</span> = ? <span class="q-opt">① lunch</span><span class="q-opt">② kitchen</span><span class="q-opt">③ friend</span><span class="q-opt">④ yesterday</span></div>
+</div></td></tr><tr><td class="num">21</td><td class="k">이웃</td><td class="r">i-ut</td><td class="en">neighbor</td><td class="ex"><span class="ex-ko">이웃과 인사해요.</span><span class="ex-en">I greet my neighbor.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGAQAAAABZVd8pAAABPklEQVR4nG2SsWoDMQyGlfiWA4EDXQtdAp0CB9cl4HCBroW8St6gr9BX6dQpoOBCFoHzAIFQ6Hrg4oMsOlzaZpChWix+7F+fLE0y/MU4vSYAQJAgWweotCDEjiSz0hgjIjhS2hTg/DZ0x9/sGhXAwvinRmsQxEsnhd+E1vxzPui6OSfuwGbRfGidz751qgaajztcDTxTmlls+pv+cGnU2+QbQeic8qtwaY739XvBx97bAJgVS3UZnz9XYb7WfmITIiXWfLHx3kiwig9i6DJbl7TfaYBx+wpH7RdaI8FLwTfWi8P2NPBa87UYoyv9YExQ9Wa21H4JBKkhzRcocuvI6FnmTDbYoGcJBMRNRtb/bMXAeW+Gl2IPfDJMpmCB8Xb3OK9jsRt2t+nrpPsIQuggRsU3/aqALnm2Ufcm/+zpN0CIlzJnEdboAAAAAElFTkSuQmCC" alt="QR"/></td></tr><tr><td class="num">22</td><td class="k">손님</td><td class="r">son-nim</td><td class="en">guest / customer</td><td class="ex"><span class="ex-ko">손님이 많이 와요.</span><span class="ex-en">Many guests are coming.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGAQAAAABZVd8pAAABN0lEQVR4nG2SvUoEQQzHs2ZBDgamuEqwPLA6WFjLyB7Y3qsIPoAP4Rv4GFYHkQgijMy+wTW2ByOzZSSiHpgF00z4k0l++WgMfu3z5OgAAEMFiwTBaVk5Easlp6VQQgBip50A7B+nYfzxjtYCrFG23UzD8rK4OwC+/WkNb9L3e+nrmpU0QDT1fCGSmPTkWURjpk7936qoUaX6OB56DTCQy9fi7nS8WDx7PhDLMUMwl6/RccKbh9XWz6pgCoFr8nylmKDm6Oq2IwK9LtfvZzM+UmIWz5d70Czq+aAwSx8x+zhBLoWo+n5TIsNScZZvqBa4Y58vlyQ9MfpdmknIMftdAoNwZyH5PqLiuH/C6X52B1IxMTqWFmBxvrteLcpMmw7Lw6Zeze4qJ4JS/D4+WrkFawY35+afO/0Cda6aajcFA2kAAAAASUVORK5CYII=" alt="QR"/></td></tr><tr><td class="num">23</td><td class="k">주인</td><td class="r">ju-in</td><td class="en">owner / host</td><td class="ex"><span class="ex-ko">이 집 주인을 만났어요.</span><span class="ex-en">I met the owner of this house.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGAQAAAABZVd8pAAABMElEQVR4nFVSQWoDMQycXfkSMDgP6KWnXl02EAoum2t+lw8VHBwIBQfvUxwcWAI2KiWBaHWxGEYaaeSO8YjWPxMAHsmMxUELLNUYqqscX1jf1vN+e56OEBiAD/1lH9kzouZMxXlRi1RDYSz6dX4X/9+N1GXODsRchcbpSDNh+lwLXjEWxo9O8FBi1paH6F6YavMEUnFzl/vmFIrXQeqGVGAqjbJfhiYTCaIf2KQ6BCqC1/F10vO3N9LTxGPWZRgET+Fye5unFndy5pR19pqkbnQhlKLNwr9ks/WLfqg6GFfIyX0poM3Tzyhm6U9XeN+gpC5zJFOSF7X9sRuAVSN5X1Mv9/cz6cPiviEG6+XMCrBtXfa/4kYKWO2sPtzs8l9VIiR536u6nTOMnaSnz0R4+gco5JuYbqqsmwAAAABJRU5ErkJggg==" alt="QR"/></td></tr><tr><td class="num">24</td><td class="k">어른</td><td class="r">eo-reun</td><td class="en">adult</td><td class="ex"><span class="ex-ko">어른을 공경해요.</span><span class="ex-en">We respect adults.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGAQAAAABZVd8pAAABKklEQVR4nG2STWoDMQyFlXg2AYPnAFl2WzC4m4JgAjlArtKj9Co9QEBFWwcP9AA9wYCLA6GgoNIfiAz1xuIhfXpCWin8vuv6LwAAggYaELzRipAgiWajZV/FA5LR1gDz5TzNP9FNS1ueo9UGV9+W/QLudNNWtMvf/4Ptq9ryBEHF+vMhs3JC62USLRilqwWWINxsnqYkHibseNXlhM5ZrYQSCni1vAaZY2lTx9PmPbXc1dbCTkqweTU0zQGb4Q1wP34+vcAc7RytSmHp/AlGTsEVy+PEtWLP25wgDIsbHzseiqdIlpeROCE5u0tV9iUUu0sgKBTVZ9N3CHIO76/u/NzdATeXyXWzwXV73N9tancHcDwsm7br78oj1Gr8rT8GTxcdDyZv9c+dfgG4j5r5ePeRcAAAAABJRU5ErkJggg==" alt="QR"/></td></tr><tr><td class="num">25</td><td class="k">아이</td><td class="r">a-i</td><td class="en">child</td><td class="ex"><span class="ex-ko">아이가 놀고 있어요.</span><span class="ex-en">The child is playing.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGAQAAAABZVd8pAAABH0lEQVR4nG2SQUoEMRBFf09601CQC7gUXAkN7TKQAbeCh/EiXmigJC5LMuABPIGQIbOsoUQUrIDZJHx+Xh6kJsPPuux+DwAYHRYTyGVVWRKricuEmhISu2wGjuGc34Ah26g8rD5D1apZB97Ee/ne7/y7Zl0yoqn3o5iKlS153oZY06r+rgIatXTf01iUkJPjzbjgeLO8Dn4Scqwg87yySl9rz54nxkTcxfvpupWgNQ5+kUxi6oOfsibmMvRC1FrU+6E1lC2G6nu8SWtp5FVKFloPg19mJV7Z84RRtsTB/6VZpRqr/0swqqxG4nhzVODjJZyfhzngHoSDc5kBujrcXy/tL9sB4fD4ufS964X2jtu5ndhlp5mfYFN2Mzn9M6df3tSVmLOtY04AAAAASUVORK5CYII=" alt="QR"/></td></tr><tr><td class="num">26</td><td class="k">아기</td><td class="r">a-gi</td><td class="en">baby</td><td class="ex"><span class="ex-ko">아기가 자고 있어요.</span><span class="ex-en">The baby is sleeping.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGAQAAAABZVd8pAAABLUlEQVR4nG2STUoEMRBGvza9aQjEA7gUXAmBdhlIgwfwGLP1KF5FcDuQIS4L0gcQPIGQIQNuqinxB6YCZpPwqLz6EmoQ/K7t4u8AIKFBXIBVrHCikFjozC62S491WQ5QDFh3p7j+nM5sfsur1wyFC0XufENa6Hu/031Fmo1wwjqfdZQlz0GxZiAleNZ3q2/sODddV/PMFjEo32gnrDfTa5evSXMFVrQvh9J8aVH7OEeyqZHORz5mw8V1fV0ScqEp3+g2bI/PWL2uE3DJrPOhUs2zM0X7iou1hs4HQhVTm+nqYmSbfOrypZjnkIz6e4hkW1xJmiUU8mJJ+UbHwPvBnJ60z1IzlIx+G/B5tb+/nmo3B9P+4WNqi2KmnnA7vhyTunscaQcZoprJ4Z85/QLgcpnNYsYHggAAAABJRU5ErkJggg==" alt="QR"/></td></tr><tr class="section"><td colspan="6">직업 OCCUPATION</td></tr><tr><td class="num">27</td><td class="k">학생</td><td class="r">hak-saeng</td><td class="en">student</td><td class="ex"><span class="ex-ko">저는 학생이에요.</span><span class="ex-en">I am a student.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGAQAAAABZVd8pAAABLUlEQVR4nF2SQUoEQQxF/3Qa3ASqbyCCByioATctNeBhPIOH8E4ltc1QDV5BcCVUUw1uMpTICJMxq/BI8n9Cdh3nOA1/CYCEWrIq2LCiqira5cKG07RN0/7whgsbgeUD0wLDBoBv3523DEW79Ho1b1xHwRHYW93eVTq7robl6ufcS7YsOeVIgWfDqoc6zc2yFJ0KRzW9I71uN5xPT0fbm8k55mi8DPSCr7v8CW/qtHXWXmezBzLHTFqc1W2xdaY52N0yS0Bw9gaoraj7PfZgNDxycFTsvBLnBopk2IhjJfqi6erOfVYRD7vvutJEaXGHC9t1LI+0yWr9JRT1ncVoDE639wLakqkTboEkke0Vrg4UxOgOgLsPnL6Xqz9Ioly9rVtHPD+06Z+/c5g//QGe55dKpfvGtQAAAABJRU5ErkJggg==" alt="QR"/></td></tr><tr><td class="num">28</td><td class="k">선생님</td><td class="r">seon-saeng-nim</td><td class="en">teacher</td><td class="ex"><span class="ex-ko">선생님께 질문해요.</span><span class="ex-en">I ask the teacher.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAABOAQAAAACm0R2wAAABXUlEQVR4nG2TwWmcMRCF3658FGg7cAULMjKEgECGLcA1uAN3YFKAIQWkjBQwQafAmP8HF+CLCxijgzHMMsbBBs0SnYbH49NjnrQxfJ7j9msCQBgWU1bEWV20JxOtxpO6Pe72+/WwW/9gVoHHcPz7LDhRv/+4fT2sTsWiLGn06LgbuuJ/w6XLYGa9UDVTlzeCc0QodVZHWAxUluxUlpSMBDTfBmtce+EeZu/GHvLhHq9Hv4c+mGpppidckwQK1XklUG+UenG3LVq5mIjP0DsZerXquJIpqXJQxx1Nax8WmiMMik2qSPS9DaJKZWk+rzbJoih+v8167tZdF1AxbrEIe25XawWL3zorpZI5yOzdhm/Y04q3c3LeiBajAHObZ2WsL4jX6bd7JQSWWJQXx01aHoWuAk64xKYA5mQfY1kvC3jmngFhRz+Rbn65vBL3N+Hu4uk0w0eZ2XWx+e8fegdf5rrrYzzfigAAAABJRU5ErkJggg==" alt="QR"/></td></tr>
+</tbody></table>
+
+
+<div class="paywall-cta" style="margin:40px auto; max-width:720px; background:linear-gradient(135deg,#1a1a2e,#16213e); color:#fff; padding:32px 28px; border-radius:14px; text-align:center;">
+  <div style="font-size:32px; margin-bottom:10px;">🔒</div>
+  <h2 style="font-size:22px; margin:0 0 8px; color:#fff;">전체 콘텐츠는 결제 후 학습 가능합니다</h2>
+  <p style="margin:0 0 18px; opacity:0.85; font-size:14px;">위 미리보기는 약 8%입니다. 전체 <strong>369 nouns</strong>, 모든 예문·시나리오·퀴즈·QR 코드까지 잠금 해제하려면:</p>
+  <a href="https://jssmn21.gumroad.com/l/gnefla" target="_blank" style="display:inline-block; background:#f97316; color:#fff; padding:14px 32px; border-radius:8px; text-decoration:none; font-weight:800; font-size:15px; margin:4px;">💳 Gumroad에서 구매 — $9.90</a>
+  <button onclick="showLicenseModal()" style="display:inline-block; background:transparent; color:#fff; padding:14px 32px; border:2px solid #fff; border-radius:8px; cursor:pointer; font-weight:800; font-size:15px; margin:4px;">🔓 이미 구매했어요</button>
+  <p style="margin-top:16px; font-size:12px; opacity:0.7;">키 1개로 <strong>모든 8개 자료</strong> 잠금 해제</p>
+  <p style="margin-top:20px;"><a href="vocab-hub.html" style="color:#f97316; text-decoration:none; font-weight:700;">← 다른 자료 둘러보기</a></p>
+</div>
+
+
+
+<div id="license-modal" style="display:none">
+  <div class="lm-box">
+    <h3>🔓 라이선스 키 입력</h3>
+    <p>Gumroad에서 구매 후 이메일로 받은 라이선스 키를 입력하세요.</p>
+    <input id="license-key-input" type="text" placeholder="XXXX-XXXX-XXXX-XXXX" maxlength="40" autocomplete="off">
+    <div class="license-msg" id="license-msg"></div>
+    <button class="lm-btn primary" onclick="unlockWithKey()">잠금 해제</button>
+    <button class="lm-btn ghost" onclick="closeLicenseModal()">취소</button>
+    <a href="https://jssmn21.gumroad.com/l/gnefla" target="_blank" class="lm-buy">💳 아직 구매 안 했어요 — Gumroad에서 구매</a>
+  </div>
+</div>
+
+
+<script>
+(function() {
+  const STORAGE_KEY = 'krguide_license_v1';
+  const GUMROAD_LINK = 'https://jssmn21.gumroad.com/l/gnefla';
+
+  function isUnlocked() {
+    try {
+      const d = JSON.parse(localStorage.getItem(STORAGE_KEY));
+      return d && d.valid === true;
+    } catch(e) { return false; }
+  }
+
+  function markUnlocked(key) {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify({valid:true,key:key,ts:Date.now()}));
+  }
+
+  window.unlockWithKey = function() {
+    const input = document.getElementById('license-key-input');
+    const msg = document.getElementById('license-msg');
+    const key = (input.value || '').trim().toUpperCase();
+    if (!key) { msg.textContent = '라이선스 키를 입력하세요.'; msg.className = 'license-msg err'; return; }
+    // For now: any non-empty key unlocks (server verification can be added later via worker)
+    // Real verification should call /api/verify endpoint
+    fetch('/api/verify', {
+      method:'POST', headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({license_key: key})
+    }).then(r => r.json()).then(data => {
+      if (data && data.success) {
+        markUnlocked(key);
+        msg.textContent = '✅ 잠금 해제 완료! 페이지를 새로고침합니다…';
+        msg.className = 'license-msg ok';
+        setTimeout(() => location.reload(), 800);
+      } else {
+        msg.textContent = data.error || '잘못된 키입니다.';
+        msg.className = 'license-msg err';
+      }
+    }).catch(() => {
+      // Offline / no server: dev fallback — accept any 16+ char key
+      if (key.length >= 12) {
+        markUnlocked(key);
+        msg.textContent = '✅ 잠금 해제 완료 (오프라인 모드)';
+        msg.className = 'license-msg ok';
+        setTimeout(() => location.reload(), 800);
+      } else {
+        msg.textContent = '서버 연결 실패. 키 형식을 확인하세요 (12자 이상).';
+        msg.className = 'license-msg err';
+      }
+    });
+  };
+
+  window.showLicenseModal = function() {
+    document.getElementById('license-modal').style.display = 'flex';
+    document.getElementById('license-key-input').focus();
+  };
+  window.closeLicenseModal = function() {
+    document.getElementById('license-modal').style.display = 'none';
+  };
+
+  // Apply lock on DOMContentLoaded
+  document.addEventListener('DOMContentLoaded', function() {
+    if (isUnlocked()) {
+      document.body.classList.add('unlocked');
+    } else {
+      document.body.classList.add('locked');
+    }
+  });
+})();
+</script>
+
+
+</body></html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ko"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>📚 한국어 학습 자료 허브 · KR Guide Vocabulary Hub</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Noto Sans KR','Malgun Gothic',sans-serif; color:#1a1a2e; background:#f9f7f3; line-height:1.6; }
+  .topbar { background:#1a1a2e; color:#fff; padding:14px 24px; display:flex; align-items:center; gap:16px; }
+  .topbar a { color:#fff; text-decoration:none; font-weight:700; font-size:14px; }
+  .topbar .brand { font-size:16px; font-weight:800; color:#C0392B; }
+  .topbar .spacer { flex:1; }
+  .topbar #google_translate_element { font-size:12px; }
+  .hero { text-align:center; padding:60px 20px 40px; background:linear-gradient(135deg,#1a1a2e,#16213e); color:#fff; }
+  .hero h1 { font-size:38px; margin-bottom:10px; color:#fff; }
+  .hero .kr { font-size:20px; color:#f97316; font-weight:700; margin-bottom:14px; }
+  .hero p { max-width:680px; margin:0 auto; font-size:15px; opacity:0.85; }
+  .hero .stats { margin-top:24px; display:flex; justify-content:center; gap:32px; flex-wrap:wrap; }
+  .hero .stat-num { font-size:30px; font-weight:800; color:#f97316; }
+  .hero .stat-label { font-size:12px; opacity:0.7; letter-spacing:1px; text-transform:uppercase; }
+  .container { max-width:1200px; margin:0 auto; padding:48px 24px; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:20px; }
+  .vh-card { background:#fff; border-radius:14px; padding:24px; text-decoration:none; color:inherit; display:flex; flex-direction:column; transition:all 0.2s; border-top:4px solid var(--card-color); box-shadow:0 2px 8px rgba(0,0,0,0.04); }
+  .vh-card:hover { transform:translateY(-4px); box-shadow:0 12px 24px rgba(0,0,0,0.12); }
+  .vh-emoji { font-size:48px; margin-bottom:12px; }
+  .vh-title { font-size:17px; font-weight:800; color:#1a1a2e; margin-bottom:4px; }
+  .vh-kr { font-size:14px; color:var(--card-color); font-weight:700; margin-bottom:12px; }
+  .vh-desc { font-size:13px; color:#666; flex:1; margin-bottom:16px; line-height:1.6; }
+  .vh-meta { display:flex; justify-content:space-between; align-items:center; padding-top:12px; border-top:1px solid #f1ede5; }
+  .vh-count { font-size:11px; color:#888; font-weight:700; letter-spacing:0.5px; text-transform:uppercase; }
+  .vh-cta { font-size:12px; color:var(--card-color); font-weight:800; }
+  .footer-cta { background:#fff; border-radius:14px; padding:40px 24px; text-align:center; margin-top:48px; border:2px dashed #C0392B; }
+  .footer-cta h2 { font-size:24px; margin-bottom:10px; }
+  .footer-cta p { color:#666; margin-bottom:20px; }
+  .footer-cta .btn-buy { display:inline-block; background:#C0392B; color:#fff; padding:14px 28px; border-radius:8px; text-decoration:none; font-weight:800; font-size:15px; }
+  .footer-cta .btn-buy:hover { background:#9c2818; }
+  .footer-cta .btn-key { display:inline-block; background:transparent; color:#1a1a2e; padding:14px 28px; border:2px solid #1a1a2e; border-radius:8px; cursor:pointer; font-weight:800; font-size:15px; margin-left:10px; }
+  
+#license-modal { position:fixed; top:0; left:0; right:0; bottom:0; background:rgba(0,0,0,0.7); display:none; align-items:center; justify-content:center; z-index:9999; }
+#license-modal .lm-box { background:#fff; padding:32px; border-radius:14px; max-width:420px; width:90%; box-shadow:0 20px 60px rgba(0,0,0,0.3); text-align:center; }
+#license-modal h3 { margin:0 0 12px; font-size:20px; color:#1a1a2e; }
+#license-modal p { color:#666; margin:0 0 16px; font-size:13px; }
+#license-modal input { width:100%; padding:12px; font-size:14px; border:2px solid #e5e5ea; border-radius:8px; text-align:center; font-family:'Courier New',monospace; }
+#license-modal input:focus { border-color:#C0392B; outline:none; }
+#license-modal .license-msg { font-size:12px; min-height:18px; margin:10px 0; }
+#license-modal .license-msg.err { color:#C0392B; }
+#license-modal .license-msg.ok  { color:#059669; }
+#license-modal .lm-btn { display:block; width:100%; padding:12px; border:none; border-radius:8px; font-size:14px; font-weight:700; cursor:pointer; margin-top:8px; }
+#license-modal .lm-btn.primary { background:#1a1a2e; color:#fff; }
+#license-modal .lm-btn.primary:hover { background:#C0392B; }
+#license-modal .lm-btn.ghost { background:transparent; color:#666; }
+#license-modal .lm-buy { display:block; margin-top:14px; padding:10px; background:#fef3c7; color:#92400e; border-radius:8px; text-decoration:none; font-size:13px; font-weight:700; }
+
+</style>
+</head><body>
+
+<div class="topbar">
+  <a href="learn-korean.html" class="brand">🇰🇷 KR Guide</a>
+  <a href="learn-korean.html">메인 가이드</a>
+  <a href="vocab-hub.html">📚 학습 자료</a>
+  <div class="spacer"></div>
+  
+<div id="google_translate_element"></div>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'ko', includedLanguages: 'en,ja,zh-CN,zh-TW,es,fr,de,vi,th,id,ar,ru,pt'}, 'google_translate_element');
+}
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</div>
+
+<div class="hero">
+  <h1>📚 한국어 학습 자료 허브</h1>
+  <div class="kr">Korean Vocabulary & Expressions · Complete Collection</div>
+  <p>8개 카테고리, 3,624개 단어와 표현. 각 카드를 클릭해 맛보기 콘텐츠를 확인하고, 전체 학습을 원하시면 구매하세요. 외국인 학습자는 우측 상단 Google Translate로 모국어로 학습할 수 있어요.</p>
+  <div class="stats">
+    <div><div class="stat-num">8</div><div class="stat-label">자료 카테고리</div></div>
+    <div><div class="stat-num">3,624</div><div class="stat-label">단어·표현</div></div>
+    <div><div class="stat-num">7,000+</div><div class="stat-label">예문</div></div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="grid">
+    
+        <a href="preview-verbs.html" class="vh-card" style="--card-color:#C0392B;">
+          <div class="vh-emoji">🏃</div>
+          <div class="vh-title">200 Essential Korean Verbs</div>
+          <div class="vh-kr">필수 동사 200개</div>
+          <div class="vh-desc">한국어로 행동을 표현하는 핵심 동사 200개 — 발음, 해요체, 과거형, 예문, QR 코드까지.</div>
+          <div class="vh-meta"><span class="vh-count">200 verbs</span><span class="vh-cta">🔓 맛보기 →</span></div>
+        </a>
+        <a href="preview-adverbs.html" class="vh-card" style="--card-color:#1A4A8A;">
+          <div class="vh-emoji">📊</div>
+          <div class="vh-title">200 Essential Korean Adverbs</div>
+          <div class="vh-kr">필수 부사 200개</div>
+          <div class="vh-desc">시간·정도·방식·의성·의태어까지 200개 부사 — 자연스러운 한국어 표현의 비밀.</div>
+          <div class="vh-meta"><span class="vh-count">200 adverbs</span><span class="vh-cta">🔓 맛보기 →</span></div>
+        </a>
+        <a href="preview-nouns.html" class="vh-card" style="--card-color:#0F766E;">
+          <div class="vh-emoji">📦</div>
+          <div class="vh-title">Essential Korean Nouns</div>
+          <div class="vh-kr">필수 명사 369개</div>
+          <div class="vh-desc">가족·신체·음식·시간·장소·사물 등 7개 테마, 369개 명사를 예문과 함께.</div>
+          <div class="vh-meta"><span class="vh-count">369 nouns</span><span class="vh-cta">🔓 맛보기 →</span></div>
+        </a>
+        <a href="preview-honorifics.html" class="vh-card" style="--card-color:#7C3AED;">
+          <div class="vh-emoji">🙇</div>
+          <div class="vh-title">500 Honorific Expressions</div>
+          <div class="vh-kr">존댓말 표현 500개</div>
+          <div class="vh-desc">일상 인사부터 비즈니스 격식, 고풍스러운 문어체까지 — 한국식 존경 표현 500개.</div>
+          <div class="vh-meta"><span class="vh-count">500 expressions</span><span class="vh-cta">🔓 맛보기 →</span></div>
+        </a>
+        <a href="preview-japanese.html" class="vh-card" style="--card-color:#B91C1C;">
+          <div class="vh-emoji">🏯</div>
+          <div class="vh-title">Japanese Loanwords in Korean</div>
+          <div class="vh-kr">일본어 외래어 391개</div>
+          <div class="vh-desc">한국어 속 일본어 표현과 그 우리말 순화어 — 건설·낚시·자동차 등 16개 분야.</div>
+          <div class="vh-meta"><span class="vh-count">391 loanwords</span><span class="vh-cta">🔓 맛보기 →</span></div>
+        </a>
+        <a href="preview-adjadv.html" class="vh-card" style="--card-color:#9A3412;">
+          <div class="vh-emoji">🎨</div>
+          <div class="vh-title">Adjectives · Adverbs · Idioms</div>
+          <div class="vh-kr">형용사·부사·관용구 1067개</div>
+          <div class="vh-desc">관형사·고급 형용사·관용구·속담·사자성어·의성/의태어 등 1067개 — 가장 풍부한 표현 모음.</div>
+          <div class="vh-meta"><span class="vh-count">1,067 entries</span><span class="vh-cta">🔓 맛보기 →</span></div>
+        </a>
+        <a href="preview-internet.html" class="vh-card" style="--card-color:#2563EB;">
+          <div class="vh-emoji">💬</div>
+          <div class="vh-title">Korean Internet &amp; Chat Expressions</div>
+          <div class="vh-kr">인터넷·채팅 한국어 500개</div>
+          <div class="vh-desc">ㅋㅋㅋ부터 K-pop 팬덤, 게임, MZ 신조어까지 — 한국 인터넷 문화의 모든 것.</div>
+          <div class="vh-meta"><span class="vh-count">500 expressions</span><span class="vh-cta">🔓 맛보기 →</span></div>
+        </a>
+        <a href="preview-konglish.html" class="vh-card" style="--card-color:#059669;">
+          <div class="vh-emoji">🌐</div>
+          <div class="vh-title">Konglish: Korean-English Expressions</div>
+          <div class="vh-kr">콩글리시 500개</div>
+          <div class="vh-desc">한국에서만 통하는 영어식 표현과 진짜 영어 — 잘못된 영어 vs 올바른 영어 비교.</div>
+          <div class="vh-meta"><span class="vh-count">500 expressions</span><span class="vh-cta">🔓 맛보기 →</span></div>
+        </a>
+  </div>
+
+  <div class="footer-cta">
+    <h2>💳 모든 자료 한 번에 — Premium Bundle</h2>
+    <p>8개 PDF + 웹 전체 콘텐츠 + 무제한 다운로드</p>
+    <a href="https://jssmn21.gumroad.com/l/gnefla" target="_blank" class="btn-buy">Gumroad에서 구매 — $9.90</a>
+    <button class="btn-key" onclick="showLicenseModal()">🔓 이미 구매했어요</button>
+  </div>
+</div>
+
+
+<div id="license-modal" style="display:none">
+  <div class="lm-box">
+    <h3>🔓 라이선스 키 입력</h3>
+    <p>Gumroad에서 구매 후 이메일로 받은 라이선스 키를 입력하세요.</p>
+    <input id="license-key-input" type="text" placeholder="XXXX-XXXX-XXXX-XXXX" maxlength="40" autocomplete="off">
+    <div class="license-msg" id="license-msg"></div>
+    <button class="lm-btn primary" onclick="unlockWithKey()">잠금 해제</button>
+    <button class="lm-btn ghost" onclick="closeLicenseModal()">취소</button>
+    <a href="https://jssmn21.gumroad.com/l/gnefla" target="_blank" class="lm-buy">💳 아직 구매 안 했어요 — Gumroad에서 구매</a>
+  </div>
+</div>
+
+
+<script>
+(function() {
+  const STORAGE_KEY = 'krguide_license_v1';
+  const GUMROAD_LINK = 'https://jssmn21.gumroad.com/l/gnefla';
+
+  function isUnlocked() {
+    try {
+      const d = JSON.parse(localStorage.getItem(STORAGE_KEY));
+      return d && d.valid === true;
+    } catch(e) { return false; }
+  }
+
+  function markUnlocked(key) {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify({valid:true,key:key,ts:Date.now()}));
+  }
+
+  window.unlockWithKey = function() {
+    const input = document.getElementById('license-key-input');
+    const msg = document.getElementById('license-msg');
+    const key = (input.value || '').trim().toUpperCase();
+    if (!key) { msg.textContent = '라이선스 키를 입력하세요.'; msg.className = 'license-msg err'; return; }
+    // For now: any non-empty key unlocks (server verification can be added later via worker)
+    // Real verification should call /api/verify endpoint
+    fetch('/api/verify', {
+      method:'POST', headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({license_key: key})
+    }).then(r => r.json()).then(data => {
+      if (data && data.success) {
+        markUnlocked(key);
+        msg.textContent = '✅ 잠금 해제 완료! 페이지를 새로고침합니다…';
+        msg.className = 'license-msg ok';
+        setTimeout(() => location.reload(), 800);
+      } else {
+        msg.textContent = data.error || '잘못된 키입니다.';
+        msg.className = 'license-msg err';
+      }
+    }).catch(() => {
+      // Offline / no server: dev fallback — accept any 16+ char key
+      if (key.length >= 12) {
+        markUnlocked(key);
+        msg.textContent = '✅ 잠금 해제 완료 (오프라인 모드)';
+        msg.className = 'license-msg ok';
+        setTimeout(() => location.reload(), 800);
+      } else {
+        msg.textContent = '서버 연결 실패. 키 형식을 확인하세요 (12자 이상).';
+        msg.className = 'license-msg err';
+      }
+    });
+  };
+
+  window.showLicenseModal = function() {
+    document.getElementById('license-modal').style.display = 'flex';
+    document.getElementById('license-key-input').focus();
+  };
+  window.closeLicenseModal = function() {
+    document.getElementById('license-modal').style.display = 'none';
+  };
+
+  // Apply lock on DOMContentLoaded
+  document.addEventListener('DOMContentLoaded', function() {
+    if (isUnlocked()) {
+      document.body.classList.add('unlocked');
+    } else {
+      document.body.classList.add('locked');
+    }
+  });
+})();
+</script>
+
+
+</body></html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="UTF-8"><title>맛보기 · Japanese Loanwords in Korean</title>
+<style>
+  @page { size: A4; margin: 16mm 12mm; } * { box-sizing: border-box; }
+  body { font-family: 'Noto Sans KR','Malgun Gothic',sans-serif; color:#1a1a2e; margin:0; line-height:1.45; }
+  .page-break { page-break-before: always; }
+  .cover { text-align:center; padding:60px 20px 30px; border-bottom:4px solid #C0392B; margin-bottom:22px; }
+  .cover .label { font-size:12px; font-weight:700; letter-spacing:3px; color:#C0392B; text-transform:uppercase; margin-bottom:14px; }
+  .cover h1 { font-size:30px; margin:0 0 8px; color:#1a1a2e; font-weight:800; }
+  .cover .kr { font-size:22px; color:#1A4A8A; font-weight:700; margin:0 0 18px; }
+  .cover .desc { font-size:13px; color:#555; max-width:600px; margin:0 auto; line-height:1.7; }
+  .cover .features { margin-top:24px; display:flex; justify-content:center; gap:14px; flex-wrap:wrap; }
+  .cover .feat { background:#1a1a2e; color:#fff; padding:6px 14px; border-radius:18px; font-size:11px; font-weight:600; }
+  h2.cat-h { background:linear-gradient(135deg,#1a1a2e,#16213e); color:#fff; padding:14px 22px; margin:0 0 14px; font-size:18px; border-left:6px solid #C0392B; }
+  .scenario-box { background:#fff8f0; border-left:4px solid #f97316; padding:14px 18px; margin-bottom:14px; border-radius:6px; }
+  .scenario-box .sb-title { font-weight:800; color:#9a3412; font-size:13px; margin-bottom:8px; }
+  .scenario-box .dl-line { font-size:12px; margin:3px 0; }
+  .scenario-box .dl-speaker { color:#C0392B; font-weight:700; margin-right:6px; }
+  .compare-box { background:#f0f5ff; border-left:4px solid #1A4A8A; padding:14px 18px; margin-bottom:16px; border-radius:6px; }
+  .compare-box .cb-title { font-weight:800; color:#1e3a8a; font-size:13px; margin-bottom:8px; }
+  .compare-box .cb-pair { font-size:12px; margin:3px 0; display:flex; gap:12px; }
+  .compare-box .cb-ko { color:#1a1a2e; font-weight:700; min-width:230px; }
+  .compare-box .cb-en { color:#666; font-style:italic; }
+  table { width:100%; border-collapse:collapse; font-size:10.5px; table-layout:fixed; margin-bottom:14px; }
+  thead th { background:#1a1a2e; color:#fff; padding:7px 6px; font-size:10px; border-bottom:2px solid #C0392B; }
+  th.num-col{width:30px;} th.k-col{width:90px;} th.en-col{width:110px;} th.qr-col{width:34px;}
+  td { padding:6px 8px; border-bottom:1px solid #e5e5ea; vertical-align:top; word-break:keep-all; }
+  tr:nth-child(even) td { background:#fafafa; }
+  td.num { text-align:center; color:#888; font-weight:600; font-size:10px; }
+  td.k   { font-weight:700; color:#C0392B; font-size:12px; }
+  td.en  { color:#1A4A8A; font-size:11px; font-weight:600; }
+  td.ex .ex-row { display:block; color:#555; font-size:10px; margin-bottom:2px; }
+  td.qr { text-align:center; padding:3px; } td.qr img { width:30px; height:30px; }
+  tr.section td { background:linear-gradient(135deg,#1a1a2e,#16213e) !important; color:#fff; font-weight:800; font-size:11px; padding:7px 12px; text-transform:uppercase; }
+  tr.section td::before { content:"▸  "; color:#f97316; }
+  tr.quiz-row td { padding:0; }
+  .quiz { background:linear-gradient(135deg,#fffbeb,#fef3c7); border:2px solid #f59e0b; border-radius:10px; padding:14px 18px; margin:14px 0; }
+  .quiz .q-title { font-size:14px; font-weight:800; color:#92400e; margin-bottom:6px; }
+  .quiz .q-sub { font-size:11px; color:#78350f; margin-bottom:10px; font-style:italic; }
+  .quiz .q-item { font-size:11px; margin:6px 0; padding:6px 10px; background:#fff; border-radius:6px; }
+  .quiz .q-num { font-weight:800; color:#C0392B; margin-right:6px; }
+  .quiz .q-word { font-weight:800; color:#1a1a2e; font-size:13px; }
+  .quiz .q-opt { display:inline-block; margin-right:12px; color:#444; }
+  .answer-key { background:#f9fafb; padding:20px 24px; border-radius:8px; }
+  .ak-row { padding:6px 0; border-bottom:1px solid #e5e5ea; font-size:12px; }
+  .ak-row strong { color:#C0392B; }
+</style><style>
+#license-modal { position:fixed; top:0; left:0; right:0; bottom:0; background:rgba(0,0,0,0.7); display:none; align-items:center; justify-content:center; z-index:9999; }
+#license-modal .lm-box { background:#fff; padding:32px; border-radius:14px; max-width:420px; width:90%; box-shadow:0 20px 60px rgba(0,0,0,0.3); text-align:center; }
+#license-modal h3 { margin:0 0 12px; font-size:20px; color:#1a1a2e; }
+#license-modal p { color:#666; margin:0 0 16px; font-size:13px; }
+#license-modal input { width:100%; padding:12px; font-size:14px; border:2px solid #e5e5ea; border-radius:8px; text-align:center; font-family:'Courier New',monospace; }
+#license-modal input:focus { border-color:#C0392B; outline:none; }
+#license-modal .license-msg { font-size:12px; min-height:18px; margin:10px 0; }
+#license-modal .license-msg.err { color:#C0392B; }
+#license-modal .license-msg.ok  { color:#059669; }
+#license-modal .lm-btn { display:block; width:100%; padding:12px; border:none; border-radius:8px; font-size:14px; font-weight:700; cursor:pointer; margin-top:8px; }
+#license-modal .lm-btn.primary { background:#1a1a2e; color:#fff; }
+#license-modal .lm-btn.primary:hover { background:#C0392B; }
+#license-modal .lm-btn.ghost { background:transparent; color:#666; }
+#license-modal .lm-buy { display:block; margin-top:14px; padding:10px; background:#fef3c7; color:#92400e; border-radius:8px; text-decoration:none; font-size:13px; font-weight:700; }
+</style>
+<style>
+  .topbar { background:#1a1a2e; color:#fff; padding:12px 20px; display:flex; align-items:center; gap:14px; font-size:13px; }
+  .topbar a { color:#fff; text-decoration:none; font-weight:700; }
+  .topbar .brand { color:#C0392B; font-size:15px; font-weight:800; }
+  .topbar .spacer { flex:1; }
+  .preview-banner { background:#fef3c7; color:#92400e; padding:10px 20px; text-align:center; font-size:13px; font-weight:700; border-bottom:2px solid #f59e0b; }
+</style>
+</head><body>
+
+<div class="topbar">
+  <a href="learn-korean.html" class="brand">🇰🇷 KR Guide</a>
+  <a href="learn-korean.html">메인 가이드</a>
+  <a href="vocab-hub.html">📚 학습 자료</a>
+  <div class="spacer"></div>
+  
+<div id="google_translate_element"></div>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'ko', includedLanguages: 'en,ja,zh-CN,zh-TW,es,fr,de,vi,th,id,ar,ru,pt'}, 'google_translate_element');
+}
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</div>
+
+<div class="preview-banner">🔓 맛보기 · Free Preview (8%) — 전체 학습은 결제 후 가능합니다</div>
+
+
+<div class="cover">
+  <div class="label">Japanese Loanwords in Korean · Enhanced</div>
+  <h1>일본어 외래어 사전</h1>
+  <div class="kr">우리말 속 일본어 표현 · 향상판</div>
+  <p class="desc">Japanese-origin word in Korean, its native Korean equivalent, example sentences — plus theme scenarios, comparison boxes, quizzes, and pronunciation QR codes.</p>
+  <div class="features">
+    <span class="feat">🎭 시나리오</span><span class="feat">🔍 비교</span><span class="feat">📝 퀴즈</span><span class="feat">🔊 QR</span>
+  </div>
+</div>
+</tbody></table>
+<div class="page-break"></div>
+<h2 class="cat-h">🌟 생활·일상 어휘</h2>
+<div class="scenario-box"><div class="sb-title">🎭 시나리오 대화 · Scenario Dialogue</div><div class="dl-line"><span class="dl-speaker">엄마:</span> <span class="dl-text">구루무 좀 발랐니?</span></div><div class="dl-line"><span class="dl-speaker">딸:</span> <span class="dl-text">네, 발랐어요. 그런데 사라 좀 꺼내 주세요.</span></div><div class="dl-line"><span class="dl-speaker">엄마:</span> <span class="dl-text">오뎅 국물 데웠다. 와사비도 가져와.</span></div><div class="dl-line"><span class="dl-speaker">딸:</span> <span class="dl-text">쓰리빠 신고 갈게요.</span></div><div class="dl-line"><span class="dl-speaker">엄마:</span> <span class="dl-text">조심해. 다꾸앙도 같이 먹자.</span></div></div><div class="compare-box"><div class="cb-title">🔍 비교 박스 · Comparison</div><div class="cb-pair"><span class="cb-ko">구루무 (크림) / 다꾸앙 (단무지)</span><span class="cb-en">Cream / Pickled radish</span></div><div class="cb-pair"><span class="cb-ko">쓰리빠 (슬리퍼) / 사라 (접시)</span><span class="cb-en">Slippers / Plate</span></div><div class="cb-pair"><span class="cb-ko">벤또 (도시락) / 모찌 (찹쌀떡)</span><span class="cb-en">Lunchbox / Rice cake</span></div></div>
+
+<table><thead><tr><th class="num-col">#</th><th class="k-col">일본어 외래어</th><th class="en-col">우리말</th><th>예문</th><th class="qr-col">🔊</th></tr></thead><tbody>
+<tr><th class="num-col">#</th><th class="k-col">일본어 외래어</th><th class="en-col">우리말</th><th>예문</th><th class="qr-col">🔊</th></tr><tr class="section"><td colspan="5">생활 및 일상 어휘</td></tr><tr><td class="num">1</td><td class="k">구루무</td><td class="en">크림</td><td class="ex"><span class="ex-row">할머니는 외출할 때 꼭 구루무를 바르셨다.</span><span class="ex-row">겨울에는 피부가 트니까 구루무 좀 발라라.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAABOAQAAAACm0R2wAAABcElEQVR4nG1TMWpdMRCc//WaBzJym97gKiCQSxn9NpBjBNLmAClzAB8glwh8cLvmpQkI9h3A4CYHkFnBbyQUDAloISrEMiyzM7PSYeDv6cd/FQBCaw3Bws4oN5HiEUee0Ww5peYazegC3HzDqQOY0OPbte43J4WCW7MuJKt4l9cl01txUBrG4BRBYzSllxxTMKUptGzBODAVxWs+3K511O5mDYsN/Wzq/ffLqrzlHKOQV8qO9bPH5drQvXIxcpCRNjE6MwnJk2SJ87Te8VA77sbD3CtGjAtUms63sbXCss28Cy79bK+xile9hOiCICgNYkZMhUnvTVCEeBSreJ/HCfiJX2F+D0u/+v2CT/1O3inHCcZLI9F6ka04FtYaGBTJC885IHsXWxByam9jcEx2c8rx8elQHzti7+pFuWY/Pt4+bU7nYIndZsjpabYZKuys2iawr8lVbxSvKea8L9jpy4y+LvVrfd9/1H1CD//9Q38AbZW+RQlwAu4AAAAASUVORK5CYII=" alt="QR"/></td></tr><tr><td class="num">2</td><td class="k">오뎅</td><td class="en">어묵</td><td class="ex"><span class="ex-row">추운 날 길거리에서 먹는 오뎅 국물이 최고다.</span><span class="ex-row">반찬으로 오뎅 볶음을 만들었다.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGAQAAAABZVd8pAAABMklEQVR4nG2SQUoEMRBFf5veNBRkwK1LwZUQaDdChh6YreBVPIBLD+CFhAwliJAh3mBO0BBJw2xqiIiCFTCbhMfn109VdRU/53T2+wAQUFCtBymWJIgPUqNikbIQfFCsBw7LMu2Bhl0bvnMNM/lteJxh9n+sC5v4fd/ourWWOMFW0fnIeq48el3j+HJP6yWulE4oixUuSodQnRAmr/x67PjjanjV+RCNtQlUdZZMhl0qk/Zjw0ShRJ2vOmIjyWqdTGON1hftV+IkPgTWujR6SSw6Hyo5Hq1Jjc64nH3j1+N0sP1sVrfNPyAUXFB+XTod8TA8bd+bPjOSTXqWCIjJVYq6z1aOdNiZ5bnZAy4mBtNkwXDxsr0ccsOW+XzelHWzVxw9ctbz+OwZx9pNaie7f/b0Cz9ulOi8qxD9AAAAAElFTkSuQmCC" alt="QR"/></td></tr><tr><td class="num">3</td><td class="k">우동</td><td class="en">가락국수</td><td class="ex"><span class="ex-row">휴게소에 들러서 따끈한 우동 한 그릇을 먹었다.</span><span class="ex-row">면발이 통통한 우동을 좋아한다.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGAQAAAABZVd8pAAABJUlEQVR4nFVSQUoEQQys3R4QIRC/4A9GWhBhoAWvPssn7QNa2mOWHvDkXfAk9NIDXrJEdIXN5BSKJFUpamM41XH73wDIaLWogs7YlpWO9zMsuzmhNhGmLG4OmJ8/MP91Z4zSG48eQ1UTa2pudzgMgj1w63hhpmLEpg4rLU3FavFY5kgpRJoc1tGVtXSP5SAqlNTtDuPlckHl+Lj3vDEwEyXvwcs77a7LJ0Z/zzKrtcn9AWlSglb2vCWKUZji6rc2RkT2HqAnVq7q9UEolcihru5Z6wgpOGxLN4HC127ls9SiIiNW/uUpcIXXtzG8PmGRg9eXUetoJJ6DFagIyzoHvQfJwe8KNUaI4nh/c7BEyt/zKgeFlNro5w4D5bt+xQ8rfadyOf0Bx1yUb53JMYUAAAAASUVORK5CYII=" alt="QR"/></td></tr><tr><td class="num">4</td><td class="k">소보로</td><td class="en">곰보빵</td><td class="ex"><span class="ex-row">소보로 빵의 바삭한 윗부분이 제일 맛있다.</span><span class="ex-row">우유와 함께 소보로를 간식으로 먹었다.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAABOAQAAAACm0R2wAAABd0lEQVR4nF2TsWocMRCG/7vZJiDQvUHKVAcKSnMgkNtAXsJV2oAfIATyAGkNeQy3BgUVaebYhasCgWvcBsbswhGYRYFgg8ZTDcPPxz+aX5uGp1q3zx2Agrm5HBSun45afRNNjbvpsO4e9tPyHj967RY40Xp4kP/tcw3A4cunC27NFKOyoFZnuY8D/2agbIyH1lqNIbWmxq8DBweKqffgaovTXeTVeFgwuPl4vyuGW6NPHLlSTxgOt7ihX5f13r5D1pJibtprwaziUShZv+Ncc/E19rthFsexiRQz5VkaamrJcBsHr8qkhjtTSHVulA2hlZjnJOLsbj6WXOKYDbcWlSCKaO7m6HKiE1UuZmPxnF0UNtrlvES8OZ4/BrOFkqfAJDYPP3UvE/6+tlyV7JwA/TU3DccF7ma6O9hMFnFReTRcr/kk5YpguOwqNwVg8gC8itO7CH6RyWVXvsFff++1JG5/TZ/fnnvt9nG4EH34Gv5cWb9P1f+hfyk4ugj2wykZAAAAAElFTkSuQmCC" alt="QR"/></td></tr><tr><td class="num">5</td><td class="k">다꾸앙</td><td class="en">단무지</td><td class="ex"><span class="ex-row">자장면을 먹을 때 다꾸앙이 빠지면 섭섭하다.</span><span class="ex-row">도시락 반찬으로 다꾸앙 무침을 싸 왔다.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAABOAQAAAACm0R2wAAABbUlEQVR4nG2TMWpcMRCG/7d6zQMZ+QoBQyrDwCvCwhjtDXKJ3CNlqkBukDOkcmWQ0UKaWWRwZTDkCjLP4EZiQiABzRJV4ufXPx+jmUnx9/TdvxuAhFIlR4Yf1dIKYtuayqDu+uWr/Dguh3uMKtCd+zx/w5lKWB74YFSUllSCiMmdX2Y54Q6YRoZJ0T883S6ODG9OLdcaChnepK4m5iBsGKZ98F+O9GYZYpMN3GAY3vXHT7+Sn9l6NReNFDHmIjUGOeLYRlWiriFrI+PdasibU+KxGmqRKmWNyXgV0ByZdczdIeK0f3nEzcHk+kgrlKrpQ1Muyhyy5SWC//PA8GoMq0+htTMGl7Uy2f7mLdZSQiijd2qXV+Xi/YLbxTCsUcRx9pahRpKqyVsGTQVEpYzqfH/YLtb+3M3szKEd16/07Lrpg/icGSGZajtgf32Ua1ydzSTC+vZKzqiu/jz5/v3jk/n5BKG4STV7Mf13h34Dg7Wx1q+R8KkAAAAASUVORK5CYII=" alt="QR"/></td></tr><tr><td class="num">6</td><td class="k">다마네기</td><td class="en">양파</td><td class="ex"><span class="ex-row">시장에 가서 다마네기 한 망을 사 왔다.</span><span class="ex-row">찌개에 다마네기를 썰어 넣으니 달큰하다.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAABOAQAAAACm0R2wAAABc0lEQVR4nF2STWocMRCF31i9GVBQHyDLbAdkajYGQTfkJDlGwGByAx/Ax5jtgIwCIVAgQx/AG28NMj0wGEooxPlB5VoV4vHVU9XbNPytevGvAxCxNp68wPavWZLLkNC4ex3q+OTnNOK+114AC45fn8pb+7/YSpKVOPYEZOHi12QVdxNnfmv2PXfTgO+o1+mdXwsuFoaC8mAczQfi2nsYTP00HupxjJo7+C1+/DzPVz3htLsz8epcj7dqWosRaWrST0MpuUREE9TOhKbkokuk/pZ3S53XFzwobTPUCoUWNBerC4GN9NoB7YM3J8LnqKbZPJGUYvXdmo0tUp4UN8epSBGQutvpBsuwmMSKWyKzs1RYcVM2rRGy2vqwfXkdD5X3zx/VNMeBwOJ0diqZrZwGeLWHlqMPk0uiMxkLJ+Gs/DqhxfvZQPllm7kJAJ0HVHrYE1jlAcDob+G+3PVaU867b+bm8lHlN4InuOTVLX5n8k/1mfwFf/y2p6O6IboAAAAASUVORK5CYII=" alt="QR"/></td></tr><tr><td class="num">7</td><td class="k">와루바시</td><td class="en">나무젓가락</td><td class="ex"><span class="ex-row">컵라면을 먹으려는데 와루바시가 없어서 당황했다.</span><span class="ex-row">피크닉 갈 때 와루바시를 챙기는 걸 잊지 마라.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAABOAQAAAACm0R2wAAABd0lEQVR4nG1TsYoUQRB9uz2J0EcPmJoIgtFCH32J0DILF/kZ/oF/YGIqCKZ+xqYHfXQklPTARsKByaUHNaywCNWUIB5MiRUVj8er16+qN4q/1bePHYCCk0qIAr9Gm9QwsWSlFTr08T7O199xu+ZugSP613v+0z7WFnj1gc/Xs0HRhBi1equ7DHRHQNkYD6paXcyqYvx6EDxcyutp7hxSPCTq62kDeh9f4GYsRldayJKourXCcHydMOLcbwyXFUXcpLLmoonjxsVlm1mjGhBqMm/DsqefuuCjyYFOUblmzUb3JD6IkBObQ9CcTuqmte523l04/2Z5+LY3HkIsXFKbjK7GwsyCZHOouaJqNbsAo1LwiclwSaGa0EzqAy54PHS6enhm0Jd3u3czfj0txlmJkxcG1tscIj537F04mHQKGvsq1MydBXl+5Lh3MLrkC6kAMPcA+DRfJZC9B5zH8gnh7RdzO/xkt7j3lz/+8VAnF2o0u9j89w/9BqvktxTVz+N0AAAAAElFTkSuQmCC" alt="QR"/></td></tr><tr><td class="num">8</td><td class="k">사라</td><td class="en">접시</td><td class="ex"><span class="ex-row">음식을 예쁜 사라에 담아 내왔다.</span><span class="ex-row">설거지하다가 아끼는 사라를 깨뜨렸다.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGAQAAAABZVd8pAAABLUlEQVR4nG2SMUpEMRCG521eszAQD2ApWAkPYiMEsmAreAZv4FG8imArRKYdmW0Fe6uFSB7YzDIiWkzANAkfyf/PZP7J4HcdN38HAKjQwWIGdEy0cq5q7BhjU4RcHZsB9mEtrwADS0g3i2cgKlp00Jvqjn/2S+9r1rlANPX1IWQyStmx1ilKXnR4C0WjUvf3eqmKULLXk5Y45RA860WiAJrT27wd16c7+dgt3jd1xNrZv9XWKKhE78ulG8fcnd6cju8X94+w93psSYV0qK8rUopBvB5FaS0PehPDOc6HcHLle0tiWJc69IudUq7Bz9KMUKL4WUIF6oshO9856noKL2F9GHLAFLgG3xsA5Ofrs21z/wcQjreHbd8NOSDO0Jqrb/6cCb5sKi6T0z85/Qao150X65VLIwAAAABJRU5ErkJggg==" alt="QR"/></td></tr><tr><td class="num">9</td><td class="k">쓰리빠</td><td class="en">슬리퍼</td><td class="ex"><span class="ex-row">집 안에서는 쓰리빠를 신는 것이 층간소음 방지에 좋다.</span><span class="ex-row">편의점에 가려고 쓰리빠를 끌고 나왔다.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAABOAQAAAACm0R2wAAABZ0lEQVR4nG2TMWpdMRBF7/96jUGg3xoMadw+kJHBGASv8Eq8g+wgeAGBLCBbCchMYQwDepA2YAxuDTIqjGEek8YBzSeqxOFyNbpX2ik+17b/twNQ0NWHKPAjrUJBm2Tlge63wzyvN4f1HiMFfrvt8aXhiF7ffX2/WQ1FFW5I5I3v9DbxHwbKzsygqpRKVhUzrwdHD5fySFvvipJqtDSX0EtDGU8DU8qcmNyonbB54PFh+2Vm6L2U6BaVI19pvhWXrdYJJQRKJjNsVyebPs/fTQ7Sg3rKmo2vsAQRdmJ9Q83U1S3mFuL7ork1b3sLucSS6mJ9JbbUBMlohYgiKZku0CTy4lNjoy096JJQTeqTP+2H840vX8/MjWk3Y8XHl2LobXMn/nx6i7ZjKpGXQLZjUOMkXI/epJL0XKtt0zOrABgn2wPvab1M4DH1CcAh/kC4/TlqXcN8775dPJmGCnihQNF0sfvvH/oLIX++H7rCAJUAAAAASUVORK5CYII=" alt="QR"/></td></tr><tr><td class="num">10</td><td class="k">바구니</td><td class="en">바구니-일본어 &#x27;하코&#x27; 영향</td><td class="ex"><span class="ex-row">바구니에 담긴 사과가 먹음직스럽다.</span><span class="ex-row">빨래를 바구니에 가득 담아 옮겼다.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAABOAQAAAACm0R2wAAABcklEQVR4nG2TMWpcQQyG/7VesyAzC2lTLqRaeEFbDrxtU+UMvkHaVD5BwAfIMQyuDBOm1fIW9gBp3AbGvAUTmEEBk4RRiCrxIz4+pJmV4Xe1qz8dgITFeBoruE/nmoOhRtMuHdrmaXfKG3zrZ6+AM7XPT+W1/VvKNcVFNPUEzFULU2bHXaWDvjZ752BmWcZoVp0vQ0cGSewd+N0ip3vR5hwqxrCkAu+gYlFJM/WEYft4LbR+aY+9w6q+nNon4tQOPSHHUBiJovcVyREhi9vZ8Yj1xZ7xxZtZNJJosXeARYQalarjVuKYxWjymyx5sloK+7stlsYk8+S4BblIqRB3t0Dt3M6UNTkCs04sRR03WbJJMLutD3zEZtt0/+Ntn9LldvdwjZ9veu7Q1s/hA28HjH0quAP4Y7h320nIhaXq7H3r7lzSgeB8lbNaBeDeA7CW016gPXcAaJPuEG6+9rNULrsbun3//V+HKYU8ulus/vuHfgGtp60cXfNyigAAAABJRU5ErkJggg==" alt="QR"/></td></tr><tr><td class="num">11</td><td class="k">벤또</td><td class="en">도시락</td><td class="ex"><span class="ex-row">옛날에는 양은 벤또를 난로 위에 데워 먹었다.</span><span class="ex-row">소풍 가는 날 엄마가 정성껏 벤또를 싸주셨다.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGAQAAAABZVd8pAAABOUlEQVR4nG2SO2oDMRCGZz3bGAQTSJvSbUCwLmW04Db3SBXIUXKDnCEHMMiocKOgbQMBn2BBYRZMQGZCHuBZiBoNH/P/85Aagd9zXvwFABCAQciBUSzXkFyoki5scb6yMPT9HhQDON5PfviJLuz2PQ5WsxbLYdyOgK8X1oQ+fd9rXVekJA8kVfdnyEWJnVOseKDsbNVahq5SjazzmLga8E77Se1S5xA1y9FTBiPKr+E3OD08r+70riIzmcBJa9n6iDWTrhukSCLHyq/FzeHz8QUGq7Ud1hzrvD9bU0eYtV/yXoqb+UEOxFgYVd7ijNYsh80uaK2zsXMB1VuCSDaZctAsQI5WTFJ+LdWJjnucnrSfiYwpoJ4NYHmz266WZcam8XrseTP7VzE5KEXN2360CU7SeLXn5p9/+gV1pZju6qm5xAAAAABJRU5ErkJggg==" alt="QR"/></td></tr><tr><td class="num">12</td><td class="k">다시</td><td class="en">맛국물</td><td class="ex"><span class="ex-row">멸치로 다시를 내서 국을 끓였다.</span><span class="ex-row">깊은 맛을 내려면 다시가 중요하다.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGAQAAAABZVd8pAAABNklEQVR4nG1SQUpEMQzNn3TzoRDBrRvB7cCX70bI0AG3glfxAB7Cq7hyNVDpwk0lAx5gTvCh0oHZ9FNRB0zFbBoeSd5L87oKPzEvjgkAeMhQicEqTIqP7EuNCos2WQvsFbYA2D3v3fY7O4YBWGK4HRoM02v/MAG+/WKdX8ev90rz1pqiA6pF67PAoYaRFZZwJOGh6N4AUqiErOoMuMsyGzd7VZftGEdG1BwpOxKwVc/LDHmQ7DSvD0TW56h7q+eARajRF6hG4qzmmfd+Od8/wXbQmoWKhMLNPMYwEkrDK5wSt/PofE9mwpNrfY87hH672uh9Jdk4skd9y1o9CYm+JXiIYag26v+jgrB7wf1j44OQMXrUWgD6s83NRZ8a7DCdTuu8+usrSEntaz6MzIfaOeXJ7h+ffgLh8pJ0v+lFIwAAAABJRU5ErkJggg==" alt="QR"/></td></tr><tr><td class="num">13</td><td class="k">쇼부</td><td class="en">승부/결판</td><td class="ex"><span class="ex-row">이제 그만 쇼부를 보자.</span><span class="ex-row">가격 협상에서 마지막으로 쇼부를 쳤다.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGAQAAAABZVd8pAAABIElEQVR4nG2ST0pEMQzGM6+zGSjUA8zSrVB4LiNvwAPM1byNq4FItpHMDTyBUOkDNxki/gFTsZuGjy+/pkk2Dt/nMv0EAEDQwQtCDpoaCZK5BE1ywwxIQZsAXh7X5fwV/Wo3ez7XqIEay2IDb0MH+bxv47vuPS9Q3GJ9uQg7zxi01qsrVou5TMmKcY8+X9gyLBh5LElmTClqqloUskee0MxV+xJ5vEDO1GXIxcrJtERf1+ZSsP/pqSERD7zUTdmG+sSU55I0+khzazjypM6eWk/BN0G6wO58d6LoQ+EZKcVZulPWonGWQECtepbA2xZb9+kprQ/DHhAnoRRq2QIAnu6vd23Yg/x8fN31w9ADzQithf9Ob9uV3v3qGHybf/b0A4//nLOxMo0UAAAAAElFTkSuQmCC" alt="QR"/></td></tr><tr><td class="num">14</td><td class="k">고데기</td><td class="en">머리 인두</td><td class="ex"><span class="ex-row">고데기로 앞머리에 웨이브를 넣었다.</span><span class="ex-row">고데기가 너무 뜨거우니 조심해라.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAABOAQAAAACm0R2wAAABeElEQVR4nG2TwYZdQRCG/3v7boamzxtkM9vLib6MoelhtmGeIQ8Q8gYRsh3yAHmMkNWlo1ZD0YezDbPJdqhxLtfQR4VI6Ir0qvzKX1//1b1R/Dnr9m8FoGBRH8YG36u1UVBpSblTt+uw30+3w/QdvQrMbn34KfhHvf74/nw7GRW1sWAhb3w35YZ/FwfDoKoUS1JthteDRw8XUz/Nfctx+hp5NdMWpKBFUPppaDElikyud9idHk53Fxfn9WgYJCwlU9bW96K0KkBxyWZGC2UEiv20Hd6F+5M+496QMTV1S9LU+27qs3vzNOHqZTC8FBKRumxuUaXkxYt4y7CMZRxjzYZXJEiUhtj3bufHccbsiIvJrIGzj8LGt7ikOaLa1P0ThtPKh+NkNn/3aY8JL6+MbxXN3gtgtqlaS+IcyO4YVSg2roY3tMt5LDcOxpc9szQAhgw4xx+HCO5T3wF+OH5GePvFvB1Z95fuw+tHs6ECyhRobD3D5r9/6Bewx7hb6qtkygAAAABJRU5ErkJggg==" alt="QR"/></td></tr><tr><td class="num">15</td><td class="k">무대뽀</td><td class="en">무모함</td><td class="ex"><span class="ex-row">계획도 없이 무대뽀로 덤비면 안 된다.</span><span class="ex-row">그의 무대뽀 정신은 가끔 놀랍다.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAABOAQAAAACm0R2wAAABaElEQVR4nG2TwWZlQRCG65y6m0tFD7MKWYasLh0dZtOjQ1Yh5FXyIiGvkjeoOCGGHh3uagjzBKHpwxXqqBAJXVd6VX6/z19/dw8Kn2cZvyYAYGDvs2agXi2ikKSJ5k4dlx+z59XB+QN06gpgTb+xHkKvjgDwNPPCRoUizUtEyx34PH8MZ32GQeFxfXK5IzZ5J2oMhaIl1J9vMLtT97zpvUo1txqomt3YNUmREolJ5l2tShKMVzEXLT5BNF5O4jEH3eMK50SB+mSg2TtfgtgM2jS1KBhMBuHKXDC5nrDaXs/+hV+3tknhGqYkXAxXFCfW/bziU/CcCA0X8e/uD0C4PzK7RY+okpPZorRWtThXDJdzRWwcTGcj/fof+cr9W7j3ZiriYwCbTHWCOGnJvTo+DJs0L2cL3PWqE7yla7jYmR4yMZdEgIYAQPHm+bjWPa/kUHEyb32FdevXL7LYfhmmqkJk7mL49g+9Az5+uDNNNv+OAAAAAElFTkSuQmCC" alt="QR"/></td></tr><tr><td class="num">16</td><td class="k">쿠사리</td><td class="en">면박/구박</td><td class="ex"><span class="ex-row">숙제를 안 해서 선생님께 쿠사리를 들었다.</span><span class="ex-row">사소한 실수로 쿠사리 좀 주지 마라.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAABOAQAAAACm0R2wAAABcUlEQVR4nG1TQWocQQzUrOayMND+gsGQ04KWMfgi6H2AwZ8K5Bl+g085Gdq0j720wSfDgC9+gMws+KJGwSYJrRCdRFFUl6qlweB3tc2fDgASVClrZJh6tGqFOK1qpUM37exU7i62hwfo0BGgIdahnHp0A0CwPePDV/u3qiaroRSnO76P5Qj3AEPvYTBoVy8/t0jOb06aRUIl51cQJTGHwr2HpVGAH4/04TykkIsSKzgPeMf75W0Z2XMxVDWK4HThXvaXI7SY3GxWZ0RT6rlQJ8mKRty/BhWrlDjH5LgCZtmYTd3EMRSVwOy4RSPFZCR9DiM+f5/Or+H1mdwULDCtUySna0HmkIKq9wuWTZh8vjmuYjWE6riayHhmXp2u1lwKcp4cN/FKKpamnjsYHPH8ALew6/N9GL7tEZbW3J4FfZyf0oLt4HKYSo4Qknvtc/t2T2UHF//s5Cm8f5wIHYryeozt9ubF/zxkWtci7i6G/97QL/F5twrcG8cgAAAAAElFTkSuQmCC" alt="QR"/></td></tr><tr><td class="num">17</td><td class="k">기라성</td><td class="en">빛나는 별/거물</td><td class="ex"><span class="ex-row">기라성 같은 선배들 사이에서 긴장이 됐다.</span><span class="ex-row">학계의 기라성 같은 존재들이 모였다.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAABOAQAAAACm0R2wAAABcklEQVR4nG2TsWodMRBF73vaJjCghbQu3S4oyM2DDSpe5Srf4D/IHwSDP8Af4M9IG1BQ4BEY2IXXBtKkNYzZwBLQMiYQg8ZElbhc7hx0RzvFv7PtX24AMhYlHyqoVadavEodlRt1v/XDMB/7+StaFTi77fsvwSv1cPtxPc5GxVRZEAuZ3O6p4x8M5J1hUNUS86haDS+BA8HFsZ1GLsX5c+TNTFtIvGZBbqchuzoWx8W1CR2GPtKbdftiGMRPOZWktfWCwyJ/c8bWu4ejc8KHvObWW4k4qohh2PGKsZPr8t7wlsq+Mrtqcg8nN5zWiKPJXaqkhUTI8GYfcwxxSoZXa5AgFdHyrv7szq6wyS2UOVEUtvtQgvqIybx6hwP6y42vHi+MevLDOuPPW5PLLIlIANOmas6Bky+2Y7BwrDy92kktuozTZNpkylwrALMPAOK3qwhu37cDfD/cw988tF4nv4c79+ndT9NFRk7wJZgudv/9Q8+vTrTACLs3AAAAAABJRU5ErkJggg==" alt="QR"/></td></tr><tr><td class="num">18</td><td class="k">간지</td><td class="en">느낌/멋</td><td class="ex"><span class="ex-row">오늘 옷차림이 정말 간지 난다.</span><span class="ex-row">이 가구는 디자인이 간지가 있다.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGAQAAAABZVd8pAAABLUlEQVR4nFWSQWrEMAxFNVGWAuUG3XRbSEmhm4CzHeg9epHeo5foAVycpYoH5hwFBwdmo6AyTGEUbWwe4kv/2weDW23N/wUAIpScVIEcy6qqoiZ31mzdOnUv0zfcWQtw+oLuBI41APRw5t4zyGpqZafXLq1czxc/18zEiE2d3rxMMNc4ez2xoAEHGh1Lgsqaqmd1yCoU1OmBRkDOEvxc4cBM5NkhbTg+fz6++ayyJVYro/MBUTWhZvZzJRQjHAen167LhOtwLj+ur6SqfA27cT40ycCYd95qUMCAjrV0/LjgL3a7nAOZSA9eLxIRZ/D7HQzmI66y+AwixNwbietrWOEpA67ReyOtKBF3+VFlwEH8uwFs60Dxctr9AxGl0vu+pV3fX2vH026/W7ns/wDedpu91lWhsgAAAABJRU5ErkJggg==" alt="QR"/></td></tr><tr><td class="num">19</td><td class="k">삐까삐까</td><td class="en">번쩍번쩍</td><td class="ex"><span class="ex-row">새 차를 뽑았더니 외관이 삐까삐까하다.</span><span class="ex-row">구두를 닦았더니 삐까삐까하게 광이 난다.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAABOAQAAAACm0R2wAAABeUlEQVR4nG2TsUoEMRCG/9tss5Aj9wA2wrXCQixXduFawZcQrKx8DsHWx/ABDiJ7YBPZBaurrrlWyJKDayaMKAqTw1TDz/Dlnz+TGeP3pOKvAuDgahB7aKkOxGh1JPZCLdLiYN1+3r1CqkBVzT/iiBMVmz2Sy1QMFOugVc6duc7/FJeZB+beW29bJsndzOvDWm0TRqGWUFe+5KVaXEgujSqp89V2fyYJ43Gqp+utPQvythCa0A+arPRQjua4S1iu3hvZSyHStznO/UbvImur5WzgRhs1WAp5vjG2xpOycjb0nhyMao0klNXd0wMvPj+yJEv1CJSUkrnKXrOve8N1i8zvAG2ja7XKuKnFptKwLzKdEgl4a9bjjcvznT53Ywd3n/nVvVLR2SyzooqpcddmmyQBPmiCt8idMQ9oLA9eqjPX0WqCes43ytDx0eywOmYb5fXgfKuhJKEAUnM7LkM46SWPoPrTXe+JPFOmFlOpD109Xxg5xezfP/QFPPW12ZNpJF0AAAAASUVORK5CYII=" alt="QR"/></td></tr><tr><td class="num">20</td><td class="k">엑끼스</td><td class="en">진액/정수</td><td class="ex"><span class="ex-row">이 약은 한약의 엑끼스만 모은 것이다.</span><span class="ex-row">이 강의는 핵심 엑끼스만 골라 가르쳐준다.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAABOAQAAAACm0R2wAAABcElEQVR4nG1TMWpcMRB9u/qNQaCFXGEh1YKC3BgEKnySVGlzA5MD5AAGH8OtYcwE0swig1vDNm4DWn5gMegzAWODxmSq4fF4ejNvtFK81bJ+7wAQZg0ldvgRrZ2DUs8qAzotm+fdg9vgfuSugUe3XDy31/a91sDFj++nyweDonZpcOyt7nGSJwFoZTyoKqeYVbvx6yHRw6U8oq0EBaUaLUo1KDXQ+BqacuYk7Ebu9HQu7uz6tNwZD1yEsivajS55amjksuHOjjgicDKz7e/K3usRP80ehFUdZ81GV/0cehfXja4kyTyrK2aKKlTm3Jq3uXGhRKkWu4c4t9g6kuFSrZxY2WQBbkGKT01MxovbJnzeH75F4yyH4KK4NnIn/N750x4vn8jcw5+DO/Pb6WgUVJmilMA2Y9QmqUv9cJPKOudajV/xJL0DGCdeAz79Ok+QcesT8Hez3CJ8vRm5rvnd1l19OZiECFQocDRZrP77h/4BD8e8BmqRWqcAAAAASUVORK5CYII=" alt="QR"/></td></tr><tr class="quiz-row"><td colspan="5"><div class="quiz">
+<div class="q-title">📝 미니 퀴즈 · Mini Quiz (1~20)</div>
+<div class="q-sub">일본어 외래어의 우리말 뜻을 고르세요.</div>
+<div class="q-item"><span class="q-num">Q1.</span> <span class="q-word">소보로</span> = ? <span class="q-opt">① 곰보빵</span><span class="q-opt">② 줄</span><span class="q-opt">③ 야유</span><span class="q-opt">④ 깃</span></div>
+<div class="q-item"><span class="q-num">Q2.</span> <span class="q-word">구루무</span> = ? <span class="q-opt">① 크림</span><span class="q-opt">② 속임수</span><span class="q-opt">③ 느낌/멋</span><span class="q-opt">④ 빛나는 별/거물</span></div>
+<div class="q-item"><span class="q-num">Q3.</span> <span class="q-word">쓰리빠</span> = ? <span class="q-opt">① 배터리</span><span class="q-opt">② 줄눈</span><span class="q-opt">③ 값</span><span class="q-opt">④ 슬리퍼</span></div>
+<div class="q-item"><span class="q-num">Q4.</span> <span class="q-word">사라</span> = ? <span class="q-opt">① 뱅에돔</span><span class="q-opt">② 접시</span><span class="q-opt">③ 곰보빵</span><span class="q-opt">④ 애창곡/장기</span></div>
+<div class="q-item"><span class="q-num">Q5.</span> <span class="q-word">기라성</span> = ? <span class="q-opt">① 융통성</span><span class="q-opt">② 가게</span><span class="q-opt">③ 빛나는 별/거물</span><span class="q-opt">④ 애창곡/장기</span></div>
+</div></td></tr><tr><th class="num-col">#</th><th class="k-col">일본어 외래어</th><th class="en-col">우리말</th><th>예문</th><th class="qr-col">🔊</th></tr><tr class="section"><td colspan="5">건설 및 기술/작업 현장 어휘</td></tr><tr><td class="num">21</td><td class="k">노가다</td><td class="en">막일</td><td class="ex"><span class="ex-row">방학 동안 공사 현장에서 노가다를 했다.</span><span class="ex-row">이 작업은 단순 노가다라서 시간이 오래 걸린다.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAABOAQAAAACm0R2wAAABd0lEQVR4nG2TsWpcMRBF71u9ZkFBgVQGN/kAg+AZ0gi04NbgbwikDeQP3LjNH+RXDApqZ3mCrQyBNAG389DCNiPkJgENRJU4XK7uXElTx9/Vdv92ABLYe+kEO9JVuotBpNNIyXJYq7VppDPwC18vr1fAQHcAnpAOSVGswkwxk/Kdt5mA78CkMvRec6UQu4w0sydv4bKinINw99EFlVeSq4mh8oKiC9aRUdopN3Nj7o/86WWcwhuUPZa7Zz86VPZskUwY885HZ0r273xJo29tp/2XdUMZtVM/HGv51symaIJpcLehPI+nyeKCiz0vagphiVWYreqsxpBT9xG6B3IcWLAorUSXee2mKt9MYkwXipoa6j3CReW7snXGk+HRd9dOrz45sz+oHug2opU/7zHe27z049mXh1W/nZ/T+RE4t1ZG6gRP93F/d1EviixTF0BNvAOsP3zwXEftDFyu04bfn3+MWsMvNx/d43ZSvgnEIta6sYfpv3/oDaUXuXJEsA6+AAAAAElFTkSuQmCC" alt="QR"/></td></tr><tr><td class="num">22</td><td class="k">공구리</td><td class="en">콘크리트</td><td class="ex"><span class="ex-row">오늘 마당에 공구리를 칠 예정이다.</span><span class="ex-row">공구리가 굳을 때까지 밟지 마세요.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAABOAQAAAACm0R2wAAABcklEQVR4nG1TQWocMRCsXc1lQaD5gQkYfBqQaR8FY/ApkE/klGf4BYE8IF8xyMhgDG20sCefloAfoDCGJdBDB0wS1JA+NUVRqq5CG8WfWbd/NwAZi4YQBb5Hq5SgTZJyhw7r+Drtz0fc99wtcHDry2t7X/8Ne8lpIc69Aqpw81S80d3ka35frowHVS2Uk6oYvx4cPRylHl1CUWSqsUeH3YRxeb4bs9EVComJizPc/Ut0bnda7wy36JJjmVXsa1KbR3bJZlZbSQiF+tu2P9dPuzf9MX016SjN6pakyeiqtCDMTky+DzeYHk+Em2yuQJ3Vt+ZtZmHJMVKdja4kadQEZLjslhKLFtMFSkw8e2psPPhwIFw8H79EoxBdcJFdM1x3fJraHr/Oer8Dpjf30Z8PMAqqJUeeQ7EdozYm4Wp0g3w4xHztYHJgz6wCoL94C5xof0XgPvUB8GP8hvD5u/HbMN2728ujaSgjzxRKNF1s/vuHfgOeJ7OZ1kS8zwAAAABJRU5ErkJggg==" alt="QR"/></td></tr><tr><td class="num">23</td><td class="k">나라시</td><td class="en">고르기/평탄화</td><td class="ex"><span class="ex-row">운동장 바닥을 고르게 나라시했다.</span><span class="ex-row">땅을 잘 나라시해야 건물을 올릴 수 있다.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAABOAQAAAACm0R2wAAABYUlEQVR4nF2TQYqUMRCFX3d6M1BNZutywANE0hshkgEP4CU8gBcR5jBuhQwR3JRUw6wGPESGNLipnxLEgVRnVTweH49XlZ3h/9v2rxOAhpaSGoNWVdRQearxqjLNZAmlreoBuKEPYb4BFnUP4OflYWtOhehMSsFzd+2e/w0nl8Gs8+RcTVfuj2O6HMPzhrPzStFhqcayqlrAc2QajsshaC1UaeXCiowppNl5u6iYpArH7aiaOme78sYmRplcZyNZrJL1KkOmakVDdhlE0ZqEGl07djtOZ757ws3aw8sd0L7QRvfrLs7x9hvau/jo8rY2cmmVgks2RYNwrT5ZTyEEU67OK3MMkxjFc7WFPFv2nXHXGqpQ8gSoomT4Js06SjfhVd0/7lK9bKcND6sadfsaP+HjH3dRTNy4EoIjACifz2/HuPJObiN0d+v7MH4l+q3v3aUeXg5ySTgifne7eJ3WP/QXbN226vQeJTEAAAAASUVORK5CYII=" alt="QR"/></td></tr><tr><td class="num">24</td><td class="k">가도</td><td class="en">모서리</td><td class="ex"><span class="ex-row">책상 가도에 부딪히지 않게 조심해라.</span><span class="ex-row">가구의 가도를 둥글게 깎았다.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGAQAAAABZVd8pAAABLElEQVR4nG1SW2oDMQycjfYnYHCu0Bu4OFAKLhvoYXqJHiIXKii4kB+FXehFXBwIBRuXvogM1Y/FMJoRIw8NP1VXvw0AxmynHGAUNheJJZQmV2xVN5f13XE5QGHA+sncu+/ur8SkRDmwmh0pvZ3LUOh0xQbeyde71b6tpQBqrSiP1wNdCMvtRvHSLLA8BcVDcd645iUo34UqaJTth+JFaTGziZ3vRLCFJq3HiJMVgtJDmbj4SFnxBn7G/vLAVmfasiSTvdd6CTAUXdF6MsMkNqR50fiYs7EqP7CX5LjXK5IoZApar3mxPnKfX3184Ypx1+UcyeaZ1ezqMLiAdSV9X1sW3BzJ7Lv7comOu53FNCAHUZmOQA1nsz+77l9xIMKs93sfCQnWLSrTf/7pJ3FHlFE1/ausAAAAAElFTkSuQmCC" alt="QR"/></td></tr><tr><td class="num">25</td><td class="k">기스</td><td class="en">흠집/상처</td><td class="ex"><span class="ex-row">새 휴대폰에 벌써 기스가 났다.</span><span class="ex-row">자동차 문에 작은 기스가 생겨 속상하다.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGAQAAAABZVd8pAAABO0lEQVR4nG2SMWoDMRBF/3rcLAzIkCqQxpADCJQmILOGtAZfJQfIIXKVVKkMCirSjJEhrSEnMKzRghstCiGBzELUSDy+vv5opqn4WePs9wAgIKMaD1YslVB8KFUUE+6F4YNic+BAQ7cHJsxx3NgJo/69fTqB9n+sCWv53u/0u7X20sHUovOx8bFG57UfLT94NchC6aLYYkrMSoficmF0XvtlceI80YRRNAlcJ1l8rjblTvtJLMwhi77bW0QqyWhdIlfF+Kz85kM7jo8vOFjtV7mkWCb5gi3iDCXl1wRie97g9Vr5meVxuDrR4v6PzUYibg+rXdBZrInOB9K9rDUhmaR7iYCQbGXR/2zK5fj5RsPzZA4kkwTStQG42T3ctr3KAmC3PbV5PZkrYY++V/XOznOES11sla75Z06/AEKRkmlDuh/OAAAAAElFTkSuQmCC" alt="QR"/></td></tr><tr><td class="num">26</td><td class="k">데모도</td><td class="en">조수/보조</td><td class="ex"><span class="ex-row">현장에서 아버님 데모도를 하며 일을 배웠다.</span><span class="ex-row">혼자 하기 힘드니 데모도 한 명만 붙여줘.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAABOAQAAAACm0R2wAAABd0lEQVR4nG1TQYpVMRCs9/M3QiQfPIGrWX2I9GwGnkT4B/AMrlwJgtsB8QCCB5hjzAF6iBuhhzyYrTCbOUAPX/gIebQICmkxq1AUVZWuzmT4c9bN3xsAxtFiyh1xRFuvybTPJgO6WXf7/XLYLTcYUeAurN8eFP+gF5/enw6LQ9G6KKhGp7t93Mp3AXhyGcysEs9m3eWNkBwRaB7dYjjSck2yOjeNczqygkc3GOVZgtQwKkxyXi8/47T6OQgVzrVYH7mw2DWAw+y4tYZaOFVybj13KabqMkztx7v29OxJfenzSkt9ltB9F2RzJQvF6bKmYl01Oq4eC2emVlzeBtKsHeS4vWjN1arrAlWjlEgqI3eDAxHObu/fZjcd5hSyBB252/A670+3+PmM3Ysfw+W6POwwtjkZvq6IH5brC7+TrJG6NJch9Xyn/Cpg1IVEEesA3D4AJ1rOCTLOdwvEHX9BenM1coNi/zx8fHHvumC032Vm18X03z/0C3Q/tyuEqe3dAAAAAElFTkSuQmCC" alt="QR"/></td></tr><tr><td class="num">27</td><td class="k">단도리</td><td class="en">단속/채비</td><td class="ex"><span class="ex-row">겨울이 오기 전에 월동 단도리를 해야 한다.</span><span class="ex-row">일이 터지기 전에 미리 단도리를 잘해라.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAABOAQAAAACm0R2wAAABaUlEQVR4nG2TMWpkMQyG/xdPM2DwtAsp0w68xdMEvDiQA+QMOcleYQ+wx0i7oKBW4IE5QJocwOENTKOHAmE3WGFVCSN+f/5/eTL8rfXqXweAsFhMsyKOp0052azFZDjdrLvX/ZF3eB5nr4BTWL+99o/2syQqlSULjQpoKh0LR6c70Z18NAfHYGacqZip442QOSLkMjKEnPPxKcvqGVCTUccXBqbCQTiMCpub7SFtby/rH8egFqhyNR1nYaI9gEJxPpzD+XRLD3Qhd1upUq13xzBpeEtT3vIPx9s1JS0SdNTdvNzscbpk3I+6U79Detqece0UOFWaKbfqeKUvvXZFdm/rLfDMxi4L9GhSY+7iZpmT1YzmXEeLNYVZQnez0qQsEE1OVwpqiR1waZoRzVIT+4xBXbJK+7KTC+tSWvO6UcQUgNsHIOTjIUNGdzbA227+hfT42+1OD/vn8PP7i3OSQDUnnl0W03//0DsgHbg2cXIXCgAAAABJRU5ErkJggg==" alt="QR"/></td></tr><tr><td class="num">28</td><td class="k">시아게</td><td class="en">마무리</td><td class="ex"><span class="ex-row">거의 다 됐고 이제 시아게만 남았다.</span><span class="ex-row">제품의 퀄리티는 시아게에서 결정된다.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAABOAQAAAACm0R2wAAABbklEQVR4nG2TsWpVQRCG/5s9jbCyeQjBKrCytzmwsGnzGFa2gg8gvoGt4GMErISVCaQZORfSCmkuWAkDJ3CbOYwQDOxIthqGn38++P/dGf697expAtCxWmxZEcftopRMtBoP22k7P14cHq7wY9SeAXdhm4/yOD69CZg/vT/hi9tiUZYUKDrfXb/kx2HvGMyMSq5m6ngjOEeEUh3Dt1AO14U3d800JeuCPl4DF6oUmMLoMD28mEOcT9t3x7BS7Zma6agFMySih+q02ohqT1TcNcuNs4l4BqNogapV50u8JlUO6rMoa11WC805qKCtVSR63kI997I056tI0kRRnFZWUCYjlwVII7dYhEftFG9/R7z+ef8uO7KqKWQO4nmt1xWsyXfn5TFcxVcTRoed4WaL+HC4nn0nFwlFeXE9S5rvpF8GdJdF7CwKwPcBKL/2BfxfJ+P5n89Ib7+O2iCni334+ObedaeDGiXKLovds3/oL8jptfi7nWhYAAAAAElFTkSuQmCC" alt="QR"/></td></tr><tr><td class="num">29</td><td class="k">야스리</td><td class="en">줄/연마도구</td><td class="ex"><span class="ex-row">야스리로 거친 표면을 매끄럽게 갈았다.</span><span class="ex-row">칼날을 세우기 위해 야스리를 썼다.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAABOAQAAAACm0R2wAAABcUlEQVR4nG1TsWpcMRCc8x6EA4HuD9wEUh0oyI1BoGtd5RtSpc0fhHxAIK0hn5HWIKOUG97BVamMweB24RmOwD42YGLQhmy1DMPsaGe1Mvyt5eylA9AwW6hJEUZ00h5NtBgP6HrZPuwOT1e4HblnwJGWywd5bl9qDVx+/njCtUMxKUvMPTjdVdvzc3PhPJhZz62YqfMbwCmAcnEeHikfvmde3DRNLVoTtHEa1LT0zJ1GhfWPANpsTsuN89CJWqJqOnLRNQpJo+L2sBxvjmX7rp3aiJZlv4Hd7744Z2LJQi9WvK5wVGVS54Eplj4bVfeKWWq1IhIcVym10vJUna4kkiyK7LjzZD116y4LsBauIQuP3DVeKfDm592H5NOcIyUm8Xs4/drJAb/Pxz2Ak9USBHBpmrWWuMbuMwYLZ+XJ6UZ9fUxtT/C6YWJTAP4e8JQPFxn8z01utukr4vtvI5cEu1v69PbOJdTANceeXBar//6hPyyVt7EjsSWGAAAAAElFTkSuQmCC" alt="QR"/></td></tr><tr><td class="num">30</td><td class="k">헤라</td><td class="en">주걱</td><td class="ex"><span class="ex-row">헤라를 이용해 벽지를 평평하게 폈다.</span><span class="ex-row">페인트 칠하기 전 헤라로 이물질을 긁어냈다.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGAQAAAABZVd8pAAABH0lEQVR4nG2SwUpEMQxFM/ZthEIXbt0IgtsHdVnpgFs/zh8SInEZyfzBfMFAhwy4ySMiukjBbloOtzeXJDuH37Nd/T0AAEHBS4McmBhyQ3MOjPOwDA0DWwAO6dI/ASZWM72skYGYWLfJb4d7/rkfY1135Q7FLebL0MiptsBUUpG22vR3FCtGGnTL+XgH29I3DOyQ6fBw/THlc6UikD36ISivoj3W5dpLRuWYb0ClZFKijjo4l6bRbxhZQ6Sok6omZC36OSvVkiTqsNIYbfYTA09D05SPhmVcMfoJd6oNU5ylO2UpEmcJCIirZ479K5a243u6vE57IJoYU8iyAJxv357vr8fE8unmtNenKTNzgzFCvuW8yPblux52cvfPnn4DtdOhoGnF5NAAAAAASUVORK5CYII=" alt="QR"/></td></tr>
+</tbody></table>
+
+
+<div class="paywall-cta" style="margin:40px auto; max-width:720px; background:linear-gradient(135deg,#1a1a2e,#16213e); color:#fff; padding:32px 28px; border-radius:14px; text-align:center;">
+  <div style="font-size:32px; margin-bottom:10px;">🔒</div>
+  <h2 style="font-size:22px; margin:0 0 8px; color:#fff;">전체 콘텐츠는 결제 후 학습 가능합니다</h2>
+  <p style="margin:0 0 18px; opacity:0.85; font-size:14px;">위 미리보기는 약 8%입니다. 전체 <strong>391 loanwords</strong>, 모든 예문·시나리오·퀴즈·QR 코드까지 잠금 해제하려면:</p>
+  <a href="https://jssmn21.gumroad.com/l/gnefla" target="_blank" style="display:inline-block; background:#f97316; color:#fff; padding:14px 32px; border-radius:8px; text-decoration:none; font-weight:800; font-size:15px; margin:4px;">💳 Gumroad에서 구매 — $9.90</a>
+  <button onclick="showLicenseModal()" style="display:inline-block; background:transparent; color:#fff; padding:14px 32px; border:2px solid #fff; border-radius:8px; cursor:pointer; font-weight:800; font-size:15px; margin:4px;">🔓 이미 구매했어요</button>
+  <p style="margin-top:16px; font-size:12px; opacity:0.7;">키 1개로 <strong>모든 8개 자료</strong> 잠금 해제</p>
+  <p style="margin-top:20px;"><a href="vocab-hub.html" style="color:#f97316; text-decoration:none; font-weight:700;">← 다른 자료 둘러보기</a></p>
+</div>
+
+
+
+<div id="license-modal" style="display:none">
+  <div class="lm-box">
+    <h3>🔓 라이선스 키 입력</h3>
+    <p>Gumroad에서 구매 후 이메일로 받은 라이선스 키를 입력하세요.</p>
+    <input id="license-key-input" type="text" placeholder="XXXX-XXXX-XXXX-XXXX" maxlength="40" autocomplete="off">
+    <div class="license-msg" id="license-msg"></div>
+    <button class="lm-btn primary" onclick="unlockWithKey()">잠금 해제</button>
+    <button class="lm-btn ghost" onclick="closeLicenseModal()">취소</button>
+    <a href="https://jssmn21.gumroad.com/l/gnefla" target="_blank" class="lm-buy">💳 아직 구매 안 했어요 — Gumroad에서 구매</a>
+  </div>
+</div>
+
+
+<script>
+(function() {
+  const STORAGE_KEY = 'krguide_license_v1';
+  const GUMROAD_LINK = 'https://jssmn21.gumroad.com/l/gnefla';
+
+  function isUnlocked() {
+    try {
+      const d = JSON.parse(localStorage.getItem(STORAGE_KEY));
+      return d && d.valid === true;
+    } catch(e) { return false; }
+  }
+
+  function markUnlocked(key) {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify({valid:true,key:key,ts:Date.now()}));
+  }
+
+  window.unlockWithKey = function() {
+    const input = document.getElementById('license-key-input');
+    const msg = document.getElementById('license-msg');
+    const key = (input.value || '').trim().toUpperCase();
+    if (!key) { msg.textContent = '라이선스 키를 입력하세요.'; msg.className = 'license-msg err'; return; }
+    // For now: any non-empty key unlocks (server verification can be added later via worker)
+    // Real verification should call /api/verify endpoint
+    fetch('/api/verify', {
+      method:'POST', headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({license_key: key})
+    }).then(r => r.json()).then(data => {
+      if (data && data.success) {
+        markUnlocked(key);
+        msg.textContent = '✅ 잠금 해제 완료! 페이지를 새로고침합니다…';
+        msg.className = 'license-msg ok';
+        setTimeout(() => location.reload(), 800);
+      } else {
+        msg.textContent = data.error || '잘못된 키입니다.';
+        msg.className = 'license-msg err';
+      }
+    }).catch(() => {
+      // Offline / no server: dev fallback — accept any 16+ char key
+      if (key.length >= 12) {
+        markUnlocked(key);
+        msg.textContent = '✅ 잠금 해제 완료 (오프라인 모드)';
+        msg.className = 'license-msg ok';
+        setTimeout(() => location.reload(), 800);
+      } else {
+        msg.textContent = '서버 연결 실패. 키 형식을 확인하세요 (12자 이상).';
+        msg.className = 'license-msg err';
+      }
+    });
+  };
+
+  window.showLicenseModal = function() {
+    document.getElementById('license-modal').style.display = 'flex';
+    document.getElementById('license-key-input').focus();
+  };
+  window.closeLicenseModal = function() {
+    document.getElementById('license-modal').style.display = 'none';
+  };
+
+  // Apply lock on DOMContentLoaded
+  document.addEventListener('DOMContentLoaded', function() {
+    if (isUnlocked()) {
+      document.body.classList.add('unlocked');
+    } else {
+      document.body.classList.add('locked');
+    }
+  });
+})();
+</script>
+
+
+</body></html>

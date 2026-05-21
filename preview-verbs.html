@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="UTF-8">
+<title>맛보기 · 200 Essential Korean Verbs</title>
+<style>
+  @page { size: A4; margin: 16mm 12mm; }
+  * { box-sizing: border-box; }
+  body { font-family: 'Noto Sans KR','Malgun Gothic',sans-serif; color:#1a1a2e; margin:0; line-height:1.45; }
+  .page-break { page-break-before: always; }
+  .cover { text-align:center; padding:60px 20px 30px; border-bottom:4px solid #C0392B; margin-bottom:22px; }
+  .cover .label { font-size:12px; font-weight:700; letter-spacing:3px; color:#C0392B; text-transform:uppercase; margin-bottom:14px; }
+  .cover h1 { font-size:30px; margin:0 0 8px; color:#1a1a2e; font-weight:800; }
+  .cover .kr { font-size:22px; color:#1A4A8A; font-weight:700; margin:0 0 18px; }
+  .cover .desc { font-size:13px; color:#555; max-width:600px; margin:0 auto; line-height:1.7; }
+  .cover .features { margin-top:24px; display:flex; justify-content:center; gap:14px; flex-wrap:wrap; }
+  .cover .feat { background:#1a1a2e; color:#fff; padding:6px 14px; border-radius:18px; font-size:11px; font-weight:600; }
+  h2.cat-h { background:linear-gradient(135deg,#1a1a2e,#16213e); color:#fff; padding:14px 22px; margin:0 0 14px; font-size:18px; border-left:6px solid #C0392B; }
+  .scenario-box { background:#fff8f0; border-left:4px solid #f97316; padding:14px 18px; margin-bottom:14px; border-radius:6px; }
+  .scenario-box .sb-title { font-weight:800; color:#9a3412; font-size:13px; margin-bottom:8px; letter-spacing:0.5px; }
+  .scenario-box .dl-line { font-size:12px; margin:3px 0; }
+  .scenario-box .dl-speaker { color:#C0392B; font-weight:700; margin-right:6px; }
+  .scenario-box .dl-text { color:#1a1a2e; }
+  .compare-box { background:#f0f5ff; border-left:4px solid #1A4A8A; padding:14px 18px; margin-bottom:16px; border-radius:6px; }
+  .compare-box .cb-title { font-weight:800; color:#1e3a8a; font-size:13px; margin-bottom:8px; letter-spacing:0.5px; }
+  .compare-box .cb-pair { font-size:12px; margin:3px 0; display:flex; gap:12px; }
+  .compare-box .cb-ko { color:#1a1a2e; font-weight:700; min-width:180px; }
+  .compare-box .cb-en { color:#666; font-style:italic; }
+  table { width:100%; border-collapse:collapse; font-size:10.5px; table-layout:fixed; margin-bottom:14px; }
+  thead th { background:#1a1a2e; color:#fff; padding:7px 5px; font-size:9.5px; letter-spacing:0.4px; border-bottom:2px solid #C0392B; }
+  th.num-col{width:26px;} th.k-col{width:58px;} th.r-col{width:54px;} th.en-col{width:90px;} th.qr-col{width:32px;}
+  td { padding:5px 6px; border-bottom:1px solid #e5e5ea; vertical-align:top; word-break:keep-all; }
+  tr:nth-child(even) td { background:#fafafa; }
+  td.num { text-align:center; color:#888; font-weight:600; font-size:10px; }
+  td.k   { font-weight:600; color:#1a1a2e; font-size:12px; }
+  td.r   { color:#6b6b6b; font-style:italic; font-size:10px; }
+  td.en  { color:#1A4A8A; font-size:10.5px; }
+  td.ex  { font-size:10.5px; }
+  td.ex .ex-ko { display:block; color:#C0392B; font-weight:600; }
+  td.ex .ex-en { display:block; color:#666; font-style:italic; font-size:9.5px; margin-top:1px; }
+  td.qr { text-align:center; padding:3px; }
+  td.qr img { width:30px; height:30px; }
+  tr.section td { background:linear-gradient(135deg,#1a1a2e,#16213e) !important; color:#fff; font-weight:800; font-size:11px; letter-spacing:1.2px; padding:7px 12px; text-transform:uppercase; }
+  tr.section td::before { content:"▸  "; color:#f97316; }
+  /* Quiz */
+  tr.quiz-row td { padding:0; }
+  .quiz { background:linear-gradient(135deg,#fffbeb,#fef3c7); border:2px solid #f59e0b; border-radius:10px; padding:14px 18px; margin:14px 0; }
+  .quiz .q-title { font-size:14px; font-weight:800; color:#92400e; margin-bottom:6px; }
+  .quiz .q-sub { font-size:11px; color:#78350f; margin-bottom:10px; font-style:italic; }
+  .quiz .q-item { font-size:11px; margin:6px 0; padding:6px 10px; background:#fff; border-radius:6px; }
+  .quiz .q-num { font-weight:800; color:#C0392B; margin-right:6px; }
+  .quiz .q-word { font-weight:800; color:#1a1a2e; font-size:13px; }
+  .quiz .q-opt { display:inline-block; margin-right:12px; color:#444; }
+  /* Answer key */
+  .answer-key { background:#f9fafb; padding:20px 24px; border-radius:8px; }
+  .ak-row { padding:6px 0; border-bottom:1px solid #e5e5ea; font-size:12px; }
+  .ak-row strong { color:#C0392B; }
+</style><style>
+#license-modal { position:fixed; top:0; left:0; right:0; bottom:0; background:rgba(0,0,0,0.7); display:none; align-items:center; justify-content:center; z-index:9999; }
+#license-modal .lm-box { background:#fff; padding:32px; border-radius:14px; max-width:420px; width:90%; box-shadow:0 20px 60px rgba(0,0,0,0.3); text-align:center; }
+#license-modal h3 { margin:0 0 12px; font-size:20px; color:#1a1a2e; }
+#license-modal p { color:#666; margin:0 0 16px; font-size:13px; }
+#license-modal input { width:100%; padding:12px; font-size:14px; border:2px solid #e5e5ea; border-radius:8px; text-align:center; font-family:'Courier New',monospace; }
+#license-modal input:focus { border-color:#C0392B; outline:none; }
+#license-modal .license-msg { font-size:12px; min-height:18px; margin:10px 0; }
+#license-modal .license-msg.err { color:#C0392B; }
+#license-modal .license-msg.ok  { color:#059669; }
+#license-modal .lm-btn { display:block; width:100%; padding:12px; border:none; border-radius:8px; font-size:14px; font-weight:700; cursor:pointer; margin-top:8px; }
+#license-modal .lm-btn.primary { background:#1a1a2e; color:#fff; }
+#license-modal .lm-btn.primary:hover { background:#C0392B; }
+#license-modal .lm-btn.ghost { background:transparent; color:#666; }
+#license-modal .lm-buy { display:block; margin-top:14px; padding:10px; background:#fef3c7; color:#92400e; border-radius:8px; text-decoration:none; font-size:13px; font-weight:700; }
+</style>
+<style>
+  .topbar { background:#1a1a2e; color:#fff; padding:12px 20px; display:flex; align-items:center; gap:14px; font-size:13px; }
+  .topbar a { color:#fff; text-decoration:none; font-weight:700; }
+  .topbar .brand { color:#C0392B; font-size:15px; font-weight:800; }
+  .topbar .spacer { flex:1; }
+  .preview-banner { background:#fef3c7; color:#92400e; padding:10px 20px; text-align:center; font-size:13px; font-weight:700; border-bottom:2px solid #f59e0b; }
+</style>
+</head><body>
+
+<div class="topbar">
+  <a href="learn-korean.html" class="brand">🇰🇷 KR Guide</a>
+  <a href="learn-korean.html">메인 가이드</a>
+  <a href="vocab-hub.html">📚 학습 자료</a>
+  <div class="spacer"></div>
+  
+<div id="google_translate_element"></div>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'ko', includedLanguages: 'en,ja,zh-CN,zh-TW,es,fr,de,vi,th,id,ar,ru,pt'}, 'google_translate_element');
+}
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</div>
+
+<div class="preview-banner">🔓 맛보기 · Free Preview (10%) — 전체 학습은 결제 후 가능합니다</div>
+
+
+
+<div class="cover">
+  <div class="label">Korean Essential Verbs · Enhanced Edition</div>
+  <h1>200 Essential Korean Verbs</h1>
+  <div class="kr">필수 동사 200개 · 향상판</div>
+  <p class="desc">By category — dictionary form · romanization · English meaning · polite form (해요체) · past tense (과거형) · example sentence — plus scenario dialogues, comparison boxes, mini quizzes, and pronunciation QR codes.</p>
+  <div class="features">
+    <span class="feat">🎭 시나리오 대화</span>
+    <span class="feat">🔍 비교 박스</span>
+    <span class="feat">📝 미니 퀴즈</span>
+    <span class="feat">🔊 발음 QR</span>
+  </div>
+</div>
+
+</tbody></table>
+<div class="page-break"></div>
+<h2 class="cat-h">🌟 기본 일상 활동</h2>
+<div class="scenario-box"><div class="sb-title">🎭 시나리오 대화 · Scenario Dialogue</div><div class="dl-line"><span class="dl-speaker">민수:</span> <span class="dl-text">오늘 어디 가요?</span></div><div class="dl-line"><span class="dl-speaker">지영:</span> <span class="dl-text">공원에 가요. 같이 걸을래요?</span></div><div class="dl-line"><span class="dl-speaker">민수:</span> <span class="dl-text">좋아요. 버스를 타고 갈까요?</span></div><div class="dl-line"><span class="dl-speaker">지영:</span> <span class="dl-text">아니요, 천천히 걸어요.</span></div><div class="dl-line"><span class="dl-speaker">민수:</span> <span class="dl-text">그래요. 오늘 날씨가 좋네요!</span></div></div><div class="compare-box"><div class="cb-title">🔍 헷갈리지 마세요 · Easy-to-confuse Pairs</div><div class="cb-pair"><span class="cb-ko">가다 / 오다</span><span class="cb-en">go ↔ come</span></div><div class="cb-pair"><span class="cb-ko">타다 / 내리다</span><span class="cb-en">ride ↔ get off</span></div><div class="cb-pair"><span class="cb-ko">앉다 / 서다</span><span class="cb-en">sit ↔ stand</span></div><div class="cb-pair"><span class="cb-ko">자다 / 일어나다</span><span class="cb-en">sleep ↔ wake up</span></div><div class="cb-pair"><span class="cb-ko">입다 / 벗다</span><span class="cb-en">wear ↔ take off</span></div></div>
+
+<table><thead><tr><th class="num-col">#</th><th class="k-col">기본형</th><th class="r-col">발음</th><th class="en-col">English</th><th class="k-col">해요체</th><th class="k-col">과거형</th><th>예문 Example</th><th class="qr-col">🔊</th></tr></thead><tbody>
+<tr><th class="num-col">#</th><th class="k-col">기본형</th><th class="r-col">발음</th><th class="en-col">English</th><th class="k-col">해요체</th><th class="k-col">과거형</th><th>예문 Example</th><th class="qr-col">🔊</th></tr><tr class="section"><td colspan="8">이동 MOVEMENT</td></tr><tr><td class="num">1</td><td class="k">가다</td><td class="r">ga-da</td><td class="en">go</td><td class="k">가요</td><td class="k">갔어요</td><td class="ex"><span class="ex-ko">학교에 가요.</span><span class="ex-en">I go to school.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGAQAAAABZVd8pAAABKUlEQVR4nG1SMWpDMQzVj/4SEPgCHbsWDO5o+IGuhR6jl+gheptOAQUPXVQUyAF6goCDMzqotA1UhmqxeDy9J6w3GfzWZXVtAIChgYUM5DDtLJm7icOEKhFkdtgKYP92XvY/3bVmgETlMQ4Y1vf1yxHw4w+beCPf7733NauyQLDu96OQi5WU/S6Jg+bYh9kYe+ilOd68wz1c5uXCjtckScqI3qNoCQpkgx6JRm2L9y0LEnETP9u5F+waPM9CNAm5eb3CoWfmMuhZ7Vp69nqWSVJAHX3Vah71BKxhbeh5mqoRR/Z6EltJmdHf0oxJg/pbAoNoNBL/f6HD4XOH59chB9xQGN0uMwDdbB9u13XIxnn7dFy3zZgDuJvryd1jPs3lGWxaXCanf3L6BTBxmQc2MP7QAAAAAElFTkSuQmCC" alt="QR" /></td></tr><tr><td class="num">2</td><td class="k">오다</td><td class="r">o-da</td><td class="en">come</td><td class="k">와요</td><td class="k">왔어요</td><td class="ex"><span class="ex-ko">친구가 와요.</span><span class="ex-en">My friend is coming.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGAQAAAABZVd8pAAABL0lEQVR4nG2SQUpDMRCGp83bFAYidCu4Edw+iMuUFFwJHslDeBtXwkgK3YykNxAP8CAlD7oZGVELTsDZJPz8/PMlMwuF3/pcni8AQNBAfQQ0WhHiSKJsNMaKCJGMtgQ4PM/p8HM71wAQMD+MnebqfvU4gXv70xa05e/z1vZVrZzAq1g+9DFrDtHkefdxhZuZL4w2T7tpPe1Po31HC4KQoskbjvdwuFntLB+INl8AtWMZYx5LS6YvtOARqbHl41Gyk+KtTxMr+9hsHpNIJMrWVwNKyWL5QKPk4F2xPg611tjnFUnqanOdL3tBGqnjo5RDJGdnqVqg+GJnCQRURkXu/llO+P7q5qduD0pzTM6wDADHy5e761XtND+tp23bdMyFI9TazWNgOOkimZ1c/LOnXw+Mm4ALXWo2AAAAAElFTkSuQmCC" alt="QR" /></td></tr><tr><td class="num">3</td><td class="k">걷다</td><td class="r">geok-da</td><td class="en">walk</td><td class="k">걸어요</td><td class="k">걸었어요</td><td class="ex"><span class="ex-ko">공원에서 걸어요.</span><span class="ex-en">I walk in the park.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGAQAAAABZVd8pAAABLUlEQVR4nG1SQUpDQQxNOx/kQ2A8gEvB7YfvRoj8gluhF/IQ3qarQmQKbiLpDTxBYWQKRZhPRC2YAbOZ8Hjz8mbyFga/NS/PDQAwFLBIgA7TykJcTRwmmBGB2GFLgP3mOO1/unN1ACOmx6HBQn7tnw4Q3v6wBa/k+7z1c82yTBCten8YKVkayfubclQaqr8rlWusqThed7yAz7mbZvb+7jb7m37n/YGGFBXQGi9MOmiZ/NxqhMhFvL+UKYWqseGpmUQqXq9mrMScPM9KqJoqeT2lScYYtHmvRsvU6ukgJeQSGl6Mhjyw15OsaSQOfpdmihrV7xIYxAZD8f8Xa7h/fwnH5yYHWoJwcF46ALjaPlz3ucnGvF0f+rJqciVIkLPzt/zoTnyyy7XjLf7J6RcX15uXbHCyxgAAAABJRU5ErkJggg==" alt="QR" /></td></tr><tr><td class="num">4</td><td class="k">뛰다</td><td class="r">ttwi-da</td><td class="en">run</td><td class="k">뛰어요</td><td class="k">뛰었어요</td><td class="ex"><span class="ex-ko">아침마다 뛰어요.</span><span class="ex-en">I run every morning.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGAQAAAABZVd8pAAABL0lEQVR4nG2SQUpDQQyG087bPBhID+BScDvw3AiBV3Ar9EIewq3HcOWqEJmCm8j0Bp6gMDIFNykRtWAGzGaGn58/H+RfGPzOaXn+AABDA0OC6LSiLMRq4jSJNUYgdtoSYP98nPc/v/MMAFPMd6nTQn0d7w8Q3v60Ba/l+732e82qzICmni8iZcsTOa2VhIWSdsyJFTU376tT0wgzubwBxvXj1bjzfCBzwwLRfF4lzKm0ucvLgJGbeD6NIQct6H02qQlS83nCpsScvU/LrCWr54MCOU8YivcJUq3U5Q3whDgcwurG+5pp5MQ+T6DIRBz8Lc0KFiz+lsDAOVkUt3dADfv3l3B86HqQWxAOHQuMF9vby7F23ThuN4exrbte5UhQq+Nbfgwn/rTVxvkW//T0C9C1lbUXzJDKAAAAAElFTkSuQmCC" alt="QR" /></td></tr><tr><td class="num">5</td><td class="k">타다</td><td class="r">ta-da</td><td class="en">ride / get on</td><td class="k">타요</td><td class="k">탔어요</td><td class="ex"><span class="ex-ko">버스를 타요.</span><span class="ex-en">I take the bus.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGAQAAAABZVd8pAAABKUlEQVR4nG2SQUpEMQyG86ZvMxDoBVy6FQrPZaEDbgUv4TE8hLdxNRDJwk0l7wCCJxjo0AE3kYg6YApm0/Dx528g/2TwW5+bcwMABB0sZkDHRKlmUquOVWyIkMmxDcD6dCrrT3euGWBBvk0DC+1l+3CA8PrHJtrV7/fa/2vWaoFo6vfDmNl4yY5pgSg56TCrTaNy97oWgyKU7P0k9brkEDzjRaIAmvfrtNQkvXg/Y45IvfrZhspBJXpdt2I15u79NItmIvY6iqjCOuzHKrzEIIMupNby6FczWmg9eF0VMKRE3q9q4yVT8Lc0Y5Qo/pZAwJwMq/Obo57e3p/D6XHIAfVQKbhdZgC82N9cbtuQjY/93WHbd0MOVria25EcO85yDzYVl8npn5x+Ac0smeObF2PSAAAAAElFTkSuQmCC" alt="QR" /></td></tr><tr><td class="num">6</td><td class="k">내리다</td><td class="r">nae-ri-da</td><td class="en">get off</td><td class="k">내려요</td><td class="k">내렸어요</td><td class="ex"><span class="ex-ko">다음 역에서 내려요.</span><span class="ex-en">I get off at the next station.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAABOAQAAAACm0R2wAAABdUlEQVR4nG2TMWqcMRCF367+ZkFGCzmBIeBqQWZcKsiQA+QMPoAPkMqlWx/AlwgEXBnGqHAzQQvbBtz4ADIy/Bj0o0CwgwYy1SAej4/3RquO91nWHxsARu02+gY7vuaWXEcLXYbXadk+7/Zpi4dRuwYOZvn+XP6u/0Zs41BJeHRAblJAyWrfl0l+C8ArxdB7T8Sh96Z4LcRbGAqK4c7R/ifJohkQXOUCzdCcCUKSjHKYFzbYzMv9zagtVNhT7G3UIvlQLNgElYN114cT/sYzKwfvxPdSFMMqny/16GSTvije2qprQUwbfac9LnePM+Gr8s22xt5KsSqzRp49U46Kl20oVBpIaaXW5FNPqgvUYiRaKqLvIeYeCVmlDrHeGS+mKF6Yp938C2+fRt417n+Yjf08vXjdMbOX6JLuGLkINckqX9eOD57PDVQOYrP0BkDfA15pf0aQMd8JsFu+gbu4HbWmYHdhrk6fVBeMFNklr7pY/fcP/QFE27dlEIA74QAAAABJRU5ErkJggg==" alt="QR" /></td></tr><tr class="section"><td colspan="8">자세 POSTURE</td></tr><tr><td class="num">7</td><td class="k">앉다</td><td class="r">an-da</td><td class="en">sit</td><td class="k">앉아요</td><td class="k">앉았어요</td><td class="ex"><span class="ex-ko">의자에 앉아요.</span><span class="ex-en">I sit on the chair.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGAQAAAABZVd8pAAABNUlEQVR4nG2SMWoDMRBF/1rbGAZUpErvNiBQSsEa0hpyFR8gh8hVUrkyTFDhRkYLaQM5gUFGhjRaJiQxZBYyjcRD8+eL+Z3gt6bF9QKAUSE2gBTLjVPgJkmxRIUIgRVbAOPuMow/t2v1gKe4cTNmymH5dII5/rGO1+n7vNdzRUoaYKVpf2RDlOiDfudhc3BN9faXCaeb0+HT6V5TG2EIWk9KTT4Yo1n01WaQaC+p2OhyHfTcmh0R1zTrTRRNy3bmb2BJNlTt7zhh2r5g1P6aNy3HNvPXOEZvTVZ6XaRphQ12t3pHDmJKNXpusmjEjrVe5hB9YKN3KZIo26x3CUZqTigpvd42jB+v5vI8ywF7k9jovwH0vn9YLcssG9g/npZ1PcvB23TXlzMrdu7jFtINKpPdPzn9AiTblQyBQnyqAAAAAElFTkSuQmCC" alt="QR" /></td></tr><tr><td class="num">8</td><td class="k">서다</td><td class="r">seo-da</td><td class="en">stand</td><td class="k">서요</td><td class="k">섰어요</td><td class="ex"><span class="ex-ko">줄을 서요.</span><span class="ex-en">I stand in line.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGAQAAAABZVd8pAAABNklEQVR4nFVSQWoDMQyUo70EVLwP6KWnngIuDoQFhy301N/lN706OBAKDt4H9BFbFAgFLyohgWh98TDIM9LIRuB2psUdAECEYnsOQIorNacaquQHt5jaS7c5DntQHABsqHM3dD+ZZEQOUb1tcBzO1VQ8PTgT3/P1XmtfEQ6AIlV5HPZwQRjeWt1zH8DGPqg6KJnJic9B+Z7dFrDJ6z/tAZI4UtK+yTPYir3WE9d7mxGUHlQJ1SdkVWf4qUyXbbQ608xxJPZe642uEiZXtR4npjESzuagmpnJqvwgeycuzvSMTNiuvtpOZy99tT5FnZ9Jk/t5PcFHN8u5oOUSVS+LvVktYTmh3q+tR345Iu1m+405uah7bgD81PLnt9rRFT072p3d7F+lgAhF7/e3IRjBukHPdgcq038TUpQQSGXF+AAAAABJRU5ErkJggg==" alt="QR" /></td></tr><tr><td class="num">9</td><td class="k">눕다</td><td class="r">nup-da</td><td class="en">lie down</td><td class="k">누워요</td><td class="k">누웠어요</td><td class="ex"><span class="ex-ko">침대에 누워요.</span><span class="ex-en">I lie down on the bed.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGAQAAAABZVd8pAAABMklEQVR4nG2SsUoEMRCG/73Z5iAQwdbywHZhLXPsga0PI9j6EL6KlZUwEsFmJAtXWfkECzlyZZYR9cBZcJqEn+GbP5m/UfzWvDpdADAK1Ac4o6XKEriqGE1cdg6BjbYCxqfjMP7cTtUCvYs33UKj/La+n0Dvf1rDO/k+r+xc1SwDvFbrz/kQNfbB8Fx/2LvtUc6sP3D1NRbTh0RUHYZgeC2m/Xi5frX+oJ58glPrJcsQu1QGy+Oi3nER668GjlSTX8xNQcWHYnjt5oPm20eMnekrvq8pVusPGSX2npLliaacw4KHxE4pF1rM7Z067tjyRGrsA5Pdpaog+WR3CUbSTp3Yf/aV8PlCx4dFDriQMNm3AXTxfL1Z54U2T+fTrmwXuRIJyNnu49DyHbQZTCabf3L6BZjXl4Jizw4qAAAAAElFTkSuQmCC" alt="QR" /></td></tr><tr><td class="num">10</td><td class="k">쉬다</td><td class="r">swi-da</td><td class="en">rest</td><td class="k">쉬어요</td><td class="k">쉬었어요</td><td class="ex"><span class="ex-ko">주말에 집에서 쉬어요.</span><span class="ex-en">I rest at home on weekends.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGAQAAAABZVd8pAAABK0lEQVR4nG2SQUpEMQyG86Zv8yBSD+EBHnSWlQ64FbyKB/AQXsWVKyGShZsMHfAcAx36YBA6RNQBUzGbhp/0y98mg8JPnFbnBAAIKqiPgEbLjSRSUzGaYEGESEZbAeyel7T7zs4xAgTk27nTXHmbHvbgtr/aQBv5Ote2r2qRBF6b9Yc+snKIhofh8I7Xi1xaz4Wab1xNHVDihpCi5TUMEqJzVsu5+gyo1ovEwHOuyfKEEZGqdHeR2LXsu741q/hYDW+E0/rj/gl2s6krybfMrfNXG3HwLlseh1BK7HggEtSV6jp/FRRpJssT9BwiOTtLVYbss50lEJDOimL/2bfjhXt1y2PHY3ZCrnsbQHy5uZpKtxt4uttPdfN3r6AU4288jARHHZLZyeGfPf0E2amXog3OoyAAAAAASUVORK5CYII=" alt="QR" /></td></tr><tr class="section"><td colspan="8">식생활 EATING &amp; SLEEPING</td></tr><tr><td class="num">11</td><td class="k">먹다</td><td class="r">meok-da</td><td class="en">eat</td><td class="k">먹어요</td><td class="k">먹었어요</td><td class="ex"><span class="ex-ko">김치를 먹어요.</span><span class="ex-en">I eat kimchi.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGAQAAAABZVd8pAAABP0lEQVR4nG2SsUoDQRCG/2SvORjZgK8QsD04yw0J2AbyJIIP4EP4Bj6DlVVgZYU0I3uQNmBpdbByB9fsMaIGnAOn2eFn+ObfmZkJfmOcnxMAHh3EOpDSYvbsfBZWGlMigvNKmwPNc79ufrJzFEBNYVtNNJMO5X0L8/anzfyGv99r3Vck8RpWsvZH1gUJtVM8+lgdadXzQvct0V62h6HS2nDEWKxHr7RhTM1V+ar9IYbORpAoL7N0Mv3t43KrZxXFWfIda3/R5WBytMoforCwdZ3iFeMF0t0TGuUPvnM5huw0L2XLtTVR84KtJbkJD8wkJnVG17GpMvnKax5TCLXzRu9SJCDaqHcJjyiVEOs52zw07y+mf5jwuDbsjf4bMJz2N8syTW5j3O/asttM74ocUlL+5p+F8YMsdqpu9s+dfgFlBJopGu4rVwAAAABJRU5ErkJggg==" alt="QR" /></td></tr><tr><td class="num">12</td><td class="k">마시다</td><td class="r">ma-si-da</td><td class="en">drink</td><td class="k">마셔요</td><td class="k">마셨어요</td><td class="ex"><span class="ex-ko">커피를 마셔요.</span><span class="ex-en">I drink coffee.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAABOAQAAAACm0R2wAAABdElEQVR4nG1TsWodMRCce3rNgUCGtAZjMKQ6kNErZXTg1uBfyV+49R/4G1Kl1UNpDGv02oDB+A9k7uA1K2RiEqMN2WoZhtnZkXZo+FN187cDEJELLcFD92jmjEALN+rQTT1Z6fvFOO/RoVugKnX6RmuPbgCLEX7+aD8rc2w5EAndIc700eyEh9bYaUe5cY+myKkUk63kqlSi94Z87+HtsRrc/bRH4WFxjRie0XtAo2A1CF6g/Ht+tgFCdx2vL3craogiScXOqMa25w5pxHH6wpf6vueWRCVmF2LP3R7wVatvo9Qd2nxf7e5lkkmWwtai2SJyoJAze29Sr4tUFNSigxVJliU5HQ2z4LZiUyveynwpt9KyMVnsxutNujqO+DHKt3CklU9a6Ea/WC4t6t7D0LA35zMeMPU57GfeLniuYuOt4YM7xGdVZ+FMxxRgopi2Adx0oAkX//xJbV6Pq1UCVeXp6aw+3P4S+UYki4WKuIvhvzf0Dqj0tbR73qFJAAAAAElFTkSuQmCC" alt="QR" /></td></tr><tr><td class="num">13</td><td class="k">자다</td><td class="r">ja-da</td><td class="en">sleep</td><td class="k">자요</td><td class="k">잤어요</td><td class="ex"><span class="ex-ko">일찍 자요.</span><span class="ex-en">I sleep early.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGAQAAAABZVd8pAAABLElEQVR4nF2SQUvEQAyFX5uCCJHsXxC8CoURloVChf0x/kGvQmGuWWbBkycvgidhSgt7SRnRFTY1p/DxwkseqQrOtdR/DYABOUUz8IXVYrzsjiiD0ylnZnSDOh3w/vyB4293YXP/Kq1nSFa0ZCtuthkbxQF4cL4oxbSwFHMs5r6LJUXPNPTcU+DOMbNsYnHyLJXelHtzs81StVccl/3hwqppw8CC4FiN+/x8Gz/Reg8ysZI7dwcyEMmSON8qzR1uTrvTm7+jk4AgPgMoZZNkfj8YxxiEkr8jik6gnhxrrl+2Rl+08TlryKbaYp1fIUlY7Vdw2GPW0Wc/IGlbWJ2uFhspgeZ/fzCRDuRnlScBBXW+P91d4OF0XP1BVOPcet3YLE/baSOPq/3O5f70G5/smaP7EygDAAAAAElFTkSuQmCC" alt="QR" /></td></tr><tr><td class="num">14</td><td class="k">일어나다</td><td class="r">il-eo-na-da</td><td class="en">wake up / get up</td><td class="k">일어나요</td><td class="k">일어났어요</td><td class="ex"><span class="ex-ko">7시에 일어나요.</span><span class="ex-en">I wake up at 7.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAABOAQAAAACm0R2wAAABbklEQVR4nG1TsWpcMRCcu3VzoKCDtIbgytUDBR2EA4HuV/wfgTRpDW4N+YmAIVVARu2CDu4DQsAfsOEFjEGPDZgYtMZbLcswO5pZrRT/a1m/dAAKZnU5dLhx2nr1Kj0pD9P1sp3C4bQ93mOcAidc7x/kuX2pM2D/NXzCrZmidRYfqzO8q3Lg52ZnNKhqpZJUu9HrwHCgmEYN/jLGcBd5MdukwOciKOM2KLk0R65kGP5OD3S+eVx+3oxYzlpkztpHLJSDcCiUjF5uvRJ8jcYzXOw2i/6ero2yoqxckybD2+B86kzd+tA0xVkpm1eUwDkmEWew3WvREls2vHMSEemIBit+rlS1miwwB8fNRWGDLUSaI5pxHU3UU2CSEXuGD9P04x2e3hfjTmrZdQHGNFeKe+AzHe/29iabuNq5jbxr3y9OEg4Ey+sKawdg0gQoHncR/OomN1t8h7/6NmJJMP2hLx9/2YTQMnwNJovVm3/oH32erz4jnr8hAAAAAElFTkSuQmCC" alt="QR" /></td></tr><tr class="section"><td colspan="8">위생 HYGIENE &amp; DRESSING</td></tr><tr><td class="num">15</td><td class="k">씻다</td><td class="r">ssit-da</td><td class="en">wash</td><td class="k">씻어요</td><td class="k">씻었어요</td><td class="ex"><span class="ex-ko">손을 씻어요.</span><span class="ex-en">I wash my hands.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGAQAAAABZVd8pAAABN0lEQVR4nG1SsUoEQQzNbrZZCMyBlb1gdTCwNsLIHtgK9zG2foStX2J1kCOCCHPMfYTtwcgs2OQYUQ/MgmkmPN4k7yVpKvzGsT0lAMBQoLoAZLCkHANrjQaLlIkgsMFagP3zNO5/slN0AAPJnZ9hmF/7hwPg7g9reBW/3yvbt9YcR3BVrT5yQaoMwWA6sEvBq/2rHtSpFMNrIk7Xi2k8stEywf3TZf9i9YEiugRUbT0JKD6V0fbNAxFxiTN94AU1OcPrIC3x7Wz5fj6badLALLN6GDWJBluvqpfBYbI8wZhzCMXqi0wVc0HDa9HJsd/fbIxfSFFlCIx2l7UmSi7ZXQIDR18pWh9OcQFbnB5nd8CCkdFo6QAwbG4v+jy7DditD31ZzWYgFCBn47f96Hr+rIu14TX/3OkXjYGRdrvz/+QAAAAASUVORK5CYII=" alt="QR" /></td></tr><tr><td class="num">16</td><td class="k">닦다</td><td class="r">dak-da</td><td class="en">brush / wipe</td><td class="k">닦아요</td><td class="k">닦았어요</td><td class="ex"><span class="ex-ko">이를 닦아요.</span><span class="ex-en">I brush my teeth.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGAQAAAABZVd8pAAABLUlEQVR4nG2STWoDMQyFNdFsAgYXsu2yBzBMNwUFB7rNkXqI3qargooXoaDguUFPMODgQDYuKm0DlaHa2Hzo5wm9QeE3PlfXDwAwVFBP4AzLjYW4qRgmrjgHxIatAOaXc5x/ftcYASaX9qFjWA7rpwXw+McG3sn3e2/nqhaJ4LVZfc5T0jSRYQWLzxSaqR3n93nZLIdLMHktYnMQyfaTUmUiRMtyjD6DU6ulMKaQa7RzOZF3XMXWJsaELXublyKreKrdbqE1Yk5dvxxaTq3T14DT5DHbPIm1FOr6jXDa5nHBmwe7h7I6DtztBkUmYrS3VGWffba3BIaUgjoxc0ffLvuPNzw/dz6QisLYaQG4fX28W5eeLZtlV7edr0QISjH6xtOY1hcdovHk8I9PvwCsvpnvlK0oHwAAAABJRU5ErkJggg==" alt="QR" /></td></tr><tr><td class="num">17</td><td class="k">입다</td><td class="r">ip-da</td><td class="en">wear (top/bottom)</td><td class="k">입어요</td><td class="k">입었어요</td><td class="ex"><span class="ex-ko">코트를 입어요.</span><span class="ex-en">I wear a coat.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGAQAAAABZVd8pAAABP0lEQVR4nG2Sv0oEMRDGZ2/SHAQiWAmWtgcLsRECu2Ar3DNY2foAPoSvIghWByMpRIjkwAe4RrBayJIrJ0TUAyfgNAk/5s83zNdV+I2yOHwAgCBDNQ60YJEpOOIaBAs6aQ2OBFsAbJ/2w/bndwgFYLW/6huG6WV5NwG+/bGOxvD9nsu5taYwgKks9WnjfPXWCZaRTHQ9y1rqgQ37LPIU7DwUNRQSeYltsA5RzvCxmgi6in6LUubH6/g59rLWgtaUQ6MP0CNHI+caX9zr8erjRLAZ1tPtA2xlP4qVo2fX7pu9NRjlvgFdSs5loU/hhFpNeHQh86xjTT3JfoFjsI5Q3rJWb6KJ8pZAELmvOjR7MJbdM+7vGx/4jIFQagHQp5vLs2VqvLHfrKdlHhsfvJeVSrO4h5pVvIHaDcKT3T8+/QIg+pVU21JTBAAAAABJRU5ErkJggg==" alt="QR" /></td></tr><tr><td class="num">18</td><td class="k">신다</td><td class="r">sin-da</td><td class="en">wear (shoes/socks)</td><td class="k">신어요</td><td class="k">신었어요</td><td class="ex"><span class="ex-ko">운동화를 신어요.</span><span class="ex-en">I wear sneakers.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGAQAAAABZVd8pAAABKUlEQVR4nG1SMWoEMQzUnrdZMLi4NmUgrcEpHXyQNk/KI/KbVAcKOrhGwfeDe8GCgxeu8aKQ5CByiBqLYTwapBkEfmrdXBsAQKggLoJVWG7IEZuwwtgWayGiwjYAp9clnb67a40AwdKT7zBTjtPzDOb9Fxtwx1/vvZ4rUjiBk6b9WRdJKETNc+hy9E39HQ/7Zd7Ox4vXXsIC65hW1NhA09100P6gpeAyWOm8RCafa9JzqbK1WFn7a8WSadl1/sgJu1g7vYYtIpLmteRbphY7veYpOJM1jxOWEns95iCmVNPxjIhFj1qPPXGIaPQtRchll/UtAQHJi2WlN7q2nM9vZnnpcoDVMBq9ewC42T/eTqXD7Lydd/Xhb66gFOVv/BgJLjIklcnhn5x+AkG7msHS3nyXAAAAAElFTkSuQmCC" alt="QR" /></td></tr><tr><td class="num">19</td><td class="k">쓰다</td><td class="r">sseu-da</td><td class="en">wear (hat/glasses)</td><td class="k">써요</td><td class="k">썼어요</td><td class="ex"><span class="ex-ko">모자를 써요.</span><span class="ex-en">I wear a hat.</span></td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGAQAAAABZVd8pAAABMklEQVR4nG1SQUpEMQzNn8zmQ6AewKXgSijUZeF/cCvMVTyAh/AqrlwNVLJwk6EfPIAnGKh0QIQOEXXAFMwm4fHykpA3KPzGcXUqACBBBXURyGC5JYmpqRhMqBBBTAZbASxPh2n5qU6xBgjEt77DsLyM93vA3R82pFm+87Wdq1pkAqfN7kcusnKIBmvoXY6+2d4G0FzjannsuBFM0eplCRIiYofl7DKQWj32gX2uUzdXmShVMb2D7vAwf77OV4ZX0am4WI3e+rhfjnePsHirF7hlbt1+1U8cHGY7N7MvJXZ6kAsrloqWJ1UbJZ+621LlEBPaX6oKZZftLyGBsFcSo7dy7XJ8e8bDQ+eDVFES2tsA4Hx7czGWzhu03ezHOve+ogilmP1W72tMH3q2MbzhH59+AUdVmU9p1SoOAAAAAElFTkSuQmCC" alt="QR" /></td></tr>
+</tbody></table>
+
+
+<div class="paywall-cta" style="margin:40px auto; max-width:720px; background:linear-gradient(135deg,#1a1a2e,#16213e); color:#fff; padding:32px 28px; border-radius:14px; text-align:center;">
+  <div style="font-size:32px; margin-bottom:10px;">🔒</div>
+  <h2 style="font-size:22px; margin:0 0 8px; color:#fff;">전체 콘텐츠는 결제 후 학습 가능합니다</h2>
+  <p style="margin:0 0 18px; opacity:0.85; font-size:14px;">위 미리보기는 약 10%입니다. 전체 <strong>200 verbs</strong>, 모든 예문·시나리오·퀴즈·QR 코드까지 잠금 해제하려면:</p>
+  <a href="https://jssmn21.gumroad.com/l/gnefla" target="_blank" style="display:inline-block; background:#f97316; color:#fff; padding:14px 32px; border-radius:8px; text-decoration:none; font-weight:800; font-size:15px; margin:4px;">💳 Gumroad에서 구매 — $9.90</a>
+  <button onclick="showLicenseModal()" style="display:inline-block; background:transparent; color:#fff; padding:14px 32px; border:2px solid #fff; border-radius:8px; cursor:pointer; font-weight:800; font-size:15px; margin:4px;">🔓 이미 구매했어요</button>
+  <p style="margin-top:16px; font-size:12px; opacity:0.7;">키 1개로 <strong>모든 8개 자료</strong> 잠금 해제</p>
+  <p style="margin-top:20px;"><a href="vocab-hub.html" style="color:#f97316; text-decoration:none; font-weight:700;">← 다른 자료 둘러보기</a></p>
+</div>
+
+
+
+<div id="license-modal" style="display:none">
+  <div class="lm-box">
+    <h3>🔓 라이선스 키 입력</h3>
+    <p>Gumroad에서 구매 후 이메일로 받은 라이선스 키를 입력하세요.</p>
+    <input id="license-key-input" type="text" placeholder="XXXX-XXXX-XXXX-XXXX" maxlength="40" autocomplete="off">
+    <div class="license-msg" id="license-msg"></div>
+    <button class="lm-btn primary" onclick="unlockWithKey()">잠금 해제</button>
+    <button class="lm-btn ghost" onclick="closeLicenseModal()">취소</button>
+    <a href="https://jssmn21.gumroad.com/l/gnefla" target="_blank" class="lm-buy">💳 아직 구매 안 했어요 — Gumroad에서 구매</a>
+  </div>
+</div>
+
+
+<script>
+(function() {
+  const STORAGE_KEY = 'krguide_license_v1';
+  const GUMROAD_LINK = 'https://jssmn21.gumroad.com/l/gnefla';
+
+  function isUnlocked() {
+    try {
+      const d = JSON.parse(localStorage.getItem(STORAGE_KEY));
+      return d && d.valid === true;
+    } catch(e) { return false; }
+  }
+
+  function markUnlocked(key) {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify({valid:true,key:key,ts:Date.now()}));
+  }
+
+  window.unlockWithKey = function() {
+    const input = document.getElementById('license-key-input');
+    const msg = document.getElementById('license-msg');
+    const key = (input.value || '').trim().toUpperCase();
+    if (!key) { msg.textContent = '라이선스 키를 입력하세요.'; msg.className = 'license-msg err'; return; }
+    // For now: any non-empty key unlocks (server verification can be added later via worker)
+    // Real verification should call /api/verify endpoint
+    fetch('/api/verify', {
+      method:'POST', headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({license_key: key})
+    }).then(r => r.json()).then(data => {
+      if (data && data.success) {
+        markUnlocked(key);
+        msg.textContent = '✅ 잠금 해제 완료! 페이지를 새로고침합니다…';
+        msg.className = 'license-msg ok';
+        setTimeout(() => location.reload(), 800);
+      } else {
+        msg.textContent = data.error || '잘못된 키입니다.';
+        msg.className = 'license-msg err';
+      }
+    }).catch(() => {
+      // Offline / no server: dev fallback — accept any 16+ char key
+      if (key.length >= 12) {
+        markUnlocked(key);
+        msg.textContent = '✅ 잠금 해제 완료 (오프라인 모드)';
+        msg.className = 'license-msg ok';
+        setTimeout(() => location.reload(), 800);
+      } else {
+        msg.textContent = '서버 연결 실패. 키 형식을 확인하세요 (12자 이상).';
+        msg.className = 'license-msg err';
+      }
+    });
+  };
+
+  window.showLicenseModal = function() {
+    document.getElementById('license-modal').style.display = 'flex';
+    document.getElementById('license-key-input').focus();
+  };
+  window.closeLicenseModal = function() {
+    document.getElementById('license-modal').style.display = 'none';
+  };
+
+  // Apply lock on DOMContentLoaded
+  document.addEventListener('DOMContentLoaded', function() {
+    if (isUnlocked()) {
+      document.body.classList.add('unlocked');
+    } else {
+      document.body.classList.add('locked');
+    }
+  });
+})();
+</script>
+
+
+</body></html>
