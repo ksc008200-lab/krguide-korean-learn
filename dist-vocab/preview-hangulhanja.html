@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="UTF-8"><title>맛보기 · Hangul vs Hanja — Bilingual Reference</title>
+<style>
+  @page { size: A4; margin: 16mm 14mm; }
+  * { box-sizing: border-box; }
+  body { font-family: 'Noto Sans KR','Malgun Gothic',sans-serif; color: #1a1a2e; margin: 0; line-height: 1.6; }
+  .page-break { page-break-before: always; }
+
+  .cover { text-align:center; padding:80px 20px 40px; border-bottom:4px solid #C0392B; margin-bottom:30px; }
+  .cover .label { font-size:13px; font-weight:700; letter-spacing:4px; color:#C0392B; text-transform:uppercase; margin-bottom:18px; }
+  .cover h1 { font-size:38px; margin:0 0 10px; color:#1a1a2e; font-weight:800; line-height:1.2; }
+  .cover .h1-en { font-size:24px; color:#1A4A8A; font-weight:700; margin:0 0 18px; }
+  .cover .desc { font-size:14px; color:#555; max-width:620px; margin:0 auto; line-height:1.8; }
+  .cover .features { margin-top:24px; display:flex; justify-content:center; gap:12px; flex-wrap:wrap; }
+  .cover .feat { background:#1a1a2e; color:#fff; padding:6px 14px; border-radius:18px; font-size:11px; font-weight:600; }
+
+  h2.section-h { background:linear-gradient(135deg,#1a1a2e,#16213e); color:#fff; padding:18px 24px; margin:40px 0 22px; font-size:22px; border-left:6px solid #C0392B; border-radius:6px; }
+  h2.section-h .en { display:block; font-size:14px; font-weight:600; opacity:0.8; margin-top:4px; }
+
+  .feature-card { background:#fff; border-radius:14px; padding:20px 22px; margin-bottom:18px; box-shadow:0 2px 8px rgba(0,0,0,0.05); border-top:4px solid #C0392B; }
+  .feature-header { display:flex; align-items:center; gap:14px; margin-bottom:14px; padding-bottom:10px; border-bottom:1px solid #f1ede5; }
+  .feature-num { background:#C0392B; color:#fff; font-weight:800; font-size:18px; min-width:36px; height:36px; border-radius:50%; display:inline-flex; align-items:center; justify-content:center; }
+  .feature-icon { font-size:30px; }
+  .feature-titles .title-ko { font-size:16px; font-weight:800; color:#1a1a2e; }
+  .feature-titles .title-en { font-size:13px; color:#1A4A8A; font-weight:600; font-style:italic; margin-top:2px; }
+  .feature-body { display:grid; grid-template-columns:1fr 1fr; gap:18px; }
+  .lang-col { background:#fafafa; padding:14px 16px; border-radius:8px; }
+  .lang-label { font-size:10px; font-weight:800; letter-spacing:2px; color:#C0392B; margin-bottom:8px; }
+  .lang-col .body-ko { font-size:12.5px; line-height:1.65; margin:0 0 6px; color:#1a1a2e; }
+  .lang-col .body-en { font-size:12px; line-height:1.65; margin:0 0 6px; color:#1A4A8A; font-style:italic; }
+
+  .comp-card { background:#fff; border-radius:14px; padding:20px 22px; margin-bottom:18px; box-shadow:0 2px 8px rgba(0,0,0,0.05); border-top:4px solid #1A4A8A; }
+  .comp-header { display:flex; align-items:center; gap:14px; margin-bottom:14px; padding-bottom:10px; border-bottom:1px solid #f1ede5; }
+  .comp-num { background:#1A4A8A; color:#fff; font-weight:800; font-size:18px; min-width:36px; height:36px; border-radius:50%; display:inline-flex; align-items:center; justify-content:center; }
+  .comp-icon { font-size:30px; }
+  .comp-titles .title-ko { font-size:16px; font-weight:800; color:#1a1a2e; }
+  .comp-titles .title-en { font-size:13px; color:#1A4A8A; font-weight:600; font-style:italic; margin-top:2px; }
+  .comp-tables { display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-bottom:10px; }
+  .comp-table { width:100%; border-collapse:collapse; font-size:11.5px; background:#fafafa; border-radius:8px; overflow:hidden; }
+  .comp-table.en td { color:#1A4A8A; font-style:italic; }
+  .comp-table td { padding:7px 10px; border-bottom:1px solid #ececec; vertical-align:top; line-height:1.5; }
+  .comp-table td.lbl { font-weight:800; color:#C0392B; width:80px; }
+  .comp-table tr:last-child td { border-bottom:none; }
+  .comp-note { font-size:12px; color:#1a1a2e; background:#fef3c7; padding:8px 12px; border-radius:6px; margin-top:8px; line-height:1.6; }
+  .comp-note.en { color:#1A4A8A; font-style:italic; background:#f0f5ff; }
+
+  .summary-section { background:#fff; border-radius:14px; padding:24px; margin-top:30px; box-shadow:0 4px 16px rgba(0,0,0,0.07); }
+  .summary-section h3 { font-size:22px; color:#1a1a2e; margin:0 0 6px; }
+  .summary-section .en-sub { font-size:13px; color:#1A4A8A; font-style:italic; margin-bottom:18px; }
+  .summary-table { width:100%; border-collapse:collapse; font-size:12.5px; }
+  .summary-table th { background:#1a1a2e; color:#fff; padding:10px; font-weight:700; }
+  .summary-table td { padding:9px 12px; border-bottom:1px solid #ececec; vertical-align:top; }
+  .summary-table td.lbl { font-weight:800; color:#1a1a2e; background:#fafafa; }
+  .summary-table td.hg { color:#C0392B; font-weight:600; }
+  .summary-table td.hj { color:#1A4A8A; font-weight:600; }
+
+  .end-note { text-align:center; margin:40px 0 20px; padding:30px 24px; background:linear-gradient(135deg,#1a1a2e,#16213e); color:#fff; border-radius:14px; }
+  .end-note p { margin:6px 0; font-size:14px; opacity:0.92; }
+  .end-note .ko { font-size:16px; font-weight:700; color:#fbbf24; }
+</style><style>
+#license-modal { position:fixed; top:0; left:0; right:0; bottom:0; background:rgba(0,0,0,0.7); display:none; align-items:center; justify-content:center; z-index:9999; }
+#license-modal .lm-box { background:#fff; padding:32px; border-radius:14px; max-width:420px; width:90%; box-shadow:0 20px 60px rgba(0,0,0,0.3); text-align:center; }
+#license-modal h3 { margin:0 0 12px; font-size:20px; color:#1a1a2e; }
+#license-modal p { color:#666; margin:0 0 16px; font-size:13px; }
+#license-modal input { width:100%; padding:12px; font-size:14px; border:2px solid #e5e5ea; border-radius:8px; text-align:center; font-family:'Courier New',monospace; }
+#license-modal input:focus { border-color:#C0392B; outline:none; }
+#license-modal .license-msg { font-size:12px; min-height:18px; margin:10px 0; }
+#license-modal .license-msg.err { color:#C0392B; }
+#license-modal .license-msg.ok  { color:#059669; }
+#license-modal .lm-btn { display:block; width:100%; padding:12px; border:none; border-radius:8px; font-size:14px; font-weight:700; cursor:pointer; margin-top:8px; }
+#license-modal .lm-btn.primary { background:#1a1a2e; color:#fff; }
+#license-modal .lm-btn.primary:hover { background:#C0392B; }
+#license-modal .lm-btn.ghost { background:transparent; color:#666; }
+#license-modal .lm-buy { display:block; margin-top:14px; padding:10px; background:#fef3c7; color:#92400e; border-radius:8px; text-decoration:none; font-size:13px; font-weight:700; }
+</style>
+<style>
+  .topbar { background:#1a1a2e; color:#fff; padding:12px 20px; display:flex; align-items:center; gap:14px; font-size:13px; }
+  .topbar a { color:#fff; text-decoration:none; font-weight:700; }
+  .topbar .brand { color:#C0392B; font-size:15px; font-weight:800; }
+  .topbar .spacer { flex:1; }
+  .preview-banner { background:#fef3c7; color:#92400e; padding:10px 20px; text-align:center; font-size:13px; font-weight:700; border-bottom:2px solid #f59e0b; }
+</style>
+</head><body>
+
+<div class="topbar">
+  <a href="learn-korean.html" class="brand">🇰🇷 KR Guide</a>
+  <a href="learn-korean.html">메인 가이드</a>
+  <a href="vocab-hub.html">📚 학습 자료</a>
+  <div class="spacer"></div>
+  
+<div id="google_translate_element"></div>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'ko', includedLanguages: 'en,ja,zh-CN,zh-TW,es,fr,de,vi,th,id,ar,ru,pt'}, 'google_translate_element');
+}
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</div>
+
+<div class="preview-banner">🔓 맛보기 · Free Preview (20%) — 전체 학습은 결제 후 가능합니다</div>
+
+
+
+<div class="cover">
+  <div class="label">KR GUIDE · Bilingual Reference</div>
+  <h1>한글의 언어 문화적 특징과<br>한자와의 비교</h1>
+  <div class="h1-en">Hangul: Cultural Features &amp; Comparison with Hanja</div>
+  <p class="desc">세종대왕이 1443년 창제한 한글의 5가지 언어 문화적 특징과, 동아시아 한자와의 5가지 본질적 차이를 한국어·영어 병기로 정리한 자료입니다.<br>
+  A bilingual reference (Korean &amp; English) on Hangul's 5 cultural-linguistic features and 5 fundamental differences from Chinese Hanja.</p>
+  <div class="features">
+    <span class="feat">5 Hangul Features</span>
+    <span class="feat">5 Hangul vs Hanja Comparisons</span>
+    <span class="feat">Summary Table</span>
+    <span class="feat">한·영 병기</span>
+  </div>
+</div>
+
+<h2 class="section-h">🌟 한글의 언어 문화적 특징 5가지<span class="en">5 Cultural-Linguistic Features of Hangul</span></h2>
+
+<div class="feature-card">
+  <div class="feature-header">
+    <span class="feature-num">1</span>
+    <span class="feature-icon">🔬</span>
+    <div class="feature-titles">
+      <div class="title-ko">발음 기관을 본떠 만든 세계 유일의 과학적 문자</div>
+      <div class="title-en">The Only Scientifically Designed Alphabet Based on Vocal Organs</div>
+    </div>
+  </div>
+  <div class="feature-body">
+    <div class="lang-col"><div class="lang-label">한국어</div><p class='body-ko'>자음은 입·혀·목구멍의 모양을, 모음은 천(·)·지(ㅡ)·인(ㅣ) 삼재 사상을 본떠 만들어졌습니다.</p><p class='body-ko'>ㄱ: 혀뿌리가 목구멍을 막는 모양</p><p class='body-ko'>ㄴ: 혀끝이 윗잇몸에 닿는 모양</p><p class='body-ko'>ㅁ: 입술이 다물어진 모양</p><p class='body-ko'>ㅅ: 이의 모양</p><p class='body-ko'>→ 글자만 봐도 어떻게 발음해야 하는지 알 수 있는 세계에서 유일한 알파벳입니다. UNESCO는 한글의 이런 우수성을 기려 &quot;세종대왕 문해상(King Sejong Literacy Prize)&quot;을 제정했습니다.</p></div>
+    <div class="lang-col"><div class="lang-label">English</div><p class='body-en'>Consonants are shaped after the form of the mouth, tongue, and throat. Vowels are based on the Three Powers cosmology: Heaven (·), Earth (ㅡ), and Human (ㅣ).</p><p class='body-en'>ㄱ: tongue root blocking the throat</p><p class='body-en'>ㄴ: tongue tip touching the upper gum</p><p class='body-en'>ㅁ: lips pressed together (closed mouth)</p><p class='body-en'>ㅅ: shape of a tooth</p><p class='body-en'>→ It is the only alphabet in the world where the shape of the letter itself shows you how to pronounce it. UNESCO honored this excellence by establishing the King Sejong Literacy Prize.</p></div>
+  </div>
+</div>
+
+<div class="feature-card">
+  <div class="feature-header">
+    <span class="feature-num">2</span>
+    <span class="feature-icon">🔊</span>
+    <div class="feature-titles">
+      <div class="title-ko">한 글자 = 한 소리 (완벽한 음소문자)</div>
+      <div class="title-en">One Letter = One Sound (Perfect Phonemic Script)</div>
+    </div>
+  </div>
+  <div class="feature-body">
+    <div class="lang-col"><div class="lang-label">한국어</div><p class='body-ko'>영어처럼 &quot;though, through, thought&quot;가 제각각 다르게 읽히는 일이 없습니다. 한글은 글자대로 소리 나고, 소리대로 글자가 적히는 가장 투명한 표음문자입니다.</p><p class='body-ko'>→ 그래서 세종대왕이 &quot;지혜로운 자는 아침나절이면 깨우치고, 어리석은 자도 열흘이면 배운다(智者不終朝而會, 愚者可浹旬而學)&quot;라고 자신 있게 말할 수 있었던 것입니다.</p></div>
+    <div class="lang-col"><div class="lang-label">English</div><p class='body-en'>Unlike English, where &#x27;though, through, thought&#x27; are all read differently, Hangul letters always sound exactly as written. It is the most transparent phonemic script in the world.</p><p class='body-en'>→ This is why King Sejong could confidently say: &quot;The wise can master it before morning ends, and even the foolish can learn it within ten days.&quot;</p></div>
+  </div>
+</div>
+
+<div class="feature-card">
+  <div class="feature-header">
+    <span class="feature-num">3</span>
+    <span class="feature-icon">🧩</span>
+    <div class="feature-titles">
+      <div class="title-ko">모아쓰기 — 음절 단위 모듈 구조</div>
+      <div class="title-en">Syllable-Block Composition — A Modular Structure</div>
+    </div>
+  </div>
+  <div class="feature-body">
+    <div class="lang-col"><div class="lang-label">한국어</div><p class='body-ko'>자음과 모음을 옆·아래로 조합해 하나의 네모 블록(음절)을 만드는 것이 한글의 독특한 시각적 특징입니다.</p><p class='body-ko'>한 (ㅎ + ㅏ + ㄴ) / 글 (ㄱ + ㅡ + ㄹ)</p><p class='body-ko'>→ 음소문자의 정밀함 + 음절문자의 가독성을 동시에 갖춘 유일한 문자 체계입니다. 한자 문화권에서 자란 한국인의 시각 인지 구조에도 자연스럽게 맞습니다.</p></div>
+    <div class="lang-col"><div class="lang-label">English</div><p class='body-en'>Consonants and vowels are combined horizontally and vertically into a single square syllable block — Hangul&#x27;s unique visual feature.</p><p class='body-en'>한 (ㅎ + ㅏ + ㄴ) / 글 (ㄱ + ㅡ + ㄹ)</p><p class='body-en'>→ Hangul uniquely combines the precision of an alphabet with the visual readability of a syllabic script. It also fits the Korean cognitive structure shaped by the Hanja cultural sphere.</p></div>
+  </div>
+</div>
+
+<div class="feature-card">
+  <div class="feature-header">
+    <span class="feature-num">4</span>
+    <span class="feature-icon">📜</span>
+    <div class="feature-titles">
+      <div class="title-ko">창제자·창제 시기·창제 의도가 모두 기록된 유일한 문자</div>
+      <div class="title-en">The Only Script with Recorded Creator, Date, and Intent</div>
+    </div>
+  </div>
+  <div class="feature-body">
+    <div class="lang-col"><div class="lang-label">한국어</div><p class='body-ko'>세계의 거의 모든 문자(라틴·한자·아랍·인도)는 자연 발생적으로 진화했습니다. 그러나 한글만은:</p><p class='body-ko'>누가: 세종대왕과 집현전 학자들</p><p class='body-ko'>언제: 1443년 창제, 1446년 반포</p><p class='body-ko'>왜: 『훈민정음 해례본』 서문 — &quot;백성이 말하고자 하는 바가 있어도 그 뜻을 펴지 못하는 자가 많기에 내가 이를 가엾이 여겨…&quot;</p><p class='body-ko'>어떻게: 28자의 구성·원리·예시까지 모두 기록</p><p class='body-ko'>→ 『훈민정음 해례본』은 UNESCO 세계기록유산(1997년 등재)입니다. 인류 문자 역사상 전무후무한 사례입니다.</p></div>
+    <div class="lang-col"><div class="lang-label">English</div><p class='body-en'>Almost every writing system in the world (Latin, Chinese, Arabic, Indic) evolved naturally over centuries. Hangul alone has all of:</p><p class='body-en'>WHO: King Sejong the Great and scholars of the Hall of Worthies (Jiphyeonjeon).</p><p class='body-en'>WHEN: Created in 1443, promulgated in 1446.</p><p class='body-en'>WHY: Preface to Hunminjeongeum — &quot;There are many who, having something they wish to put into words, are in the end unable to express themselves. I am greatly distressed because of this.&quot;</p><p class='body-en'>HOW: All 28 letters&#x27; structure, principles, and examples documented.</p><p class='body-en'>→ The Hunminjeongeum Haeryebon was inscribed in UNESCO&#x27;s Memory of the World Register in 1997 — unprecedented in the history of human writing.</p></div>
+  </div>
+</div>
+
+<div class="feature-card">
+  <div class="feature-header">
+    <span class="feature-num">5</span>
+    <span class="feature-icon">📱</span>
+    <div class="feature-titles">
+      <div class="title-ko">디지털·AI 시대에 가장 적합한 문자</div>
+      <div class="title-en">The Most Digital- and AI-Friendly Script</div>
+    </div>
+  </div>
+  <div class="feature-body">
+    <div class="lang-col"><div class="lang-label">한국어</div><p class='body-ko'>뜻밖에도 한글은 현대 정보 기술 시대에 더 빛나는 문자입니다.</p><p class='body-ko'>스마트폰 입력 속도: 천지인·쿼티 모두 영어 못지않게 빠르며, 자음·모음 24자로 11,172개 음절을 표현</p><p class='body-ko'>유니코드 효율성: 한글 음절 하나가 영어 단어 하나만큼의 정보를 담음</p><p class='body-ko'>음성 인식·합성 정확도: 표음문자라 AI가 한글 ↔ 음성 변환을 매우 정확하게 처리</p><p class='body-ko'>한류 콘텐츠의 핵심: K-팝·K-드라마·웹툰의 글로벌 확산과 함께 한글 학습자 폭증</p><p class='body-ko'>→ &quot;세종대왕이 600년 후 디지털 시대를 예견하고 만든 것 같다&quot;는 말이 나올 정도로, 시간이 갈수록 그 우수성이 더 드러나는 문자입니다.</p></div>
+    <div class="lang-col"><div class="lang-label">English</div><p class='body-en'>Surprisingly, Hangul shines even brighter in the digital era.</p><p class='body-en'>Mobile typing speed: Cheonjiin and QWERTY layouts are as fast as English typing. 24 letters generate 11,172 possible syllables.</p><p class='body-en'>Unicode efficiency: One Korean syllable carries as much information as an entire English word.</p><p class='body-en'>Voice recognition &amp; synthesis: Because Hangul is phonemic, AI handles Korean ↔ speech conversion with high accuracy.</p><p class='body-en'>Core of the Hallyu wave: K-pop, K-drama, and webtoons drive a global surge in Korean learners.</p><p class='body-en'>→ &quot;It feels like Sejong foresaw the digital age 600 years ago.&quot; Hangul&#x27;s brilliance only grows with time.</p></div>
+  </div>
+</div>
+
+
+<div class="page-break"></div>
+
+<h2 class="section-h">⚖️ 한자와의 본질적 차이 5가지<span class="en">5 Fundamental Differences from Hanja (Chinese Characters)</span></h2>
+
+<div class="comp-card">
+  <div class="comp-header">
+    <span class="comp-num">1</span>
+    <span class="comp-icon">🔤</span>
+    <div class="comp-titles">
+      <div class="title-ko">표음문자 vs 표의문자 — 가장 본질적 차이</div>
+      <div class="title-en">Phonemic vs Logographic — The Most Fundamental Difference</div>
+    </div>
+  </div>
+  <div class="comp-tables">
+    
+<table class="comp-table"><tbody>
+<tr><td class='lbl'>한글</td><td>소리를 적는 문자. 글자만 보면 어떻게 읽는지 안다. 모든 글자가 자기 소리를 가짐.</td></tr><tr><td class='lbl'>한자</td><td>뜻을 적는 문자. 어떤 뜻인지 안다. 글자와 소리가 별개 — 따로 외워야 함.</td></tr><tr><td class='lbl'>Hangul</td><td>Records sounds. The letter shows you how to read it. Every letter carries its own sound.</td></tr><tr><td class='lbl'>Hanja</td><td>Records meanings. The character shows you what it means. Sound is separate — must be memorized.</td></tr><tr><td class='lbl'>한글</td><td>기본 자모 24자 (자음 14 + 모음 10). 음절 블록 11,172개 (이론상). 하루 만에 다 외울 수 있음.</td></tr><tr><td class='lbl'>한자</td><td>강희자전 기준 약 47,000자. 현대 중국 일상 약 3,500~5,000자. 평생 배워도 다 모름.</td></tr><tr><td class='lbl'>Hangul</td><td>24 basic letters (14 consonants + 10 vowels). 11,172 possible syllable blocks. Learnable in a single day.</td></tr><tr><td class='lbl'>Hanja</td><td>About 47,000 characters in the Kangxi Dictionary. ~3,500–5,000 used in daily modern Chinese. Lifetime is not enough to master all.</td></tr><tr><td class='lbl'>한글</td><td>약 2~5시간이면 모든 자모를 익히고 글자를 읽을 수 있음.</td></tr><tr><td class='lbl'>한자</td><td>HSK 6급(고급) 도달까지 평균 2,000~3,000시간 필요. 간체자만 해도 3,000자 이상 암기 필수.</td></tr><tr><td class='lbl'>Hangul</td><td>About 2–5 hours to master all the letters and start reading.</td></tr><tr><td class='lbl'>Hanja/Chinese</td><td>On average, 2,000–3,000 hours to reach HSK 6 (advanced). Even simplified characters require memorizing 3,000+ characters.</td></tr><tr><td class='lbl'>한글</td><td>1443년 세종대왕이 의도적으로 설계. 24자 모든 글자가 일정한 원리에 따라 만들어짐.</td></tr><tr><td class='lbl'>한자</td><td>약 3,300년 전 갑골문에서 자연 발생해 진화. 누가·언제·왜 만들었는지 명확하지 않음. 상형(象形) → 회의(會意) → 형성(形聲)으로 진화.</td></tr><tr><td class='lbl'>Hangul</td><td>Deliberately engineered in 1443 by King Sejong. All 24 letters follow consistent design principles.</td></tr>
+</tbody></table>
+
+
+<div class="paywall-cta" style="margin:40px auto; max-width:720px; background:linear-gradient(135deg,#1a1a2e,#16213e); color:#fff; padding:32px 28px; border-radius:14px; text-align:center;">
+  <div style="font-size:32px; margin-bottom:10px;">🔒</div>
+  <h2 style="font-size:22px; margin:0 0 8px; color:#fff;">전체 콘텐츠는 결제 후 학습 가능합니다</h2>
+  <p style="margin:0 0 18px; opacity:0.85; font-size:14px;">위 미리보기는 약 20%입니다. 전체 <strong>5 features + 5 comparisons</strong>, 모든 예문·시나리오·퀴즈·QR 코드까지 잠금 해제하려면:</p>
+  <a href="https://jssmn21.gumroad.com/l/gnefla" target="_blank" style="display:inline-block; background:#f97316; color:#fff; padding:14px 32px; border-radius:8px; text-decoration:none; font-weight:800; font-size:15px; margin:4px;">💳 Gumroad에서 구매 — $19.90</a>
+  <button onclick="showLicenseModal()" style="display:inline-block; background:transparent; color:#fff; padding:14px 32px; border:2px solid #fff; border-radius:8px; cursor:pointer; font-weight:800; font-size:15px; margin:4px;">🔓 이미 구매했어요</button>
+  <p style="margin-top:16px; font-size:12px; opacity:0.7;">키 1개로 <strong>모든 8개 자료</strong> 잠금 해제</p>
+  <p style="margin-top:20px;"><a href="vocab-hub.html" style="color:#f97316; text-decoration:none; font-weight:700;">← 다른 자료 둘러보기</a></p>
+</div>
+
+
+
+<div id="license-modal" style="display:none">
+  <div class="lm-box">
+    <h3>🔓 라이선스 키 입력</h3>
+    <p>Gumroad에서 구매 후 이메일로 받은 라이선스 키를 입력하세요.</p>
+    <input id="license-key-input" type="text" placeholder="XXXX-XXXX-XXXX-XXXX" maxlength="40" autocomplete="off">
+    <div class="license-msg" id="license-msg"></div>
+    <button class="lm-btn primary" onclick="unlockWithKey()">잠금 해제</button>
+    <button class="lm-btn ghost" onclick="closeLicenseModal()">취소</button>
+    <a href="https://jssmn21.gumroad.com/l/gnefla" target="_blank" class="lm-buy">💳 아직 구매 안 했어요 — Gumroad에서 구매</a>
+  </div>
+</div>
+
+
+<script>
+(function() {
+  const STORAGE_KEY = 'krguide_license_v1';
+  const GUMROAD_LINK = 'https://jssmn21.gumroad.com/l/gnefla';
+
+  function isUnlocked() {
+    try {
+      const d = JSON.parse(localStorage.getItem(STORAGE_KEY));
+      return d && d.valid === true;
+    } catch(e) { return false; }
+  }
+
+  function markUnlocked(key) {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify({valid:true,key:key,ts:Date.now()}));
+  }
+
+  window.unlockWithKey = function() {
+    const input = document.getElementById('license-key-input');
+    const msg = document.getElementById('license-msg');
+    const btn = document.querySelector('#license-modal .lm-btn.primary');
+    const key = (input.value || '').trim();
+    if (!key) { msg.textContent = '라이선스 키를 입력하세요.'; msg.className = 'license-msg err'; return; }
+    if (btn) { btn.disabled = true; btn.textContent = '검증 중…'; }
+    msg.textContent = '';
+    fetch('https://auth.krguide.com/api/license-verify', {
+      method:'POST', headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({license_key: key})
+    }).then(r => r.json()).then(data => {
+      if (data && data.success) {
+        markUnlocked(key);
+        msg.textContent = '✅ 잠금 해제 완료! 새로고침합니다…';
+        msg.className = 'license-msg ok';
+        setTimeout(() => location.reload(), 800);
+      } else {
+        msg.textContent = data.error || '유효하지 않은 라이선스 키입니다.';
+        msg.className = 'license-msg err';
+        if (btn) { btn.disabled = false; btn.textContent = '잠금 해제'; }
+      }
+    }).catch(err => {
+      msg.textContent = '서버 연결 실패. 잠시 후 다시 시도해 주세요.';
+      msg.className = 'license-msg err';
+      if (btn) { btn.disabled = false; btn.textContent = '잠금 해제'; }
+    });
+  };
+
+  window.showLicenseModal = function() {
+    document.getElementById('license-modal').style.display = 'flex';
+    document.getElementById('license-key-input').focus();
+  };
+  window.closeLicenseModal = function() {
+    document.getElementById('license-modal').style.display = 'none';
+  };
+
+  // Apply lock on DOMContentLoaded
+  document.addEventListener('DOMContentLoaded', function() {
+    if (isUnlocked()) {
+      document.body.classList.add('unlocked');
+    } else {
+      document.body.classList.add('locked');
+    }
+  });
+})();
+</script>
+
+
+</body></html>

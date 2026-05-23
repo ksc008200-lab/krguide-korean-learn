@@ -35,3 +35,16 @@ node_modules/
 
 # Cloudflare
 .wrangler/
+
+# Puppeteer/Edge temp profile (generated during PDF builds)
+.edge-tmp/
+
+# Worktrees
+.claude/
+
+# Memory dumps
+v2_unpack/
+
+# Python cache
+__pycache__/
+*.pyc

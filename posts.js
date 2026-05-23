@@ -55,7 +55,7 @@ const POSTS = [
   },
   {
     id: 'korean-complete-guide',
-    title: 'Korean Language Complete Guide â 41 Chapters (PDF + Online) $9.90',
+    title: 'Korean Language Complete Guide â 41 Chapters (PDF + Online) $19.90',
     excerpt: 'Master Korean from zero â 41 chapters covering Hangul, grammar, daily life, culture, K-pop slang and more. Full PDF download + read online.',
     date: '2026-04-16',
     category: 'Learn Korean',

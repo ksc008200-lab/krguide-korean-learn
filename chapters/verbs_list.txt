@@ -1,0 +1,200 @@
+1|가다|go|가요
+2|오다|come|와요
+3|걷다|walk|걸어요
+4|뛰다|run|뛰어요
+5|타다|ride / get on|타요
+6|내리다|get off|내려요
+7|앉다|sit|앉아요
+8|서다|stand|서요
+9|눕다|lie down|누워요
+10|쉬다|rest|쉬어요
+11|먹다|eat|먹어요
+12|마시다|drink|마셔요
+13|자다|sleep|자요
+14|일어나다|wake up / get up|일어나요
+15|씻다|wash|씻어요
+16|닦다|brush / wipe|닦아요
+17|입다|wear (top/bottom)|입어요
+18|신다|wear (shoes/socks)|신어요
+19|쓰다|wear (hat/glasses)|써요
+20|벗다|take off (clothes)|벗어요
+21|만나다|meet|만나요
+22|헤어지다|part / break up|헤어져요
+23|말하다|speak / say|말해요
+24|이야기하다|talk / chat|이야기해요
+25|듣다|listen / hear|들어요
+26|보다|see / watch|봐요
+27|읽다|read|읽어요
+28|쓰다|write|써요
+29|만들다|make / create|만들어요
+30|놀다|play / hang out|놀아요
+31|요리하다|cook|요리해요
+32|굽다|roast / bake / grill|구워요
+33|볶다|stir-fry|볶아요
+34|끓이다|boil|끓여요
+35|섞다|mix|섞어요
+36|청소하다|clean|청소해요
+37|빨래하다|do laundry|빨래해요
+38|널다|hang out laundry|널어요
+39|개다|fold (clothes)|개요
+40|치우다|tidy up / remove|치워요
+41|버리다|throw away|버려요
+42|정리하다|organize|정리해요
+43|고치다|fix / repair|고쳐요
+44|켜다|turn on|켜요
+45|끄다|turn off|꺼요
+46|열다|open|열어요
+47|닫다|close / shut|닫아요
+48|사다|buy|사요
+49|팔다|sell|팔아요
+50|돈을 내다|pay|돈을 내요
+51|빌리다|borrow|빌려요
+52|빌려주다|lend|빌려줘요
+53|주다|give|줘요
+54|받다|receive|받아요
+55|바꾸다|change / exchange|바꿔요
+56|공부하다|study|공부해요
+57|배우다|learn|배워요
+58|가르치다|teach|가르쳐요
+59|질문하다|ask (a question)|질문해요
+60|대답하다|answer|대답해요
+61|연습하다|practice|연습해요
+62|외우다|memorize|외워요
+63|이해하다|understand|이해해요
+64|알다|know|알아요
+65|모르다|not know|몰라요
+66|생각하다|think|생각해요
+67|결정하다|decide|결정해요
+68|일하다|work|일해요
+69|출근하다|go to work|출근해요
+70|퇴근하다|leave work|퇴근해요
+71|준비하다|prepare|준비해요
+72|계획하다|plan|계획해요
+73|회의하다|have a meeting|회의해요
+74|결재하다|approve (documents)|결재해요
+75|보고하다|report|보고해요
+76|도와주다|help|도와줘요
+77|부탁하다|request / ask a favor|부탁해요
+78|거절하다|reject / refuse|거절해요
+79|성공하다|succeed|성공해요
+80|실패하다|fail|실패해요
+81|끝내다|finish|끝내요
+82|시작하다|start / begin|시작해요
+83|연락하다|contact|연락해요
+84|전화하다|call (phone)|전화해요
+85|메모하다|take notes|메모해요
+86|웃다|laugh / smile|웃어요
+87|울다|cry|울어요
+88|기뻐하다|rejoice / be happy|기뻐해요
+89|화내다|get angry|화내요
+90|슬퍼하다|be sad|슬퍼해요
+91|사랑하다|love|사랑해요
+92|좋아하다|like|좋아해요
+93|싫어하다|hate / dislike|싫어해요
+94|축하하다|celebrate / congratulate|축하해요
+95|걱정하다|worry|걱정해요
+96|무서워하다|be afraid|무서워해요
+97|놀라다|be surprised|놀라요
+98|느끼다|feel|느껴요
+99|참다|endure / hold back|참아요
+100|기다리다|wait|기다려요
+101|잊다|forget|잊어요
+102|기억하다|remember|기억해요
+103|기대하다|expect / look forward to|기대해요
+104|후회하다|regret|후회해요
+105|만족하다|be satisfied|만족해요
+106|운동하다|exercise|운동해요
+107|산책하다|take a walk|산책해요
+108|등산하다|hike|등산해요
+109|수영하다|swim|수영해요
+110|던지다|throw|던져요
+111|받다|catch / receive|받아요
+112|밀다|push|밀어요
+113|당기다|pull|당겨요
+114|들다|lift / hold|들어요
+115|놓다|put / place / let go|놓아요
+116|잡다|grab / catch|잡아요
+117|만지다|touch|만져요
+118|두드리다|knock / tap|두드려요
+119|움직이다|move|움직여요
+120|멈추다|stop|멈춰요
+121|넘어지다|fall down|넘어져요
+122|다치다|get hurt|다쳐요
+123|아프다|be sick / hurt|아파요
+124|낫다|recover / get well|나아요
+125|숨쉬다|breathe|숨쉬어요
+126|결혼하다|marry / get married|결혼해요
+127|이사하다|move house|이사해요
+128|싸우다|fight / argue|싸워요
+129|화해하다|reconcile / make up|화해해요
+130|사과하다|apologize|사과해요
+131|용서하다|forgive|용서해요
+132|약속하다|promise / make an appointment|약속해요
+133|소개하다|introduce|소개해요
+134|방문하다|visit|방문해요
+135|초대하다|invite|초대해요
+136|선물하다|give a gift|선물해요
+137|칭찬하다|praise / compliment|칭찬해요
+138|응원하다|cheer / support|응원해요
+139|이용하다|use (a service)|이용해요
+140|사용하다|use (an object)|사용해요
+141|찾다|find / look for|찾아요
+142|잃어버리다|lose|잃어버려요
+143|지키다|protect / keep (a promise)|지켜요
+144|어기다|break (a rule)|어겨요
+145|참석하다|attend|참석해요
+146|참여하다|participate|참여해요
+147|경험하다|experience|경험해요
+148|비교하다|compare|비교해요
+149|선택하다|choose / select|선택해요
+150|포기하다|give up|포기해요
+151|되다|become|돼요
+152|바뀌다|be changed|바뀌어요
+153|변하다|change|변해요
+154|늘다|increase|늘어요
+155|줄다|decrease|줄어요
+156|태어나다|be born|태어나요
+157|죽다|die|죽어요
+158|살다|live|살아요
+159|남다|remain / be left|남아요
+160|생기다|happen / appear / arise|생겨요
+161|사라지다|disappear|사라져요
+162|나타나다|appear|나타나요
+163|떨어지다|drop / fall|떨어져요
+164|오르다|rise / go up|올라요
+165|밝다|be bright|밝아요
+166|어둡다|be dark|어두워요
+167|닮다|look like / resemble|닮아요
+168|어울리다|suit / match / fit|어울려요
+169|부족하다|be lacking / insufficient|부족해요
+170|충분하다|be sufficient / enough|충분해요
+171|고르다|pick / select|골라요
+172|빌다|pray / wish|빌어요
+173|속이다|deceive / trick|속여요
+174|믿다|believe / trust|믿어요
+175|의심하다|doubt / suspect|의심해요
+176|꿈꾸다|dream|꿈꿔요
+177|노력하다|make an effort|노력해요
+178|해결하다|solve / resolve|해결해요
+179|개발하다|develop|개발해요
+180|성장하다|grow / develop|성장해요
+181|즐기다|enjoy|즐겨요
+182|보호하다|protect|보호해요
+183|조심하다|be careful|조심해요
+184|확인하다|check / confirm|확인해요
+185|취소하다|cancel|취소해요
+186|신청하다|apply|신청해요
+187|여행하다|travel|여행해요
+188|배달하다|deliver|배달해요
+189|구경하다|sightsee / look around|구경해요
+190|기록하다|record|기록해요
+191|발표하다|announce / present|발표해요
+192|조사하다|investigate / research|조사해요
+193|표현하다|express|표현해요
+194|전하다|convey / deliver (a message)|전해요
+195|맞다|be correct / fit|맞아요
+196|틀리다|be wrong|틀려요
+197|부르다|call / sing|불러요
+198|떠나다|leave / depart|떠나요
+199|도착하다|arrive|도착해요
+200|헤매다|wander / be lost|헤매요

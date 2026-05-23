@@ -1,0 +1,190 @@
+<!-- wp:html -->
+<style>
+.members-hero{background:linear-gradient(135deg,#0071e3 0%,#005bb5 100%);color:#fff;padding:48px 28px;text-align:center}
+.members-hero h1{font-size:2rem;font-weight:800;margin:0 0 10px}
+.members-hero p{font-size:1rem;opacity:.85;margin:0 0 20px}
+.member-badge{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.2);border-radius:20px;padding:6px 16px;font-size:.82rem;font-weight:600}
+.lessons-wrap{max-width:900px;margin:40px auto 80px;padding:0 24px}
+.lessons-section{margin-bottom:48px}
+.section-title{font-size:1.1rem;font-weight:800;color:#1e293b;margin:0 0 16px;padding-bottom:10px;border-bottom:2px solid #0071e3;display:flex;align-items:center;gap:8px}
+.lesson-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px}
+.lesson-card{background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:18px;display:flex;flex-direction:column;gap:10px;transition:box-shadow .2s,transform .2s}
+.lesson-card:hover{box-shadow:0 4px 20px rgba(0,0,0,.1);transform:translateY(-2px)}
+.lesson-title{font-size:.92rem;font-weight:700;color:#1e293b;line-height:1.4;flex:1}
+.lesson-actions{display:flex;gap:8px}
+.btn-view{flex:1;text-align:center;padding:8px;border-radius:8px;font-size:.8rem;font-weight:600;text-decoration:none;background:#0071e3;color:#fff;transition:background .15s}
+.btn-view:hover{background:#005bb5}
+.btn-dl{padding:8px 12px;border-radius:8px;font-size:.8rem;font-weight:600;text-decoration:none;background:#f5f5f7;color:#1e293b;border:1px solid #e2e8f0;transition:all .15s}
+.btn-dl:hover{background:#e8e8eb}
+
+/* Auth gate */
+#auth-loading{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:60vh;gap:1rem;color:#64748b}
+.spinner{width:40px;height:40px;border:3px solid #e2e8f0;border-top-color:#0071e3;border-radius:50%;animation:spin .8s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+#auth-gate{display:none;min-height:60vh;display:none;align-items:center;justify-content:center;background:linear-gradient(135deg,#0f172a,#1e3a5f);padding:60px 24px}
+.gate-box{max-width:480px;text-align:center;color:#fff}
+.gate-icon{font-size:4rem;margin-bottom:1rem}
+.gate-box h2{font-size:1.75rem;font-weight:800;margin:0 0 12px}
+.gate-box p{opacity:.8;margin:0 0 28px;line-height:1.6;font-size:1rem}
+.gate-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.btn-gate-primary{padding:13px 32px;background:#0071e3;color:#fff;border-radius:24px;text-decoration:none;font-weight:700;font-size:.95rem}
+.btn-gate-secondary{padding:13px 32px;background:rgba(255,255,255,.12);color:#fff;border-radius:24px;text-decoration:none;font-weight:700;font-size:.95rem;border:1px solid rgba(255,255,255,.3)}
+
+/* Header */
+.lib-header{background:#fff;border-bottom:1px solid #e2e8f0;padding:0 24px;height:56px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100}
+.lib-brand{font-size:1.2rem;font-weight:900;color:#0f172a;text-decoration:none}
+.lib-brand span{color:#0071e3}
+.lib-nav{display:flex;align-items:center;gap:16px}
+.lib-nav a{font-size:.85rem;color:#64748b;text-decoration:none;font-weight:500}
+.lib-nav a:hover{color:#0071e3}
+.btn-logout{padding:7px 16px;background:#f1f5f9;color:#475569;border:none;border-radius:8px;font-size:.82rem;font-weight:600;cursor:pointer;transition:all .2s}
+.btn-logout:hover{background:#fee2e2;color:#dc2626}
+#user-name{font-size:.85rem;color:#64748b;font-weight:500}
+
+/* Upgrade banner */
+.upgrade-banner{background:linear-gradient(135deg,#0a0f2e 0%,#0d2060 60%,#1a3a7a 100%);padding:40px 24px;position:relative;overflow:hidden}
+.upgrade-banner::before{content:'';position:absolute;top:-40%;left:-10%;width:500px;height:500px;background:radial-gradient(circle,rgba(99,102,241,.2),transparent 70%);pointer-events:none}
+.upgrade-banner::after{content:'';position:absolute;bottom:-40%;right:-5%;width:400px;height:400px;background:radial-gradient(circle,rgba(245,158,11,.12),transparent 70%);pointer-events:none}
+.upgrade-inner{max-width:860px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:32px;flex-wrap:wrap;position:relative;z-index:1}
+.upgrade-left{display:flex;flex-direction:column;gap:10px}
+.upgrade-badge{display:inline-flex;align-items:center;gap:6px;background:rgba(245,158,11,.15);border:1px solid rgba(245,158,11,.4);color:#fbbf24;font-size:.75rem;font-weight:700;padding:4px 12px;border-radius:20px;width:fit-content}
+.upgrade-title{color:#fff;font-size:1.3rem;font-weight:800;line-height:1.3;margin:0}
+.upgrade-features{display:flex;flex-wrap:wrap;gap:8px 20px;margin:0;padding:0;list-style:none}
+.upgrade-features li{color:#94a3b8;font-size:.82rem;display:flex;align-items:center;gap:5px}
+.upgrade-features li::before{content:'✓';color:#34d399;font-weight:800}
+.upgrade-right{display:flex;flex-direction:column;align-items:center;gap:10px;flex-shrink:0}
+.upgrade-price{text-align:center}
+.upgrade-price .amount{font-size:2.4rem;font-weight:900;color:#fff;line-height:1}
+.upgrade-price .period{font-size:.8rem;color:#64748b;margin-top:2px}
+.upgrade-btn{background:linear-gradient(135deg,#f59e0b,#d97706);color:#0f172a;font-weight:800;font-size:.95rem;padding:13px 32px;border-radius:24px;text-decoration:none;white-space:nowrap;transition:all .2s;box-shadow:0 4px 20px rgba(245,158,11,.4);display:block;text-align:center}
+.upgrade-btn:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(245,158,11,.5)}
+.upgrade-note{font-size:.72rem;color:#475569;text-align:center}
+
+#library-content{display:none}
+@media(max-width:640px){.lesson-grid{grid-template-columns:1fr}.upgrade-inner{flex-direction:column}.upgrade-right{width:100%}.upgrade-btn{width:100%}}
+</style>
+
+<div class="lib-header">
+  <a class="lib-brand" href="/"><span>KR</span> Guide</a>
+  <div class="lib-nav">
+    <span id="user-name"></span>
+    <button class="btn-logout" id="btn-logout" style="display:none">로그아웃</button>
+  </div>
+</div>
+
+<div id="auth-loading">
+  <div class="spinner"></div>
+  <p>로딩 중...</p>
+</div>
+
+<div id="auth-gate" style="display:none;align-items:center;justify-content:center;background:linear-gradient(135deg,#0f172a,#1e3a5f);padding:60px 24px;min-height:60vh">
+  <div class="gate-box">
+    <div class="gate-icon">🔐</div>
+    <h2>회원 전용 콘텐츠</h2>
+    <p>KR Guide 회원만 이용할 수 있는 한국어 학습 자료입니다.<br>무료 가입으로 190개 이상의 레슨을 이용하세요.</p>
+    <div class="gate-btns">
+      <a class="btn-gate-primary" href="/register/">🚀 무료 회원가입</a>
+      <a class="btn-gate-secondary" href="/login/">로그인</a>
+    </div>
+  </div>
+</div>
+
+<div id="library-content">
+
+<div class="upgrade-banner">
+  <div class="upgrade-inner">
+    <div class="upgrade-left">
+      <span class="upgrade-badge">⚡ Full Access — 한 번만 결제</span>
+      <h2 class="upgrade-title">190개 레슨 전체를<br>지금 바로 잠금 해제하세요</h2>
+      <ul class="upgrade-features">
+        <li>41개 챕터 전체 이용</li>
+        <li>HTML 파일 다운로드</li>
+        <li>Grammar · Vocab · 실전 대화</li>
+        <li>평생 접근</li>
+        <li>신규 콘텐츠 자동 추가</li>
+      </ul>
+    </div>
+    <div class="upgrade-right">
+      <div class="upgrade-price">
+        <div class="amount">$19.90</div>
+        <div class="period">일회 결제 · 평생 이용</div>
+      </div>
+      <a class="upgrade-btn" href="https://jssmn21.gumroad.com/l/gnefla" target="_blank" rel="noopener">
+        지금 전체 구매하기 →
+      </a>
+      <span class="upgrade-note">신용카드 · PayPal 결제 가능</span>
+    </div>
+  </div>
+</div>
+
+<div class="members-hero">
+  <div class="member-badge">✅ Members Only</div>
+  <h1>Korean Learning Library</h1>
+  <p>190+ lessons · All levels · View &amp; Download</p>
+</div>
+<div class="lessons-wrap">
+  <div class="lessons-section">
+    <div class="section-title">🔤 Hangul &amp; Pronunciation</div>
+    <div class="lesson-grid">
+      <div class="lesson-card"><div class="lesson-title">How to Read Korean in 1 Hour</div><div class="lesson-actions"><a class="btn-view" href="/how-to-read-korean-in-1-hour-complete-beginners-step-by-step-guide-3/">View</a><a class="btn-dl" href="/how-to-read-korean-in-1-hour-complete-beginners-step-by-step-guide-3/" download>⬇ DL</a></div></div>
+      <div class="lesson-card"><div class="lesson-title">Korean Pronunciation Rules Every Beginner Must Know</div><div class="lesson-actions"><a class="btn-view" href="/korean-pronunciation-rules-every-beginner-must-know-3/">View</a><a class="btn-dl" href="/korean-pronunciation-rules-every-beginner-must-know-3/" download>⬇ DL</a></div></div>
+      <div class="lesson-card"><div class="lesson-title">Korean Basic Vowels — Complete Guide</div><div class="lesson-actions"><a class="btn-view" href="/korean-basic-vowels-complete-pronunciation-guide-2/">View</a><a class="btn-dl" href="/korean-basic-vowels-complete-pronunciation-guide-2/" download>⬇ DL</a></div></div>
+      <div class="lesson-card"><div class="lesson-title">Korean Double Consonants — Tense Sounds</div><div class="lesson-actions"><a class="btn-view" href="/korean-double-consonants-how-to-pronounce-tense-sounds-3/">View</a><a class="btn-dl" href="/korean-double-consonants-how-to-pronounce-tense-sounds-3/" download>⬇ DL</a></div></div>
+      <div class="lesson-card"><div class="lesson-title">Korean Final Consonants (받침)</div><div class="lesson-actions"><a class="btn-view" href="/korean-final-consonants-how-batchim-changes-pronunciation-3/">View</a><a class="btn-dl" href="/korean-final-consonants-how-batchim-changes-pronunciation-3/" download>⬇ DL</a></div></div>
+      <div class="lesson-card"><div class="lesson-title">Korean Intonation and Rhythm</div><div class="lesson-actions"><a class="btn-view" href="/korean-intonation-and-rhythm-sound-like-a-native-3/">View</a><a class="btn-dl" href="/korean-intonation-and-rhythm-sound-like-a-native-3/" download>⬇ DL</a></div></div>
+    </div>
+  </div>
+  <div class="lessons-section">
+    <div class="section-title">📝 Grammar &amp; Sentence Structure</div>
+    <div class="lesson-grid">
+      <div class="lesson-card"><div class="lesson-title">Korean Sentence Structure — SOV Word Order</div><div class="lesson-actions"><a class="btn-view" href="/korean-sentence-structure-explained-sov-word-order-2/">View</a><a class="btn-dl" href="/korean-sentence-structure-explained-sov-word-order-2/" download>⬇ DL</a></div></div>
+      <div class="lesson-card"><div class="lesson-title">Korean Particles 은/는 vs 이/가</div><div class="lesson-actions"><a class="btn-view" href="/korean-particles-vs-the-complete-beginners-guide-2/">View</a><a class="btn-dl" href="/korean-particles-vs-the-complete-beginners-guide-2/" download>⬇ DL</a></div></div>
+      <div class="lesson-card"><div class="lesson-title">Korean Verb Conjugation — Present, Past, Future</div><div class="lesson-actions"><a class="btn-view" href="/korean-verb-conjugation-for-beginners-present-past-future-3/">View</a><a class="btn-dl" href="/korean-verb-conjugation-for-beginners-present-past-future-3/" download>⬇ DL</a></div></div>
+      <div class="lesson-card"><div class="lesson-title">Honorifics in Korean — Formal Speech</div><div class="lesson-actions"><a class="btn-view" href="/honorifics-in-korean-when-and-how-to-use-formal-speech-3/">View</a><a class="btn-dl" href="/honorifics-in-korean-when-and-how-to-use-formal-speech-3/" download>⬇ DL</a></div></div>
+      <div class="lesson-card"><div class="lesson-title">Korean Negation — How to Say No</div><div class="lesson-actions"><a class="btn-view" href="/korean-negation-how-to-say-no-and-not-in-korean-3/">View</a><a class="btn-dl" href="/korean-negation-how-to-say-no-and-not-in-korean-3/" download>⬇ DL</a></div></div>
+      <div class="lesson-card"><div class="lesson-title">Korean Connectors — ~고, ~지만, ~그래서</div><div class="lesson-actions"><a class="btn-view" href="/how-to-use-korean-connectors-3/">View</a><a class="btn-dl" href="/how-to-use-korean-connectors-3/" download>⬇ DL</a></div></div>
+    </div>
+  </div>
+  <div class="lessons-section">
+    <div class="section-title">💬 Vocabulary &amp; Phrases</div>
+    <div class="lesson-grid">
+      <div class="lesson-card"><div class="lesson-title">Top 50 Korean Phrases Every Beginner Must Know</div><div class="lesson-actions"><a class="btn-view" href="/top-50-korean-phrases-every-beginner-must-know-3/">View</a><a class="btn-dl" href="/top-50-korean-phrases-every-beginner-must-know-3/" download>⬇ DL</a></div></div>
+      <div class="lesson-card"><div class="lesson-title">Korean Greetings — 20 Ways to Say Hello</div><div class="lesson-actions"><a class="btn-view" href="/korean-greetings-guide-20-ways-to-say-hello-and-goodbye-3/">View</a><a class="btn-dl" href="/korean-greetings-guide-20-ways-to-say-hello-and-goodbye-3/" download>⬇ DL</a></div></div>
+      <div class="lesson-card"><div class="lesson-title">Korean Numbers — Native vs Sino</div><div class="lesson-actions"><a class="btn-view" href="/korean-numbers-how-to-count-in-korean-native-vs-sino-3/">View</a><a class="btn-dl" href="/korean-numbers-how-to-count-in-korean-native-vs-sino-3/" download>⬇ DL</a></div></div>
+      <div class="lesson-card"><div class="lesson-title">Korean Food Vocabulary — 60 Essential Words</div><div class="lesson-actions"><a class="btn-view" href="/korean-food-vocabulary-60-essential-words-for-foodies-3/">View</a><a class="btn-dl" href="/korean-food-vocabulary-60-essential-words-for-foodies-3/" download>⬇ DL</a></div></div>
+      <div class="lesson-card"><div class="lesson-title">Essential Korean Words for Shopping</div><div class="lesson-actions"><a class="btn-view" href="/essential-korean-words-for-shopping-in-korea-2/">View</a><a class="btn-dl" href="/essential-korean-words-for-shopping-in-korea-2/" download>⬇ DL</a></div></div>
+      <div class="lesson-card"><div class="lesson-title">How to Introduce Yourself in Korean</div><div class="lesson-actions"><a class="btn-view" href="/how-to-introduce-yourself-in-korean-beginners-script-3/">View</a><a class="btn-dl" href="/how-to-introduce-yourself-in-korean-beginners-script-3/" download>⬇ DL</a></div></div>
+    </div>
+  </div>
+</div>
+</div>
+
+<script>
+const AUTH = 'https://auth.krguide.com';
+
+(async () => {
+  try {
+    const r = await fetch(`${AUTH}/auth/verify`, { credentials: 'include' });
+    const d = await r.json();
+    document.getElementById('auth-loading').style.display = 'none';
+    if (d.loggedIn) {
+      document.getElementById('library-content').style.display = 'block';
+      if (d.email) {
+        document.getElementById('user-name').textContent = d.email;
+        document.getElementById('btn-logout').style.display = 'block';
+      }
+    } else {
+      document.getElementById('auth-gate').style.display = 'flex';
+    }
+  } catch {
+    document.getElementById('auth-loading').style.display = 'none';
+    document.getElementById('auth-gate').style.display = 'flex';
+  }
+})();
+
+document.getElementById('btn-logout').addEventListener('click', async () => {
+  await fetch(`${AUTH}/auth/logout`, { method: 'POST', credentials: 'include' });
+  location.href = '/';
+});
+</script>
+<!-- /wp:html -->

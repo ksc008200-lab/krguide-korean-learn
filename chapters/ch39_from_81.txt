@@ -1,0 +1,156 @@
+ 81. 끝내다  (kkut-nae-da) — finish   |   해요체: 끝내요  |  과거형: 끝냈어요
+ 82. 시작하다  (si-jak-ha-da) — start / begin   |   해요체: 시작해요  |  과거형: 시작했어요
+ 83. 연락하다  (yeon-rak-ha-da) — contact   |   해요체: 연락해요  |  과거형: 연락했어요
+ 84. 전화하다  (jeon-hwa-ha-da) — call (phone)   |   해요체: 전화해요  |  과거형: 전화했어요
+ 85. 메모하다  (me-mo-ha-da) — take notes   |   해요체: 메모해요  |  과거형: 메모했어요
+
+━━━ 표현 EXPRESSION ━━━
+ 86. 웃다  (ut-da) — laugh / smile   |   해요체: 웃어요  |  과거형: 웃었어요
+ 87. 울다  (ul-da) — cry   |   해요체: 울어요  |  과거형: 울었어요
+ 88. 기뻐하다  (gi-ppeo-ha-da) — rejoice / be happy   |   해요체: 기뻐해요  |  과거형: 기뻐했어요
+ 89. 화내다  (hwa-nae-da) — get angry   |   해요체: 화내요  |  과거형: 화냈어요
+ 90. 슬퍼하다  (seul-peo-ha-da) — be sad   |   해요체: 슬퍼해요  |  과거형: 슬퍼했어요
+
+━━━ 호불호 PREFERENCE ━━━
+ 91. 사랑하다  (sa-rang-ha-da) — love   |   해요체: 사랑해요  |  과거형: 사랑했어요
+ 92. 좋아하다  (jo-a-ha-da) — like   |   해요체: 좋아해요  |  과거형: 좋아했어요
+ 93. 싫어하다  (si-reo-ha-da) — hate / dislike   |   해요체: 싫어해요  |  과거형: 싫어했어요
+ 94. 축하하다  (chuk-ha-ha-da) — celebrate / congratulate   |   해요체: 축하해요  |  과거형: 축하했어요
+
+━━━ 내면 INNER STATE ━━━
+ 95. 걱정하다  (geok-jeong-ha-da) — worry   |   해요체: 걱정해요  |  과거형: 걱정했어요
+ 96. 무서워하다  (mu-seo-wo-ha-da) — be afraid   |   해요체: 무서워해요  |  과거형: 무서워했어요
+ 97. 놀라다  (nol-la-da) — be surprised   |   해요체: 놀라요  |  과거형: 놀랐어요
+ 98. 느끼다  (neu-kki-da) — feel   |   해요체: 느껴요  |  과거형: 느꼈어요
+ 99. 참다  (cham-da) — endure / hold back   |   해요체: 참아요  |  과거형: 참았어요
+100. 기다리다  (gi-da-ri-da) — wait   |   해요체: 기다려요  |  과거형: 기다렸어요
+101. 잊다  (it-da) — forget   |   해요체: 잊어요  |  과거형: 잊었어요
+102. 기억하다  (gi-eok-ha-da) — remember   |   해요체: 기억해요  |  과거형: 기억했어요
+103. 기대하다  (gi-dae-ha-da) — expect / look forward to   |   해요체: 기대해요  |  과거형: 기대했어요
+104. 후회하다  (hu-hoe-ha-da) — regret   |   해요체: 후회해요  |  과거형: 후회했어요
+105. 만족하다  (man-jok-ha-da) — be satisfied   |   해요체: 만족해요  |  과거형: 만족했어요
+
+━━━ 운동 SPORTS ━━━
+106. 운동하다  (un-dong-ha-da) — exercise   |   해요체: 운동해요  |  과거형: 운동했어요
+107. 산책하다  (san-chaek-ha-da) — take a walk   |   해요체: 산책해요  |  과거형: 산책했어요
+108. 등산하다  (deung-san-ha-da) — hike   |   해요체: 등산해요  |  과거형: 등산했어요
+109. 수영하다  (su-yeong-ha-da) — swim   |   해요체: 수영해요  |  과거형: 수영했어요
+
+━━━ 동작 PHYSICAL ACTIONS ━━━
+110. 던지다  (deon-ji-da) — throw   |   해요체: 던져요  |  과거형: 던졌어요
+111. 받다  (bat-da) — catch / receive   |   해요체: 받아요  |  과거형: 받았어요
+112. 밀다  (mil-da) — push   |   해요체: 밀어요  |  과거형: 밀었어요
+113. 당기다  (dang-gi-da) — pull   |   해요체: 당겨요  |  과거형: 당겼어요
+114. 들다  (deul-da) — lift / hold   |   해요체: 들어요  |  과거형: 들었어요
+115. 놓다  (no-ta) — put / place / let go   |   해요체: 놓아요  |  과거형: 놓았어요
+116. 잡다  (jap-da) — grab / catch   |   해요체: 잡아요  |  과거형: 잡았어요
+117. 만지다  (man-ji-da) — touch   |   해요체: 만져요  |  과거형: 만졌어요
+118. 두드리다  (du-deu-ri-da) — knock / tap   |   해요체: 두드려요  |  과거형: 두드렸어요
+119. 움직이다  (um-ji-gi-da) — move   |   해요체: 움직여요  |  과거형: 움직였어요
+120. 멈추다  (meom-chu-da) — stop   |   해요체: 멈춰요  |  과거형: 멈췄어요
+
+━━━ 부상·회복 INJURY & RECOVERY ━━━
+121. 넘어지다  (neo-meo-ji-da) — fall down   |   해요체: 넘어져요  |  과거형: 넘어졌어요
+122. 다치다  (da-chi-da) — get hurt   |   해요체: 다쳐요  |  과거형: 다쳤어요
+123. 아프다  (a-peu-da) — be sick / hurt   |   해요체: 아파요  |  과거형: 아팠어요
+124. 낫다  (nat-da) — recover / get well   |   해요체: 나아요  |  과거형: 나았어요
+125. 숨쉬다  (sum-swi-da) — breathe   |   해요체: 숨쉬어요  |  과거형: 숨쉬었어요
+
+━━━ 관계 RELATIONSHIP ━━━
+126. 결혼하다  (gyeol-hon-ha-da) — marry / get married   |   해요체: 결혼해요  |  과거형: 결혼했어요
+127. 이사하다  (i-sa-ha-da) — move house   |   해요체: 이사해요  |  과거형: 이사했어요
+128. 싸우다  (ssa-u-da) — fight / argue   |   해요체: 싸워요  |  과거형: 싸웠어요
+129. 화해하다  (hwa-hae-ha-da) — reconcile / make up   |   해요체: 화해해요  |  과거형: 화해했어요
+130. 사과하다  (sa-gwa-ha-da) — apologize   |   해요체: 사과해요  |  과거형: 사과했어요
+131. 용서하다  (yong-seo-ha-da) — forgive   |   해요체: 용서해요  |  과거형: 용서했어요
+132. 약속하다  (yak-sok-ha-da) — promise / make an appointment   |   해요체: 약속해요  |  과거형: 약속했어요
+
+━━━ 사교 SOCIAL ━━━
+133. 소개하다  (so-gae-ha-da) — introduce   |   해요체: 소개해요  |  과거형: 소개했어요
+134. 방문하다  (bang-mun-ha-da) — visit   |   해요체: 방문해요  |  과거형: 방문했어요
+135. 초대하다  (cho-dae-ha-da) — invite   |   해요체: 초대해요  |  과거형: 초대했어요
+136. 선물하다  (seon-mul-ha-da) — give a gift   |   해요체: 선물해요  |  과거형: 선물했어요
+137. 칭찬하다  (ching-chan-ha-da) — praise / compliment   |   해요체: 칭찬해요  |  과거형: 칭찬했어요
+138. 응원하다  (eung-won-ha-da) — cheer / support   |   해요체: 응원해요  |  과거형: 응원했어요
+
+━━━ 행동 BEHAVIOR ━━━
+139. 이용하다  (i-yong-ha-da) — use (a service)   |   해요체: 이용해요  |  과거형: 이용했어요
+140. 사용하다  (sa-yong-ha-da) — use (an object)   |   해요체: 사용해요  |  과거형: 사용했어요
+141. 찾다  (chat-da) — find / look for   |   해요체: 찾아요  |  과거형: 찾았어요
+142. 잃어버리다  (il-eo-beo-ri-da) — lose   |   해요체: 잃어버려요  |  과거형: 잃어버렸어요
+143. 지키다  (ji-ki-da) — protect / keep (a promise)   |   해요체: 지켜요  |  과거형: 지켰어요
+144. 어기다  (eo-gi-da) — break (a rule)   |   해요체: 어겨요  |  과거형: 어겼어요
+145. 참석하다  (cham-seok-ha-da) — attend   |   해요체: 참석해요  |  과거형: 참석했어요
+146. 참여하다  (cham-yeo-ha-da) — participate   |   해요체: 참여해요  |  과거형: 참여했어요
+147. 경험하다  (gyeong-heom-ha-da) — experience   |   해요체: 경험해요  |  과거형: 경험했어요
+148. 비교하다  (bi-gyo-ha-da) — compare   |   해요체: 비교해요  |  과거형: 비교했어요
+149. 선택하다  (seon-taek-ha-da) — choose / select   |   해요체: 선택해요  |  과거형: 선택했어요
+150. 포기하다  (po-gi-ha-da) — give up   |   해요체: 포기해요  |  과거형: 포기했어요
+
+━━━ 변화 CHANGE ━━━
+151. 되다  (doe-da) — become   |   해요체: 돼요  |  과거형: 됐어요
+152. 바뀌다  (ba-kkwi-da) — be changed   |   해요체: 바뀌어요  |  과거형: 바뀌었어요
+153. 변하다  (byeon-ha-da) — change   |   해요체: 변해요  |  과거형: 변했어요
+154. 늘다  (neul-da) — increase   |   해요체: 늘어요  |  과거형: 늘었어요
+155. 줄다  (jul-da) — decrease   |   해요체: 줄어요  |  과거형: 줄었어요
+
+━━━ 생사·존재 LIFE & EXISTENCE ━━━
+156. 태어나다  (tae-eo-na-da) — be born   |   해요체: 태어나요  |  과거형: 태어났어요
+157. 죽다  (juk-da) — die   |   해요체: 죽어요  |  과거형: 죽었어요
+158. 살다  (sal-da) — live   |   해요체: 살아요  |  과거형: 살았어요
+159. 남다  (nam-da) — remain / be left   |   해요체: 남아요  |  과거형: 남았어요
+160. 생기다  (saeng-gi-da) — happen / appear / arise   |   해요체: 생겨요  |  과거형: 생겼어요
+161. 사라지다  (sa-ra-ji-da) — disappear   |   해요체: 사라져요  |  과거형: 사라졌어요
+162. 나타나다  (na-ta-na-da) — appear   |   해요체: 나타나요  |  과거형: 나타났어요
+
+━━━ 방향 DIRECTION ━━━
+163. 떨어지다  (tteol-eo-ji-da) — drop / fall   |   해요체: 떨어져요  |  과거형: 떨어졌어요
+164. 오르다  (o-reu-da) — rise / go up   |   해요체: 올라요  |  과거형: 올랐어요
+
+━━━ 속성 ATTRIBUTE ━━━
+165. 밝다  (bak-da) — be bright   |   해요체: 밝아요  |  과거형: 밝았어요
+166. 어둡다  (eo-dup-da) — be dark   |   해요체: 어두워요  |  과거형: 어두웠어요
+167. 닮다  (dam-da) — look like / resemble   |   해요체: 닮아요  |  과거형: 닮았어요
+168. 어울리다  (eo-ul-li-da) — suit / match / fit   |   해요체: 어울려요  |  과거형: 어울렸어요
+169. 부족하다  (bu-jok-ha-da) — be lacking / insufficient   |   해요체: 부족해요  |  과거형: 부족했어요
+170. 충분하다  (chung-bun-ha-da) — be sufficient / enough   |   해요체: 충분해요  |  과거형: 충분했어요
+
+━━━ 인식 PERCEPTION & BELIEF ━━━
+171. 고르다  (go-reu-da) — pick / select   |   해요체: 골라요  |  과거형: 골랐어요
+172. 빌다  (bil-da) — pray / wish   |   해요체: 빌어요  |  과거형: 빌었어요
+173. 속이다  (so-gi-da) — deceive / trick   |   해요체: 속여요  |  과거형: 속였어요
+174. 믿다  (mit-da) — believe / trust   |   해요체: 믿어요  |  과거형: 믿었어요
+175. 의심하다  (ui-sim-ha-da) — doubt / suspect   |   해요체: 의심해요  |  과거형: 의심했어요
+
+━━━ 목표·성취 GOAL & ACHIEVEMENT ━━━
+176. 꿈꾸다  (kkum-kku-da) — dream   |   해요체: 꿈꿔요  |  과거형: 꿈꿨어요
+177. 노력하다  (no-ryeok-ha-da) — make an effort   |   해요체: 노력해요  |  과거형: 노력했어요
+178. 해결하다  (hae-gyeol-ha-da) — solve / resolve   |   해요체: 해결해요  |  과거형: 해결했어요
+179. 개발하다  (gae-bal-ha-da) — develop   |   해요체: 개발해요  |  과거형: 개발했어요
+180. 성장하다  (seong-jang-ha-da) — grow / develop   |   해요체: 성장해요  |  과거형: 성장했어요
+181. 즐기다  (jeul-gi-da) — enjoy   |   해요체: 즐겨요  |  과거형: 즐겼어요
+
+━━━ 행정·절차 PROCEDURES ━━━
+182. 보호하다  (bo-ho-ha-da) — protect   |   해요체: 보호해요  |  과거형: 보호했어요
+183. 조심하다  (jo-sim-ha-da) — be careful   |   해요체: 조심해요  |  과거형: 조심했어요
+184. 확인하다  (hwak-in-ha-da) — check / confirm   |   해요체: 확인해요  |  과거형: 확인했어요
+185. 취소하다  (chwi-so-ha-da) — cancel   |   해요체: 취소해요  |  과거형: 취소했어요
+186. 신청하다  (sin-cheong-ha-da) — apply   |   해요체: 신청해요  |  과거형: 신청했어요
+
+━━━ 이동·정보 MOVEMENT & INFORMATION ━━━
+187. 여행하다  (yeo-haeng-ha-da) — travel   |   해요체: 여행해요  |  과거형: 여행했어요
+188. 배달하다  (bae-dal-ha-da) — deliver   |   해요체: 배달해요  |  과거형: 배달했어요
+189. 구경하다  (gu-gyeong-ha-da) — sightsee / look around   |   해요체: 구경해요  |  과거형: 구경했어요
+190. 기록하다  (gi-rok-ha-da) — record   |   해요체: 기록해요  |  과거형: 기록했어요
+191. 발표하다  (bal-pyo-ha-da) — announce / present   |   해요체: 발표해요  |  과거형: 발표했어요
+192. 조사하다  (jo-sa-ha-da) — investigate / research   |   해요체: 조사해요  |  과거형: 조사했어요
+193. 표현하다  (pyo-hyeon-ha-da) — express   |   해요체: 표현해요  |  과거형: 표현했어요
+194. 전하다  (jeon-ha-da) — convey / deliver (a message)   |   해요체: 전해요  |  과거형: 전했어요
+
+━━━ 판단·행동 JUDGMENT & ACTION ━━━
+195. 맞다  (mat-da) — be correct / fit   |   해요체: 맞아요  |  과거형: 맞았어요
+196. 틀리다  (teul-li-da) — be wrong   |   해요체: 틀려요  |  과거형: 틀렸어요
+197. 부르다  (bu-reu-da) — call / sing   |   해요체: 불러요  |  과거형: 불렀어요
+198. 떠나다  (tteo-na-da) — leave / depart   |   해요체: 떠나요  |  과거형: 떠났어요
+199. 도착하다  (do-chak-ha-da) — arrive   |   해요체: 도착해요  |  과거형: 도착했어요
+200. 헤매다  (he-mae-da) — wander / be lost   |   해요체: 헤매요  |  과거형: 헤맸어요

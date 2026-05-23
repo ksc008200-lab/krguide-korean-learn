@@ -1,0 +1,902 @@
+[
+  {
+    "cat": "창조와 타락",
+    "num": 1,
+    "ref": "창세기 1:1",
+    "ref_en": "Genesis 1:1 (ESV)",
+    "ko": "태초에 하나님이 천지를 창조하시니라",
+    "en": "In the beginning, God created the heavens and the earth.",
+    "note": "성경의 첫 구절 · 창조의 선언"
+  },
+  {
+    "cat": "창조와 타락",
+    "num": 2,
+    "ref": "창세기 1:27",
+    "ref_en": "Genesis 1:27 (ESV)",
+    "ko": "하나님이 자기 형상 곧 하나님의 형상대로 사람을 창조하시되 남자와 여자를 창조하시고",
+    "en": "So God created man in his own image, in the image of God he created him; male and female he created them.",
+    "note": "인간 존엄의 근거 · 하나님의 형상"
+  },
+  {
+    "cat": "창조와 타락",
+    "num": 3,
+    "ref": "창세기 3:15",
+    "ref_en": "Genesis 3:15 (ESV)",
+    "ko": "내가 너로 여자와 원수가 되게 하고 네 후손도 여자의 후손과 원수가 되게 하리니 여자의 후손은 네 머리를 상하게 할 것이요 너는 그의 발꿈치를 상하게 할 것이니라 하시고",
+    "en": "I will put enmity between you and the woman, and between your offspring and her offspring; he shall bruise your head, and you shall bruise his heel.",
+    "note": "원시 복음 · 메시아 약속의 첫 빛"
+  },
+  {
+    "cat": "창조와 타락",
+    "num": 4,
+    "ref": "창세기 12:1~3",
+    "ref_en": "Genesis 12:1–3 (ESV)",
+    "ko": "여호와께서 아브람에게 이르시되 너는 너의 고향과 친척과 아버지의 집을 떠나 내가 네게 보여 줄 땅으로 가라 내가 너로 큰 민족을 이루고 네게 복을 주어 네 이름을 창대하게 하리니 너는 복이 될지라 너를 축복하는 자에게는 내가 복을 내리고 너를 저주하는 자에게는 내가 저주하리니 땅의 모든 족속이 너로 말미암아 복을 얻을 것이라 하신지라",
+    "en": "Now the LORD said to Abram, 'Go from your country and your kindred and your father's house to the land that I will show you. And I will make of you a great nation, and I will bless you and make your name great, so that you will be a blessing. I will bless those who bless you, and him who dishonors you I will curse, and in you all the families of the earth shall be blessed.'",
+    "note": "아브라함의 부르심 · 만민이 복을 받는 언약"
+  },
+  {
+    "cat": "창조와 타락",
+    "num": 5,
+    "ref": "창세기 15:6",
+    "ref_en": "Genesis 15:6 (ESV)",
+    "ko": "아브람이 여호와를 믿으니 여호와께서 이를 그의 의로 여기시고",
+    "en": "And he believed the LORD, and he counted it to him as righteousness.",
+    "note": "이신칭의의 원형 · 믿음의 의"
+  },
+  {
+    "cat": "창조와 타락",
+    "num": 6,
+    "ref": "출애굽기 3:14",
+    "ref_en": "Exodus 3:14 (ESV)",
+    "ko": "하나님이 모세에게 이르시되 나는 스스로 있는 자이니라 또 이르시되 너는 이스라엘 자손에게 이같이 이르기를 스스로 있는 자가 나를 너희에게 보내셨다 하라",
+    "en": "God said to Moses, 'I AM WHO I AM.' And he said, 'Say this to the people of Israel: I AM has sent me to you.'",
+    "note": "하나님의 이름 계시 · 자존자(YHWH)"
+  },
+  {
+    "cat": "창조와 타락",
+    "num": 7,
+    "ref": "출애굽기 20:3~4",
+    "ref_en": "Exodus 20:3–4 (ESV)",
+    "ko": "너는 나 외에는 다른 신들을 네게 두지 말라 너를 위하여 새긴 우상을 만들지 말고 또 위로 하늘에 있는 것이나 아래로 땅에 있는 것이나 땅 아래 물 속에 있는 것의 어떤 형상도 만들지 말며",
+    "en": "You shall have no other gods before me. You shall not make for yourself a carved image, or any likeness of anything that is in heaven above, or that is in the earth beneath, or that is in the water under the earth.",
+    "note": "십계명의 핵심 · 제1·2 계명"
+  },
+  {
+    "cat": "창조와 타락",
+    "num": 8,
+    "ref": "레위기 19:2",
+    "ref_en": "Leviticus 19:2 (ESV)",
+    "ko": "너는 이스라엘 자손의 온 회중에게 말하여 이르라 너희는 거룩하라 이는 나 여호와 너희 하나님이 거룩함이니라",
+    "en": "Speak to all the congregation of the people of Israel and say to them, You shall be holy, for I the LORD your God am holy.",
+    "note": "거룩의 명령 · 성결법전의 핵심"
+  },
+  {
+    "cat": "창조와 타락",
+    "num": 9,
+    "ref": "민수기 6:24~26",
+    "ref_en": "Numbers 6:24–26 (ESV)",
+    "ko": "여호와는 네게 복을 주시고 너를 지키시기를 원하며 여호와는 그의 얼굴을 네게 비추사 은혜 베푸시기를 원하며 여호와는 그 얼굴을 네게로 향하여 드사 평강 주시기를 원하노라 할지니라 하라",
+    "en": "The LORD bless you and keep you; the LORD make his face to shine upon you and be gracious to you; the LORD lift up his countenance upon you and give you peace.",
+    "note": "제사장의 축도 · 아론의 축복"
+  },
+  {
+    "cat": "창조와 타락",
+    "num": 10,
+    "ref": "신명기 6:4~5",
+    "ref_en": "Deuteronomy 6:4–5 (ESV)",
+    "ko": "이스라엘아 들으라 우리 하나님 여호와는 오직 유일한 여호와이시니 너는 마음을 다하고 뜻을 다하고 힘을 다하여 네 하나님 여호와를 사랑하라",
+    "en": "Hear, O Israel: The LORD our God, the LORD is one. You shall love the LORD your God with all your heart and with all your soul and with all your might.",
+    "note": "쉐마(Shema) · 유일신 신앙의 고백"
+  },
+  {
+    "cat": "역사와 지혜",
+    "num": 11,
+    "ref": "여호수아 1:9",
+    "ref_en": "Joshua 1:9 (ESV)",
+    "ko": "내가 네게 명령한 것이 아니냐 강하고 담대하라 두려워하지 말며 놀라지 말라 네가 어디로 가든지 네 하나님 여호와가 너와 함께 하느니라 하시니라",
+    "en": "Have I not commanded you? Be strong and courageous. Do not be frightened, and do not be dismayed, for the LORD your God is with you wherever you go.",
+    "note": "여호수아의 위임 · 강하고 담대하라"
+  },
+  {
+    "cat": "역사와 지혜",
+    "num": 12,
+    "ref": "룻기 1:16",
+    "ref_en": "Ruth 1:16 (ESV)",
+    "ko": "룻이 이르되 내게 어머니를 떠나며 어머니를 따르지 말고 돌아가라 강권하지 마옵소서 어머니께서 가시는 곳에 나도 가고 어머니께서 머무시는 곳에서 나도 머물겠나이다 어머니의 백성이 나의 백성이 되고 어머니의 하나님이 나의 하나님이 되시리니",
+    "en": "But Ruth said, 'Do not urge me to leave you or to return from following you. For where you go I will go, and where you lodge I will lodge. Your people shall be my people, and your God my God.'",
+    "note": "룻의 헌신 · 신앙 결단의 모범"
+  },
+  {
+    "cat": "역사와 지혜",
+    "num": 13,
+    "ref": "사무엘상 15:22",
+    "ref_en": "1 Samuel 15:22 (ESV)",
+    "ko": "사무엘이 이르되 여호와께서 번제와 다른 제사를 그의 목소리를 청종하는 것을 좋아하심 같이 좋아하시겠나이까 순종이 제사보다 낫고 듣는 것이 숫양의 기름보다 나으니",
+    "en": "And Samuel said, 'Has the LORD as great delight in burnt offerings and sacrifices, as in obeying the voice of the LORD? Behold, to obey is better than sacrifice, and to listen than the fat of rams.'",
+    "note": "순종이 제사보다 낫다"
+  },
+  {
+    "cat": "역사와 지혜",
+    "num": 14,
+    "ref": "사무엘상 16:7",
+    "ref_en": "1 Samuel 16:7 (ESV)",
+    "ko": "여호와께서 사무엘에게 이르시되 그의 용모와 키를 보지 말라 내가 이미 그를 버렸노라 내가 보는 것은 사람과 같지 아니하니 사람은 외모를 보거니와 나 여호와는 중심을 보느니라 하시더라",
+    "en": "But the LORD said to Samuel, 'Do not look on his appearance or on the height of his stature, because I have rejected him. For the LORD sees not as man sees: man looks on the outward appearance, but the LORD looks on the heart.'",
+    "note": "중심을 보시는 하나님"
+  },
+  {
+    "cat": "역사와 지혜",
+    "num": 15,
+    "ref": "역대하 7:14",
+    "ref_en": "2 Chronicles 7:14 (ESV)",
+    "ko": "내 이름으로 일컫는 내 백성이 그들의 악한 길에서 떠나 스스로 낮추고 기도하여 내 얼굴을 찾으면 내가 하늘에서 듣고 그들의 죄를 사하고 그들의 땅을 고칠지라",
+    "en": "if my people who are called by my name humble themselves, and pray and seek my face and turn from their wicked ways, then I will hear from heaven and will forgive their sin and heal their land.",
+    "note": "회개와 회복의 약속"
+  },
+  {
+    "cat": "역사와 지혜",
+    "num": 16,
+    "ref": "욥기 1:21",
+    "ref_en": "Job 1:21 (ESV)",
+    "ko": "이르되 내가 모태에서 알몸으로 나왔사온즉 또한 알몸이 그리로 돌아가올지라 주신 이도 여호와시요 거두신 이도 여호와시오니 여호와의 이름이 찬송을 받으실지니이다 하고",
+    "en": "And he said, 'Naked I came from my mother's womb, and naked shall I return. The LORD gave, and the LORD has taken away; blessed be the name of the LORD.'",
+    "note": "고난 가운데서의 찬양 · 욥의 고백"
+  },
+  {
+    "cat": "역사와 지혜",
+    "num": 17,
+    "ref": "욥기 23:10",
+    "ref_en": "Job 23:10 (ESV)",
+    "ko": "그러나 내가 가는 길을 그가 아시나니 그가 나를 단련하신 후에는 내가 순금 같이 되어 나오리라",
+    "en": "But he knows the way that I take; when he has tried me, I shall come out as gold.",
+    "note": "연단의 의미 · 순금이 되리라"
+  },
+  {
+    "cat": "역사와 지혜",
+    "num": 18,
+    "ref": "시편 1:1~2",
+    "ref_en": "Psalm 1:1–2 (ESV)",
+    "ko": "복 있는 사람은 악인들의 꾀를 따르지 아니하며 죄인들의 길에 서지 아니하며 오만한 자들의 자리에 앉지 아니하고 오직 여호와의 율법을 즐거워하여 그의 율법을 주야로 묵상하는도다",
+    "en": "Blessed is the man who walks not in the counsel of the wicked, nor stands in the way of sinners, nor sits in the seat of scoffers; but his delight is in the law of the LORD, and on his law he meditates day and night.",
+    "note": "시편의 서곡 · 복 있는 사람"
+  },
+  {
+    "cat": "역사와 지혜",
+    "num": 19,
+    "ref": "시편 23:1~3",
+    "ref_en": "Psalm 23:1–3 (ESV)",
+    "ko": "여호와는 나의 목자시니 내게 부족함이 없으리로다 그가 나를 푸른 풀밭에 누이시며 쉴 만한 물 가로 인도하시는도다 내 영혼을 소생시키시고 자기 이름을 위하여 의의 길로 인도하시는도다",
+    "en": "The LORD is my shepherd; I shall not want. He makes me lie down in green pastures. He leads me beside still waters. He restores my soul. He leads me in paths of righteousness for his name's sake.",
+    "note": "목자의 시 · 가장 사랑받는 시편"
+  },
+  {
+    "cat": "역사와 지혜",
+    "num": 20,
+    "ref": "시편 46:1",
+    "ref_en": "Psalm 46:1 (ESV)",
+    "ko": "하나님은 우리의 피난처시요 힘이시니 환난 중에 만날 큰 도우심이라",
+    "en": "God is our refuge and strength, a very present help in trouble.",
+    "note": "피난처 되시는 하나님"
+  },
+  {
+    "cat": "역사와 지혜",
+    "num": 21,
+    "ref": "시편 103:1~2",
+    "ref_en": "Psalm 103:1–2 (ESV)",
+    "ko": "내 영혼아 여호와를 송축하라 내 속에 있는 것들아 다 그의 거룩한 이름을 송축하라 내 영혼아 여호와를 송축하며 그의 모든 은택을 잊지 말지어다",
+    "en": "Bless the LORD, O my soul, and all that is within me, bless his holy name! Bless the LORD, O my soul, and forget not all his benefits,",
+    "note": "감사의 시 · 모든 은택을 잊지 말라"
+  },
+  {
+    "cat": "역사와 지혜",
+    "num": 22,
+    "ref": "시편 119:105",
+    "ref_en": "Psalm 119:105 (ESV)",
+    "ko": "주의 말씀은 내 발에 등이요 내 길에 빛이니이다",
+    "en": "Your word is a lamp to my feet and a light to my path.",
+    "note": "말씀의 인도 · 등불과 빛"
+  },
+  {
+    "cat": "역사와 지혜",
+    "num": 23,
+    "ref": "시편 121:1~2",
+    "ref_en": "Psalm 121:1–2 (ESV)",
+    "ko": "내가 산을 향하여 눈을 들리라 나의 도움이 어디서 올까 나의 도움은 천지를 지으신 여호와에게서로다",
+    "en": "I lift up my eyes to the hills. From where does my help come? My help comes from the LORD, who made heaven and earth.",
+    "note": "순례자의 시 · 도움의 근원"
+  },
+  {
+    "cat": "역사와 지혜",
+    "num": 24,
+    "ref": "시편 139:1~2",
+    "ref_en": "Psalm 139:1–2 (ESV)",
+    "ko": "여호와여 주께서 나를 살펴보셨으므로 나를 아시나이다 주께서 내가 앉고 일어섬을 아시고 멀리서도 나의 생각을 밝히 아시오며",
+    "en": "O LORD, you have searched me and known me! You know when I sit down and when I rise up; you discern my thoughts from afar.",
+    "note": "전지하신 하나님의 살피심"
+  },
+  {
+    "cat": "역사와 지혜",
+    "num": 25,
+    "ref": "잠언 1:7",
+    "ref_en": "Proverbs 1:7 (ESV)",
+    "ko": "여호와를 경외하는 것이 지식의 근본이거늘 미련한 자는 지혜와 훈계를 멸시하느니라",
+    "en": "The fear of the LORD is the beginning of knowledge; fools despise wisdom and instruction.",
+    "note": "지혜의 근본 · 잠언의 주제구"
+  },
+  {
+    "cat": "역사와 지혜",
+    "num": 26,
+    "ref": "잠언 3:5~6",
+    "ref_en": "Proverbs 3:5–6 (ESV)",
+    "ko": "너는 마음을 다하여 여호와를 신뢰하고 네 명철을 의지하지 말라 너는 범사에 그를 인정하라 그리하면 네 길을 지도하시리라",
+    "en": "Trust in the LORD with all your heart, and do not lean on your own understanding. In all your ways acknowledge him, and he will make straight your paths.",
+    "note": "온전한 신뢰 · 인생 지침"
+  },
+  {
+    "cat": "역사와 지혜",
+    "num": 27,
+    "ref": "잠언 4:23",
+    "ref_en": "Proverbs 4:23 (ESV)",
+    "ko": "모든 지킬 만한 것 중에 더욱 네 마음을 지키라 생명의 근원이 이에서 남이니라",
+    "en": "Keep your heart with all vigilance, for from it flow the springs of life.",
+    "note": "마음을 지키라 · 생명의 근원"
+  },
+  {
+    "cat": "역사와 지혜",
+    "num": 28,
+    "ref": "잠언 16:9",
+    "ref_en": "Proverbs 16:9 (ESV)",
+    "ko": "사람이 마음으로 자기의 길을 계획할지라도 그의 걸음을 인도하시는 이는 여호와시니라",
+    "en": "The heart of man plans his way, but the LORD establishes his steps.",
+    "note": "인생의 주권 · 하나님의 인도"
+  },
+  {
+    "cat": "역사와 지혜",
+    "num": 29,
+    "ref": "전도서 3:1",
+    "ref_en": "Ecclesiastes 3:1 (ESV)",
+    "ko": "범사에 기한이 있고 천하 만사가 다 때가 있나니",
+    "en": "For everything there is a season, and a time for every matter under heaven:",
+    "note": "때의 신학 · 인생의 사계절"
+  },
+  {
+    "cat": "역사와 지혜",
+    "num": 30,
+    "ref": "전도서 12:13",
+    "ref_en": "Ecclesiastes 12:13 (ESV)",
+    "ko": "일의 결국을 다 들었으니 하나님을 경외하고 그의 명령들을 지킬지어다 이것이 모든 사람의 본분이니라",
+    "en": "The end of the matter; all has been heard. Fear God and keep his commandments, for this is the whole duty of man.",
+    "note": "전도서의 결론 · 사람의 본분"
+  },
+  {
+    "cat": "선지자 예언",
+    "num": 31,
+    "ref": "이사야 1:18",
+    "ref_en": "Isaiah 1:18 (ESV)",
+    "ko": "여호와께서 말씀하시되 오라 우리가 서로 변론하자 너희의 죄가 주홍 같을지라도 눈과 같이 희어질 것이요 진홍 같이 붉을지라도 양털 같이 희게 되리라",
+    "en": "Come now, let us reason together, says the LORD: though your sins are like scarlet, they shall be as white as snow; though they are red like crimson, they shall become like wool.",
+    "note": "용서의 초대 · 죄 사함의 약속"
+  },
+  {
+    "cat": "선지자 예언",
+    "num": 32,
+    "ref": "이사야 7:14",
+    "ref_en": "Isaiah 7:14 (ESV)",
+    "ko": "그러므로 주께서 친히 징조를 너희에게 주실 것이라 보라 처녀가 잉태하여 아들을 낳을 것이요 그의 이름을 임마누엘이라 하리라",
+    "en": "Therefore the Lord himself will give you a sign. Behold, the virgin shall conceive and bear a son, and shall call his name Immanuel.",
+    "note": "임마누엘 예언 · 그리스도의 탄생"
+  },
+  {
+    "cat": "선지자 예언",
+    "num": 33,
+    "ref": "이사야 9:6",
+    "ref_en": "Isaiah 9:6 (ESV)",
+    "ko": "이는 한 아기가 우리에게 났고 한 아들을 우리에게 주신 바 되었는데 그의 어깨에는 정사를 메었고 그의 이름은 기묘자라, 모사라, 전능하신 하나님이라, 영존하시는 아버지라, 평강의 왕이라 할 것임이라",
+    "en": "For to us a child is born, to us a son is given; and the government shall be upon his shoulder, and his name shall be called Wonderful Counselor, Mighty God, Everlasting Father, Prince of Peace.",
+    "note": "메시아의 네 칭호 · 성탄의 예언"
+  },
+  {
+    "cat": "선지자 예언",
+    "num": 34,
+    "ref": "이사야 40:8",
+    "ref_en": "Isaiah 40:8 (ESV)",
+    "ko": "풀은 마르고 꽃은 시드나 우리 하나님의 말씀은 영원히 서리라 하라",
+    "en": "The grass withers, the flower fades, but the word of our God will stand forever.",
+    "note": "말씀의 영원성"
+  },
+  {
+    "cat": "선지자 예언",
+    "num": 35,
+    "ref": "이사야 40:31",
+    "ref_en": "Isaiah 40:31 (ESV)",
+    "ko": "오직 여호와를 앙망하는 자는 새 힘을 얻으리니 독수리가 날개치며 올라감 같을 것이요 달음박질하여도 곤비하지 아니하겠고 걸어가도 피곤하지 아니하리로다",
+    "en": "but they who wait for the LORD shall renew their strength; they shall mount up with wings like eagles; they shall run and not be weary; they shall walk and not faint.",
+    "note": "기다림의 신학 · 새 힘의 약속"
+  },
+  {
+    "cat": "선지자 예언",
+    "num": 36,
+    "ref": "이사야 41:10",
+    "ref_en": "Isaiah 41:10 (ESV)",
+    "ko": "두려워하지 말라 내가 너와 함께 함이라 놀라지 말라 나는 네 하나님이 됨이라 내가 너를 굳세게 하리라 참으로 너를 도와 주리라 참으로 나의 의로운 오른손으로 너를 붙들리라",
+    "en": "fear not, for I am with you; be not dismayed, for I am your God; I will strengthen you, I will help you, I will uphold you with my righteous right hand.",
+    "note": "임재의 약속 · 위로의 말씀"
+  },
+  {
+    "cat": "선지자 예언",
+    "num": 37,
+    "ref": "이사야 53:5~6",
+    "ref_en": "Isaiah 53:5–6 (ESV)",
+    "ko": "그가 찔림은 우리의 허물 때문이요 그가 상함은 우리의 죄악 때문이라 그가 징계를 받으므로 우리는 평화를 누리고 그가 채찍에 맞으므로 우리는 나음을 받도다 우리는 다 양 같아서 그릇 행하여 각기 제 길로 갔거늘 여호와께서는 우리 모두의 죄악을 그에게 담당시키셨도다",
+    "en": "But he was pierced for our transgressions; he was crushed for our iniquities; upon him was the chastisement that brought us peace, and with his wounds we are healed. All we like sheep have gone astray; we have turned—every one—to his own way; and the LORD has laid on him the iniquity of us all.",
+    "note": "고난받는 종 · 대속의 예언"
+  },
+  {
+    "cat": "선지자 예언",
+    "num": 38,
+    "ref": "이사야 55:6~7",
+    "ref_en": "Isaiah 55:6–7 (ESV)",
+    "ko": "너희는 여호와를 만날 만한 때에 찾으라 가까이 계실 때에 그를 부르라 악인은 그의 길을, 불의한 자는 그의 생각을 버리고 여호와께로 돌아오라 그리하면 그가 긍휼히 여기시리라 우리 하나님께로 돌아오라 그가 너그럽게 용서하시리라",
+    "en": "Seek the LORD while he may be found; call upon him while he is near; let the wicked forsake his way, and the unrighteous man his thoughts; let him return to the LORD, that he may have compassion on him, and to our God, for he will abundantly pardon.",
+    "note": "회개의 초대 · 너그러운 용서"
+  },
+  {
+    "cat": "선지자 예언",
+    "num": 39,
+    "ref": "예레미야 29:11",
+    "ref_en": "Jeremiah 29:11 (ESV)",
+    "ko": "여호와의 말씀이니라 너희를 향한 나의 생각을 내가 아나니 평안이요 재앙이 아니니라 너희에게 미래와 희망을 주는 것이니라",
+    "en": "For I know the plans I have for you, declares the LORD, plans for welfare and not for evil, to give you a future and a hope.",
+    "note": "미래와 희망의 약속"
+  },
+  {
+    "cat": "선지자 예언",
+    "num": 40,
+    "ref": "예레미야 33:3",
+    "ref_en": "Jeremiah 33:3 (ESV)",
+    "ko": "너는 내게 부르짖으라 내가 네게 응답하겠고 네가 알지 못하는 크고 은밀한 일을 네게 보이리라",
+    "en": "Call to me and I will answer you, and will tell you great and hidden things that you have not known.",
+    "note": "기도 응답의 약속"
+  },
+  {
+    "cat": "선지자 예언",
+    "num": 41,
+    "ref": "예레미야애가 3:22~23",
+    "ref_en": "Lamentations 3:22–23 (ESV)",
+    "ko": "여호와의 인자와 긍휼이 무궁하시므로 우리가 진멸되지 아니함이니이다 이것들이 아침마다 새로우니 주의 성실하심이 크시도소이다",
+    "en": "The steadfast love of the LORD never ceases; his mercies never come to an end; they are new every morning; great is your faithfulness.",
+    "note": "아침마다 새로운 자비"
+  },
+  {
+    "cat": "선지자 예언",
+    "num": 42,
+    "ref": "에스겔 36:26",
+    "ref_en": "Ezekiel 36:26 (ESV)",
+    "ko": "또 새 영을 너희 속에 두고 새 마음을 너희에게 주되 너희 육신에서 굳은 마음을 제거하고 부드러운 마음을 줄 것이며",
+    "en": "And I will give you a new heart, and a new spirit I will put within you. And I will remove the heart of stone from your flesh and give you a heart of flesh.",
+    "note": "새 마음의 약속 · 영적 갱신"
+  },
+  {
+    "cat": "선지자 예언",
+    "num": 43,
+    "ref": "다니엘 12:3",
+    "ref_en": "Daniel 12:3 (ESV)",
+    "ko": "지혜 있는 자는 궁창의 빛과 같이 빛날 것이요 많은 사람을 옳은 데로 돌아오게 한 자는 별과 같이 영원토록 빛나리라",
+    "en": "And those who are wise shall shine like the brightness of the sky above; and those who turn many to righteousness, like the stars forever and ever.",
+    "note": "지혜자의 영광 · 전도자의 상급"
+  },
+  {
+    "cat": "선지자 예언",
+    "num": 44,
+    "ref": "미가 6:8",
+    "ref_en": "Micah 6:8 (ESV)",
+    "ko": "사람아 주께서 선한 것이 무엇임을 네게 보이셨나니 여호와께서 네게 구하시는 것은 오직 정의를 행하며 인자를 사랑하며 겸손하게 네 하나님과 함께 행하는 것이 아니냐",
+    "en": "He has told you, O man, what is good; and what does the LORD require of you but to do justice, and to love kindness, and to walk humbly with your God?",
+    "note": "신앙의 본질 · 정의·인자·겸손"
+  },
+  {
+    "cat": "선지자 예언",
+    "num": 45,
+    "ref": "하박국 3:17~18",
+    "ref_en": "Habakkuk 3:17–18 (ESV)",
+    "ko": "비록 무화과나무가 무성하지 못하며 포도나무에 열매가 없으며 감람나무에 소출이 없으며 밭에 먹을 것이 없으며 우리에 양이 없으며 외양간에 소가 없을지라도 나는 여호와로 말미암아 즐거워하며 나의 구원의 하나님으로 말미암아 기뻐하리로다",
+    "en": "Though the fig tree should not blossom, nor fruit be on the vines, the produce of the olive fail and the fields yield no food, the flock be cut off from the fold and there be no herd in the stalls, yet I will rejoice in the LORD; I will take joy in the God of my salvation.",
+    "note": "비록 그러할지라도 · 흔들리지 않는 기쁨"
+  },
+  {
+    "cat": "복음",
+    "num": 46,
+    "ref": "마태복음 1:21",
+    "ref_en": "Matthew 1:21 (ESV)",
+    "ko": "아들을 낳으리니 이름을 예수라 하라 이는 그가 자기 백성을 그들의 죄에서 구원할 자이심이라 하니라",
+    "en": "She will bear a son, and you shall call his name Jesus, for he will save his people from their sins.",
+    "note": "예수의 이름 · 구원의 사명"
+  },
+  {
+    "cat": "복음",
+    "num": 47,
+    "ref": "마태복음 4:4",
+    "ref_en": "Matthew 4:4 (ESV)",
+    "ko": "예수께서 대답하여 이르시되 기록되었으되 사람이 떡으로만 살 것이 아니요 하나님의 입으로부터 나오는 모든 말씀으로 살 것이라 하였느니라 하시니",
+    "en": "But he answered, 'It is written, \"Man shall not live by bread alone, but by every word that comes from the mouth of God.\"'",
+    "note": "광야 시험 · 말씀의 양식"
+  },
+  {
+    "cat": "복음",
+    "num": 48,
+    "ref": "마태복음 5:3~4",
+    "ref_en": "Matthew 5:3–4 (ESV)",
+    "ko": "심령이 가난한 자는 복이 있나니 천국이 그들의 것임이요 애통하는 자는 복이 있나니 그들이 위로를 받을 것임이요",
+    "en": "Blessed are the poor in spirit, for theirs is the kingdom of heaven. Blessed are those who mourn, for they shall be comforted.",
+    "note": "산상수훈 · 팔복의 시작"
+  },
+  {
+    "cat": "복음",
+    "num": 49,
+    "ref": "마태복음 6:33",
+    "ref_en": "Matthew 6:33 (ESV)",
+    "ko": "그런즉 너희는 먼저 그의 나라와 그의 의를 구하라 그리하면 이 모든 것을 너희에게 더하시리라",
+    "en": "But seek first the kingdom of God and his righteousness, and all these things will be added to you.",
+    "note": "삶의 우선순위 · 하나님 나라 우선"
+  },
+  {
+    "cat": "복음",
+    "num": 50,
+    "ref": "마태복음 11:28",
+    "ref_en": "Matthew 11:28 (ESV)",
+    "ko": "수고하고 무거운 짐 진 자들아 다 내게로 오라 내가 너희를 쉬게 하리라",
+    "en": "Come to me, all who labor and are heavy laden, and I will give you rest.",
+    "note": "예수의 초청 · 안식의 약속"
+  },
+  {
+    "cat": "복음",
+    "num": 51,
+    "ref": "마태복음 16:16",
+    "ref_en": "Matthew 16:16 (ESV)",
+    "ko": "시몬 베드로가 대답하여 이르되 주는 그리스도시요 살아 계신 하나님의 아들이시니이다",
+    "en": "Simon Peter replied, 'You are the Christ, the Son of the living God.'",
+    "note": "베드로의 신앙 고백"
+  },
+  {
+    "cat": "복음",
+    "num": 52,
+    "ref": "마태복음 22:37~39",
+    "ref_en": "Matthew 22:37–39 (ESV)",
+    "ko": "예수께서 이르시되 네 마음을 다하고 목숨을 다하고 뜻을 다하여 주 너희의 하나님을 사랑하라 하셨으니 이것이 크고 첫째 되는 계명이요 둘째도 그와 같으니 네 이웃을 네 자신 같이 사랑하라 하셨으니",
+    "en": "And he said to him, 'You shall love the Lord your God with all your heart and with all your soul and with all your mind. This is the great and first commandment. And a second is like it: You shall love your neighbor as yourself.'",
+    "note": "가장 큰 계명 · 사랑의 두 축"
+  },
+  {
+    "cat": "복음",
+    "num": 53,
+    "ref": "마태복음 28:19~20",
+    "ref_en": "Matthew 28:19–20 (ESV)",
+    "ko": "그러므로 너희는 가서 모든 민족을 제자로 삼아 아버지와 아들과 성령의 이름으로 세례를 베풀고 내가 너희에게 분부한 모든 것을 가르쳐 지키게 하라 볼지어다 내가 세상 끝날까지 너희와 항상 함께 있으리라 하시니라",
+    "en": "Go therefore and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit, teaching them to observe all that I have commanded you. And behold, I am with you always, to the end of the age.",
+    "note": "지상 대명령 · 선교의 사명"
+  },
+  {
+    "cat": "복음",
+    "num": 54,
+    "ref": "마가복음 1:15",
+    "ref_en": "Mark 1:15 (ESV)",
+    "ko": "이르시되 때가 찼고 하나님의 나라가 가까이 왔으니 회개하고 복음을 믿으라 하시더라",
+    "en": "and saying, 'The time is fulfilled, and the kingdom of God is at hand; repent and believe in the gospel.'",
+    "note": "예수의 첫 메시지 · 회개와 믿음"
+  },
+  {
+    "cat": "복음",
+    "num": 55,
+    "ref": "마가복음 10:45",
+    "ref_en": "Mark 10:45 (ESV)",
+    "ko": "인자가 온 것은 섬김을 받으려 함이 아니라 도리어 섬기려 하고 자기 목숨을 많은 사람의 대속물로 주려 함이니라",
+    "en": "For even the Son of Man came not to be served but to serve, and to give his life as a ransom for many.",
+    "note": "섬김의 종 · 대속의 목적"
+  },
+  {
+    "cat": "복음",
+    "num": 56,
+    "ref": "누가복음 19:10",
+    "ref_en": "Luke 19:10 (ESV)",
+    "ko": "인자가 온 것은 잃어버린 자를 찾아 구원하려 함이니라",
+    "en": "For the Son of Man came to seek and to save the lost.",
+    "note": "예수의 사명 선언 · 삭개오 사건"
+  },
+  {
+    "cat": "복음",
+    "num": 57,
+    "ref": "요한복음 1:1~2",
+    "ref_en": "John 1:1–2 (ESV)",
+    "ko": "태초에 말씀이 계시니라 이 말씀이 하나님과 함께 계셨으니 이 말씀은 곧 하나님이시니라 그가 태초에 하나님과 함께 계셨고",
+    "en": "In the beginning was the Word, and the Word was with God, and the Word was God. He was in the beginning with God.",
+    "note": "로고스 기독론 · 요한복음 서문"
+  },
+  {
+    "cat": "복음",
+    "num": 58,
+    "ref": "요한복음 1:12",
+    "ref_en": "John 1:12 (ESV)",
+    "ko": "영접하는 자 곧 그 이름을 믿는 자들에게는 하나님의 자녀가 되는 권세를 주셨으니",
+    "en": "But to all who did receive him, who believed in his name, he gave the right to become children of God,",
+    "note": "하나님 자녀의 권세"
+  },
+  {
+    "cat": "복음",
+    "num": 59,
+    "ref": "요한복음 1:14",
+    "ref_en": "John 1:14 (ESV)",
+    "ko": "말씀이 육신이 되어 우리 가운데 거하시매 우리가 그의 영광을 보니 아버지의 독생자의 영광이요 은혜와 진리가 충만하더라",
+    "en": "And the Word became flesh and dwelt among us, and we have seen his glory, glory as of the only Son from the Father, full of grace and truth.",
+    "note": "성육신 · 은혜와 진리"
+  },
+  {
+    "cat": "복음",
+    "num": 60,
+    "ref": "요한복음 3:16",
+    "ref_en": "John 3:16 (ESV)",
+    "ko": "하나님이 세상을 이처럼 사랑하사 독생자를 주셨으니 이는 그를 믿는 자마다 멸망하지 않고 영생을 얻게 하려 하심이라",
+    "en": "For God so loved the world, that he gave his only Son, that whoever believes in him should not perish but have eternal life.",
+    "note": "복음의 핵심 · 작은 성경"
+  },
+  {
+    "cat": "복음",
+    "num": 61,
+    "ref": "요한복음 4:24",
+    "ref_en": "John 4:24 (ESV)",
+    "ko": "하나님은 영이시니 예배하는 자가 영과 진리로 예배할지니라",
+    "en": "God is spirit, and those who worship him must worship in spirit and truth.",
+    "note": "참 예배의 본질"
+  },
+  {
+    "cat": "복음",
+    "num": 62,
+    "ref": "요한복음 8:32",
+    "ref_en": "John 8:32 (ESV)",
+    "ko": "진리를 알지니 진리가 너희를 자유롭게 하리라",
+    "en": "and you will know the truth, and the truth will set you free.",
+    "note": "진리의 자유"
+  },
+  {
+    "cat": "복음",
+    "num": 63,
+    "ref": "요한복음 11:25~26",
+    "ref_en": "John 11:25–26 (ESV)",
+    "ko": "예수께서 이르시되 나는 부활이요 생명이니 나를 믿는 자는 죽어도 살겠고 무릇 살아서 나를 믿는 자는 영원히 죽지 아니하리니 이것을 네가 믿느냐",
+    "en": "Jesus said to her, 'I am the resurrection and the life. Whoever believes in me, though he die, yet shall he live, and everyone who lives and believes in me shall never die. Do you believe this?'",
+    "note": "부활과 생명 · 나사로의 무덤에서"
+  },
+  {
+    "cat": "복음",
+    "num": 64,
+    "ref": "요한복음 14:6",
+    "ref_en": "John 14:6 (ESV)",
+    "ko": "예수께서 이르시되 내가 곧 길이요 진리요 생명이니 나로 말미암지 않고는 아버지께로 올 자가 없느니라",
+    "en": "Jesus said to him, 'I am the way, and the truth, and the life. No one comes to the Father except through me.'",
+    "note": "구원의 유일한 길"
+  },
+  {
+    "cat": "복음",
+    "num": 65,
+    "ref": "요한복음 15:5",
+    "ref_en": "John 15:5 (ESV)",
+    "ko": "나는 포도나무요 너희는 가지라 그가 내 안에, 내가 그 안에 거하면 사람이 열매를 많이 맺나니 나를 떠나서는 너희가 아무 것도 할 수 없음이라",
+    "en": "I am the vine; you are the branches. Whoever abides in me and I in him, he it is that bears much fruit, for apart from me you can do nothing.",
+    "note": "포도나무와 가지 · 거함의 신학"
+  },
+  {
+    "cat": "초대 교회",
+    "num": 66,
+    "ref": "사도행전 1:8",
+    "ref_en": "Acts 1:8 (ESV)",
+    "ko": "오직 성령이 너희에게 임하시면 너희가 권능을 받고 예루살렘과 온 유대와 사마리아와 땅 끝까지 이르러 내 증인이 되리라 하시니라",
+    "en": "But you will receive power when the Holy Spirit has come upon you, and you will be my witnesses in Jerusalem and in all Judea and Samaria, and to the end of the earth.",
+    "note": "성령의 권능 · 선교의 청사진"
+  },
+  {
+    "cat": "초대 교회",
+    "num": 67,
+    "ref": "사도행전 2:38",
+    "ref_en": "Acts 2:38 (ESV)",
+    "ko": "베드로가 이르되 너희가 회개하여 각각 예수 그리스도의 이름으로 세례를 받고 죄 사함을 받으라 그리하면 성령의 선물을 받으리니",
+    "en": "And Peter said to them, 'Repent and be baptized every one of you in the name of Jesus Christ for the forgiveness of your sins, and you will receive the gift of the Holy Spirit.'",
+    "note": "오순절 첫 설교 · 회개와 세례"
+  },
+  {
+    "cat": "초대 교회",
+    "num": 68,
+    "ref": "사도행전 4:12",
+    "ref_en": "Acts 4:12 (ESV)",
+    "ko": "다른 이로써는 구원을 받을 수 없나니 천하 사람 중에 구원을 받을 만한 다른 이름을 우리에게 주신 일이 없음이라 하였더라",
+    "en": "And there is salvation in no one else, for there is no other name under heaven given among men by which we must be saved.",
+    "note": "구원의 유일성"
+  },
+  {
+    "cat": "초대 교회",
+    "num": 69,
+    "ref": "사도행전 16:31",
+    "ref_en": "Acts 16:31 (ESV)",
+    "ko": "이르되 주 예수를 믿으라 그리하면 너와 네 집이 구원을 받으리라 하고",
+    "en": "And they said, 'Believe in the Lord Jesus, and you will be saved, you and your household.'",
+    "note": "빌립보 간수의 회심"
+  },
+  {
+    "cat": "초대 교회",
+    "num": 70,
+    "ref": "사도행전 20:24",
+    "ref_en": "Acts 20:24 (ESV)",
+    "ko": "내가 달려갈 길과 주 예수께 받은 사명 곧 하나님의 은혜의 복음을 증언하는 일을 마치려 함에는 나의 생명조차 조금도 귀한 것으로 여기지 아니하노라",
+    "en": "But I do not account my life of any value nor as precious to myself, if only I may finish my course and the ministry that I received from the Lord Jesus, to testify to the gospel of the grace of God.",
+    "note": "바울의 사명 고백 · 에베소 장로들에게"
+  },
+  {
+    "cat": "바울 서신",
+    "num": 71,
+    "ref": "로마서 1:16~17",
+    "ref_en": "Romans 1:16–17 (ESV)",
+    "ko": "내가 복음을 부끄러워하지 아니하노니 이 복음은 모든 믿는 자에게 구원을 주시는 하나님의 능력이 됨이라 먼저는 유대인에게요 그리고 헬라인에게로다 복음에는 하나님의 의가 나타나서 믿음으로 믿음에 이르게 하나니 기록된 바 오직 의인은 믿음으로 살리라 함과 같으니라",
+    "en": "For I am not ashamed of the gospel, for it is the power of God for salvation to everyone who believes, to the Jew first and also to the Greek. For in it the righteousness of God is revealed from faith for faith, as it is written, 'The righteous shall live by faith.'",
+    "note": "로마서의 주제 · 이신칭의"
+  },
+  {
+    "cat": "바울 서신",
+    "num": 72,
+    "ref": "로마서 3:23",
+    "ref_en": "Romans 3:23 (ESV)",
+    "ko": "모든 사람이 죄를 범하였으매 하나님의 영광에 이르지 못하더니",
+    "en": "for all have sinned and fall short of the glory of God,",
+    "note": "보편적 죄성 · 인간의 한계"
+  },
+  {
+    "cat": "바울 서신",
+    "num": 73,
+    "ref": "로마서 5:8",
+    "ref_en": "Romans 5:8 (ESV)",
+    "ko": "우리가 아직 죄인 되었을 때에 그리스도께서 우리를 위하여 죽으심으로 하나님께서 우리에 대한 자기의 사랑을 확증하셨느니라",
+    "en": "but God shows his love for us in that while we were still sinners, Christ died for us.",
+    "note": "하나님 사랑의 확증"
+  },
+  {
+    "cat": "바울 서신",
+    "num": 74,
+    "ref": "로마서 6:23",
+    "ref_en": "Romans 6:23 (ESV)",
+    "ko": "죄의 삯은 사망이요 하나님의 은사는 그리스도 예수 우리 주 안에 있는 영생이니라",
+    "en": "For the wages of sin is death, but the free gift of God is eternal life in Christ Jesus our Lord.",
+    "note": "죄와 은사의 대비"
+  },
+  {
+    "cat": "바울 서신",
+    "num": 75,
+    "ref": "로마서 8:1~2",
+    "ref_en": "Romans 8:1–2 (ESV)",
+    "ko": "그러므로 이제 그리스도 예수 안에 있는 자에게는 결코 정죄함이 없나니 이는 그리스도 예수 안에 있는 생명의 성령의 법이 죄와 사망의 법에서 너를 해방하였음이라",
+    "en": "There is therefore now no condemnation for those who are in Christ Jesus. For the law of the Spirit of life has set you free in Christ Jesus from the law of sin and death.",
+    "note": "정죄함 없음 · 그리스도 안의 자유"
+  },
+  {
+    "cat": "바울 서신",
+    "num": 76,
+    "ref": "로마서 8:28",
+    "ref_en": "Romans 8:28 (ESV)",
+    "ko": "우리가 알거니와 하나님을 사랑하는 자 곧 그의 뜻대로 부르심을 입은 자들에게는 모든 것이 합력하여 선을 이루느니라",
+    "en": "And we know that for those who love God all things work together for good, for those who are called according to his purpose.",
+    "note": "합력하여 선을 이룸"
+  },
+  {
+    "cat": "바울 서신",
+    "num": 77,
+    "ref": "로마서 8:38~39",
+    "ref_en": "Romans 8:38–39 (ESV)",
+    "ko": "내가 확신하노니 사망이나 생명이나 천사들이나 권세자들이나 현재 일이나 장래 일이나 능력이나 높음이나 깊음이나 다른 어떤 피조물이라도 우리를 우리 주 그리스도 예수 안에 있는 하나님의 사랑에서 끊을 수 없으리라",
+    "en": "For I am sure that neither death nor life, nor angels nor rulers, nor things present nor things to come, nor powers, nor height nor depth, nor anything else in all creation, will be able to separate us from the love of God in Christ Jesus our Lord.",
+    "note": "끊을 수 없는 사랑"
+  },
+  {
+    "cat": "바울 서신",
+    "num": 78,
+    "ref": "로마서 12:1~2",
+    "ref_en": "Romans 12:1–2 (ESV)",
+    "ko": "그러므로 형제들아 내가 하나님의 모든 자비하심으로 너희를 권하노니 너희 몸을 하나님이 기뻐하시는 거룩한 산 제물로 드리라 이는 너희가 드릴 영적 예배니라 너희는 이 세대를 본받지 말고 오직 마음을 새롭게 함으로 변화를 받아 하나님의 선하시고 기뻐하시고 온전하신 뜻이 무엇인지 분별하도록 하라",
+    "en": "I appeal to you therefore, brothers, by the mercies of God, to present your bodies as a living sacrifice, holy and acceptable to God, which is your spiritual worship. Do not be conformed to this world, but be transformed by the renewal of your mind, that by testing you may discern what is the will of God, what is good and acceptable and perfect.",
+    "note": "산 제물 · 영적 예배"
+  },
+  {
+    "cat": "바울 서신",
+    "num": 79,
+    "ref": "고린도전서 1:18",
+    "ref_en": "1 Corinthians 1:18 (ESV)",
+    "ko": "십자가의 도가 멸망하는 자들에게는 미련한 것이요 구원을 받는 우리에게는 하나님의 능력이라",
+    "en": "For the word of the cross is folly to those who are perishing, but to us who are being saved it is the power of God.",
+    "note": "십자가의 도 · 하나님의 능력"
+  },
+  {
+    "cat": "바울 서신",
+    "num": 80,
+    "ref": "고린도전서 10:13",
+    "ref_en": "1 Corinthians 10:13 (ESV)",
+    "ko": "사람이 감당할 시험 밖에는 너희가 당한 것이 없나니 오직 하나님은 미쁘사 너희가 감당하지 못할 시험 당함을 허락하지 아니하시고 시험 당할 즈음에 또한 피할 길을 내사 너희로 능히 감당하게 하시느니라",
+    "en": "No temptation has overtaken you that is not common to man. God is faithful, and he will not let you be tempted beyond your ability, but with the temptation he will also provide the way of escape, that you may be able to endure it.",
+    "note": "감당할 시험 · 피할 길의 약속"
+  },
+  {
+    "cat": "바울 서신",
+    "num": 81,
+    "ref": "고린도전서 13:4~7",
+    "ref_en": "1 Corinthians 13:4–7 (ESV)",
+    "ko": "사랑은 언제나 오래 참고 사랑은 온유하며 시기하지 아니하며 사랑은 자랑하지 아니하며 교만하지 아니하며 무례히 행하지 아니하며 자기의 유익을 구하지 아니하며 성내지 아니하며 악한 것을 생각하지 아니하며 불의를 기뻐하지 아니하며 진리와 함께 기뻐하고 모든 것을 참으며 모든 것을 믿으며 모든 것을 바라며 모든 것을 견디느니라",
+    "en": "Love is patient and kind; love does not envy or boast; it is not arrogant or rude. It does not insist on its own way; it is not irritable or resentful; it does not rejoice at wrongdoing, but rejoices with the truth. Love bears all things, believes all things, hopes all things, endures all things.",
+    "note": "사랑장 · 사랑의 성품"
+  },
+  {
+    "cat": "바울 서신",
+    "num": 82,
+    "ref": "고린도전서 15:19~20",
+    "ref_en": "1 Corinthians 15:19–20 (ESV)",
+    "ko": "만일 그리스도 안에서 우리가 바라는 것이 다만 이 세상의 삶뿐이면 모든 사람 가운데 우리가 더욱 불쌍한 자이리라 그러나 이제 그리스도께서 죽은 자 가운데서 다시 살아나사 잠자는 자들의 첫 열매가 되셨도다",
+    "en": "If in Christ we have hope in this life only, we are of all people most to be pitied. But in fact Christ has been raised from the dead, the firstfruits of those who have fallen asleep.",
+    "note": "부활의 첫 열매"
+  },
+  {
+    "cat": "바울 서신",
+    "num": 83,
+    "ref": "고린도후서 5:17",
+    "ref_en": "2 Corinthians 5:17 (ESV)",
+    "ko": "그런즉 누구든지 그리스도 안에 있으면 새로운 피조물이라 이전 것은 지나갔으니 보라 새 것이 되었도다",
+    "en": "Therefore, if anyone is in Christ, he is a new creation. The old has passed away; behold, the new has come.",
+    "note": "새로운 피조물"
+  },
+  {
+    "cat": "바울 서신",
+    "num": 84,
+    "ref": "갈라디아서 2:20",
+    "ref_en": "Galatians 2:20 (ESV)",
+    "ko": "내가 그리스도와 함께 십자가에 못 박혔나니 그런즉 이제는 내가 사는 것이 아니요 오직 내 안에 그리스도께서 사시는 것이라 이제 내가 육체 가운데 사는 것은 나를 사랑하사 나를 위하여 자기 자신을 버리신 하나님의 아들을 믿는 믿음 안에서 사는 것이라",
+    "en": "I have been crucified with Christ. It is no longer I who live, but Christ who lives in me. And the life I now live in the flesh I live by faith in the Son of God, who loved me and gave himself for me.",
+    "note": "그리스도와의 연합"
+  },
+  {
+    "cat": "바울 서신",
+    "num": 85,
+    "ref": "갈라디아서 5:22~23",
+    "ref_en": "Galatians 5:22–23 (ESV)",
+    "ko": "오직 성령의 열매는 사랑과 희락과 화평과 오래 참음과 자비와 양선과 충성과 온유와 절제니 이같은 것을 금지할 법이 없느니라",
+    "en": "But the fruit of the Spirit is love, joy, peace, patience, kindness, goodness, faithfulness, gentleness, self-control; against such things there is no law.",
+    "note": "성령의 아홉 가지 열매"
+  },
+  {
+    "cat": "바울 서신",
+    "num": 86,
+    "ref": "에베소서 2:8~9",
+    "ref_en": "Ephesians 2:8–9 (ESV)",
+    "ko": "너희는 그 은혜에 의하여 믿음으로 말미암아 구원을 받았으니 이것은 너희에게서 난 것이 아니요 하나님의 선물이라 행위에서 난 것이 아니니 이는 누구든지 자랑하지 못하게 함이라",
+    "en": "For by grace you have been saved through faith. And this is not your own doing; it is the gift of God, not a result of works, so that no one may boast.",
+    "note": "오직 은혜로, 오직 믿음으로"
+  },
+  {
+    "cat": "바울 서신",
+    "num": 87,
+    "ref": "빌립보서 4:6~7",
+    "ref_en": "Philippians 4:6–7 (ESV)",
+    "ko": "아무 것도 염려하지 말고 다만 모든 일에 기도와 간구로, 너희 구할 것을 감사함으로 하나님께 아뢰라 그리하면 모든 지각에 뛰어난 하나님의 평강이 그리스도 예수 안에서 너희 마음과 생각을 지키시리라",
+    "en": "do not be anxious about anything, but in everything by prayer and supplication with thanksgiving let your requests be made known to God. And the peace of God, which surpasses all understanding, will guard your hearts and your minds in Christ Jesus.",
+    "note": "기도와 평강의 약속"
+  },
+  {
+    "cat": "바울 서신",
+    "num": 88,
+    "ref": "빌립보서 4:13",
+    "ref_en": "Philippians 4:13 (ESV)",
+    "ko": "내게 능력 주시는 자 안에서 내가 모든 것을 할 수 있느니라",
+    "en": "I can do all things through him who strengthens me.",
+    "note": "능력의 근원"
+  },
+  {
+    "cat": "바울 서신",
+    "num": 89,
+    "ref": "골로새서 3:17",
+    "ref_en": "Colossians 3:17 (ESV)",
+    "ko": "또 무엇을 하든지 말에나 일에나 다 주 예수의 이름으로 하고 그를 힘입어 하나님 아버지께 감사하라",
+    "en": "And whatever you do, in word or deed, do everything in the name of the Lord Jesus, giving thanks to God the Father through him.",
+    "note": "예수의 이름으로 모든 일을"
+  },
+  {
+    "cat": "바울 서신",
+    "num": 90,
+    "ref": "데살로니가전서 5:16~18",
+    "ref_en": "1 Thessalonians 5:16–18 (ESV)",
+    "ko": "항상 기뻐하라 쉬지 말고 기도하라 범사에 감사하라 이것이 그리스도 예수 안에서 너희를 향하신 하나님의 뜻이니라",
+    "en": "Rejoice always, pray without ceasing, give thanks in all circumstances; for this is the will of God in Christ Jesus for you.",
+    "note": "그리스도인의 세 가지 명령"
+  },
+  {
+    "cat": "공동 서신·계시록",
+    "num": 91,
+    "ref": "디모데후서 3:16~17",
+    "ref_en": "2 Timothy 3:16–17 (ESV)",
+    "ko": "모든 성경은 하나님의 감동으로 된 것으로 교훈과 책망과 바르게 함과 의로 교육하기에 유익하니 이는 하나님의 사람으로 온전하게 하며 모든 선한 일을 행할 능력을 갖추게 하려 함이라",
+    "en": "All Scripture is breathed out by God and profitable for teaching, for reproof, for correction, and for training in righteousness, that the man of God may be complete, equipped for every good work.",
+    "note": "성경 영감설의 근거"
+  },
+  {
+    "cat": "공동 서신·계시록",
+    "num": 92,
+    "ref": "히브리서 4:12",
+    "ref_en": "Hebrews 4:12 (ESV)",
+    "ko": "하나님의 말씀은 살아 있고 활력이 있어 좌우에 날선 어떤 검보다도 예리하여 혼과 영과 및 관절과 골수를 찔러 쪼개기까지 하며 또 마음의 생각과 뜻을 판단하나니",
+    "en": "For the word of God is living and active, sharper than any two-edged sword, piercing to the division of soul and of spirit, of joints and of marrow, and discerning the thoughts and intentions of the heart.",
+    "note": "살아 있는 말씀"
+  },
+  {
+    "cat": "공동 서신·계시록",
+    "num": 93,
+    "ref": "히브리서 11:1",
+    "ref_en": "Hebrews 11:1 (ESV)",
+    "ko": "믿음은 바라는 것들의 실상이요 보이지 않는 것들의 증거니",
+    "en": "Now faith is the assurance of things hoped for, the conviction of things not seen.",
+    "note": "믿음장 · 믿음의 정의"
+  },
+  {
+    "cat": "공동 서신·계시록",
+    "num": 94,
+    "ref": "야고보서 2:26",
+    "ref_en": "James 2:26 (ESV)",
+    "ko": "영혼 없는 몸이 죽은 것 같이 행함이 없는 믿음은 죽은 것이니라",
+    "en": "For as the body apart from the spirit is dead, so also faith apart from works is dead.",
+    "note": "행함이 있는 믿음"
+  },
+  {
+    "cat": "공동 서신·계시록",
+    "num": 95,
+    "ref": "베드로전서 5:7",
+    "ref_en": "1 Peter 5:7 (ESV)",
+    "ko": "너희 염려를 다 주께 맡기라 이는 그가 너희를 돌보심이라",
+    "en": "casting all your anxieties on him, because he cares for you.",
+    "note": "염려를 주께 맡기라"
+  },
+  {
+    "cat": "공동 서신·계시록",
+    "num": 96,
+    "ref": "요한일서 1:9",
+    "ref_en": "1 John 1:9 (ESV)",
+    "ko": "만일 우리가 우리 죄를 자백하면 그는 미쁘시고 의로우사 우리 죄를 사하시며 우리를 모든 불의에서 깨끗하게 하실 것이요",
+    "en": "If we confess our sins, he is faithful and just to forgive us our sins and to cleanse us from all unrighteousness.",
+    "note": "자백과 용서의 약속"
+  },
+  {
+    "cat": "공동 서신·계시록",
+    "num": 97,
+    "ref": "요한일서 4:7~8",
+    "ref_en": "1 John 4:7–8 (ESV)",
+    "ko": "사랑하는 자들아 우리가 서로 사랑하자 사랑은 하나님께 속한 것이니 사랑하는 자마다 하나님으로부터 나서 하나님을 알고 사랑하지 아니하는 자는 하나님을 알지 못하나니 이는 하나님은 사랑이심이라",
+    "en": "Beloved, let us love one another, for love is from God, and whoever loves has been born of God and knows God. Anyone who does not love does not know God, because God is love.",
+    "note": "하나님은 사랑이시라"
+  },
+  {
+    "cat": "공동 서신·계시록",
+    "num": 98,
+    "ref": "요한계시록 3:20",
+    "ref_en": "Revelation 3:20 (ESV)",
+    "ko": "볼지어다 내가 문 밖에 서서 두드리노니 누구든지 내 음성을 듣고 문을 열면 내가 그에게로 들어가 그와 더불어 먹고 그는 나와 더불어 먹으리라",
+    "en": "Behold, I stand at the door and knock. If anyone hears my voice and opens the door, I will come in to him and eat with him, and he with me.",
+    "note": "문 밖의 그리스도"
+  },
+  {
+    "cat": "공동 서신·계시록",
+    "num": 99,
+    "ref": "요한계시록 21:3~4",
+    "ref_en": "Revelation 21:3–4 (ESV)",
+    "ko": "내가 들으니 보좌에서 큰 음성이 나서 이르되 보라 하나님의 장막이 사람들과 함께 있으매 하나님이 그들과 함께 계시리니 그들은 하나님의 백성이 되고 하나님은 친히 그들과 함께 계셔서 모든 눈물을 그 눈에서 닦아 주시니 다시는 사망이 없고 애통하는 것이나 곡하는 것이나 아픈 것이 다시 있지 아니하리니 처음 것들이 다 지나갔음이러라",
+    "en": "And I heard a loud voice from the throne saying, 'Behold, the dwelling place of God is with man. He will dwell with them, and they will be his people, and God himself will be with them as their God. He will wipe away every tear from their eyes, and death shall be no more, neither shall there be mourning, nor crying, nor pain anymore, for the former things have passed away.'",
+    "note": "새 하늘과 새 땅의 약속"
+  },
+  {
+    "cat": "공동 서신·계시록",
+    "num": 100,
+    "ref": "요한계시록 22:20",
+    "ref_en": "Revelation 22:20 (ESV)",
+    "ko": "이것들을 증언하신 이가 이르시되 내가 진실로 속히 오리라 하시거늘 아멘 주 예수여 오시옵소서",
+    "en": "He who testifies to these things says, 'Surely I am coming soon.' Amen. Come, Lord Jesus!",
+    "note": "마라나타 · 성경의 마지막 기도"
+  }
+]

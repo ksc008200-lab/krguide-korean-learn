@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>로그인 | KR Guide</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Noto Sans KR',sans-serif;min-height:100vh;display:flex;flex-direction:column}
+a{text-decoration:none}
+
+/* Layout */
+.wrap{flex:1;display:flex;min-height:100vh}
+
+/* Left panel */
+.left{flex:1;background:linear-gradient(145deg,#0f172a 0%,#1e3a5f 50%,#0f4c81 100%);display:flex;flex-direction:column;justify-content:center;align-items:center;padding:3rem;position:relative;overflow:hidden}
+.left::before{content:'';position:absolute;top:-30%;left:-20%;width:600px;height:600px;background:radial-gradient(circle,rgba(59,130,246,.25),transparent 70%);pointer-events:none}
+.left::after{content:'';position:absolute;bottom:-20%;right:-10%;width:400px;height:400px;background:radial-gradient(circle,rgba(16,185,129,.15),transparent 70%);pointer-events:none}
+.left-inner{position:relative;z-index:1;text-align:center;max-width:380px}
+.brand{font-size:2rem;font-weight:900;color:#fff;letter-spacing:-1px;margin-bottom:1rem}
+.brand span{color:#60a5fa}
+.tagline{font-size:1.25rem;font-weight:700;color:#e2e8f0;margin-bottom:.75rem;line-height:1.4}
+.desc{color:#94a3b8;font-size:.95rem;line-height:1.7;margin-bottom:2rem}
+.features{display:flex;flex-direction:column;gap:.625rem;text-align:left}
+.feature{display:flex;align-items:center;gap:.75rem;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:10px;padding:.75rem 1rem;color:#e2e8f0;font-size:.875rem}
+.feature-icon{font-size:1.25rem;flex-shrink:0}
+
+/* Right panel */
+.right{width:480px;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:3rem 2.5rem;background:#fff}
+.form-box{width:100%;max-width:380px}
+.form-title{font-size:1.75rem;font-weight:800;color:#0f172a;margin-bottom:.375rem}
+.form-sub{color:#64748b;font-size:.95rem;margin-bottom:2rem}
+
+/* Google btn */
+.btn-google{width:100%;padding:.875rem;background:#fff;color:#1e293b;border:1.5px solid #e2e8f0;border-radius:10px;font-size:.95rem;font-weight:600;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:.75rem;transition:all .2s;box-shadow:0 1px 4px rgba(0,0,0,.06)}
+.btn-google:hover{border-color:#93c5fd;box-shadow:0 4px 16px rgba(59,130,246,.15);transform:translateY(-1px)}
+
+/* Divider */
+.divider{display:flex;align-items:center;gap:.75rem;margin:1.5rem 0;color:#94a3b8;font-size:.8rem;font-weight:600;letter-spacing:.05em}
+.divider::before,.divider::after{content:'';flex:1;height:1px;background:#f1f5f9}
+
+/* Form */
+.form-group{margin-bottom:1.125rem}
+label{display:block;font-size:.8rem;font-weight:700;color:#374151;margin-bottom:.375rem;letter-spacing:.03em;text-transform:uppercase}
+input{width:100%;padding:.8rem 1rem;border:1.5px solid #e2e8f0;border-radius:10px;font-size:.95rem;color:#0f172a;transition:all .2s;background:#f8fafc}
+input:focus{outline:none;border-color:#3b82f6;background:#fff;box-shadow:0 0 0 3px rgba(59,130,246,.1)}
+
+/* Submit btn */
+.btn{width:100%;padding:.9rem;background:linear-gradient(135deg,#2563eb,#1d4ed8);color:#fff;border:none;border-radius:10px;font-size:1rem;font-weight:700;cursor:pointer;transition:all .2s;box-shadow:0 4px 12px rgba(37,99,235,.3);margin-top:.25rem}
+.btn:hover{transform:translateY(-1px);box-shadow:0 6px 20px rgba(37,99,235,.4)}
+.btn:disabled{background:#94a3b8;box-shadow:none;transform:none;cursor:not-allowed}
+
+/* Links */
+.forgot{text-align:right;margin-top:-.5rem;margin-bottom:1.25rem}
+.forgot a{font-size:.8rem;color:#3b82f6;font-weight:600}
+.forgot a:hover{color:#1d4ed8}
+.bottom-link{text-align:center;margin-top:1.5rem;font-size:.875rem;color:#64748b}
+.bottom-link a{color:#2563eb;font-weight:700}
+.bottom-link a:hover{color:#1d4ed8}
+
+/* Messages */
+.msg{border-radius:10px;padding:.75rem 1rem;margin-bottom:1rem;font-size:.875rem;display:none}
+.error{background:#fef2f2;color:#dc2626;border:1px solid #fecaca}
+
+/* Mobile */
+@media(max-width:768px){
+  .left{display:none}
+  .right{width:100%;padding:2rem 1.5rem}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <!-- Left: Brand Panel -->
+  <div class="left">
+    <div class="left-inner">
+      <div class="brand"><span>KR</span> Guide</div>
+      <p class="tagline">한국의 모든 것을<br>한 곳에서</p>
+      <p class="desc">여행, 생활, 한국어까지 — 190개 이상의 가이드와 학습 자료로 한국을 완벽하게 준비하세요.</p>
+      <div class="features">
+        <div class="feature"><span class="feature-icon">📚</span>한국어 학습 자료 무료 열람</div>
+        <div class="feature"><span class="feature-icon">🗺️</span>190+ 한국 여행 & 생활 가이드</div>
+        <div class="feature"><span class="feature-icon">🌍</span>전세계 언어로 번역 제공</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Right: Form Panel -->
+  <div class="right">
+    <div class="form-box">
+      <h1 class="form-title">다시 오셨군요! 👋</h1>
+      <p class="form-sub">KR Guide 계정으로 로그인하세요</p>
+
+      <button class="btn-google" onclick="location.href='https://auth.krguide.com/auth/google'">
+        <svg width="20" height="20" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg>
+        Google로 로그인
+      </button>
+
+      <div class="divider">또는 이메일로</div>
+
+      <div class="msg error" id="err"></div>
+      <form id="form">
+        <div class="form-group">
+          <label for="email">이메일</label>
+          <input type="email" id="email" placeholder="your@email.com" required autocomplete="email">
+        </div>
+        <div class="form-group">
+          <label for="pw">비밀번호</label>
+          <input type="password" id="pw" placeholder="••••••••" required autocomplete="current-password">
+        </div>
+        <div class="forgot"><a href="/forgot-password/">비밀번호 찾기</a></div>
+        <button type="submit" class="btn" id="btn">로그인</button>
+      </form>
+
+      <div class="bottom-link">
+        아직 회원이 아니신가요? <a href="/register/">무료로 시작하기 →</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+const AUTH='https://auth.krguide.com';
+const redir=new URLSearchParams(location.search).get('redirect')||'/korean-library/';
+document.getElementById('form').addEventListener('submit',async e=>{
+  e.preventDefault();
+  const btn=document.getElementById('btn'),err=document.getElementById('err');
+  err.style.display='none';btn.disabled=true;btn.textContent='로그인 중...';
+  try{
+    const r=await fetch(`${AUTH}/auth/login`,{method:'POST',credentials:'include',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({email:document.getElementById('email').value,password:document.getElementById('pw').value})});
+    const d=await r.json();
+    if(r.ok){location.href=redir;}
+    else{err.textContent=d.error||'이메일 또는 비밀번호가 올바르지 않습니다.';err.style.display='block';btn.disabled=false;btn.textContent='로그인';}
+  }catch{err.textContent='서버에 연결할 수 없습니다. 잠시 후 다시 시도해주세요.';err.style.display='block';btn.disabled=false;btn.textContent='로그인';}
+});
+</script>
+</body>
+</html>

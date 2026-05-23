@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>회원가입 | KR Guide</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Noto Sans KR',sans-serif;min-height:100vh;display:flex;flex-direction:column}
+a{text-decoration:none}
+.wrap{flex:1;display:flex;min-height:100vh}
+
+/* Left panel */
+.left{flex:1;background:linear-gradient(145deg,#064e3b 0%,#065f46 50%,#047857 100%);display:flex;flex-direction:column;justify-content:center;align-items:center;padding:3rem;position:relative;overflow:hidden}
+.left::before{content:'';position:absolute;top:-20%;left:-10%;width:500px;height:500px;background:radial-gradient(circle,rgba(52,211,153,.2),transparent 70%);pointer-events:none}
+.left::after{content:'';position:absolute;bottom:-20%;right:-10%;width:350px;height:350px;background:radial-gradient(circle,rgba(16,185,129,.15),transparent 70%);pointer-events:none}
+.left-inner{position:relative;z-index:1;text-align:center;max-width:380px}
+.brand{font-size:2rem;font-weight:900;color:#fff;letter-spacing:-1px;margin-bottom:1rem}
+.brand span{color:#6ee7b7}
+.tagline{font-size:1.25rem;font-weight:700;color:#d1fae5;margin-bottom:.75rem;line-height:1.4}
+.desc{color:#a7f3d0;font-size:.95rem;line-height:1.7;margin-bottom:2rem}
+.plan-box{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:14px;padding:1.5rem;text-align:left}
+.plan-title{color:#fff;font-weight:800;font-size:1rem;margin-bottom:1rem;display:flex;align-items:center;gap:.5rem}
+.plan-item{display:flex;align-items:center;gap:.625rem;color:#d1fae5;font-size:.875rem;padding:.35rem 0}
+.plan-item::before{content:'✓';color:#6ee7b7;font-weight:800;font-size:1rem}
+.plan-free{margin-top:1rem;background:rgba(255,255,255,.08);border-radius:8px;padding:.75rem 1rem;text-align:center;color:#a7f3d0;font-size:.8rem}
+.plan-free strong{color:#fff;display:block;font-size:1rem;margin-bottom:.25rem}
+
+/* Right panel */
+.right{width:500px;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:2.5rem 2rem;background:#fff;overflow-y:auto}
+.form-box{width:100%;max-width:400px}
+.form-title{font-size:1.6rem;font-weight:800;color:#0f172a;margin-bottom:.375rem}
+.form-sub{color:#64748b;font-size:.9rem;margin-bottom:1.75rem}
+
+.btn-google{width:100%;padding:.875rem;background:#fff;color:#1e293b;border:1.5px solid #e2e8f0;border-radius:10px;font-size:.95rem;font-weight:600;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:.75rem;transition:all .2s;box-shadow:0 1px 4px rgba(0,0,0,.06)}
+.btn-google:hover{border-color:#6ee7b7;box-shadow:0 4px 16px rgba(16,185,129,.15);transform:translateY(-1px)}
+
+.divider{display:flex;align-items:center;gap:.75rem;margin:1.25rem 0;color:#94a3b8;font-size:.8rem;font-weight:600;letter-spacing:.05em}
+.divider::before,.divider::after{content:'';flex:1;height:1px;background:#f1f5f9}
+
+.form-group{margin-bottom:1rem}
+label{display:block;font-size:.8rem;font-weight:700;color:#374151;margin-bottom:.375rem;letter-spacing:.03em;text-transform:uppercase}
+input{width:100%;padding:.8rem 1rem;border:1.5px solid #e2e8f0;border-radius:10px;font-size:.95rem;color:#0f172a;transition:all .2s;background:#f8fafc}
+input:focus{outline:none;border-color:#10b981;background:#fff;box-shadow:0 0 0 3px rgba(16,185,129,.1)}
+
+.btn{width:100%;padding:.9rem;background:linear-gradient(135deg,#059669,#047857);color:#fff;border:none;border-radius:10px;font-size:1rem;font-weight:700;cursor:pointer;transition:all .2s;box-shadow:0 4px 12px rgba(5,150,105,.3);margin-top:.25rem}
+.btn:hover{transform:translateY(-1px);box-shadow:0 6px 20px rgba(5,150,105,.4)}
+.btn:disabled{background:#94a3b8;box-shadow:none;transform:none;cursor:not-allowed}
+
+.agree{font-size:.78rem;color:#94a3b8;margin-top:.875rem;text-align:center;line-height:1.6}
+.agree a{color:#059669;font-weight:600}
+.bottom-link{text-align:center;margin-top:1.25rem;font-size:.875rem;color:#64748b}
+.bottom-link a{color:#059669;font-weight:700}
+
+.msg{border-radius:10px;padding:.75rem 1rem;margin-bottom:1rem;font-size:.875rem;display:none}
+.error{background:#fef2f2;color:#dc2626;border:1px solid #fecaca}
+.success{background:#f0fdf4;color:#16a34a;border:1px solid #bbf7d0}
+
+@media(max-width:768px){
+  .left{display:none}
+  .right{width:100%;padding:2rem 1.5rem}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="left">
+    <div class="left-inner">
+      <div class="brand"><span>KR</span> Guide</div>
+      <p class="tagline">한국어 학습을<br>지금 시작하세요</p>
+      <p class="desc">무료 가입으로 한국어 레슨과 190개 이상의 가이드에 바로 접근하세요.</p>
+      <div class="plan-box">
+        <div class="plan-title">🎁 무료 회원 혜택</div>
+        <div class="plan-item">한국어 기초 레슨 1~5장 열람</div>
+        <div class="plan-item">여행 & 생활 가이드 전체 이용</div>
+        <div class="plan-item">학습 자료 PDF 다운로드</div>
+        <div class="plan-item">신규 콘텐츠 우선 알림</div>
+        <div class="plan-free"><strong>완전 무료</strong>신용카드 불필요 · 언제든 탈퇴 가능</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="right">
+    <div class="form-box">
+      <h1 class="form-title">무료로 시작하기 🚀</h1>
+      <p class="form-sub">30초면 가입 완료! 지금 바로 학습을 시작하세요.</p>
+
+      <button class="btn-google" onclick="location.href='https://auth.krguide.com/auth/google'">
+        <svg width="20" height="20" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg>
+        Google로 빠르게 가입하기
+      </button>
+
+      <div class="divider">또는 이메일로 가입</div>
+
+      <div class="msg error" id="err"></div>
+      <div class="msg success" id="ok"></div>
+      <form id="form">
+        <div class="form-group">
+          <label for="name">이름</label>
+          <input type="text" id="name" placeholder="홍길동" required autocomplete="name">
+        </div>
+        <div class="form-group">
+          <label for="email">이메일</label>
+          <input type="email" id="email" placeholder="your@email.com" required autocomplete="email">
+        </div>
+        <div class="form-group">
+          <label for="pw">비밀번호</label>
+          <input type="password" id="pw" placeholder="8자 이상" required minlength="8" autocomplete="new-password">
+        </div>
+        <div class="form-group">
+          <label for="pw2">비밀번호 확인</label>
+          <input type="password" id="pw2" placeholder="비밀번호 재입력" required autocomplete="new-password">
+        </div>
+        <button type="submit" class="btn" id="btn">무료로 시작하기</button>
+      </form>
+      <p class="agree">가입 시 <a href="/terms/">이용약관</a> 및 <a href="/privacy-policy/">개인정보처리방침</a>에 동의합니다.</p>
+      <div class="bottom-link">이미 회원이신가요? <a href="/login/">로그인 →</a></div>
+    </div>
+  </div>
+</div>
+<script>
+const AUTH='https://auth.krguide.com';
+document.getElementById('form').addEventListener('submit',async e=>{
+  e.preventDefault();
+  const btn=document.getElementById('btn'),err=document.getElementById('err'),ok=document.getElementById('ok');
+  err.style.display='none';ok.style.display='none';
+  const pw=document.getElementById('pw').value,pw2=document.getElementById('pw2').value;
+  if(pw!==pw2){err.textContent='비밀번호가 일치하지 않습니다.';err.style.display='block';return;}
+  btn.disabled=true;btn.textContent='가입 중...';
+  try{
+    const r=await fetch(`${AUTH}/auth/register`,{method:'POST',credentials:'include',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({name:document.getElementById('name').value,email:document.getElementById('email').value,password:pw})});
+    const d=await r.json();
+    if(r.ok){
+      ok.textContent='🎉 가입 완료! 환영 이메일을 확인해주세요. 로그인 페이지로 이동합니다...';
+      ok.style.display='block';document.getElementById('form').style.display='none';
+      setTimeout(()=>location.href='/korean-library/',2500);
+    }else{err.textContent=d.error||'회원가입에 실패했습니다.';err.style.display='block';btn.disabled=false;btn.textContent='무료로 시작하기';}
+  }catch{err.textContent='서버에 연결할 수 없습니다.';err.style.display='block';btn.disabled=false;btn.textContent='무료로 시작하기';}
+});
+</script>
+</body>
+</html>

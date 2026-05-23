@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="UTF-8"><title>한국 속담 100선 · Enhanced</title>
+<style>
+  @page { size: A4; margin: 16mm 12mm; } * { box-sizing: border-box; }
+  body { font-family: 'Noto Sans KR','Malgun Gothic',sans-serif; color:#1a1a2e; margin:0; line-height:1.5; }
+  .page-break { page-break-before: always; }
+  .cover { text-align:center; padding:60px 20px 30px; border-bottom:4px solid #C0392B; margin-bottom:22px; }
+  .cover .label { font-size:12px; font-weight:700; letter-spacing:3px; color:#C0392B; text-transform:uppercase; margin-bottom:14px; }
+  .cover h1 { font-size:32px; margin:0 0 8px; color:#1a1a2e; font-weight:800; }
+  .cover .kr { font-size:22px; color:#1A4A8A; font-weight:700; margin:0 0 18px; }
+  .cover .desc { font-size:13px; color:#555; max-width:620px; margin:0 auto; line-height:1.7; }
+  .cover .features { margin-top:24px; display:flex; justify-content:center; gap:14px; flex-wrap:wrap; }
+  .cover .feat { background:#1a1a2e; color:#fff; padding:6px 14px; border-radius:18px; font-size:11px; font-weight:600; }
+  h2.cat-h { background:linear-gradient(135deg,#1a1a2e,#16213e); color:#fff; padding:14px 22px; margin:0 0 14px; font-size:18px; border-left:6px solid #C0392B; }
+  .scenario-box { background:#fff8f0; border-left:4px solid #f97316; padding:14px 18px; margin-bottom:14px; border-radius:6px; }
+  .scenario-box .sb-title { font-weight:800; color:#9a3412; font-size:13px; margin-bottom:8px; }
+  .scenario-box .dl-line { font-size:12px; margin:3px 0; }
+  .scenario-box .dl-speaker { color:#C0392B; font-weight:700; margin-right:6px; }
+  .compare-box { background:#f0f5ff; border-left:4px solid #1A4A8A; padding:14px 18px; margin-bottom:16px; border-radius:6px; }
+  .compare-box .cb-title { font-weight:800; color:#1e3a8a; font-size:13px; margin-bottom:8px; }
+  .compare-box .cb-pair { font-size:12px; margin:3px 0; display:flex; gap:12px; }
+  .compare-box .cb-ko { color:#1a1a2e; font-weight:700; min-width:240px; }
+  .compare-box .cb-en { color:#666; font-style:italic; }
+  table { width:100%; border-collapse:collapse; font-size:10.5px; table-layout:fixed; margin-bottom:14px; }
+  thead th { background:#1a1a2e; color:#fff; padding:7px 6px; font-size:10px; border-bottom:2px solid #C0392B; }
+  th.num-col{width:28px;} th.ko-col{width:160px;} th.en-col{width:140px;} th.qr-col{width:34px;}
+  td { padding:8px 8px; border-bottom:1px solid #e5e5ea; vertical-align:top; word-break:keep-all; }
+  tr:nth-child(even) td { background:#fafafa; }
+  td.num { text-align:center; color:#888; font-weight:600; font-size:10px; }
+  td.ko { font-weight:800; color:#C0392B; font-size:12px; line-height:1.4; }
+  td.en { color:#1A4A8A; font-size:11px; font-weight:600; line-height:1.4; }
+  td.rest .literal-line { font-size:9.5px; color:#666; font-style:italic; margin-bottom:3px; }
+  td.rest .lit-label, td.rest .ol-label, td.rest .ml-label, td.rest .sim-label { color:#888; font-weight:700; margin-right:3px; }
+  td.rest .meaning-line { color:#1a1a2e; font-size:11px; font-weight:600; margin-bottom:5px; }
+  td.rest .origin-line, td.rest .sim-line { font-size:9.5px; color:#666; margin-top:2px; line-height:1.5; }
+  td.rest .modern-line { font-size:10px; background:#f0fdf4; padding:4px 6px; border-left:2px solid #059669; margin:4px 0; color:#1a1a2e; }
+  td.qr { text-align:center; padding:3px; } td.qr img { width:30px; height:30px; }
+  tr.quiz-row td { padding:0; }
+  .quiz { background:linear-gradient(135deg,#fffbeb,#fef3c7); border:2px solid #f59e0b; border-radius:10px; padding:14px 18px; margin:14px 0; }
+  .quiz .q-title { font-size:14px; font-weight:800; color:#92400e; margin-bottom:6px; }
+  .quiz .q-sub { font-size:11px; color:#78350f; margin-bottom:10px; font-style:italic; }
+  .quiz .q-item { font-size:11px; margin:6px 0; padding:8px 10px; background:#fff; border-radius:6px; }
+  .quiz .q-num { font-weight:800; color:#C0392B; margin-right:6px; }
+  .quiz .q-q { color:#1a1a2e; font-weight:600; }
+  .quiz .q-opt { display:inline-block; margin-right:12px; color:#444; margin-top:4px; font-size:10px; }
+  .answer-key { background:#f9fafb; padding:20px 24px; border-radius:8px; }
+  .ak-row { padding:6px 0; border-bottom:1px solid #e5e5ea; font-size:12px; }
+  .ak-row strong { color:#C0392B; }
+</style></head><body>
+<div class="cover">
+  <div class="label">Korean Proverbs & Sayings · Enhanced</div>
+  <h1>한국 속담 100선</h1>
+  <div class="kr">Korean Wisdom in 100 Proverbs · 향상판</div>
+  <p class="desc">인생·노력·우정·지혜·처세·시간·말과 돈 7개 테마, 100개 속담 — 자연스러운 영어 대응 표현·직역·뜻·유래·현대 활용 예문·유사 속담 포함.</p>
+  <div class="features">
+    <span class="feat">🎭 시나리오</span><span class="feat">🔍 비교</span><span class="feat">📝 퀴즈</span><span class="feat">🔊 QR</span>
+  </div>
+</div>
+</tbody></table>
+<div class="page-break"></div>
+<h2 class="cat-h">🌅 인생·운명</h2>
+<div class="scenario-box"><div class="sb-title">🎭 시나리오 대화 · Scenario Dialogue</div><div class="dl-line"><span class="dl-speaker">선배:</span> <span class="dl-text">사업이 풀리는가 싶더니 또 문제가 터졌어.</span></div><div class="dl-line"><span class="dl-speaker">후배:</span> <span class="dl-text">산 넘어 산이네요. 비 온 뒤에 땅이 굳는다고 하잖아요.</span></div><div class="dl-line"><span class="dl-speaker">선배:</span> <span class="dl-text">맞아. 끝이 좋으면 다 좋은 거지.</span></div><div class="dl-line"><span class="dl-speaker">후배:</span> <span class="dl-text">쥐구멍에도 볕들 날이 있다는 거 믿어야죠.</span></div><div class="dl-line"><span class="dl-speaker">선배:</span> <span class="dl-text">긍정적으로 가자!</span></div></div><div class="compare-box"><div class="cb-title">🔍 비교 박스 · Comparison</div><div class="cb-pair"><span class="cb-ko">산 넘어 산 / 갈수록 태산</span><span class="cb-en">out of frying pan / from bad to worse</span></div><div class="cb-pair"><span class="cb-ko">쥐구멍에도 볕들 날 / 고생 끝에 낙</span><span class="cb-en">every dog has its day / no pain no gain</span></div><div class="cb-pair"><span class="cb-ko">비 온 뒤에 땅이 굳어진다</span><span class="cb-en">after rain, the ground hardens</span></div><div class="cb-pair"><span class="cb-ko">호랑이도 제 말 하면 온다</span><span class="cb-en">speak of the devil</span></div></div>
+<table><thead><tr><th class="num-col">#</th><th class="ko-col">한국 속담</th><th class="en-col">English Equivalent</th><th>뜻 / 유래 / 활용</th><th class="qr-col">🔊</th></tr></thead><tbody>
+<tr><td class="num">1</td><td class="ko">호랑이도 제 말 하면 온다</td><td class="en">Speak of the devil.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> Even a tiger comes when you speak of him.</div>
+        <div class="meaning-line">어떤 사람에 관해 이야기하고 있을 때 마침 그 사람이 나타남을 이르는 말.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 호랑이를 두려워하던 옛 한국에서 호랑이의 이름을 함부로 부르면 정말 나타난다고 여긴 데서 유래.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 방금 김 부장 얘기하고 있었는데 마침 들어오네요. 호랑이도 제 말 하면 온다더니.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 말이 씨가 된다</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABWAQAAAAB9LVxaAAABu0lEQVR4nHWTQYpUMRCG63X15kEkDa4EN0KDq4ZINbiJ5IErwWN4gAFX3mLAreAl3AoZ0iBCmjT0aqBhGJgDRBJ4mwoREcV6YFbFR/Hnrz+VocOf01Z/SwDw4FExGAb1L19rPn2nvdebfhS8bXx9lB/v4Eb2A1T95eC3bwAWnE5TeULXVfAV5guU21KvnOCDn+Lvai/0ofeikWzunQUPvtgAkZKR/Tkkwk4QVRR+7j7Ui2mjq3gldVLRzmGPtNDPkJMNDrXknEzUHLN1Mgd89fCU5neqohdzMbap4u1WHaRPz8CUHaG1Up8SQ3eKQdy7qse21lCfz24j+lNygWIKqYh5IakUI3i2SeoXNMUHKCFKP5F7yT2w7jK3+RuML7/adRgW72K1RdJEJO+NFAg6qAyCr+pxbPoAePJGcNXnz/ct3lst5hr6i0+zgv1OfZR7G3Xx3WrOWegPfHi9w0uDh/Mo89SBwHToLP0HzqrkWEAt9y0RBWd0ELmtboZn18ocsY1ynzWfJxgLIJ6kTxVtUcYDLnJWHF1JgNLPr380bd82c56EPiQOCTFS9LL/xzrU3O7gfRN5Dv/57z8B5mjhDSdU+WIAAAAASUVORK5CYII=" alt="QR"/></td></tr>
+<tr><td class="num">2</td><td class="ko">쥐구멍에도 볕들 날 있다</td><td class="en">Every dog has its day.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> Even a rat hole has its sunny day.</div>
+        <div class="meaning-line">몹시 어려운 처지에 놓여 있는 사람도 좋은 운수가 트일 날이 있음을 비유.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 어두운 쥐구멍에도 볕이 들 때가 있다는 자연 관찰에서 비롯된 한국 전래 속담.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 10년간 적자였던 사업이 드디어 흑자로 돌아섰다 — 쥐구멍에도 볕들 날이 있구나.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 고생 끝에 낙이 온다 · 전화위복</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABWAQAAAAB9LVxaAAABlklEQVR4nHWTwWqVQQyFc+/cjRDJ/wqC0FVhZAoiDEy3vkffwBfpwxRcCYERREiJ4EooiKtuR1JwMz9xUSzNgLMKh+HLySE5OPx7+/GpBAAGm4JpIuBz/UTzG3z4+OI0023Q921sZ+8SbDfh/xHgC3/9/JIf66d3AjinN3TWctRBZxfLw8TluX7gS3msLgIf3KfXMdV9Rv+Ipc9erNSgD0XWVDmnyOFsBWcH9ahrKgObsfbI76gO3PsckW9NWMAS5OAfZNiEka3LwklZaEz3FDgHPYc/8OMqIXyKHOomqQrQMpekUSbj0KhzawV7dklL3zxSM6kKi24+i1POGP1rnomkGOqSs3kVQ2Vf/FRtSbloXvIkZkmJkaI+8vDaLWsO/OMd/by8xvfXr2mLOfN0KijCy7xK3IC9zWVvX/2CXfIFvB3RT/euxWlC5EiVbtiNKebg3qe1PFWWvsAKZgllvRf4DvtGkDjyUamNVhhjDoJsRLn7WPYHO1IVgtj3mAaW/QZ2uQp3dPx9gtv7u4f7h9j38J97/wvpXOc+14G9+gAAAABJRU5ErkJggg==" alt="QR"/></td></tr>
+<tr><td class="num">3</td><td class="ko">자라 보고 놀란 가슴 솥뚜껑 보고 놀란다</td><td class="en">Once bitten, twice shy.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> Startled by a turtle, then startled by a pot lid.</div>
+        <div class="meaning-line">어떤 일에 한 번 놀란 사람은 비슷한 모양만 보아도 두려움을 느낌.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 자라의 등딱지가 솥뚜껑과 비슷한 모양이라는 데서 비롯된 한국 속담.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 사기를 한 번 당하더니, 이제는 정상적인 거래 제안도 자라 보고 놀란 가슴 솥뚜껑 보고 놀라듯 거절한다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 불에 데인 아이 물도 무서워한다</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGYAAABmAQAAAAARpNnPAAACG0lEQVR4nH1UsYpbMRBcW4ZwsCDDfUHArWFBBnMgI4O/56q0+YXAQdr7jLQHGxRIsyDDtdfkAwJrZLhmHwpXhCT7IK/SYxhmZnekxYA/37T86wcAGGrWPNooAuiwZswaQRhxiMMEJcGoOTZkh60Awku4HGW7J4B/sSXAZnuD0/t3j+wxaNa0sSUk83oLPsrv8877HGPoYOMiY5jDKndmhNx7Ic+TjopgWjRGz1MizU0Lt6iexyEI5TJCSOh8LsOdhvD69fCED1/IzQW/r7dyYkjbe/TZTTTUHiRkRe+lJaqh55GztuwzwOhJwKRZdD6XIV3XSHl/nG7V6ymkkiIYdylOb9GuuLNvH6+PF7zOZpYLWYuD32rhZ90DQmIqmWY+FQAoAyfh4PXseXq9W9kO+Rnu/W6RJaowJaxOb1FxOv1AuJ5eePL5BkRAAjLi4Lwsr2FjmwcJ58/w8+x4na2kJIRCMutEBLDCmkiGzze0Y42DozTzvB5qicYwinbPMwiJNQVDy7O9d1MQLY1hdsc2Bwx1j3ygcZ7d6U4p9m4CWb1e08iGrbQ60O+vd8uASBUrzTIoBKKCSZBncylSNUtvrc702CSzgGbkOJvZaBrUhkD0+YChg2R5MzPrUjMxBkstNvGdn9avtx/yCgAuO98Jwc7Worasfn8rAMzn6waOT6eb+btUKYxeIESfb3lZTQiH9SclOrsuLf7z7v4CEyo99H8pS6UAAAAASUVORK5CYII=" alt="QR"/></td></tr>
+<tr><td class="num">4</td><td class="ko">산 넘어 산이다</td><td class="en">Out of the frying pan, into the fire.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> Beyond the mountain, another mountain.</div>
+        <div class="meaning-line">한 가지 어려운 일을 넘기면 또 다른 어려움이 닥쳐옴.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 조선시대 험준한 산악 지형을 넘던 여행자들의 고난에서 유래.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 이번 위기를 넘겼더니 더 큰 문제가 터졌다 — 정말 산 넘어 산이다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 갈수록 태산 · 엎친 데 덮친 격</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAABOAQAAAACm0R2wAAABbElEQVR4nG2TsWpcMRBF7662MQi0kDZN/kBBC2FBoAV/Sb4k5AMMbgP5jG0DMko5IMOrXLlxG5jwHiyGeYyxSYIGomoYLudeaUYbxZ+zbv9WACpm9iEK/Njt0lxmyUpDd7fun+Jy/YC7UbsDpodFFv8TQ3cLHM/hcn3/Vv47XaiX1LzhbuqJ3oqDyaCq2mpWFZPXw0cPl7JxS6HVc6LVuDW4kiqjGjf55O/j8u1yOo6Eaf3K69Vl/XFrMiRwSUVldAODmVBdNnl5rg01tDS6gXKvUGaTAewItWXNhqvcRIScGG5z4sOsrhhCrRRbZvZGKyVwrakXw22AFhakUbu9mvvh9+QaVUOIsatPTIZbNVFP6ObVQYSeIjm2++Dy4dcez+8Mt0cOThgw01RtM/kSmp0xmjgn1E3eIMf9M58cDJd8f70aYPcBy810SKBxH3aA//D+jPD5+6h1jCm5Lx8fze5UUCqhRTOLzX//0AtJU7noXokAOwAAAABJRU5ErkJggg==" alt="QR"/></td></tr>
+<tr><td class="num">5</td><td class="ko">비 온 뒤에 땅이 굳어진다</td><td class="en">After rain comes sunshine. / Adversity makes you stronger.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> After the rain, the ground hardens.</div>
+        <div class="meaning-line">어려움을 겪고 난 뒤에 일이 더 잘 풀리거나 관계가 더 단단해짐을 비유.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 비가 온 뒤에 땅이 다져지는 자연 현상에서 유래한 한국 속담.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 회사 위기를 함께 넘긴 뒤 직원들 결속력이 훨씬 강해졌다. 비 온 뒤에 땅이 굳어진다더니.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 고진감래 · 전화위복</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABWAQAAAAB9LVxaAAABnUlEQVR4nHVTS2pcMRCsGc3GINAcIBvfQEED2ci8AW9zj2wDOUA23gZ8GB+ggwaCoUMPeGXwFQJ6yOBNPzokIZ9+kF41RVEqVXdvDL9r2f5pARBIGUkjosNFrXQrjY3/xbfL/sTnq08Vn+Fw4OKImw/n48/+b3Fkq0BWcjoQHZ2sonr9DR35V3fwfsx6bCxIpt5/bZaLYaz0RwnaUqUcnM728fH+AXdIdEGeLxK0S4F5/tM86wEzy9w9P7SMCNXifXIGDVNSdfgOifHqMj50ZMfvXFBz00bV4wkyMYoUjw+gT8qpi/d5boab55eMS++TadiINkr0+fRp0iKxNPF4Q+65U8zJv0uFYJU4ldUcKYUmNGSVg5lKmjRk9XzSECmwILo5but1LvH+/TyK25/dlxnAOz7w897paGmDK7MMvw+sg2LUEorHtVnuSXtf7c/IfaJmhNV/zTiOkrvwKgdoFwktitcR1WnkotI8n39kr2Gi6OcFnK6Ww7ev4WV9R8stB/Sobj93oZ8+Lkvc3732OvMugfAmv711Opv/3Pt3PoDvmgraqwIAAAAASUVORK5CYII=" alt="QR"/></td></tr>
+<tr><td class="num">6</td><td class="ko">가는 날이 장날이다</td><td class="en">When it rains, it pours. / Just my luck.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> The day I go happens to be market day.</div>
+        <div class="meaning-line">어떤 일을 하려고 가는데 마침 묘하게 일이 겹친다는 뜻.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 정기적으로 열리던 5일장에 우연히 가는 날이 장날과 겹치는 일에서 유래.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 비 오는 날 우산 안 챙긴 날이 하필 가장 멀리 가는 날 — 가는 날이 장날이다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 하필이면 · Murphy의 법칙</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABWAQAAAAB9LVxaAAABr0lEQVR4nHVTQYobMRCsGfky0IsMewoEwkIeMIt8CQi0DwjkK/uX/UrAJ4OMfFSQwacFQ8gDAho0YAI9dEiWbNKG9KkpilKpursT/Kmlf22Bft9N8zR/2S/dWuGWzUc6GwuJ/+LIxNmzEMWs+MAJx8O9G3/3r9UDE+bwFF/6v1W4saPoWJROFx/yS7chxRepgZhsEFZ4qsEkTk2Swrv6rh4eBzN9nTS/esBIQRKlvzptz/OyiaCD8tnVt9tHgOJa5wZxNTGlmqF1Dsvtj1XFbTX1is+l2CDQ/0UcS3M0NgnaP59mf2PuzjDfdW5jHGHJGf1u//7JUtm5YWdGnQ9l66U4gc6BQ5QGiqF5hbdqjbBrFDVfGgcqLFnnjBpFxFvrq9aRFABrAav3ZF4wuvgtpDvls4c7Yhk/YSG9J5GIraecotZPhQrbyKFc5VlLGEMr0Wu8GCQJViop/6tlR5fN83Y+Xo4qf8HePkzuOV3NPaIItWYpKz+95XlJw5vPxiidX/cSYaKH0f4ztVpMQmO9P8Cwbh8Ge5P0HAsn70th73Se02q4bJf7ywWK3/3n3n8CC1TnZ051p5EAAAAASUVORK5CYII=" alt="QR"/></td></tr>
+<tr><td class="num">7</td><td class="ko">사공이 많으면 배가 산으로 간다</td><td class="en">Too many cooks spoil the broth.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> Too many boatmen send the boat up the mountain.</div>
+        <div class="meaning-line">여럿이 지휘하면 일이 엉뚱한 방향으로 흘러간다는 뜻.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 배를 모는 사공이 여럿이면 의견이 엇갈려 배가 제대로 못 간다는 데서 유래.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 팀 회의에서 모두가 리더 노릇 하려 들면 사공이 많아 배가 산으로 간다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 군중심리 · 주방장이 많으면 음식이 망한다</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAF4AAABeAQAAAACCqZ7DAAAB7klEQVR4nHVUTWedQRR+7j0hwnBCV1lFudvw8oYKw2Qb+idKtqF022V+QMgvKaGry7kmmzBxLlmV0E3odl5zyWZeU6Vac6qzGh7Px3mOmUXDnzMv/96B5WaxuV9s583ucXHYIXtct+/q/tnu+0l77JH5sJzdz+AVNq5HgOl2x9uXNwdA7wM8T++/4HgNi1Amn/nrC+fQIws5T7+vp70PWhM/sEjkVntEsiYCKQ/cc5b+6cPrQaiXK1r1PhDncm1jKyNSjyTSoqUVhfWJGGmICGNJhiPsUx5iqBpMArd+pWM6uN6/nIaeU2Nl9iMLou+R7CgMTKyjmq6fflxM/JbkMG9No+7olrEF8vO5mNRF0lgqj96beRK4CggsbDvgpF4lsWqfbbla4+pudh9fZrNTiEaKLCJsUiMLcxYWFTaTqoLFxUZMhpN8846CkniTrXIhJe/FiZmnOO8GP6SA0vvsIU7+CSvs5OLGqFUSGXJOjoxPDKSeAmINvdqinvI1Lu4cYXVkOCpNB46xNKPWEiKPLRYfDZJ5LFVDg1MzjzphAmSAM0hrIoNqqSymUUHJcIn+Ufv1tj8ppocd280l1xDgGCCjllzhEguNg9nPEvh24q6e8w0ejJrWyCHCS+Q+wXLam+VxLvR5yNu+0f/+VT8B5HL8eAPQleUAAAAASUVORK5CYII=" alt="QR"/></td></tr>
+<tr><td class="num">8</td><td class="ko">굼벵이도 구르는 재주가 있다</td><td class="en">Everyone has their strength. / Every man has his talent.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> Even a maggot has its rolling skill.</div>
+        <div class="meaning-line">아무리 못난 사람도 한 가지 재주는 있다는 뜻.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 굼벵이가 굴러서 이동하는 데서 비롯된 한국 속담.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 내성적이라 영업은 못 해도 분석은 잘한다 — 굼벵이도 구르는 재주가 있다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 다재다능 · 사람마다 장점</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAF4AAABeAQAAAACCqZ7DAAAB2klEQVR4nHVUwYpUMRDsmd7LQEMWvAoieF0IZI9ZMrAnwf/wOh/gLwj+iidPQpYIe+mhF7x69AMy5MGw0KFFFPW1bE55FFXdVSnexuDPmdu/dwCooLmUSIWB1oioYBRlzMYrZDsvTxFe3p4z3MGawzQwtGqBquMAHK++z/2Xz78+/jmiAiVIQnVzNnXPv6/X6922xc5v8XY5AFpfq7WcDSuFkSk7pxJDHMnM3BzQKDHCQB3qEJMeiiVEUJfOYAwatIQkDtEWNDM1DOg5tUeRCiG7dEBlAHdrpEEdUkUU2qgjebXRe2NN9h9HuKehUgqy41jqbExDPediOT7/tAGa9xP2bk6oqQvXIc3NaSSdqPVBbZ31dtfmt9To8nWj6nYDZAEkrOjUbGgDTEhi7rXn8Xyoj5MGzOjUhrbcrFIDt8Hc7Se+m4dXE9d9256ffYjvlwUlPPr2QsaiRWv1byqlkWRT9k7BIFSOQql7PywjZW0hFN8D4wQtlaJaXA966JpTFAp1zdnITb+n077S8sZlYNaARCQJuwzuNmDLnNe7G3xYI0GvgG9hPuDi1JhGHUAj1OCcMjH9NCTG3imNnhRLIHB+RFka5y44XN9OFxUO9PXFx91+t3b65L/qB5wiG0YqXW/YAAAAAElFTkSuQmCC" alt="QR"/></td></tr>
+<tr><td class="num">9</td><td class="ko">끝이 좋으면 다 좋다</td><td class="en">All&#x27;s well that ends well.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> If the end is good, everything is good.</div>
+        <div class="meaning-line">결과가 좋으면 과정의 어려움은 모두 잊혀진다는 뜻.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 셰익스피어의 희곡 제목으로 잘 알려진 표현이 한국에 전해져 속담화.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 프로젝트 중간에 우여곡절이 많았지만 성공적으로 마무리되었으니 끝이 좋으면 다 좋다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 유종의 미 · 결과가 중요</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABWAQAAAAB9LVxaAAABlklEQVR4nF2TsWrcMQzGdecbFRzImqVTV4MzGnzQF8rasQ9Q6MPcAwiUUYcOMgUyBjoFXPSHUrBxKWlDZU3ix8f3fQi0m/Bvxv59BQACE4HYEfB/foj9ko8KNy2cHR/XL2NLMK5PTr8HeP4kD8fT2/4+B4A8dnGryfN9aGewD68bVcd3dJS37c757ybAZWwY7mnpj5i5sFkujnfrpKFQCs4HDErDKcDT82nMUI2Uu+v5MOAzfnkKabiewIpciBOBOK5JOzRiC84HeshSU9falp44LWOymRe95ikhCUSv14azdI5NPZdqBalOWXK5FC2mqYHnc3KHGiFM35+lh9mzIXm91pmFuxIvua1EVjBN/p4aeqAQBeNynwIpayucltwKRlx0Vu/Teu8xY+Olj9TChUmCLLmtNMSSszn9Ydy8PubtMX29cv334dctbE+n7Q6+LfcRnDk1XfwJOKIZoueH2H+OgFcQAvmeqFpmRkLvI8gtovFc7i8oOLFHoKVn2/L55TLyvf+jH4dw/ni7fQef++df/o77l99p2ehrbqeKcQAAAABJRU5ErkJggg==" alt="QR"/></td></tr>
+<tr><td class="num">10</td><td class="ko">빈 수레가 요란하다</td><td class="en">Empty vessels make the most noise.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> An empty cart rattles loudly.</div>
+        <div class="meaning-line">실속 없는 사람이 더 큰 소리로 떠벌리고 다닌다는 뜻.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 짐 실린 수레보다 빈 수레가 더 시끄러운 자연 현상에서 유래.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 실력은 없는데 자기 자랑만 늘어놓는 그 사람, 딱 빈 수레가 요란한 격이다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 허장성세 · 외화내빈</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABWAQAAAAB9LVxaAAABpElEQVR4nHVTQYecQRCtmR5iqNVD/sKyp6HpPTYd9hRCfknIP8gl1/ybsKdQ0WEvRQ1zWuYY5hRq9LBCfyqSyCb1rRRNe55Xr15XLwz+1LR8vAIAQWPGqAj4L76MYwtX/XJHRg6fNrvLw/WHBJ/B4QDx9Zbe7V/8uj/WCuC825/ev/nN+VsyuoIwFGPHP60YeAKGhfMDZlYCG4gN77+0mrJBJ6cDowdqMVEKfq67iymsP0KUtZsLuKXYlTKa79sGlkhDBrm+q/VDOH99eT6k2433iYl6ZeAy02nGNZVoVrzP1H6e0sjj3WKrjFmyx4nRymio4vUpg1HnrOrzYbQuuUvFeT59hBpzEI/3QpqISoqzvjWGisoxP+FDE8qSZ/N2bbGOkMaMr4IUuCE6/eXh+ekK6C0e83xPYqQgoQens9CwfjjAFLbPvns+qSJj793nYJKSxqHzfDQVo2ZA3g+YEVpNQ3i2b9BHEyAUj8vQNGpRaV6HcUjRAIQunxXAl5tPN1MMT/4Lbl8dL77tj/cOD3oXaeJNOs/eHZoV7SX6/Vn857//ALZE7j/oiTs+AAAAAElFTkSuQmCC" alt="QR"/></td></tr>
+<tr><td class="num">11</td><td class="ko">작은 고추가 더 맵다</td><td class="en">Good things come in small packages. / The smaller the pepper, the hotter.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> Smaller peppers are spicier.</div>
+        <div class="meaning-line">작거나 어려 보이는 사람이 더 야무지고 능력이 뛰어남.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 한국의 청양고추처럼 작을수록 매운 고추의 특성에서 유래.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 체구는 작지만 결단력은 누구보다 강한 그녀 — 작은 고추가 더 맵다더니.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 외유내강 · 강단 있는 사람</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABWAQAAAAB9LVxaAAABnUlEQVR4nHVTQaoUQQxNTzWIEKmBOYHgAQryN0JB9VW8geAhPIP3GHAl5FMDbtKU8LeCeIOSahiENHHx8fMzYq3C4/HeS1KZDP6+/fBUAgCDikDsCPgcn6Ne4vsGp99hdfh+7Ms1wX48O/4B4CHIZeHH+unNAK+/THEryePQVPJIfajJc3ziRR6rO6cPZlaEpRVTnx8D1VxpUPb8GKCFzCl4nZY04RCo5vCpbQvs+fMa4K3jq4oiixk738N2+vA1wXW+X745ftWs0DmM4HPWAVKSWuk+ZwUbhGkYeX20CT9dYZ2+L74vBstaY29eZxBn5KJy4yvSYx6NOni8165QYop+/tAhB1Oq6PsFpUZSsXD1vpwg1sajJT/n0bByiIzR65tGIO6lJq+jxMSSmxXnO9k95NObl+cfvzxfAtdcIRe52W/uHVGJhtOZ94/xQtup7y/8fgVKJazEeJPTRI1Sb3LTL3DDPhC97xw1rCG+ghDY66PErISMt/ey/Xw4wrn0f/hoihH8fg+hB1rv0g7v/B0xNBzII/n/M/3n3v8A0tPhzqWt04YAAAAASUVORK5CYII=" alt="QR"/></td></tr>
+<tr><td class="num">12</td><td class="ko">달도 차면 기운다</td><td class="en">What goes up must come down.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> Even the full moon wanes.</div>
+        <div class="meaning-line">세상 만물의 영화로움은 영원하지 않고 결국 쇠퇴함을 비유.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 달이 차고 기우는 순환을 인생사에 비유한 한국 전래 속담.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 한때 1위였던 기업도 영원할 수는 없다. 달도 차면 기우는 법이다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 흥망성쇠 · 영고성쇠</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABWAQAAAAB9LVxaAAABlklEQVR4nF2TTWrcMQzFNXGgBFwc6LabwGwDBs8mIPBAtz1Gj5IjdRtQcJcKmm0hUHqAgEGBbPRHZegHlb0y4vnnJ9lv5/B3bRf/tgBAQMw5zQw51MU0q+Ng5//rF9v18/778f4OHiHoOQ83KyNT0F8CbKdt//N4Phv5k8ARcuTv6Mi/d4fgZ+cA27u79Oirf+RS1aHFe8E60khINcW+jK3x6OI56iUVUZUGjqHupFbIhlCsW69VuXbWxefT29Y+PnzJ6SnyfXCfKN0WPivYHDgW/vQ6OucubfFJydFGmRL0lzfp5XQPV3u4iXP2KU1QqWOcg5ZhSUotGvnEdVYgqz3yy2v5gHzIaS59YUmjkEqP/NkJSp+lWuSPqZlAOC/ztwJKA0XjvUDAhbonbct8FFwwd5sW/+FsMzO2prHuReoUm7DoFdwpndOxvItL9lZNOPZFYDYEKEvg7OQWDnyErz9er5ZcmKAWoNjvJcC3Tw+wf05vx5AvgHz7GbaXPCno0zwVeo/XsF/9kGNVLPH/nPPyZ4W8/AKw3OlTmpoAsgAAAABJRU5ErkJggg==" alt="QR"/></td></tr>
+<tr><td class="num">13</td><td class="ko">원숭이도 나무에서 떨어진다</td><td class="en">Even Homer nods. / Everyone makes mistakes.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> Even monkeys fall from trees.</div>
+        <div class="meaning-line">아무리 잘하는 사람도 실수할 때가 있음.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 나무를 가장 잘 타는 원숭이도 떨어진다는 데서 비롯된 속담.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 20년 경력 베테랑도 실수할 때가 있더라 — 원숭이도 나무에서 떨어진다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 천려일실 · 완벽한 사람은 없다</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAF4AAABeAQAAAACCqZ7DAAAB6klEQVR4nHVUQWocMRCsHRmCQdD7gBwNPi1M0F4CWmbBL8kb8pFAHuBP+Logo70EtGggJ0PAx5wCGjowF4kOMSGJOmROGorqKnW1eiP4/bXhzxlAQEmgGjjBdsgV1fV2Wra3X3Zy6ZChbdux4evpBo/oEWC+fsBhDvPLz1/VAPPZzHS3g0ZMwfKUl/F5Z3qdTTimX8d97w0i1TOFGCepPRKLG6dguUrskU199RbmEvYAvOpBDQYpRVSvkELibKQg06R06ugioogRk5SDSD6CJytVuU7e5xhQQ/WKk5lLIXh2RXHqKFlqcr6ycpAiuIyxmJg0J2XKiMwZSodN4MKV2BZVTYL1FRY2GNWDmHMiitWS0rmyzexfEmprUNUopkohBs0Bw2YTKGSQ0pEpZrKuGtGTeG4H2PJ9/bbFqJLLJjlvSUbpbzrYw7jaj7y73J/7eUOaEEIO4srUczZ1Xtv7hvt2XD+pHhDzaMjEpCeELWcWKj6oSRzmdX73dLXDA5pyIMlKCaOA5Z95q06yKcUblU+2TAbkfsar30IWl3PxFPtqw+MGb9qh0XrC3CNU23OOK4K57pMb2vZmOSzHPZY73TfL2ZoIV6jPZwAs3Mnyh+1J7QNTzsvF7F63eCx67ySMLnP2uXe9+e+u+gEX3RVzFki05gAAAABJRU5ErkJggg==" alt="QR"/></td></tr>
+<tr><td class="num">14</td><td class="ko">하늘이 무너져도 솟아날 구멍이 있다</td><td class="en">Every cloud has a silver lining.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> Even if the sky falls, there&#x27;s a way out.</div>
+        <div class="meaning-line">아무리 큰 어려움이 닥쳐도 살아날 방법이 있다는 뜻.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 절망적인 상황에서도 희망을 잃지 말라는 한국 전통적 낙관관에서 유래.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 회사가 망할 위기였지만 새 투자자가 나타났다 — 하늘이 무너져도 솟아날 구멍이 있다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 전화위복 · 새옹지마</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGYAAABmAQAAAAARpNnPAAACD0lEQVR4nGVUQWpdMQzU/87mg8CBXiHQVcHgQikoONBVoZCr9BA9QA9TyFYfB0rBwR+6KvQKAQVlqYdKAyWN7JXNMB6NLM/O4Xlt+/8OAPvj7uFug4ez29u73flLDKZxppKwMvoI2EBT4ZqwIQdsD/D996fK9/qlPJ1e8rQyQPFukQfTBmc2FbKot+Or8W//FgPPXdIA89amW8AYU04GkqxWCphlH8za0F3DnWc/t7P7V4eLdLMDlcDrvVtuwqCUowe3AtqqESSKelNnI02Qq/BSi3Sz2hTGTNGf5uFFUSVPi3pGLUt1AQZZeCnphApVuUeMR21GYr0aRcxS7n87N4r2WKeSZHJslJFir11bYpzSq7TIYwbJA7wQ56C36wgXp0s7vzmkx0OYpffbdo50ujjABlfhTskDy7DinJdZcgbWAs07wzK7HdG94qyusU43Ya1dpGNZ56xP8lxmK2nhSRaj7EhiS68T5aLQyOZaCyd3rUknceznVJJaRKAzLX+FqWFyzSQj6o1ceoHWp3SNPLU5SdjraIueaK0MKi3V5W1VRKHPWkhafD+53uDrh/vb9CYfF+/mhAajJ8ihZzuHYztieYcn3mJOMLBoGYyEi79pgo6Gw+dcc6mDEmgFwKC3BzjMjzdwCRXSmkuMUnUiWYl5lgS+Xf84Pb4+nc3Ae8ql9HDld+nz46/F3/MKufsHtFdFHFr5gqsAAAAASUVORK5CYII=" alt="QR"/></td></tr>
+<tr><td class="num">15</td><td class="ko">꿩 먹고 알 먹는다</td><td class="en">Kill two birds with one stone.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> Eat the pheasant and the egg too.</div>
+        <div class="meaning-line">한 가지 일로 두 가지 이상의 이익을 얻음.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 사냥에서 꿩과 그 알을 동시에 얻는 데서 유래한 한국 속담.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 재택근무로 출퇴근 시간도 줄이고 가족과 시간도 보내니 꿩 먹고 알 먹는 격이다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 일거양득 · 일석이조</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABWAQAAAAB9LVxaAAABrElEQVR4nHVTwYYdQRQ93dWb5nIf8wVhyLboYYQa1dsQ8hPZhnxEfiiEtxqq9SObGvWY1fCYLwjdqunNbRVJZOQ2U6vrOE6de+69VcG/t9UvJVAP1XmZl4dhqw4KZ8GFzx2jhP/xZjtMt+f2GnEgxQcWcvnxcvhTv7wauJxw5452h5tpaWfMn4NXeBX6+Le6UfooJTITERdReJhSLIkSWPODZwsm47qo9EsVPtoBboHmZzOOow0mZad14LquMyOx0kE0yEXGyVml0yzvvvbtGg9zUjkjchKRGDNr/6ObHPvCJDufp9b02Na2e9A6LlkwdwbKZ72uXyh+n3HfqXkhkQswbI3X/aauxDD6nHVu9fVTD0P3RG+0jrBn5ijRaf+JYi7Cye1yy6MzxnjG/l8aC1tHtmj+lNmYRNj5abCFT1iO23ur85QUSxFIp3NrTr3H/DxefdP7BimUpXiZ7G5/wMSeGNB4KUGch09R+WyGPt/g0WNbz7ovCTFm/3vMel4kASwGRuENsCC+/YH8pO6uAc5m/bBY3LY7/cjsJJH2Wc/N8jOYKxxF+aleufdfp1nU0Dk1+D0AAAAASUVORK5CYII=" alt="QR"/></td></tr>
+</tbody></table>
+<div class="page-break"></div>
+<h2 class="cat-h">💪 노력·성취</h2>
+<div class="scenario-box"><div class="sb-title">🎭 시나리오 대화 · Scenario Dialogue</div><div class="dl-line"><span class="dl-speaker">코치:</span> <span class="dl-text">포기하지 마. 천 리 길도 한 걸음부터야.</span></div><div class="dl-line"><span class="dl-speaker">선수:</span> <span class="dl-text">정말 힘들어요.</span></div><div class="dl-line"><span class="dl-speaker">코치:</span> <span class="dl-text">고생 끝에 낙이 온다잖아. 끝까지 가보자.</span></div><div class="dl-line"><span class="dl-speaker">선수:</span> <span class="dl-text">공든 탑이 무너지랴 — 그 말 명심할게요.</span></div><div class="dl-line"><span class="dl-speaker">코치:</span> <span class="dl-text">그래, 그 마음이면 된다.</span></div></div><div class="compare-box"><div class="cb-title">🔍 비교 박스 · Comparison</div><div class="cb-pair"><span class="cb-ko">천 리 길도 한 걸음부터</span><span class="cb-en">journey of 1,000 li starts with one step</span></div><div class="cb-pair"><span class="cb-ko">공든 탑이 무너지랴</span><span class="cb-en">an honest tower won&#x27;t fall</span></div><div class="cb-pair"><span class="cb-ko">고생 끝에 낙이 온다</span><span class="cb-en">after hardship comes joy</span></div><div class="cb-pair"><span class="cb-ko">우물을 파도 한 우물을 파라</span><span class="cb-en">dig one well deep</span></div></div>
+<table><thead><tr><th class="num-col">#</th><th class="ko-col">한국 속담</th><th class="en-col">English Equivalent</th><th>뜻 / 유래 / 활용</th><th class="qr-col">🔊</th></tr></thead><tbody>
+<tr><td class="num">16</td><td class="ko">시작이 반이다</td><td class="en">Well begun is half done.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> Starting is half of it.</div>
+        <div class="meaning-line">무슨 일이든 시작하는 것 자체가 어렵지, 일단 시작하면 절반은 이룬 것이나 다름없음.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 그리스 철학자 아리스토텔레스의 말로 알려진 격언이 한국에 정착.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 유튜브 채널 운영, 한 달 동안 망설이지 말고 영상 하나만 올려보라 — 시작이 반이다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 천 리 길도 한 걸음부터</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAABOAQAAAACm0R2wAAABWUlEQVR4nG1TQWocMRCsXfliEOiQFwT2ATJtCAsC+QH+RF6Siz8RyDN8NQg64EuDFvIAXwy5dphALj10yGLD9BKdmqIoVatKO8fbWffvE4CBRaVXQ96i0zhNteayRSUrFc55bNE98OP66fiq5/H9XAHHh/oJXwOKaWIlcQ66u3En5+E2eHB3TrW5W/CbIchI1IKHn5PqI8kab2uOPhTBL7iPtiThtFW4ul778/3xz/oUPPAyeXJ323JhZnNipBa4lv6BhSns5jfjA+wXToErrmzcvAVdz1XMJFngjlSNF089bOHZam6qOfr1vvRBs0fd2pXUQFG3FwI7x4yHaSmZVKLfTuqEGV4dczBxlaQXXFOCWLnojkhuCoQ03SVV6YVjxhBIMplb3X2xA0jvEkbUndMMQOwD8PH7LUEuOvn7dP+I8vnblpt0pUP6cvMSujMwqRSuIYvdf//QX+p/t3voUp6VAAAAAElFTkSuQmCC" alt="QR"/></td></tr>
+<tr><td class="num">17</td><td class="ko">낙숫물이 댓돌을 뚫는다</td><td class="en">Constant dripping wears away the stone.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> Falling rainwater pierces the stone step.</div>
+        <div class="meaning-line">작은 노력이라도 꾸준히 하면 큰 결과를 만들어 냄.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 처마 끝에서 떨어지는 빗방울이 돌 위에 구멍을 낸다는 자연 관찰에서 유래.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 하루 30분씩 1년간 영어 공부한 결과 회화가 자유로워졌다 — 낙숫물이 댓돌을 뚫는다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 수적석천 · 우공이산</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABWAQAAAAB9LVxaAAABnElEQVR4nHWTMYodMQyGNU/TBBS8B9gykCpg8JZ+ODfIhXKIHCDHWEgr8JRaVD8YSPPgVQE/NJDGg0MIWaKBuBJC/Pp+SZ4G/H376TUEAIbWhbARkMtr116qYB/yb37eH26wfQhvHp5d/QngBXg9f/sTv74ZIOP5+7scfR60qxg3k4P+fRa40AoweZ4xrFAkDaN7fqJUe00pZZdvI7OGzBEPOtQitAo6PP9ia6BPkfeleX1ultnGaL6vIrKCAUTHDx2wQ4tm9cCpQULroZDjPMH9x/vr+nSFxF5/wBDMAsH70syjdKGmB7+WQ6ixC7q+J7hscIevH7fdz79XG1EpFfD8BgMLJSP1/NUg59QLm+s77xd7fKZlC+fV+zVCRhQKXr+2FFNtUaPfSy/DRLNa8fXt9x0iMbOrnxiB4sSff8pbVy+CjaRbSp5fBteQRujg548TwPWyXJfw5XBvlazEpnLYI3AAMyJxPHPouMP+CIh+j0KspWFm8n6FatOAdTTvV0ipZAlQD3vvUqh10uj57zO83Nbltvm+03/++y/qTerjANQA1AAAAABJRU5ErkJggg==" alt="QR"/></td></tr>
+<tr><td class="num">18</td><td class="ko">티끌 모아 태산</td><td class="en">Many a little makes a mickle. / Little by little makes much.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> Dust gathered makes a great mountain.</div>
+        <div class="meaning-line">아무리 작은 것이라도 쌓이고 쌓이면 큰 것이 됨.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 한국 전래 속담으로, 적은 양도 모이면 거대한 산이 된다는 누적의 힘을 강조.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 매월 10만 원씩 적금 들면 10년 후 큰돈이 된다 — 티끌 모아 태산이다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 십시일반 · 복리의 힘</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAABOAQAAAACm0R2wAAABaklEQVR4nG1TMWpjMRB99rgJKGgPkTagRW4MAhlcpcoZArlHrpAD7DHSLmiZYgmMkSFVqm18gAEF0uijQEhAAzvV8Hi8eeI9rQa+Zll/bwAKmjofOtyM1s7ktachE7pZfpyDbF/xZ+augZfXy+ezfq7fswZ2T/p+OBl0Q3ryW3rct+OErspePpet8TDGyK2kMbrx6xCCA8U0X3Mt8ukpyjJfQw815aIo8yvA3rtGwjQrbHBdXm5278tv46HVVoXz6DMXVZwUFEqGq+QLiudortU0yA1V66Fl4UZpJKMrMnp3Qt3olujd4EHZKBSNgZKqsx4iay2xZqPbpI+sHdFwJQcKPNhkDC7BexdVZu5K6G25vTrW+wvbksYchNR2hxo6pHujKyCXugImzTG4JZc924zBLNSlmp75fn1xpXtCMbquuN4BmD4AdP67jRDTPmDB7hH+7tfMJfWHAz38/Ge6UyAtew4mi9V//9AHLxW24HotUJAAAAAASUVORK5CYII=" alt="QR"/></td></tr>
+<tr><td class="num">19</td><td class="ko">호랑이 굴에 들어가야 호랑이를 잡는다</td><td class="en">Nothing ventured, nothing gained.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> You must enter the tiger&#x27;s den to catch the tiger.</div>
+        <div class="meaning-line">큰 성과를 얻으려면 위험을 무릅써야 한다는 뜻.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 후한서(後漢書) &#x27;不入虎穴 不得虎子&#x27;의 한자 표현이 한국 속담으로 정착.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 투자 없이 큰 수익을 바라는 건 욕심이다. 호랑이 굴에 들어가야 호랑이를 잡는 법.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 불입호혈 부득호자 · 도전 없이 성과 없다</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGYAAABmAQAAAAARpNnPAAACAElEQVR4nG1UMYpcMQzVjKdZUPBCLiLQlh48kCrHyAECe5FAYE8SSLug4GIbLxqYA+QKGjyQRh+FFCGLnV9983h+70mydgH/vm3/5gAAAgM9DFPqgBOm3rWUlIth9Anr6GzKCSvKinUtPixa+Q/mLAAUzRdMvUEWH1Z81tvJqf/9f5h9Rvjo4M5Vw+d8mDU5jOzMZfai2EUH9bA0exlmkhDqoDzmO0cQ5moCo+TlTgoZlb1AKhPvcHs6wfb9/SHz8/k08VyKe6kDuq594FwpMCS0LzUzCOMwIYiJd4Cf9XjZHl75aTvcLbW2is18sJdZz9SGkGCn0aZ8u/Ga8HN7x9tlo/OcPaUkoNbYllo3yJY7BBXBSW8X998SHP2ev6TrhO1vGwLSmZ4ftzTVbH9u6e7TV/p1uX3YZO67JGKCGi4w1yxaxRyMyrH0ViDTGM2sFVr6Xl1LZNLquPRdyNxzYLE85/MEx9tlq9dLn/OBFRy5U/JRZNZz1dQgAlTKnMGFq1s4uPTZi9Q2iKCppbG8v05aTIJ7pdmLaGORYTWlvmQ3ckjKVGKdl2q1h3eptuiJJ0YC1QTLW4mQEHQseZnr/Y9dvjKd5YWOAOvslgDHHqrrfhEYBIMBcMIOf6gfwY6Jt8vjwmtgzIrFad1LXau31gat+UBdBcJHrctcvzlMe/c3rlBXFh+HvZ4AAAAASUVORK5CYII=" alt="QR"/></td></tr>
+<tr><td class="num">20</td><td class="ko">일찍 일어나는 새가 벌레를 잡는다</td><td class="en">The early bird catches the worm.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> The early-rising bird catches the worm.</div>
+        <div class="meaning-line">남보다 먼저 일어나 행동하는 사람이 기회를 잡는다는 뜻.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 영어 속담이 한국으로 유입되어 일상 속담으로 자리잡음.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 새벽 시장에 일찍 가야 좋은 물건을 살 수 있다 — 일찍 일어나는 새가 벌레를 잡는다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 선수필승 · 기회는 부지런한 자에게</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGYAAABmAQAAAAARpNnPAAACBElEQVR4nH1UsYpVQQw9++Y1QmAWbO2tFgKzYDMwC36AX7KVrY1/INjuTwh+QCSFzcAsbCtY2kbmgU0eEQvRnRFvNZfDSc7JCbkI/PnOh79+AAiGcg1t0UELNnywZxpCFP0xdjhfntKDfbt9pfiEx9gRON9d283d1QvGgqFTEAyWhstSE8MlD/ZC7Gu/C7npv9/Xq84ImwE31ghfMBUzIcScg1ee5VyIyNi9rVqcBupgskkr7/jj+ZlOtzSPwBdZPYBaUaqSVRYtx+8JH+jpR5Sr233WpqQ191SNVg+eaWSrOsNmXTHvDOVaxXyt2VOmZq7NpK2YM8dkYRNtS7/DQ35/epbepK948vZ+5dUhTikEffWHGOgw5VZ5rDpDMnOHlC5YeT2LOlypDl150ofDOpBIFg+H/PL0ed7zVFJac5hIqAx2l7RmG1ocpqWr2KaFEaUTU/e+7xnDs1jh+o8cMo8akvvY8pvRWjK2KLb7k84zmmbzus1TS2Gykju2WfsvnZyUcowt92wlT/eOalvu1cVptKFR17nM1iq8stK2u5gWuUqm0mXdF1jDMOohY9jmzzsL0BskbTsRakncJ/J2CwSBLt2a0lj7/TodQl5GHn2peThf4uXrj0cA36/32+PiGTaqxcoDfvD9VeDm3cPGG64N3gQl7/6gkSqa5dBl1hf/ubs/AUHlS8ueKcfkAAAAAElFTkSuQmCC" alt="QR"/></td></tr>
+<tr class="quiz-row"><td colspan="5"><div class="quiz">
+<div class="q-title">📝 미니 퀴즈 · Mini Quiz (1~20)</div>
+<div class="q-sub">다음 한국 속담에 해당하는 영어 표현을 고르세요.</div>
+<div class="q-item"><span class="q-num">Q1.</span> <span class="q-q">산 넘어 산이다</span><br><span class="q-opt">① Out of the frying pan, into the fire.</span><span class="q-opt">② Give and you shall receive.</span><span class="q-opt">③ Kill two birds with one stone.</span><span class="q-opt">④ Nothing ventured, nothing gained.</span></div>
+<div class="q-item"><span class="q-num">Q2.</span> <span class="q-q">호랑이도 제 말 하면 온다</span><br><span class="q-opt">① Speak of the devil.</span><span class="q-opt">② Even Homer nods. / Everyone makes mistakes.</span><span class="q-opt">③ When it rains, it pours. / Just my luck.</span><span class="q-opt">④ After rain comes sunshine. / Adversity makes you stronger.</span></div>
+<div class="q-item"><span class="q-num">Q3.</span> <span class="q-q">끝이 좋으면 다 좋다</span><br><span class="q-opt">① No lazy person ever became rich.</span><span class="q-opt">② It&#x27;s never too late to start.</span><span class="q-opt">③ Putting the cart before the horse.</span><span class="q-opt">④ All&#x27;s well that ends well.</span></div>
+<div class="q-item"><span class="q-num">Q4.</span> <span class="q-q">굼벵이도 구르는 재주가 있다</span><br><span class="q-opt">① Time and tide wait for no man.</span><span class="q-opt">② Everyone has their strength. / Every man has his talent.</span><span class="q-opt">③ Speak of the devil.</span><span class="q-opt">④ Win-win situation. / Everyone benefits.</span></div>
+<div class="q-item"><span class="q-num">Q5.</span> <span class="q-q">낙숫물이 댓돌을 뚫는다</span><br><span class="q-opt">① If you chase two rabbits, you&#x27;ll catch none. / Stick to one thing.</span><span class="q-opt">② Still waters run deep. / You can&#x27;t judge a person by appearances.</span><span class="q-opt">③ Constant dripping wears away the stone.</span><span class="q-opt">④ Win-win situation. / Everyone benefits.</span></div>
+</div></td></tr>
+<tr><td class="num">21</td><td class="ko">우물을 파도 한 우물을 파라</td><td class="en">If you chase two rabbits, you&#x27;ll catch none. / Stick to one thing.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> Even when digging a well, dig only one well.</div>
+        <div class="meaning-line">여러 가지 일을 동시에 벌이지 말고 한 가지에 집중하라는 뜻.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 한국 전래 속담으로, 우물은 깊이 파야 물이 나온다는 데서 유래.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 이것저것 손대지 말고 우물을 파도 한 우물을 파야 전문가가 된다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 일관성 · 초지일관</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAF4AAABeAQAAAACCqZ7DAAAB3ElEQVR4nHWUsapUMRCG52wWZGFgFmxv4wMsRGIZycJtfQ+fwdLK1ocRrIRZIsiFWXLAVriNrZAlB7aZEAtFPbOYKoePP/Pnz8yZBvxZffN3DwAMBTXHOARwTYqypOHCiENWZNP3dP18wXmBE6zIFmB5Fe94mWdYkw3A4dny4eje/Pr4ZxUtxCRMaupMfJTf2xfG2xiqRBwlDV2TzI0GuADDWw2hpwI+ozcaxjhSQnXo4po016DFQViC0VQtQaUSxbp2DcNhy6CBa7R1hBLmxhWD0ZTAuYbWSk1rB5vLAx6O5xkubpnNaZREWWoTNnVaJS8cq6tg7jNGjaRxNLUaZYQILiM7462VLKkUIpL1adtdx+e6/3gBsa/91S14dT2W+6txrUykTJHhJuvmGFW0Adj7RBhBQdow6Wz7u/7y4Ul135bOpo5HhqDRM601k36B3Wt86zwezSxk4REZogabW23BcRwqmA3RGDg48FyS6bcaalT2HNDkNo2zf/rp2uEeDlZDKQO31MT09faxv4cx0fcz7H/YN5URSm5K2czpaQqnucMZ+u54M9uaiH2hbLIWZFLGRjY3EFSGLJCTu9GoRl9rIDGkqPgmASC0NdlctvDYHbgCd+sOmf77r/oJUWYZhhhj7MwAAAAASUVORK5CYII=" alt="QR"/></td></tr>
+<tr><td class="num">22</td><td class="ko">열 번 찍어 안 넘어가는 나무 없다</td><td class="en">If at first you don&#x27;t succeed, try, try again.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> There&#x27;s no tree that won&#x27;t fall after ten strokes.</div>
+        <div class="meaning-line">꾸준히 노력하면 안 되는 일이 없다는 뜻.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 도끼로 나무를 찍는 일에서 반복의 힘을 강조한 한국 속담.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 거절당해도 계속 제안해 봐라. 열 번 찍어 안 넘어가는 나무가 없다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 인내심 · 지구력</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAF4AAABeAQAAAACCqZ7DAAAB60lEQVR4nHVUsWpcMRDce3sQAoI1pAoEQsCtQUYHxqBDB64C+Yx8gCFt/iJVIJ8RcGVYoyKNjF5rcJPKlUHHHrjRY4MhJGhDVC0M8zSzM3orhT9nmf7OAMBQqEjoVMANyJo6LIfXsj2+1NsBmZaj+Yoe5u8FbmDkAOD7A50cvszwD3J4uNvMbe0MArV3IWJJXcuArHhXfo+bURuoSnWUi6h24yeWGgEgZB6/BhwqaqgtYbNOb/ePRz/fLt7hqG1VcLloN+7pfI3n4w6eTi9Ptv4MXkTrp0jWIs43J0ZB84WZEmlNxk8nD9VjKQDGj8akmVMHioZTqHYUyqzd7E23uM+7r3gK4aXZQVVRIcgSjbYOlIkhP4/TiNQsShxjLSMyHbZuu77GK9zCzu5tTwsux6+K7Vth5AjQI6NRUFPQFFkCUjSqHQuGAknEagu9OiTKnizSUkWB3KIbkVWFzeORe7gFt/uniaAua1dJRkEm0ITdSQo2ucIZWkBxbvQz4Se8xA9uub9q5h4tnrpmH9k0ERpBLeR9gmwUVBc4sQNhGjmTl2+4UI5v6LrZ9yP3sODi58PnkUMdNhvcX8zo2OTjpPTn0G0PJoC7jz9Uz951P1tOVnwucLX51M4cBLx6sq8ROObem7Zg8vnvv+oXrMsK3Lsp3PwAAAAASUVORK5CYII=" alt="QR"/></td></tr>
+<tr><td class="num">23</td><td class="ko">고생 끝에 낙이 온다</td><td class="en">After hardship comes happiness. / No pain, no gain.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> After suffering comes joy.</div>
+        <div class="meaning-line">어려움을 견디고 노력하면 결국 좋은 결과가 옴.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 유교적 인내 사상에서 비롯된 한국 전통 속담.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 10년 적자 끝에 흑자 전환에 성공했다 — 고생 끝에 낙이 온다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 고진감래 · 전화위복</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABWAQAAAAB9LVxaAAABsUlEQVR4nHVTsapTQRCdm0kTGNm0lgHBKrCwAZsNNx/gZ9gKD/yFB1bCA1t/QkgbmMcVXrMyt30QsLSdsIE0E1ZUfDoXnGo4HM6ePTPTNfhT19lTCwAMXAoEIyCHi1XTmqS08i8+uy6Pm3H7YQX34HCAa+g/vjvufvVPNQc483jD29+cvyWmAK1A9vrz07wU+AoFOu+nNTO0HkIz7z8PEmvjxE4HNAQVzBzR6cxw/RnPfAmyYMc30VCVEzXPf7ge189H+KT36vhl0FgtFqveZyXh2pvm3us84pZenyDgIfrcVnFzgIft7ejzGTAPfaEkyf+rxtqyDUElO50Rn8H7y+IFrCY6hElSlZi9z6Emgz4gVKfftS7vd3dAbyb7oKGEnsDCZF60PsMtnV7xdvT8ASD0itEmc1EiRhmIfD4B00vgt/Q9ef+NMDC2ZMnPvQo1CSRNPV7izxdyTdXjllLUYMp+f2aXR5Jxj0vodpN9k9L6aFJczsBgNAgwidPpZA1f8ob2384L74c0ZEvA5HMoNCAnDoPPAQpxJIwm6u8OFQMfaAm7m4mfwllTJnY+u//c+w+rvNu5mIr1ggAAAABJRU5ErkJggg==" alt="QR"/></td></tr>
+<tr><td class="num">24</td><td class="ko">구슬이 서 말이라도 꿰어야 보배</td><td class="en">A thing is worth nothing unless it&#x27;s used.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> Even three sacks of beads are nothing unless strung together.</div>
+        <div class="meaning-line">아무리 좋은 재료가 있어도 다듬어 활용해야 가치가 있다는 뜻.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 한국 전래 속담으로, 구슬은 꿰어야 목걸이가 된다는 데서 유래.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 좋은 아이디어도 실행으로 옮겨야 의미가 있다 — 구슬이 서 말이라도 꿰어야 보배.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 실행력 · 행동 우선</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAF4AAABeAQAAAACCqZ7DAAAB5UlEQVR4nHVUMYpbMRAd/9nmgxZtG9jGsJAqoKBtAoJvcBUI5BI5wN4gZS6RY7g1TNBCMIzRbxcCW24rGIMbiUmRkOSPiaoRj6d5ek+jlcKf1Ye/NQAQUJaakjC4JVIaJ1WMkpQXyNBv4MsjAMzwDRbIFcD5Qzge7mGGJTIAhPVut5Hx1+afVRpj9VynZvqsaMO/y3ujTVUSe0qs2pZIJmUFjKBhyRnC5xPelH3P11CXHK4S1buGDtNSgW7mOxhx3uOng/GNm7CjPKW6VA2KXgRqgpqMNgrALgtVL4bDsQSJIoWmpQIQSBNDFpJoPCDNxZGrwmT6FNbAwVWsYE+TIhOnGuWCQ4CJsDpCk/b6Y+no+Vb8wWa677jr/fWq27QRMdxuT2PZnjfLPg2gOPKJyHgN7DVga00SGG2aGngBlmbcWencT/j+5YjjA5mbOuY0tRDImz7ZV3KRSdScdtXXkF6OsH13PlpOyZ6SNnbZIgTgMwTSyeQjPhJToNjYcJRBUyZCJINULxGK5EzmXQ/P/emrvr0e38C1mR9VruJzbD5fzE99Po3nHl/RMoXBtzkk7A8/8GxnwTFlcOIvfGMnoUaGXJzJh51Co1qjN69qwPrI3928ebqLRjVB9q7E2MQb1f/9q34C54YZBQQMu/sAAAAASUVORK5CYII=" alt="QR"/></td></tr>
+<tr><td class="num">25</td><td class="ko">쇠뿔도 단김에 빼라</td><td class="en">Strike while the iron is hot.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> Pull the bull&#x27;s horn while it&#x27;s hot.</div>
+        <div class="meaning-line">어떤 일을 하려고 결심했으면 망설이지 말고 즉시 행동에 옮겨라.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 달궈진 쇠가 부드러울 때 작업해야 한다는 대장간의 지혜에서 유래.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 투자 기회는 망설이는 사이 사라진다 — 쇠뿔도 단김에 빼라.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 기회 포착 · 타이밍</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABWAQAAAAB9LVxaAAABp0lEQVR4nHVTMWpcQQzV33Fj0DKGHCAEtjUMzDaBgdkD5BhpXeUiaXOPBbcyE3AjMwupFtIEAmkVtPAJzEchMXGsDVH1eDyenjSayeBPLasnCAAEwoxBEPA5fxHHPd7cXr74ER4cv1x9O8LrcHm1d/oVwOEdwfo2/cZPtQK4Xi4Oc3nEf6uPPjSBsvFzfqIdP6Kt8wcziwzcuw3nf7eevs5lfrvZ7py+9QItJkrB+xBmCNqBzPGTHU5pXekO50ufk2BEGsqpeB+rrUADEZcfNMkAkaDsckLLmSsUq8H7cGHNmNSyn+t0P+OHGY/TZz+XClgZhNK9j1gukapw8H1NRiydqoHnKY8ROgIEn99SDVay4ll+7li5jU7q+q7g1eb7jB838c3B51QDipEx+v2zQMpNc0veX1tXotKter0WGTEUIfLztlh6CcBlnPljEGTM2e8TuOdWczdEnz9cA5yOp+1+fn92b21YTdL57N2BOqoien4VR17CsoYQ/J0zUiwSkdDt+Rf+8unlZl/lHz1a4QjtLKeE/LDfLfXG6wkYlUnVzzv957//BP2r4LdgpVmhAAAAAElFTkSuQmCC" alt="QR"/></td></tr>
+<tr><td class="num">26</td><td class="ko">호미로 막을 것을 가래로 막는다</td><td class="en">A stitch in time saves nine.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> Plugging with a shovel what could be plugged with a hoe.</div>
+        <div class="meaning-line">작을 때 막을 수 있었던 일을 키워서 큰 노력을 들이게 됨.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 농기구의 크기 차이에서 비롯된 한국 속담. 호미는 작고 가래는 큼.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 초기 작은 문제를 무시했더니 결국 큰 사고로 번졌다 — 호미로 막을 것을 가래로 막는다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 사전 예방 · 조기 대응</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAF4AAABeAQAAAACCqZ7DAAAB6UlEQVR4nHWUMWscMRCF526uMQwokDbgJuAqsCA3BgUduMr/SGsw+I/krwQOXAUUFAgGHTq4KhBw6XaOWdhmhEJCSNAYbyX40Ns3783uqsO/p63/nwEggXiKmqQAjaSqSCfyLvQykHV71Q7t6enHDr7CQDYAP6/mrcvTAZ6R+Tgf8GMDS5DnN1znd67hfiCrtC1/j5ejt3XsF7Bcz8uCnUfXmX2OiUR71pGIcxzpj2IYCafeU6AMGgzRKFPxDvwURrWVtPNdw3a3VzgYNSmaufukahwkleQTqCiNiYJmr5ODIMiG5CDstPigYrxl6YmmzJiTaY6D727yIhWNWndVQQoFisZbTlA1UeaE43s2BOX0Gu5v6PhwO7Zwej/f7Ro8fm/L2OmKz78sN4+fsbm2tVmDc8mlmpxtIWIEEkVnN5FBZeos7GxzWUIsHqNGGSddldv5+IBvzw5oN55rcKFmRY4mnZo8+ImxEI7prOEaOuE5LHxl5lFSctFxmKptO4aiGJihGNJLoZymDr7bDFzJsf5eN3unknceUBnIqvXEWCsUl808CWpUylFKNt+P07a/REiAZ2m8U4irT+jlWT+FNILP4MH0swZYWtyTfJrKuAdQtUwhU1cxrtenDRzm24tvy4f7MdHVi/+qX1zFGLfj9IhQAAAAAElFTkSuQmCC" alt="QR"/></td></tr>
+<tr><td class="num">27</td><td class="ko">늦었다고 생각할 때가 가장 빠른 때다</td><td class="en">It&#x27;s never too late to start.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> The moment you think it&#x27;s late is actually the earliest.</div>
+        <div class="meaning-line">지금이라도 시작하는 것이 가장 빠른 것이라는 격언.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 한국 현대 격언으로 자리잡은 표현. 늦었다는 절망보다 즉시 행동을 강조.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 60세에 코딩을 배우기 시작했다 — 늦었다고 생각할 때가 가장 빠른 때다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 시작이 반이다 · 지금 행동하라</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGYAAABmAQAAAAARpNnPAAACDklEQVR4nH1UTWqcMQxVxgPdKDjQbTeFbAccXOjGxT1ArlLItrcodFvoVRQUKAEFFbrqKhRyAA0KZOPBZaB/yFAvzGceT+/p59PJhL/nsPnnAQAE5KUBJhfAgOmY6OqUDacETFCUIRsnpIBtjtd7e4BG5dfrz9kApP23y9N8c0URAx1eHQZ0GFHvhN7K7+9X0eeco6Y2etI8R9C7fvOFbmF7d/v4cP018LjXxuTcpnrMbxBWKUzKXVvkpWnDuKoqRS+EZt59NEgteAHJFV1RK/VFT5EBp4Nao6hHSXoxqVZWnxObNGw+TGnRmx2QpyFWXHIg0OagXkaLOYg3U+1s3Ja+MxBrKeJ1euSNmpyyGFfrUW8QMBkUVEjRp2WahYaqZYkYiyQFgSHCi8/M3XH0lFSiT6LcYMAoCnmpmWdRqqh1+lLrklJL1qUwRi+uNWlnhjRj37ffH+Vit8eC5RHjXFPyNrmaKEjUM7HjsJRaNfrc5nohzwzgcL/fxZhCc3jPtUG2EHPzlOE53L083MiPy8VLEW0Gs0qPPCBOx6r1ZFhird0aOTpNSAvPeimSGx3HeunDGGQEyY+Tsfy3xI1G5pqX3hK4eZGeOi4xdfgsZbBh5uhF0BoYwGiUYo8A7j++SwVew9WhLBicP50doHw+fxF3VrI9ftrNhgA7Cth+C2eHD6f84fwSzsLO+s/e/Qm4t0Q8bGOHswAAAABJRU5ErkJggg==" alt="QR"/></td></tr>
+<tr><td class="num">28</td><td class="ko">백문이 불여일견</td><td class="en">Seeing is believing. / A picture is worth a thousand words.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> Hearing a hundred times isn&#x27;t as good as seeing once.</div>
+        <div class="meaning-line">여러 번 듣는 것보다 한 번 직접 보는 것이 낫다는 뜻.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 한서(漢書) 조충국전의 &#x27;百聞不如一見&#x27;에서 유래.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 보고서 백 번 읽는 것보다 현장 한 번 가보는 게 낫다 — 백문이 불여일견.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 직접 경험 · 현장 우선</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABWAQAAAAB9LVxaAAABs0lEQVR4nHVTwYZdQRA97/VlhHrqkW02YchqaDqb4XLzASGfkVUI8wHZ5CfmM4a3HfrpVeinh1kNj/mC0Fc9rlBXRxKZTF1Sq3Icp0+dql41/K15/dQCiNBBJWcFPcc7VrefjpjQDoafqYrXBor5Ob4Gjq/Ybb3/3T/VGjhhxK786f9VUdGUY8jN6HRjl/ECdI2V8YPWhFWVS1ODpzqI0xRaMvhKz77zu9HNj6Pli5aBtCA1qy+JcxkaUrK46gDASV9sPtP2oj7ifPvjrZ1LaKDqY5Bs/QgOX341e70z/JpjEPLSguF3xyvEjaMNOatfUQdm9s7ua41wf7rZnePWebuvHHqOZahxkQNrjpGqz72dt6/COQSiBb9I0ZZbXubfD37oufRqdWryROwIvPA5x+B39U16bXyu7z4c4fr3NJPJZyUblE/Tww6w+tkFLTlmv7if0+XX+5Gvjjfz4t4SAnNjwPovSE4oSYS9Z99mbE+fN1ysTkSEUyXKdi5W526ns+hcXf6XEEImOPtupppUHEQW+YAuXz58483B5LMqF/cznJ+7cG34Ywd8nPeTwPL/899/Ar1o3hbnwMsrAAAAAElFTkSuQmCC" alt="QR"/></td></tr>
+<tr><td class="num">29</td><td class="ko">공든 탑이 무너지랴</td><td class="en">Hard work pays off. / Effort never goes to waste.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> Can a tower built with devotion ever fall?</div>
+        <div class="meaning-line">정성을 다해 쌓은 것은 쉽게 무너지지 않음.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 정성스럽게 쌓은 탑은 견고하다는 한국 전통 속담.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 10년간 쌓은 신뢰가 단 한 번의 사건으로 무너지지 않는다 — 공든 탑이 무너지랴.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 성실의 보상 · 꾸준함의 힘</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABWAQAAAAB9LVxaAAABsUlEQVR4nHVTO4ocMRB9PepkQIsGfACzMOBoQKBNFjSowalhz2DwAfYGTvYAPoCP4XShBqVa1NDpJAsGpxrUMEk1cmD8qQZXVDyK96peVXUNv2PZ/EkBEKJPUKyhBZ6ZuTZPqaV/8c2yG+fz3VPACQIH1MPh+fM4YI3PXyY1f/yV/43MDWgML/n7S58SXpDQyX5aK15xg2ks+E/H83S4gvanUc6VK0VjySrJwwgqZZubFroojXKt5NC81PWeDXFkkniM1VZvDVfB39/fTc9QX+dByXlrLikUn0NZ8VgFttHHtNINKYakQ3ayz0qqeY6mZFG/WR62eLpu97hd6ZJx2VSyXvpQlWUVDFAFf1fw9nWgUX9a3UMxVgVd2Mh9gcgiZnJ5xc8uKRPYWF7pomnSKWkt8M1L2L1DfFTVWVmvm6HQXHVi710bL+6MY7yVfW7Go1qOC/ZvVv63CFsMl1IFD6rmRrEBSvjZ6zouYbjwtMh+CKxjBuks79Ywvt2/tzbOW1GfdDW+GNDq3pLOilwxUfrQA8vhw48bnr6fxVyqXA0tvLsMj+v/JV+q1/I+u//8+0+TLuKeTFiyYQAAAABJRU5ErkJggg==" alt="QR"/></td></tr>
+<tr><td class="num">30</td><td class="ko">정성이 지극하면 돌 위에도 풀이 난다</td><td class="en">With determination, anything is possible.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> With utmost sincerity, grass grows even on stone.</div>
+        <div class="meaning-line">정성과 끈기를 다하면 불가능해 보이는 일도 이룰 수 있음.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 한국 전래 속담으로, 정성의 힘을 자연 현상에 빗댄 표현.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 포기하지 않고 매일 연락한 결과 마침내 큰 거래처를 뚫었다 — 정성이 지극하면 돌 위에도 풀이 난다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 진심의 힘 · 꾸준함</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGYAAABmAQAAAAARpNnPAAAB6UlEQVR4nH1UQYpVQQzMt2cZaQ/gxhsEepaRDLjyXnMnt5EW3AQyBxA8wUBLZplP5AuidoNv1aGoVFLJy6Xgz3d99VcAAAorOKjNYYAb5umdB/QBWLZhhhngo6GgbtgrgK/I7/Q5HulX9C9GL49vXj/clOHUk24Zi3PXu+iD/X7f73VWBRhkyvDKvT/sEguqZRu88xqgahiGxJ4zEakhYTSKPedsmF1cIbgfOUEppCVD451XEc7h0MfSnTepY9KtEW97LdqzaBmv8jzmAFVKziq0Dl5UF5h9Tpg7ZhY9E1qM5GPunSYsQ6OYe52W0LlQuOPRn87VtNuaY8nhizbqBkWs/dTzNjFXN59bf3dwfVF8eYJneIKH3bNuQJAk2nWvxbVTI+g19djrGSNlDfRRx2zTCmK0tSbSsWc9hKPIBdvhC7kneyEHHrtUnSlVFvja51dpQ8aYGXz0oENGtIxwPbwORMeZCal27FJwo4HTVzv2OpCdF9QwgZ2XQUMhlrTATe8S17frbvL9FV/g28ZbkmKd1aT2+YGmDUzA2WD37FLwhT8jffjxXa/7LVDwFWToA+28S4GFiVbu510yCIYYALjp3SL/+Inew1jH7bnxloQjo+w5PU2lJoy5jv9PwdUVE7hkq/Pyn7v7E/HTPYACrLevAAAAAElFTkSuQmCC" alt="QR"/></td></tr>
+</tbody></table>
+<div class="page-break"></div>
+<h2 class="cat-h">🤝 우정·관계</h2>
+<div class="scenario-box"><div class="sb-title">🎭 시나리오 대화 · Scenario Dialogue</div><div class="dl-line"><span class="dl-speaker">친구1:</span> <span class="dl-text">오랜만이지만 어제 본 것 같아.</span></div><div class="dl-line"><span class="dl-speaker">친구2:</span> <span class="dl-text">친구 따라 강남 간다더니, 너 때문에 여기까지 왔잖아.</span></div><div class="dl-line"><span class="dl-speaker">친구1:</span> <span class="dl-text">친구는 옛 친구가 좋고 옷은 새 옷이 좋대.</span></div><div class="dl-line"><span class="dl-speaker">친구2:</span> <span class="dl-text">맞아. 가는 정이 있어야 오는 정이 있지.</span></div><div class="dl-line"><span class="dl-speaker">친구1:</span> <span class="dl-text">오늘 술 한잔하자!</span></div></div><div class="compare-box"><div class="cb-title">🔍 비교 박스 · Comparison</div><div class="cb-pair"><span class="cb-ko">친구 따라 강남 간다</span><span class="cb-en">follow friend to Gangnam (peer influence)</span></div><div class="cb-pair"><span class="cb-ko">가는 정 오는 정</span><span class="cb-en">what goes around comes around</span></div><div class="cb-pair"><span class="cb-ko">백지장도 맞들면 낫다</span><span class="cb-en">two heads better than one</span></div></div>
+<table><thead><tr><th class="num-col">#</th><th class="ko-col">한국 속담</th><th class="en-col">English Equivalent</th><th>뜻 / 유래 / 활용</th><th class="qr-col">🔊</th></tr></thead><tbody>
+<tr><td class="num">31</td><td class="ko">친구 따라 강남 간다</td><td class="en">Birds of a feather flock together.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> Following a friend, one even goes to Gangnam.</div>
+        <div class="meaning-line">자기 주관 없이 친구를 따라 행동함. 또는 친한 사이라 함께함.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 강남은 멀고 낯선 곳을 상징했으며, 친구 때문에 멀리까지 가게 된다는 데서 유래.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 관심도 없던 분야인데 친구가 한다니 나도 시작했다 — 친구 따라 강남 간다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 부화뇌동 · 동조심리</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABWAQAAAAB9LVxaAAABqElEQVR4nHVTMYpcMQzVjH/zQUEDe4JUqQYMDmxj8EBOkgMEcpQcIMcIpFrw4mJZ0OAPaQfSBFIFPHhgGdBHKZYNK0NUicfj+T1Z2ii81Lr91wJABg6t5yyAr/EtyeUrLh5B82t8Wne/bnB9t/K95QOA7Mty2j33L7UFWCbYP37PA+4aXS+HyydIBt/kAz93740+qNZELFhVrP/GrBUrkOU3woyELgY2+nrvf35cIF5sXtBSQwnF1R4NXtF3H0jToM/JdeXuxBt8Cufr7fyAcSqz1QlBJDKGYv3X5iOpVmzGJ4gLlQgIk+WX5jwQBjf81949Yr1z813wNhcnAATEavVLClxC6sDW/3yuRzj9udGN5XciR5UjD/OXmLNGqlHt3FpR5ygRJKMzneZVdm/h7PObwY9zriB2MvrTfL7ewvp7PcBicyXuyo1AhlwtJK+dWhzmSa1LSuL9sD+ckBRrBoNvFJb189MxfVnNfkIGAQ8xcBn2RFi4x0x12BOUDJgjOMtn1MzQXc/jHR3dE+08fLDvVilEKNVZn9vztH7L4QfciZnP5j/3/hclgNf4Rjg1UAAAAABJRU5ErkJggg==" alt="QR"/></td></tr>
+<tr><td class="num">32</td><td class="ko">백지장도 맞들면 낫다</td><td class="en">Many hands make light work.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> Even a sheet of paper is easier when lifted together.</div>
+        <div class="meaning-line">쉬운 일도 함께하면 더 쉬워진다는 뜻. 협력의 가치를 강조.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 한국 전래 속담으로, 가벼운 것도 함께 들면 부담이 줄어든다는 협업 정신.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 팀 프로젝트는 백지장도 맞들면 낫다는 자세로 임해야 한다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 십시일반 · 상부상조</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABWAQAAAAB9LVxaAAABtUlEQVR4nHVTwYZdQRCtfnWJoahLVmGI4TGrocfNsqMfWYV8Rj4jzGY+INv8R5jV0E8/sumrH1mFx9uEbPvqR4S+KiLJmLpMrcpxnDp9qssI/K959dACrLZmt5tgHGfTP8Y7bmhkc0u9jIo/9yfowL4PW1A4wOzg87uzDSxxiGdvp7t//UPlVhvnwknSY9yETfrbvSLFF8lAqTJLU3ikxtVzbAsd2c34YcbpOGm+hIqUgapb6A+CZRhcQIUbMXJ6jd9+nAeVGxRvk7RUnFf87uvE62v89OZ+r/WbdzlnL9CUT6hhsL5VyU357A5IMPXl+riY21y1yGwRlP5qd3eOyV7QFVmdcwoINhEmPbfEICVQpex0DsShtuJd1LkVCdW2FLPXOkK5iePsitIxEWgziaHvvc4hWOcQBGCRf+VqXfE+a7wb7w8Mz9O8/vJL730oGBkKOeXTBLiBrT8dprbXfG5JchEgxV/NV8+wg2MHJ/0/RRIjDJCzfm8ASRQ9UNY+uc1Q8OPFSwiKnygAY7CAer9/RoyXL35i0XcHMBgua77dL+8lu5Sl1WHpJ2XfopSic3ji3n8DPWTg8MGpzIwAAAAASUVORK5CYII=" alt="QR"/></td></tr>
+<tr><td class="num">33</td><td class="ko">가는 말이 고와야 오는 말이 곱다</td><td class="en">What goes around comes around. / A soft answer turns away wrath.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> If the words you send are kind, the words returning are kind.</div>
+        <div class="meaning-line">내가 남에게 잘 대해야 남도 나에게 잘 대해 준다는 뜻.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 한국 전통 윤리관의 핵심을 담은 속담으로, 말의 힘과 호혜성을 강조.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 직원에게 거칠게 말해놓고 친절한 보고를 기대하다니 — 가는 말이 고와야 오는 말이 곱다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 역지사지 · 황금률</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAF4AAABeAQAAAACCqZ7DAAAB30lEQVR4nHWUQWpcMQyGNaNACThobtBlVwWDu3TwQLY9RqCrQo/Sw3RbUHBgCCh4oKtCoMtuHTSQjR4qtKXNU6lXfsiyPv3+9TYOf9ay/bsHAIaZUiuGAmkdGTa0YVKsLqvI2bL7Dss8xww365wtwP3D7W5//Hj8+fEsByB/04vD9fLr2LM1rCuMntVCnQ3v5ff2TWBzN8nEONwt9JPQnJOalhpyUCoVmg1tfdtGTgSPKR8u7SqoI61xcsotQ6gjUK1O71o81NGWU6lu4jXmWKPO4OqBAKaiU0YRgLUGIFMUTEo1Xd+2Pb18d2n7p+XL4WIXNdCsXQZADmzTZweXkTH2o0zVOM0JGHIGdXJiwSGRYFk+3SyYYXk6riMJMRMuL+6uzvexDkgHsAoYOlVtmaFXKhzUUZ4zz6kzQWBjtFwxEVdcs23kmm7vnupyxOh4LeLEXNsMfgODOqRP994CARcUI+pDLGhAXwHPJrx+f8Lg695mh9pgoAVf+/2rh8d0PTYlBbZJ2L1jyXmG9xlJpTFB4vTPLHAvNDJTj7MArC7dXfpaty1Z3R2vlt09ngdqSTIKY1GmMPUApw9H5OXt4+fwppKG9AwjU5zGYaI2UoMevAMMA6RoFwtsm//+q34A1/wbKyDwmjoAAAAASUVORK5CYII=" alt="QR"/></td></tr>
+<tr><td class="num">34</td><td class="ko">미운 놈 떡 하나 더 준다</td><td class="en">Kill them with kindness.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> Give one more rice cake to the one you dislike.</div>
+        <div class="meaning-line">미운 사람일수록 더 잘 대해 줘서 관계를 풀어가라는 뜻.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 한국 전통 처세 지혜에서 비롯된 속담.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 사사건건 트집 잡는 거래처에 오히려 선물을 보냈더니 태도가 바뀌었다 — 미운 놈 떡 하나 더 준다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 관용 · 포용</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABWAQAAAAB9LVxaAAABrklEQVR4nHWTQaccQRSFz/QdYrjPHWYbIgxZPTqqN0M9PeT3PPJH8mMesx3qqdmEeqp5qxAihKxCtxp6U6WyiMS7TXpVPtfpU+eeWlX8/Urz7wjAIdGYnMvgl7yRXDbyFYzqXvJ12f5E5zZbnNT8Ghh8x+/3DCz45nh7R+HpqnhD4/5M+NS1veIrdwx/Tp3SR61jDJxFalbcj4Z8plS94qtx14Inmb5Nej6HHqgRvmr/w+yG0jnwpVXzISdLRpJIUDxVdpxTsjo3hNZmjK1JpP3UC7gF8Gi+aJ1QUwqtqf3CJ7WVxYJF8+pCyyKGFvsazFHcQ1vOpP1XUIR3XKF1nITsIT4mq/07op6NZ6fm1/vdAWcq5Ga1L0TrXbUS7ah1EsUEEkDn1gy/rsW6761/q3tyeIVbHD4ws9b3mXMPm6PT9y278Rl8ontR/Wxomj9O5nl7uV/4NMH3vVSnc2jKZ+D6dOqOGBZ9c0JsEKP+7+OKUH6c5a7oPktGcfTmTDTqPHmE4czQfVgDMspqnhPfLPj1tbEbvnF6jzE7GyRmMTrPaS3DuzLNe6j51X/e+2+6aswAN3ycfQAAAABJRU5ErkJggg==" alt="QR"/></td></tr>
+<tr><td class="num">35</td><td class="ko">발 없는 말이 천 리 간다</td><td class="en">Bad news travels fast. / Word travels fast.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> Wordless words travel a thousand miles.</div>
+        <div class="meaning-line">말은 발이 없어도 멀리 퍼져 나간다. 말조심하라는 뜻.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 소문이 퍼지는 속도가 빠르다는 한국 전통 처세 속담.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 회의에서 한 말이 곧 회사 전체에 퍼졌다 — 발 없는 말이 천 리 간다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 입조심 · 구설수</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABWAQAAAAB9LVxaAAABoklEQVR4nHWTT4pbMQzGlWg2AyoK9ASBbAcMLpSABwdykt6gV+iq2x4m24JAA9koODCrwsBsegCDH2Tjh7sY+kcP6pX4+JB//iytBvw+8/pPCQAC1QywE9C/+h338/6otKl4cfq8+Xmdwj1sTs6/Bnj+LJfj6a3+e4x6CUmGiTk/1vOsE0whO/9KDvZWfXD9YYzKBFR4dM9PoNo1tpgcJ9545vfbb4/P995vPdBQ0LHgvx1fb4e9wFP1+gPswhfA/ew5y3T4Tjt8hKt7FzSoHWrABp6zxGQsnUdxnNCCtWahjej864ve6PKRfqxers7fUxupF6rF59MKZLJUDX3/IcjQJAzwumkYcXCs2fMLEeYUG5nnb5xSUsrCrs963p7xK50m3nlOKwOF0Yg9p5mGrC1p8DwVOaom6dnrKrHHQGayyJO5jBoyZz+38ADbdxBOAP7frXXlyJlokQMVbaRN0OcwhlKLoRbz/AKFoVYir99xhxl4g4Cy6K8ld2ShRQ4ktTDqqP5eI6HcjcHPyRorxvkpzPrJ75dAoWbSop+f1X/2/Re9+9dQJQPoRQAAAABJRU5ErkJggg==" alt="QR"/></td></tr>
+<tr><td class="num">36</td><td class="ko">사촌이 땅을 사면 배가 아프다</td><td class="en">Schadenfreude. / Envy of close peers stings most.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> When a cousin buys land, my stomach aches.</div>
+        <div class="meaning-line">가까운 사람이 잘되는 것을 시기함을 비유.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 한국 전통 사회의 친족 간 시기심을 풍자한 속담.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 친한 동료가 승진하니 마음이 편치 않다 — 사촌이 땅을 사면 배가 아프다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 질투심 · 녹색 눈의 괴물</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAF4AAABeAQAAAACCqZ7DAAAB5klEQVR4nHVUMYpbMRAd/3FjGBgfYiHVgha5CQhkSLuQM6TaKrAHSJkD7IUMMqoWFMaQKmDYZmFbGX34jYSCSdiggaiaz+PpvZmn+asO76dN/2oACJCgUw0lAY2I1E7S0XbX04BMbTvj7V2lHRxhRADgMMP+O53+fLyfNcAGPp/g25EUctXhILFKVTqrsE9/y93obfJ9hgfE5QF7Hm+LVCMDRK9vg1rYCNG1dKOOXO5f7wGfvvDlrBzY89z20mZ/HDkQc4nGmm66UzqdyZaYHZRa1axDcIgsJjs16yLIhsEVzArpRtAm9uR1P1msBIsJsOrkDHA3WIqg4oj1mDFSQq85ASUBFBtQuc4cEnM0jpNKgRs9Hhr9XA44pjA1XJYPeKlPny5blUJA8IGDBFYTlS4OaqoFQM8tQydXo0WjkOK9Rwu++6I7dQG5uFwpKk4tjFk4G6Oms0o3J7480vK8XZ6VDpriI6AtOu3r9ojD0J3ofjglQpczkHLQk02ulGJyVClkRixJuq9h5KxfWqNt42bXpF5879KthNw5qj09rm53vxq/3B3Uzk1c8ccrzibiRm1jokAe4Nrs6GACwLdmsX0NH1WmibLzUUo06oWA1GScTZ0qjcj6sg7nOcN8s3vbjCn891/1G53RC0umnBwmAAAAAElFTkSuQmCC" alt="QR"/></td></tr>
+<tr><td class="num">37</td><td class="ko">누이 좋고 매부 좋다</td><td class="en">Win-win situation. / Everyone benefits.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> Good for the sister, good for the brother-in-law.</div>
+        <div class="meaning-line">양쪽 모두에게 좋은 일이라는 뜻.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 혼인으로 맺어진 처남-매부 관계에서 비롯된 한국 속담.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 재택근무로 회사는 비용 절감, 직원은 시간 절약 — 누이 좋고 매부 좋다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 상생 · 윈윈</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABWAQAAAAB9LVxaAAABmUlEQVR4nHWTMWpcQQyGtTvbLAjmAm4CBlcLE2bBzZjxAXKMtAHfIm1uk8ogMwY3Aj3wAdIE0gpmwQT0UIqQED3IVMPHzy/xS9o5/Hnr/u8XAAjYGJIiYOBis+lszM6BMw6iMpxpyzn76IKRHwDedHmgOwDY+CuBM7Tov6N7/v07x37ctSXrIG7/8v3T3ZJObwTXT0vUT1FJhUoKPvvn9ZwuBFmOFPSzVplKFTzWZZOGxNMp1AUZXKYVaTPqrRnNbsQ9ckrKvZi4ttAP/FzOj/Dy6XmJ+WitozN2qTHnWcybDVSJPkd5hc9wvIF30Ye0TmlTetvk2ZtBzylt8h+nq+/3XwA/puMmf88d1fJmH4RyHkJVSvQfWSF3S8Wi3rUgAQ/EOMc1f/sB4wFnjf2PNjNlqV6j/5zZBVlY41wYTBFx1hm5Sy2aTXXDJ2Sn4UAY8gR3Qa/FhCMnMBuSCWWzDzaLla4yop7RpHkGwtD/AWC5fXx/ySnexQHgcvrwdW2vGvb5kPQl0/UV3KybvYLhrdSWKdTd/efefwFdUfDu1ym6dwAAAABJRU5ErkJggg==" alt="QR"/></td></tr>
+<tr><td class="num">38</td><td class="ko">콩 심은 데 콩 나고 팥 심은 데 팥 난다</td><td class="en">You reap what you sow.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> Where you plant beans, beans grow; where you plant azuki, azuki grows.</div>
+        <div class="meaning-line">원인이 있어야 결과가 있고, 뿌린 대로 거둔다는 뜻.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 농경 사회에서 비롯된 한국 전래 속담으로 인과의 법칙을 강조.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 평소 부지런했더니 좋은 결과가 따라온다 — 콩 심은 데 콩 나고 팥 심은 데 팥 난다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 인과응보 · 자업자득</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGYAAABmAQAAAAARpNnPAAAB/ElEQVR4nH2UTWpdMQyF9eJMAgrOIgpvanAnBQUHMip0WVmYigKlYNCbBrKFgooCneihkkJpY5fe0TUfss7Rjw8Jf77zxV8HAGBwo2hFZQIuTENqUMVumHNhE81h9oIDeWEXAM9IR/7mD+3X6S07Pj5cX9+9Zl4YaEyvM14FrfkOfDd//79fdWaaMYS2phmrP0QyAy5WOr1ll+X49OP56J+oxuXX9U4MK9iKU+2rd5aBdSiDU93qEmI+ahAUWrV4r4NcoXYT+kdcNHeYuvVhSkazKQZz7wMTc1PiQF7jpJINLEVIysp8DqXSurvTxnRKc8XZfNMZxEoJgyrSyiTTuapJt7EygwKVIRtxXfOFSheMBlNl8Xf55Qr5DCe5ghPcLbPUyven0trN/eP92bZ80EqDkZNhrZnmiExC7emrTiYwH2Im2VadLFwptOngsvUPI21oIrWtnuYxKFit6qbFQbIQlUjidV5ExmiWYZO3WWJ4jciA5Ln1qJTerIta922nTZTcss/R1rhM71zFRilzm13rUVR7oxybv6FdkaaOsG1v6f78go/z5Q7Kh4UlnN5dG77Hk5zXd+Lz4eXsNyfkfrv2HTQCEwJnqm67ggpu4B0AFw8XAC/6sfAt9FbWOydKyXy1Edu+a0wdKqV78+0tAK2TEcFHX7Qc/vPu/gSzzkfiO8/wrAAAAABJRU5ErkJggg==" alt="QR"/></td></tr>
+<tr><td class="num">39</td><td class="ko">옷이 날개다</td><td class="en">Clothes make the man. / The tailor makes the man.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> Clothes are wings.</div>
+        <div class="meaning-line">옷차림에 따라 사람이 달라 보임을 비유.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 복장이 사람의 인상을 좌우한다는 한국 전통 처세 속담.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 면접 갈 때 정장만 잘 입어도 신뢰감이 올라간다 — 옷이 날개다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 첫인상 · 이미지 메이킹</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAABOAQAAAACm0R2wAAABdklEQVR4nG1TwYpUMRCsmX6XgZYI8wWCVyFLBhYh8B7Myc/wSzx6WvAD5jP2KkSysAiRDHjytJe5ChnewCL0o4VFJb3Yp6YoKkVVZ6X4M8v67wYgYW5VvYA7dO3kuMW5TJo6dFhenvx02eCL4QLfN5+/ntrT+m8KS5I5lFR6tEqRMWTWHl2lqTwtu14XqlpCiqpi/DJyY1CIvQciisfbUBbjQSK5mhqsh7n6GKhk6hVW8wu55pvHxeSApC1XGlV6LiSpppYoGm4JXB1cDv1rA/2Yjxc948amU7nNOWo0uuodixQSo1vzGMOsND5Lkj3F1rjnDpe9/8jn/SGYjrMX8U0QjK5kl0PWbLpYPy6vmN/t3nybjF8HHQOqSR1FlMkXasYDrg8ed/i17W9nTZsrQF4PZ287zrnI6LLtGKkxSanPbnJ8OLWJ0OuicM0iAMw9AJe397uA0qc+ALz9+Qnu/cE4a2e/pw9XD6ahhOJGl73pYvXfP/QbL1e30A6f4aQAAAAASUVORK5CYII=" alt="QR"/></td></tr>
+<tr><td class="num">40</td><td class="ko">윗물이 맑아야 아랫물이 맑다</td><td class="en">As the leaders, so the followers. / The fish rots from the head down.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> Only when the upper water is clear is the lower water clear.</div>
+        <div class="meaning-line">윗사람이 바르게 행동해야 아랫사람도 따라 바르게 된다는 뜻.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 물의 흐름에 비유하여 리더의 모범을 강조한 한국 속담.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 사장이 매일 새벽 출근하니 직원들도 따라온다 — 윗물이 맑아야 아랫물이 맑다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 리더십 · 솔선수범</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAF4AAABeAQAAAACCqZ7DAAAB90lEQVR4nHVUMWpcMRCd3dlmQTALqQIGl6kMAm0T0PIXXLnKJXIAt+lzgBwgkDMYDKkMMpNSRh9cBRZCqlQL+sjwMYxQwAkxGhNVIx5v9Oa9QYsG/05dPtcAEEBsIQklgumQFckDHqbNm8NZu+uRusljzWi2cKs4AON6a+FLeA3QIUsAZDf+2O7+XJ7PCvN8cm0mSxX7dxZhH/+W2/4daC07S4F5aNIjnF1rwRRprJDsWk7mqaPvEZGBsvcM4hWSXAxSfPA+qm5JqATnC4iJqhuxYZsdi/SqFwKvft7X88d5PfYeQENJhcAXzD1n+e1sM10c43zxiLnnlMIJLGbkoNwpQmkIrpSESlvkQaCIcWZQ80SgJsGUHFB50FLIlNhaikrb3Q5Ob3ZrGusc+knbWOcP91dYqe5VPsEABgopkPYaB9eMEyS9idPxNO9+1fl4ClZxih3Yw9CG0k+6SBPB5UdbD6g3ngtxSim7PPSc1fr7lXlfsX4+mVU+qYlYJOQXGyIiYBtlb1Pv6Armuziv3sL1WHXaUQiTbVCa6papcUtk4OW+GSQEAxaMQlrj7FJyQtx3W94uzLt1rfHhBsYeIam3X3EGxHWf3LJubNpP+y1M50p1NNnlwOCCyufpQpemfIKofRO2noW4aNUBGKxLpXilevHfv+o3Z6AUuoqobz8AAAAASUVORK5CYII=" alt="QR"/></td></tr>
+<tr class="quiz-row"><td colspan="5"><div class="quiz">
+<div class="q-title">📝 미니 퀴즈 · Mini Quiz (21~40)</div>
+<div class="q-sub">다음 한국 속담에 해당하는 영어 표현을 고르세요.</div>
+<div class="q-item"><span class="q-num">Q1.</span> <span class="q-q">고생 끝에 낙이 온다</span><br><span class="q-opt">① Bad news travels fast. / Word travels fast.</span><span class="q-opt">② Good medicine tastes bitter. / The truth hurts.</span><span class="q-opt">③ When it rains, it pours. / Just my luck.</span><span class="q-opt">④ After hardship comes happiness. / No pain, no gain.</span></div>
+<div class="q-item"><span class="q-num">Q2.</span> <span class="q-q">가는 말이 고와야 오는 말이 곱다</span><br><span class="q-opt">① Ignorance is bliss.</span><span class="q-opt">② Good things come in small packages. / The smaller the pepper, the hotter.</span><span class="q-opt">③ What goes around comes around. / A soft answer turns away wrath.</span><span class="q-opt">④ Out of the frying pan, into the fire.</span></div>
+<div class="q-item"><span class="q-num">Q3.</span> <span class="q-q">구슬이 서 말이라도 꿰어야 보배</span><br><span class="q-opt">① A stitch in time saves nine.</span><span class="q-opt">② Even a fallen rich man lives well for three years.</span><span class="q-opt">③ A thing is worth nothing unless it&#x27;s used.</span><span class="q-opt">④ Doesn&#x27;t know A from B. / Illiterate.</span></div>
+<div class="q-item"><span class="q-num">Q4.</span> <span class="q-q">백지장도 맞들면 낫다</span><br><span class="q-opt">① Good things come in small packages. / The smaller the pepper, the hotter.</span><span class="q-opt">② Many hands make light work.</span><span class="q-opt">③ The greater the talent, the greater the humility.</span><span class="q-opt">④ Clothes make the man. / The tailor makes the man.</span></div>
+<div class="q-item"><span class="q-num">Q5.</span> <span class="q-q">누이 좋고 매부 좋다</span><br><span class="q-opt">① Win-win situation. / Everyone benefits.</span><span class="q-opt">② Let sleeping dogs lie.</span><span class="q-opt">③ Schadenfreude. / Envy of close peers stings most.</span><span class="q-opt">④ Springing up like mushrooms after the rain.</span></div>
+</div></td></tr>
+<tr><td class="num">41</td><td class="ko">손바닥도 마주쳐야 소리가 난다</td><td class="en">It takes two to tango.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> It takes two palms clapping to make a sound.</div>
+        <div class="meaning-line">혼자서는 일이 이루어지지 않으며 상대가 있어야 한다는 뜻.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 박수의 원리에서 비롯된 한국 속담. 갈등도 양쪽이 다 있어야 일어남.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 팀워크가 안 되는 건 상사 탓만 아니다 — 손바닥도 마주쳐야 소리가 난다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 상호 책임 · 쌍방</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAF4AAABeAQAAAACCqZ7DAAAB1klEQVR4nHWUQWpcMQyGNaNsBgyaA3RZ6CpgcJYuDmTVw/QQPUBXvUoOoODZBBz0toGBbHoAD3pLP1RCoa011Cubj1/6JcveGfxZ2/7vHgAYKlIZrA3CRG5onOIz3K9vt/Yykf12jIfTcT0/whPMBAB+4Hr+BMvvw7/kfAm8hg08wQ5hpfZIvThyuQE4bPC6Lbv72bUZZyXmSjZcPZ1HAhSKNNez0/vXjwH5DmA7z5rWNY6CpgnbTIYJSIq1UXZ5rCWFNIzNa9SwsXJOcuUtpGipMSfXaxipvyuIY/UOeq6RkCSJ01TKhlEV9Yp0EYKqKuCiWdGsOoJm9d44BGbMAuQ0QmKZWERk1tzcbrDrH8IlH+t8P/sFL/aGK5wQFtcdJkAmFqbsXNdGOahhQVePdY1MRZCz89bJkCnnis3Vo93YYoYC5vIMapHZerqKpoGoRuUW0EXriC1hgdqKjxZRQuMmVB1pxWxEqlVlzrNP349PC3WIh3WeeOjUtNXSO4BzIEERIeT3lP4tSI0kmold3xisY6u1Bpm97Wm8PDzjdtgqsHMdFAoHAvBz3YIhkmKKwf0UAEsM38592YKbA+yXBfDrF0gP/eptt5fthJ+PP+cJ2f33r/oFZmQOEUhcVcMAAAAASUVORK5CYII=" alt="QR"/></td></tr>
+<tr><td class="num">42</td><td class="ko">똥 묻은 개가 겨 묻은 개 나무란다</td><td class="en">The pot calling the kettle black.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> A dog with feces on it scolds a dog with chaff on it.</div>
+        <div class="meaning-line">자기의 큰 잘못은 모르고 남의 작은 잘못을 비판함.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 한국 전래 속담으로, 자기 성찰의 결여를 풍자.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 지각 잦은 사람이 동료 지각을 비난한다 — 똥 묻은 개가 겨 묻은 개 나무란다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 내로남불 · 위선</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAF4AAABeAQAAAACCqZ7DAAAB20lEQVR4nHVUsapbMQxVokAJGNy18MasDy74jS4OZM3H9A9K/6M/USh0CjhoVdFdA4EshTcVHHyhFGzUpbRYr/VkOEhH5+jYK4U/p6//3gEgQwtEkwsMbkSk1VqkNIrKA7Lury+Xh454hDMMyAZgB7Rcdt/ewAsE93N3zxewCJalP94+PewKfh2QVd7z7+uTmU1VKAo7r9qMngyQskcqzSIYfalBVduoB7T5aSINScXwFB88piZCGkekRhYnpbqQTQ0TQnRYIgY7QQyJFFwsbuy2jrg9b+/6Zb7i6A6UjK2RECoaHqrcpKUkCYwemZSIJSW0esgnTglyKGj05AzRgW8ZDM/G7zncb/0wy7Idp15Oy+rY4cP0FvZjTT9k2V37ERCy8S07EkCHgKM7Kz58X2B+v3y8e5PRxo2BK4or1mtNAal6EDB6WiMfW2uVo9lCFSwNg3vRbQ2P2yv+7PX++Wa2kFMGlcp+qqZbm2qr2QGSN1sgDVIbea/BppdRQwk+TfyPvE1YveNg9IiDqhkpZW8QVQ7OUyJhk6rzCvvzyc29/5jt2846eQbnyehhx7FmIM7eeu1KSS6JsoxKNwC33VJevZs7niwP5+qnEpPYvAFjdlxVp5Fn9d+/6hdfLBclJIw2EgAAAABJRU5ErkJggg==" alt="QR"/></td></tr>
+<tr><td class="num">43</td><td class="ko">가까운 이웃이 먼 친척보다 낫다</td><td class="en">A good neighbor is better than a distant cousin.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> A close neighbor is better than a distant relative.</div>
+        <div class="meaning-line">어려울 때 도와주는 가까이 있는 사람이 멀리 있는 친척보다 낫다.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 공동체 생활을 중시한 한국 전통 사회의 가치관에서 유래.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 이사 가니 옆집이 정말 큰 힘이 된다 — 가까운 이웃이 먼 친척보다 낫다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 원수난친 · 근접 관계</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAF4AAABeAQAAAACCqZ7DAAAB3ElEQVR4nHVUv4rUMRCe3dnmByMj2NocHFgJgQgiBLIP4GMIPoNwjeAb3MNYHYzMgk1kFrZdsBGuEnJkwSY/IogoGTFVwsfk+zOTbAb8Wev27x4ABEQhd2kFaEJ23I9v+25/+fp8fJmR9fH9csDLCeDTXLMFWBHh/AqOvw4TcnpPd4B34BGsy80Df/zANc/IRvbl9/bFzANjSGosojy681OlI6BxYK8Nw8sl9zfXeD3zQE8UuuloEcqMVIVoMWMBczyVMIJKDr3MNTt8dlwqHkFP8dFcY2A8YlGIkmakxZEtRRZQh5Tec2Bki+YzsBo4tIZNHWKCI4fYmqHz04al2DrFVJyfIdRFkFDY17ByYjEym7Xtzuvy/fIUr76dcU50d6WXH09oPQLD0fMAB2ExYee0DmQgHZjR+SlFMmE2lOS06VAcGKmQOD8dkGsIkqE5Ho3cTNuI/96WstRQtRD6bjNawgxastMmdSiSFMvqE1UaI7Cq5plnC0s47LFCeHdwk1i5ti65AkV3m1EmBEgBwPOMItWsdfYZCPQqVBTITe+O++ebQ3kgYfcaodAABmIAnHPbAjzwRe8vsZLraSFNOVjT4CZxi3U9we26rLevq9dWrEofqY05nc1//6qfdecEIx99hfgAAAAASUVORK5CYII=" alt="QR"/></td></tr>
+<tr><td class="num">44</td><td class="ko">급할수록 돌아가라</td><td class="en">Haste makes waste. / Slow and steady wins the race.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> The more urgent, the more you should take the long way.</div>
+        <div class="meaning-line">급할수록 침착하게 우회하라는 뜻.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 한국 전래 격언으로, 조급함의 위험을 경계.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 마감 임박할수록 더 차분히 — 급할수록 돌아가라.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 서두르지 말라 · 침착</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABWAQAAAAB9LVxaAAABpElEQVR4nHVTTWpcMQzWjB6UgIJnWwh0M5BVwaAs3+AcYI7RbSEH6F16iUJWAQcvSsDBA7MKDPQKHjTwKMi4i9JSGeqV+BDS9yOvOvx5bf23BIAIMZHSrEAGLxq9hlSo53/xqW1inuRmC8+mfwJYjometjcAA+7hcPfG8QLjfOHcebbzV/E+/67uLJ/eNQjONXQ1eIo9Y8zivO2vXQNKgEyW/7Hd132DsOCD9UGchNn1yGb+Sl6BT7vHLxeyvhVJWUn93O3eqJWCeK1s9kJmnkFyHHye8GW5Wnbuchj4R6FKnUnB8JnwGj8s0G6XsDE89d0TffoKF9q+2b0xg7qiWGbrT/KSEJJPQ+6QJZZEbsj9jHjiHX3DzXg/wshFOFi9vcwdhKhavWtox2d6XfAQvc3RYeox115svqIqRRFCsfMTclYqs4jFVRnYUa5pwIsweOd7tXqTr1lqZhjuv/eYQgneJetbBHEsyJStLqen1q5+AmK1/lMGJVDA4R6o91IJ0fJZA1za+Uf8CHv7j7B+J4b3t/m8t7lM6fPSEB6a8XP1n//+C/Pa6PbCgi1CAAAAAElFTkSuQmCC" alt="QR"/></td></tr>
+<tr><td class="num">45</td><td class="ko">열 길 물속은 알아도 한 길 사람 속은 모른다</td><td class="en">Still waters run deep. / You can&#x27;t judge a person by appearances.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> You can know ten lengths of water but not one length of a person&#x27;s mind.</div>
+        <div class="meaning-line">물의 깊이는 잴 수 있어도 사람의 속마음은 알기 어렵다는 뜻.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 한국 전래 속담으로 인간 심리의 복잡함을 강조.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 30년 친구도 결국 등을 돌렸다 — 열 길 물속은 알아도 한 길 사람 속은 모른다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 인간 본성 · 예측 불가</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGYAAABmAQAAAAARpNnPAAACJElEQVR4nH1UvWpVQRCee/c2F0bmPkBAhICVsLIBm4UNpErlSwhWVlZ5C1vBlxAEq8CEtRFG9oJVIGUeYA974RKYw1iJZo641Vk+5vuZMzsrgz9nXv91AQAGyQVL7CSADms6SCMKZzR5jK3nHT47k/SWjnADj7ENwFT3Pz/vpg9XsMTCJXzZZTp7+AZLvVxFyVS93orP5ff3mfdpJkNRCycydVjFngSApYvnBCsDinRRzeLrBLpirnFIDl6vFk4WMVNiyA7TbgzK3FppjnPF9BL5CHO6PISt96LUQrRa2djrjRYDJ6JOSX0G6Ro1oOLguMhHlkKomtIQh20O1ze4vaebW7gLbiZW7XD1dbs/bt/QAf28jNwVI5CFvOi1hopRBDQC+r4I0xgdBhij91lbTQTaE5K47Os4wy33/e7u+XVgV9eJS+46Umv+/61hOj8ccXOynadXO1/XBISj9li8HqgOaR2UYfkepKRRahG2AT57ExsoUG1IXuRLGTA1YyCffdWm1xPGcJjbk+OD99KwEw0oGoPnHKwhxGhliHovHFo2GoWjqcuwYnj/CSY6zBcA330+Ay5JY8UUPefoLRSpYcSKvi+9kFi1aB2b98nKlgXyqECe04xL6QpJqHpOBo21i1XFttxLiklVYqe6eLcoNXWoHYH8LAGEdx+f1vnktL+Ii7qRIsWaLf5jD7ZBvQbM4vu5njbTj/sLvD6F497N5+o/e/cX6GZR/yp1kQcAAAAASUVORK5CYII=" alt="QR"/></td></tr>
+</tbody></table>
+<div class="page-break"></div>
+<h2 class="cat-h">🧠 지혜·판단</h2>
+<div class="scenario-box"><div class="sb-title">🎭 시나리오 대화 · Scenario Dialogue</div><div class="dl-line"><span class="dl-speaker">스승:</span> <span class="dl-text">아는 길도 물어 가라고 했어.</span></div><div class="dl-line"><span class="dl-speaker">제자:</span> <span class="dl-text">신중하게 결정하라는 뜻이군요.</span></div><div class="dl-line"><span class="dl-speaker">스승:</span> <span class="dl-text">그래. 돌다리도 두들겨 보고 건너야지.</span></div><div class="dl-line"><span class="dl-speaker">제자:</span> <span class="dl-text">급할수록 돌아가라는 말도 같은 맥락이죠.</span></div><div class="dl-line"><span class="dl-speaker">스승:</span> <span class="dl-text">지혜는 신중함에서 나온다.</span></div></div><div class="compare-box"><div class="cb-title">🔍 비교 박스 · Comparison</div><div class="cb-pair"><span class="cb-ko">돌다리도 두들겨 보고 건너라</span><span class="cb-en">tap stone bridge before crossing</span></div><div class="cb-pair"><span class="cb-ko">아는 길도 물어 가라</span><span class="cb-en">ask even if you know the way</span></div><div class="cb-pair"><span class="cb-ko">급할수록 돌아가라</span><span class="cb-en">in haste, take the longer way</span></div><div class="cb-pair"><span class="cb-ko">등잔 밑이 어둡다</span><span class="cb-en">darkest under the lamp</span></div></div>
+<table><thead><tr><th class="num-col">#</th><th class="ko-col">한국 속담</th><th class="en-col">English Equivalent</th><th>뜻 / 유래 / 활용</th><th class="qr-col">🔊</th></tr></thead><tbody>
+<tr><td class="num">46</td><td class="ko">등잔 밑이 어둡다</td><td class="en">Can&#x27;t see the forest for the trees.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> It is dark right under the lamp.</div>
+        <div class="meaning-line">가까이 있는 것일수록 도리어 알아보기 어렵다는 뜻.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 기름 등잔의 그림자가 등잔 아래를 가장 어둡게 만드는 데서 유래.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 회사의 문제를 외부 컨설턴트가 더 잘 짚어낸다 — 등잔 밑이 어둡다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 맹점 · 근시안</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABWAQAAAAB9LVxaAAABoklEQVR4nHVTQYecQRCtmRr2UtHLnEIuYa9D07mEXp0/FHLNPT8gfyUsOS0VtZdQq5acwpBfEHrUskJ/OoeVtfWRPpXnefW8frWZ8O8t26cRABg6KeEgoOf4Lo278uEr7TvePse3y/nFNR4Oy/k3CDjAr/017eVxfnpbgMPvs7tTzhEHG0aewcfU5/iG3+nj9Cb4gTl7UlBrc0T/lESquJcacDHLgpkzRh2mzDgFZK70kxWog0WC/nY5nL6nT4Bvl+h/TJHaBRiCfzAeA7i7Y/Q5WtPWa2o9+uThXjT7LJHvMqZiVkiRb5VnHZK6Rbxjo8Rt6GqvAFt1Kx1W+i0PtJSTB/+745LOxuUFvzzmwFenplgbc9yrYCiJi9VVnmKFMTGlmE/nysV6k7zSQSos1bxFn5PbSEhqHHGdVapzLRb3mqZOWh19xW9NmqemFPZu4csJ7n9eXd0/fF71TWiWPExX/wWcyD2Rru8FF4QXSLjKjdSqN2AKOWwBHl7/ON5w66FXOwB45Zd/9if5GPjYqdzewKLvYw8ZlJzYS+zP5j/3/hcT0ONMZTjJrQAAAABJRU5ErkJggg==" alt="QR"/></td></tr>
+<tr><td class="num">47</td><td class="ko">우물 안 개구리</td><td class="en">A big fish in a small pond.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> A frog inside a well.</div>
+        <div class="meaning-line">넓은 세상을 모르고 자기가 사는 좁은 곳이 전부인 줄 아는 사람.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 장자(莊子) 추수편의 우화 &#x27;정중지와&#x27;에서 비롯되어 한국 속담으로 정착.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 해외 시장을 보니 내가 우물 안 개구리였구나 깨달았다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 정중지와 · 좌정관천</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAABOAQAAAACm0R2wAAABc0lEQVR4nG2TQYqUMRCFX3f1RohkYK7gVohkNkLgb5jtXMIDuHIreALBA3gMt0INJcymhjS4cjUIsxUiaWiE/JQwqKQGsyoej49U3svG8Oes278TAEZvJaaBMKnbOA7n9F33xpO6W8/uEy6/4Xr27oCvt6EdwxfMBOBlxeny8DD+O3WopizBdFI3vNeH4WLmwsxMuJgNd9+AJQVQLrPaO2njXNOsbmR9A7xPZ+y4TSwUUqHZu717fRQ8Oa2fP8y7HenwnE5ved3PBBm1c2MqjtslxYAo2e2mzwI97T9xcN5RhU2KFbdF06RlKI1H3jioGy0zF9JGktJacN5K0ohzXRxXuVtqA9nft4ZFxMRlAU7KFnJT52UxXjKqf/UaiuSk1Fwf1hOufuzw63zuDmqLMYwGuDTNatewRPEZgznQ0Pqokwvu257guBqYxgDg0gRo3Fxk6Ny+HRCurz4hvvo4e6mBMr17ceeaypC8REkui81//9BvKry20Xu3qzEAAAAASUVORK5CYII=" alt="QR"/></td></tr>
+<tr><td class="num">48</td><td class="ko">천 리 길도 한 걸음부터</td><td class="en">A journey of a thousand miles begins with a single step.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> Even a thousand-mile journey starts with one step.</div>
+        <div class="meaning-line">아무리 큰 일도 작은 시작에서 비롯됨.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 노자(老子) 도덕경 64장 &#x27;千里之行 始於足下&#x27;의 한국화된 속담.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 책 한 권 쓰는 일도 첫 문장부터 — 천 리 길도 한 걸음부터.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 시작이 반이다 · 꾸준함</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABWAQAAAAB9LVxaAAABrklEQVR4nHWTsapUMRCGZ3cW5MIsc1vBclvhSLYRcsmCD+AzWN0H8EV8AF/iVlZCJAsi5JAFK0GwsRVyyIE0E8ZCFGfhphp+fj5m/plsFP6+sf1XAkCE6qrGKED/6zsWeM8XINDZ+DM1diJEMRs/wDy+97sDAVzpmN48/eDn1ehQpFITcKKGs4mn/Kc6mn5AtaoXYlYxeqrBoaQWktE3uZ8muMHlx2L9ImEiKZDV8Lef+0jpeIB+noy/SW0euVEwfULhkNi3JtFyxsN4uazz6QlUy+FYVINGsbnNv1Zcvy1HWr/Y3DrDHp+fCW8NH+fjiw5fp77YPgW9z9GFiFfz1lqmVlCit3vnpDVSlGz1AojqXSK2nOaao5I1i9VrDiV4Lr5ZjnBqgEzANjfNNIVUQ5qMf7vc/wTwrxegd5bvm5AjyfFq76Ul5aiYLT9OHGpwXG3OkBUSB9UIhrPFPcBhPh9PfLm6t6gIjkqx/k8buIyW+92we2HBEeH2I6K980waA0YENPPuAMYE4+1oN4azA+jPMMOrfbH7LZJ9Lizembm2y65f7sdD72D8m0f++2+dl+vMd2oKtgAAAABJRU5ErkJggg==" alt="QR"/></td></tr>
+<tr><td class="num">49</td><td class="ko">아는 것이 힘이다</td><td class="en">Knowledge is power.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> Knowing is power.</div>
+        <div class="meaning-line">지식은 힘과 능력의 원천이라는 뜻.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 영국 철학자 프랜시스 베이컨의 명언이 한국에서도 격언으로 정착.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 정보를 많이 가진 사람이 협상에서 이긴다 — 아는 것이 힘이다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 지피지기 · 정보력</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABWAQAAAAB9LVxaAAABo0lEQVR4nHWTTYpUMRCAq7sGBiGS3noCV0IgboQMaZgDeAkP4A08geABPIYHqCYNIqSpB7MSBE8wUEMevE1CiQzqVMCsio8ifPW3U/jzxv5vCAAEwik6l8AZzp0VKYSu9Snfj8O4UHZ0OMFTfgUQruWmnGg1fA9wlmU9fHiM/z3uXISyOPv/jo71MXptfVQrN0yStRteUsIc0XeXjM8rhGcft+HX9tz4+Mso2xEe3j6Q9d++uOtvuK7OelbHqqqRivGEVmrEFn0R69NcS52D9mL9G5cQAoGC8YTaQ28hRwyG77e7n+cfZfl8b/u205tPYdlGXobt8+XrEd6BP8NL60+pMXXPStN8SwLnm2dn65JaXKaEwpNnjsANe+gThwIxFJRk+0BFikJTrzZfUgCmWOrUt87IjES5WM6JGiu6zNM+sPSMPjeZ6nKt9ZbRTbzHGEEUcp/ykyAX9IDWU7WAtNo8Gf57P1d3e383tjdmf3zH9cV2e+KxTPvTXa1ByNu6qiMItWh3M5eKsTaPZi5XKGeksR7k+/vpfhmjcORkPf9z778ANp7xzhKK5ikAAAAASUVORK5CYII=" alt="QR"/></td></tr>
+<tr><td class="num">50</td><td class="ko">모르는 게 약이다</td><td class="en">Ignorance is bliss.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> Not knowing is medicine.</div>
+        <div class="meaning-line">어떤 일은 차라리 모르는 편이 마음이 편하다는 뜻.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 한국 전통 처세 속담으로, 불필요한 정보의 부담을 표현.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 사람들이 뒤에서 뭐라 하는지 굳이 알 필요 없다 — 모르는 게 약이다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 무지의 평화 · 안분지족</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABWAQAAAAB9LVxaAAABp0lEQVR4nHVTsYobMRB93llIM4cMqQKBaw5SBfbQNQcyWsgPXRvIZwWuVVDKMTKkNYRAWoOMFtzMohBCwo0hqobH8N68N6NNx9+3Dv9KAAklc+VJwS/x0elhpx8+07bvDb5un3lsb97hi+0H1vaVK90AL/EBCCPut3OyOIqK9+I8d3mJb9Isf6oHw4/e1TUKtXc1eE5dKEkrk+2vWR31CGHDPxw/vj4/rmu80JPpb861GNHFW/6K2krojqLFiy+iLFm71S2hccwQBKOL2iigyXTVPx6fkC47R6/eT5bHTZV7hMLoDndnd3vB4i9xa3OI0CmXVJrVVY5JXarkgt17Ky171EpmniHeLFg5H29DsvNkXxoE2Vm/GnqgVpqPRndc6P648g4/t2bv4/czL7y/4JCsX/U19yRVi+XPv9k7cSjWl7gq6qKma7/C8EVkyvau+oxlX93G/Xhr+bVJm8TjylfviWKJweWr3NC6rzSx2Nyc7tcVJyaydy6ck7qQYHMegUc63GGmk5lnAJb1zGnCfP1fUmkkPiSrex75YT4Rvn0yeW7+899/ASOx3oX8mAcoAAAAAElFTkSuQmCC" alt="QR"/></td></tr>
+<tr><td class="num">51</td><td class="ko">호기심이 고양이를 죽인다</td><td class="en">Curiosity killed the cat.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> Curiosity kills the cat.</div>
+        <div class="meaning-line">지나친 호기심이 화를 부른다는 뜻.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 영어 속담의 한국적 수용. 16세기 영국 문학에서 처음 등장.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 남의 사생활을 너무 파지 마라 — 호기심이 고양이를 죽인다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 월권 · 선 넘기</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABWAQAAAAB9LVxaAAABsElEQVR4nHVTsWpcQQzUu73mQGYN16YxHKQyLOw1gQ3PrcGQnwikNaTNR+QD8hmBqwIy61JGB25TGlIZZPbBYdCxKUyM9SBbiUHMjKSdocO/d1y8lgBAoMoYFAHf4stot19xt1o/hzvXz9ghW0ckfosvAPb2ff9x91K/viXA+foMDyV5HMTYWtLG3fEMdMEv1db5gd5VGFBiN6d7c3I6HWz3ebO98P0jkIREKXge5QLQBag7fKA4nb9L9SZOH1x/K72OZGKpeLw2Ym0J1PkHKcSgKTd2PpdP9whxz/dXP53PBZwdvjzgdgNX5P2H2jgUhuh1DUiTEap4nHrOyKNxcLrQEtfUqBB5XFrj1mPI/o6DnlL4djzsV+HR6+ZmpVqnNtuDlVKFmiS/Z8s9UwyM0ePNOpeqSZLfW5UwUi3Sxtm8Wi0BKpHnkWytK1n2dwSGpIyWc/bzckxZcu8Gnl8whYw1E3o/vUtpOan4OwKBZNCGyPO8THQSBwwhzfJCIdiIM/4lAOpqPf0aH37PcgSX6+Pzp2F/7fCgUI8bOMq1y9HiaXm4e//j9s8U3P8Z/pP3vz1U60rOJ9foAAAAAElFTkSuQmCC" alt="QR"/></td></tr>
+<tr><td class="num">52</td><td class="ko">첫술에 배부르랴</td><td class="en">Rome wasn&#x27;t built in a day.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> Can you fill your belly with the first spoonful?</div>
+        <div class="meaning-line">어떤 일이든 단번에 성과를 기대할 수 없다는 뜻.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 식사에서 비롯된 한국 전래 속담. 점진적 성과의 가치를 강조.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 유튜브 구독자 1만 명, 6개월 만에는 어렵다 — 첫술에 배부르랴.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 점진적 성장 · 꾸준함</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABWAQAAAAB9LVxaAAABt0lEQVR4nHWTwWrcMBCGf68Mi0FhDLnmUthrQEW5BBS80Fcp9AHyAH2InvoYgb0uaPFCCYyRr4Ucey3YaMEXCZVQ2mYM1Un8+vlmRvpVFfxZefN3C2xOFcZ8GYZctW/1mlKelxcolEHouY3qgVXdHLTQgdNnWm5MAwg+oDA3O/69/7dCKq5nWC78Vq/8/tUK4E7wUUrqUkoUShL883x32eLbzpwFv26upxu3V7mdhR+F+6BLDy6SHwNccBHcO+n3Bng9ItEnvEpTCNEnIzl98noyRsVe1K1Y5UfAt7O8T4QUbNQmlk72mQJFKKc1Sb133BGRVRB1N2b5eHk63DZHZWSfSIl8cMWv7iEa9p56u5q3Nz4SW7WuO8UupKIDR6mzIXSOgiuS44tKmpQGCX2D9+mDOfzc9e+8eC/7ZYBye2q0yCFYm+CsnoKXfCZOgT13Mj/1ctz3Mz2+POVV3ihaotIBMj/I7fgjny+exlXeOCpYhCD9p2oZkJ71Q94LnRLUcdl6pcRcYB2jtd5ACU4NYHxeWkR9tfov+v76+72+GsQ7VuF2BJTJW/NV+Oca+JSrZYL0/+e//wJgj9lnQP2tSQAAAABJRU5ErkJggg==" alt="QR"/></td></tr>
+<tr><td class="num">53</td><td class="ko">늙은 말이 길을 안다</td><td class="en">Old age and treachery beat youth and skill. / Experience teaches.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> An old horse knows the way.</div>
+        <div class="meaning-line">경험 많은 사람의 지혜는 따라갈 수 없다는 뜻.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 한비자(韓非子) &#x27;老馬識途&#x27;의 고사를 한국 속담으로 정착.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 신입의 아이디어도 좋지만 베테랑의 직관도 무시할 수 없다 — 늙은 말이 길을 안다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 경험의 가치 · 노련함</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABWAQAAAAB9LVxaAAABr0lEQVR4nHWTwYdcQRDGv5l+xFBRw5xyXJachhc9l9DRcw35V8L+EfmT9rr0eEOEoh45hbnnFN7qZiz9dA5rY+uRPpXy+fVXX3WvGl7OvP5XAkhQP2VJFfS6v+aKC42e0NLrfjdvf5fd/H6Wk9UDCPthvGyf65fTAeP5417Kppj+2k14KsfHr300/VU6ynN1MHy0NkSWSrFV638SakoKtnpxADG54MXwpcTtzaWEYudFi2EYfHKag9Hrfnc7u7Fu8WD0E1Nukr30hrPS+e66+U7TSsxcGFhqDUI+Wf+1+sCtKVXjE1UnZQZTtHoNsQeTd4t93V5Beu/owfc2hzQlMNjpgu97GXzMrIbTnX+cgcuf3bQ1e0ceqmOtQbL100RSC6qhmdwwZDc49g7R8vH5ydHtBn36ZPktDk6J6mKPuVfvU54iW35mzU0Ss81tPe7vvnzwDjdHm39TzTXGmrzx352ovHPT259Ht9A3CcEjqph716dV/62MocxXq9eqQXKfFnlCKANUA5zhdAAlOrxB/nVc/KOTu3LqcVjyhbmSKoz/9WNX7pNzKHU07/A///0vx9zUyYG9Zo4AAAAASUVORK5CYII=" alt="QR"/></td></tr>
+<tr><td class="num">54</td><td class="ko">소 잃고 외양간 고친다</td><td class="en">Closing the stable door after the horse has bolted.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> Repairing the barn after losing the cow.</div>
+        <div class="meaning-line">이미 일을 그르친 뒤에 뒤늦게 대책을 세움.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 한국 전통 농경 사회의 경험에서 비롯된 속담.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 데이터 유출 후에야 보안 시스템을 강화한다 — 소 잃고 외양간 고친다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 사후약방문 · 뒷북</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABWAQAAAAB9LVxaAAABrklEQVR4nHWTz4ZcQRTGv+7TjKGimqzCLIdZheI2I1wqzCoMeYk8QB5gyDLbPMyQ1XCiehNOVOjVkM2QB6hWTW/OdWJEkjmX1Or4fH7nby0Mf960/BsCYDQVRA0IT/VV1O3bVPfrRt+cPq37dEgT1rfOvwS25W57VX7H/54EDZTJhOWpvqgvd9PFBDqd8fcrwf1jtHF8mPUskBpNnf/LNY7H8Zh+bk6dvxNaocSJPKc1A3pBMa8XG3rIxqU4PpoGzczV2OtcuYwolOD6Qh+Lpsa9w/u1NMms0eI441MfJHUbZnlJTCgxouczxJKW2KrfF+jwDNsPDz8uX/m+RGO2mlvyea1Ci8XBbMZPjfI49KC+Hss6hCKZq+MsD9Pq9HPYHOK77z4vAUKRQ5zNWcc01p6Lr2c17W7pHm8+jtHfZ+OoyKPU+fxjq5lbztnzRbVpCH3ozr/EyeWOLuj664vXzl+1lR5K5+DnYCbah9SqeD6j1selBfFziHo+IZ4Eok+z+5eYNRKH+X/BA56fc+7s94jDGd3has83Tqe2G6bzM+D9vJ4SunBP/n4W//nvvwBXQ+hQ5Ei71gAAAABJRU5ErkJggg==" alt="QR"/></td></tr>
+<tr><td class="num">55</td><td class="ko">호랑이에게 물려가도 정신만 차리면 산다</td><td class="en">Keep your head and you can survive anything.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> Even if a tiger drags you off, you&#x27;ll live if you keep your wits.</div>
+        <div class="meaning-line">아무리 위태로운 상황에서도 정신만 차리면 살아남을 수 있음.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 호랑이가 많았던 옛 한국에서 비롯된 위기 대처 속담.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 거래처가 갑자기 계약을 끊었지만 정신만 차리면 산다고 마음을 다잡았다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 냉정함 · 위기 대처</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGYAAABmAQAAAAARpNnPAAACIUlEQVR4nH1UwWpVQQzNawpSSEnBleBGeNBVIXAFKYxM/6A/UXBV8EcEwa0/IbgVUqYghTzmQldd+QtT5kE3uYy4EDUXvKu5HE6Sc+ZMNgP+fMvBXz8AoKC5UZbEBhSw6o1d0WqiYf9iB8sJv3p2kd7BE9xAwACWe0hfdo8fBdYY3p3fniS+0IhB9VYwOQ/32G+jF/b7/DrOOUZVT55s4uGh3+3xFp/2h/PeFpgjjxmkNVbPKfCgCROlTlgRU/RsCA7JiSddeda8AyTXWnONs/x4vhA9HcL2+vHqYqU9WRIpRYfGmn0SlMJZMFnwBQaNZJgSN23Rsz4vKCftxelDP9Ywy9FySW/P6OvS5hLuYVPez+C7PV3xnmJe3LqZMw9M0WsoLGTVwAUgemZK2BN0GMpRg1WdKjl0YltpJ6WuRjyZrnk2teTauVrsNxTRGjB1xchzrGqavUle8Txlkw6ukCBm/jvCG9iNGcYnkpgJn7IMKaNzjjzBh8d5z7TZwYeY+e6smaRLIVz5mUfD7OwmK6yR4NDkE7ivvGaynntW4RVWSWstuSgWjF5baepOUqi02K+3jqoFu2gPvMPlEu5gT+dHdPkt5AzU8yi/5i2w0jBGzR3coXIJNQ9uNmePO5sPcbtQrFl9kLibNC6rTFApJFAaAQftBwBH19vPfXm51bP1Xjql+ekYpcp93BPVq0spuSXz6JlCqX2qSoA1vr//7N2fYlQ9CGdIXZsAAAAASUVORK5CYII=" alt="QR"/></td></tr>
+<tr><td class="num">56</td><td class="ko">무소식이 희소식</td><td class="en">No news is good news.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> No news is good news.</div>
+        <div class="meaning-line">소식이 없는 것은 별일 없이 잘 지내고 있다는 뜻.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 한국과 영미권에서 공통적으로 쓰이는 격언.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 출장 간 직원에게 연락이 없다 — 무소식이 희소식이라 했으니 잘 지내겠지.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 무사평안</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABWAQAAAAB9LVxaAAABn0lEQVR4nF1TMWojQRBsbSsRtJngossvNTSsE8PA6gH+hB9guL/oAf7EgaODPlbgpEUHjgzOlY6YBSHoZY7DnHDvREVR1BTV1KrB/zd3VwgAAq0IYSGgr/w6+f4JXzbfLngIeqWK7I1I9CvfARw2z283L5/4+joA7h/5nDnyYG6OAlVb8FnJVj/RXcgDrZWWi1pqHvUPE8Ll9SfAJvpjVkMWxuhTlQdqBtIC3834POMdS9qX2E9xy9XNOfwLblTSOAqUkB+MhQpzX8eFHj0buA2eoz8NfSWuwxD063S8qQek9z9pG/3BSu9KxRY+WBGMXTH4dHj5uE+n3RZ/L/pPzbgRZo35m5SatB8p+sCI+V8PTRb5PfcNTarl2LP3RIqolCKvAi2PlY0jP9Yxm2SrsYdVOz3sns7vv2iKehnUk0ge4h1BgcGz176P+W3U3rCZY8xvSlhprAKLHppCHbiYLnqGEdArkS73MuGM3wGRF3sRT4IstNwLvt4OsBuO8S5K6kk1Qbxvh2V6u/3Bsz7GfZ3WMJ8/9scJJfZ2hWHvfwGFJeWehCCZXAAAAABJRU5ErkJggg==" alt="QR"/></td></tr>
+<tr><td class="num">57</td><td class="ko">콩으로 메주를 쑨다 해도 안 믿는다</td><td class="en">Once trust is broken, it&#x27;s hard to regain.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> Won&#x27;t believe even if you say beans make doenjang.</div>
+        <div class="meaning-line">한 번 신뢰가 깨진 사람의 말은 사실이라도 믿지 않게 된다는 뜻.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 메주가 콩으로 만들어진다는 누구나 아는 사실조차 안 믿게 된다는 한국 속담.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 거짓말을 한 번 한 직원의 말은 더 이상 믿기 어렵다 — 콩으로 메주를 쑨다 해도 안 믿는다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 신뢰의 가치 · 한 번 깨진 신뢰</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGYAAABmAQAAAAARpNnPAAACH0lEQVR4nGWUv2ocMRDG507XGAZ04DZlIJVBQQduZHTgyuCHMbhNk/fwSxy4DUyQIc0EGdwa3PgBZtFBmlkmhBBiz2614sc3mk/zZ2Xw/5vXbw4AQMAtUe1mDPiebaI+AG/i/HAF9vM9W8/bEEJ/vblu8B2cDmCuG9nfnZ0ncAwYB4KAhK7EjnXtkZJmTGqOrWjP//53Lk8w0zFAJTczdayRSUZQGT15ncYwYkXIqtXrjCuVmCI1XOgsD06lWggBi4+JEnPDQrGRY6v+8cOhnB4gXx3Dia8DZWwlcigCPheOo0YplrqIv69Dg9CSNhFc+OtlVNERCplnHdgaUBrQvPeVPcANfv3y627Co9exdNEQjIC9P6ARGaSlWlL3bFCExECZaeFPIzUFTaH05nUNCUEYKSC5XNZziHlA+nSJDX2fGSFwAsBBYfFmFgtpy9xIXJ+tp9UUbn+czPuT6+e99zCEFEhy0uFjcoLeS6XIyM7fBiLATi6SfH699HWXZKn20opo8e9CHYei1d6AfMw4Zdzdb2mH9rj13mtucZAyqCx6F4z+xjT282cdCiinhjn5XIYgVqqYuS9mRarRwGLcadGfpFaYINW4rINZExC1HuJiFxAIcOI/s9T9fV0bE2rusbOLuZ638+Xt/QYApt1yL5VDObXp5QzsYsGO6ensCPtv58nXqCsn0JyBove3njbHl7h/voOYnh79HL05uL37G92kP6x7RUjRAAAAAElFTkSuQmCC" alt="QR"/></td></tr>
+<tr><td class="num">58</td><td class="ko">망건 쓰고 세수한다</td><td class="en">Putting the cart before the horse.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> Washing your face after putting on the headband.</div>
+        <div class="meaning-line">일의 순서가 뒤바뀜을 비유.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 옛 한국에서 망건은 세수 후 머리를 정리하기 위해 쓰는 것에서 유래.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 코딩도 안 배우고 앱부터 만들겠다? 망건 쓰고 세수하는 격이다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 선후도착 · 순서 잘못</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABWAQAAAAB9LVxaAAABpElEQVR4nHVTsWocMRB9e3ONYYzcXhm4NrBG1wQU9iBtIL+WjzG4MuhQSh1zkOrAEPIBBi1auGYWBcfEyWzwVMPj8fT0ZqZr+FPz6rUFVodunEYcj3N3Y3CneOQTXdDivzgyVw2qzDEbPnC8OZ12vv/dv9YKoDj1iC/93xJt6rl4bUani/v80u3Y8FsrwsquNTV4KkNNmvyQDN4pYdrPbvwxLvgcQE2QmtFfvb+/pIfdO+Bbb/iFh+q9F3YLP74l5QTGAldWlELE9t2SiogbXCzmv5Acque+tsHw11ue+EzYgGye587dTnjcXkY7L5IDy53nB1r474MEldBg/USprYKT12D9F6amvnK2fsZPW3edzhwXc4w6SAviwkJHPQAixiK3VFzxqfapNzmsr9zTDmHvZrb+pbA6H7LEhX8XRR2UstWhn18w9tP3p89f7d76nNrgWr/IIbMmz6kCdi6tJefgWcTwV4cOmGukj/N/9zKnq80d2Xk96z+fQADZfDKXItSj2j1cA7SpH07uOi5y0ByCiA7e3t24ptP9fHsZYfjdG/f+CwZe24LYuhe3AAAAAElFTkSuQmCC" alt="QR"/></td></tr>
+<tr><td class="num">59</td><td class="ko">급히 먹는 밥이 체한다</td><td class="en">Haste makes waste.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> Rice eaten too quickly causes indigestion.</div>
+        <div class="meaning-line">급히 서두르면 일이 잘못된다는 뜻.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 한국 전통 식문화에서 비롯된 처세 속담.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 투자 결정도 조급하면 큰 실수를 한다 — 급히 먹는 밥이 체한다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 서두름 금물 · 신중함</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABWAQAAAAB9LVxaAAABqElEQVR4nHVTsYobMRCd9WxzMMcY7gsCbhd0qAgBGRnSBvIN+aP7mGsDOnSlzBhcBQIpUwW0aMGNhIJDYm4WMtXjMTzNm3kaOvyrtrlBgM3L8LrMy/HYhq3iuZojH5bLtoe3PCSqgK64FJLqB0BqYY+HP/hWV2z54en5L76V1JLYG05d6YzzmODrFQ2k+nuXQDWy71Xpv97v+OdHem5wessPEaYHc4fzj1n1Q63FkhAVt9Ynm411CZ32m6pF5OJZzQmJY6o1IbHS2Vze0W58D2YHem81OhHfPRTtd2mXL9yWcGpG8cTf7Py97c9B3QuyKYaYLIJ+93w+Yph2dxMpHaiuI1NES3r+KKXbTNll7bcTBUuZHem9BYGSUy0Cqz04V7pjdmWlU6BTJ8h6zvEFzB7uy3brdE74MywmH0xc5SS54AklF9T3CigcUw6GdR7w16NpFvk0qTxAEJ+8QM/a1xA/jLIQLO1TXuUhCZIlkdW7UB1FgyTK74YrQJ6eKq7npxiQq4N1rij1nh1g1vrX/+UFfIyal5pcEl+t1fsPILk77Ji1r//8999R/dWIs0j0DgAAAABJRU5ErkJggg==" alt="QR"/></td></tr>
+<tr><td class="num">60</td><td class="ko">긁어 부스럼 만든다</td><td class="en">Let sleeping dogs lie.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> Scratching creates a sore.</div>
+        <div class="meaning-line">공연히 손대서 평온한 일을 시끄럽게 만듦.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 한국 전래 속담으로, 가만히 있어도 될 일에 손대지 말라는 뜻.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 잘 굴러가는 시스템 굳이 바꾸려다 더 큰 문제 만들지 마라 — 긁어 부스럼 만든다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 가만 있으라 · 현상유지</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABWAQAAAAB9LVxaAAABsElEQVR4nHWTQWpcMQyGNc+zCXjQbLssBLIquHg2BYMHeoBcIttCtj1EIJBtjpFtQMUD2Wjwg2wDoQcoaHBgCPihUkpL9Eq9Eh9C+v1LWij8edPwNwQAAs0pekjgDa+9ZEc5deW3fJjW09V9hLv1N3jLlwBxLVvay27O97Dfv4tXYDjUXptIFm/rL2jLv6ON1aPK2FqSrN3wklLJzWH3ydY5Pz25dgd8jyvbl50WLJTF9AWJrrvKJXZbXyGpqsZSjJ5hai+b5XLj4YMY/rC6PnntE3x6XBs9uoMvQCPkVbB6JPQmObpg9A8v58+7Jzfe/rC+LfjiNozHKT1Ohg9nN3G8AHyAs5nPUip1rErWz4IIXhtWsD40KT5DasJGD5TsoMbWQ7Oce45RXJE8880RKKiindewe/Uy8sfd/WG0e1h9rUgUis3HKZ4Cfd46v7U6I0kWVJLZ3vrWekPHM96rjxD018bZ/KCuOocA9l+qFERZkSwnKMLYmK1OqF2Lh4CVrJ/sm+eamNDmsycIPvT+Dxd20Te0cxmcPB1pult/50tzX4dl+XoEDM+Xdk/+c+8/ASMB61nce1O8AAAAAElFTkSuQmCC" alt="QR"/></td></tr>
+<tr class="quiz-row"><td colspan="5"><div class="quiz">
+<div class="q-title">📝 미니 퀴즈 · Mini Quiz (41~60)</div>
+<div class="q-sub">다음 한국 속담에 해당하는 영어 표현을 고르세요.</div>
+<div class="q-item"><span class="q-num">Q1.</span> <span class="q-q">첫술에 배부르랴</span><br><span class="q-opt">① Everyone has an excuse.</span><span class="q-opt">② Many hands make light work.</span><span class="q-opt">③ Rome wasn&#x27;t built in a day.</span><span class="q-opt">④ On credit, anything goes. / Credit makes spendthrifts.</span></div>
+<div class="q-item"><span class="q-num">Q2.</span> <span class="q-q">우물 안 개구리</span><br><span class="q-opt">① Bad news travels fast. / Word travels fast.</span><span class="q-opt">② A big fish in a small pond.</span><span class="q-opt">③ Money can&#x27;t buy happiness. / The best things in life are free.</span><span class="q-opt">④ Springing up like mushrooms after the rain.</span></div>
+<div class="q-item"><span class="q-num">Q3.</span> <span class="q-q">아는 것이 힘이다</span><br><span class="q-opt">① Knowledge is power.</span><span class="q-opt">② With determination, anything is possible.</span><span class="q-opt">③ Everyone has their strength. / Every man has his talent.</span><span class="q-opt">④ The greater the talent, the greater the humility.</span></div>
+<div class="q-item"><span class="q-num">Q4.</span> <span class="q-q">가까운 이웃이 먼 친척보다 낫다</span><br><span class="q-opt">① A good neighbor is better than a distant cousin.</span><span class="q-opt">② All&#x27;s well that ends well.</span><span class="q-opt">③ Bad news travels fast. / Word travels fast.</span><span class="q-opt">④ Seeing is believing. / A picture is worth a thousand words.</span></div>
+<div class="q-item"><span class="q-num">Q5.</span> <span class="q-q">등잔 밑이 어둡다</span><br><span class="q-opt">① Let sleeping dogs lie.</span><span class="q-opt">② Rome wasn&#x27;t built in a day.</span><span class="q-opt">③ Can&#x27;t see the forest for the trees.</span><span class="q-opt">④ Adding fuel to the fire (in a good way). / Spurring on the willing.</span></div>
+</div></td></tr>
+</tbody></table>
+<div class="page-break"></div>
+<h2 class="cat-h">⚖️ 처세·세상살이</h2>
+<div class="scenario-box"><div class="sb-title">🎭 시나리오 대화 · Scenario Dialogue</div><div class="dl-line"><span class="dl-speaker">선배:</span> <span class="dl-text">회사에선 가는 말이 고와야 오는 말이 곱다.</span></div><div class="dl-line"><span class="dl-speaker">후배:</span> <span class="dl-text">사람 대할 때 늘 명심할게요.</span></div><div class="dl-line"><span class="dl-speaker">선배:</span> <span class="dl-text">그리고 등잔 밑이 어둡다는 거 잊지 마.</span></div><div class="dl-line"><span class="dl-speaker">후배:</span> <span class="dl-text">가까운 사람을 더 챙겨야 한다는 뜻이군요.</span></div><div class="dl-line"><span class="dl-speaker">선배:</span> <span class="dl-text">맞아. 잘하면 다 잘된다.</span></div></div><div class="compare-box"><div class="cb-title">🔍 비교 박스 · Comparison</div><div class="cb-pair"><span class="cb-ko">가는 말이 고와야 오는 말이 곱다</span><span class="cb-en">kind words bring kind words</span></div><div class="cb-pair"><span class="cb-ko">호의가 계속되면 권리인 줄 안다</span><span class="cb-en">kindness taken for granted</span></div><div class="cb-pair"><span class="cb-ko">말로 천 냥 빚 갚는다</span><span class="cb-en">words can pay 1,000 nyang debt</span></div></div>
+<table><thead><tr><th class="num-col">#</th><th class="ko-col">한국 속담</th><th class="en-col">English Equivalent</th><th>뜻 / 유래 / 활용</th><th class="qr-col">🔊</th></tr></thead><tbody>
+<tr><td class="num">61</td><td class="ko">모로 가도 서울만 가면 된다</td><td class="en">The end justifies the means. / All roads lead to Rome.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> Even if you go sideways, as long as you reach Seoul.</div>
+        <div class="meaning-line">방법이나 과정에 상관없이 목적만 이루면 된다는 뜻.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 조선시대 한양(서울)이 모든 길의 종착지였던 데서 비롯된 속담.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 어떻게 하든 매출만 올리면 된다 — 모로 가도 서울만 가면 된다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 결과 우선 · 융통성</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAF4AAABeAQAAAACCqZ7DAAAB0klEQVR4nHVUS2pcMRAsT3tjaJAh5zAIZAgBgQxeBXKPrHyGkBvkKjlAQEFe9tAD2WaZA2jQg9n0QyFZxKhNtNKj6FJ9pHc18W/th5c9gAplMqtTwCuiNrkUSiNPWZDDfot0PBs/4DtWBNiOv/jhM05/P17WNbD3H8/4dGSPUL9su243dEfHFTlfC7DfYD/dr9oOZdLbC9Hl4+Psq+rGgwPQijnVaGlKYQZAeWW72+9xRNJY7k7rTC9cY9Ss3WxBruyEy05PtMtp9QMd3AZ6om4+UR6DiCWOvLJBm/YSkAd1p7rnJl1C4eL9SAmpJhLQcOd0k6CRxlByM6aWOrUgnN3MrIEE6KmS0yaqEkLLOYhrYdtx+bbz8+UbrS0cEp3fb3SeXx7Pt+4cBEUNVWtYW4A1rmxig+EVyKCcrSVEh/QBTYnLLMM5nbmrjNyNm2cLJamgIvp0milmzGT8KreWpAxQaj43M2ktU508nR8ZMQrl3qtve4qWOceIkXxzoYwmNWj3TpWFEtgm2LNNaS00WGiOraJbZg1ZXAbXwfDma9j69vPG9SMsLQKlwd2DP2/7Azfan+q7VzOjlqqjRXdDoCbCqUwIv9ImjC6D+nQv67//qt/9+hTdQPxt5wAAAABJRU5ErkJggg==" alt="QR"/></td></tr>
+<tr><td class="num">62</td><td class="ko">짚신도 짝이 있다</td><td class="en">Every Jack has his Jill.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> Even straw shoes come in pairs.</div>
+        <div class="meaning-line">보잘것없는 사람도 자기에게 맞는 짝이 있다는 뜻.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 한국 전통 신발인 짚신의 짝맞춤에서 비롯된 속담.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 결혼 못할 거 같다고 걱정 마라 — 짚신도 짝이 있다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 천생연분 · 인연</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABWAQAAAAB9LVxaAAABkUlEQVR4nHWTsWocMAyGdadAKSj4IFOhUAqBTgGDO7o4j9S1b9FXKdwaUNGqoMJNB4HQBwg46EYf7hAaKkM1iQ/x+5csbSb8jfP2NQUAhklKqRNQ4DYsVTEaU//l2/Pu4xPeZNz9hMABHq/uaPfjJX+NLcDN05tfp5YjBxtGnsEX/Q3f6kv2OfqZs5uCWpsj+qfkUsW91FhfHAQrZ4w6XXPGqcAzci9ToDqrRH3jVBMPGzny7llql8I9+AfJbQB38UWnz6atV2sUfTqYF80+y1JvZSpmhrT0NXjWIalb5CK5Jm5TMeqIVqtuecKiLzzQEkKK/udIOGsRsqW+eVPUySO+yz2jJHaryzwdkBGVFv9j1F7Mi+Tlf50LS5XZAt/4u9O4Or3dw7KfXFSq51pH5NpLJyUvcZ4XeDgeyid8OJ5u4z5/u4bTcX+9T9+XfdMxS+6my76BGrkTaXh3m0Y+I1wCIkc/ZKk6ZqZQfwHw/PvDQ79vfr/w9N6/wOFZvy73wk1BqeVl/iDkBO6x381/7v0PjuXrse2u+tsAAAAASUVORK5CYII=" alt="QR"/></td></tr>
+<tr><td class="num">63</td><td class="ko">발등에 불이 떨어졌다</td><td class="en">Up against the wall. / Down to the wire.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> Fire has dropped on the top of one&#x27;s foot.</div>
+        <div class="meaning-line">매우 절박하고 급한 상황에 놓였다는 뜻.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 발등에 불꽃이 튀면 즉시 행동해야 하는 데서 비롯된 한국 속담.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 마감이 내일인데 아직 절반도 못 끝냈다 — 발등에 불이 떨어졌다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 다급함 · 긴급 상황</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABWAQAAAAB9LVxaAAABqUlEQVR4nHWTsYpUMRSG/zuZZuAsZx/AUrCNZMHmDndawfewFWwtBVvBJxFsFzJkQRbOkgUrYcDGB8glA7dJOCKLuueCqQ4fPx8/Ocmg+HP65u8IbI4Dbubz8a4Pl4Zzm1/xiRdofMy3/fJnv7p1A30hw4GT/4q9J8B4gDP64UN+mP+d3EoLEoOoPOZDPMjDdGX8UFUlIc7aDE9lSmlMVZPhQz53927m+cds80UkQgWixr9xb586ef4MuDE9t+gnv3eH+vKb4UNb7jHeLX53dTJ+gTSUkuqqj2L/CW+AY/1u8lVSDeKrTrZnzqMSexBbLijeMXkH2z8oSK4Drp23Hg/2mieN1qMuaAGVEEfDG9jpGBI5m68pBdI2SV15KDcdOY915akTwExgs180Kj7kEpI3+e2yOOz8gXb00e6xh/5ih/c8W3/imFRjm5r1x8gTtOa44jlT0okZWN0nxRQo1QibV43sEJCzyf/+L+g10r6v/4vrcXcRnbPvXKiAXSQ421+oFnEF1b7DLdCfhFvii7zaY8ujZG4umJ6bedvvX/fPS4HJD//5778Ar/jggiEhEdYAAAAASUVORK5CYII=" alt="QR"/></td></tr>
+<tr><td class="num">64</td><td class="ko">떡 줄 사람은 꿈도 안 꾸는데 김칫국부터 마신다</td><td class="en">Don&#x27;t count your chickens before they hatch.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> Drinking kimchi soup before anyone offers rice cake.</div>
+        <div class="meaning-line">상대는 줄 생각도 없는데 미리 받을 것처럼 행동한다는 뜻.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 한국 전통 식문화에서 떡을 먹을 때 김치국을 곁들이는 풍습에서 유래.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 면접만 봤지 합격 통보도 없는데 이미 명함부터 만들었다 — 김칫국부터 마신다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 성급한 기대 · 수확 전 계산</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAG4AAABuAQAAAADuIBtWAAACgElEQVR4nH1VUYdeSRCt76shhlo15DVECPs0dPQQQ0cP+7o/Iz8g5CmEteQH5HUJ+RN5XerTw1p61Mc8hTDCvi599WUs3WrfVtxauW/tONVV55yuuzP45pv7b08A+8MObp7dXB2XZc7d2QYFHYI58MhSk9Utd55hWrQ9+BVewwE26AlAOtAVXBLM9+sWhUqig4ExyBBXGRst109ZiN5C3nJ3clX/O1zQtrJZ6SFpbZjVxrar6zdQ7v4+gV7n/CFsuYMTRzVmKxa2Xe10Pr8EvP7neP/z/PF0y225x9hMoYRuaYsKdZAAioaZ3Lz5/kjhQ5jnu8s1Oq2kIbTSpVLltuWCWhZrjEQU0atRWx7SjSFHdmgpGQrWoVIUXOWSKBup5mKxbrn7y3tc5l/LxfL26hSd++vnCGcBhdZX86WbyJS7pmo5dgLXlYC1qNAoJI1bB6EbjGSxdGbzPTfBhFVYAMXPO1QQiXVEZXXZwEkEMtfnv72cy/Yt7FeE9cny0ymt7xFdcopgGgCEfQg693smwNw0FurZoRpyH2V0yg26y8Z6B58fhotTeEfxi89GTUEiWirKw2llHLrGwNny8FoNYStCkiJj8Im1KpUrKg4DP1FqlkEgEjR/b2ceRbgiZ2q+q5FZR41skGSL7o+3a1se3v8pN7T+4pNDo0WGWkpIuu1qv/QHRK0gnH+EcHQegQ7qMbGqBpeNZokJR9TQoft3lEiVBKGDODV2BofwqJ/JEz7+747Fx+Hw+3x8DHNxL4XH+vX2/G4NLz4xvfJ7snFFAWYUdA5WKtlaxlG6stO50lALoHFkrX5vDGmaCC027+9+OeE7+APGPN7O4jbwd/8p/wLpGWymU/zWSwAAAABJRU5ErkJggg==" alt="QR"/></td></tr>
+<tr><td class="num">65</td><td class="ko">도둑이 제 발 저리다</td><td class="en">A guilty conscience needs no accuser.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> The thief&#x27;s own foot tingles.</div>
+        <div class="meaning-line">지은 죄가 있으면 누가 묻지 않아도 스스로 떳떳하지 못함.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 한국 전래 속담으로 죄책감의 심리적 표현.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 아무도 의심하지 않았는데 본인이 먼저 변명을 늘어놓는다 — 도둑이 제 발 저리다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 양심의 가책 · 자백</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABWAQAAAAB9LVxaAAABmklEQVR4nHWTQYpUQQyG8zq9ETJUw2zdCILbQA24qeE1uPUYHmC23kLwKh4gTQ24qSZCr2blFUryoDd5lMjgYB6YVfgJX/6EZBrwN9bdSwoAAuYNUiegoKvXMauQj/avvl8P/eYdr3D4Fup3AN9rezzW5/wl9gD8NKWFOeqgLm7cbcOf5Nies7vAnwasl3UhfJCNf0pWSzXLJeg9ESuyMMa5OnQhU6gj8h3P1/tST2l5FX2W7iRNBwT+/s3XnwvDFU78Jfpp5NAZrXrUtbaZXecefVYyy8Q25lhvCqNhEUibuUoexTV13XCsF5IyGkaOeknFhLtEvQ10mBMkDfsHI8XhGYk2fqrnVj2Jh747+nxLV3p8m97/iPXGJoiNUtx/685ZrFSOutVuokW3e5CCnphcJPpsSrWIlOJbfu5ExXIOnD3gesnL5eMTHON+pNdM1QQjf4xKI7Nri/OephVvRG7vN3eefFmRDgthvIdGqsURhDY+qfaUUIbF/wKg13aGD7/aQ+iLHfL5jtf5U/wj+XNBTczivNN//v03AuTp5Xusa2YAAAAASUVORK5CYII=" alt="QR"/></td></tr>
+<tr><td class="num">66</td><td class="ko">그림의 떡</td><td class="en">Pie in the sky. / Out of reach.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> Rice cake in a picture.</div>
+        <div class="meaning-line">보기에는 좋으나 실제로 가질 수 없는 것.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 그림 속의 떡은 먹을 수 없다는 데서 비롯된 한국 속담.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 강남 아파트는 그림의 떡이라 포기했다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 손에 닿지 않는 것 · 헛된 욕심</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAABOAQAAAACm0R2wAAABdElEQVR4nG2TQWpbMRCG//f0oDwQyJATBLx9MPCyVJEhB/BheoVCVoXeoMfIyqAgQzYKk23BkCvIyOCNhAqlAY3prIZv8eubQTM0/Ks6fnYAPLjp7Cx0T7mw5phLix0d6+byfN7Ouxd0dAIqvp3O8dLTESDMsLu/7WcNvBzp3VSsb33CeYonXYGhdxga6mN9mhUJ3+CL98kwCd/kWk7Wmmh72optOsAFQctKHMgW9LOBo6OSIqygKbQIRw59wtDO2OTNotWhp36P7fxa6kNvNul7870+4kH/FLkZyZrVeenrcwtsbSt9bvly0HTcL2KT4BIppEZJ7CE3xTlaIyeOtsBk7ajPna5Pd+v8pg7YiYTigkmW5H5ZITU2hm/28EFfrzOeZzFFCDEqG7Rw8DZSTM3r3gGtBYYnZmH2sivTilMVE4+mvK4/yCvpGzUHC+PFayNwvxzjgu3NT9VqvV5ICarSO0711/433dwFcY5J3MXw3xv6AwBLtBvIXwAAAAAAAElFTkSuQmCC" alt="QR"/></td></tr>
+<tr><td class="num">67</td><td class="ko">식은 죽 먹기</td><td class="en">A piece of cake. / Easy as pie.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> Eating cold porridge.</div>
+        <div class="meaning-line">매우 쉽게 할 수 있는 일을 비유.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 식은 죽은 뜨겁지 않아 쉽게 먹을 수 있는 데서 비롯.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 이 정도 코드는 식은 죽 먹기다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 누워서 떡 먹기 · 쉬운 일</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAABOAQAAAACm0R2wAAABbklEQVR4nG1TQWocMRCsmZ7LgkAL+ULAV4EOxiCYgb0G8pX8IB/JJ/KABRkdgkFGA74aFoPB1140kIuGziExqE361BRFd1U1PQj+1T6+dwAieE5NMkyPliYkoTXJHTrux6tbfh2P9+hR4Bnn+Pa3fa8JwI/jDeLWoyiNRWzKau50nTJwBoZewyDY1uUOFJXexC47A5uacmHRIG62QW3LFXNkxH4bsvhQbSbNZZOZimm+1zBebm7XBn86OzU3FI6IFFRmiWISMd4ob/vD58vUXrGqHNjX6kuYXa9hModH2pctXM5Kb5VgRZLXLhy5FJiN0tCoJiduxoccSAI3KG/I3hRXhKqay5xtlZZndfn16/byvEwnfNPXNEQuE6vMdnJ3D5YOS1Rc9jYYBtTdREpqPJfSo+P9cP2yYdv3tUdtMz8Xezj9Vklmw6k1QDkeAcLtJ8f1A7eyibE45Y348ana79cnxY1IjZoxtucO//2hP6zxvAJaVkgJAAAAAElFTkSuQmCC" alt="QR"/></td></tr>
+<tr><td class="num">68</td><td class="ko">닭 잡아먹고 오리발 내민다</td><td class="en">Wolf in sheep&#x27;s clothing. / Playing innocent.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> Eats the chicken, then sticks out a duck&#x27;s foot.</div>
+        <div class="meaning-line">자신이 한 일을 시치미 떼고 다른 사람의 일인 양 함.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 한국 전래 속담으로 거짓 변명을 풍자한 표현.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 실수해놓고 다른 부서 탓하는 그는 딱 닭 잡아먹고 오리발 내미는 격이다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 발뺌 · 책임 회피</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAF4AAABeAQAAAACCqZ7DAAAB5UlEQVR4nHVUMWpcMRB9u7PNhwEtuDW4MbhaEGghjYwW3OYSrlIFfIBcIeCr+AAGGbWzaMFtIE0OIKOFbeajYBJipCWq9Hm8mTfvjf6i4d+Zlx93ABGZETRWAfdIVi1ByTXfpEOW8xoX+0/KW7ygRwDw9bT7zoc/Hx9HuFAGAjj21VZUaLb5ONGG9h2yiDv5e9322pahnW4eiE5fqJW+T+LKDKSgg2pog3p+r0i+V/B6n1cMyvfmeOiRzU+4GZgf7eXQp3iXbIrBqg59EilVFI+qg6NJKBGx2CK9AtRgEAx8paJDCnDaxAQO4zwpuxQdCagOfZR9y9bVms3AqaG1QskIycARmCQR0YF6BatTPm6ukKYpz7s+hel2vnh6nrenW+p9W14TT9/u0B7pbdyDiIxoYoYZPBAXIlS1WgweCGfyTpMjOyAxu+ysac3XMW1O7JtX5TRwWkrJCYm1NHCa1ZhtKcojIiZJqCBX/VkfTclTbJrHeYJYIV8KeFQg3mup1ZYhuUW5+oXDRG/h7ew1spADYjiv9j6QiVVN6jmrl135jNlcbp5P/faujOL1yRzL8ce0Hr2OyUaEdPZKAL7bgOavlvu0Iawx2FwThq1aUTmY/c0DZl0PexAhjCIuxtrPs/jvv+o3V7ACiyA1IPEAAAAASUVORK5CYII=" alt="QR"/></td></tr>
+<tr><td class="num">69</td><td class="ko">빈대 잡으려다 초가삼간 태운다</td><td class="en">Don&#x27;t burn down the house to kill a flea.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> Burning the whole thatched house trying to kill a bedbug.</div>
+        <div class="meaning-line">작은 문제를 해결하려다 더 큰 손해를 보는 경우.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 옛 초가집에서 빈대를 잡기 위해 집에 불을 지른 사례에서 유래.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 직원 하나 자르려다 회사 분위기 망쳤다 — 빈대 잡으려다 초가삼간 태운다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 과잉 대응 · 역효과</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAF4AAABeAQAAAACCqZ7DAAAB60lEQVR4nGWUsWocMRCG//NscyAzB6kCgWBwaxDoSpk1XOtXMRjyInmAvIpBh9wEtOjA1cFBSlcBLRJso0XpHDSeSvDzM9/80mjT8FHr1f8zcHXcnMrmdT2WabPrFMRabUtkmm2h96y75W16TOdXHNEpA7Bdb+lxeT7jk7LoP0elJiWUTbxbzoVXmJWm3jMPAWoFJuxV72k47Z1CeVaunwde5TgCfqyCeljfJzopt8fAd70n21iDGqMedd8HdTQpwVXbahV9tCFnbKbKfR9kbyibamyywhNSNpk4mBSsyNpHnRk2U+oJrm6eZr5+YfpqWeTmfmxpXU6/9/T3m2ALIzMo5wjBloxWiTI8eTGpc6SDA1uQoM4cweyrYUE94GUORdGX25VOPfXpgAMd5vST5p4ayRHg2EWwyKD6pnUNNWsIggqVg67ekBZKNHnMFpx1lpOGFjjrWpWXHu/NGDhoTcITbeCkcwpKKpVHrzPIeCuVGtVYyTXbxDyuxQCyKbnQE2zatGxhCu7d4SyoOZAP0VFSklqxMlBOQ6bTWvSeXWIWdzocHzIeVny/+bWkXuFadl6VVC5bsfVBOcUOo5fvYADU+3mh9Ql3nzzZNB2zhySg9LbeU3mcw4P4D+YhXEp6K5fyvpW7/VH9bv8DEIYP8u3/xkAAAAAASUVORK5CYII=" alt="QR"/></td></tr>
+<tr><td class="num">70</td><td class="ko">핑계 없는 무덤 없다</td><td class="en">Everyone has an excuse.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> There&#x27;s no grave without an excuse.</div>
+        <div class="meaning-line">잘못한 일에는 누구나 핑계를 댄다는 뜻.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 한국 전래 속담으로 변명의 보편성을 풍자.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 지각 사유가 매번 다양하다 — 핑계 없는 무덤 없다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 변명 · 책임 회피</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABWAQAAAAB9LVxaAAABpUlEQVR4nF1TS2pbQRAsqQVB0KIFOUHAoJVhwng5MA+yCuQquYUPkMMYsjKMmYA3I0Zbg5aGbJ+YB97Mo0MwNu7Xq6IoiurfSvFW8/odAkhINLZSOvgjv5aOwCc/QdNHfjPv/95+ng9zebB6AHydz+fhFb/VBng64DpN28nwaxrp+zRcfiIafpWG8opujD9Uq0rpXLUbn4fLtBtpT1/3e6sXJBZQ8MX4jwOdv5zhJtsvVNhnXyi3YPjepTlPLchCH1PT0tCd4Ve6O2D7yLjkrdEXL72Hwj6b/BhTDaJaeTQ50bKrIiCOVt8CHIQ9LfZ1ekxc74jvvbP5U0gQCFfrn2Mq2ceMbPuqoJKlR+VFnphJaiml2Tw1aNJQJSzmNqoQSSRE47/hFTGuAJd2Nk8diRJzF+OzcUdywO/5G34t9tWb1lFjX/Q1cnTa6hgsr1Fbj7E7b/MnBxblmsjy/1cSImIti3tbXT1Pf8I0vwx2Dr2W0kKSaudZWBO4B5DtC5hQbj6hHX8s/uhILzE5DOYvUHsWYa4RNs9lg7vkCbf9ZO/wHZp//wfKudDg3KeU+QAAAABJRU5ErkJggg==" alt="QR"/></td></tr>
+<tr><td class="num">71</td><td class="ko">호박이 넝쿨째 굴러떨어진다</td><td class="en">Hit the jackpot. / Strike it rich.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> A pumpkin rolls in with its whole vine.</div>
+        <div class="meaning-line">기대 이상의 행운이 한꺼번에 들어옴.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 수확철 호박 넝쿨이 통째로 들어오는 풍요로움에서 유래한 한국 속담.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 대박 거래처에 추가 계약까지 따냈다 — 호박이 넝쿨째 굴러떨어진다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 대박 · 행운</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAF4AAABeAQAAAACCqZ7DAAAB50lEQVR4nHVUQWpbMRAde7wJTFChW28COYCKshwjQ07SG/gGpTcw9CSFQFeBCQqEgoI+eGUo9AoyMngzH3XRkqIp1Uri8aQ3781o0eFtzcu/ewAQyKTA3DPQgCydnv29vFxg12XkZCoJAxZkySMHAJiPckfT78PbWgHcPD0/btLV1iBQtER1pTrt420L2eY/27tRG/RelZ1wLl1HJIm6Dhige1MP4OXru/I4p2uoI6ey9lhYkZBHpJVWW+6xpWbeKT4kzhFLrKNqkMgtVeXW2HBUYqFUBagZTu++9dBaqXFUsHzafHndvk5wwvM0upPxfHU70S0ez0a15lJz1YoVDJJiJafUVGXUtoLPaw/Pl2kD+H18R9/L6dMePvRpHpNbvsyn3cM8w2q2mfaSNDnh4pJNDtB1cSxivc6YxClr82B8q+R76JBbN+5AdRgUes3Zep3EiwvVe3EjZ9EAfnx0+xPy1syCkuteHHKwvhVELNQ1U7KOKkhA8FKiqbQUYRUvgbLJ1M/xcMA9TJez8a06TiAtOTH9tvw5f4OyXV95uLZed1F0Esgl24nQpFAWpfzPbB/5Jp13B7yYWciUnAI1Z32DTE2oZUjR5pOpKftagyt2SlS4ZaoJbT2nFR1mfLhnWZu+/u9f9QvDsBuqSV0p4QAAAABJRU5ErkJggg==" alt="QR"/></td></tr>
+<tr><td class="num">72</td><td class="ko">갈수록 태산</td><td class="en">Out of the frying pan, into the fire.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> The further you go, the higher the mountain.</div>
+        <div class="meaning-line">갈수록 더 어려워짐을 비유.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 고려·조선시대 산악 지형을 이동하던 경험에서 비롯된 한국 속담.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 이 문제 해결하니 더 큰 문제가 떠올랐다 — 갈수록 태산이다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 산 넘어 산 · 엎친 데 덮친</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAABOAQAAAACm0R2wAAABc0lEQVR4nG1TMWpcMRB9u/rNgowWUqVykwMoyI1BoIVUPoYPkMoHcJM2kAP4GGkNMtPKaMHtQhpDqsAs37AE5jMGE4MGMtUwPN48vTdaKf7Vsn7vAFTM3EIU+HHahVyIkrUN02nZPscDbfEwYtfA0+bPx2d+a99rDVx+w+8vezNFlyaByBveVd21t+bCaFDVRjGritHrQezhUh63Zad5/zO1xWzTSqFURh23gQvn2TVyI8PkHw+nq81puR81rCjusdz4uuwMr5+1o7ps9XZ0j0DJePbytb6c9IjvRhkVP+ucNY8aIDF7ac2J4aVeM5G6Yl7REaL3zN5gWZlSTL0Y3i5RCguSwdZeOpGSyQKCQN0nbharVUNCN66jIYY5NscjdsJ8VrYL/n6oY0LuirCRT9Mx2oyJqpRANmM09k5aN3cWJB6Ydw4jL5rvVQWAuQfgGPcXCW10fQJwXn8gXN8ZZRzitbv9/MskVEEhBYomi9V//9ArBRm3Mbijvk4AAAAASUVORK5CYII=" alt="QR"/></td></tr>
+<tr><td class="num">73</td><td class="ko">우물에서 숭늉 찾는다</td><td class="en">Putting the cart before the horse.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> Asking for sungnyung (cooked-rice tea) at the well.</div>
+        <div class="meaning-line">성급하게 과정을 건너뛰고 결과부터 찾는다는 뜻.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 물을 길어 밥을 짓고 그 누룽지를 끓여야 숭늉이 되는데, 우물에서 바로 찾는다는 데서 유래.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 신입한테 첫날부터 임원급 발표를 시키다니 — 우물에서 숭늉 찾는다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 순서 무시 · 조급증</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABWAQAAAAB9LVxaAAABvklEQVR4nHWTwYZdQRCG/3v6EJeKDrMKswnZhqYv2Zw4Q1Yh5BmyynaYVchD5AHmMQ5ZXXr0kE1dfchqGCIM2fbVhytU6yxGxtQlvSq/8p+v/jq1avj3avdQAggoxDBCoMd6b2U2F3F9ks1O9TM18dKIAj/WO+DqbZjfTPf1w+sBt+3tNDitdybfPiu/6hJGpa/CGd9XG8WD1mRkUBqbKP+r94s5yPeXy2ateYzb0snnXZ1nPa8bHCSCm/JfyZMa37lvOxjl02N9R5hgsT/XPN7GETEEp3KAEAQ5e8+KE2IDj3lIrQ1KzxnFsyvN6/5kQ2MzMKzubzm1UZhy0rr4NNjghI3y6VA//nhhL8/MVuWMVLIgWT8kzZ8Gaxr5SHTEb7xnLy1o/m7+s8bh8npjNzpnNuyCNUxW7zEMNvhUXHTaPxrnOQ6pjHovpdr6eo3p5/6L9iktjgB7vceOnvavKtMnbLKey5c4+mQFmh83p1hulrtrfD3635IU73JinXNATCiFiPV3rbiK+hzGuKN7idbn0QXSOTOFTBahidJ7gE59xYd9UPN2Jhtfp7nyub6jfV93h9vl98EEldt/7v0vfY7ejLvi7YsAAAAASUVORK5CYII=" alt="QR"/></td></tr>
+<tr><td class="num">74</td><td class="ko">보기 좋은 떡이 먹기도 좋다</td><td class="en">Presentation matters. / Looks count.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> A pretty-looking rice cake also tastes good.</div>
+        <div class="meaning-line">겉모양이 좋으면 내용도 좋을 가능성이 크다는 뜻.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 한국 전통 시장 문화에서 떡의 외관이 판매에 영향을 미친 데서 유래.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 포장이 예쁘면 같은 제품도 더 잘 팔린다 — 보기 좋은 떡이 먹기도 좋다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 겉모습 · 프레젠테이션</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAF4AAABeAQAAAACCqZ7DAAAB+ElEQVR4nGVTT4fcQRB9MzWXoaKXvYYIS05DRy8r9OohpyXkw+znyCkfIJ9hGfa09E+HCD162VNYchlyrdHDCN06lvzRnT4Vz6t69V71rOHvq/N/NTCfZvvtotbpsJ2ddMhCFTrah8tXj6u27Tn1ZL+uZz++7TCh5wCPbzaXasP3+A85PpxWuv6AESHBS3w6VCfUz5n5dfxdnnOPNGB7wTcEO+yDINo7z7m0UHokBceOGQDbfp/9qppJS0DRvTZIIGKjhJ0eupWoM4Ju1Dj2SMu+hNysaWXgtELJeBRp3CPz6fTnnt9jTee7PgVIEVVKNLbkoVtIORQdhELo3UFjk5KmnBMGbdEFKzmikBndAeXiOQmodwdZRatU4Jhi321e62FzU3F7cXnsfZt/D3jHVHFHy/WgwCPBK5+ghjklSWIOhTKGfaR4sEgWxsAJrUVjlWsu99pmqV5/Xn3Uy3saLyQqfvIsk7iesziubp+11/T49fmwD4pRwZGiUOygoEVJ2Smx0gZHfYs6khWRIW20GFoOuiG7oZsob1oiE/V4b4lZGUAa0CMLnSc+cj1htRlSmGbq7Koe3e4OfQpzVeqLzVt4ouX94A5nWJDJXo23w5LgAoznIZ/IJTmfctDDJS5IvtQtHXjtr2RwBx7a2IASeg+e/vaf1yf3C3EMEPW2aKFEAAAAAElFTkSuQmCC" alt="QR"/></td></tr>
+<tr><td class="num">75</td><td class="ko">낫 놓고 기역자도 모른다</td><td class="en">Doesn&#x27;t know A from B. / Illiterate.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> Has a sickle but doesn&#x27;t recognize the letter giyeok (ㄱ).</div>
+        <div class="meaning-line">낫의 모양이 한글 &#x27;ㄱ&#x27; 자와 비슷한데도 알지 못할 정도로 무식하다는 뜻.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 조선시대 한글 보급 이후, 가장 기본적인 글자조차 모르는 사람을 풍자.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 기본 엑셀도 못 다루면서 빅데이터를 논한다 — 낫 놓고 기역자도 모른다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 무지 · 기초 부족</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABWAQAAAAB9LVxaAAABnUlEQVR4nHWTsYpbMRBFrz1uAmPG7ZYL+QAFGdJo0Wv3S1LlXwL5lYVUBi1KsyAjQ9rtUwVk9MCNHpMiJOw8iCpxuIzm3hltFH/Psv13BZAwqGlJA/yW72TcXuRCDD0bvhx+4niSPZ6sHjjLKx0cgBUn3D/O+Twbjjp0+AI/tLzlmzSVP7ejqQ/VriMUER2G5xYoj+w1Wz4y5Ri8E1heXPQ8CrKa+tvb1/n07fge/N2ZfsrkZhB/eaCT7V9dYs4INjdU0EBrvdt3d9c6/9CDS898MfrupHd2Xb3Vn+Uee8Ed6GD1rFGEPSFYXzlRydElWuUzCkmrsTmr7z6oB6c0LNfUSIbvvMq5Ug9cWUtZ5dla0lAl9FU/5MBCDLG8FYqhdp+d9Usff/HkJl7Y+h0lKwKX2mydKj1phfpg9gepUWzqa1rxSjXHKNpsPlucPmM+P82Xd3YuqkUIHrVa/fOGsPRED8tkuIwZifcnomRz4AHhErGaS2Htgzr1ZvcQwB29PPL+1ewh6kihaB3RG1/b644un/YfblfYvf3Pf/8Nvw3aMH+JaHQAAAAASUVORK5CYII=" alt="QR"/></td></tr>
+</tbody></table>
+<div class="page-break"></div>
+<h2 class="cat-h">⏰ 시간·기회</h2>
+<div class="scenario-box"><div class="sb-title">🎭 시나리오 대화 · Scenario Dialogue</div><div class="dl-line"><span class="dl-speaker">멘토:</span> <span class="dl-text">기회는 한번 가면 안 와. 쇠뿔도 단김에 빼라.</span></div><div class="dl-line"><span class="dl-speaker">멘티:</span> <span class="dl-text">지금 결정하라는 거죠?</span></div><div class="dl-line"><span class="dl-speaker">멘토:</span> <span class="dl-text">시간은 금이야. 그리고 호미로 막을 것을 가래로 막지 마.</span></div><div class="dl-line"><span class="dl-speaker">멘티:</span> <span class="dl-text">미루지 말라는 뜻이군요.</span></div><div class="dl-line"><span class="dl-speaker">멘토:</span> <span class="dl-text">그래. 늦었다고 생각할 때가 가장 빠른 때다.</span></div></div><div class="compare-box"><div class="cb-title">🔍 비교 박스 · Comparison</div><div class="cb-pair"><span class="cb-ko">쇠뿔도 단김에 빼라</span><span class="cb-en">strike while iron is hot</span></div><div class="cb-pair"><span class="cb-ko">시간은 금이다</span><span class="cb-en">time is money</span></div><div class="cb-pair"><span class="cb-ko">늦었다고 할 때가 가장 빠를 때</span><span class="cb-en">best time is now</span></div><div class="cb-pair"><span class="cb-ko">호미로 막을 것을 가래로 막는다</span><span class="cb-en">stitch in time saves nine</span></div></div>
+<table><thead><tr><th class="num-col">#</th><th class="ko-col">한국 속담</th><th class="en-col">English Equivalent</th><th>뜻 / 유래 / 활용</th><th class="qr-col">🔊</th></tr></thead><tbody>
+<tr><td class="num">76</td><td class="ko">시간은 금이다</td><td class="en">Time is money.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> Time is gold.</div>
+        <div class="meaning-line">시간은 매우 귀중하니 헛되이 보내지 말라는 뜻.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 벤저민 프랭클린의 명언이 한국에 정착된 격언.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 회의는 짧고 명확하게 — 시간은 금이다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 시간 관리 · 효율</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAABOAQAAAACm0R2wAAABcklEQVR4nG1TwYZcQRQ9b+ptmopqsg0RehsqqommeM2sQn4i/xGyyU+EfMZsmxp3iHCpR7Yhm9kONSq0UOWGkaHuyF0d13GcW+fUJPg3/eIRAUiohRffYMdtbmSktCg8bOe+vfXr73e4HrkXwI9NP9yWB/g4M3D47N/ii9oiN5ZoyCrdKR35AeyVBxGh4KNIU34tuFiYEJUHs4T1KnBXHszdOlE/bZO+rUqMhsmMCnPf4Fs8nPtp5E51+/28OX9M/TgqsF0yI5modGlx2SVHQd9md8+73GNVXHaNhKLE0QNS9Nwam6b9im+5illGXWQUb2IpVnGr5OpTyIvSrdzKUhqC4hahABJSWYBQndhQ+IkHFBeQ1avPmMrlrvP+7sWYRZfLE1b8eZkU95n5uYm7GV5nnEzixZHOGARrGmfVM9deo5ajwagLtpRbA6D7ALy62Qfwk07a9f0V3IevI9eU+7Azn978Uk1NoOAceZXF9N8/9BdPibNdsOS01AAAAABJRU5ErkJggg==" alt="QR"/></td></tr>
+<tr><td class="num">77</td><td class="ko">세월은 사람을 기다리지 않는다</td><td class="en">Time and tide wait for no man.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> The years and months do not wait for people.</div>
+        <div class="meaning-line">시간은 누구를 위해 멈추지 않으니 미루지 말라는 뜻.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 도연명(陶淵明)의 시 구절이 한국 격언으로 정착.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 공부는 나이 들수록 어려워진다 — 세월은 사람을 기다리지 않는다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 광음여시 · 시간 관리</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAF4AAABeAQAAAACCqZ7DAAAB2ElEQVR4nHVUMWpcQQzVrrZZUBhD2pQBV4YJk1Lm7wECuUQgrQ/gJmdI62O4NSiMS5n5BwiE3GDMGNzooxQJDqOQqTQ8NO9JT5qdw8vZ9n9jABDQ4sbsCjQjzYQ8Y3F2nZD9dkbn9wo3B/gGMwIA368Pcknr78vLOQCc/3wtl/V4Cgg009JT68kCz05O+id8H7S5d16SsDa3GanSqQEW8Dzn7KF8rFftbquvsM853Qg9mSEhz4guOgrzMloJPCplMBk27rNq0LqMip1H56B6ADjVIfAPT6tlWBmj9WXm2W9HPa0PKzzi01nowcICQn2oRG0dOmXr2CHweKKSlIdZDjldoLGgkmCop6bKS2uLJZ1f2x/vCG+3bT1s0VNv0jAJt1ajcwLiklgg9mBgz4upDYCozUaqHXT4Ev1J0Bi818qxB6YVF8tZ0pyzG6ftK1x/AeTTvAu79q7crUCfj88P0Z+i1NhNuQakWk5SIYsvodKaTIpkKczRBe3mKoIoAekpFRAvqHGuGy3VgSwLBcS9WUkyUqrBOQFvqCqdNOxCsvu3F/h09QOfwy4oiVSgkWLfQMkYskL1qEBpEEvvJcVJbCa1KuWGI8z14wE+XOAtfspv1tmF//5VvwB6FBXWv+UcfAAAAABJRU5ErkJggg==" alt="QR"/></td></tr>
+<tr><td class="num">78</td><td class="ko">기회는 두 번 오지 않는다</td><td class="en">Opportunity knocks but once.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> Opportunity doesn&#x27;t come twice.</div>
+        <div class="meaning-line">좋은 기회는 한 번뿐이니 놓치지 말라는 뜻.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 동서양 공통의 격언으로 한국에서도 널리 쓰임.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 이번 기회를 놓치면 후회한다 — 기회는 두 번 오지 않는다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 기회 포착 · 결단</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABWAQAAAAB9LVxaAAABmElEQVR4nHVTsYpcMQzUW71SwWlTBhZSBQy+0uCFtPmJ/MFBviOQj7n2QOAtdXjhqvuCbb1o4RotShFynB7ElRiG8TDSLA7/3m33NgIAg5NAMgJ6j6/JTvuf47IaPgW+0MTiDsTyHt8BnOTX8W78nd/eClA+nb8/phxxGDaoZFDxoLNeVmEAeIEl+Nk13yPs7xF9Rv+E2K2rlhpw7W4dK2cMOtApG/kA9qh/w9MzHj5zOnLgG2mrU3xki3hJXXIvcwb/MNkNMnftkT8KS+I6GkSfQ6oqZfUW+T6mClaGFPlGOouNNMcGb6kkriYYdTpMzMrVIeJzdJsjIUH0L+SYrCDxxk+pVZQS6ybnmQoOKKPFnLUMY0ShFHGpmAtr7ps8vecmUodvdIxVUqnGHP9lr6Mp1Br3uNIyLo8nez3cxTsZLXcvqRFGHRFDpa4cc1gcnuDL4SbPt/tNX0RhzkSy7csVIH28EuZNnr0UR2Da9gV+0wfgdo69EOqWTBLE/e5w0revx3xrPwJ/d1mvD690PD9guNvlP33/A0+b4MhLy2RBAAAAAElFTkSuQmCC" alt="QR"/></td></tr>
+<tr><td class="num">79</td><td class="ko">좋은 약은 입에 쓰다</td><td class="en">Good medicine tastes bitter. / The truth hurts.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> Good medicine is bitter to the mouth.</div>
+        <div class="meaning-line">충고나 비판은 듣기 거북해도 결국 자신에게 이로움.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 한국 전통 의학에서 쓴 약일수록 효과가 좋다는 인식에서 유래.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 쓴소리하는 멘토를 가까이 두라 — 좋은 약은 입에 쓰다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 충고의 가치 · 쓴소리</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABWAQAAAAB9LVxaAAABnklEQVR4nHWTsWpcMRBF77O2CcwyBreBYHAbEGjBjcxza8iv5A/8I/mPbQMK2lLLLKQKGLYxuNWihW0kJkVI8DyIquFwuRruzEyKv29c/SsBJNRQW0od9J6vuLuCHRi6N3xcvz1dCtbYWj3wcnBjEwaw4KOubs79wXJIryXEGrqW93xKj+VPtTH+UK1MpfCs3fBco8sxN82GT/Xod8/DnY4nqxffKqkgq+3/7rh3200Cdt7oK0LzgRux6RPqkHvJrdjcUCAdNbnm7L+dIcKqaNYnp9IC+abB6qsmJfYgtryQejB5t/i3KlPJc0wuGt7iLLFLVCx8gtcKyqEv9D057aFRWuQsIZCQFpszWsxVo3BU69OZMtgR2HIpvQZpPnvjs7r9dDdw+4WJrs0c8yB/4/fpMp5tP8HnXtDnYvNMVWevQXy0XByyzqywc7nC6Njst2d8OCz2TZQpkIjV/5jGYbwm9zAeDed+Gdmtt85Zn0I1gWvEYi6FehUktL68o/PHRsRrMXs4yeefX+Hw/R7fjP60ksPbr/NlOKv/z73/BvAn5yyK1JMbAAAAAElFTkSuQmCC" alt="QR"/></td></tr>
+<tr><td class="num">80</td><td class="ko">십 년이면 강산도 변한다</td><td class="en">A lot can change in ten years.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> In ten years, even rivers and mountains change.</div>
+        <div class="meaning-line">긴 시간이 흐르면 모든 것이 변한다는 뜻.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 한국 전통 시간관에서 10년을 강산이 변할 만한 긴 시간으로 본 데서 유래.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 10년 전 시장과 지금이 완전히 다르다 — 십 년이면 강산도 변한다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 세월의 변화 · 흥망성쇠</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABWAQAAAAB9LVxaAAABn0lEQVR4nHWTMYpcMQyG/xkNLAMKnnYhEAKBVAMGpwkY3sKeJ1Wq9HuA3CCXGEi1YHDrQYG0W+4BvOjBNH4ohCXL6kFcid/i029L2hj+nWX7EgIosNw4dAa/1ndhnPH15/K209npy6H/+nhkOpxc/hb4He8frk7P8cvZAZFu98jR65BRWCO0WXutb8pNe44+Of7G8PTueMeEuPLPlGquqik7vVvvQrlEchwUdOIhqOb1QYictUgd7l2XvYb5biEs3n9PuTTU0uH8w3od6J0UjoMh1ELMMpn3OXJQ5aiWfL5Q10axIXh+ydbTqKGL92+WE8s0Gq34XCh0Sda9XiyONIXInr+l5ccV338gxOg5SfKo2UrzHMsaqkAlez8i1htRWfGhI0xZdJLo9UHRWvl74/te9ze6+4zvmH1dISlT7S34upuGy/HhJl5Q9j7fQrUUpvX/yGg1cVXwqo9Wh05xSFvPjwhUA/t/2IbxHsD1TOTnpLGEyQKK52+B+RGHU5ke1/uyv9Yzbp/qN9+XPqc3Mxb+4vkFjZWh0c/P5j/7/gfgJdcTupmqFAAAAABJRU5ErkJggg==" alt="QR"/></td></tr>
+<tr class="quiz-row"><td colspan="5"><div class="quiz">
+<div class="q-title">📝 미니 퀴즈 · Mini Quiz (61~80)</div>
+<div class="q-sub">다음 한국 속담에 해당하는 영어 표현을 고르세요.</div>
+<div class="q-item"><span class="q-num">Q1.</span> <span class="q-q">닭 잡아먹고 오리발 내민다</span><br><span class="q-opt">① A big fish in a small pond.</span><span class="q-opt">② Wolf in sheep&#x27;s clothing. / Playing innocent.</span><span class="q-opt">③ Time is money.</span><span class="q-opt">④ Rome wasn&#x27;t built in a day.</span></div>
+<div class="q-item"><span class="q-num">Q2.</span> <span class="q-q">기회는 두 번 오지 않는다</span><br><span class="q-opt">① Reap a hundredfold. / Give an inch, take a mile.</span><span class="q-opt">② Too many cooks spoil the broth.</span><span class="q-opt">③ Opportunity knocks but once.</span><span class="q-opt">④ What goes up must come down.</span></div>
+<div class="q-item"><span class="q-num">Q3.</span> <span class="q-q">좋은 약은 입에 쓰다</span><br><span class="q-opt">① Good medicine tastes bitter. / The truth hurts.</span><span class="q-opt">② Time and tide wait for no man.</span><span class="q-opt">③ Keep your head and you can survive anything.</span><span class="q-opt">④ Less is more. / Brevity is the soul of wit.</span></div>
+<div class="q-item"><span class="q-num">Q4.</span> <span class="q-q">빈대 잡으려다 초가삼간 태운다</span><br><span class="q-opt">① Let sleeping dogs lie.</span><span class="q-opt">② Opportunity knocks but once.</span><span class="q-opt">③ Don&#x27;t burn down the house to kill a flea.</span><span class="q-opt">④ Wolf in sheep&#x27;s clothing. / Playing innocent.</span></div>
+<div class="q-item"><span class="q-num">Q5.</span> <span class="q-q">보기 좋은 떡이 먹기도 좋다</span><br><span class="q-opt">① Less is more. / Brevity is the soul of wit.</span><span class="q-opt">② You get what you pay for.</span><span class="q-opt">③ Presentation matters. / Looks count.</span><span class="q-opt">④ Kill two birds with one stone.</span></div>
+</div></td></tr>
+<tr><td class="num">81</td><td class="ko">쇠도 단김에 두드려야 한다</td><td class="en">Strike while the iron is hot.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> Iron must be hammered while hot.</div>
+        <div class="meaning-line">기회나 의욕이 있을 때 즉시 행동하라는 뜻.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 대장간에서 달궈진 쇠가 식기 전에 가공해야 한다는 데서 유래.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 투자 의사가 있을 때 바로 미팅 잡아라 — 쇠도 단김에 두드려야 한다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 타이밍 · 즉시 행동</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAF4AAABeAQAAAACCqZ7DAAAB8klEQVR4nGVUy2pcMQzVHQ2UARcF8gWBQFaFWzzQzQUHsgoE+ivZ9mv6E4GuCgruJuDigawGBoauuip48IUhIKPSB0mtaiVzLJ9zLMuDwnO0xUsOAAzKqY4uJHA9kqWEEovESVOHLNrJ7n4H7vEG7qFHAEZ/5b6cz5vfi5dYAsD2+NZ9X/3Z9k9kKZOjFFAMz8CX6W+6NtpUY/E5OQoqxg9DTEwYi/TIEt6n49GfJ4DDrq8RIVcw+KDZ8CRfXdRIFHUyCkoKiWoQH622IDwFkgm9QRiciwqUVHqnoB4DF40uUc8z5LPH1Tt286UsV31N1UJeNOSA9jQZPYqGgNYPV9UQRi6lGD/MoA6oZMa+Zqg7gLN9u9i4+dp0u8F803D7oZmeDrqZ3+yhXUKcjWpmwgTokNF0Lgb1mclnzMZPFQHhitkV40cojSkpEzvjJ08ZxlKgpmB4MlYE9OG/0xbt6foBn1w7u9uPRoGPoeSaCKrlSZKQHWAkozrVKXuJRMG8g0G/gh90vRsPYF5iIckjVg+cep7Fvr06fPz8ehvhysyPKo9CceJsan7Nz8UWABsc+85BllyIEjiKZkrayd3pw7yOq/nmh/HjxGcKWYWtU8dYBQM5Z34KLDBuTt2B8dNtjxyWtGntWzyMtxtzOy95/1f9BKf5FPgCB2CuAAAAAElFTkSuQmCC" alt="QR"/></td></tr>
+<tr><td class="num">82</td><td class="ko">늦었다고 생각할 때가 가장 빠를 때다</td><td class="en">It&#x27;s never too late to start.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> When you think it&#x27;s late is actually the earliest.</div>
+        <div class="meaning-line">포기하지 않고 지금이라도 시작하면 늦지 않다는 뜻.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 한국 현대 격언으로, 도전 정신을 강조.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 60대에 영어를 시작해 70대에 통역사가 됐다 — 늦었다고 생각할 때가 가장 빠를 때.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 지금 행동 · 새 출발</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGYAAABmAQAAAAARpNnPAAACNElEQVR4nH1UsWocMRQcnw6M4RkduHVjuNagQwE3MjKkMhj8JYFr0+cDDGkD+YmAq4AOGYxBRgepAoYj4A94xzu4RotCipDkLWSrXYanmXkzq4OOP88w+esDQEISF0BGCkhhtTFJlWSZevkXmwyzTV4vTt2XE6ygMGDn3vMrQnIYY0eLbzfH9mGZNIbaRAQNEU3zHaSr8vv9jdbZezMmtGiq7U3xrS4f+QnT56fd62qtMLPH9f6D3C/Di9daGntfXE41xxo0n2FunH2tNWktiXqSKC3ABKUFtYYglapPUZQ/VMpMXVA5JM2XM3XHxbOro7mOVgIFaVyT5is1gnJnIk8jDwk1CKK4FrSHIp5rjZlz0Dmgo0h1rojvouamD/7qfth8na+xvXV6n4BPDEcVRusUm7pLrVa2RWEH+QgXZVHmtMb+WuV39HYf5uQ2hxfmKOkcEgU0NFdhR7sWU2ryVH2X0a6blWA4FpdJ60zW5Bpzhuk696k921y2LTlyO9JdSuJDz55LRdF8XPhXWZz3VeucWr8ohwwMm+25PrMkaRKtD7CszpzsLZ3g+Wx4KD9u9FwnqYHRfYl6Di1zsgHRMDndCeGShCR1mBHfcLtbfjfXWEV+udPeW0ucYETSKIfeUw6p2extHv1H6CyuRBOpjPJrvTvXMpPN2kOhFsBAC8nojIDHj++MwwWWg+rnFKD5fjbAfZ6f6jvL8JY+nfdAwLnq2WQ7xWy4O8538xvMVHf/c+/+BJxIQjXx4yRQAAAAAElFTkSuQmCC" alt="QR"/></td></tr>
+<tr><td class="num">83</td><td class="ko">비 온 뒤에 죽순 솟듯</td><td class="en">Springing up like mushrooms after the rain.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> Like bamboo shoots after the rain.</div>
+        <div class="meaning-line">일이나 사물이 한꺼번에 많이 생겨남.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 비 온 뒤 죽순이 빠르게 자라는 자연 현상에서 유래.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> AI 스타트업이 비 온 뒤 죽순 솟듯 늘어났다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 급성장 · 폭증</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABWAQAAAAB9LVxaAAABq0lEQVR4nHVTQWocMRDsXe3F0Kb9gEAw7AMEmqPCDOQUyCfylzwg4JcEFnwyNGghBNpowafAgi9+wCwa8KVF5xAS3APRSRRNqaq6tDH4e/r23xUAGFqYm7ACvsW3pF3oHBCM3bxgw9QMkeUtvgM48YAfUgdY4VcxXB/Gx8XhUFUlKSc1x7PhSf7cBqcHzBqhIo2mTufxMh3u4X4PR8e/0TCcYqfL88XNw4xjRBMQ836fXyEchj28HqP3KznlkFsenU5oJRbNrQmvdGZTiDEl9u+WNNZKZqyep8ylJYnJ0kpnHQ0oA5Lnr9xiIEoBstO/0M1Zvt/2h+D2tdHlHL7c9UlXeRYTa0xFxfGAyBgMU0H1ehpRwiom5HGOIpapZvU8bQwJAiGQ87v9dck98kust5PD490JMH9eOq72OCDvwtX8o/t9PdG3J8V9+ES+b0uf0iV+vXnBk88tSbGRjNH3p/+cYHg8DPDq580KESSo1e+LoRK2GdHntiWFzvC+hOB5BBUAJUBY5Yw6C4TQZudrB7C8awIfr4vvYVXOeTS1tNbD2IRb9P3Z/Oe//wYegeAbniX0JgAAAABJRU5ErkJggg==" alt="QR"/></td></tr>
+<tr><td class="num">84</td><td class="ko">달리는 말에 채찍질</td><td class="en">Adding fuel to the fire (in a good way). / Spurring on the willing.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> Whipping a galloping horse.</div>
+        <div class="meaning-line">잘하고 있는 사람을 더욱 격려하여 분발하게 함.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 달리는 말을 더 빠르게 달리게 한다는 데서 비롯된 한국 속담.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 이미 1등인 직원에게 보너스를 더 주는 건 달리는 말에 채찍질이다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 격려 · 동기부여</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABWAQAAAAB9LVxaAAABrElEQVR4nHVTwWpbMRAcW74UFBTotRAChp4MKvKloKIHPRXyMfmAHgP9jH5D/0BGgRKQWUOugVDoNSAjgy9rttDQtCvonpZhmB1md2eCP3Wav7QAMihWuGZhFU7cbJdYqtR/8fnp/PHnw/rLe2ygcOBwsbr7fDv97l9qAcDfH/bXz5y/RcwZiWG1/ixP9blbaz8iYg0LRFjN3XzYmNURWG92it+o+eJi9kbrNIRScyK2ai5KyKl3CpA48E10mYW8xrtY39nHOuhLrbmnitgUPt8eP9qr/bUzF17n7wu4lViq1q/kS6o2UNA+OzuJXFwjxZ9vzeXu5vhqiUudc4ULlDr5OORAjQ05Y3UOs4olpl2O6+EeOiWTuFWXtR+uDYXQadAvJRgXmvE8+G/eZktlmAsqrecaSZLOQWJy2ZDjMOylU6dUpRd1D7PqX/94A7wF7rTP4n1zDN8VHx1OchHAKP2Fle1Zn/bt8TQN/8JcqiuWtA4xe05JqIz/cvg6fcO7/adhL7aaHJor+n4WwGF1ddw93T89KNy07y4v7XnY65wzSGILkbLyP/vPv/8Cr3vmmCrOCWYAAAAASUVORK5CYII=" alt="QR"/></td></tr>
+<tr><td class="num">85</td><td class="ko">일각이 여삼추라</td><td class="en">Every moment feels like an eternity.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> A quarter-hour feels like three autumns.</div>
+        <div class="meaning-line">짧은 시간도 매우 길게 느껴질 정도로 간절히 기다리는 마음.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 시경(詩經)의 一日不見 如三秋兮에서 비롯된 한국 격언.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 발표 결과를 기다리는 시간이 일각이 여삼추 같다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 학수고대 · 초조한 기다림</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABWAQAAAAB9LVxaAAABk0lEQVR4nHWTwWpVQQyGc2/OphBJH0AQwW1hZAQRppwncuXTuPIlLnQbGKEIIym4Ei64dDslhW5yiAuxNAecVfj4+eYnwxwC/p3t+DQCgICLEDoBPecL+1f4dHOxOH5PfLuc77cPiJenlD8C3H7+cnf97e/8dBaAq1evx2MtmYN6J5RpHiPl75chAGeAd8kPEaFtkq7huT8Ronez2hJ3E1cuUjB7TMpKodAj84GzcQnRnvwLbC/x6mbDcsj+qTq5G0hJ/cG80yyl28g9Z9em4Lpa9oRQNSoW6y7PasJtAOe8Ec/qQlMzlxURtMTA7AmgxjLKlMxNUUtQYc39BcB41Eo7z6ymzWiVSPcef/28htvz6YHf3mU/zjGQB/Fuz8W49dl62e2Brak0jTVznVVbpSm7/iPUWcTb7h3VJ3jzWmvOK2JVDCbc+wcadRPKe4gY09YydWS/gAi6EWV+ZC+44QtALLkn9cbCZe8fNHoLlPA9V+fRGHreM86HH1dvZFs/pn90vF8utsfz8vuE8pwf/vPf/wBOhuf66oqM/QAAAABJRU5ErkJggg==" alt="QR"/></td></tr>
+</tbody></table>
+<div class="page-break"></div>
+<h2 class="cat-h">💰 말과 돈</h2>
+<div class="scenario-box"><div class="sb-title">🎭 시나리오 대화 · Scenario Dialogue</div><div class="dl-line"><span class="dl-speaker">선배:</span> <span class="dl-text">말 한마디로 천 냥 빚도 갚는다고 했다.</span></div><div class="dl-line"><span class="dl-speaker">후배:</span> <span class="dl-text">말의 힘이 크네요.</span></div><div class="dl-line"><span class="dl-speaker">선배:</span> <span class="dl-text">그리고 티끌 모아 태산이라잖아. 작은 돈도 무시하지 마.</span></div><div class="dl-line"><span class="dl-speaker">후배:</span> <span class="dl-text">꾸준히 저축하라는 거군요.</span></div><div class="dl-line"><span class="dl-speaker">선배:</span> <span class="dl-text">돈은 돌고 돈다. 너무 집착하지 말고.</span></div></div><div class="compare-box"><div class="cb-title">🔍 비교 박스 · Comparison</div><div class="cb-pair"><span class="cb-ko">말 한마디로 천 냥 빚</span><span class="cb-en">one word can pay great debt</span></div><div class="cb-pair"><span class="cb-ko">티끌 모아 태산</span><span class="cb-en">dust gathered becomes mountain</span></div><div class="cb-pair"><span class="cb-ko">돈이 돈을 번다</span><span class="cb-en">money makes money</span></div></div>
+<table><thead><tr><th class="num-col">#</th><th class="ko-col">한국 속담</th><th class="en-col">English Equivalent</th><th>뜻 / 유래 / 활용</th><th class="qr-col">🔊</th></tr></thead><tbody>
+<tr><td class="num">86</td><td class="ko">말 한 마디로 천 냥 빚 갚는다</td><td class="en">A kind word goes a long way. / The right word at the right time.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> One word can repay a thousand-nyang debt.</div>
+        <div class="meaning-line">말을 잘하면 큰 문제도 해결할 수 있다는 뜻.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 한국 전통 사회의 말의 힘과 외교의 가치를 강조한 속담.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 사과 한 마디로 계약 위기를 넘겼다 — 말 한 마디로 천 냥 빚 갚는다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 말의 힘 · 외교력</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAF4AAABeAQAAAACCqZ7DAAAB30lEQVR4nHWUsYoUQRCGa7c2OSipg40MjYyEhr5EGOkB0wWfwTcwFXwR3+PA6KCPPjCpow5MhUsEI6GHHtikhxJBlC5xooaPrvr/+at6Z/Dn2/Z/zwCQofVYAkUBGon2XkBq18lkIPvt8u79tMJxhlsYyAEgrY/0+EyfwD9kKZdX9P0ePMG6zsA3p7Xi/UB2eZbfxyunzUx4UiE2685PpokzY6ndk5Y0tGhmdfQDSlOAojGZuj49qUYmrsLTSEo1FWtRAvo7KJkEK2N0JEON0YCkTk6BaAlUrZDvs+sHiB/PtM79cDGmcDYGfAkfZIbsqvUQG3FK6P3UJKIp5FbN+ekZhYB7AO9HWbWqsHEZ7+zhZnt12tZlvnGZgnKxpkLExTmtQKKAhBnHfPZfsOLbTM+F5cFnCl1yQ+XqtDUVmaQbKDg/0ku23qVJHPsc8Bi29Wu40/nb5ajgxbZ95nqOy/Wj82PWwbQJQ3PVFiC8hacrtpPfrJTi1Asz+zkwSdxa5FSzz4ctBbZEEpwfJTXLlFMmR8xEiQsVlbHar/0J8AAI23mcHdAuNrEA+Ux3Mn+6OG9zuVjf/HB/lJomTGqT+OkltdgxcWf3UmBdbvORFnid3/ldEMxUm1hwqv/7Vv0Et+kTCIaVY10AAAAASUVORK5CYII=" alt="QR"/></td></tr>
+<tr><td class="num">87</td><td class="ko">침묵은 금이다</td><td class="en">Silence is golden.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> Silence is gold.</div>
+        <div class="meaning-line">말을 아끼는 것이 때로는 가장 좋은 처세라는 뜻.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 동서양 공통 격언으로 한국에서도 널리 쓰임.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 감정 격해진 회의 중에는 침묵이 답이다 — 침묵은 금이다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 말 조심 · 신중</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAABOAQAAAACm0R2wAAABZ0lEQVR4nG1TwYpUMRCsmcxlIJCFPXkU9gMimctCIANe/Qm/xO8Q/Iy9Cr20IEJLBva64GU/IJLDIvSjhUUlDebUFEVR3VXZGf68bf93AkCYQ1JWxBXtysGyVpMFPWxXT/nCV7hfuXvg4bi9ehov478nUUlnEVoV0FUsT45Od0dneRlOzoOZcaFqps5vhIyIUOqKKpsRlZ4dyrmCacB52Nlpi3j++Hy+XXf7fry7vv32dfvsPAyO3EMzdboUWydQqI5LNntE4uI2lqoh2hj+DjYbG1erfosaRVWCOl0NRXlaaF6BLIc6RvS5tTYbld6crsBGG4riuMKjgI1dFjCayWIZ4nVLHqmg+6t3RSlZwli5B4S5vb3g1zWtLdnut8djvTn8zD5jCSQtsc8YhBhUuutZ0ow5zgGrLiRyVwWwOtsDx9dfTgWydvIAhMu7O6T3n1ZuGFu5CR/e/HD9JVBJibPLYvffP/Qbfe6+5mUOTUMAAAAASUVORK5CYII=" alt="QR"/></td></tr>
+<tr><td class="num">88</td><td class="ko">입은 화의 문이다</td><td class="en">Loose lips sink ships.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> The mouth is the gate of misfortune.</div>
+        <div class="meaning-line">함부로 말하다가 큰 화를 입을 수 있으니 말조심하라는 뜻.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 당나라 풍도(馮道)의 &#x27;舌人之斧也&#x27;와 유사한 동양 격언에서 유래.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 비밀 회의 내용을 발설하지 마라 — 입은 화의 문이다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 설화 · 구설</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABWAQAAAAB9LVxaAAABhklEQVR4nHVTQWpdMQzU/ypko+BAD1AC3RYM7tLBuUoP0Lv0MIVuBcpSQf8A2fQGBgWy0cOllJYvQ70SwzAzHlunBX/Pcf43AgDDVCUMArrG35W44Ncf9H7ic8KPu/mIn+i4+575AE9ywI0+AFzjZ4B6e3M5as04WJh6BY+l1/iJH/XP9Dnpw1peFNTGipyfoEmX5q0n3Mtgwc4Vs06EVlwGshJ+xrePeDzcMz3NnLNLFA4Lzr4uIH2KMKT8oGwBPJtj5i+bOma3MbecMb1p9dUy3ySWYmUomW8Qq4eUaRmPhr3wmLr5OpTS3caCrbflgVaAcv/g03D1hrTdVwYO/W0h2Vd7QSncrOae1YcwolLZ+qEKzbxJzfo6qLF0i5H1OTgKUhhvPWCT7rWTbr5kk7S7+9bncBleBuGWH1SaijPlnGtZrFbDdOsNzMi9kCadc4n7A+H2FfHblkdL9wZM+768/fzwAjzmZefT6lQgv+8Z52t7fqqHfcl7xGDkxF7z/zn9Z99/AaEA5qSICH88AAAAAElFTkSuQmCC" alt="QR"/></td></tr>
+<tr><td class="num">89</td><td class="ko">말은 적을수록 좋다</td><td class="en">Less is more. / Brevity is the soul of wit.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> The fewer the words, the better.</div>
+        <div class="meaning-line">말은 줄일수록 실수가 줄고 신뢰가 커진다는 뜻.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 한국 전통 처세 속담. 다언실(多言失) 사상과 통함.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 프레젠테이션은 핵심만 짧게 — 말은 적을수록 좋다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 간결함 · 절제</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABWAQAAAAB9LVxaAAABmklEQVR4nHVTwWodMQycXeXyQMG5FnoM9FQwOFACLn6QX+sf9Fd6DfjhHP3wQq6B/oIf3ktBi0obmlYL1UkMw2g8libFn9rmtxaYT9O2XtbzaZtuDO6EXvgFDpr/xVFZJYoy52r4wOlmeT4G/7t/qxkgrP5Lfu3/VhOtgXMQNTpTPtbX7o4NX7U7FnZJxeClp1CkDC0Gnyrd4nigy/eL5asPoF5Q1OjPp6+H8vjggSdv+N3HEUIs7IxPDOUiXKjC+pQogt7HIDt3kG/NJcWwOrXKCOyHhh1fvbKLYGdxYe/hnCc7d6axcPv2kR9p559Ti72FDqtTC3SAc5S4y0dIJRTOlt8HEjdJ1eaMLKlpdC6q1amBASJgl1vp1EPpqXijc3V47p9x/4AD2z1RJnE+9pZ3+i00YbCrVj97TT4Vh7jLeXDR1Jq3/zLTu46783q7HBazP4rliO3Dudl7QUZz3Adztfk7WbfC15nI+q/cARIGGf+/7qI3fFrHDzP3CsD7cb+462b/sUmNsSWhsHsvGo+aR7D7M/3n3n8CI1/Y02B3ozgAAAAASUVORK5CYII=" alt="QR"/></td></tr>
+<tr><td class="num">90</td><td class="ko">돈으로 살 수 없는 것이 있다</td><td class="en">Money can&#x27;t buy happiness. / The best things in life are free.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> There are things money can&#x27;t buy.</div>
+        <div class="meaning-line">건강, 시간, 사랑은 돈으로 살 수 없다는 뜻.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 한국과 서구의 보편적 가치관에서 공통적으로 쓰이는 격언.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 재산은 늘었지만 가족과의 시간을 잃었다 — 돈으로 살 수 없는 것이 있다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 가치 우선 · 비물질적 가치</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAF4AAABeAQAAAACCqZ7DAAAB2klEQVR4nHVUQWpcMQzVfM+moEE5QJeFbF0c6MbBgTlJz9AT9ACFHqbQVUCDuwlo8IeuCoFcwYMCs9HHJTQkfIVqZfP8/J4syZsBL7FMr2sAYGAxylkFcI00YysSkuYhK2RaLvDTry84AxxgjQAA5iPnef63eYktwOUh3H7U6+djr9GsNqPKwZzOhm/keXnlvI1hkomzjGFrpHJvA0KCEdecaQnz54t2u9Qd9DVHcw+loQUM2SGUVBGIOTkdFqsZkVKOa9fATYImS9zNuRZLzWqvTNVxeg2pJNXWy1pn+n3dv8FxhlN4nNccK9U6567CzlvnFiXmHjr4fIYmMhxdo+MoBMocNHFw1Z7b3RJI8DvdRVcFrE/qEFDWOtNSF4Q9ZKln57oz0WDKDP6tWYXJxBTBeRvRRhogasVxrPVsMFKV7DjCBUoyiUxvdBChsNbhbtvGP+f8FRDeXR1d5bhgaPjUdNW/aAdOFSJTcRwdlI0jJ8mOM8SoVeYQ2CGdsAIPJHZ9PT0sl9hudnGBnZufMeqoxDrIe2PoXKSCorhZILvPh7DE+3B2syDIZIxKTK5HBQdjEqiEa29bgFOOjx/6Hn68mW2JKgiS1OVz2sLDEn7qnt+vO2Tz37/qLzYMGsovSbBkAAAAAElFTkSuQmCC" alt="QR"/></td></tr>
+<tr><td class="num">91</td><td class="ko">공짜 점심은 없다</td><td class="en">There&#x27;s no such thing as a free lunch.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> There is no free lunch.</div>
+        <div class="meaning-line">공짜처럼 보이는 것에도 반드시 대가가 있다는 뜻.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 경제학자 밀턴 프리드먼이 유명하게 한 표현이 한국에도 정착.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 무료 서비스도 결국 광고로 비용을 회수한다 — 공짜 점심은 없다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 대가 지불 · 숨은 비용</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABWAQAAAAB9LVxaAAABqElEQVR4nHWTwYoUMRCG/5nqy0AtafAkeBzwtJAlggxEusHnEQRP3n2AAZ9E8CpEcthLhhrwAeYJFjJ0w1zSlAdRrIbNqfj4+euvSrJR/D3L9l8JIEGoaioN/D/funa/8Ihbr8nwpb/hxRw+p58wHNiV5fjyNmLNKdDhe8KKU51PeI9XdTB8k8byp3pj8kA1gVt2os3wzE0nFYpajI+eHwJ2dL1crb74KTtxPEXj3+3zGU9v97vT4872bWEKIQg7448qrTQuKTqbU3ytnlrwsPqJgogMDs1y4cEPbVJpJucWr0/u2i8P46+z0bdUPRx7sveFREwS/eA5Wh4rsc8IbPuqRp0q16hWL57SxFUi2b1NLqnnSLLaQ+NYtInEan1y1gZlrjZnx8u40N1018ejmff66ct8X8dQ7DtBKxgoaFGy/oUKpeYTs8nZzYcxfnRfec92bzm7og7O27k67L5RxzK/W/VVFXEcILLaM1pE9mDLt67dMB2OlWD+CwrnBFSG7bsFlkHCZaanfsXjBuU6pIvJ01F9jB8IP26j9U9IVSMpVeO/eea//wZiN9J0nlByiwAAAABJRU5ErkJggg==" alt="QR"/></td></tr>
+<tr><td class="num">92</td><td class="ko">부자가 망해도 삼 년은 간다</td><td class="en">Even a fallen rich man lives well for three years.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> Even when a rich man goes bankrupt, he can hold on for three years.</div>
+        <div class="meaning-line">부를 쌓은 사람은 일이 잘못되어도 한동안 버틸 자원이 있음.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 한국 전통 사회에서 가산의 견고함을 표현한 속담.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 사업이 실패해도 부자였던 사람은 회복이 빠르다 — 부자가 망해도 삼 년은 간다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 저축의 힘 · 재정 여력</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAF4AAABeAQAAAACCqZ7DAAAB8ElEQVR4nHVUO4ocMRCtnuqkoaAWHBkWnDhdkJFDmR7YaMGH8QF8iE19jIWBiQY0aMCJBg04XXDiA2hQQyclZIzBi2qxIonHq8+rVxoa/Dt183IH2ByH5TzWelzOw02HQBIpcyLLrsWeU2/gUt/nuIMjdMgIcJl2DwinCXpkA4D3eDotd38fL2fEvFzPabnjiuceuY4xQp2eAT5SX1tr4gr7EOYmPRKyzbOnIi0opKGjmQgA0PVIjhnBSQBxGmFnyTLMlnQeYywEM2OjXh2IXKSU4qI4xSnkOXhsWaLKE5mgMbhis4oWcmSRaJ0UFS0FCmJCxuCVOt5JSgZLSaiiSWgll8iWZl0bsBdPuWl1RuAneAP7z2uqpp/pdKAvTxUuz3XdKg5e6SvWfb0/XHQeTODZJ89KgxZyIgqCM/T9DPl53U6/AOu7q+LIbKI1yMWWvtMhLtsMP8x0QeV4SNYJphRtnnvOeK37RT7w8u127TsdHd8uDi/LmrdqS5rBVBpnZ5KqrVgwEV3OPmonRtdKMg1Ke+W3bFvCQE5zEhm0wDSDdmJrqQSOuXHoddsch/rpoa68HPQ2sqw/d+HPKkxeOZEEHKAtnlWeSJLABLBezWcDsNb5kcojxFe7/R3OuFC1b7PyKHgwVkJyoddg+O9f9RttyxN0oZ1IfAAAAABJRU5ErkJggg==" alt="QR"/></td></tr>
+<tr><td class="num">93</td><td class="ko">부지런한 부자는 있어도 게으른 부자는 없다</td><td class="en">No lazy person ever became rich.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> There are diligent rich men, but no lazy rich men.</div>
+        <div class="meaning-line">부는 게으름이 아닌 부지런함에서 비롯된다는 뜻.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 한국 전통 경제 격언으로, 근로의 가치를 강조.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 성공한 CEO들은 모두 새벽 4시 기상 — 부지런한 부자는 있어도 게으른 부자는 없다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 근면 · 성실</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGYAAABmAQAAAAARpNnPAAACF0lEQVR4nH1UsWpcQQzUeQ/MgYwMaVNea1B4LjesP8CfYUibNn0+IJDWn2FwK6M0AcEepAqkDKTdYw/S6KHgIiTZhbxqH4O0M9LsbAL+fOvZXz8AIFARa3AjAxyw6i08pVoNw/7FztbL9OrFLt/BG3iCf7EtAKYHuLo8fngHAwaGgblBrsll6AnVezFzCvfxvo3c2O/z9cgzQqujkzKFDzw/XeTT+X57XGWFw1DnCxO3ZsnJRi4K2TB3VkXNY10qS+cl0yIw3AfdDMhZai11rOthWFOXnrlMPS03bFVVQid9al6VKLzMM+OOltCb4oid7T9e/PiJj3DLjOMequSKFAJF6jjruHm4vKL3uzs64egXFc/EQJFyTPqKe64GzgAjpkJLN+gQQpMGMiX0lpFs0L49rqf8/fXhmh53Jxn0YcK03nPf5zTpC6DeGlAWSeOOfFFGZ29MNmGspgEuwDDyDIJUrJiE41C3ifX86hAbzaevaZyZ90hINSRTHns6CEEpC3eceNYlmdWgIpwmf1rpzqUtYT5hvWPUKMLh05tGr9arSkqTryVUCjordp583RQX0dRZpp6tdHGJHD2NXgLx5iqgXWDSFyGlN4dcafT82dOmHA+3h3barzjsfUu+fnv7GQ6wptNuyhfRhUEbAg36nnPp7n7/ZX25hzTnUi8crDkY5xzUBqDFDNuIPednLFU76Pj+Nv/J3V8Bh0wBYCbtTgAAAABJRU5ErkJggg==" alt="QR"/></td></tr>
+<tr><td class="num">94</td><td class="ko">싼 게 비지떡</td><td class="en">You get what you pay for.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> Cheap things are like leftover-bean cake.</div>
+        <div class="meaning-line">값이 싸면 그만큼 품질도 낮다는 뜻.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 비지떡은 콩 찌꺼기로 만든 값싼 음식에서 비롯된 한국 속담.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 최저가만 찾다가 사후 서비스가 없어 고생한다 — 싼 게 비지떡.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 품질 · 가격 대비</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAABOAQAAAACm0R2wAAABX0lEQVR4nG1TS2pcMRCsNzIEQ4PmIgEFGcKAQAZvc4mcJIfI1pBLZDsg017KaMDbgDc+QMN74E0/OhBiUIdo1RRFVfVHi+Hv2w/vFYCGVagmBc3oUA5FtFif0MN+/Ji25+PlATMKPO+X06vgH/T0I36+uzgUQ7vVzOR0l3bb/xQ3LoOZ8dqKmbq8BG6EkMuM6jBFyyM5dCjHtQna7AbjlGvoHGbu1X79Kz+d3vazz5BzF66m3o0gjBaKn9mIHFvk7NxaWUc0EZ9hjLQqFytOt4lR0R7U68ZWeLVQnQIjJC4i5Lg9Uxstj+p01x6siCLP3IUBpEt5LE++tzCMsnSn22oxyxh+6kMS5dSD+AyjF6Br9B2nQJUEcNs0Y4bWyDN6eFj26/7hfKbjvKGoWyC5/Y7m3Kh3VQBzsgOwbY83GX2+viuAti8/Eb/ez9wgCAjfPr24S23gLJGT28Xy3z/0G+zCt/jPoEY8AAAAAElFTkSuQmCC" alt="QR"/></td></tr>
+<tr><td class="num">95</td><td class="ko">외상이면 소도 잡아먹는다</td><td class="en">On credit, anything goes. / Credit makes spendthrifts.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> On credit, people would even eat an ox.</div>
+        <div class="meaning-line">당장 돈을 내지 않아도 되면 분수 넘게 소비하게 됨.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 한국 전통 사회의 외상 문화에서 비롯된 속담. 신용카드 시대에도 통함.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 할부 결제하니까 너무 쉽게 산다 — 외상이면 소도 잡아먹는다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 과소비 · 할부의 함정</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABWAQAAAAB9LVxaAAABvUlEQVR4nF2TQYdcQRDH600PY+jVcw25hGVPS9PDXpp+5BSG/Qz5AGHZUz5E2K8yDLlWdBihVj/mFHLPtZ9uRuincljZTL0+lb/ye//6V72O4d+bFq8lACBw9AHAgxZ6algAvW9Ml/pi2sAuOXXYfINLvaP+97B+v9dQBWcB8Hy7PejHl/r/Sw2VtZy95HfY00u1lX6YMTjXcuB2qS+/f65K1xVNV1bocPzRH9QEB3MlOegiKsKQxXcBg9GGKIYm+BChJOJsspr5MexydMmh7E+WdGMb9Kw/GmMBMQfwwqcePTh7Xwcr8+Rle1bXG3rXC07H0yr/qvr2NIn+xbBC+AjjEW5kzgVVbE0jy/127U6PWu13J/tF5kCGGHzMWvoEZc99hA/X+CBzgBJcjiqHWQ7sI0MphgUHWmONZImy0Bdwql9h+1QfT8L/cqg96nY3af0kOQWplWBalDmTVcUXE8nO5j2uz5/AjKm+kT69ikYpg3JeYE7QmNjI/XbYp6nu8gDn9eyeuSlwJqGca9qMy5x+7sd7uRfSpJwu3LS8Z4CbPytc17fnYcYnpSwoQ5I/LhVmMNY+zO7ntRT/+192meDkcf5TBgAAAABJRU5ErkJggg==" alt="QR"/></td></tr>
+<tr><td class="num">96</td><td class="ko">우는 아이 떡 하나 더 준다</td><td class="en">The squeaky wheel gets the grease.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> The crying child gets one more rice cake.</div>
+        <div class="meaning-line">표현하지 않으면 챙겨주지 않으니 적극적으로 요구해야 한다는 뜻.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 한국 전통 양육 문화에서 비롯된 속담.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 월급 인상을 요구하지 않으면 그냥 넘어간다 — 우는 아이 떡 하나 더 준다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 적극성 · 표현</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABWAQAAAAB9LVxaAAABqklEQVR4nHWTsWrbMRDGP/u8GGRkyFoIBa8BgTIK9F879SW6FvIGXQqd+jCBPsAVBUpBRoFMBUPHrGdk8HJ/VEpoyAV60/HTx6eP424x8K/m5XMLgKFaQergXvKV14fjp4YLob3h8/ZxQsC8/Wb0S+Bw+Ho3laf+uVbAW8Q3uxAsR9PionDXUV/yBU/1qbs2/hij+yTa8lCb36GQUu8xGd4LuFHgQNanIZS/j2UYvuhb3SCU7/60NnoJtZJwGWz8F8XhtP5QNjyZ/OBEFSH0Tjanelc9q89qc1bl2F3oI1u9ZBlMqcJbfXMkUZuXZrk0ib4lra/+ZQwKwnHA8hK59ubhxOaXlEvWSI6NfoUzr+fzz4tbmgz/PWP6cjju/M299fE9ViJ23s5fWGpoPZdg87TWciupSbb6XrOGmLTY+aP13EdHis3uLfbzvGE93+/E6n2PI/qc3Kv5c6LoSgfZOYzRtMegrVo9oxV08a7a/fe6A9zliShYf1fISwQ7478EZrm6BGcxd7EE3Du6+vV+8ePGcBIq812Y00erP67m/dl9fjwRm/38z73/ATMB36hbOZE8AAAAAElFTkSuQmCC" alt="QR"/></td></tr>
+<tr><td class="num">97</td><td class="ko">가는 정이 있어야 오는 정이 있다</td><td class="en">Give and you shall receive.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> Only when affection goes does affection come.</div>
+        <div class="meaning-line">내가 먼저 마음을 써야 상대도 마음을 쓴다는 뜻.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 한국 전통 인간관계 격언으로, 호혜의 원리를 표현.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 직원에게 베푼 만큼 충성도가 돌아온다 — 가는 정이 있어야 오는 정이 있다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 호혜 · 상호 작용</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAF4AAABeAQAAAACCqZ7DAAAB9UlEQVR4nHVUy2pbMRA912MohgnjXwgUugpcUDcFmRvoypCPCXTVZaEfEOiXGLwtyKiQjcwYvDIEsgl0q6AL3lyh0hYSpFKtJA5n5px5qCt4OXn2egdmu2637/Z5h323rJC5TPdn/ng1Pl6VfY3k5ROPOH/D5x3X0QAmT6c1H/48KuS+4++g/Pfxejq9us/EY48FNXme5wHIixPwvs6DUkJJ4pwfylQjLoZkQCq91JxueuMWt4QRyA81x1sbp8GUZBBqZCoETUMa4Js8nsWA+sKTbzg+WRuNDk4bbXPs6YsAX1f9XeMnGGiwRlybZ34+9av+OLIYrvuDoAbSp0TJN9G0x6A9paTUahP2KU1sTWj8TI6TAwVy0nCK6mDFiag2nMiBpxBcZLV1rcsB45o2gGDVcECkTpw6qTmIyYI4FfLUTJXsz8PifHMAPriGUxxUbAjsam2z4wWHy8tx/DSa67Y/ToPGQs62Tq1H7AcfuK2bSzIN5vcUDI3T8HYJdiMTxnXT7SP/xOpxi/6mVj0zi6eLE0f06x/1LiCKpqAmBpim1sogAmwBGqSUkKJqYmlrsOverY85H5Dl8O9ur2nDW8FtM1VcIGABqHY6B56xzWZp8mMdbQY8kMVDvMO28aOT84O3U0nSaHueM28y6HAd62jdf/+qX8CHAK6FzNVlAAAAAElFTkSuQmCC" alt="QR"/></td></tr>
+<tr><td class="num">98</td><td class="ko">되로 주고 말로 받는다</td><td class="en">Reap a hundredfold. / Give an inch, take a mile.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> Give a doe (small measure), receive a mal (large measure).</div>
+        <div class="meaning-line">조금 주고 많이 받음. 또는 작은 일로 큰 화를 입음(부정적 의미도 있음).</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 한국 전통 곡식 측량 단위 &#x27;되&#x27;와 &#x27;말&#x27;에서 비롯된 속담. (1말 = 10되)</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 작은 선물 보냈더니 큰 답례가 왔다 — 되로 주고 말로 받는다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 복덕 · 호혜의 확장</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABWAQAAAAB9LVxaAAABq0lEQVR4nHVTsWpcMRCcu73mYA8duAq4CRhSBRR0pYIOUuVLUgXSBvwL+ZiAwZVhja7UoYAr94FrdejBI6CHgjEx3gdRtQzD7OysdtHx703LlxKAoHOCKQx+ja9MO8Zv+Xzxh44Kn7an9WCn9fZG8ZfAI90dPsXn+uWtALsZ/cFajSM3adWW2np6jS9kn56rndJfdEx0HJis9r+836x24/V4tdvtlX50HpG8WFI6iPCFa0LsM/91fBg+vxM+iOJ3n32QVLt4hVdyMcjTuMo/pNRmizjiNuPHFGzLvWudJKiObe1B8ztRF7IJRvNzQrctcskzPzV7ltASaZ2WXA49+wKNx+BbDIZI54/cLIXmiNOMn4vjyEaS6rucPmB9yzdX5suv2by2JDKJjc4/Fy8+Fhut7ttzcCn73MMsH28aHLcsel/j+PMh/Pi93/P8X3Fp3Kqr2n92JXZnArPSXyRgtG9u7YZne+/C9WlhsxwEyaA2w2l+L+ME3g5MWiex5FAChDUf4Le4HCVUfV/AcEkFF+f4Xc1LBe79gAlf9X2dV/l4ehxOH3XfxX/u/S/ozd2dTfzayQAAAABJRU5ErkJggg==" alt="QR"/></td></tr>
+<tr><td class="num">99</td><td class="ko">마음이 가난하면 부자도 거지</td><td class="en">A miser is poorer than a beggar.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> If the heart is poor, even a rich man is a beggar.</div>
+        <div class="meaning-line">마음의 풍요가 진정한 부유함이라는 뜻.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 한국 전통 정신 철학에서 비롯된 격언.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 재산은 많지만 늘 불안한 사람이 있다 — 마음이 가난하면 부자도 거지.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 안빈낙도 · 정신적 풍요</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAF4AAABeAQAAAACCqZ7DAAAB8ElEQVR4nHVUsYobMRScPbkxCLR/cBjcBhQUSCOzhmsN+Yb8wcG1+YhAvuTA7cEzLxAOFGRwe3BlqoDCW9hGQiEhJEhHthIMM28087RDxd+vXP07A1enAa/LXE7z12FsEMScJUI742toOWWcx1JlPeOEBlkBT4/bPb7YM14g8/T5ZFB+CaCdI5NESjF3cwbahz/HN7p1MNXtstzMy3JXU6vGydVKWnLl3CISI6L+rei7+7yfZYM9I/vOm8TKWYTs5Du1bEURQ3LVrWsEk7I48bbm1jU4CZiQkXuOcI1i4MWljlODgs/B+Sy9g5gNrEuKqeME7esEJxJVN4ccMzho0VOnFqAok/aJVJvOkJ7L9ppm/+O57NvcsJuvH3YYxrJQ2/ZZqeOdKlzUuuWASAFkKJJp54AMu6RdVhXtfVZqo8PuW1m+j7B9Bt6xV6Za6VvIng3XFGLsthc3KEmf8XZz27Y9pJH1Zq/nJyyP3RzW2TqjOPjOdbARrprkKXaJcrUhKJ8S9btTg9Yu2gpJnVoymWs0IXvVcaJ22sGQQYesrJw3F4351eXY9XMa5neHUj6oB5xbxGSc7tVCR7Vum0PQOTpSTsj0ierkQAyXTPcaAaynWy0fx/s20SuVLqp82h3WfOjeKYFhXVTKc7dv//1X/QRBXhUogIjYUgAAAABJRU5ErkJggg==" alt="QR"/></td></tr>
+<tr><td class="num">100</td><td class="ko">벼는 익을수록 고개를 숙인다</td><td class="en">The greater the talent, the greater the humility.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> Rice stalks bow lower as they ripen.</div>
+        <div class="meaning-line">성숙하고 훌륭한 사람일수록 겸손해진다는 뜻.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 벼가 익으면 고개를 숙이는 자연 현상에서 비롯된 한국 속담.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 진짜 전문가일수록 자기 자랑이 없다 — 벼는 익을수록 고개를 숙인다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 겸손 · 성숙</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAF4AAABeAQAAAACCqZ7DAAAB40lEQVR4nHWUsWpVQRCG52Rvc2FgLqQKWAZSBRbWRjhhDlgJAV/Cx7C39Q3yDEIglbCygs2EyQMIaQQrYcMeuM0uI4IoZ8StBn6G+b9/hp0M/rxx8rcGgAx1Zo7IArhVtDcGqb3MJhtlNw53H64DHBJ82vbsAC5PcX08f38F4JXw4t0Vfj8Dp/yak2YSTt3NmfIiv8vnzpuZWFdBUuuOJwNSplBqd0oLiWNLZta3c6BLEkiW2NTN6UUxaaQkNG+VCkW7SaIYXE+hOaJhyyFtHexg3IYHOJ6lPpaNcoLp2f3+qd/d359u05n6il/2R1yXvts7Uo1Ju7Ey+tyA1rgPC3z+eO1ct8JKsXBtjqdnZATCkh3P7ki34fJxvAHKzoGI4ixaZyzbnqngCOdfxwJl9a4zikLAkIPbj7JozJQ0qNtPA2ySW1CsLmuhLLMYYEbHkzGB9gpN2G2BLiA8HS4Yl2+HrbKOm/VtfTmm/OhutFqJZk0oNu+6Y8iAEBI517XkNPdCZM1fryC2moirv7dKxhFbytkcjyKoZcD2D6mZMlLhqLJVprzkGR4gwDi+8q7VZhJAKlueSZYyjmMp+/X1D5c1dmViNSyOVFAsWWBCn4H2oo2oKhe/HyghY23Myd3Of/+qn2IZCBTlMpcJAAAAAElFTkSuQmCC" alt="QR"/></td></tr>
+<tr class="quiz-row"><td colspan="5"><div class="quiz">
+<div class="q-title">📝 미니 퀴즈 · Mini Quiz (81~100)</div>
+<div class="q-sub">다음 한국 속담에 해당하는 영어 표현을 고르세요.</div>
+<div class="q-item"><span class="q-num">Q1.</span> <span class="q-q">달리는 말에 채찍질</span><br><span class="q-opt">① Adding fuel to the fire (in a good way). / Spurring on the willing.</span><span class="q-opt">② Speak of the devil.</span><span class="q-opt">③ Kill them with kindness.</span><span class="q-opt">④ You get what you pay for.</span></div>
+<div class="q-item"><span class="q-num">Q2.</span> <span class="q-q">돈으로 살 수 없는 것이 있다</span><br><span class="q-opt">① It&#x27;s never too late to start.</span><span class="q-opt">② Money can&#x27;t buy happiness. / The best things in life are free.</span><span class="q-opt">③ Strike while the iron is hot.</span><span class="q-opt">④ Clothes make the man. / The tailor makes the man.</span></div>
+<div class="q-item"><span class="q-num">Q3.</span> <span class="q-q">싼 게 비지떡</span><br><span class="q-opt">① You get what you pay for.</span><span class="q-opt">② If you chase two rabbits, you&#x27;ll catch none. / Stick to one thing.</span><span class="q-opt">③ Everyone has an excuse.</span><span class="q-opt">④ A miser is poorer than a beggar.</span></div>
+<div class="q-item"><span class="q-num">Q4.</span> <span class="q-q">말 한 마디로 천 냥 빚 갚는다</span><br><span class="q-opt">① A kind word goes a long way. / The right word at the right time.</span><span class="q-opt">② Up against the wall. / Down to the wire.</span><span class="q-opt">③ Once bitten, twice shy.</span><span class="q-opt">④ Kill two birds with one stone.</span></div>
+<div class="q-item"><span class="q-num">Q5.</span> <span class="q-q">외상이면 소도 잡아먹는다</span><br><span class="q-opt">① Putting the cart before the horse.</span><span class="q-opt">② Birds of a feather flock together.</span><span class="q-opt">③ On credit, anything goes. / Credit makes spendthrifts.</span><span class="q-opt">④ Everyone has their strength. / Every man has his talent.</span></div>
+</div></td></tr>
+</tbody></table><div class="page-break"></div>
+<h2 class="cat-h">📚 정답 · Answer Key</h2>
+<div class="answer-key">
+<div class="ak-row"><strong>Quiz 1 (1~20):</strong> Q1: ①, Q2: ①, Q3: ④, Q4: ②, Q5: ③</div>
+<div class="ak-row"><strong>Quiz 2 (21~40):</strong> Q1: ④, Q2: ③, Q3: ③, Q4: ②, Q5: ①</div>
+<div class="ak-row"><strong>Quiz 3 (41~60):</strong> Q1: ③, Q2: ②, Q3: ①, Q4: ①, Q5: ③</div>
+<div class="ak-row"><strong>Quiz 4 (61~80):</strong> Q1: ②, Q2: ③, Q3: ①, Q4: ③, Q5: ③</div>
+<div class="ak-row"><strong>Quiz 5 (81~100):</strong> Q1: ①, Q2: ②, Q3: ①, Q4: ①, Q5: ③</div>
+</div>
+</body></html>

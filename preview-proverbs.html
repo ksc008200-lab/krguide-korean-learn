@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="UTF-8"><title>맛보기 · Korean Proverbs &amp; Sayings</title>
+<style>
+  @page { size: A4; margin: 16mm 12mm; } * { box-sizing: border-box; }
+  body { font-family: 'Noto Sans KR','Malgun Gothic',sans-serif; color:#1a1a2e; margin:0; line-height:1.5; }
+  .page-break { page-break-before: always; }
+  .cover { text-align:center; padding:60px 20px 30px; border-bottom:4px solid #C0392B; margin-bottom:22px; }
+  .cover .label { font-size:12px; font-weight:700; letter-spacing:3px; color:#C0392B; text-transform:uppercase; margin-bottom:14px; }
+  .cover h1 { font-size:32px; margin:0 0 8px; color:#1a1a2e; font-weight:800; }
+  .cover .kr { font-size:22px; color:#1A4A8A; font-weight:700; margin:0 0 18px; }
+  .cover .desc { font-size:13px; color:#555; max-width:620px; margin:0 auto; line-height:1.7; }
+  .cover .features { margin-top:24px; display:flex; justify-content:center; gap:14px; flex-wrap:wrap; }
+  .cover .feat { background:#1a1a2e; color:#fff; padding:6px 14px; border-radius:18px; font-size:11px; font-weight:600; }
+  h2.cat-h { background:linear-gradient(135deg,#1a1a2e,#16213e); color:#fff; padding:14px 22px; margin:0 0 14px; font-size:18px; border-left:6px solid #C0392B; }
+  .scenario-box { background:#fff8f0; border-left:4px solid #f97316; padding:14px 18px; margin-bottom:14px; border-radius:6px; }
+  .scenario-box .sb-title { font-weight:800; color:#9a3412; font-size:13px; margin-bottom:8px; }
+  .scenario-box .dl-line { font-size:12px; margin:3px 0; }
+  .scenario-box .dl-speaker { color:#C0392B; font-weight:700; margin-right:6px; }
+  .compare-box { background:#f0f5ff; border-left:4px solid #1A4A8A; padding:14px 18px; margin-bottom:16px; border-radius:6px; }
+  .compare-box .cb-title { font-weight:800; color:#1e3a8a; font-size:13px; margin-bottom:8px; }
+  .compare-box .cb-pair { font-size:12px; margin:3px 0; display:flex; gap:12px; }
+  .compare-box .cb-ko { color:#1a1a2e; font-weight:700; min-width:240px; }
+  .compare-box .cb-en { color:#666; font-style:italic; }
+  table { width:100%; border-collapse:collapse; font-size:10.5px; table-layout:fixed; margin-bottom:14px; }
+  thead th { background:#1a1a2e; color:#fff; padding:7px 6px; font-size:10px; border-bottom:2px solid #C0392B; }
+  th.num-col{width:28px;} th.ko-col{width:160px;} th.en-col{width:140px;} th.qr-col{width:34px;}
+  td { padding:8px 8px; border-bottom:1px solid #e5e5ea; vertical-align:top; word-break:keep-all; }
+  tr:nth-child(even) td { background:#fafafa; }
+  td.num { text-align:center; color:#888; font-weight:600; font-size:10px; }
+  td.ko { font-weight:800; color:#C0392B; font-size:12px; line-height:1.4; }
+  td.en { color:#1A4A8A; font-size:11px; font-weight:600; line-height:1.4; }
+  td.rest .literal-line { font-size:9.5px; color:#666; font-style:italic; margin-bottom:3px; }
+  td.rest .lit-label, td.rest .ol-label, td.rest .ml-label, td.rest .sim-label { color:#888; font-weight:700; margin-right:3px; }
+  td.rest .meaning-line { color:#1a1a2e; font-size:11px; font-weight:600; margin-bottom:5px; }
+  td.rest .origin-line, td.rest .sim-line { font-size:9.5px; color:#666; margin-top:2px; line-height:1.5; }
+  td.rest .modern-line { font-size:10px; background:#f0fdf4; padding:4px 6px; border-left:2px solid #059669; margin:4px 0; color:#1a1a2e; }
+  td.qr { text-align:center; padding:3px; } td.qr img { width:30px; height:30px; }
+  tr.quiz-row td { padding:0; }
+  .quiz { background:linear-gradient(135deg,#fffbeb,#fef3c7); border:2px solid #f59e0b; border-radius:10px; padding:14px 18px; margin:14px 0; }
+  .quiz .q-title { font-size:14px; font-weight:800; color:#92400e; margin-bottom:6px; }
+  .quiz .q-sub { font-size:11px; color:#78350f; margin-bottom:10px; font-style:italic; }
+  .quiz .q-item { font-size:11px; margin:6px 0; padding:8px 10px; background:#fff; border-radius:6px; }
+  .quiz .q-num { font-weight:800; color:#C0392B; margin-right:6px; }
+  .quiz .q-q { color:#1a1a2e; font-weight:600; }
+  .quiz .q-opt { display:inline-block; margin-right:12px; color:#444; margin-top:4px; font-size:10px; }
+  .answer-key { background:#f9fafb; padding:20px 24px; border-radius:8px; }
+  .ak-row { padding:6px 0; border-bottom:1px solid #e5e5ea; font-size:12px; }
+  .ak-row strong { color:#C0392B; }
+</style><style>
+#license-modal { position:fixed; top:0; left:0; right:0; bottom:0; background:rgba(0,0,0,0.7); display:none; align-items:center; justify-content:center; z-index:9999; }
+#license-modal .lm-box { background:#fff; padding:32px; border-radius:14px; max-width:420px; width:90%; box-shadow:0 20px 60px rgba(0,0,0,0.3); text-align:center; }
+#license-modal h3 { margin:0 0 12px; font-size:20px; color:#1a1a2e; }
+#license-modal p { color:#666; margin:0 0 16px; font-size:13px; }
+#license-modal input { width:100%; padding:12px; font-size:14px; border:2px solid #e5e5ea; border-radius:8px; text-align:center; font-family:'Courier New',monospace; }
+#license-modal input:focus { border-color:#C0392B; outline:none; }
+#license-modal .license-msg { font-size:12px; min-height:18px; margin:10px 0; }
+#license-modal .license-msg.err { color:#C0392B; }
+#license-modal .license-msg.ok  { color:#059669; }
+#license-modal .lm-btn { display:block; width:100%; padding:12px; border:none; border-radius:8px; font-size:14px; font-weight:700; cursor:pointer; margin-top:8px; }
+#license-modal .lm-btn.primary { background:#1a1a2e; color:#fff; }
+#license-modal .lm-btn.primary:hover { background:#C0392B; }
+#license-modal .lm-btn.ghost { background:transparent; color:#666; }
+#license-modal .lm-buy { display:block; margin-top:14px; padding:10px; background:#fef3c7; color:#92400e; border-radius:8px; text-decoration:none; font-size:13px; font-weight:700; }
+</style>
+<style>
+  .topbar { background:#1a1a2e; color:#fff; padding:12px 20px; display:flex; align-items:center; gap:14px; font-size:13px; }
+  .topbar a { color:#fff; text-decoration:none; font-weight:700; }
+  .topbar .brand { color:#C0392B; font-size:15px; font-weight:800; }
+  .topbar .spacer { flex:1; }
+  .preview-banner { background:#fef3c7; color:#92400e; padding:10px 20px; text-align:center; font-size:13px; font-weight:700; border-bottom:2px solid #f59e0b; }
+</style>
+</head><body>
+
+<div class="topbar">
+  <a href="learn-korean.html" class="brand">🇰🇷 KR Guide</a>
+  <a href="learn-korean.html">메인 가이드</a>
+  <a href="vocab-hub.html">📚 학습 자료</a>
+  <div class="spacer"></div>
+  
+<div id="google_translate_element"></div>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'ko', includedLanguages: 'en,ja,zh-CN,zh-TW,es,fr,de,vi,th,id,ar,ru,pt'}, 'google_translate_element');
+}
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</div>
+
+<div class="preview-banner">🔓 맛보기 · Free Preview (10%) — 전체 학습은 결제 후 가능합니다</div>
+
+
+<div class="cover">
+  <div class="label">Korean Proverbs & Sayings · Enhanced</div>
+  <h1>한국 속담 100선</h1>
+  <div class="kr">Korean Wisdom in 100 Proverbs · 향상판</div>
+  <p class="desc">인생·노력·우정·지혜·처세·시간·말과 돈 7개 테마, 100개 속담 — 자연스러운 영어 대응 표현·직역·뜻·유래·현대 활용 예문·유사 속담 포함.</p>
+  <div class="features">
+    <span class="feat">🎭 시나리오</span><span class="feat">🔍 비교</span><span class="feat">📝 퀴즈</span><span class="feat">🔊 QR</span>
+  </div>
+</div>
+</tbody></table>
+<div class="page-break"></div>
+<h2 class="cat-h">🌅 인생·운명</h2>
+<div class="scenario-box"><div class="sb-title">🎭 시나리오 대화 · Scenario Dialogue</div><div class="dl-line"><span class="dl-speaker">선배:</span> <span class="dl-text">사업이 풀리는가 싶더니 또 문제가 터졌어.</span></div><div class="dl-line"><span class="dl-speaker">후배:</span> <span class="dl-text">산 넘어 산이네요. 비 온 뒤에 땅이 굳는다고 하잖아요.</span></div><div class="dl-line"><span class="dl-speaker">선배:</span> <span class="dl-text">맞아. 끝이 좋으면 다 좋은 거지.</span></div><div class="dl-line"><span class="dl-speaker">후배:</span> <span class="dl-text">쥐구멍에도 볕들 날이 있다는 거 믿어야죠.</span></div><div class="dl-line"><span class="dl-speaker">선배:</span> <span class="dl-text">긍정적으로 가자!</span></div></div><div class="compare-box"><div class="cb-title">🔍 비교 박스 · Comparison</div><div class="cb-pair"><span class="cb-ko">산 넘어 산 / 갈수록 태산</span><span class="cb-en">out of frying pan / from bad to worse</span></div><div class="cb-pair"><span class="cb-ko">쥐구멍에도 볕들 날 / 고생 끝에 낙</span><span class="cb-en">every dog has its day / no pain no gain</span></div><div class="cb-pair"><span class="cb-ko">비 온 뒤에 땅이 굳어진다</span><span class="cb-en">after rain, the ground hardens</span></div><div class="cb-pair"><span class="cb-ko">호랑이도 제 말 하면 온다</span><span class="cb-en">speak of the devil</span></div></div>
+
+<table><thead><tr><th class="num-col">#</th><th class="ko-col">한국 속담</th><th class="en-col">English Equivalent</th><th>뜻 / 유래 / 활용</th><th class="qr-col">🔊</th></tr></thead><tbody>
+<tr><th class="num-col">#</th><th class="ko-col">한국 속담</th><th class="en-col">English Equivalent</th><th>뜻 / 유래 / 활용</th><th class="qr-col">🔊</th></tr><tr><td class="num">1</td><td class="ko">호랑이도 제 말 하면 온다</td><td class="en">Speak of the devil.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> Even a tiger comes when you speak of him.</div>
+        <div class="meaning-line">어떤 사람에 관해 이야기하고 있을 때 마침 그 사람이 나타남을 이르는 말.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 호랑이를 두려워하던 옛 한국에서 호랑이의 이름을 함부로 부르면 정말 나타난다고 여긴 데서 유래.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 방금 김 부장 얘기하고 있었는데 마침 들어오네요. 호랑이도 제 말 하면 온다더니.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 말이 씨가 된다</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABWAQAAAAB9LVxaAAABu0lEQVR4nHWTQYpUMRCG63X15kEkDa4EN0KDq4ZINbiJ5IErwWN4gAFX3mLAreAl3AoZ0iBCmjT0aqBhGJgDRBJ4mwoREcV6YFbFR/Hnrz+VocOf01Z/SwDw4FExGAb1L19rPn2nvdebfhS8bXx9lB/v4Eb2A1T95eC3bwAWnE5TeULXVfAV5guU21KvnOCDn+Lvai/0ofeikWzunQUPvtgAkZKR/Tkkwk4QVRR+7j7Ui2mjq3gldVLRzmGPtNDPkJMNDrXknEzUHLN1Mgd89fCU5neqohdzMbap4u1WHaRPz8CUHaG1Up8SQ3eKQdy7qse21lCfz24j+lNygWIKqYh5IakUI3i2SeoXNMUHKCFKP5F7yT2w7jK3+RuML7/adRgW72K1RdJEJO+NFAg6qAyCr+pxbPoAePJGcNXnz/ct3lst5hr6i0+zgv1OfZR7G3Xx3WrOWegPfHi9w0uDh/Mo89SBwHToLP0HzqrkWEAt9y0RBWd0ELmtboZn18ocsY1ynzWfJxgLIJ6kTxVtUcYDLnJWHF1JgNLPr380bd82c56EPiQOCTFS9LL/xzrU3O7gfRN5Dv/57z8B5mjhDSdU+WIAAAAASUVORK5CYII=" alt="QR"/></td></tr><tr><td class="num">2</td><td class="ko">쥐구멍에도 볕들 날 있다</td><td class="en">Every dog has its day.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> Even a rat hole has its sunny day.</div>
+        <div class="meaning-line">몹시 어려운 처지에 놓여 있는 사람도 좋은 운수가 트일 날이 있음을 비유.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 어두운 쥐구멍에도 볕이 들 때가 있다는 자연 관찰에서 비롯된 한국 전래 속담.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 10년간 적자였던 사업이 드디어 흑자로 돌아섰다 — 쥐구멍에도 볕들 날이 있구나.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 고생 끝에 낙이 온다 · 전화위복</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABWAQAAAAB9LVxaAAABlklEQVR4nHWTwWqVQQyFc+/cjRDJ/wqC0FVhZAoiDEy3vkffwBfpwxRcCYERREiJ4EooiKtuR1JwMz9xUSzNgLMKh+HLySE5OPx7+/GpBAAGm4JpIuBz/UTzG3z4+OI0023Q921sZ+8SbDfh/xHgC3/9/JIf66d3AjinN3TWctRBZxfLw8TluX7gS3msLgIf3KfXMdV9Rv+Ipc9erNSgD0XWVDmnyOFsBWcH9ahrKgObsfbI76gO3PsckW9NWMAS5OAfZNiEka3LwklZaEz3FDgHPYc/8OMqIXyKHOomqQrQMpekUSbj0KhzawV7dklL3zxSM6kKi24+i1POGP1rnomkGOqSs3kVQ2Vf/FRtSbloXvIkZkmJkaI+8vDaLWsO/OMd/by8xvfXr2mLOfN0KijCy7xK3IC9zWVvX/2CXfIFvB3RT/euxWlC5EiVbtiNKebg3qe1PFWWvsAKZgllvRf4DvtGkDjyUamNVhhjDoJsRLn7WPYHO1IVgtj3mAaW/QZ2uQp3dPx9gtv7u4f7h9j38J97/wvpXOc+14G9+gAAAABJRU5ErkJggg==" alt="QR"/></td></tr><tr><td class="num">3</td><td class="ko">자라 보고 놀란 가슴 솥뚜껑 보고 놀란다</td><td class="en">Once bitten, twice shy.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> Startled by a turtle, then startled by a pot lid.</div>
+        <div class="meaning-line">어떤 일에 한 번 놀란 사람은 비슷한 모양만 보아도 두려움을 느낌.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 자라의 등딱지가 솥뚜껑과 비슷한 모양이라는 데서 비롯된 한국 속담.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 사기를 한 번 당하더니, 이제는 정상적인 거래 제안도 자라 보고 놀란 가슴 솥뚜껑 보고 놀라듯 거절한다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 불에 데인 아이 물도 무서워한다</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGYAAABmAQAAAAARpNnPAAACG0lEQVR4nH1UsYpbMRBcW4ZwsCDDfUHArWFBBnMgI4O/56q0+YXAQdr7jLQHGxRIsyDDtdfkAwJrZLhmHwpXhCT7IK/SYxhmZnekxYA/37T86wcAGGrWPNooAuiwZswaQRhxiMMEJcGoOTZkh60Awku4HGW7J4B/sSXAZnuD0/t3j+wxaNa0sSUk83oLPsrv8877HGPoYOMiY5jDKndmhNx7Ic+TjopgWjRGz1MizU0Lt6iexyEI5TJCSOh8LsOdhvD69fCED1/IzQW/r7dyYkjbe/TZTTTUHiRkRe+lJaqh55GztuwzwOhJwKRZdD6XIV3XSHl/nG7V6ymkkiIYdylOb9GuuLNvH6+PF7zOZpYLWYuD32rhZ90DQmIqmWY+FQAoAyfh4PXseXq9W9kO+Rnu/W6RJaowJaxOb1FxOv1AuJ5eePL5BkRAAjLi4Lwsr2FjmwcJ58/w8+x4na2kJIRCMutEBLDCmkiGzze0Y42DozTzvB5qicYwinbPMwiJNQVDy7O9d1MQLY1hdsc2Bwx1j3ygcZ7d6U4p9m4CWb1e08iGrbQ60O+vd8uASBUrzTIoBKKCSZBncylSNUtvrc702CSzgGbkOJvZaBrUhkD0+YChg2R5MzPrUjMxBkstNvGdn9avtx/yCgAuO98Jwc7Worasfn8rAMzn6waOT6eb+btUKYxeIESfb3lZTQiH9SclOrsuLf7z7v4CEyo99H8pS6UAAAAASUVORK5CYII=" alt="QR"/></td></tr><tr><td class="num">4</td><td class="ko">산 넘어 산이다</td><td class="en">Out of the frying pan, into the fire.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> Beyond the mountain, another mountain.</div>
+        <div class="meaning-line">한 가지 어려운 일을 넘기면 또 다른 어려움이 닥쳐옴.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 조선시대 험준한 산악 지형을 넘던 여행자들의 고난에서 유래.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 이번 위기를 넘겼더니 더 큰 문제가 터졌다 — 정말 산 넘어 산이다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 갈수록 태산 · 엎친 데 덮친 격</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAABOAQAAAACm0R2wAAABbElEQVR4nG2TsWpcMRBF7662MQi0kDZN/kBBC2FBoAV/Sb4k5AMMbgP5jG0DMko5IMOrXLlxG5jwHiyGeYyxSYIGomoYLudeaUYbxZ+zbv9WACpm9iEK/Njt0lxmyUpDd7fun+Jy/YC7UbsDpodFFv8TQ3cLHM/hcn3/Vv47XaiX1LzhbuqJ3oqDyaCq2mpWFZPXw0cPl7JxS6HVc6LVuDW4kiqjGjf55O/j8u1yOo6Eaf3K69Vl/XFrMiRwSUVldAODmVBdNnl5rg01tDS6gXKvUGaTAewItWXNhqvcRIScGG5z4sOsrhhCrRRbZvZGKyVwrakXw22AFhakUbu9mvvh9+QaVUOIsatPTIZbNVFP6ObVQYSeIjm2++Dy4dcez+8Mt0cOThgw01RtM/kSmp0xmjgn1E3eIMf9M58cDJd8f70aYPcBy810SKBxH3aA//D+jPD5+6h1jCm5Lx8fze5UUCqhRTOLzX//0AtJU7noXokAOwAAAABJRU5ErkJggg==" alt="QR"/></td></tr><tr><td class="num">5</td><td class="ko">비 온 뒤에 땅이 굳어진다</td><td class="en">After rain comes sunshine. / Adversity makes you stronger.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> After the rain, the ground hardens.</div>
+        <div class="meaning-line">어려움을 겪고 난 뒤에 일이 더 잘 풀리거나 관계가 더 단단해짐을 비유.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 비가 온 뒤에 땅이 다져지는 자연 현상에서 유래한 한국 속담.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 회사 위기를 함께 넘긴 뒤 직원들 결속력이 훨씬 강해졌다. 비 온 뒤에 땅이 굳어진다더니.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 고진감래 · 전화위복</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABWAQAAAAB9LVxaAAABnUlEQVR4nHVTS2pcMRCsGc3GINAcIBvfQEED2ci8AW9zj2wDOUA23gZ8GB+ggwaCoUMPeGXwFQJ6yOBNPzokIZ9+kF41RVEqVXdvDL9r2f5pARBIGUkjosNFrXQrjY3/xbfL/sTnq08Vn+Fw4OKImw/n48/+b3Fkq0BWcjoQHZ2sonr9DR35V3fwfsx6bCxIpt5/bZaLYaz0RwnaUqUcnM728fH+AXdIdEGeLxK0S4F5/tM86wEzy9w9P7SMCNXifXIGDVNSdfgOifHqMj50ZMfvXFBz00bV4wkyMYoUjw+gT8qpi/d5boab55eMS++TadiINkr0+fRp0iKxNPF4Q+65U8zJv0uFYJU4ldUcKYUmNGSVg5lKmjRk9XzSECmwILo5but1LvH+/TyK25/dlxnAOz7w897paGmDK7MMvw+sg2LUEorHtVnuSXtf7c/IfaJmhNV/zTiOkrvwKgdoFwktitcR1WnkotI8n39kr2Gi6OcFnK6Ww7ev4WV9R8stB/Sobj93oZ8+Lkvc3732OvMugfAmv711Opv/3Pt3PoDvmgraqwIAAAAASUVORK5CYII=" alt="QR"/></td></tr><tr><td class="num">6</td><td class="ko">가는 날이 장날이다</td><td class="en">When it rains, it pours. / Just my luck.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> The day I go happens to be market day.</div>
+        <div class="meaning-line">어떤 일을 하려고 가는데 마침 묘하게 일이 겹친다는 뜻.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 정기적으로 열리던 5일장에 우연히 가는 날이 장날과 겹치는 일에서 유래.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 비 오는 날 우산 안 챙긴 날이 하필 가장 멀리 가는 날 — 가는 날이 장날이다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 하필이면 · Murphy의 법칙</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABWAQAAAAB9LVxaAAABr0lEQVR4nHVTQYobMRCsGfky0IsMewoEwkIeMIt8CQi0DwjkK/uX/UrAJ4OMfFSQwacFQ8gDAho0YAI9dEiWbNKG9KkpilKpursT/Kmlf22Bft9N8zR/2S/dWuGWzUc6GwuJ/+LIxNmzEMWs+MAJx8O9G3/3r9UDE+bwFF/6v1W4saPoWJROFx/yS7chxRepgZhsEFZ4qsEkTk2Swrv6rh4eBzN9nTS/esBIQRKlvzptz/OyiaCD8tnVt9tHgOJa5wZxNTGlmqF1Dsvtj1XFbTX1is+l2CDQ/0UcS3M0NgnaP59mf2PuzjDfdW5jHGHJGf1u//7JUtm5YWdGnQ9l66U4gc6BQ5QGiqF5hbdqjbBrFDVfGgcqLFnnjBpFxFvrq9aRFABrAav3ZF4wuvgtpDvls4c7Yhk/YSG9J5GIraecotZPhQrbyKFc5VlLGEMr0Wu8GCQJViop/6tlR5fN83Y+Xo4qf8HePkzuOV3NPaIItWYpKz+95XlJw5vPxiidX/cSYaKH0f4ztVpMQmO9P8Cwbh8Ge5P0HAsn70th73Se02q4bJf7ywWK3/3n3n8CC1TnZ051p5EAAAAASUVORK5CYII=" alt="QR"/></td></tr><tr><td class="num">7</td><td class="ko">사공이 많으면 배가 산으로 간다</td><td class="en">Too many cooks spoil the broth.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> Too many boatmen send the boat up the mountain.</div>
+        <div class="meaning-line">여럿이 지휘하면 일이 엉뚱한 방향으로 흘러간다는 뜻.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 배를 모는 사공이 여럿이면 의견이 엇갈려 배가 제대로 못 간다는 데서 유래.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 팀 회의에서 모두가 리더 노릇 하려 들면 사공이 많아 배가 산으로 간다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 군중심리 · 주방장이 많으면 음식이 망한다</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAF4AAABeAQAAAACCqZ7DAAAB7klEQVR4nHVUTWedQRR+7j0hwnBCV1lFudvw8oYKw2Qb+idKtqF022V+QMgvKaGry7kmmzBxLlmV0E3odl5zyWZeU6Vac6qzGh7Px3mOmUXDnzMv/96B5WaxuV9s583ucXHYIXtct+/q/tnu+0l77JH5sJzdz+AVNq5HgOl2x9uXNwdA7wM8T++/4HgNi1Amn/nrC+fQIws5T7+vp70PWhM/sEjkVntEsiYCKQ/cc5b+6cPrQaiXK1r1PhDncm1jKyNSjyTSoqUVhfWJGGmICGNJhiPsUx5iqBpMArd+pWM6uN6/nIaeU2Nl9iMLou+R7CgMTKyjmq6fflxM/JbkMG9No+7olrEF8vO5mNRF0lgqj96beRK4CggsbDvgpF4lsWqfbbla4+pudh9fZrNTiEaKLCJsUiMLcxYWFTaTqoLFxUZMhpN8846CkniTrXIhJe/FiZmnOO8GP6SA0vvsIU7+CSvs5OLGqFUSGXJOjoxPDKSeAmINvdqinvI1Lu4cYXVkOCpNB46xNKPWEiKPLRYfDZJ5LFVDg1MzjzphAmSAM0hrIoNqqSymUUHJcIn+Ufv1tj8ppocd280l1xDgGCCjllzhEguNg9nPEvh24q6e8w0ejJrWyCHCS+Q+wXLam+VxLvR5yNu+0f/+VT8B5HL8eAPQleUAAAAASUVORK5CYII=" alt="QR"/></td></tr><tr><td class="num">8</td><td class="ko">굼벵이도 구르는 재주가 있다</td><td class="en">Everyone has their strength. / Every man has his talent.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> Even a maggot has its rolling skill.</div>
+        <div class="meaning-line">아무리 못난 사람도 한 가지 재주는 있다는 뜻.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 굼벵이가 굴러서 이동하는 데서 비롯된 한국 속담.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 내성적이라 영업은 못 해도 분석은 잘한다 — 굼벵이도 구르는 재주가 있다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 다재다능 · 사람마다 장점</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAF4AAABeAQAAAACCqZ7DAAAB2klEQVR4nHVUwYpUMRDsmd7LQEMWvAoieF0IZI9ZMrAnwf/wOh/gLwj+iidPQpYIe+mhF7x69AMy5MGw0KFFFPW1bE55FFXdVSnexuDPmdu/dwCooLmUSIWB1oioYBRlzMYrZDsvTxFe3p4z3MGawzQwtGqBquMAHK++z/2Xz78+/jmiAiVIQnVzNnXPv6/X6922xc5v8XY5AFpfq7WcDSuFkSk7pxJDHMnM3BzQKDHCQB3qEJMeiiVEUJfOYAwatIQkDtEWNDM1DOg5tUeRCiG7dEBlAHdrpEEdUkUU2qgjebXRe2NN9h9HuKehUgqy41jqbExDPediOT7/tAGa9xP2bk6oqQvXIc3NaSSdqPVBbZ31dtfmt9To8nWj6nYDZAEkrOjUbGgDTEhi7rXn8Xyoj5MGzOjUhrbcrFIDt8Hc7Se+m4dXE9d9256ffYjvlwUlPPr2QsaiRWv1byqlkWRT9k7BIFSOQql7PywjZW0hFN8D4wQtlaJaXA966JpTFAp1zdnITb+n077S8sZlYNaARCQJuwzuNmDLnNe7G3xYI0GvgG9hPuDi1JhGHUAj1OCcMjH9NCTG3imNnhRLIHB+RFka5y44XN9OFxUO9PXFx91+t3b65L/qB5wiG0YqXW/YAAAAAElFTkSuQmCC" alt="QR"/></td></tr><tr><td class="num">9</td><td class="ko">끝이 좋으면 다 좋다</td><td class="en">All&#x27;s well that ends well.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> If the end is good, everything is good.</div>
+        <div class="meaning-line">결과가 좋으면 과정의 어려움은 모두 잊혀진다는 뜻.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 셰익스피어의 희곡 제목으로 잘 알려진 표현이 한국에 전해져 속담화.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 프로젝트 중간에 우여곡절이 많았지만 성공적으로 마무리되었으니 끝이 좋으면 다 좋다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 유종의 미 · 결과가 중요</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABWAQAAAAB9LVxaAAABlklEQVR4nF2TsWrcMQzGdecbFRzImqVTV4MzGnzQF8rasQ9Q6MPcAwiUUYcOMgUyBjoFXPSHUrBxKWlDZU3ix8f3fQi0m/Bvxv59BQACE4HYEfB/foj9ko8KNy2cHR/XL2NLMK5PTr8HeP4kD8fT2/4+B4A8dnGryfN9aGewD68bVcd3dJS37c757ybAZWwY7mnpj5i5sFkujnfrpKFQCs4HDErDKcDT82nMUI2Uu+v5MOAzfnkKabiewIpciBOBOK5JOzRiC84HeshSU9falp44LWOymRe95ikhCUSv14azdI5NPZdqBalOWXK5FC2mqYHnc3KHGiFM35+lh9mzIXm91pmFuxIvua1EVjBN/p4aeqAQBeNynwIpayucltwKRlx0Vu/Teu8xY+Olj9TChUmCLLmtNMSSszn9Ydy8PubtMX29cv334dctbE+n7Q6+LfcRnDk1XfwJOKIZoueH2H+OgFcQAvmeqFpmRkLvI8gtovFc7i8oOLFHoKVn2/L55TLyvf+jH4dw/ni7fQef++df/o77l99p2ehrbqeKcQAAAABJRU5ErkJggg==" alt="QR"/></td></tr><tr><td class="num">10</td><td class="ko">빈 수레가 요란하다</td><td class="en">Empty vessels make the most noise.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> An empty cart rattles loudly.</div>
+        <div class="meaning-line">실속 없는 사람이 더 큰 소리로 떠벌리고 다닌다는 뜻.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 짐 실린 수레보다 빈 수레가 더 시끄러운 자연 현상에서 유래.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 실력은 없는데 자기 자랑만 늘어놓는 그 사람, 딱 빈 수레가 요란한 격이다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 허장성세 · 외화내빈</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABWAQAAAAB9LVxaAAABpElEQVR4nHVTQYecQRCtmR5iqNVD/sKyp6HpPTYd9hRCfknIP8gl1/ybsKdQ0WEvRQ1zWuYY5hRq9LBCfyqSyCb1rRRNe55Xr15XLwz+1LR8vAIAQWPGqAj4L76MYwtX/XJHRg6fNrvLw/WHBJ/B4QDx9Zbe7V/8uj/WCuC825/ev/nN+VsyuoIwFGPHP60YeAKGhfMDZlYCG4gN77+0mrJBJ6cDowdqMVEKfq67iymsP0KUtZsLuKXYlTKa79sGlkhDBrm+q/VDOH99eT6k2433iYl6ZeAy02nGNZVoVrzP1H6e0sjj3WKrjFmyx4nRymio4vUpg1HnrOrzYbQuuUvFeT59hBpzEI/3QpqISoqzvjWGisoxP+FDE8qSZ/N2bbGOkMaMr4IUuCE6/eXh+ekK6C0e83xPYqQgoQens9CwfjjAFLbPvns+qSJj793nYJKSxqHzfDQVo2ZA3g+YEVpNQ3i2b9BHEyAUj8vQNGpRaV6HcUjRAIQunxXAl5tPN1MMT/4Lbl8dL77tj/cOD3oXaeJNOs/eHZoV7SX6/Vn857//ALZE7j/oiTs+AAAAAElFTkSuQmCC" alt="QR"/></td></tr><tr><td class="num">11</td><td class="ko">작은 고추가 더 맵다</td><td class="en">Good things come in small packages. / The smaller the pepper, the hotter.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> Smaller peppers are spicier.</div>
+        <div class="meaning-line">작거나 어려 보이는 사람이 더 야무지고 능력이 뛰어남.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 한국의 청양고추처럼 작을수록 매운 고추의 특성에서 유래.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 체구는 작지만 결단력은 누구보다 강한 그녀 — 작은 고추가 더 맵다더니.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 외유내강 · 강단 있는 사람</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABWAQAAAAB9LVxaAAABnUlEQVR4nHVTQaoUQQxNTzWIEKmBOYHgAQryN0JB9VW8geAhPIP3GHAl5FMDbtKU8LeCeIOSahiENHHx8fMzYq3C4/HeS1KZDP6+/fBUAgCDikDsCPgcn6Ne4vsGp99hdfh+7Ms1wX48O/4B4CHIZeHH+unNAK+/THEryePQVPJIfajJc3ziRR6rO6cPZlaEpRVTnx8D1VxpUPb8GKCFzCl4nZY04RCo5vCpbQvs+fMa4K3jq4oiixk738N2+vA1wXW+X745ftWs0DmM4HPWAVKSWuk+ZwUbhGkYeX20CT9dYZ2+L74vBstaY29eZxBn5KJy4yvSYx6NOni8165QYop+/tAhB1Oq6PsFpUZSsXD1vpwg1sajJT/n0bByiIzR65tGIO6lJq+jxMSSmxXnO9k95NObl+cfvzxfAtdcIRe52W/uHVGJhtOZ94/xQtup7y/8fgVKJazEeJPTRI1Sb3LTL3DDPhC97xw1rCG+ghDY66PErISMt/ey/Xw4wrn0f/hoihH8fg+hB1rv0g7v/B0xNBzII/n/M/3n3v8A0tPhzqWt04YAAAAASUVORK5CYII=" alt="QR"/></td></tr><tr><td class="num">12</td><td class="ko">달도 차면 기운다</td><td class="en">What goes up must come down.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> Even the full moon wanes.</div>
+        <div class="meaning-line">세상 만물의 영화로움은 영원하지 않고 결국 쇠퇴함을 비유.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 달이 차고 기우는 순환을 인생사에 비유한 한국 전래 속담.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 한때 1위였던 기업도 영원할 수는 없다. 달도 차면 기우는 법이다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 흥망성쇠 · 영고성쇠</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABWAQAAAAB9LVxaAAABlklEQVR4nF2TTWrcMQzFNXGgBFwc6LabwGwDBs8mIPBAtz1Gj5IjdRtQcJcKmm0hUHqAgEGBbPRHZegHlb0y4vnnJ9lv5/B3bRf/tgBAQMw5zQw51MU0q+Ng5//rF9v18/778f4OHiHoOQ83KyNT0F8CbKdt//N4Phv5k8ARcuTv6Mi/d4fgZ+cA27u79Oirf+RS1aHFe8E60khINcW+jK3x6OI56iUVUZUGjqHupFbIhlCsW69VuXbWxefT29Y+PnzJ6SnyfXCfKN0WPivYHDgW/vQ6OucubfFJydFGmRL0lzfp5XQPV3u4iXP2KU1QqWOcg5ZhSUotGvnEdVYgqz3yy2v5gHzIaS59YUmjkEqP/NkJSp+lWuSPqZlAOC/ztwJKA0XjvUDAhbonbct8FFwwd5sW/+FsMzO2prHuReoUm7DoFdwpndOxvItL9lZNOPZFYDYEKEvg7OQWDnyErz9er5ZcmKAWoNjvJcC3Tw+wf05vx5AvgHz7GbaXPCno0zwVeo/XsF/9kGNVLPH/nPPyZ4W8/AKw3OlTmpoAsgAAAABJRU5ErkJggg==" alt="QR"/></td></tr><tr><td class="num">13</td><td class="ko">원숭이도 나무에서 떨어진다</td><td class="en">Even Homer nods. / Everyone makes mistakes.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> Even monkeys fall from trees.</div>
+        <div class="meaning-line">아무리 잘하는 사람도 실수할 때가 있음.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 나무를 가장 잘 타는 원숭이도 떨어진다는 데서 비롯된 속담.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 20년 경력 베테랑도 실수할 때가 있더라 — 원숭이도 나무에서 떨어진다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 천려일실 · 완벽한 사람은 없다</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAF4AAABeAQAAAACCqZ7DAAAB6klEQVR4nHVUQWocMRCsHRmCQdD7gBwNPi1M0F4CWmbBL8kb8pFAHuBP+Logo70EtGggJ0PAx5wCGjowF4kOMSGJOmROGorqKnW1eiP4/bXhzxlAQEmgGjjBdsgV1fV2Wra3X3Zy6ZChbdux4evpBo/oEWC+fsBhDvPLz1/VAPPZzHS3g0ZMwfKUl/F5Z3qdTTimX8d97w0i1TOFGCepPRKLG6dguUrskU199RbmEvYAvOpBDQYpRVSvkELibKQg06R06ugioogRk5SDSD6CJytVuU7e5xhQQ/WKk5lLIXh2RXHqKFlqcr6ycpAiuIyxmJg0J2XKiMwZSodN4MKV2BZVTYL1FRY2GNWDmHMiitWS0rmyzexfEmprUNUopkohBs0Bw2YTKGSQ0pEpZrKuGtGTeG4H2PJ9/bbFqJLLJjlvSUbpbzrYw7jaj7y73J/7eUOaEEIO4srUczZ1Xtv7hvt2XD+pHhDzaMjEpCeELWcWKj6oSRzmdX73dLXDA5pyIMlKCaOA5Z95q06yKcUblU+2TAbkfsar30IWl3PxFPtqw+MGb9qh0XrC3CNU23OOK4K57pMb2vZmOSzHPZY73TfL2ZoIV6jPZwAs3Mnyh+1J7QNTzsvF7F63eCx67ySMLnP2uXe9+e+u+gEX3RVzFki05gAAAABJRU5ErkJggg==" alt="QR"/></td></tr><tr><td class="num">14</td><td class="ko">하늘이 무너져도 솟아날 구멍이 있다</td><td class="en">Every cloud has a silver lining.</td><td class="rest">
+        <div class="literal-line"><span class="lit-label">직역:</span> Even if the sky falls, there&#x27;s a way out.</div>
+        <div class="meaning-line">아무리 큰 어려움이 닥쳐도 살아날 방법이 있다는 뜻.</div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 절망적인 상황에서도 희망을 잃지 말라는 한국 전통적 낙관관에서 유래.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 회사가 망할 위기였지만 새 투자자가 나타났다 — 하늘이 무너져도 솟아날 구멍이 있다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 전화위복 · 새옹지마</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGYAAABmAQAAAAARpNnPAAACD0lEQVR4nGVUQWpdMQzU/87mg8CBXiHQVcHgQikoONBVoZCr9BA9QA9TyFYfB0rBwR+6KvQKAQVlqYdKAyWN7JXNMB6NLM/O4Xlt+/8OAPvj7uFug4ez29u73flLDKZxppKwMvoI2EBT4ZqwIQdsD/D996fK9/qlPJ1e8rQyQPFukQfTBmc2FbKot+Or8W//FgPPXdIA89amW8AYU04GkqxWCphlH8za0F3DnWc/t7P7V4eLdLMDlcDrvVtuwqCUowe3AtqqESSKelNnI02Qq/BSi3Sz2hTGTNGf5uFFUSVPi3pGLUt1AQZZeCnphApVuUeMR21GYr0aRcxS7n87N4r2WKeSZHJslJFir11bYpzSq7TIYwbJA7wQ56C36wgXp0s7vzmkx0OYpffbdo50ujjABlfhTskDy7DinJdZcgbWAs07wzK7HdG94qyusU43Ya1dpGNZ56xP8lxmK2nhSRaj7EhiS68T5aLQyOZaCyd3rUknceznVJJaRKAzLX+FqWFyzSQj6o1ceoHWp3SNPLU5SdjraIueaK0MKi3V5W1VRKHPWkhafD+53uDrh/vb9CYfF+/mhAajJ8ihZzuHYztieYcn3mJOMLBoGYyEi79pgo6Gw+dcc6mDEmgFwKC3BzjMjzdwCRXSmkuMUnUiWYl5lgS+Xf84Pb4+nc3Ae8ql9HDld+nz46/F3/MKufsHtFdFHFr5gqsAAAAASUVORK5CYII=" alt="QR"/></td></tr>
+</tbody></table>
+
+
+<div class="paywall-cta" style="margin:40px auto; max-width:720px; background:linear-gradient(135deg,#1a1a2e,#16213e); color:#fff; padding:32px 28px; border-radius:14px; text-align:center;">
+  <div style="font-size:32px; margin-bottom:10px;">🔒</div>
+  <h2 style="font-size:22px; margin:0 0 8px; color:#fff;">전체 콘텐츠는 결제 후 학습 가능합니다</h2>
+  <p style="margin:0 0 18px; opacity:0.85; font-size:14px;">위 미리보기는 약 10%입니다. 전체 <strong>100 proverbs</strong>, 모든 예문·시나리오·퀴즈·QR 코드까지 잠금 해제하려면:</p>
+  <a href="https://jssmn21.gumroad.com/l/gnefla" target="_blank" style="display:inline-block; background:#f97316; color:#fff; padding:14px 32px; border-radius:8px; text-decoration:none; font-weight:800; font-size:15px; margin:4px;">💳 Gumroad에서 구매 — $19.90</a>
+  <button onclick="showLicenseModal()" style="display:inline-block; background:transparent; color:#fff; padding:14px 32px; border:2px solid #fff; border-radius:8px; cursor:pointer; font-weight:800; font-size:15px; margin:4px;">🔓 이미 구매했어요</button>
+  <p style="margin-top:16px; font-size:12px; opacity:0.7;">키 1개로 <strong>모든 8개 자료</strong> 잠금 해제</p>
+  <p style="margin-top:20px;"><a href="vocab-hub.html" style="color:#f97316; text-decoration:none; font-weight:700;">← 다른 자료 둘러보기</a></p>
+</div>
+
+
+
+<div id="license-modal" style="display:none">
+  <div class="lm-box">
+    <h3>🔓 라이선스 키 입력</h3>
+    <p>Gumroad에서 구매 후 이메일로 받은 라이선스 키를 입력하세요.</p>
+    <input id="license-key-input" type="text" placeholder="XXXX-XXXX-XXXX-XXXX" maxlength="40" autocomplete="off">
+    <div class="license-msg" id="license-msg"></div>
+    <button class="lm-btn primary" onclick="unlockWithKey()">잠금 해제</button>
+    <button class="lm-btn ghost" onclick="closeLicenseModal()">취소</button>
+    <a href="https://jssmn21.gumroad.com/l/gnefla" target="_blank" class="lm-buy">💳 아직 구매 안 했어요 — Gumroad에서 구매</a>
+  </div>
+</div>
+
+
+<script>
+(function() {
+  const STORAGE_KEY = 'krguide_license_v1';
+  const GUMROAD_LINK = 'https://jssmn21.gumroad.com/l/gnefla';
+
+  function isUnlocked() {
+    try {
+      const d = JSON.parse(localStorage.getItem(STORAGE_KEY));
+      return d && d.valid === true;
+    } catch(e) { return false; }
+  }
+
+  function markUnlocked(key) {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify({valid:true,key:key,ts:Date.now()}));
+  }
+
+  window.unlockWithKey = function() {
+    const input = document.getElementById('license-key-input');
+    const msg = document.getElementById('license-msg');
+    const btn = document.querySelector('#license-modal .lm-btn.primary');
+    const key = (input.value || '').trim();
+    if (!key) { msg.textContent = '라이선스 키를 입력하세요.'; msg.className = 'license-msg err'; return; }
+    if (btn) { btn.disabled = true; btn.textContent = '검증 중…'; }
+    msg.textContent = '';
+    fetch('https://auth.krguide.com/api/license-verify', {
+      method:'POST', headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({license_key: key})
+    }).then(r => r.json()).then(data => {
+      if (data && data.success) {
+        markUnlocked(key);
+        msg.textContent = '✅ 잠금 해제 완료! 새로고침합니다…';
+        msg.className = 'license-msg ok';
+        setTimeout(() => location.reload(), 800);
+      } else {
+        msg.textContent = data.error || '유효하지 않은 라이선스 키입니다.';
+        msg.className = 'license-msg err';
+        if (btn) { btn.disabled = false; btn.textContent = '잠금 해제'; }
+      }
+    }).catch(err => {
+      msg.textContent = '서버 연결 실패. 잠시 후 다시 시도해 주세요.';
+      msg.className = 'license-msg err';
+      if (btn) { btn.disabled = false; btn.textContent = '잠금 해제'; }
+    });
+  };
+
+  window.showLicenseModal = function() {
+    document.getElementById('license-modal').style.display = 'flex';
+    document.getElementById('license-key-input').focus();
+  };
+  window.closeLicenseModal = function() {
+    document.getElementById('license-modal').style.display = 'none';
+  };
+
+  // Apply lock on DOMContentLoaded
+  document.addEventListener('DOMContentLoaded', function() {
+    if (isUnlocked()) {
+      document.body.classList.add('unlocked');
+    } else {
+      document.body.classList.add('locked');
+    }
+  });
+})();
+</script>
+
+
+</body></html>

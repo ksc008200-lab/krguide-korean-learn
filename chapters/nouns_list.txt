@@ -1,0 +1,369 @@
+1|가족 FAMILY|가족|ga-jok|family
+2|가족 FAMILY|부모|bu-mo|parents
+3|가족 FAMILY|아버지|a-beo-ji|father
+4|가족 FAMILY|어머니|eo-meo-ni|mother
+5|가족 FAMILY|형 / 오빠|hyeong / o-ppa|older brother
+6|가족 FAMILY|누나 / 언니|nu-na / eon-ni|older sister
+7|가족 FAMILY|동생|dong-saeng|younger sibling
+8|가족 FAMILY|할아버지|hal-a-beo-ji|grandfather
+9|가족 FAMILY|할머니|hal-meo-ni|grandmother
+10|가족 FAMILY|친척|chin-cheok|relative
+11|가족 FAMILY|남편|nam-pyeon|husband
+12|가족 FAMILY|아내|a-nae|wife
+13|가족 FAMILY|아들|a-deul|son
+14|가족 FAMILY|딸|ttal|daughter
+15|사회 SOCIAL|사람|sa-ram|person
+16|사회 SOCIAL|인간|in-gan|human being
+17|사회 SOCIAL|친구|chin-gu|friend
+18|사회 SOCIAL|동료|dong-nyo|colleague
+19|사회 SOCIAL|선배|seon-bae|senior / upperclassman
+20|사회 SOCIAL|후배|hu-bae|junior / underclassman
+21|사회 SOCIAL|이웃|i-ut|neighbor
+22|사회 SOCIAL|손님|son-nim|guest / customer
+23|사회 SOCIAL|주인|ju-in|owner / host
+24|사회 SOCIAL|어른|eo-reun|adult
+25|사회 SOCIAL|아이|a-i|child
+26|사회 SOCIAL|아기|a-gi|baby
+27|직업 OCCUPATION|학생|hak-saeng|student
+28|직업 OCCUPATION|선생님|seon-saeng-nim|teacher
+29|직업 OCCUPATION|교수|gyo-su|professor
+30|직업 OCCUPATION|의사|ui-sa|doctor
+31|직업 OCCUPATION|간호사|gan-ho-sa|nurse
+32|직업 OCCUPATION|경찰|gyeong-chal|police officer
+33|직업 OCCUPATION|공무원|gong-mu-won|civil servant
+34|직업 OCCUPATION|회사원|hoe-sa-won|office worker
+35|직업 OCCUPATION|가수|ga-su|singer
+36|직업 OCCUPATION|배우|bae-u|actor / actress
+37|직업 OCCUPATION|작가|jak-ga|writer / author
+38|직업 OCCUPATION|기자|gi-ja|journalist
+39|신체 BODY|몸|mom|body
+40|신체 BODY|머리|meo-ri|head / hair
+41|신체 BODY|얼굴|eol-gul|face
+42|신체 BODY|눈|nun|eye
+43|신체 BODY|코|ko|nose
+44|신체 BODY|입|ip|mouth
+45|신체 BODY|귀|gwi|ear
+46|신체 BODY|목|mok|neck / throat
+47|신체 BODY|어깨|eo-kkae|shoulder
+48|신체 BODY|팔|pal|arm
+49|신체 BODY|손|son|hand
+50|신체 BODY|손가락|son-ga-rak|finger
+51|신체 BODY|허리|heo-ri|waist
+52|신체 BODY|다리|da-ri|leg
+53|신체 BODY|발|bal|foot
+54|신체 BODY|발가락|bal-ga-rak|toe
+55|신체 BODY|피부|pi-bu|skin
+56|신체 BODY|뼈|ppyeo|bone
+57|신체 BODY|피|pi|blood
+58|신체 BODY|심장|sim-jang|heart
+59|건강 HEALTH|건강|geon-gang|health
+60|건강 HEALTH|병|byeong|illness / disease
+61|건강 HEALTH|감기|gam-gi|cold (illness)
+62|건강 HEALTH|약|yak|medicine
+63|건강 HEALTH|병원|byeong-won|hospital
+64|건강 HEALTH|약국|yak-guk|pharmacy
+65|건강 HEALTH|기침|gi-chim|cough
+66|건강 HEALTH|열|yeol|fever
+67|건강 HEALTH|통증|tong-jeung|pain
+68|건강 HEALTH|증상|jeung-sang|symptom
+69|건강 HEALTH|수술|su-sul|surgery
+70|건강 HEALTH|검사|geom-sa|examination / test
+71|건강 HEALTH|운동|un-dong|exercise
+72|건강 HEALTH|다이어트|da-i-eo-teu|diet
+73|건강 HEALTH|휴식|hyu-sik|rest
+74|식사 MEALS|음식|eum-sik|food
+75|식사 MEALS|밥|bap|rice / meal
+76|식사 MEALS|반찬|ban-chan|side dish
+77|식사 MEALS|국|guk|soup
+78|식사 MEALS|찌개|jji-gae|stew
+79|식사 MEALS|식사|sik-sa|meal
+80|식사 MEALS|아침|a-chim|breakfast
+81|식사 MEALS|점심|jeom-sim|lunch
+82|식사 MEALS|저녁|jeo-nyeok|dinner
+83|식사 MEALS|간식|gan-sik|snack
+84|식사 MEALS|야식|ya-sik|late-night snack
+85|식사 MEALS|요리|yo-ri|cooking / dish
+86|식사 MEALS|메뉴|me-nyu|menu
+87|식사 MEALS|맛|mat|taste / flavor
+88|재료 INGREDIENTS|쌀|ssal|rice (uncooked)
+89|재료 INGREDIENTS|고기|go-gi|meat
+90|재료 INGREDIENTS|소고기|so-go-gi|beef
+91|재료 INGREDIENTS|돼지고기|dwae-ji-go-gi|pork
+92|재료 INGREDIENTS|닭고기|dak-go-gi|chicken (meat)
+93|재료 INGREDIENTS|생선|saeng-seon|fish
+94|재료 INGREDIENTS|채소|chae-so|vegetable
+95|재료 INGREDIENTS|과일|gwa-il|fruit
+96|재료 INGREDIENTS|물|mul|water
+97|재료 INGREDIENTS|우유|u-yu|milk
+98|재료 INGREDIENTS|커피|keo-pi|coffee
+99|재료 INGREDIENTS|차|cha|tea
+100|재료 INGREDIENTS|음료수|eum-nyo-su|beverage / drink
+101|재료 INGREDIENTS|술|sul|alcohol
+102|재료 INGREDIENTS|계란|gye-ran|egg
+103|재료 INGREDIENTS|설탕|seol-tang|sugar
+104|재료 INGREDIENTS|소금|so-geum|salt
+105|재료 INGREDIENTS|기름|gi-reum|oil
+106|과일·채소 FRUITS & VEGETABLES|사과|sa-gwa|apple
+107|과일·채소 FRUITS & VEGETABLES|바나나|ba-na-na|banana
+108|과일·채소 FRUITS & VEGETABLES|포도|po-do|grape
+109|과일·채소 FRUITS & VEGETABLES|딸기|ttal-gi|strawberry
+110|과일·채소 FRUITS & VEGETABLES|수박|su-bak|watermelon
+111|과일·채소 FRUITS & VEGETABLES|배추|bae-chu|napa cabbage
+112|과일·채소 FRUITS & VEGETABLES|무|mu|radish
+113|과일·채소 FRUITS & VEGETABLES|양파|yang-pa|onion
+114|과일·채소 FRUITS & VEGETABLES|마늘|ma-neul|garlic
+115|과일·채소 FRUITS & VEGETABLES|고추|go-chu|chili pepper
+116|과일·채소 FRUITS & VEGETABLES|감자|gam-ja|potato
+117|과일·채소 FRUITS & VEGETABLES|고구마|go-gu-ma|sweet potato
+118|식당 관련 RESTAURANT|식당|sik-dang|restaurant
+119|식당 관련 RESTAURANT|카페|ka-pe|café
+120|식당 관련 RESTAURANT|편의점|pyeon-ui-jeom|convenience store
+121|식당 관련 RESTAURANT|시장|si-jang|market
+122|식당 관련 RESTAURANT|마트|ma-teu|supermarket
+123|식당 관련 RESTAURANT|숟가락|sut-ga-rak|spoon
+124|식당 관련 RESTAURANT|젓가락|jeot-ga-rak|chopsticks
+125|식당 관련 RESTAURANT|그릇|geu-reut|bowl / dish
+126|식당 관련 RESTAURANT|컵|keop|cup
+127|식당 관련 RESTAURANT|식탁|sik-tak|dining table
+128|시간 단위 TIME UNITS|시간|si-gan|time / hour
+129|시간 단위 TIME UNITS|분|bun|minute
+130|시간 단위 TIME UNITS|초|cho|second
+131|시간 단위 TIME UNITS|시|si|o'clock
+132|시간 단위 TIME UNITS|날 / 일|nal / il|day
+133|시간 단위 TIME UNITS|주|ju|week
+134|시간 단위 TIME UNITS|월 / 달|wol / dal|month
+135|시간 단위 TIME UNITS|년 / 해|nyeon / hae|year
+136|시간 단위 TIME UNITS|오전|o-jeon|a.m. / morning
+137|시간 단위 TIME UNITS|오후|o-hu|p.m. / afternoon
+138|시간 단위 TIME UNITS|낮|nat|daytime
+139|시간 단위 TIME UNITS|밤|bam|night
+140|시간 단위 TIME UNITS|새벽|sae-byeok|dawn / early morning
+141|시간 단위 TIME UNITS|아침|a-chim|morning
+142|시간 단위 TIME UNITS|저녁|jeo-nyeok|evening
+143|시점 표현 TIME REFERENCES|오늘|o-neul|today
+144|시점 표현 TIME REFERENCES|어제|eo-je|yesterday
+145|시점 표현 TIME REFERENCES|그저께|geu-jeo-kke|day before yesterday
+146|시점 표현 TIME REFERENCES|내일|nae-il|tomorrow
+147|시점 표현 TIME REFERENCES|모레|mo-re|day after tomorrow
+148|시점 표현 TIME REFERENCES|이번|i-beon|this time / current
+149|시점 표현 TIME REFERENCES|지난|ji-nan|last / past
+150|시점 표현 TIME REFERENCES|다음|da-eum|next
+151|시점 표현 TIME REFERENCES|평일|pyeong-il|weekday
+152|시점 표현 TIME REFERENCES|주말|ju-mal|weekend
+153|시점 표현 TIME REFERENCES|휴일|hyu-il|holiday
+154|시점 표현 TIME REFERENCES|방학|bang-hak|school vacation
+155|시점 표현 TIME REFERENCES|휴가|hyu-ga|vacation / leave
+156|시점 표현 TIME REFERENCES|생일|saeng-il|birthday
+157|시점 표현 TIME REFERENCES|기념일|gi-nyeom-il|anniversary
+158|날씨·계절 WEATHER & SEASONS|계절|gye-jeol|season
+159|날씨·계절 WEATHER & SEASONS|봄|bom|spring
+160|날씨·계절 WEATHER & SEASONS|여름|yeo-reum|summer
+161|날씨·계절 WEATHER & SEASONS|가을|ga-eul|autumn / fall
+162|날씨·계절 WEATHER & SEASONS|겨울|gyeo-ul|winter
+163|날씨·계절 WEATHER & SEASONS|날씨|nal-ssi|weather
+164|날씨·계절 WEATHER & SEASONS|하늘|ha-neul|sky
+165|날씨·계절 WEATHER & SEASONS|해|hae|sun
+166|날씨·계절 WEATHER & SEASONS|달|dal|moon
+167|날씨·계절 WEATHER & SEASONS|별|byeol|star
+168|날씨·계절 WEATHER & SEASONS|구름|gu-reum|cloud
+169|날씨·계절 WEATHER & SEASONS|비|bi|rain
+170|날씨·계절 WEATHER & SEASONS|눈|nun|snow
+171|날씨·계절 WEATHER & SEASONS|바람|ba-ram|wind
+172|날씨·계절 WEATHER & SEASONS|온도|on-do|temperature
+173|집 안 INSIDE HOME|집|jip|house / home
+174|집 안 INSIDE HOME|거실|geo-sil|living room
+175|집 안 INSIDE HOME|방|bang|room
+176|집 안 INSIDE HOME|부엌|bu-eok|kitchen
+177|집 안 INSIDE HOME|화장실|hwa-jang-sil|restroom / bathroom
+178|집 안 INSIDE HOME|현관|hyeon-gwan|entrance hall
+179|집 안 INSIDE HOME|엘리베이터|el-li-be-i-teo|elevator
+180|공공장소 PUBLIC PLACES|학교|hak-gyo|school
+181|공공장소 PUBLIC PLACES|회사 / 사무실|hoe-sa / sa-mu-sil|company / office
+182|공공장소 PUBLIC PLACES|공원|gong-won|park
+183|공공장소 PUBLIC PLACES|도서관|do-seo-gwan|library
+184|공공장소 PUBLIC PLACES|박물관|bak-mul-gwan|museum
+185|공공장소 PUBLIC PLACES|은행|eun-haeng|bank
+186|공공장소 PUBLIC PLACES|우체국|u-che-guk|post office
+187|공공장소 PUBLIC PLACES|경찰서|gyeong-chal-seo|police station
+188|공공장소 PUBLIC PLACES|소방서|so-bang-seo|fire station
+189|공공장소 PUBLIC PLACES|공항|gong-hang|airport
+190|공공장소 PUBLIC PLACES|역|yeok|station
+191|공공장소 PUBLIC PLACES|정류장|jeong-ryu-jang|bus stop
+192|상업시설 COMMERCIAL|백화점|bae-kwa-jeom|department store
+193|상업시설 COMMERCIAL|쇼핑몰|syo-ping-mol|shopping mall
+194|상업시설 COMMERCIAL|서점|seo-jeom|bookstore
+195|상업시설 COMMERCIAL|약국|yak-guk|pharmacy
+196|상업시설 COMMERCIAL|미용실|mi-yong-sil|hair salon
+197|상업시설 COMMERCIAL|세탁소|se-tak-so|laundry
+198|상업시설 COMMERCIAL|영화관|yeong-hwa-gwan|cinema
+199|상업시설 COMMERCIAL|노래방|no-rae-bang|karaoke room
+200|상업시설 COMMERCIAL|헬스장|hel-seu-jang|gym
+201|상업시설 COMMERCIAL|호텔|ho-tel|hotel
+202|지리 GEOGRAPHY|나라|na-ra|country
+203|지리 GEOGRAPHY|한국|han-guk|Korea
+204|지리 GEOGRAPHY|고향|go-hyang|hometown
+205|지리 GEOGRAPHY|도시|do-si|city
+206|지리 GEOGRAPHY|시골|si-gol|countryside
+207|지리 GEOGRAPHY|거리 / 길|geo-ri / gil|street / road
+208|지리 GEOGRAPHY|산|san|mountain
+209|지리 GEOGRAPHY|바다|ba-da|sea / ocean
+210|지리 GEOGRAPHY|강|gang|river
+211|지리 GEOGRAPHY|섬|seom|island
+212|지리 GEOGRAPHY|호수|ho-su|lake
+213|지리 GEOGRAPHY|다리|da-ri|bridge
+214|지리 GEOGRAPHY|건물|geon-mul|building
+215|지리 GEOGRAPHY|장소|jang-so|place / location
+216|가전·IT ELECTRONICS|컴퓨터|keom-pyu-teo|computer
+217|가전·IT ELECTRONICS|노트북|no-teu-buk|laptop
+218|가전·IT ELECTRONICS|핸드폰 / 휴대폰|haen-deu-pon|mobile phone
+219|가전·IT ELECTRONICS|전화기|jeon-hwa-gi|telephone
+220|가전·IT ELECTRONICS|텔레비전|tel-le-bi-jeon|television
+221|가전·IT ELECTRONICS|냉장고|naeng-jang-go|refrigerator
+222|가전·IT ELECTRONICS|세탁기|se-tak-gi|washing machine
+223|가전·IT ELECTRONICS|에어컨|e-eo-keon|air conditioner
+224|가전·IT ELECTRONICS|전자레인지|jeon-ja-re-in-ji|microwave
+225|가전·IT ELECTRONICS|카메라|ka-me-ra|camera
+226|가전·IT ELECTRONICS|충전기|chung-jeon-gi|charger
+227|가전·IT ELECTRONICS|배터리|bae-teo-ri|battery
+228|가구·소품 FURNITURE & ITEMS|침대|chim-dae|bed
+229|가구·소품 FURNITURE & ITEMS|책상|chaek-sang|desk
+230|가구·소품 FURNITURE & ITEMS|의자|ui-ja|chair
+231|가구·소품 FURNITURE & ITEMS|옷장|ot-jang|wardrobe
+232|가구·소품 FURNITURE & ITEMS|거울|geo-ul|mirror
+233|가구·소품 FURNITURE & ITEMS|창문|chang-mun|window
+234|가구·소품 FURNITURE & ITEMS|문|mun|door
+235|가구·소품 FURNITURE & ITEMS|시계|si-gye|clock / watch
+236|가구·소품 FURNITURE & ITEMS|조명|jo-myeong|lighting / lamp
+237|가구·소품 FURNITURE & ITEMS|안경|an-gyeong|glasses
+238|가구·소품 FURNITURE & ITEMS|우산|u-san|umbrella
+239|가구·소품 FURNITURE & ITEMS|열쇠|yeol-soe|key
+240|가구·소품 FURNITURE & ITEMS|지갑|ji-gap|wallet
+241|가구·소품 FURNITURE & ITEMS|가방|ga-bang|bag
+242|가구·소품 FURNITURE & ITEMS|돈|don|money
+243|가구·소품 FURNITURE & ITEMS|카드|ka-deu|card (credit/debit)
+244|가구·소품 FURNITURE & ITEMS|영수증|yeong-su-jeung|receipt
+245|필기구·문구 STATIONERY|책|chaek|book
+246|필기구·문구 STATIONERY|공책|gong-chaek|notebook
+247|필기구·문구 STATIONERY|종이|jong-i|paper
+248|필기구·문구 STATIONERY|펜 / 볼펜|pen / bol-pen|pen / ballpoint pen
+249|필기구·문구 STATIONERY|연필|yeon-pil|pencil
+250|필기구·문구 STATIONERY|지우개|ji-u-gae|eraser
+251|필기구·문구 STATIONERY|가위|ga-wi|scissors
+252|필기구·문구 STATIONERY|풀|pul|glue
+253|필기구·문구 STATIONERY|편지|pyeon-ji|letter
+254|필기구·문구 STATIONERY|봉투|bong-tu|envelope
+255|교통 TRANSPORT|차 / 자동차|cha / ja-dong-cha|car
+256|교통 TRANSPORT|버스|beo-seu|bus
+257|교통 TRANSPORT|지하철|ji-ha-cheol|subway
+258|교통 TRANSPORT|택시|taek-si|taxi
+259|교통 TRANSPORT|기차|gi-cha|train
+260|교통 TRANSPORT|비행기|bi-haeng-gi|airplane
+261|교통 TRANSPORT|배|bae|ship / boat
+262|교통 TRANSPORT|자전거|ja-jeon-geo|bicycle
+263|교통 TRANSPORT|오토바이|o-to-ba-i|motorcycle
+264|교통 TRANSPORT|킥보드|kik-bo-deu|kick scooter
+265|교통 TRANSPORT|신호등|sin-ho-deung|traffic light
+266|교통 TRANSPORT|지도|ji-do|map
+267|교통 TRANSPORT|표 / 티켓|pyo / ti-ket|ticket
+268|교통 TRANSPORT|요금|yo-geum|fare / fee
+269|교통 TRANSPORT|주차장|ju-cha-jang|parking lot
+270|통신 COMMUNICATION|인터넷|in-teo-net|internet
+271|통신 COMMUNICATION|이메일|i-me-il|email
+272|통신 COMMUNICATION|문자|mun-ja|text message
+273|통신 COMMUNICATION|번호|beon-ho|number
+274|통신 COMMUNICATION|주소|ju-so|address
+275|통신 COMMUNICATION|홈페이지|hom-pe-i-ji|website
+276|통신 COMMUNICATION|비밀번호|bi-mil-beon-ho|password
+277|통신 COMMUNICATION|뉴스|nyu-seu|news
+278|통신 COMMUNICATION|신문|sin-mun|newspaper
+279|통신 COMMUNICATION|잡지|jap-ji|magazine
+280|통신 COMMUNICATION|소문|so-mun|rumor
+281|통신 COMMUNICATION|옷|ot|clothes
+282|통신 COMMUNICATION|티셔츠|ti-syeo-cheu|T-shirt
+283|통신 COMMUNICATION|바지|ba-ji|pants / trousers
+284|통신 COMMUNICATION|치마|chi-ma|skirt
+285|통신 COMMUNICATION|원피스|won-pi-seu|dress
+286|통신 COMMUNICATION|셔츠|syeo-cheu|shirt
+287|통신 COMMUNICATION|코트|ko-teu|coat
+288|통신 COMMUNICATION|점퍼|jeom-peo|jumper / jacket
+289|통신 COMMUNICATION|속옷|sog-ot|underwear
+290|통신 COMMUNICATION|양말|yang-mal|socks
+291|통신 COMMUNICATION|신발|sin-bal|shoes
+292|통신 COMMUNICATION|운동화|un-dong-hwa|sneakers
+293|통신 COMMUNICATION|구두|gu-du|dress shoes
+294|통신 COMMUNICATION|슬리퍼|seul-li-peo|slippers
+295|통신 COMMUNICATION|모자|mo-ja|hat / cap
+296|통신 COMMUNICATION|장갑|jang-gap|gloves
+297|통신 COMMUNICATION|목도리|mok-do-ri|scarf
+298|통신 COMMUNICATION|넥타이|nek-ta-i|necktie
+299|통신 COMMUNICATION|안경|an-gyeong|glasses
+300|통신 COMMUNICATION|액세서리|aek-se-seo-ri|accessories
+301|교육 EDUCATION|수업|su-eop|class / lesson
+302|교육 EDUCATION|공부|gong-bu|study
+303|교육 EDUCATION|시험|si-heom|exam / test
+304|교육 EDUCATION|문제|mun-je|problem / question
+305|교육 EDUCATION|답|dap|answer
+306|교육 EDUCATION|숙제|suk-je|homework
+307|교육 EDUCATION|학기|hak-gi|semester
+308|교육 EDUCATION|전공|jeon-gong|major (academic)
+309|교육 EDUCATION|성적|seong-jeok|grade / score
+310|교육 EDUCATION|졸업|jol-eop|graduation
+311|교육 EDUCATION|입학|ip-hak|school admission
+312|교육 EDUCATION|사전|sa-jeon|dictionary
+313|교육 EDUCATION|교육|gyo-yuk|education
+314|교육 EDUCATION|질문|jil-mun|question
+315|교육 EDUCATION|대답|dae-dap|answer / reply
+316|업무 WORK|일|il|work / job
+317|업무 WORK|직업|ji-geop|occupation
+318|업무 WORK|회의|hoe-ui|meeting
+319|업무 WORK|서류|seo-ryu|documents
+320|업무 WORK|보고서|bo-go-seo|report
+321|업무 WORK|성공|seong-gong|success
+322|업무 WORK|실패|sil-pae|failure
+323|업무 WORK|계획|gye-hoek|plan
+324|업무 WORK|준비|jun-bi|preparation
+325|업무 WORK|회식|hoe-sik|company dinner
+326|업무 WORK|월급|wol-geup|monthly salary
+327|업무 WORK|보너스|bo-neo-seu|bonus
+328|업무 WORK|출근|chul-geun|going to work
+329|업무 WORK|퇴근|toe-geun|leaving work
+330|업무 WORK|출장|chul-jang|business trip
+331|감정 EMOTIONS|기분|gi-bun|feeling / mood
+332|감정 EMOTIONS|사랑|sa-rang|love
+333|감정 EMOTIONS|마음|ma-eum|heart / mind
+334|감정 EMOTIONS|생각|saeng-gak|thought / idea
+335|감정 EMOTIONS|꿈|kkum|dream
+336|감정 EMOTIONS|희망|hi-mang|hope
+337|감정 EMOTIONS|행복|haeng-bok|happiness
+338|감정 EMOTIONS|슬픔|seul-peum|sadness
+339|감정 EMOTIONS|걱정|geok-jeong|worry / concern
+340|감정 EMOTIONS|화|hwa|anger
+341|감정 EMOTIONS|재미|jae-mi|fun / interest
+342|감정 EMOTIONS|약속|yak-sok|promise / appointment
+343|감정 EMOTIONS|추억|chu-eok|memory / reminiscence
+344|개념 CONCEPTS|세상|se-sang|world
+345|개념 CONCEPTS|사회|sa-hoe|society
+346|개념 CONCEPTS|경제|gyeong-je|economy
+347|개념 CONCEPTS|문화|mun-hwa|culture
+348|개념 CONCEPTS|역사|yeok-sa|history
+349|개념 CONCEPTS|법|beop|law
+350|개념 CONCEPTS|정치|jeong-chi|politics
+351|개념 CONCEPTS|평화|pyeong-hwa|peace
+352|개념 CONCEPTS|자유|ja-yu|freedom / liberty
+353|개념 CONCEPTS|성격|seong-gyeok|personality
+354|개념 CONCEPTS|취미|chwi-mi|hobby
+355|개념 CONCEPTS|습관|seup-gwan|habit
+356|개념 CONCEPTS|특징|teuk-jing|characteristic
+357|개념 CONCEPTS|종류|jong-nyu|type / kind
+358|개념 CONCEPTS|방법|bang-beop|method / way
+359|개념 CONCEPTS|이유|i-yu|reason
+360|개념 CONCEPTS|결과|gyeol-gwa|result / outcome
+361|개념 CONCEPTS|목적|mok-jeok|purpose / goal
+362|개념 CONCEPTS|내용|nae-yong|content
+363|개념 CONCEPTS|의미|ui-mi|meaning
+364|개념 CONCEPTS|사실|sa-sil|fact
+365|개념 CONCEPTS|가짜|ga-jja|fake / false
+366|개념 CONCEPTS|비밀|bi-mil|secret
+367|개념 CONCEPTS|이름|i-reum|name
+368|개념 CONCEPTS|번호|beon-ho|number
+369|개념 CONCEPTS|제목|je-mok|title / subject

@@ -1,0 +1,3053 @@
+﻿==============================================================================
+
+                  인터넷·채팅 한국어 500
+
+          Korean Internet & Chat Expressions 500
+
+                    krguide.com · 2026년 5월
+
+==============================================================================
+
+
+==============================================================================
+  A. 자음·기호  —  Single-Consonants & Symbols  (60 items)
+==============================================================================
+
+#001  ㅋㅋㅋ
+      뜻:      웃음 (lol)
+      English: haha / lol
+      예문:    그 영상 봤어? ㅋㅋㅋ 진짜 웃겨
+      💡 가장 흔한 웃음 표현. ㅋ 갯수가 많을수록 더 웃김.
+
+#002  ㅎㅎ
+      뜻:      가벼운 웃음 (haha)
+      English: hehe
+      예문:    네 알겠어요 ㅎㅎ
+      💡 부드럽고 친근한 웃음. ㅋㅋ보다 점잖음.
+
+#003  ㅠㅠ
+      뜻:      슬픈 상황 (crying)
+      English: T_T / crying
+      예문:    오늘도 야근이야 ㅠㅠ
+      💡 눈물 흘리는 이모티콘. 슬픔·아쉬움·피곤함 모두 표현.
+
+#004  ㅜㅜ
+      뜻:      슬픈 상황 (crying)
+      English: T_T / sad
+      예문:    시험 망쳤어 ㅜㅜ
+      💡 ㅠㅠ와 거의 같음. 상황에 따라 혼용.
+
+#005  ㅇㅇ
+      뜻:      응 / 그래
+      English: yeah / yep
+      예문:    내일 만날래? ㅇㅇ
+      💡 "응"의 줄임. 캐주얼한 긍정 답변.
+
+#006  ㄴㄴ
+      뜻:      아니 (no)
+      English: no / nope
+      예문:    가능해? ㄴㄴ 못 가
+      💡 "노"의 줄임 또는 "안돼".
+
+#007  ㄱㄱ
+      뜻:      가자 / 시작 (let's go)
+      English: let's go / go go
+      예문:    치킨 시킬까? ㄱㄱ
+      💡 "고고" 줄임. 게임·약속 등에서 추진.
+
+#008  ㅂㅂ
+      뜻:      바이바이 (bye)
+      English: bye / see ya
+      예문:    먼저 갈게 ㅂㅂ
+      💡 "바이바이" 줄임. 작별 인사.
+
+#009  ㅁㅊ
+      뜻:      미친 (crazy)
+      English: crazy good / insane
+      예문:    이거 ㅁㅊ 맛있어!
+      💡 "미친" 줄임. 강조 표현 — 좋을 때·놀랄 때 모두.
+
+#010  ㄷㄷ
+      뜻:      덜덜 (shocked)
+      English: wow / damn
+      예문:    가격 ㄷㄷ
+      💡 놀라움·충격. "덜덜 떨림" 의미.
+
+#011  ㅇㅈ
+      뜻:      인정 (acknowledged)
+      English: agreed / facts
+      예문:    이 노래 좋아 ㅇㅈ?
+      💡 "인정" 줄임. 동의 표현.
+
+#012  ㄹㅇ
+      뜻:      리얼 (really)
+      English: for real / fr
+      예문:    그 식당 ㄹㅇ 맛있음
+      💡 "리얼" 줄임.
+
+#013  ㅈㅅ
+      뜻:      죄송 (sorry)
+      English: sorry / sry
+      예문:    늦어서 ㅈㅅ
+      💡 "죄송" 줄임.
+
+#014  ㄱㅅ
+      뜻:      감사 (thanks)
+      English: thanks / thx
+      예문:    도와줘서 ㄱㅅ
+      💡 "감사" 줄임.
+
+#015  ㅇㅋ
+      뜻:      오케이 (okay)
+      English: ok / ok!
+      예문:    내일 6시 ㅇㅋ?
+      💡 "오케이" 줄임.
+
+#016  ㄱㅊ
+      뜻:      괜찮 (it's okay)
+      English: it's fine / no worries
+      예문:    늦어도 ㄱㅊ
+      💡 "괜찮" 줄임.
+
+#017  ㅅㄱ
+      뜻:      수고 (good work)
+      English: good work / thanks for your effort
+      예문:    오늘 수업 ㅅㄱ
+      💡 "수고" 줄임.
+
+#018  ㄱㅈㅁ
+      뜻:      같이 가자 (let's go together)
+      English: let's go together
+      예문:    점심 ㄱㅈㅁ
+      💡 "같이가자" 음절 첫소리만.
+
+#019  ㄴㄱㄴ
+      뜻:      누구냐 (who is it)
+      English: who is this?
+      예문:    카톡 ㄴㄱㄴ
+      💡 "누구냐" 줄임.
+
+#020  ㅂㄱ
+      뜻:      반가워 (nice to meet)
+      English: nice to meet you
+      예문:    안녕하세요 ㅂㄱ
+      💡 "반가" 줄임.
+
+#021  ㅇㄷ
+      뜻:      어디 (where)
+      English: where you at?
+      예문:    지금 ㅇㄷ?
+      💡 "어디" 줄임.
+
+#022  ㅎㅇ
+      뜻:      하이 (hi)
+      English: hi / hey
+      예문:    ㅎㅇ 오랜만이야
+      💡 "하이" 줄임.
+
+#023  ㅂㅇ
+      뜻:      바이 (bye)
+      English: bye
+      예문:    내일 봐 ㅂㅇ
+      💡 "바이" 줄임.
+
+#024  ㅈㄴ
+      뜻:      존나 (very/extremely)
+      English: super / really
+      예문:    ㅈㄴ 피곤해
+      💡 비속어. 친한 사이에서만 사용.
+
+#025  ㄷㄱ
+      뜻:      닥쳐 (shut up)
+      English: stfu / shut up (joking)
+      예문:    ㄷㄱ ㅋㅋㅋ
+      💡 보통 농담조.
+
+#026  ㄱㄴ
+      뜻:      가능 (possible)
+      English: possible? / available?
+      예문:    7시에 ㄱㄴ?
+      💡 "가능" 줄임.
+
+#027  ㅂㄱㅂㄱ
+      뜻:      반갑반갑 (nice to meet)
+      English: nice to meet you!
+      예문:    신입생이에요 ㅂㄱㅂㄱ
+      💡 강조 반복.
+
+#028  ㄱㄷ
+      뜻:      기다려 (wait)
+      English: wait / hold on
+      예문:    잠깐 ㄱㄷ
+      💡 "기다려" 줄임.
+
+#029  ㅇㅈㄱ
+      뜻:      이젠 됐어 (enough)
+      English: enough already
+      예문:    ㅇㅈㄱ 그만해
+      💡 "이젠 됐어" 줄임.
+
+#030  ㅊㅋ
+      뜻:      축하 (congrats)
+      English: congrats / congratulations
+      예문:    승진 ㅊㅋ
+      💡 "축하" 줄임.
+
+#031  ㅎㄱ
+      뜻:      화가 (angry)
+      English: angry
+      예문:    ㅎㄱ 났어
+      💡 "화가" 줄임.
+
+#032  ㅋㅇ
+      뜻:      카이 / 안녕
+      English: bye
+      예문:    갈게 ㅋㅇ
+      💡 인사 표현.
+
+#033  ㅗ
+      뜻:      화났음 (middle finger)
+      English: f*** / FU
+      예문:    ㅗ ㄱㄷ
+      💡 가운데손가락 모양. 비속어.
+
+#034  ㅡㅡ
+      뜻:      불만 (annoyed)
+      English: ugh / annoyed
+      예문:    또 야근이래 ㅡㅡ
+      💡 무표정한 눈. 짜증·실망.
+
+#035  ^^
+      뜻:      미소 (smile)
+      English: smile / :)
+      예문:    네 알겠습니다 ^^
+      💡 기본 웃는 얼굴.
+
+#036  ^^;
+      뜻:      어색한 미소 (awkward smile)
+      English: awkward smile
+      예문:    그건 좀... ^^;
+      💡 식은땀 흘리는 웃음.
+
+#037  ;;
+      뜻:      식은땀 (awkward)
+      English: awkward / sweat drop
+      예문:    왜 그래;;
+      💡 식은땀 표현.
+
+#038  --;
+      뜻:      피곤·짜증 (tired)
+      English: ugh / tired
+      예문:    --; 진짜 피곤하다
+      💡 무표정 + 식은땀.
+
+#039  OTL
+      뜻:      좌절 (despair)
+      English: orz / kneeling in despair
+      예문:    또 실패 OTL
+      💡 무릎 꿇은 모습. 큰 좌절.
+
+#040  orz
+      뜻:      좌절 (kneeling)
+      English: orz / face palm
+      예문:    시험 떨어졌어 orz
+      💡 OTL과 같음. 영어권 채팅에서도 사용.
+
+#041  ♥
+      뜻:      하트 (love)
+      English: heart / love
+      예문:    좋아해 ♥
+      💡 애정 표현.
+
+#042  ❤
+      뜻:      빨간 하트
+      English: red heart
+      예문:    엄마 사랑해 ❤
+      💡 강한 애정.
+
+#043  💕
+      뜻:      분홍 하트
+      English: pink hearts
+      예문:    좋아 💕
+      💡 귀여운 애정.
+
+#044  ㅎㄷㄷ
+      뜻:      후덜덜 (mind-blown)
+      English: holy moly
+      예문:    가격이 ㅎㄷㄷ
+      💡 "후덜덜" 줄임. 놀람.
+
+#045  ㅋㅋㄹㅃㅃ
+      뜻:      낄낄빠빠 (just laugh & leave)
+      English: laugh and move on
+      예문:    신경 쓰지 마 ㅋㅋㄹㅃㅃ
+      💡 "낄 때 끼고 빠질 때 빠져라" 줄임.
+
+#046  ㅈㅈ
+      뜻:      항복 / GG
+      English: GG / I give up
+      예문:    이번 판 ㅈㅈ
+      💡 게임 종료 인사.
+
+#047  ㄹㄴ
+      뜻:      리얼 노 (really no)
+      English: really no
+      예문:    맛없어 ㄹㄴ
+      💡 "리얼 노".
+
+#048  ㅇㅈㄹ
+      뜻:      인지 (recognize)
+      English: recognized / OK got it
+      예문:    ㅇㅈㄹ 좋네
+      💡 인지·인정.
+
+#049  ㅎㅇㅌ
+      뜻:      화이팅 (fighting)
+      English: fighting / you got this
+      예문:    내일 시험 ㅎㅇㅌ
+      💡 "화이팅" 줄임.
+
+#050  ㄱㅇㅇ
+      뜻:      귀여워 (cute)
+      English: so cute
+      예문:    강아지 ㄱㅇㅇ
+      💡 "귀여워" 줄임.
+
+#051  ㅋㅎㅎ
+      뜻:      비웃음
+      English: chuckle
+      예문:    또 실수했어 ㅋㅎㅎ
+      💡 비웃음·살짝 비꼬는 웃음.
+
+#052  ㅋㅋㅍㅍ
+      뜻:      안 웃긴데 웃어줌
+      English: fake laugh
+      예문:    농담이지? ㅋㅋㅍㅍ
+      💡 억지 웃음.
+
+#053  ㅁㅁ
+      뜻:      머머 (huh?)
+      English: what? / huh?
+      예문:    ㅁㅁ 못 들었어
+      💡 "머머" — 못 알아들음.
+
+#054  ㅍㅎ
+      뜻:      피해 (cringe)
+      English: cringe / yikes
+      예문:    이 영상 ㅍㅎ
+      💡 "피해" 또는 "파해(파괴적으로 해로움)".
+
+#055  ㄱㅇㄷ
+      뜻:      가운데
+      English: middle
+      예문:    ㄱㅇㄷ 앉아
+      💡 위치 지정.
+
+#056  ㅎㅎㅎ
+      뜻:      가벼운 웃음 (mild laugh)
+      English: hehehe
+      예문:    네 그래요 ㅎㅎㅎ
+      💡 점잖은 웃음.
+
+#057  ㅋㅋㅋㅋ
+      뜻:      빵터짐 (big laugh)
+      English: lololol
+      예문:    이거 봐 ㅋㅋㅋㅋ
+      💡 긴 ㅋ — 매우 웃김.
+
+#058  ㅋㅋㅋㅋㅋㅋ
+      뜻:      폭소 (lmao)
+      English: lmao
+      예문:    미친 영상 ㅋㅋㅋㅋㅋㅋ
+      💡 매우 매우 웃김.
+
+#059  ㅎㅏ
+      뜻:      한숨 (sigh)
+      English: sigh / haa
+      예문:    ㅎㅏ 진짜 피곤하다
+      💡 길게 내쉬는 한숨.
+
+#060  ㅇㅋㄷㅋ
+      뜻:      오케이 도케이 (OKey-dokey)
+      English: okey-dokey
+      예문:    6시 약속 ㅇㅋㄷㅋ
+      💡 가벼운 동의.
+
+
+==============================================================================
+  B. 두 글자 줄임  —  2-Character Abbreviations  (60 items)
+==============================================================================
+
+#061  인싸
+      뜻:      인사이더 (popular)
+      English: popular person
+      예문:    인싸 친구가 많아요
+      💡 "인사이더" 줄임. 활발하고 인기 있는 사람.
+
+#062  아싸
+      뜻:      아웃사이더 (loner)
+      English: loner / outsider
+      예문:    학교에선 아싸였어요
+      💡 "아웃사이더" 줄임.
+
+#063  멘붕
+      뜻:      멘탈 붕괴 (breakdown)
+      English: mental breakdown
+      예문:    시험 망쳐서 멘붕
+      💡 "멘탈 + 붕괴".
+
+#064  폭망
+      뜻:      폭삭 망함 (epic fail)
+      English: epic fail
+      예문:    발표 폭망이야
+      💡 "폭삭 망함".
+
+#065  열일
+      뜻:      열심히 일 (hard work)
+      English: hardworking
+      예문:    열일하는 직원
+      💡 "열심히 일하다".
+
+#066  심쿵
+      뜻:      심장 쿵쿵 (heart flutter)
+      English: heart-fluttering
+      예문:    그 미소 심쿵
+      💡 설렘 표현.
+
+#067  존맛
+      뜻:      존나 맛있음 (super tasty)
+      English: banger / fire
+      예문:    이 집 존맛
+      💡 "존나 맛있다".
+
+#068  존잼
+      뜻:      존나 재미있음 (super fun)
+      English: super fun
+      예문:    이 게임 존잼
+      💡 "존나 + 재미".
+
+#069  노잼
+      뜻:      재미 없음
+      English: boring
+      예문:    영화 노잼이었어
+      💡 "노 + 재미".
+
+#070  꿀잼
+      뜻:      꿀 같이 재미있음 (super fun)
+      English: super fun
+      예문:    여행 꿀잼
+      💡 "꿀 + 재미".
+
+#071  꿀팁
+      뜻:      좋은 팁 (great tip)
+      English: life hack / pro tip
+      예문:    이건 꿀팁이야
+      💡 "꿀 + 팁".
+
+#072  꿀빨
+      뜻:      꿀 빨기 (cushy)
+      English: easy life / cushy
+      예문:    공휴일에 꿀빨
+      💡 편하게 지냄.
+
+#073  먹방
+      뜻:      먹는 방송 (mukbang)
+      English: mukbang / eating show
+      예문:    먹방 영상 봐요
+      💡 한국 신조어. 영어 'mukbang'.
+
+#074  쿡방
+      뜻:      요리 방송
+      English: cooking show
+      예문:    쿡방이 트렌드
+      💡 "쿠킹 + 방송".
+
+#075  치맥
+      뜻:      치킨 + 맥주
+      English: chicken & beer
+      예문:    치맥 최고
+      💡 "치킨 + 맥주". 한국 인기 조합.
+
+#076  소맥
+      뜻:      소주 + 맥주
+      English: soju & beer mix
+      예문:    소맥 한 잔
+      💡 "소주 + 맥주".
+
+#077  불금
+      뜻:      불타는 금요일 (TGIF)
+      English: burning Friday / TGIF
+      예문:    오늘은 불금!
+      💡 "불타는 금요일".
+
+#078  칼퇴
+      뜻:      칼 같이 퇴근 (sharp leave)
+      English: leave on the dot
+      예문:    오늘 칼퇴해야지
+      💡 "칼 + 퇴근". 정시 퇴근.
+
+#079  노답
+      뜻:      답이 없음 (hopeless)
+      English: hopeless / no answer
+      예문:    이 상황 노답
+      💡 "노 + 답".
+
+#080  갑
+      뜻:      우위에 있는 사람
+      English: the boss / dominant
+      예문:    갑질 그만
+      💡 계약상 "갑". 갑질=권력 남용.
+
+#081  을
+      뜻:      아래에 있는 사람
+      English: underdog
+      예문:    항상 을 입장
+      💡 "갑"의 반대.
+
+#082  실화
+      뜻:      실제 일어난 일
+      English: for real?
+      예문:    이거 실화야?
+      💡 감탄으로 자주 사용.
+
+#083  썸
+      뜻:      사귀기 전 단계 (pre-dating)
+      English: in the talking stage
+      예문:    썸 타는 중
+      💡 "something" 줄임.
+
+#084  썰
+      뜻:      이야기 (story)
+      English: share the story
+      예문:    썰 풀어 봐
+      💡 "이야기·소문".
+
+#085  짤
+      뜻:      이미지·밈 (image)
+      English: image / meme
+      예문:    좋은 짤 보내
+      💡 "짤림 방지" 줄임.
+
+#086  공감
+      뜻:      sympathy
+      English: so relatable
+      예문:    엄청 공감!
+      💡 "공감되다" → "so relatable".
+
+#087  빵터
+      뜻:      빵 터짐 (burst laugh)
+      English: cracked up
+      예문:    그 영상 보고 빵터
+      💡 "빵 터지다".
+
+#088  개꿀
+      뜻:      개 + 꿀 (super sweet)
+      English: awesome / lit
+      예문:    이거 개꿀!
+      💡 강조 속어. "개"는 강조 접두사.
+
+#089  개이득
+      뜻:      매우 이득
+      English: score / big win
+      예문:    공짜로 받았어 개이득
+      💡 강조 속어.
+
+#090  개망
+      뜻:      매우 망함
+      English: totally screwed
+      예문:    오늘 개망했어
+      💡 강조 속어.
+
+#091  공구
+      뜻:      공동구매 (group buy)
+      English: group purchase
+      예문:    공구로 싸게 샀어
+      💡 "공동 + 구매".
+
+#092  공팔
+      뜻:      공팔리터 (zero waste)
+      English: zero waste
+      예문:    공팔리터 캠페인
+      💡 환경 신조어.
+
+#093  덕질
+      뜻:      덕후 활동 (fanning)
+      English: fanning out
+      예문:    덕질 중이에요
+      💡 "덕후 + 활동".
+
+#094  입덕
+      뜻:      덕질 시작 (becoming a fan)
+      English: became a fan
+      예문:    이 그룹에 입덕
+      💡 "덕후의 길 입문".
+
+#095  탈덕
+      뜻:      덕질 그만 (leaving fandom)
+      English: left the fandom
+      예문:    이제 탈덕했어
+      💡 "덕후 탈출".
+
+#096  성덕
+      뜻:      성공한 덕후
+      English: successful fan
+      예문:    성덕이 되었어
+      💡 "성공한 덕후" — 우상과 친구된 팬.
+
+#097  본진
+      뜻:      가장 좋아하는 그룹
+      English: my main / OTP
+      예문:    내 본진은 BTS
+      💡 K-pop 팬덤 용어.
+
+#098  최애
+      뜻:      가장 좋아하는 사람
+      English: my fav / bias
+      예문:    내 최애 멤버
+      💡 "최고 + 애".
+
+#099  차애
+      뜻:      두 번째로 좋아하는 사람
+      English: my 2nd fav
+      예문:    차애도 잘생겼어
+      💡 "차순위 + 애".
+
+#100  고나리
+      뜻:      고나리(잔소리) (nagging)
+      English: nagging
+      예문:    엄마 고나리 시작
+      💡 "관리" 변형. 잔소리 의미.
+
+#101  덕통
+      뜻:      덕후 + 통화 (fan meetup)
+      English: sudden meetup
+      예문:    덕통사고로 만남
+      💡 "덕질하다 우연히 만남".
+
+#102  덕메
+      뜻:      덕질 메이트
+      English: fan friend
+      예문:    덕메 사귀었어
+      💡 "덕질 + 메이트".
+
+#103  포카
+      뜻:      포토카드 (photo card)
+      English: photocard
+      예문:    좋아하는 멤버 포카
+      💡 K-pop 팬덤 용어.
+
+#104  굿즈
+      뜻:      기념품 (merchandise)
+      English: merch / merchandise
+      예문:    굿즈 사 모아요
+      💡 팬상품.
+
+#105  팬싸
+      뜻:      팬 사인회 (fan signing)
+      English: fan signing event
+      예문:    팬싸 갔다 왔어
+      💡 "팬 + 사인회".
+
+#106  팬콘
+      뜻:      팬 콘서트
+      English: fan concert
+      예문:    팬콘 티켓 구했어
+      💡 "팬 + 콘서트".
+
+#107  앨범
+      뜻:      음반 (album)
+      English: new album
+      예문:    새 앨범 나왔어
+      💡 동일 사용.
+
+#108  음원
+      뜻:      디지털 음악
+      English: digital track
+      예문:    음원 1위!
+      💡 순수 한국어.
+
+#109  댓글
+      뜻:      comment
+      English: comment
+      예문:    댓글 달아 주세요
+      💡 순수 한국어.
+
+#110  좋아요
+      뜻:      like
+      English: like
+      예문:    좋아요 부탁해요
+      💡 SNS 용어.
+
+#111  구독
+      뜻:      subscribe
+      English: subscribe
+      예문:    구독해 주세요
+      💡 순수 한국어.
+
+#112  알람
+      뜻:      alarm / notification
+      English: notification
+      예문:    알람 켜 두세요
+      💡 "알람" — 한국에서는 알림 의미.
+
+#113  DM
+      뜻:      direct message
+      English: DM
+      예문:    DM 보내요
+      💡 동일 사용.
+
+#114  피드
+      뜻:      feed
+      English: feed
+      예문:    피드 예뻐요
+      💡 동일 사용.
+
+#115  릴스
+      뜻:      reels
+      English: reels
+      예문:    릴스 만들었어요
+      💡 인스타 영상.
+
+#116  쇼츠
+      뜻:      shorts
+      English: shorts
+      예문:    쇼츠로 잘 됐어요
+      💡 유튜브 영상.
+
+#117  비번
+      뜻:      비밀번호 (password)
+      English: password
+      예문:    비번 까먹었어
+      💡 "비밀번호" 줄임.
+
+#118  인증
+      뜻:      verification
+      English: verification
+      예문:    본인 인증
+      💡 순수 한국어.
+
+#119  인증샷
+      뜻:      증명 사진
+      English: proof photo
+      예문:    인증샷 올렸어요
+      💡 "인증 + 샷".
+
+#120  감성
+      뜻:      vibe / aesthetic
+      English: good vibes
+      예문:    이 카페 감성 좋아
+      💡 "분위기·정서".
+
+
+==============================================================================
+  C. 세 글자+ 줄임  —  3+ Character Abbreviations  (80 items)
+==============================================================================
+
+#121  갑분싸
+      뜻:      갑자기 분위기 싸해짐
+      English: awkward silence
+      예문:    농담 잘못해서 갑분싸
+      💡 "갑자기 + 분위기 + 싸늘".
+
+#122  답정너
+      뜻:      답이 정해진 너
+      English: loaded question
+      예문:    답정너 질문이야
+      💡 "답은 정해져 있고 너는 대답만 하면 돼".
+
+#123  갑툭튀
+      뜻:      갑자기 툭 튀어나옴
+      English: sudden appearance
+      예문:    수업 중 갑툭튀
+      💡 "갑자기 + 툭 + 튀어나옴".
+
+#124  솔까말
+      뜻:      솔직히 까놓고 말해서
+      English: to be honest / TBH
+      예문:    솔까말 별로야
+      💡 "솔직히 + 까놓고 + 말하면".
+
+#125  존맛탱
+      뜻:      존나 맛있는 것
+      English: super tasty / fire
+      예문:    이 라면 존맛탱
+      💡 "존맛" 강조.
+
+#126  존잘남
+      뜻:      존나 잘생긴 남자
+      English: super hot guy
+      예문:    옆자리 존잘남
+      💡 "존나 + 잘생긴 + 남자".
+
+#127  존예녀
+      뜻:      존나 예쁜 여자
+      English: super pretty girl
+      예문:    존예녀 친구
+      💡 "존나 + 예쁜 + 여자".
+
+#128  훈남
+      뜻:      훈훈한 남자 (warm guy)
+      English: warm-hearted guy
+      예문:    훈남 직장 동료
+      💡 "훈훈한 + 남자".
+
+#129  훈녀
+      뜻:      훈훈한 여자
+      English: warm-hearted girl
+      예문:    훈녀 후배
+      💡 "훈훈한 + 여자".
+
+#130  버카충
+      뜻:      버스카드 충전
+      English: top up transit card
+      예문:    버카충 해야 해
+      💡 "버스카드 + 충전".
+
+#131  휴덕
+      뜻:      휴면 덕후
+      English: dormant fan
+      예문:    휴덕 상태야
+      💡 "휴면 + 덕후".
+
+#132  잠정
+      뜻:      잠시 정지 (temporary)
+      English: temporary halt
+      예문:    활동 잠정 중단
+      💡 순수 한국어.
+
+#133  인생샷
+      뜻:      인생 최고 사진
+      English: pic of a lifetime
+      예문:    오늘 인생샷!
+      💡 "인생 + 샷".
+
+#134  인생짤
+      뜻:      인생 최고 짤
+      English: iconic image
+      예문:    인생짤이야
+      💡 "인생 + 짤".
+
+#135  인생곡
+      뜻:      인생 최고 노래
+      English: life song
+      예문:    인생곡 발견
+      💡 "인생 + 곡".
+
+#136  개꿀잼
+      뜻:      매우 재미있음
+      English: super fun
+      예문:    이 게임 개꿀잼
+      💡 "개 + 꿀 + 잼".
+
+#137  개노잼
+      뜻:      매우 재미없음
+      English: super boring
+      예문:    영화 개노잼
+      💡 "개 + 노 + 잼".
+
+#138  진짜루
+      뜻:      진짜로 (really)
+      English: for real?
+      예문:    진짜루?
+      💡 "진짜로" 부드러운 표현.
+
+#139  넹
+      뜻:      네 (yes - cute)
+      English: yep (cute)
+      예문:    넹 알겠어요
+      💡 "네" 변형.
+
+#140  넵
+      뜻:      네 (yes - cute)
+      English: yes!
+      예문:    넵 그렇게 할게요
+      💡 "네" 강조.
+
+#141  낼봐
+      뜻:      내일 봐
+      English: see you tomorrow
+      예문:    낼봐 잘 자
+      💡 "내일 봐" 줄임.
+
+#142  수고
+      뜻:      good work
+      English: good work
+      예문:    오늘도 수고
+      💡 "수고하셨습니다" 줄임.
+
+#143  오빠야
+      뜻:      오빠 (vocative)
+      English: oppa
+      예문:    오빠야 어디 가?
+      💡 "오빠" 친근한 호칭.
+
+#144  맞다
+      뜻:      맞아 (right)
+      English: oh yeah
+      예문:    맞다 그거 좋아
+      💡 "맞다" 단독.
+
+#145  올ㅋ
+      뜻:      올 + 좋다 (good)
+      English: oh nice
+      예문:    올ㅋ 멋지네
+      💡 감탄.
+
+#146  진심
+      뜻:      진심 (sincerely)
+      English: sincerely / honestly
+      예문:    진심 미안해
+      💡 강조.
+
+#147  진짜
+      뜻:      진짜 (really)
+      English: really / for real
+      예문:    진짜야 진짜!
+      💡 강조.
+
+#148  개강
+      뜻:      개강 (semester start)
+      English: semester starts
+      예문:    내일 개강이야
+      💡 한국 대학 용어.
+
+#149  방학
+      뜻:      방학 (vacation)
+      English: vacation starts
+      예문:    방학 시작!
+      💡 순수 한국어.
+
+#150  개강병
+      뜻:      개강 우울증
+      English: back-to-school blues
+      예문:    개강병 왔어
+      💡 "개강 + 병".
+
+#151  월요병
+      뜻:      월요일 우울증
+      English: Monday blues
+      예문:    월요병 심해
+      💡 "월요일 + 병".
+
+#152  화요병
+      뜻:      화요일 피로
+      English: Tuesday blues
+      예문:    화요병이 더 힘들어
+      💡 "화요일 + 병".
+
+#153  명불허전
+      뜻:      명성에 부합 (lives up to fame)
+      English: lives up to the hype
+      예문:    맛집 명불허전
+      💡 사자성어.
+
+#154  개불쌍
+      뜻:      매우 불쌍
+      English: so pitiful
+      예문:    강아지 개불쌍
+      💡 "개 + 불쌍".
+
+#155  개간지
+      뜻:      매우 멋짐 (super cool)
+      English: super cool / dope
+      예문:    옷 개간지
+      💡 "개 + 간지(멋)".
+
+#156  개부럽
+      뜻:      매우 부러움
+      English: so jealous
+      예문:    여행 개부럽
+      💡 "개 + 부럽".
+
+#157  내로남불
+      뜻:      내가 하면 로맨스, 남이 하면 불륜
+      English: hypocrisy
+      예문:    내로남불의 전형
+      💡 "내가 하면 + 로맨스, 남이 하면 + 불륜".
+
+#158  개취
+      뜻:      개인 취향 (personal taste)
+      English: personal preference
+      예문:    개취니까 존중해
+      💡 "개인 + 취향".
+
+#159  존버
+      뜻:      끝까지 버틴다 (hold on)
+      English: hold strong
+      예문:    존버해서 이겼어
+      💡 비속어. "존나 + 버티다".
+
+#160  오지다
+      뜻:      감탄 (awesome)
+      English: awesome
+      예문:    이거 오졌어!
+      💡 감탄 속어.
+
+#161  지렸다
+      뜻:      매우 놀라움 (mind-blown)
+      English: mind-blown
+      예문:    실력이 지렸어
+      💡 비속어. 강한 감탄.
+
+#162  덜덜덜
+      뜻:      매우 놀람
+      English: shock / wow
+      예문:    가격 덜덜덜
+      💡 "덜덜" 강조.
+
+#163  드디어
+      뜻:      finally
+      English: finally
+      예문:    드디어 끝났어
+      💡 순수 한국어.
+
+#164  마침내
+      뜻:      finally
+      English: at last
+      예문:    마침내 합격
+      💡 순수 한국어.
+
+#165  가즈아
+      뜻:      가자 (let's gooo)
+      English: let's gooo
+      예문:    우승 가즈아!
+      💡 "가자" 강조.
+
+#166  띵곡
+      뜻:      명곡 (great song)
+      English: banger / great song
+      예문:    이 노래 띵곡
+      💡 "명곡" 음역 변형.
+
+#167  띵작
+      뜻:      명작 (masterpiece)
+      English: masterpiece
+      예문:    이 영화 띵작!
+      💡 "명작" 변형.
+
+#168  띵언
+      뜻:      명언 (great quote)
+      English: great quote
+      예문:    띵언이네요
+      💡 "명언" 변형.
+
+#169  꼰대
+      뜻:      보수적 어른 (boomer)
+      English: boomer / out of touch
+      예문:    꼰대 같은 말
+      💡 순수 한국어.
+
+#170  진상
+      뜻:      진상 손님 (Karen)
+      English: Karen / difficult customer
+      예문:    진상 손님 왔어
+      💡 순수 한국어.
+
+#171  꿀단지
+      뜻:      꿀단지 (sweet pot)
+      English: sweet as honey
+      예문:    꿀단지 같이 달콤해
+      💡 비유 표현.
+
+#172  꿀맛
+      뜻:      꿀같이 맛있음
+      English: sweet as honey
+      예문:    공부 후 휴식이 꿀맛
+      💡 "꿀 + 맛".
+
+#173  꿀물
+      뜻:      꿀물 (honey water)
+      English: honey water
+      예문:    피곤할 때 꿀물
+      💡 숙취 해소용으로 인기.
+
+#174  닥본사
+      뜻:      닥치고 본방 사수
+      English: must watch live
+      예문:    오늘은 닥본사!
+      💡 "닥치고 + 본방 + 사수".
+
+#175  본방사수
+      뜻:      본 방송 사수
+      English: watching live
+      예문:    본방사수 못 했어
+      💡 "본 방송 + 사수".
+
+#176  정주행
+      뜻:      몰아보기
+      English: binge-watch
+      예문:    드라마 정주행
+      💡 순수 한국어.
+
+#177  역주행
+      뜻:      역방향 인기 (going viral late)
+      English: going viral late
+      예문:    옛 노래 역주행
+      💡 "역방향 + 주행".
+
+#178  올킬
+      뜻:      차트 1위 석권
+      English: sweeping charts
+      예문:    신곡 차트 올킬
+      💡 K-pop 용어.
+
+#179  퍼펙트
+      뜻:      perfect
+      English: perfect
+      예문:    퍼펙트한 경기
+      💡 동일 사용.
+
+#180  포스
+      뜻:      분위기·기운 (aura)
+      English: strong aura
+      예문:    그 사람 포스 대단
+      💡 "force"와 다른 의미.
+
+#181  비주얼
+      뜻:      외모 담당
+      English: visual member
+      예문:    비주얼 멤버
+      💡 K-pop 용어.
+
+#182  비글미
+      뜻:      비글 같은 매력
+      English: playful / lively charm
+      예문:    강아지 비글미
+      💡 "비글" 강아지처럼 활발한 매력.
+
+#183  개훌륭
+      뜻:      매우 훌륭
+      English: super great
+      예문:    개훌륭 솔직히
+      💡 "개 + 훌륭".
+
+#184  방가워
+      뜻:      반가워 (귀엽게)
+      English: nice to meet you (cute)
+      예문:    방가워 친구야
+      💡 "반가워" 변형.
+
+#185  안녕하세영
+      뜻:      안녕하세요 (cute)
+      English: hello (cute)
+      예문:    안녕하세영 ^^
+      💡 "요" → "영" 변형 — 귀여움.
+
+#186  좋아용
+      뜻:      좋아요 (cute)
+      English: like (cute)
+      예문:    이거 좋아용
+      💡 "요" → "용" 변형.
+
+#187  고마웡
+      뜻:      고마워 (cute)
+      English: thanks (cute)
+      예문:    도와줘서 고마웡
+      💡 "워" → "웡" 변형.
+
+#188  미안해영
+      뜻:      미안해요 (cute)
+      English: sorry (cute)
+      예문:    늦어서 미안해영
+      💡 "요" → "영" 변형.
+
+#189  행쇼
+      뜻:      행복하십시오 (be happy)
+      English: be happy
+      예문:    오늘도 행쇼!
+      💡 "행복하세요" 줄임.
+
+#190  여친
+      뜻:      여자친구 (girlfriend)
+      English: girlfriend
+      예문:    여친 생겼어
+      💡 "여자 + 친구".
+
+#191  남친
+      뜻:      남자친구 (boyfriend)
+      English: boyfriend
+      예문:    남친이랑 데이트
+      💡 "남자 + 친구".
+
+#192  엄친아
+      뜻:      엄마 친구 아들 (perfect son)
+      English: perfect son archetype
+      예문:    엄친아 같아
+      💡 "엄마 + 친구 + 아들".
+
+#193  엄친딸
+      뜻:      엄마 친구 딸 (perfect daughter)
+      English: perfect daughter archetype
+      예문:    엄친딸이라 부럽
+      💡 "엄마 + 친구 + 딸".
+
+#194  애정
+      뜻:      affection
+      English: affection
+      예문:    애정 표현이 부족
+      💡 한국어.
+
+#195  솔직
+      뜻:      honesty
+      English: honestly
+      예문:    솔직히 말해
+      💡 한국어.
+
+#196  답답
+      뜻:      frustrating
+      English: frustrating
+      예문:    진짜 답답해
+      💡 한국어.
+
+#197  속터짐
+      뜻:      극도로 답답
+      English: infuriating
+      예문:    속터질 정도야
+      💡 "속이 터지다".
+
+#198  눈치
+      뜻:      social awareness
+      English: social cue
+      예문:    눈치껏 행동해
+      💡 한국 문화 핵심 개념.
+
+#199  눈치빠른
+      뜻:      눈치 빠른
+      English: socially perceptive
+      예문:    눈치빠른 사람
+      💡 "눈치 + 빠르다".
+
+#200  눈치없는
+      뜻:      눈치 없는
+      English: clueless
+      예문:    눈치없는 사람
+      💡 "눈치 + 없다".
+
+
+==============================================================================
+  D. SNS·인터넷 문화  —  SNS & Internet Culture  (80 items)
+==============================================================================
+
+#201  인스타
+      뜻:      인스타그램
+      English: Instagram
+      예문:    인스타에 올렸어요
+      💡 "인스타그램" 줄임.
+
+#202  인스타그래머블
+      뜻:      인스타 올릴 만한
+      English: Instagrammable
+      예문:    이 카페 인스타그래머블
+      💡 "인스타 + 가능".
+
+#203  갬성
+      뜻:      감성 (vibe - cute)
+      English: aesthetic vibes
+      예문:    갬성 사진이야
+      💡 "감성" 변형.
+
+#204  감성 사진
+      뜻:      분위기 있는 사진
+      English: aesthetic photo
+      예문:    감성 사진 찍어요
+      💡 인스타 트렌드.
+
+#205  인생짤
+      뜻:      인생 최고 사진
+      English: iconic photo
+      예문:    이건 인생짤!
+      💡 "인생 + 짤".
+
+#206  인생샷
+      뜻:      인생 최고 샷
+      English: once-in-a-lifetime shot
+      예문:    인생샷 건졌어요
+      💡 "인생 + 샷".
+
+#207  셀카
+      뜻:      셀프 카메라
+      English: selfie
+      예문:    셀카 같이 찍어요
+      💡 "셀프 + 카메라".
+
+#208  폰카
+      뜻:      휴대폰 카메라
+      English: phone camera
+      예문:    폰카로 찍었어
+      💡 "폰 + 카메라".
+
+#209  홈피
+      뜻:      홈페이지
+      English: homepage
+      예문:    홈피 들어가 봐
+      💡 "홈페이지" 줄임.
+
+#210  블로그
+      뜻:      blog
+      English: blog
+      예문:    블로그 운영해요
+      💡 동일 사용.
+
+#211  브이로그
+      뜻:      vlog
+      English: vlog
+      예문:    브이로그 자주 봐요
+      💡 "비디오 + 블로그".
+
+#212  유튜브
+      뜻:      YouTube
+      English: YouTube
+      예문:    유튜브로 공부해요
+      💡 동일 사용.
+
+#213  유튜버
+      뜻:      YouTuber
+      English: YouTuber
+      예문:    유명 유튜버예요
+      💡 동일 사용.
+
+#214  BJ
+      뜻:      인터넷 방송인
+      English: streamer
+      예문:    인기 BJ
+      💡 "Broadcasting Jockey".
+
+#215  스트리머
+      뜻:      streamer
+      English: streamer
+      예문:    트위치 스트리머
+      💡 동일 사용.
+
+#216  라방
+      뜻:      라이브 방송
+      English: live broadcast
+      예문:    라방 켰어요
+      💡 "라이브 + 방송".
+
+#217  방송
+      뜻:      broadcast
+      English: streaming
+      예문:    방송 들어왔어요
+      💡 순수 한국어.
+
+#218  구독자
+      뜻:      subscriber
+      English: subscriber
+      예문:    구독자 만 명 돌파
+      💡 "구독 + 자".
+
+#219  팔로워
+      뜻:      follower
+      English: follower
+      예문:    팔로워가 많아요
+      💡 동일 사용.
+
+#220  맞팔
+      뜻:      맞 팔로우 (mutual follow)
+      English: follow back
+      예문:    맞팔해요!
+      💡 "맞 + 팔로우".
+
+#221  언팔
+      뜻:      언팔로우 (unfollow)
+      English: unfollow
+      예문:    언팔당했어
+      💡 "언 + 팔로우".
+
+#222  블락
+      뜻:      차단 (block)
+      English: block
+      예문:    블락했어요
+      💡 "블록" 발음 변형.
+
+#223  신고
+      뜻:      report
+      English: report
+      예문:    신고했어요
+      💡 순수 한국어.
+
+#224  좋반
+      뜻:      좋아요 반사
+      English: like back
+      예문:    좋반 해 주세요
+      💡 "좋아요 + 반사".
+
+#225  공유
+      뜻:      share
+      English: share
+      예문:    공유 좀 해 주세요
+      💡 순수 한국어.
+
+#226  좋아요 반사
+      뜻:      like for like
+      English: like for like
+      예문:    좋아요 반사 환영!
+      💡 "좋아요 반사".
+
+#227  인친
+      뜻:      인스타 친구
+      English: Insta friend
+      예문:    인친 신청했어요
+      💡 "인스타 + 친구".
+
+#228  카친
+      뜻:      카톡 친구
+      English: KakaoTalk friend
+      예문:    카친 추가해요
+      💡 "카톡 + 친구".
+
+#229  오프
+      뜻:      오프라인 만남
+      English: offline meet
+      예문:    오프에서 만났어
+      💡 "오프라인" 줄임.
+
+#230  덕통사고
+      뜻:      우연히 덕질 시작
+      English: sudden fan moment
+      예문:    덕통사고 났어요
+      💡 "덕질 + 교통사고".
+
+#231  본방
+      뜻:      본 방송
+      English: live broadcast
+      예문:    본방 놓치지 마
+      💡 "본 + 방송".
+
+#232  재방
+      뜻:      재방송
+      English: rerun
+      예문:    재방으로 봤어
+      💡 "재 + 방송".
+
+#233  VOD
+      뜻:      다시 보기
+      English: VOD / on-demand
+      예문:    VOD로 봐요
+      💡 "Video On Demand".
+
+#234  몰아보기
+      뜻:      binge watching
+      English: binge watching
+      예문:    몰아보기 중
+      💡 순수 한국어.
+
+#235  댓글창
+      뜻:      comment section
+      English: comment section
+      예문:    댓글창이 시끌
+      💡 "댓글 + 창".
+
+#236  악플
+      뜻:      악성 댓글
+      English: hate comment
+      예문:    악플 없애 주세요
+      💡 "악성 + 리플".
+
+#237  선플
+      뜻:      좋은 댓글
+      English: positive comment
+      예문:    선플 운동
+      💡 "선한 + 리플".
+
+#238  리플
+      뜻:      댓글 (reply)
+      English: reply / comment
+      예문:    리플 달아 줘
+      💡 "reply" 발음.
+
+#239  댓글러
+      뜻:      댓글 다는 사람
+      English: commenter
+      예문:    열정 댓글러
+      💡 "댓글 + er".
+
+#240  눈팅
+      뜻:      눈으로만 보기 (lurking)
+      English: lurking
+      예문:    눈팅만 해요
+      💡 "눈으로 + 채팅".
+
+#241  잠수
+      뜻:      잠수 타기 (ghosting)
+      English: ghosting / went silent
+      예문:    카톡 잠수 탔어요
+      💡 "잠수 + 타다".
+
+#242  읽씹
+      뜻:      읽고 씹기 (read & ignore)
+      English: left on read
+      예문:    읽씹 당했어
+      💡 "읽고 + 씹다".
+
+#243  안읽씹
+      뜻:      안 읽고 씹기
+      English: didn't read
+      예문:    안읽씹은 더 심함
+      💡 "안 읽고 + 씹다".
+
+#244  답장
+      뜻:      reply
+      English: reply
+      예문:    답장 빨라요
+      💡 순수 한국어.
+
+#245  폭주
+      뜻:      폭주 (rage)
+      English: rampage / rage
+      예문:    폭주 모드
+      💡 순수 한국어.
+
+#246  단톡방
+      뜻:      단체 카톡방
+      English: group chat
+      예문:    단톡방 만들었어
+      💡 "단체 + 카톡 + 방".
+
+#247  디엠
+      뜻:      DM (direct message)
+      English: DM
+      예문:    디엠 보내요
+      💡 "DM" 음역.
+
+#248  단호박
+      뜻:      단호한 거절
+      English: firm refusal
+      예문:    단호박으로 거절
+      💡 "단호 + 호박(pumpkin)" 농담.
+
+#249  훈수
+      뜻:      참견 (unsolicited advice)
+      English: unsolicited advice
+      예문:    훈수 두지 마
+      💡 "훈수" — 바둑 용어에서.
+
+#250  오해
+      뜻:      misunderstanding
+      English: misunderstanding
+      예문:    오해하지 마
+      💡 순수 한국어.
+
+#251  오타
+      뜻:      typo
+      English: typo
+      예문:    오타 났어요
+      💡 "오 + 타자".
+
+#252  맞춤법
+      뜻:      spelling
+      English: spelling
+      예문:    맞춤법 틀렸어
+      💡 순수 한국어.
+
+#253  문법
+      뜻:      grammar
+      English: grammar
+      예문:    문법 신경 써
+      💡 순수 한국어.
+
+#254  오글
+      뜻:      오글거림 (cringe)
+      English: cringe
+      예문:    오글거려요
+      💡 "오글거리다" 줄임.
+
+#255  흑역사
+      뜻:      흑역사 (dark past)
+      English: embarrassing past
+      예문:    흑역사 영상
+      💡 "흑 + 역사".
+
+#256  백역사
+      뜻:      좋았던 시절
+      English: glory days
+      예문:    백역사 사진
+      💡 "흑역사"의 반대.
+
+#257  개구리
+      뜻:      개구리 (frog meme)
+      English: Pepe / frog meme
+      예문:    개구리 짤
+      💡 인터넷 밈.
+
+#258  움짤
+      뜻:      움직이는 짤 (GIF)
+      English: GIF
+      예문:    움짤 만들었어
+      💡 "움직이는 + 짤".
+
+#259  움직이는짤
+      뜻:      GIF / 움짤
+      English: GIF
+      예문:    움직이는짤 공유
+      💡 "움짤" 풀어쓴 형태.
+
+#260  썸네일
+      뜻:      thumbnail
+      English: thumbnail
+      예문:    썸네일 어떻게?
+      💡 동일 사용.
+
+#261  커버
+      뜻:      cover
+      English: cover
+      예문:    앨범 커버
+      💡 동일 사용.
+
+#262  리뷰
+      뜻:      review
+      English: review
+      예문:    리뷰 좋아요
+      💡 동일 사용.
+
+#263  평점
+      뜻:      rating
+      English: rating
+      예문:    평점 5점
+      💡 순수 한국어.
+
+#264  별점
+      뜻:      star rating
+      English: star rating
+      예문:    별점 4개 줬어
+      💡 순수 한국어.
+
+#265  댓잘잘
+      뜻:      댓글 잘 다는 사람
+      English: good commenter
+      예문:    댓잘잘 친구
+      💡 "댓글 + 잘 잘".
+
+#266  손민수
+      뜻:      무조건 따라하기
+      English: copying trend
+      예문:    손민수 패션
+      💡 드라마 캐릭터에서 유래.
+
+#267  옛감성
+      뜻:      옛 감성 (retro vibe)
+      English: retro vibe
+      예문:    옛감성 카페
+      💡 "옛 + 감성".
+
+#268  뉴트로
+      뜻:      신복고
+      English: newtro / new retro
+      예문:    뉴트로 패션
+      💡 "New + Retro".
+
+#269  감성있다
+      뜻:      감성 있음
+      English: has vibes
+      예문:    이 곡 감성있어
+      💡 "감성 + 있다".
+
+#270  갬성있다
+      뜻:      감성 있음 (cute)
+      English: vibey
+      예문:    갬성있는 카페
+      💡 "감성" 변형.
+
+#271  덕질하다
+      뜻:      to fanboy/girl
+      English: to fan
+      예문:    덕질하느라 바빠
+      💡 "덕질 + 하다".
+
+#272  잡덕
+      뜻:      여러 그룹 덕후
+      English: multi-fandom
+      예문:    잡덕이라 많아
+      💡 "잡 + 덕후".
+
+#273  외덕
+      뜻:      외국 덕후
+      English: international fan
+      예문:    외덕 늘었어요
+      💡 "외국 + 덕후".
+
+#274  홈피
+      뜻:      개인 사이트
+      English: homepage
+      예문:    내 홈피 들어와
+      💡 "홈페이지" 줄임.
+
+#275  미투
+      뜻:      #MeToo
+      English: MeToo
+      예문:    미투 운동
+      💡 운동명.
+
+#276  불매
+      뜻:      보이콧
+      English: boycott
+      예문:    불매 운동 중
+      💡 "불매 + 운동".
+
+#277  여론
+      뜻:      public opinion
+      English: public opinion
+      예문:    여론이 안 좋아
+      💡 순수 한국어.
+
+#278  파문
+      뜻:      파문 (scandal)
+      English: scandal / uproar
+      예문:    파문이 일었어
+      💡 순수 한국어.
+
+#279  가짜뉴스
+      뜻:      fake news
+      English: fake news
+      예문:    가짜뉴스 조심
+      💡 순수 한국어.
+
+#280  실검
+      뜻:      실시간 검색어
+      English: trending search
+      예문:    실검 1위
+      💡 "실시간 + 검색어".
+
+
+==============================================================================
+  E. K-pop·팬덤  —  K-pop & Fandom  (70 items)
+==============================================================================
+
+#281  오빠
+      뜻:      형 (older brother / oppa)
+      English: oppa
+      예문:    오빠 노래 좋아
+      💡 팬덤에서 그대로 영어 사용.
+
+#282  누나
+      뜻:      언니 (older sister / noona)
+      English: noona
+      예문:    누나 팬이에요
+      💡 팬덤에서 그대로 영어 사용.
+
+#283  형
+      뜻:      형 (older bro)
+      English: hyung
+      예문:    형 응원해
+      💡 남성→남성 호칭.
+
+#284  언니
+      뜻:      older sister
+      English: unnie
+      예문:    언니 멋있어요
+      💡 여성→여성 호칭.
+
+#285  막내
+      뜻:      youngest member
+      English: maknae
+      예문:    막내가 귀여워
+      💡 "막 + 내". 영어로 'maknae' 차용.
+
+#286  고참
+      뜻:      senior
+      English: senior member
+      예문:    고참 멤버
+      💡 순수 한국어.
+
+#287  센터
+      뜻:      중앙 멤버 (center)
+      English: center
+      예문:    센터 자리
+      💡 K-pop 용어.
+
+#288  비주얼
+      뜻:      외모 담당
+      English: visual member
+      예문:    비주얼 담당
+      💡 K-pop 용어.
+
+#289  메인보컬
+      뜻:      main vocalist
+      English: main vocalist
+      예문:    메인보컬 최고
+      💡 한국식. 영어 'lead vocalist'.
+
+#290  리드보컬
+      뜻:      lead vocalist
+      English: lead vocalist
+      예문:    리드보컬 안정적
+      💡 K-pop 직책.
+
+#291  서브보컬
+      뜻:      sub vocalist
+      English: sub-vocalist
+      예문:    서브보컬도 잘해
+      💡 K-pop 직책.
+
+#292  메인댄서
+      뜻:      main dancer
+      English: main dancer
+      예문:    메인댄서 춤
+      💡 K-pop 직책.
+
+#293  리드댄서
+      뜻:      lead dancer
+      English: lead dancer
+      예문:    리드댄서 안무
+      💡 K-pop 직책.
+
+#294  메인래퍼
+      뜻:      main rapper
+      English: main rapper
+      예문:    메인래퍼 실력
+      💡 K-pop 직책.
+
+#295  리더
+      뜻:      leader
+      English: leader
+      예문:    리더 발언
+      💡 동일 사용.
+
+#296  멤버
+      뜻:      member
+      English: member
+      예문:    멤버 7명
+      💡 동일 사용.
+
+#297  비글미
+      뜻:      활발한 매력
+      English: playful charm
+      예문:    비글미 매력
+      💡 "비글"처럼 활발한 매력.
+
+#298  카리스마
+      뜻:      charisma
+      English: charisma
+      예문:    무대 카리스마
+      💡 동일 사용.
+
+#299  무대
+      뜻:      stage
+      English: stage
+      예문:    무대가 멋있어
+      💡 순수 한국어.
+
+#300  앵콜
+      뜻:      encore
+      English: encore
+      예문:    앵콜 외쳤어
+      💡 동일 사용.
+
+#301  팬덤
+      뜻:      fandom
+      English: fandom
+      예문:    팬덤이 강해
+      💡 동일 사용.
+
+#302  공식 팬클럽
+      뜻:      official fan club
+      English: official fan club
+      예문:    공식 팬클럽 가입
+      💡 순수 한국어.
+
+#303  팬미팅
+      뜻:      fan meeting
+      English: fan meeting
+      예문:    팬미팅 갔어요
+      💡 동일 사용.
+
+#304  팬콘
+      뜻:      팬 콘서트
+      English: fan concert
+      예문:    팬콘 표 사기
+      💡 "팬 + 콘서트".
+
+#305  콘서트
+      뜻:      concert
+      English: concert
+      예문:    콘서트 갈래
+      💡 동일 사용.
+
+#306  단콘
+      뜻:      단독 콘서트
+      English: solo concert
+      예문:    단콘 열었어요
+      💡 "단독 + 콘서트".
+
+#307  월콘
+      뜻:      월드 콘서트
+      English: world tour
+      예문:    월콘 투어 중
+      💡 "월드 + 콘서트".
+
+#308  투어
+      뜻:      tour
+      English: tour
+      예문:    투어 시작
+      💡 동일 사용.
+
+#309  앨범
+      뜻:      album
+      English: album
+      예문:    새 앨범 나왔어요
+      💡 동일 사용.
+
+#310  미니앨범
+      뜻:      mini album / EP
+      English: EP
+      예문:    미니앨범 발매
+      💡 한국·일본식. 영어 'EP'.
+
+#311  정규앨범
+      뜻:      full album
+      English: full album / LP
+      예문:    정규앨범 발매
+      💡 "정규 + 앨범".
+
+#312  리패키지
+      뜻:      repackage
+      English: repackage album
+      예문:    리패키지 앨범
+      💡 K-pop 특유 — 기존 앨범에 신곡 추가.
+
+#313  컴백
+      뜻:      comeback
+      English: comeback
+      예문:    컴백 했어요!
+      💡 K-pop에서 '새 앨범 발표' 의미.
+
+#314  데뷔
+      뜻:      debut
+      English: debut
+      예문:    5월 데뷔 예정
+      💡 동일 사용.
+
+#315  신곡
+      뜻:      new song
+      English: new song / new release
+      예문:    신곡 떴어요!
+      💡 "새 + 곡".
+
+#316  타이틀곡
+      뜻:      title track
+      English: title track / lead single
+      예문:    타이틀곡 추천!
+      💡 "타이틀 + 곡".
+
+#317  수록곡
+      뜻:      album track
+      English: album track
+      예문:    수록곡도 좋아요
+      💡 "수록 + 곡".
+
+#318  음방
+      뜻:      음악 방송
+      English: music show
+      예문:    음방 1위!
+      💡 "음악 + 방송".
+
+#319  역주행
+      뜻:      옛 곡 차트 재진입
+      English: chart re-entry
+      예문:    역주행 시작
+      💡 "역 + 주행".
+
+#320  올킬
+      뜻:      전 차트 1위
+      English: sweeping charts
+      예문:    신곡 올킬
+      💡 "올 + kill".
+
+#321  음원사재기
+      뜻:      음원 매수 조작
+      English: chart manipulation
+      예문:    음원사재기 의혹
+      💡 K-pop 윤리 이슈 용어.
+
+#322  포카
+      뜻:      포토카드
+      English: photocard
+      예문:    포카 모았어
+      💡 "포토 + 카드".
+
+#323  미공포
+      뜻:      미공개 포토카드
+      English: unreleased photocard
+      예문:    미공포 운 좋아
+      💡 "미공개 + 포카".
+
+#324  굿즈
+      뜻:      merchandise
+      English: merch
+      예문:    굿즈 사 모음
+      💡 동일 사용.
+
+#325  공식굿즈
+      뜻:      official merch
+      English: official merch
+      예문:    공식굿즈만 사요
+      💡 "공식 + 굿즈".
+
+#326  비공식
+      뜻:      unofficial
+      English: unofficial
+      예문:    비공식 굿즈 조심
+      💡 순수 한국어.
+
+#327  팬싸
+      뜻:      팬 사인회
+      English: fan signing
+      예문:    팬싸 다녀왔어
+      💡 "팬 + 사인회".
+
+#328  팬싸이트
+      뜻:      팬 사이트
+      English: fan site
+      예문:    팬싸이트 마스터
+      💡 "팬 + 사이트".
+
+#329  홈마
+      뜻:      홈페이지 마스터
+      English: fansite master
+      예문:    홈마 사진 예뻐요
+      💡 "홈페이지 + 마스터".
+
+#330  퍼블
+      뜻:      퍼블리시 (publish)
+      English: publish / fansite photo
+      예문:    퍼블 사진
+      💡 "publish" 줄임.
+
+#331  비글
+      뜻:      비글미 (playful)
+      English: playful
+      예문:    비글 같아 ㅋㅋ
+      💡 "비글미"의 줄임.
+
+#332  아이돌
+      뜻:      K-pop idol
+      English: K-pop idol
+      예문:    아이돌 꿈꿔요
+      💡 한국·일본 음악업계 용어.
+
+#333  연습생
+      뜻:      trainee
+      English: trainee
+      예문:    연습생 6년차
+      💡 K-pop 시스템.
+
+#334  기획사
+      뜻:      agency
+      English: agency / label
+      예문:    큰 기획사 소속
+      💡 순수 한국어.
+
+#335  빅3
+      뜻:      3대 기획사
+      English: Big 3 agencies
+      예문:    빅3 출신
+      💡 SM·YG·JYP 등.
+
+#336  새우
+      뜻:      중소 기획사 아티스트
+      English: small agency artist
+      예문:    새우 그룹이지만 인기
+      💡 "고래·새우" 비유.
+
+#337  고래
+      뜻:      대형 기획사
+      English: big agency
+      예문:    고래 사이 새우
+      💡 비유 표현.
+
+#338  콘셉트
+      뜻:      concept / theme
+      English: concept / theme
+      예문:    이번 콘셉트 좋아
+      💡 K-pop 신앨범마다 다른 "테마".
+
+#339  콘셉트 사진
+      뜻:      concept photo
+      English: concept photo
+      예문:    콘셉트 사진 떴어
+      💡 앨범 시각 자료.
+
+#340  비하인드
+      뜻:      behind the scenes
+      English: BTS / behind
+      예문:    비하인드 영상 공개
+      💡 "behind" 줄임.
+
+#341  비하인드 컷
+      뜻:      behind cut
+      English: behind shots
+      예문:    비하인드 컷 가득
+      💡 "behind + cut".
+
+#342  무대비하인드
+      뜻:      무대 뒤 영상
+      English: backstage footage
+      예문:    무대비하인드 공개
+      💡 "무대 + 비하인드".
+
+#343  입대
+      뜻:      군 입대
+      English: military enlistment
+      예문:    멤버 입대 소식
+      💡 순수 한국어. K-pop 슬픈 시즌.
+
+#344  전역
+      뜻:      전역 (discharge)
+      English: discharged
+      예문:    전역하면 활동
+      💡 순수 한국어.
+
+#345  군백기
+      뜻:      군대 공백기
+      English: military hiatus
+      예문:    군백기 끝!
+      💡 "군대 + 공백기".
+
+#346  이적
+      뜻:      소속사 이동
+      English: label change
+      예문:    이적했대요
+      💡 "이 + 적(소속)".
+
+#347  해체
+      뜻:      그룹 해체
+      English: disband
+      예문:    해체 발표
+      💡 순수 한국어.
+
+#348  솔로
+      뜻:      solo
+      English: solo
+      예문:    솔로로 컴백
+      💡 동일 사용.
+
+#349  유닛
+      뜻:      unit (sub-group)
+      English: unit / sub-group
+      예문:    유닛 활동
+      💡 K-pop 그룹 내 소그룹.
+
+#350  OST
+      뜻:      드라마·영화 OST
+      English: soundtrack
+      예문:    드라마 OST 들었어
+      💡 "Original Sound Track".
+
+
+==============================================================================
+  F. 게임·온라인  —  Gaming & Online  (60 items)
+==============================================================================
+
+#351  GG
+      뜻:      항복 (good game)
+      English: GG (give up)
+      예문:    이판은 GG
+      💡 "Good Game". 게임 종료 인사.
+
+#352  노템
+      뜻:      아이템 없음
+      English: no items
+      예문:    노템으로 이김
+      💡 "노 + 템".
+
+#353  렙업
+      뜻:      레벨업
+      English: level up
+      예문:    렙업 했어
+      💡 "레벨 + 업".
+
+#354  고렙
+      뜻:      높은 레벨
+      English: high level
+      예문:    고렙 캐릭터
+      💡 "고 + 렙".
+
+#355  저렙
+      뜻:      낮은 레벨
+      English: low level
+      예문:    저렙 사냥
+      💡 "저 + 렙".
+
+#356  만렙
+      뜻:      최고 레벨
+      English: max level
+      예문:    만렙 찍었어
+      💡 "만 + 렙".
+
+#357  고수
+      뜻:      고수 (master)
+      English: pro / master
+      예문:    고수 만났네
+      💡 순수 한국어.
+
+#358  하수
+      뜻:      초보 (newbie)
+      English: noob / beginner
+      예문:    하수랑 매칭
+      💡 순수 한국어.
+
+#359  뉴비
+      뜻:      newbie
+      English: newbie
+      예문:    뉴비입니다
+      💡 동일 사용.
+
+#360  꼬꼬마
+      뜻:      초보 (cute beginner)
+      English: newbie (cute)
+      예문:    꼬꼬마 시절
+      💡 "꼬마" 강조.
+
+#361  고인물
+      뜻:      오래된 유저
+      English: veteran player
+      예문:    고인물 만났어
+      💡 "고인 + 물" — 오래된 물.
+
+#362  꿀잼
+      뜻:      매우 재미있음
+      English: super fun
+      예문:    이 게임 꿀잼
+      💡 "꿀 + 잼".
+
+#363  트롤
+      뜻:      트롤링
+      English: troll
+      예문:    팀에 트롤 있어
+      💡 고의로 팀 망치는 사람.
+
+#364  핵
+      뜻:      치트 (hack)
+      English: hacker / cheater
+      예문:    핵쟁이 신고
+      💡 "hack" 줄임.
+
+#365  막피
+      뜻:      막무가내 PK
+      English: random PK
+      예문:    막피 당했어
+      💡 "막 + PK(player kill)".
+
+#366  PK
+      뜻:      player kill
+      English: player kill
+      예문:    PK 금지 구역
+      💡 "Player Kill" 줄임.
+
+#367  파티
+      뜻:      party (group)
+      English: party / group
+      예문:    파티 모집
+      💡 게임 용어.
+
+#368  길드
+      뜻:      guild
+      English: guild
+      예문:    길드 가입했어
+      💡 동일 사용.
+
+#369  공격대
+      뜻:      raid party
+      English: raid party
+      예문:    공격대 모집
+      💡 "공격 + 대".
+
+#370  보스
+      뜻:      boss
+      English: boss
+      예문:    보스 잡으러 가
+      💡 동일 사용.
+
+#371  몹
+      뜻:      몬스터 (mob)
+      English: mob / monster
+      예문:    몹 사냥 중
+      💡 "mob" 줄임.
+
+#372  리겜
+      뜻:      리듬 게임
+      English: rhythm game
+      예문:    리겜 잘함
+      💡 "리듬 + 게임".
+
+#373  FPS
+      뜻:      FPS game
+      English: FPS
+      예문:    FPS 좋아해
+      💡 "First Person Shooter".
+
+#374  RPG
+      뜻:      RPG
+      English: RPG
+      예문:    RPG 매니아
+      💡 "Role Playing Game".
+
+#375  AOS
+      뜻:      AOS (MOBA)
+      English: MOBA
+      예문:    AOS 게임
+      💡 한국식 약어. 영어 'MOBA'.
+
+#376  리그
+      뜻:      League of Legends
+      English: League / LoL
+      예문:    리그 매니아
+      💡 "리그 오브 레전드" 줄임.
+
+#377  롤
+      뜻:      League of Legends
+      English: LoL
+      예문:    롤 한 판 더
+      💡 "LoL" 음역.
+
+#378  피지컬
+      뜻:      physical skill
+      English: physical skill / mechanics
+      예문:    피지컬 좋아
+      💡 게임에서 "손 빠르기".
+
+#379  센스
+      뜻:      game sense
+      English: game sense
+      예문:    센스 있어
+      💡 판단력.
+
+#380  운빨
+      뜻:      운으로 이김
+      English: luck-based
+      예문:    운빨 게임
+      💡 "운 + 빨".
+
+#381  실력빨
+      뜻:      실력으로 이김
+      English: skill-based
+      예문:    실력빨이야
+      💡 "실력 + 빨".
+
+#382  각
+      뜻:      angle / opportunity
+      English: opening / angle
+      예문:    공격 각 나옴
+      💡 기회 의미.
+
+#383  버그
+      뜻:      bug
+      English: bug
+      예문:    버그 발견했어
+      💡 동일 사용.
+
+#384  패치
+      뜻:      patch
+      English: patch
+      예문:    패치 노트 봐요
+      💡 동일 사용.
+
+#385  너프
+      뜻:      nerf
+      English: nerf / weaken
+      예문:    너프됐어
+      💡 동일 사용.
+
+#386  버프
+      뜻:      buff
+      English: buff / strengthen
+      예문:    버프 받았어
+      💡 동일 사용.
+
+#387  메타
+      뜻:      meta
+      English: meta
+      예문:    이번 메타
+      💡 동일 사용. 현 트렌드.
+
+#388  티어
+      뜻:      tier / rank
+      English: tier / rank
+      예문:    플래티넘 티어
+      💡 동일 사용.
+
+#389  승급
+      뜻:      promotion
+      English: promotion
+      예문:    승급전 통과
+      💡 순수 한국어.
+
+#390  강등
+      뜻:      demotion
+      English: demotion
+      예문:    강등됐어ㅠㅠ
+      💡 순수 한국어.
+
+#391  양학
+      뜻:      양민 학살
+      English: smurfing / stomping noobs
+      예문:    양학 그만
+      💡 "양민 + 학살".
+
+#392  양민
+      뜻:      일반 사용자
+      English: casual player
+      예문:    양민 학살러
+      💡 "양민" — 일반 시민.
+
+#393  부캐
+      뜻:      부 캐릭터
+      English: alt character
+      예문:    부캐로 양학
+      💡 "부 + 캐릭터".
+
+#394  본캐
+      뜻:      본 캐릭터
+      English: main character
+      예문:    본캐 vs 부캐
+      💡 "본 + 캐릭터".
+
+#395  현질
+      뜻:      현금 결제
+      English: pay-to-win / cash spending
+      예문:    현질 너무 함
+      💡 "현금 + 질".
+
+#396  무과금
+      뜻:      무료 플레이
+      English: free-to-play / F2P
+      예문:    무과금으로 만렙
+      💡 "무 + 과금".
+
+#397  과금러
+      뜻:      돈 쓰는 유저
+      English: big spender
+      예문:    진성 과금러
+      💡 "과금 + er".
+
+#398  가챠
+      뜻:      gacha
+      English: gacha
+      예문:    가챠 운 좋아
+      💡 일본어 'gacha'.
+
+#399  천장
+      뜻:      가챠 천장 (pity)
+      English: pity system
+      예문:    천장 깨고 나옴
+      💡 가챠에서 보장 횟수.
+
+#400  덱
+      뜻:      deck
+      English: deck
+      예문:    덱 짜기
+      💡 카드 게임 용어.
+
+#401  OP
+      뜻:      overpowered
+      English: OP / overpowered
+      예문:    이 캐릭 OP
+      💡 동일 사용.
+
+#402  노답
+      뜻:      답 없음 (hopeless)
+      English: hopeless
+      예문:    이 매치 노답
+      💡 게임에서도 자주 사용.
+
+#403  리겜고수
+      뜻:      리듬게임 고수
+      English: rhythm game pro
+      예문:    리겜고수
+      💡 "리듬게임 + 고수".
+
+#404  모각공
+      뜻:      모여서 각자 공부
+      English: study together separately
+      예문:    카페에서 모각공
+      💡 "모여서 각자 공부".
+
+#405  방탈출
+      뜻:      escape room
+      English: escape room
+      예문:    방탈출 카페
+      💡 순수 한국어.
+
+#406  보드게임
+      뜻:      board game
+      English: board game
+      예문:    보드게임 카페
+      💡 동일 사용.
+
+#407  인생게임
+      뜻:      life sim game
+      English: life-changing game
+      예문:    인생게임 같아
+      💡 "인생 + 게임".
+
+#408  명작
+      뜻:      masterpiece
+      English: masterpiece
+      예문:    이 게임 명작
+      💡 순수 한국어.
+
+#409  갓겜
+      뜻:      신의 게임 (god game)
+      English: god-tier game
+      예문:    갓겜 인정
+      💡 "God + 게임".
+
+#410  망겜
+      뜻:      망한 게임
+      English: trash game
+      예문:    망겜이었어
+      💡 "망 + 게임".
+
+
+==============================================================================
+  G. 세대·사회  —  Generations & Society  (40 items)
+==============================================================================
+
+#411  헬조선
+      뜻:      지옥 같은 한국
+      English: hellish Korea
+      예문:    헬조선 살기 힘들어
+      💡 "hell + 조선". 한국 사회 비판.
+
+#412  N포세대
+      뜻:      많은 것 포기한 세대
+      English: N-give-up generation
+      예문:    N포세대 현실
+      💡 "N개 + 포기 + 세대".
+
+#413  3포세대
+      뜻:      연애·결혼·출산 포기
+      English: 3-give-up generation
+      예문:    3포세대
+      💡 "3 + 포기 + 세대".
+
+#414  5포세대
+      뜻:      3포 + 집·인간관계 포기
+      English: 5-give-up generation
+      예문:    5포세대 신조어
+      💡 3포 확장.
+
+#415  7포세대
+      뜻:      5포 + 꿈·희망 포기
+      English: 7-give-up generation
+      예문:    7포세대 절망
+      💡 5포 확장.
+
+#416  워라밸
+      뜻:      work-life balance
+      English: work-life balance
+      예문:    워라밸 좋은 회사
+      💡 "Work + Life + Balance" 줄임.
+
+#417  욜로
+      뜻:      YOLO
+      English: YOLO
+      예문:    욜로 라이프
+      💡 "You Only Live Once".
+
+#418  파이어족
+      뜻:      FIRE (Financial Independence Retire Early)
+      English: FIRE movement
+      예문:    파이어족 꿈
+      💡 조기 은퇴 운동.
+
+#419  청년실업
+      뜻:      youth unemployment
+      English: youth unemployment
+      예문:    청년실업 문제
+      💡 순수 한국어.
+
+#420  백수
+      뜻:      unemployed
+      English: unemployed
+      예문:    백수 생활
+      💡 한자어.
+
+#421  취준생
+      뜻:      취업 준비생
+      English: job seeker
+      예문:    취준생이에요
+      💡 "취업 + 준비 + 생".
+
+#422  공시생
+      뜻:      공무원 시험 준비생
+      English: civil service exam prep student
+      예문:    공시생 2년째
+      💡 "공무원 시험 + 생".
+
+#423  스펙
+      뜻:      qualifications
+      English: qualifications / credentials
+      예문:    스펙 쌓기
+      💡 "specifications" 줄임.
+
+#424  갓생
+      뜻:      GOD-life
+      English: god-tier life
+      예문:    갓생 살고 있어
+      💡 "God + 인생". 부지런하고 알찬 삶.
+
+#425  미라클 모닝
+      뜻:      miracle morning
+      English: miracle morning
+      예문:    미라클 모닝 시작
+      💡 새벽 기상 자기계발.
+
+#426  부캐
+      뜻:      alter ego
+      English: alter ego / side hustle
+      예문:    부캐 부업
+      💡 한 사람 여러 정체성.
+
+#427  꿀직장
+      뜻:      꿀같은 직장
+      English: sweet job
+      예문:    꿀직장이래
+      💡 "꿀 + 직장".
+
+#428  개꿀직장
+      뜻:      매우 좋은 직장
+      English: super sweet job
+      예문:    개꿀직장 부럽
+      💡 강조.
+
+#429  꿀알바
+      뜻:      꿀같은 알바
+      English: sweet part-time
+      예문:    꿀알바 추천
+      💡 "꿀 + 아르바이트".
+
+#430  알바
+      뜻:      part-time job
+      English: part-time job
+      예문:    알바 시작했어
+      💡 "아르바이트" 줄임. 독일어 유래.
+
+#431  투잡
+      뜻:      two jobs
+      English: two jobs
+      예문:    투잡 뛰어요
+      💡 "two + jobs".
+
+#432  쓰리잡
+      뜻:      three jobs
+      English: three jobs
+      예문:    쓰리잡 진심?
+      💡 "three + jobs".
+
+#433  긱이코노미
+      뜻:      gig economy
+      English: gig economy
+      예문:    긱이코노미 시대
+      💡 동일 사용.
+
+#434  플랫폼노동
+      뜻:      platform labor
+      English: platform labor
+      예문:    플랫폼노동자
+      💡 순수 한국어.
+
+#435  독립
+      뜻:      independence
+      English: independence
+      예문:    독립할 거야
+      💡 순수 한국어.
+
+#436  독립선언
+      뜻:      독립 선언 (parents)
+      English: declaring independence
+      예문:    독립선언!
+      💡 비유 — 부모로부터 독립.
+
+#437  캥거루족
+      뜻:      부모와 사는 성인
+      English: kangaroo generation / boomerang kid
+      예문:    캥거루족 늘어남
+      💡 "캥거루 + 족".
+
+#438  독거노인
+      뜻:      노인 독거
+      English: elderly living alone
+      예문:    독거노인 문제
+      💡 순수 한국어.
+
+#439  1인가구
+      뜻:      single household
+      English: single-person household
+      예문:    1인가구 증가
+      💡 순수 한국어.
+
+#440  혼밥
+      뜻:      혼자 밥 먹기
+      English: eating alone
+      예문:    혼밥하러 갔어
+      💡 "혼자 + 밥".
+
+#441  혼술
+      뜻:      혼자 술 마시기
+      English: drinking alone
+      예문:    오늘은 혼술
+      💡 "혼자 + 술".
+
+#442  혼영
+      뜻:      혼자 영화 보기
+      English: watching movies alone
+      예문:    혼영 즐겨요
+      💡 "혼자 + 영화".
+
+#443  혼콘
+      뜻:      혼자 콘서트
+      English: concert alone
+      예문:    혼콘 갔어
+      💡 "혼자 + 콘서트".
+
+#444  혼행
+      뜻:      혼자 여행
+      English: solo travel
+      예문:    혼행 떠나요
+      💡 "혼자 + 여행".
+
+#445  비혼
+      뜻:      비혼주의
+      English: single by choice
+      예문:    비혼 선언
+      💡 "비 + 혼인".
+
+#446  딩크족
+      뜻:      DINK (no kids)
+      English: DINK (Double Income No Kids)
+      예문:    딩크족 부부
+      💡 동일 사용.
+
+#447  애완동물
+      뜻:      pet
+      English: pet
+      예문:    애완동물 키워요
+      💡 순수 한국어.
+
+#448  반려동물
+      뜻:      companion animal
+      English: companion animal
+      예문:    반려동물 입양
+      💡 "반려" 강조 — 가족 의미.
+
+#449  펫팸족
+      뜻:      펫을 가족처럼
+      English: pet family
+      예문:    펫팸족
+      💡 "pet + family".
+
+#450  맘충
+      뜻:      무례한 엄마
+      English: toxic mom (slur)
+      예문:    맘충이라며 비난
+      💡 비속어. 무례한 엄마 비하어.
+
+
+==============================================================================
+  H. 인터넷 밈·신조어  —  Memes & New Slang  (50 items)
+==============================================================================
+
+#451  어쩔티비
+      뜻:      어쩌라고 + TV
+      English: so what? / whatever
+      예문:    어쩔티비 ㅋㅋ
+      💡 무관심 표현.
+
+#452  저쩔티비
+      뜻:      저쩌라고 + TV
+      English: so what? (variant)
+      예문:    저쩔티비 됐어요
+      💡 "어쩔티비" 변형.
+
+#453  안물안궁
+      뜻:      안 묻고 안 궁금
+      English: didn't ask, don't care
+      예문:    안물안궁 ㅋ
+      💡 "안 + 물어봤어 + 안 + 궁금".
+
+#454  낄낄빠빠
+      뜻:      낄 때 끼고 빠질 때 빠짐
+      English: know when to join in/out
+      예문:    낄낄빠빠 해야
+      💡 "낄 + 빠질 + 빠질".
+
+#455  사스가
+      뜻:      역시 (sasuga)
+      English: as expected (Japanese)
+      예문:    사스가 천재!
+      💡 일본어 '사스가' 차용.
+
+#456  꿀팁대잔치
+      뜻:      꿀팁 모음
+      English: life hack compilation
+      예문:    꿀팁대잔치 영상
+      💡 "꿀팁 + 대잔치".
+
+#457  심심한 사과
+      뜻:      진심 어린 사과 (오해된)
+      English: sincere apology (misused)
+      예문:    심심한 사과 드립니다
+      💡 "매우" 의미인데 "심심하다"로 오해.
+
+#458  명일
+      뜻:      내일
+      English: tomorrow (literary)
+      예문:    명일 만나요
+      💡 한자어. 일본어식.
+
+#459  내로남불
+      뜻:      내가 하면 로맨스, 남이 하면 불륜
+      English: hypocrisy
+      예문:    내로남불 정치인
+      💡 한자 줄임.
+
+#460  갑분싸
+      뜻:      갑자기 분위기 싸함
+      English: awkward silence
+      예문:    갑분싸 됐어
+      💡 "갑자기 + 분위기 + 싸늘".
+
+#461  갑분진
+      뜻:      갑자기 분위기 진지
+      English: sudden seriousness
+      예문:    갑분진 됐어
+      💡 "갑분싸" 변형.
+
+#462  갑분따
+      뜻:      갑자기 분위기 따뜻
+      English: suddenly warm vibes
+      예문:    갑분따 ㅋㅋ
+      💡 "갑분싸" 변형.
+
+#463  답정녀
+      뜻:      답이 정해진 여자
+      English: woman with set answer
+      예문:    답정녀 같아
+      💡 "답정너" 여성형.
+
+#464  답정남
+      뜻:      답이 정해진 남자
+      English: man with set answer
+      예문:    답정남 발언
+      💡 "답정너" 남성형.
+
+#465  고자
+      뜻:      못하는 사람 (slang)
+      English: can't do (slang)
+      예문:    운동 고자야
+      💡 비속어. "고자" 본 의미와 다른 사용.
+
+#466  맛집
+      뜻:      맛있는 집
+      English: hot spot for food
+      예문:    맛집 다녀왔어
+      💡 "맛 + 집".
+
+#467  숨은맛집
+      뜻:      숨겨진 맛집
+      English: hidden gem
+      예문:    숨은맛집 발견
+      💡 "숨은 + 맛집".
+
+#468  미친맛집
+      뜻:      엄청 맛있는 집
+      English: insane spot
+      예문:    미친맛집이야
+      💡 강조.
+
+#469  존맛집
+      뜻:      매우 맛있는 집
+      English: banger spot
+      예문:    존맛집 추천
+      💡 비속어 강조.
+
+#470  개사기
+      뜻:      엄청 좋음
+      English: OP / broken
+      예문:    개사기 캐릭
+      💡 "개 + 사기".
+
+#471  개혜자
+      뜻:      매우 혜자스러움
+      English: super generous
+      예문:    이 가격 개혜자
+      💡 "혜자" — 풍성한 양.
+
+#472  갓성비
+      뜻:      신급 가성비
+      English: god-tier value
+      예문:    갓성비 제품
+      💡 "God + 가성비".
+
+#473  존맛탱구리
+      뜻:      매우 맛있음 (cute)
+      English: super tasty (cute)
+      예문:    존맛탱구리야
+      💡 "존맛탱" 강조.
+
+#474  빵빵하다
+      뜻:      가득함 (full)
+      English: packed / full
+      예문:    용량 빵빵해
+      💡 의성어.
+
+#475  든든하다
+      뜻:      든든함 (reliable)
+      English: reliable / dependable
+      예문:    든든한 친구
+      💡 순수 한국어.
+
+#476  고급지다
+      뜻:      고급스러움
+      English: luxurious feel
+      예문:    디자인 고급지다
+      💡 "고급 + 지다".
+
+#477  멋지다
+      뜻:      cool
+      English: cool / awesome
+      예문:    진짜 멋져요
+      💡 순수 한국어.
+
+#478  개쩐다
+      뜻:      매우 멋짐
+      English: badass
+      예문:    이거 개쩐다
+      💡 비속어 강조.
+
+#479  쩐다
+      뜻:      멋짐
+      English: sick / dope
+      예문:    실력이 쩔어요
+      💡 비속어. 감탄.
+
+#480  개쩜
+      뜻:      매우 멋짐
+      English: badass (slang)
+      예문:    개쩜이야
+      💡 비속어.
+
+#481  오마이갓
+      뜻:      OMG
+      English: OMG
+      예문:    오마이갓 ㅋㅋ
+      💡 "oh my god" 음역.
+
+#482  오마갓
+      뜻:      OMG (short)
+      English: OMG
+      예문:    오마갓!
+      💡 "오마이갓" 줄임.
+
+#483  진짜로?
+      뜻:      really?
+      English: for real?
+      예문:    진짜로 갔어?
+      💡 순수 한국어.
+
+#484  실화냐
+      뜻:      진짜야?
+      English: is this real?
+      예문:    이거 실화냐?
+      💡 "실화" — 실제 이야기.
+
+#485  실화임
+      뜻:      진짜야 (감탄)
+      English: this is real
+      예문:    실화임 ㅋㅋ
+      💡 "실화 + 임".
+
+#486  실화다
+      뜻:      진짜다
+      English: this is real
+      예문:    실화다
+      💡 "실화 + 다".
+
+#487  인생2회차
+      뜻:      전생에서 경험
+      English: second life expert
+      예문:    인생2회차야
+      💡 농담조 — 마치 두 번째 인생.
+
+#488  인싸템
+      뜻:      인싸용 아이템
+      English: trendy item
+      예문:    인싸템 추천
+      💡 "인싸 + 아이템".
+
+#489  신상
+      뜻:      신상품 (new)
+      English: new item
+      예문:    신상 들어왔어
+      💡 "신 + 상품".
+
+#490  꿀템
+      뜻:      좋은 아이템
+      English: good find / gem
+      예문:    꿀템 발견
+      💡 "꿀 + 아이템".
+
+#491  갓템
+      뜻:      신급 아이템
+      English: god-tier item
+      예문:    갓템이네
+      💡 "God + 아이템".
+
+#492  흑우
+      뜻:      흑역사 + 사람 (loser)
+      English: sucker / dupe
+      예문:    흑우 됐어
+      💡 속임수 당한 사람.
+
+#493  개꿀잠
+      뜻:      매우 단잠
+      English: deep sleep
+      예문:    개꿀잠 잤어
+      💡 "개 + 꿀 + 잠".
+
+#494  꿀잠
+      뜻:      꿀같은 잠
+      English: sweet sleep
+      예문:    꿀잠 자길
+      💡 "꿀 + 잠".
+
+#495  안녕히
+      뜻:      goodbye (polite)
+      English: goodbye
+      예문:    안녕히 가세요
+      💡 순수 한국어.
+
+#496  잘자
+      뜻:      good night
+      English: good night
+      예문:    잘자 ♥
+      💡 "잘 자다".
+
+#497  잘자영
+      뜻:      잘자요 (cute)
+      English: good night (cute)
+      예문:    잘자영 ㅎㅎ
+      💡 "잘자요" 변형.
+
+#498  화이팅
+      뜻:      fighting
+      English: you got this
+      예문:    내일도 화이팅!
+      💡 가장 대표적 콩글리시.
+
+#499  개고생
+      뜻:      엄청 고생
+      English: hard time
+      예문:    개고생 했네
+      💡 "개 + 고생".
+
+#500  잘부
+      뜻:      잘 부탁드림 (please be good to me)
+      English: please be good to me
+      예문:    잘부 ^^
+      💡 "잘 부탁".
+
+==============================================================================
+                          — 끝 —
+==============================================================================

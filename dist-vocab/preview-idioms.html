@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="UTF-8"><title>맛보기 · Four-Character Idioms (사자성어)</title>
+<style>
+  @page { size: A4; margin: 16mm 12mm; } * { box-sizing: border-box; }
+  body { font-family: 'Noto Sans KR','Malgun Gothic',sans-serif; color:#1a1a2e; margin:0; line-height:1.5; }
+  .page-break { page-break-before: always; }
+  .cover { text-align:center; padding:60px 20px 30px; border-bottom:4px solid #C0392B; margin-bottom:22px; }
+  .cover .label { font-size:12px; font-weight:700; letter-spacing:3px; color:#C0392B; text-transform:uppercase; margin-bottom:14px; }
+  .cover h1 { font-size:32px; margin:0 0 8px; color:#1a1a2e; font-weight:800; }
+  .cover .kr { font-size:22px; color:#1A4A8A; font-weight:700; margin:0 0 18px; }
+  .cover .desc { font-size:13px; color:#555; max-width:620px; margin:0 auto; line-height:1.7; }
+  .cover .features { margin-top:24px; display:flex; justify-content:center; gap:14px; flex-wrap:wrap; }
+  .cover .feat { background:#1a1a2e; color:#fff; padding:6px 14px; border-radius:18px; font-size:11px; font-weight:600; }
+  h2.cat-h { background:linear-gradient(135deg,#1a1a2e,#16213e); color:#fff; padding:14px 22px; margin:0 0 14px; font-size:18px; border-left:6px solid #C0392B; }
+  .scenario-box { background:#fff8f0; border-left:4px solid #f97316; padding:14px 18px; margin-bottom:14px; border-radius:6px; }
+  .scenario-box .sb-title { font-weight:800; color:#9a3412; font-size:13px; margin-bottom:8px; }
+  .scenario-box .dl-line { font-size:12px; margin:3px 0; }
+  .scenario-box .dl-speaker { color:#C0392B; font-weight:700; margin-right:6px; }
+  .compare-box { background:#f0f5ff; border-left:4px solid #1A4A8A; padding:14px 18px; margin-bottom:16px; border-radius:6px; }
+  .compare-box .cb-title { font-weight:800; color:#1e3a8a; font-size:13px; margin-bottom:8px; }
+  .compare-box .cb-pair { font-size:12px; margin:3px 0; display:flex; gap:12px; }
+  .compare-box .cb-ko { color:#1a1a2e; font-weight:700; min-width:220px; }
+  .compare-box .cb-en { color:#666; font-style:italic; }
+  table { width:100%; border-collapse:collapse; font-size:10.5px; table-layout:fixed; margin-bottom:14px; }
+  thead th { background:#1a1a2e; color:#fff; padding:7px 6px; font-size:10px; border-bottom:2px solid #C0392B; }
+  th.num-col{width:28px;} th.hanja-col{width:70px;} th.ko-col{width:75px;} th.qr-col{width:34px;}
+  td { padding:8px 8px; border-bottom:1px solid #e5e5ea; vertical-align:top; word-break:keep-all; }
+  tr:nth-child(even) td { background:#fafafa; }
+  td.num { text-align:center; color:#888; font-weight:600; font-size:10px; }
+  td.hanja { font-family:'Noto Serif KR','SimSun',serif; font-weight:700; color:#C0392B; font-size:15px; line-height:1.3; text-align:center; }
+  td.ko    { font-weight:800; color:#1a1a2e; font-size:13px; }
+  td.rest .meaning-line { color:#1a1a2e; font-size:11px; font-weight:600; margin-bottom:3px; }
+  td.rest .en-line { color:#1A4A8A; font-size:10.5px; font-style:italic; margin-bottom:6px; }
+  td.rest .chars-row { display:flex; gap:6px; margin-bottom:5px; flex-wrap:wrap; }
+  td.rest .char-cell { background:#fef3c7; padding:2px 6px; border-radius:4px; display:inline-flex; align-items:center; gap:4px; font-size:9.5px; }
+  td.rest .char-h { font-family:'Noto Serif KR',serif; font-weight:800; color:#92400e; }
+  td.rest .char-m { color:#78350f; font-size:9px; }
+  td.rest .origin-line, td.rest .modern-line, td.rest .sim-line { font-size:9.5px; color:#666; margin-top:2px; line-height:1.5; }
+  td.rest .ol-label, td.rest .ml-label, td.rest .sim-label { color:#888; font-weight:700; margin-right:3px; }
+  td.rest .modern-line { background:#f0fdf4; padding:3px 5px; border-left:2px solid #059669; margin:3px 0; }
+  td.qr { text-align:center; padding:3px; } td.qr img { width:30px; height:30px; }
+  tr.section td { background:linear-gradient(135deg,#1a1a2e,#16213e) !important; color:#fff; font-weight:800; font-size:11px; padding:7px 12px; text-transform:uppercase; }
+  tr.quiz-row td { padding:0; }
+  .quiz { background:linear-gradient(135deg,#fffbeb,#fef3c7); border:2px solid #f59e0b; border-radius:10px; padding:14px 18px; margin:14px 0; }
+  .quiz .q-title { font-size:14px; font-weight:800; color:#92400e; margin-bottom:6px; }
+  .quiz .q-sub { font-size:11px; color:#78350f; margin-bottom:10px; font-style:italic; }
+  .quiz .q-item { font-size:11px; margin:6px 0; padding:8px 10px; background:#fff; border-radius:6px; }
+  .quiz .q-num { font-weight:800; color:#C0392B; margin-right:6px; }
+  .quiz .q-q { color:#1a1a2e; }
+  .quiz .q-opt { display:inline-block; margin-right:12px; color:#444; margin-top:4px; }
+  .answer-key { background:#f9fafb; padding:20px 24px; border-radius:8px; }
+  .ak-row { padding:6px 0; border-bottom:1px solid #e5e5ea; font-size:12px; }
+  .ak-row strong { color:#C0392B; }
+</style><style>
+#license-modal { position:fixed; top:0; left:0; right:0; bottom:0; background:rgba(0,0,0,0.7); display:none; align-items:center; justify-content:center; z-index:9999; }
+#license-modal .lm-box { background:#fff; padding:32px; border-radius:14px; max-width:420px; width:90%; box-shadow:0 20px 60px rgba(0,0,0,0.3); text-align:center; }
+#license-modal h3 { margin:0 0 12px; font-size:20px; color:#1a1a2e; }
+#license-modal p { color:#666; margin:0 0 16px; font-size:13px; }
+#license-modal input { width:100%; padding:12px; font-size:14px; border:2px solid #e5e5ea; border-radius:8px; text-align:center; font-family:'Courier New',monospace; }
+#license-modal input:focus { border-color:#C0392B; outline:none; }
+#license-modal .license-msg { font-size:12px; min-height:18px; margin:10px 0; }
+#license-modal .license-msg.err { color:#C0392B; }
+#license-modal .license-msg.ok  { color:#059669; }
+#license-modal .lm-btn { display:block; width:100%; padding:12px; border:none; border-radius:8px; font-size:14px; font-weight:700; cursor:pointer; margin-top:8px; }
+#license-modal .lm-btn.primary { background:#1a1a2e; color:#fff; }
+#license-modal .lm-btn.primary:hover { background:#C0392B; }
+#license-modal .lm-btn.ghost { background:transparent; color:#666; }
+#license-modal .lm-buy { display:block; margin-top:14px; padding:10px; background:#fef3c7; color:#92400e; border-radius:8px; text-decoration:none; font-size:13px; font-weight:700; }
+</style>
+<style>
+  .topbar { background:#1a1a2e; color:#fff; padding:12px 20px; display:flex; align-items:center; gap:14px; font-size:13px; }
+  .topbar a { color:#fff; text-decoration:none; font-weight:700; }
+  .topbar .brand { color:#C0392B; font-size:15px; font-weight:800; }
+  .topbar .spacer { flex:1; }
+  .preview-banner { background:#fef3c7; color:#92400e; padding:10px 20px; text-align:center; font-size:13px; font-weight:700; border-bottom:2px solid #f59e0b; }
+</style>
+</head><body>
+
+<div class="topbar">
+  <a href="learn-korean.html" class="brand">🇰🇷 KR Guide</a>
+  <a href="learn-korean.html">메인 가이드</a>
+  <a href="vocab-hub.html">📚 학습 자료</a>
+  <div class="spacer"></div>
+  
+<div id="google_translate_element"></div>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'ko', includedLanguages: 'en,ja,zh-CN,zh-TW,es,fr,de,vi,th,id,ar,ru,pt'}, 'google_translate_element');
+}
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</div>
+
+<div class="preview-banner">🔓 맛보기 · Free Preview (10%) — 전체 학습은 결제 후 가능합니다</div>
+
+
+<div class="cover">
+  <div class="label">Korean Four-Character Idioms · Enhanced</div>
+  <h1>사자성어 100선</h1>
+  <div class="kr">Four-Character Wisdom · 향상판</div>
+  <p class="desc">인생·노력·우정·지혜·비즈니스·수양·처세 7개 테마, 100개 사자성어 — 한자 글자 풀이·뜻·유래·현대 활용 예문·유사어·시나리오·비교·퀴즈·QR까지.</p>
+  <div class="features">
+    <span class="feat">🎭 시나리오</span><span class="feat">🔍 비교</span><span class="feat">📝 퀴즈</span><span class="feat">🔊 QR</span>
+  </div>
+</div>
+</tbody></table>
+<div class="page-break"></div>
+<h2 class="cat-h">🌅 인생·운명</h2>
+<div class="scenario-box"><div class="sb-title">🎭 시나리오 대화 · Scenario Dialogue</div><div class="dl-line"><span class="dl-speaker">선배:</span> <span class="dl-text">사업 망해서 절망했었지?</span></div><div class="dl-line"><span class="dl-speaker">후배:</span> <span class="dl-text">네… 그런데 그 덕에 더 좋은 길을 찾았어요.</span></div><div class="dl-line"><span class="dl-speaker">선배:</span> <span class="dl-text">그게 바로 새옹지마야. 인생 어떻게 될지 몰라.</span></div><div class="dl-line"><span class="dl-speaker">후배:</span> <span class="dl-text">전화위복이라는 말이 딱 맞네요.</span></div><div class="dl-line"><span class="dl-speaker">선배:</span> <span class="dl-text">흥망성쇠는 누구에게나 있는 법이지.</span></div></div><div class="compare-box"><div class="cb-title">🔍 비교 박스 · Comparison</div><div class="cb-pair"><span class="cb-ko">새옹지마 / 전화위복</span><span class="cb-en">fortune unpredictable / misfortune→blessing</span></div><div class="cb-pair"><span class="cb-ko">호사다마 ↔ 만사형통</span><span class="cb-en">good things have obstacles ↔ all goes well</span></div><div class="cb-pair"><span class="cb-ko">일장춘몽 / 인생무상</span><span class="cb-en">fleeting glory / impermanence</span></div><div class="cb-pair"><span class="cb-ko">인과응보 / 자업자득 / 사필귀정</span><span class="cb-en">karma / reap what you sow / truth prevails</span></div></div>
+
+<table><thead><tr><th class="num-col">#</th><th class="hanja-col">한자</th><th class="ko-col">한글</th><th>뜻 / 유래 / 활용</th><th class="qr-col">🔊</th></tr></thead><tbody>
+<tr><th class="num-col">#</th><th class="hanja-col">한자</th><th class="ko-col">한글</th><th>뜻 / 유래 / 활용</th><th class="qr-col">🔊</th></tr><tr><td class="num">1</td><td class="hanja">塞翁之馬</td><td class="ko">새옹지마</td><td class="rest">
+        <div class="meaning-line">변방 노인의 말. 인생의 길흉화복은 변화무쌍하여 미리 점칠 수 없음을 이르는 말.</div>
+        <div class="en-line">Fortune is unpredictable — bad luck may turn into good, and good luck may turn into bad.</div>
+        <div class="chars-row"><span class="char-cell"><span class="char-h">塞</span><span class="char-m">변방 새</span></span> <span class="char-cell"><span class="char-h">翁</span><span class="char-m">늙은이 옹</span></span> <span class="char-cell"><span class="char-h">之</span><span class="char-m">갈 지</span></span> <span class="char-cell"><span class="char-h">馬</span><span class="char-m">말 마</span></span></div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 회남자(淮南子)에 나오는 고사. 변방의 노인이 기르던 말이 도망갔으나 더 좋은 말 한 마리와 함께 돌아왔고, 아들이 그 말을 타다 낙마해 다쳤으나, 그 부상 덕분에 전쟁에 끌려가지 않아 목숨을 구했다는 이야기.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 주식이 폭락해서 절망했는데 그 덕에 더 좋은 종목으로 갈아탈 기회가 생겼다 — 그야말로 새옹지마다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 전화위복 · 호사다마</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABWAQAAAAB9LVxaAAABpklEQVR4nHWTwYZdQRCG654+xKVGD9kOWd5VaDqboce5r5I3CHmRvEoYshqKDhHqqstsswkh2xp9uUK3ChmZTB1Sq/L7/f2pqt4Y/K0xPbUAQNCRISoCPtfn2L/Ud3W8/BUOTh+XP65217C9vHX+CeC+fj3uKf3pn2oGKDefy2189Pwr6YwNoLHxc31De37s3rh8MFPjVMSse36EVnttLRen18ggsVAKPqcxK7YKYk7faLzYfUsfjwGufX6nAiTS1b9rMdUCNUFy/KC0dFDNtXq/LAsvWsTUc3aGljE1W7y/tWQcEkNc+XGx0gVVVnrmgpI6B5/TE8aiVIycvmlXOuY4znd+79AKBuu5YvQ5mjVzxoWaf5dBYhXKkvz9nJaH09jD3U1Y7R1jylVTXc3NGjWqRdri802lx1S6kOckabWoYvB7BCZTRMwtO/4pvIf7vAu4Pew9D9easTaCFY9xt5y68OreQAS1B2THOcX+egR4sQ3hg+dBjsUyEPr5AJy/v7r4NBY9rvyEhhjB73cKGvPhpIPfunlOD/M47HD+eQ7k9vuf//4blNLmziROzWsAAAAASUVORK5CYII=" alt="QR"/></td></tr><tr><td class="num">2</td><td class="hanja">好事多魔</td><td class="ko">호사다마</td><td class="rest">
+        <div class="meaning-line">좋은 일에는 흔히 방해되는 일이 많이 따른다는 뜻.</div>
+        <div class="en-line">Good things rarely come without obstacles — the path of success is filled with hindrances.</div>
+        <div class="chars-row"><span class="char-cell"><span class="char-h">好</span><span class="char-m">좋을 호</span></span> <span class="char-cell"><span class="char-h">事</span><span class="char-m">일 사</span></span> <span class="char-cell"><span class="char-h">多</span><span class="char-m">많을 다</span></span> <span class="char-cell"><span class="char-h">魔</span><span class="char-m">마귀 마</span></span></div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 중국 명대 소설 등에서 흔히 쓰인 표현으로, 길흉은 늘 함께 다닌다는 동양 사상에서 비롯됨.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 사업이 잘 풀린다 싶을 때마다 직원이 그만두거나 자금 문제가 터진다 — 호사다마라더니 딱 맞는다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 새옹지마 · 화불단행</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABWAQAAAAB9LVxaAAABoklEQVR4nHVTQYpUQQxNdzUMDZES+gBu3A4U1EooqT6Ax3DrGdx4A08iDLgSIjWbgQw124YBETxApD58hDQRFMdJwWQVHo+Xl0eyMfhX5+1DCwAEyoxBEPAxvot6/R4+4+FXuHV8RtGsikj8GN8CfDvcXB8p/ekfagfw8nIXl/yX87+6Mg6hweZ0dj93TCfAE2ycHzAbkYG7mTr+1zdLXvVCluPe8SX01EOiFCadFACVgczhG4rv1vv06S4ur6Z8moJQ1+TmAldoBZqAOP8gUhVEcmuebyZcoXTD4nOgPDKmYXXWJ+OQGKLnt5KsaEfpk07oBXtSDl6HsPTCVAQm3EChx9CC908Yg5XcsHu+5Ja5lUrm5m7DzR5X/LDE4533GUemEBijz59UKPNILU255ZCJS7fq9+IyNFZUIn+f68fTenn1+jkMf1dckiBiHnnKs2urOVaFKbfSWsY2KHo/Zq1YTtp5yg244tCAPP/L8uVwvtiHkKZ/abFYBEJ/5wD4/cWzK6g/7mc+GmIEnnIWyLdLOve3fl8CxoEwmt9388S//wZZkuPMB1CxCAAAAABJRU5ErkJggg==" alt="QR"/></td></tr><tr><td class="num">3</td><td class="hanja">轉禍爲福</td><td class="ko">전화위복</td><td class="rest">
+        <div class="meaning-line">화가 바뀌어 오히려 복이 됨. 나쁜 일이 도리어 좋은 일의 계기가 되는 것.</div>
+        <div class="en-line">Turning misfortune into blessing — adversity becomes a stepping stone to success.</div>
+        <div class="chars-row"><span class="char-cell"><span class="char-h">轉</span><span class="char-m">구를 전</span></span> <span class="char-cell"><span class="char-h">禍</span><span class="char-m">재앙 화</span></span> <span class="char-cell"><span class="char-h">爲</span><span class="char-m">될 위</span></span> <span class="char-cell"><span class="char-h">福</span><span class="char-m">복 복</span></span></div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 전국책(戰國策)에 나오는 표현으로, 소진(蘇秦)이 외교에서 위기를 기회로 만든 데서 유래.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 코로나로 오프라인 매장을 닫게 됐는데, 그 덕에 온라인 사업이 폭발적으로 성장했다 — 전화위복의 좋은 예다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 새옹지마 · 고진감래</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABWAQAAAAB9LVxaAAABqklEQVR4nHWTMYocMRBFf482GdDQnRqcLDQ41aIFJwINbLrgS/gABp/AN/BtNjKo0YQaFExk2HDBkUFDDTgpUcYYm6k2VlR8iqdP1a9B8Of1zd8SQELJtsEx7LV+M/JhL/t6meSo9D498e7ba4dF9wPbh6fnF7wCrvUNMB/67fNj0joqF/IsPki51oe0L7+re8WHiAhlblVY8Q8LjlOfDO6mdX8cxaNYxd8su+XTfO7xYj6o/kLNu2AlecVHZU8p1IgxKJ19KBwKStQ+qZCNBHZe/YuaQwCVtpozCMLUos9O81v1zUq0DO0nBxmNRE/636G+36a3n7ux81e9X25gU9lUzRdDlMhQqIqz6V86YNP2NKeVf87kOOWV/8YE40fyQe+xXrq9l8G+THoOqTXYgjEl5WeouMthsbM96Xy2ZKlWE1Y+UcUVHqNtpPmcGvzItmWtS7QeTiCsOamlQq142HXeCsUaw5h13pbhzePl9oi+VXnbjHzs3dAPY5rOlc1ggwSj/RRLUpvAkJ7/rwM9v9s57P+5l0qGfUn67s436cF9P+Fjd2qe/7n3n5iB6t7+RH1sAAAAAElFTkSuQmCC" alt="QR"/></td></tr><tr><td class="num">4</td><td class="hanja">一場春夢</td><td class="ko">일장춘몽</td><td class="rest">
+        <div class="meaning-line">한바탕의 봄꿈. 헛된 영화나 덧없는 일을 비유.</div>
+        <div class="en-line">A passing spring dream — fleeting glory or vanity.</div>
+        <div class="chars-row"><span class="char-cell"><span class="char-h">一</span><span class="char-m">한 일</span></span> <span class="char-cell"><span class="char-h">場</span><span class="char-m">마당 장</span></span> <span class="char-cell"><span class="char-h">春</span><span class="char-m">봄 춘</span></span> <span class="char-cell"><span class="char-h">夢</span><span class="char-m">꿈 몽</span></span></div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 중국 송대 소설 &#x27;침중기(枕中記)&#x27;에서 노생이 베개를 베고 잠든 사이 부귀영화를 누리는 꿈을 꾸었다가 깨어보니 짧은 시간에 지나지 않았다는 이야기.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 10년간 쌓아온 명성이 한 순간 사라지는 걸 보니, 권력이라는 게 결국 일장춘몽이구나 싶다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 남가일몽 · 인생무상</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABWAQAAAAB9LVxaAAABsUlEQVR4nHVTwaZcQRCtuTXEUE+H+YAIQ1aPpocn9LiXbOdXQn4kvD/IT4RZDR39iKFGX2YVQmSVbdOXCHVVFk+eV0N6VY7jnFPVVQuFf2/unkoASFCFwVUCeo4vnVwGn+f1HzwbPpNIEEVK/BzvAMb16evL02P99JYA4biMU/AWhyIltuSbqNFZpIEfq63JA6rquHJRFaP/ZQ+H33RXt7AyefCA72n99jyPo9ERQE+VIanR7y46I+7fJHiodj6eBRIX8cYXtKccIVfwJj8UEoFaM2bD76b2YuzHPcntYPKvdjJNNG3g3cnqNFVGz+CizS+9RilUi8VZK1Hywmh9cfcKPd4P4Wjnr1kEehc42/zsKyqFRs7221wO3GJJ1frW2rtcUijR7s/3uyPOWzjt0Ppm7yCk6rM3Okv4sYGPuP906+x+NgniAnFONg/nmGP14uw/AkeoRDG0cMVvLffB9QLWF28KTN8O/sHdX+1bEu29FLb6CUqhKkgW75y8nhHWK0R/dS/ZRXWQ6PpeVj8vN5vU/7LzYWJSYgfJ5OywQjh/Hmb+YPkJEjVKLdt+F/+597/3fN7wJT3BswAAAABJRU5ErkJggg==" alt="QR"/></td></tr><tr><td class="num">5</td><td class="hanja">風前燈火</td><td class="ko">풍전등화</td><td class="rest">
+        <div class="meaning-line">바람 앞의 등불. 매우 위태로운 처지나 상황을 비유.</div>
+        <div class="en-line">A candle flame in the wind — an extremely precarious situation.</div>
+        <div class="chars-row"><span class="char-cell"><span class="char-h">風</span><span class="char-m">바람 풍</span></span> <span class="char-cell"><span class="char-h">前</span><span class="char-m">앞 전</span></span> <span class="char-cell"><span class="char-h">燈</span><span class="char-m">등 등</span></span> <span class="char-cell"><span class="char-h">火</span><span class="char-m">불 화</span></span></div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 한국과 중국 고전에서 위태로운 처지를 비유할 때 흔히 쓰던 표현. 임진왜란 당시 조선의 위태로움을 빗댄 표현으로도 유명.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 현금 흐름이 막혀 회사가 풍전등화 상태인데, 투자 유치만이 유일한 살 길이다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 일촉즉발 · 백척간두</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABWAQAAAAB9LVxaAAABoElEQVR4nHWTvWpcMRCFz15tOUELbgMmsJBWIIMxKOi2gUBexS+SKq/i1iAzLmVkcGXY0pAqoEXFEpjLpAgJOxeiShwOR5/mZ6P4e5bp3xVAQYvUKQnoXN96ebn38x12+mT0ZXf35fnH+w94sH6A+PHwRu+Ac30C9o/L/jAXq6NJ45g0Jq3n+qbM9c/tyuRDtfsRpWcVo3MRcaDRgvV3N9SPiEomf/I3n497ouzcrfGP3DhkaInGD04llsQ5tmT5fa8iNdRs3y2lUx4gJJujoyS42kVXnKgyQo4cbL5k7qSZBOa/Ex7o8gR8POWd5cmpxlq4jRV/UAg1Sd7mdyejMJht36HBj5K5+lUdNCceXTp749/I7I4v4bAHfbM8WgVK1Ff5oyJQgy/F9nH4zlpq77bO29fl8u3ZXd/gu52fylJFMklfcSZBbEKBrS65RgSFDsvDPdTRa4Rbz1uJmXPyq5wCbbG7RNX4Jy9Pnxb36+Rct5zEEBcKnM2pNLR1D2fnYQJoOX69D5jX+8JtOIm12L07bstV+Hmxv0UwffnPvv8GVrvj0X5jVQkAAAAASUVORK5CYII=" alt="QR"/></td></tr><tr><td class="num">6</td><td class="hanja">因果應報</td><td class="ko">인과응보</td><td class="rest">
+        <div class="meaning-line">원인과 결과가 서로 응하여 갚음. 좋은 일은 좋은 결과를, 나쁜 일은 나쁜 결과를 가져온다는 불교적 사상.</div>
+        <div class="en-line">Cause and effect — every action has its corresponding consequence (karma).</div>
+        <div class="chars-row"><span class="char-cell"><span class="char-h">因</span><span class="char-m">원인 인</span></span> <span class="char-cell"><span class="char-h">果</span><span class="char-m">결과 과</span></span> <span class="char-cell"><span class="char-h">應</span><span class="char-m">응할 응</span></span> <span class="char-cell"><span class="char-h">報</span><span class="char-m">갚을 보</span></span></div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 불교 경전에서 비롯된 사상으로, 카르마(業)의 한자 표현. 동양 윤리관의 핵심 개념 중 하나.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 평소 직원들에게 함부로 대하더니 결국 모두 떠나버렸다. 인과응보다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 자업자득 · 사필귀정</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABWAQAAAAB9LVxaAAABn0lEQVR4nGWTQWpbQQyGZcsbg8wUcoWAtwOT5cAzZFUo9Cq5SCDQA/QSBW8F401BZgJeFbIp9ACC8aYgo5KahuhVK/Ehfv2jkRYO/+KyfEsBgMFMAJWA3vNVssPn3OjmNx5DvZBZUSdiec+XAM/3318+7K/5W6wA8uNqOtccOXTrNDQP8aCz4J1cs7vgZ/Hq/3gmhDzzT4StYimlBj4a5p4qZww6oBUymUDzwJenL4i42zIdNOpnN2Bxh6ivU28VWs5Z/psPqGIRC7xNRSauyUfQWa0vcj5/uv21Aw71PoYLZoEU+4plr9ZJ+4y7EvVsgrO+jKkqV+fIR6oGnVBa9N+V0a00muloakUGTRz9g6qn1rn0GudshV9bC6XIHRIUGbnFua2eywUf8ePX2/QQ/dRqqZIxR52G3upQAotcKiiRlVGC/yXsy6lsb2h93MX93CQ4/9jnAzxFny7mU7Y++0cG6aQDSeL+JNteEDZrxDzbh5aqIzDN74V+njbKk8a7EBJyqgk4zHmJCuX47enSH2I9A9MgGBzf+/derhHu5Q98Otb0CpKf5QAAAABJRU5ErkJggg==" alt="QR"/></td></tr><tr><td class="num">7</td><td class="hanja">自業自得</td><td class="ko">자업자득</td><td class="rest">
+        <div class="meaning-line">자기가 저지른 일의 결과를 자기가 받음.</div>
+        <div class="en-line">You reap what you sow — bearing the consequences of one&#x27;s own actions.</div>
+        <div class="chars-row"><span class="char-cell"><span class="char-h">自</span><span class="char-m">스스로 자</span></span> <span class="char-cell"><span class="char-h">業</span><span class="char-m">업 업</span></span> <span class="char-cell"><span class="char-h">自</span><span class="char-m">스스로 자</span></span> <span class="char-cell"><span class="char-h">得</span><span class="char-m">얻을 득</span></span></div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 불교 용어 &#x27;업(業)&#x27;에서 비롯. 자신이 지은 업은 결국 자신에게 돌아온다는 불교 사상.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 공부 안 하고 시험에 떨어진 건 누구 탓도 아닌 자업자득이지.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 인과응보 · 자작자수</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABWAQAAAAB9LVxaAAABtElEQVR4nF2TQYobMRBFv62GwVCDDD5ANgGvBgQyZKPQPoCvEshRfJXAwKwGFDQwBKpRg1cGbwKBbNvI0JtqFEKSIdW1Ep/Pr6onalHxr6bl2xNAxMAMIwT6X2+s9OZzos1gOqVP6/JxfLDT+lH5l0Bnvl126c/7rRpg+9y0k3Mz3Qw9Sofb0ev8a8M4E85YqPxFBfppJyc4NX/z9TAOvdwNe6z0/Ibu8+ahm05KRwnFkTBSVfnI1RobJOYkmg9FwZCzQOnL8ESvYX277lyv/ElIMAzG65wGHx77FgfBda/9qMWTK22r+9ZMlY1j2DDLtzVIpiFrvVoOFJ2w0XN203hy5rg3z4o/SiqClnxgVvoANpV9Ir0vxFvPKdRYVd/l6/TlMtLLzu41h1IpRWOZrOacxMJzccnNOLfsI4dcWu0vLGJtkBz1vjmZFEpkI7N/FAxEwRevOeCunvz2RKte8W8wAbfzk3tZHTXPGqV6J5l134iUqYghnt/LeDbTZmVMVH6maENtEUn7AfP93f372P64zPxMldgiac5mML57xMSf1D8urw267eH2c9R9f9/L31L3/guCAd+pEdMIrgAAAABJRU5ErkJggg==" alt="QR"/></td></tr><tr><td class="num">8</td><td class="hanja">事必歸正</td><td class="ko">사필귀정</td><td class="rest">
+        <div class="meaning-line">모든 일은 반드시 바른 데로 돌아감. 결국 진실은 밝혀진다는 뜻.</div>
+        <div class="en-line">All things ultimately return to what is right — truth prevails in the end.</div>
+        <div class="chars-row"><span class="char-cell"><span class="char-h">事</span><span class="char-m">일 사</span></span> <span class="char-cell"><span class="char-h">必</span><span class="char-m">반드시 필</span></span> <span class="char-cell"><span class="char-h">歸</span><span class="char-m">돌아갈 귀</span></span> <span class="char-cell"><span class="char-h">正</span><span class="char-m">바를 정</span></span></div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 동양의 정의관에서 유래. 시간이 걸리더라도 결국 정의가 승리한다는 신념.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 억울하게 누명을 썼지만 사필귀정이라 했으니, 시간이 흐르면 진실이 밝혀질 것이다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 인과응보 · 권선징악</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABWAQAAAAB9LVxaAAABrElEQVR4nHVTwYoUQQxNTwZkIEMaPC0s+AsFNbAIJb0f4wfsB3jxD7wKfsaCp4Ua6iALtVSDp4UBj56EaqphLmkisqibFnMKj8erl5dKp/C7ls2fFmBz7OZ5mo/HpesNzrJc8gkAND7HIZNkL8oU83N8CzDCI/ZuATA6ALOb+zk+9X+rSCOfnRc1Ol28zk/dgQxfVQaSzKxi8FSHlASbJoN3+UoONPH0bbJ8kaGSJIhq9SsyFtcgJos3gRY8JVr5lPNpft1/Xt7NJ6vvWKDW1NZ+zjef4AbgPe7suzU2T67pYPibr6+QHhEu9qPNrQZxwOAQjM8N43zKd47u0Fn/UTmUGLSucvCitVJSDXYvOaIG38j6AS3gqRBntniTFDUUDisd9YDASMAmN9DMzufqklvzqToZhhxszrrHHy/d8gGnlc+ESaSGQax+Cnlwmjiu8Iwl6cBa0eYM92/h8HA7j7tx9d+K8q+Ri503QizUBCkbPxsWXNLuxT3iP/cSgSSAfRcytVogQatmj1uA5bJJz/ti9rjF+sW9wbacrz8afNqm8ftF10Yw/O4/9/4TBfXr6gd4JiIAAAAASUVORK5CYII=" alt="QR"/></td></tr><tr><td class="num">9</td><td class="hanja">一喜一悲</td><td class="ko">일희일비</td><td class="rest">
+        <div class="meaning-line">한편으로는 기쁘고 한편으로는 슬픔. 또는 작은 일에 일일이 기뻐하거나 슬퍼함.</div>
+        <div class="en-line">Alternating joy and sorrow — being affected by every small event.</div>
+        <div class="chars-row"><span class="char-cell"><span class="char-h">一</span><span class="char-m">한 일</span></span> <span class="char-cell"><span class="char-h">喜</span><span class="char-m">기쁠 희</span></span> <span class="char-cell"><span class="char-h">一</span><span class="char-m">한 일</span></span> <span class="char-cell"><span class="char-h">悲</span><span class="char-m">슬플 비</span></span></div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 한자 문화권의 일상 어휘로 자리잡은 표현. 감정의 변동을 묘사할 때 사용.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 주식 시세에 일희일비하지 말고 장기적 관점을 가져야 한다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 희노애락 · 감정변화</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABWAQAAAAB9LVxaAAABoElEQVR4nHWTwWpVQQyGc2/OphCZglvBzQVXhZHpRhg49wEEX8LX8Rl8CcHtQNxcyCUFt90UCl0JI3PATQ4RLNbmgFmFj5/kT2ayc/gb6/4pBYAGZgKpE9BzPiX79iHz+rrjOeiFhhVzpCbP+R7g5uXp5njKf/KnmADe/ZjogR41/0JNaXQY4qHOrh3lMbsOfsDdVVrV2S36J0KuPEqpgTOnrFhbxlhHKmUyAfbAdwNeHW6vvp7TchF4B4KpEcLb2NdK5Qrccw7+QUQMemfkqOcZZe5VvQefE622LLfL4bic4rzDXTALpDhX68WrKXWNXLgTaTbBTV/IqfZWe4vcsRp4Kqob/zmjSxkEUd8ViwzSNmLf3j2xtqJ5s2cUbohCKfIBCIV71hz3AOXi1yd6//mQ4v8cGSwVkrbxzylxhW5o2/dtncTKKFEvBXkuaTaI/hUSF+LRUtyDu5jP2VRi/QasNAZS5FMyPON6SYh5cy+aqidotL0XuPv+4q7N9/EuhITcLIEEn3vsUM7T5aofg37/c1rOb+jLw4It/Nv/3PtvV87fRDAx5ngAAAAASUVORK5CYII=" alt="QR"/></td></tr><tr><td class="num">10</td><td class="hanja">興亡盛衰</td><td class="ko">흥망성쇠</td><td class="rest">
+        <div class="meaning-line">흥하고 망하고 성하고 쇠함. 인간사의 변화무쌍함을 이르는 말.</div>
+        <div class="en-line">Rise and fall, prosperity and decline — the ever-changing fortunes of life and nations.</div>
+        <div class="chars-row"><span class="char-cell"><span class="char-h">興</span><span class="char-m">일어날 흥</span></span> <span class="char-cell"><span class="char-h">亡</span><span class="char-m">망할 망</span></span> <span class="char-cell"><span class="char-h">盛</span><span class="char-m">성할 성</span></span> <span class="char-cell"><span class="char-h">衰</span><span class="char-m">쇠할 쇠</span></span></div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 역사를 거시적으로 보는 동양 사관에서 비롯. 모든 왕조와 가문은 흥망성쇠를 겪는다는 관점.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 100년 기업도 흥망성쇠가 있는 법, 지금 잘나간다고 자만하면 안 된다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 영고성쇠 · 성쇠존망</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABWAQAAAAB9LVxaAAABm0lEQVR4nHWTMWpcQQyGtTsPTEDLFGkNadwuCCaQZsK4DeQYuY7PkEsEUi3IqAgBLWNIFXCTG4wZQxo9lMLYWA+iSvyIb35+jXYOz7XuX1oAYDBTzAMBX+tLth+f6ft6OdI5zCtOK+aIrK/1PcA5/fy1yFP/UgtAOzzmE1HUoRvrhDHVA2d5WBR+6z3ALvgBd29K2N0t+kdMUlOZpQbdGo+eKlOKHKVKODt0j/poLrkNZgl+oANXYHWnyJ9TpIIQjDjPoxiMIaLRZy9JG1R3jxwBmEVpeovzI6lrIoUc58dQr9Zx9I2eHLGTaYocJ8vVuDIHfafpCEu7u8KbuJdJmLwWQdhwZBad1XnjfyBk6Vx6i3lKT8I5KeZtnhOKTBIK/GWd9+UGPn29ytdxX5otExrzJjdpUgcrWfy3eFyPd5f0N30Y8V03aSU3w8hRJSkokzH6dO/VC1mPe9zf7h7T4aQXHyH4XLLB6S1cvEkp5qkouXqGDX8BWP+8O3yDNrf3xeiKGTT43KeB5fye1v4l8hkEJ8LkEvf7n3v/B3fy41/CftidAAAAAElFTkSuQmCC" alt="QR"/></td></tr><tr><td class="num">11</td><td class="hanja">進退兩難</td><td class="ko">진퇴양난</td><td class="rest">
+        <div class="meaning-line">나아갈 수도 물러설 수도 없는 매우 난처한 상황.</div>
+        <div class="en-line">Caught between a rock and a hard place — unable to advance or retreat.</div>
+        <div class="chars-row"><span class="char-cell"><span class="char-h">進</span><span class="char-m">나아갈 진</span></span> <span class="char-cell"><span class="char-h">退</span><span class="char-m">물러날 퇴</span></span> <span class="char-cell"><span class="char-h">兩</span><span class="char-m">두 양</span></span> <span class="char-cell"><span class="char-h">難</span><span class="char-m">어려울 난</span></span></div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 중국 고전에서 군사적 곤경을 묘사할 때 자주 쓰던 표현.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 사업을 접자니 손실이 크고 계속하자니 자금이 없어 진퇴양난이다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 사면초가 · 딜레마</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABWAQAAAAB9LVxaAAABrklEQVR4nF2TsWpcMRBF7z5tsyCjbQMGNw+2MgjkUkHvAwL5jLT+lHzMgtsxMriRkcHVQiBNwJVBix4shhEKJmTxPFXDZbg6czVadfw/bTiXAAhZ6aI9Q3/W14YfWp32ZtufhN62d/ri9csO96J/ADbu7ldM/+rzGYDdvo3TRFJHZqrOZ6d7+qyvaPqwAHAj/NF7z7X60jsLPVLxCroaK/tTDdlUh6SF/9p9fTmO0EGpW9FfjVI2mJ7cwh/ZkaeA7IXOlRJzIh0WnMXoUOGtE/eCA3u4RKxlzs9tolP7Pj9fS12dMF9WHN7Xgmc9btTVCdidwlbkxmo+/PjZlB4Pcq7kiE1mt+BPIVeKKlKU/LmESj0mUxb82cdKvkQj+6OPUC47Z2XOVkHP6QJ/tot39wY6wxAJnlWfL/f+CSN+y/3sNtdcnPdZ3kuhJO5dc5WcnQNcZl3igl85B9vRy8KHQ6olOSzm+li3EIM3UeQ/3K+uv832AW0j8h8MP7aG95NSReasCaxAUJIn6d5z8VCSZwBaO17BYlr+l5SrYpdI7slxnW/s2wtuYWWe51Lk+Rc5iuA9KPWGlwAAAABJRU5ErkJggg==" alt="QR"/></td></tr><tr><td class="num">12</td><td class="hanja">千載一遇</td><td class="ko">천재일우</td><td class="rest">
+        <div class="meaning-line">천 년에 한 번 만남. 좀처럼 만나기 어려운 좋은 기회.</div>
+        <div class="en-line">A once-in-a-lifetime opportunity — an extremely rare chance.</div>
+        <div class="chars-row"><span class="char-cell"><span class="char-h">千</span><span class="char-m">일천 천</span></span> <span class="char-cell"><span class="char-h">載</span><span class="char-m">해 재</span></span> <span class="char-cell"><span class="char-h">一</span><span class="char-m">한 일</span></span> <span class="char-cell"><span class="char-h">遇</span><span class="char-m">만날 우</span></span></div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 원굉(袁宏)의 &#x27;삼국명신서찬(三國名臣序贊)&#x27;에서 유래. 어진 임금과 어진 신하의 만남이 그만큼 드물다는 뜻.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> AI 산업의 폭발적 성장은 우리 세대에 찾아온 천재일우의 기회다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 천재일시 · 절호의 기회</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABWAQAAAAB9LVxaAAABtklEQVR4nHVTsWocMRScPS2Eg2d0kMrgJh8QEOhKmT24KhDIr/gDUqY1BPIlBkOqgA4ZzIGMFlwdGNIEUgW0aMHNE0oREvwWouoxDPNGo1HX8PfU1b8RWB06zNN8eKjdRuCapwv9BIXmX+J93ZS6Pap+fUsCBw5+9/zOrIEFTrv5/Ie+lDgSl2gJllt8iXd+F/9MW6HfNdTX1eAxS/8I2ZTgQhkCC37Z1S8fq5q+TwJHdOyJI0IT+og622QyQnBS33BxlgIl4ROhpMAxGDJSh2Ni5BzUwk+bHzSuMN7Yk+TDFRtNGazg9/dW0Wn/5hxK5saeDTSMgti7uh/uKN4a+qaM4HtuyWXvvJc5tOZahi7w4r79OM09u+eRPvwS/JKSpUYtZqGzqnW6Lpdqc6V2Uj/ZAq0IepEbKWNDMcmIvSv3s6K+fa8rfRb8HA1rS7z075sLTCYOsj+9Osv7yX7a39RF35oNbdAtQ+Zc6zW2p6/zqMdFPr5pWEppsRcpUWFFUeavudawfnVUi/eKxB4UHZTsVaScExRKljoAXRg66rMn+Y6Jg3ND42xlnh6eCvkSZH+6//z331xe586O/4DEAAAAAElFTkSuQmCC" alt="QR"/></td></tr><tr><td class="num">13</td><td class="hanja">百年大計</td><td class="ko">백년대계</td><td class="rest">
+        <div class="meaning-line">백 년을 내다보는 큰 계획. 먼 앞날까지 미리 짜놓는 큰 계획.</div>
+        <div class="en-line">A long-term plan for a hundred years — strategy for the distant future.</div>
+        <div class="chars-row"><span class="char-cell"><span class="char-h">百</span><span class="char-m">일백 백</span></span> <span class="char-cell"><span class="char-h">年</span><span class="char-m">해 년</span></span> <span class="char-cell"><span class="char-h">大</span><span class="char-m">클 대</span></span> <span class="char-cell"><span class="char-h">計</span><span class="char-m">꾀할 계</span></span></div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 관자(管子)의 &#x27;一年之計 樹穀(곡식을 심는 1년 계획), 十年之計 樹木(나무를 심는 10년 계획), 百年之計 樹人(사람을 키우는 100년 계획)&#x27;에서 유래.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 교육은 국가의 백년대계라 했으니, 단기 성과에 휘둘리면 안 된다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 원대한 계획 · 장기 비전</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABWAQAAAAB9LVxaAAABqUlEQVR4nF1TQYpUMRCt7vogDQUZ8AAiCK6ENDUbIZKBWQlewhu4dTlncCV4iYEBtwVpkIZq0luh924zpOFv8ong6DiVtyoej1dVL6lVh39Y1o8lAAhUVcJCQE/5ybUjfvpOLwoeDL9c1HfzWzhf3Bn9GuDwZb+72vs/9SMmAF6muOMHzX/klkItUrXrU34lV/pQXRr/VQc4LmdC8MP85DgFZOZg+FLJZwzi0fiAUPXUEki3/jqH3Qd/ewTcGD6/vN7sxIHf2nzeXH+dP8N52crJ7hVKg1Iqp2b41FGjBNfJzpk8VyZfYxz0iF3RK7hhL/U9tEwlW15dDCS+KVqfJuRCktDB8p17g+5QyOQPlTx2ZaZs9ZUzK4co3fSdYP+D5m/3fNraHDoTCqKSG/wVPEvxyQ851MiiIVebw0Tv5/3zVz+X0439PxIpheqJm31fFS5EgSvb+ZUpRXaxoe2biySmVMccek/U2besVi8gjkpD0vFe5gXh2QbR276kOfQIo7+SFkcgvYx8pq7BgX3fNRbgw+Vx0Y8mh/X9dD68pvOvGWW8l78w9/IbKOTXbIYR5W4AAAAASUVORK5CYII=" alt="QR"/></td></tr><tr><td class="num">14</td><td class="hanja">榮枯盛衰</td><td class="ko">영고성쇠</td><td class="rest">
+        <div class="meaning-line">영화롭게 번성함과 시들어 쇠퇴함이 변화함. 인생과 사물의 변화무쌍함.</div>
+        <div class="en-line">Flourishing and withering — the inevitable cycles of life.</div>
+        <div class="chars-row"><span class="char-cell"><span class="char-h">榮</span><span class="char-m">영화 영</span></span> <span class="char-cell"><span class="char-h">枯</span><span class="char-m">마를 고</span></span> <span class="char-cell"><span class="char-h">盛</span><span class="char-m">성할 성</span></span> <span class="char-cell"><span class="char-h">衰</span><span class="char-m">쇠할 쇠</span></span></div>
+        <div class="origin-line"><span class="ol-label">유래:</span> 초목이 봄에 무성하다가 가을에 시드는 자연의 이치에서 유래.</div>
+        <div class="modern-line"><span class="ml-label">활용:</span> 한때 시가총액 1위였던 기업이 사라지는 걸 보니, 영고성쇠가 따로 없다.</div>
+        <div class="sim-line"><span class="sim-label">유사:</span> 흥망성쇠 · 성쇠존망</div>
+    </td><td class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABWAQAAAAB9LVxaAAABsUlEQVR4nHVTwYoUMRCtmRqQhhoyV8GLIOxpIZAFWciShrnuf3gSvO7JX/BXBK9CSQ6LkCENcxVE8ANqScNcEiKy6E61WKfi8Xh59Sq16vCn2vpvCwAMJXsH4IEUnmvMwMHVns7xddu1t9nB590XOMdXaZRn8uLHRLPSWQMc5fDz+/vH/qlyjU4ki9f6Kx7TY3el/fTOprgqvVfFj3c40/yBLndW4QUOt5+wmZdmq/0fEOmWHvYPrPQruko5R1uVPnBNQXoy7JRPkBgcogsIml8l+9ptTrTIs4u1zByMP8c37WZOpxszT5c6n9oN52KyWMVfCeAwnQZ7bIq/NniY3gzzPVwofNMa7j9ebBm2Cz/Bgenie1jMlQIF9lFIvQsxIGV0ZJPGiyTvJKKERQ7dxU69GL0vqISQk0tJ9Lsl2pyR2UXF3wx3+Orb19fXA42L/GsNEAxHPVeiWKoLkazGa2AHtkOXJb9gRjSs9/L7v4GUVAzr/HlkoFHuh9O18mkqnJ7P+4nbtNDvlBiEjc4hUQRrsNd/cEkYazGk7w7leOJ2tQN+t7jfiE6M8177/M+9/wID9+aM1NkhVwAAAABJRU5ErkJggg==" alt="QR"/></td></tr>
+</tbody></table>
+
+
+<div class="paywall-cta" style="margin:40px auto; max-width:720px; background:linear-gradient(135deg,#1a1a2e,#16213e); color:#fff; padding:32px 28px; border-radius:14px; text-align:center;">
+  <div style="font-size:32px; margin-bottom:10px;">🔒</div>
+  <h2 style="font-size:22px; margin:0 0 8px; color:#fff;">전체 콘텐츠는 결제 후 학습 가능합니다</h2>
+  <p style="margin:0 0 18px; opacity:0.85; font-size:14px;">위 미리보기는 약 10%입니다. 전체 <strong>100 idioms</strong>, 모든 예문·시나리오·퀴즈·QR 코드까지 잠금 해제하려면:</p>
+  <a href="https://jssmn21.gumroad.com/l/gnefla" target="_blank" style="display:inline-block; background:#f97316; color:#fff; padding:14px 32px; border-radius:8px; text-decoration:none; font-weight:800; font-size:15px; margin:4px;">💳 Gumroad에서 구매 — $19.90</a>
+  <button onclick="showLicenseModal()" style="display:inline-block; background:transparent; color:#fff; padding:14px 32px; border:2px solid #fff; border-radius:8px; cursor:pointer; font-weight:800; font-size:15px; margin:4px;">🔓 이미 구매했어요</button>
+  <p style="margin-top:16px; font-size:12px; opacity:0.7;">키 1개로 <strong>모든 8개 자료</strong> 잠금 해제</p>
+  <p style="margin-top:20px;"><a href="vocab-hub.html" style="color:#f97316; text-decoration:none; font-weight:700;">← 다른 자료 둘러보기</a></p>
+</div>
+
+
+
+<div id="license-modal" style="display:none">
+  <div class="lm-box">
+    <h3>🔓 라이선스 키 입력</h3>
+    <p>Gumroad에서 구매 후 이메일로 받은 라이선스 키를 입력하세요.</p>
+    <input id="license-key-input" type="text" placeholder="XXXX-XXXX-XXXX-XXXX" maxlength="40" autocomplete="off">
+    <div class="license-msg" id="license-msg"></div>
+    <button class="lm-btn primary" onclick="unlockWithKey()">잠금 해제</button>
+    <button class="lm-btn ghost" onclick="closeLicenseModal()">취소</button>
+    <a href="https://jssmn21.gumroad.com/l/gnefla" target="_blank" class="lm-buy">💳 아직 구매 안 했어요 — Gumroad에서 구매</a>
+  </div>
+</div>
+
+
+<script>
+(function() {
+  const STORAGE_KEY = 'krguide_license_v1';
+  const GUMROAD_LINK = 'https://jssmn21.gumroad.com/l/gnefla';
+
+  function isUnlocked() {
+    try {
+      const d = JSON.parse(localStorage.getItem(STORAGE_KEY));
+      return d && d.valid === true;
+    } catch(e) { return false; }
+  }
+
+  function markUnlocked(key) {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify({valid:true,key:key,ts:Date.now()}));
+  }
+
+  window.unlockWithKey = function() {
+    const input = document.getElementById('license-key-input');
+    const msg = document.getElementById('license-msg');
+    const btn = document.querySelector('#license-modal .lm-btn.primary');
+    const key = (input.value || '').trim();
+    if (!key) { msg.textContent = '라이선스 키를 입력하세요.'; msg.className = 'license-msg err'; return; }
+    if (btn) { btn.disabled = true; btn.textContent = '검증 중…'; }
+    msg.textContent = '';
+    fetch('https://auth.krguide.com/api/license-verify', {
+      method:'POST', headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({license_key: key})
+    }).then(r => r.json()).then(data => {
+      if (data && data.success) {
+        markUnlocked(key);
+        msg.textContent = '✅ 잠금 해제 완료! 새로고침합니다…';
+        msg.className = 'license-msg ok';
+        setTimeout(() => location.reload(), 800);
+      } else {
+        msg.textContent = data.error || '유효하지 않은 라이선스 키입니다.';
+        msg.className = 'license-msg err';
+        if (btn) { btn.disabled = false; btn.textContent = '잠금 해제'; }
+      }
+    }).catch(err => {
+      msg.textContent = '서버 연결 실패. 잠시 후 다시 시도해 주세요.';
+      msg.className = 'license-msg err';
+      if (btn) { btn.disabled = false; btn.textContent = '잠금 해제'; }
+    });
+  };
+
+  window.showLicenseModal = function() {
+    document.getElementById('license-modal').style.display = 'flex';
+    document.getElementById('license-key-input').focus();
+  };
+  window.closeLicenseModal = function() {
+    document.getElementById('license-modal').style.display = 'none';
+  };
+
+  // Apply lock on DOMContentLoaded
+  document.addEventListener('DOMContentLoaded', function() {
+    if (isUnlocked()) {
+      document.body.classList.add('unlocked');
+    } else {
+      document.body.classList.add('locked');
+    }
+  });
+})();
+</script>
+
+
+</body></html>

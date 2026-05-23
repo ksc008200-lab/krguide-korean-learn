@@ -1,0 +1,99 @@
+﻿<!-- wp:html -->
+<style>
+
+
+.members-hero{background:linear-gradient(135deg,#0071e3 0%,#005bb5 100%);color:#fff;padding:48px 28px;text-align:center}
+.members-hero h1{font-size:2rem;font-weight:800;margin:0 0 10px}
+.members-hero p{font-size:1rem;opacity:.85;margin:0 0 20px}
+.member-badge{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.2);border-radius:20px;padding:6px 16px;font-size:.82rem;font-weight:600}
+.lessons-wrap{max-width:900px;margin:40px auto 80px;padding:0 24px}
+.lessons-section{margin-bottom:48px}
+.section-title{font-size:1.1rem;font-weight:800;color:var(--txt);margin:0 0 16px;padding-bottom:10px;border-bottom:2px solid var(--accent);display:flex;align-items:center;gap:8px}
+.lesson-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px}
+.lesson-card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px;display:flex;flex-direction:column;gap:10px;transition:box-shadow .2s,transform .2s}
+.lesson-card:hover{box-shadow:0 4px 20px rgba(0,0,0,.1);transform:translateY(-2px)}
+.lesson-title{font-size:.92rem;font-weight:700;color:var(--txt);line-height:1.4;flex:1}
+.lesson-actions{display:flex;gap:8px}
+.btn-view{flex:1;text-align:center;padding:8px;border-radius:8px;font-size:.8rem;font-weight:600;text-decoration:none;background:var(--accent);color:#fff;transition:background .15s}
+.btn-view:hover{background:#005bb5}
+.btn-dl{padding:8px 12px;border-radius:8px;font-size:.8rem;font-weight:600;text-decoration:none;background:#f5f5f7;color:var(--txt);border:1px solid var(--line);transition:all .15s}
+.btn-dl:hover{background:#e8e8eb}
+.login-gate{max-width:500px;margin:80px auto;text-align:center;padding:0 24px}
+.login-gate h2{font-size:1.5rem;font-weight:800;margin:0 0 12px}
+.login-gate p{color:var(--muted);margin:0 0 24px;line-height:1.6}
+.btn-login{display:inline-block;padding:12px 32px;background:var(--accent);color:#fff;border-radius:24px;text-decoration:none;font-weight:700;font-size:.95rem;margin-right:10px}
+.btn-register{display:inline-block;padding:12px 32px;background:#f5f5f7;color:var(--txt);border-radius:24px;text-decoration:none;font-weight:700;font-size:.95rem;border:1px solid var(--line)}
+@media(max-width:600px){.lesson-grid{grid-template-columns:1fr}}
+</style>
+
+<!-- /wp:html -->
+
+<!-- wp:shortcode -->
+[swpm_show_if logged_in="1"]
+<!-- /wp:shortcode -->
+
+<!-- wp:html -->
+<div class="members-hero">
+  <div class="member-badge">✅ Members Only</div>
+  <h1>Korean Learning Library</h1>
+  <p>190+ lessons · All levels · View &amp; Download</p>
+</div>
+<div class="lessons-wrap">
+  <div class="lessons-section">
+    <div class="section-title">🔤 Hangul &amp; Pronunciation</div>
+    <div class="lesson-grid">
+      <div class="lesson-card"><div class="lesson-title">How to Read Korean in 1 Hour</div><div class="lesson-actions"><a class="btn-view" href="/how-to-read-korean-in-1-hour-complete-beginners-step-by-step-guide-3/">View</a><a class="btn-dl" href="/how-to-read-korean-in-1-hour-complete-beginners-step-by-step-guide-3/" download>⬇ DL</a></div></div>
+      <div class="lesson-card"><div class="lesson-title">Korean Pronunciation Rules Every Beginner Must Know</div><div class="lesson-actions"><a class="btn-view" href="/korean-pronunciation-rules-every-beginner-must-know-3/">View</a><a class="btn-dl" href="/korean-pronunciation-rules-every-beginner-must-know-3/" download>⬇ DL</a></div></div>
+      <div class="lesson-card"><div class="lesson-title">Korean Basic Vowels — Complete Guide</div><div class="lesson-actions"><a class="btn-view" href="/korean-basic-vowels-complete-pronunciation-guide-2/">View</a><a class="btn-dl" href="/korean-basic-vowels-complete-pronunciation-guide-2/" download>⬇ DL</a></div></div>
+      <div class="lesson-card"><div class="lesson-title">Korean Double Consonants — Tense Sounds</div><div class="lesson-actions"><a class="btn-view" href="/korean-double-consonants-how-to-pronounce-tense-sounds-3/">View</a><a class="btn-dl" href="/korean-double-consonants-how-to-pronounce-tense-sounds-3/" download>⬇ DL</a></div></div>
+      <div class="lesson-card"><div class="lesson-title">Korean Final Consonants (받침)</div><div class="lesson-actions"><a class="btn-view" href="/korean-final-consonants-how-batchim-changes-pronunciation-3/">View</a><a class="btn-dl" href="/korean-final-consonants-how-batchim-changes-pronunciation-3/" download>⬇ DL</a></div></div>
+      <div class="lesson-card"><div class="lesson-title">Korean Intonation and Rhythm</div><div class="lesson-actions"><a class="btn-view" href="/korean-intonation-and-rhythm-sound-like-a-native-3/">View</a><a class="btn-dl" href="/korean-intonation-and-rhythm-sound-like-a-native-3/" download>⬇ DL</a></div></div>
+    </div>
+  </div>
+  <div class="lessons-section">
+    <div class="section-title">📝 Grammar &amp; Sentence Structure</div>
+    <div class="lesson-grid">
+      <div class="lesson-card"><div class="lesson-title">Korean Sentence Structure — SOV Word Order</div><div class="lesson-actions"><a class="btn-view" href="/korean-sentence-structure-explained-sov-word-order-2/">View</a><a class="btn-dl" href="/korean-sentence-structure-explained-sov-word-order-2/" download>⬇ DL</a></div></div>
+      <div class="lesson-card"><div class="lesson-title">Korean Particles 은/는 vs 이/가</div><div class="lesson-actions"><a class="btn-view" href="/korean-particles-vs-the-complete-beginners-guide-2/">View</a><a class="btn-dl" href="/korean-particles-vs-the-complete-beginners-guide-2/" download>⬇ DL</a></div></div>
+      <div class="lesson-card"><div class="lesson-title">Korean Verb Conjugation — Present, Past, Future</div><div class="lesson-actions"><a class="btn-view" href="/korean-verb-conjugation-for-beginners-present-past-future-3/">View</a><a class="btn-dl" href="/korean-verb-conjugation-for-beginners-present-past-future-3/" download>⬇ DL</a></div></div>
+      <div class="lesson-card"><div class="lesson-title">Honorifics in Korean — Formal Speech</div><div class="lesson-actions"><a class="btn-view" href="/honorifics-in-korean-when-and-how-to-use-formal-speech-3/">View</a><a class="btn-dl" href="/honorifics-in-korean-when-and-how-to-use-formal-speech-3/" download>⬇ DL</a></div></div>
+      <div class="lesson-card"><div class="lesson-title">Korean Negation — How to Say No</div><div class="lesson-actions"><a class="btn-view" href="/korean-negation-how-to-say-no-and-not-in-korean-3/">View</a><a class="btn-dl" href="/korean-negation-how-to-say-no-and-not-in-korean-3/" download>⬇ DL</a></div></div>
+      <div class="lesson-card"><div class="lesson-title">Korean Connectors — ~고, ~지만, ~그래서</div><div class="lesson-actions"><a class="btn-view" href="/how-to-use-korean-connectors-3/">View</a><a class="btn-dl" href="/how-to-use-korean-connectors-3/" download>⬇ DL</a></div></div>
+    </div>
+  </div>
+  <div class="lessons-section">
+    <div class="section-title">💬 Vocabulary &amp; Phrases</div>
+    <div class="lesson-grid">
+      <div class="lesson-card"><div class="lesson-title">Top 50 Korean Phrases Every Beginner Must Know</div><div class="lesson-actions"><a class="btn-view" href="/top-50-korean-phrases-every-beginner-must-know-3/">View</a><a class="btn-dl" href="/top-50-korean-phrases-every-beginner-must-know-3/" download>⬇ DL</a></div></div>
+      <div class="lesson-card"><div class="lesson-title">Korean Greetings — 20 Ways to Say Hello</div><div class="lesson-actions"><a class="btn-view" href="/korean-greetings-guide-20-ways-to-say-hello-and-goodbye-3/">View</a><a class="btn-dl" href="/korean-greetings-guide-20-ways-to-say-hello-and-goodbye-3/" download>⬇ DL</a></div></div>
+      <div class="lesson-card"><div class="lesson-title">Korean Numbers — Native vs Sino</div><div class="lesson-actions"><a class="btn-view" href="/korean-numbers-how-to-count-in-korean-native-vs-sino-3/">View</a><a class="btn-dl" href="/korean-numbers-how-to-count-in-korean-native-vs-sino-3/" download>⬇ DL</a></div></div>
+      <div class="lesson-card"><div class="lesson-title">Korean Food Vocabulary — 60 Essential Words</div><div class="lesson-actions"><a class="btn-view" href="/korean-food-vocabulary-60-essential-words-for-foodies-3/">View</a><a class="btn-dl" href="/korean-food-vocabulary-60-essential-words-for-foodies-3/" download>⬇ DL</a></div></div>
+      <div class="lesson-card"><div class="lesson-title">Essential Korean Words for Shopping</div><div class="lesson-actions"><a class="btn-view" href="/essential-korean-words-for-shopping-in-korea-2/">View</a><a class="btn-dl" href="/essential-korean-words-for-shopping-in-korea-2/" download>⬇ DL</a></div></div>
+      <div class="lesson-card"><div class="lesson-title">How to Introduce Yourself in Korean</div><div class="lesson-actions"><a class="btn-view" href="/how-to-introduce-yourself-in-korean-beginners-script-3/">View</a><a class="btn-dl" href="/how-to-introduce-yourself-in-korean-beginners-script-3/" download>⬇ DL</a></div></div>
+    </div>
+  </div>
+</div>
+<!-- /wp:html -->
+
+<!-- wp:shortcode -->
+[/swpm_show_if]
+[swpm_show_if logged_in="0"]
+<!-- /wp:shortcode -->
+
+<!-- wp:html -->
+<div class="login-gate">
+  <div style="font-size:3rem;margin-bottom:16px">🔐</div>
+  <h2>Members Only Content</h2>
+  <p>This library is available to KR Guide members.<br>Log in or join to access 190+ Korean lessons.</p>
+  <a class="btn-login" href="/membership-login/">Log In</a>
+  <a class="btn-register" href="/membership-registration/">Join Free</a>
+</div>
+<!-- /wp:html -->
+
+<!-- wp:shortcode -->
+[/swpm_show_if]
+<!-- /wp:shortcode -->
+
+<!-- wp:html -->
+
+<!-- /wp:html -->
